@@ -1,10 +1,19 @@
+```
 # LEAF — Liquid Propulsion Engine Analysis and Design Framework
 
-## Demonstrator Release Candidate
+## Work in Progress — Engineering Demonstrator
+
+> **Development status:** LEAF is actively under development. The current application demonstrates thermochemical, chamber/nozzle, and preliminary regenerative-cooling analysis. Automatic regenerative-cooling geometry/material qualification is not yet established as a fully validated end-to-end capability. Outputs are preliminary engineering results, not flight-qualified designs.
 
 LEAF (Liquid Propulsion Engine Analysis and Design Framework) is a modular liquid-rocket-engine engineering analysis environment written in Python and PySide6.
 
-This demonstrator release presents the current validated LEAF foundation and the engineering modules that are implemented today. It is intended as a working engineering demonstrator rather than a claim of complete launch-vehicle or propulsion-system coverage.
+This engineering demonstrator presents the implemented LEAF foundation and currently available engineering modules. It is intended as a working engineering demonstrator rather than a claim of complete launch-vehicle or propulsion-system coverage.
+
+### Application overview
+
+![LEAF desktop application showing input parameters and calculated engine outputs](docs/screenshots/01-main-interface.png)
+
+*The LEAF desktop interface, displaying an RP-1/LOX calculation with 25 kg/s total propellant mass flow and 8 MPa chamber pressure.*
 
 ---
 
@@ -20,6 +29,7 @@ These modules use LEAF's common runtime, storage, validation, reporting, workflo
 
 The current architectural ownership hierarchy is:
 
+```text
 Engineering Physics
     ↓
 Engineering Modules
@@ -29,6 +39,7 @@ Module Engine
 LEAF Operating System
     ↓
 Repository Architecture
+```
 
 Engineering physics does not own application infrastructure, and the user interface does not own engineering equations.
 
@@ -60,7 +71,35 @@ The current demonstrator includes:
 - report viewing
 - canonical project/design save and reload
 
-Graph Explorer evaluations use the real LEAF calculation path. A plotted X point represents a genuine calculation rather than an interpolated substitute.
+Graph Explorer evaluations use the real LEAF calculation path. A plotted X point represents a calculation rather than an interpolated substitute.
+
+### Graph Explorer — comparative propulsion analysis
+
+![Graph Explorer comparing ideal volumetric thrust against mixture ratio across propellant combinations](docs/screenshots/03-graph-explorer.png)
+
+*Comparative parameter sweep for LOX with methane, hydrogen and RP-1/kerosene. Curves represent calculations under the selected graph settings, not independently validated engine designs.*
+
+### Station Table — inspectable axial results
+
+![LEAF Station Table with axial wall temperatures, Reynolds numbers, velocities and failure diagnostics](docs/screenshots/04-station-table.png)
+
+*Axial station data and diagnostics for a developmental regenerative-cooling case. The displayed hot-wall-temperature failures are part of the result, not successful thermal qualification.*
+
+### Regenerative Cooling Cross-Section Viewer
+
+![LEAF regenerative-cooling cross-section viewer with channel and material layers](docs/screenshots/05-regen-viewer.png)
+
+*Cross-section visualisation in Manual / Unproven mode. The pictured geometry has not passed the complete coupled-design or source-qualification checks; the viewer also reports unavailable axial topology evidence.*
+
+### Engineering reference databases
+
+![LEAF Engineering Reference showing materials and comparative properties](docs/screenshots/06-materials-reference.png)
+
+*Materials reference, including source-quality indicators, available property records and comparison tools.*
+
+![LEAF Engineering Reference showing fuel records and comparative density information](docs/screenshots/07-propellants-reference.png)
+
+*Propellant reference, showing chemistry, property information and comparative records.*
 
 ---
 
@@ -68,17 +107,21 @@ Graph Explorer evaluations use the real LEAF calculation path. A plotted X point
 
 The current demonstrator release has been validated on:
 
+```text
 Platform:       macOS 15.6
 Architecture:   arm64
 Python:         CPython 3.12.13
+```
 
 Validated Python dependencies:
 
+```text
 PySide6==6.11.1
 numpy==2.4.6
 scipy==1.17.1
 matplotlib==3.10.9
 rocketcea==1.2.3
+```
 
 These exact dependencies are recorded in:
 
@@ -117,18 +160,22 @@ Run it from the LEAF repository root with the validated virtual environment acti
 
 ## Canonical Demonstration Case
 
-The portable demonstrator project is:
+The documented demonstrator project layout is:
 
+```text
 LEAF_Projects/
 └── LEAF_Demonstrator_1722/
     └── project.leaf_project.json
+```
 
 Its baseline design is:
 
+```text
 LEAF_Designs/
 └── LEAF_Demonstrator_Baseline_1722/
     ├── design.leaf_design.json
     └── engineering_state.json
+```
 
 The engineering state uses:
 
@@ -146,7 +193,7 @@ The canonical state contains eleven top-level fields covering:
 - design history
 - current calculated results
 
-The release case uses repository-relative references and contains no developer-machine absolute paths.
+The documented case uses repository-relative references and contains no developer-machine absolute paths. **Note:** the project/design data must be included separately when distributing this demonstrator; directories excluded by `.gitignore` are not automatically present in a fresh GitHub clone.
 
 ---
 
@@ -182,15 +229,6 @@ These values are demonstration-case reference values, not universal design targe
 A basic demonstration sequence is:
 
 1. Launch LEAF.
-2. Open LEAF_D-case reference values, not universal design targets.
-
----
-
-## Demonstration Workflow
-
-A basic demonstration sequence is:
-
-1. Launch LEAF.
 2. Open LEAF_Demonstrator_Baseline_1722.
 3. Inspect the restored engineering inputs.
 4. Run NASA CEA.
@@ -204,6 +242,10 @@ A basic demonstration sequence is:
 12. Close and reopen the saved design to verify persistent engineering state.
 
 Do not overwrite the canonical baseline when experimenting with alternative values.
+
+### Additional GUI screenshot case (25 kg/s RP-1/LOX)
+
+The screenshots above use a **separate development test** with 25 kg/s total propellant flow, O/F = 2.4, chamber pressure = 8 MPa, chamber contraction ratio = 3, converging half-angle = 35°, characteristic length = 1.5 m, ambient pressure = 101325 Pa, and an 80%-length RAO bell nozzle. The calculated nominal thrust was approximately **74.7 kN**. This test is **not** the canonical 1722 baseline and does **not** constitute a qualified regenerative-cooling design.
 
 ---
 
@@ -280,6 +322,14 @@ LEAF may execute correctly while reporting that a particular engineering configu
 
 Engineering gates are intentionally preserved rather than weakened to produce visually clean demonstrations.
 
+### Automatic design — current qualification evidence
+
+![Automatic geometry and materials search reporting why candidates did not qualify](docs/screenshots/08-automatic-design-diagnostics.png)
+
+*An automatic geometry/materials search reporting that no candidate met its qualification requirements. The display includes failed wall-thickness, temperature, tolerance and robustness checks. This image is **failure diagnostic evidence**, not proof of a completed automatic design.*
+
+For the separate 25 kg/s RP-1/LOX test, the recommended 400-station cooling analysis reported hot-wall temperatures exceeding the selected material's limit. The recommended profile and geometry should not be confused with committed, validated automatic geometry.
+
 ---
 
 ## Known Demonstrator Limitations
@@ -296,7 +346,7 @@ SUMMARY_ONLY
 
 should be interpreted as engineering-data limitations rather than silently promoted to validated data.
 
-Some legitimate regenerative-cooling/material configurations may therefore produce engineering FAIL results.
+Regenerative-cooling/material configurations may therefore produce engineering FAIL results. The automatic geometry-and-materials workflow currently does not demonstrate a fully qualified design for the screenshot case.
 
 The current release does not claim validated implementation of:
 
@@ -357,7 +407,7 @@ The intended direction is that adding future engineering modules requires progre
 
 ## Release Status
 
-This repository is currently in demonstrator release preparation.
+This repository is a **work-in-progress engineering demonstrator** and is currently in demonstrator release preparation.
 
 Programme 40 established the accepted live demonstrator.
 
@@ -372,3 +422,5 @@ Release-freeze work has subsequently:
 - proved compact linear history growth through live save/reload calculations
 
 Final clean release staging and package-integrity verification remain before the demonstrator release is considered frozen.
+
+```
