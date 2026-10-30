@@ -133,28 +133,160 @@ Other operating systems and Python versions should not be treated as release-cer
 
 ---
 
-## Installation
+## Installation and Getting Started
 
-From the LEAF repository root, create and activate a Python 3.12 virtual environment.
+LEAF is currently distributed as a Python source-code project.
+It remains under active development, and a standalone application
+installer or executable is not yet available.
 
-Example:
+### Prerequisites
 
-    python3.12 -m venv .venv
-    source .venv/bin/activate
-    python3 -m pip install --upgrade pip
-    python3 -m pip install -r requirements.txt
+Before installing LEAF, ensure you have:
 
-RocketCEA may require platform-specific native compiler/runtime support during installation.
+- **Python 3.12** (recommended; tested with CPython 3.12.13 on macOS).
+- **Git** (optional; you may instead download the repository as a ZIP).
+- An internet connection for downloading Python dependencies.
+- A terminal or command-line environment.
 
----
+RocketCEA contains compiled native components and may require
+additional system libraries or development tools, depending on
+the operating system.
 
-## Launch
+### Step 1 — Download LEAF
 
-The canonical application launch command is:
+Clone the repository with Git:
 
-    python3 -m leaf_qt.main
+```bash
+git clone https://github.com/liatho8913/LEAF---Liquid-propulsion-Engine-Analysis-and-design-Framework-.git
+cd LEAF---Liquid-propulsion-Engine-Analysis-and-design-Framework-
+```
 
-Run it from the LEAF repository root with the validated virtual environment active.
+Alternatively:
+
+1. Open the LEAF GitHub repository.
+2. Select **Code → Download ZIP**.
+3. Extract the downloaded archive.
+4. Open a terminal in the extracted repository folder.
+
+All subsequent commands must be executed from the repository
+root, which contains `requirements.txt` and the `leaf_qt` directory.
+
+### Step 2 — Create a Python virtual environment
+
+A virtual environment keeps LEAF's Python dependencies separate
+from other software installed on your computer.
+
+**macOS / Linux**
+
+```bash
+python3.12 -m venv .venv
+source .venv/bin/activate
+```
+
+**Windows — PowerShell (unverified)**
+
+```powershell
+py -3.12 -m venv .venv
+.\\.venv\\Scripts\\Activate.ps1
+```
+
+If PowerShell prevents activation, consult Python's virtual
+environment documentation rather than changing system-wide
+security settings unnecessarily.
+
+Once activated, the virtual environment should be used for
+the remaining installation and launch commands.
+
+### Step 3 — Install Python dependencies
+
+With the virtual environment active, run:
+
+```bash
+python -m pip install --upgrade pip
+python -m pip install -r requirements.txt
+```
+
+The requirements file specifies LEAF's Python dependencies,
+including PySide6, NumPy, SciPy, Matplotlib and RocketCEA.
+
+Some packages, particularly RocketCEA, may require
+platform-specific compiler or runtime support.
+
+The independently tested macOS environment uses Homebrew GCC
+runtime support, including `libgfortran`.
+
+If an installation fails, inspect the dependency error before
+attempting to change package versions.
+
+### Step 4 — Launch LEAF
+
+From the repository root, with the virtual environment active:
+
+```bash
+python -m leaf_qt.main
+```
+
+This is the canonical source-based launch command.
+
+A successful launch opens LEAF's PySide6 graphical interface.
+
+If you close the terminal and return later, reactivate your
+virtual environment before launching the application again.
+
+**macOS / Linux:**
+
+```bash
+source .venv/bin/activate
+python -m leaf_qt.main
+```
+
+**Windows PowerShell (unverified):**
+
+```powershell
+.\\.venv\\Scripts\\Activate.ps1
+python -m leaf_qt.main
+```
+
+### Platform Compatibility
+
+| Platform | Installation status |
+|---|---|
+| macOS 15.6 (Apple Silicon / arm64) | Python 3.12.13 installation and GUI launch tested |
+| Windows | Installation and functionality not yet independently verified |
+| Linux | Installation and functionality not yet independently verified |
+
+A successful installation and application launch do not establish
+full engineering verification of every analysis module.
+
+### Initial Use
+
+After launching LEAF:
+
+1. Familiarise yourself with the main engineering inputs.
+2. Select the propellant combination and operating parameters.
+3. Execute the available NASA CEA and engine calculations.
+4. Inspect the resulting performance and geometry outputs.
+5. Explore the Graph Explorer and Station Table.
+6. Review diagnostic warnings and engineering constraint failures.
+7. Save engineering work using the application's project and design facilities.
+
+The canonical 1722 demonstration case is documented below.
+Its saved project and design files may not be included in a fresh
+clone if they are excluded from repository distribution.
+Do not assume this example can be loaded without those files.
+
+### Engineering Disclaimer
+
+LEAF is experimental engineering software, intended for
+research, learning and preliminary analysis.
+
+Some calculation models, automatic design processes, material
+property datasets and qualification procedures remain under
+development or require additional verification.
+
+Generated outputs must not be treated as flight-qualified
+or manufacturing-ready engineering designs without appropriate
+independent assessment and verification.
 
 ---
 
