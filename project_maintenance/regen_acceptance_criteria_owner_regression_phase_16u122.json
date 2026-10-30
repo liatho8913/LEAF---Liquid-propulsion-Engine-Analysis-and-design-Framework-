@@ -1,0 +1,15 @@
+{
+  "phase": "16U.122",
+  "target": "leaf_qt/regen_acceptance_criteria_owner.py",
+  "passed": true,
+  "function_count": 4,
+  "class_count": 0,
+  "owner_like_symbols": [
+    "attach_regen_acceptance_criteria_owner",
+    "_build_criteria",
+    "_build_report"
+  ],
+  "failures": [],
+  "phase_16u122_regen_acceptance_criteria_owner_regression_complete": true,
+  "next_phase": "16U.123 \u2014 Closure Gate"
+}

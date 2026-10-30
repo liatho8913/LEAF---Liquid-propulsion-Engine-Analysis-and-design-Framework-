@@ -1,0 +1,358 @@
+{
+  "phase": "16U.63",
+  "status": "PASS_PHASE_16U63_GROUPED_LOW_RISK_OWNER_BATCH_REGRESSION",
+  "generated": "2026-06-28T12:12:30",
+  "patch_json_exists": true,
+  "phase_16u62_patch_complete": true,
+  "target_count": 8,
+  "passed_count": 8,
+  "failed_count": 0,
+  "per_file": [
+    {
+      "file": "leaf_qt/coating_property_consumption_audit_owner.py",
+      "passed": true,
+      "checks": [
+        {
+          "name": "exists",
+          "passed": true,
+          "detail": "leaf_qt/coating_property_consumption_audit_owner.py"
+        },
+        {
+          "name": "compiles",
+          "passed": true,
+          "detail": "compile pass"
+        },
+        {
+          "name": "shared_tokens_present",
+          "passed": true,
+          "detail": "all tokens present"
+        },
+        {
+          "name": "legacy_patterns_removed",
+          "passed": true,
+          "detail": "0 production pattern(s); ignored 0 helper fallback literal(s)"
+        },
+        {
+          "name": "phase_16u62_file_patch_completed",
+          "passed": true,
+          "detail": "patch payload pass"
+        },
+        {
+          "name": "module_imports",
+          "passed": true,
+          "detail": "module import pass"
+        },
+        {
+          "name": "helper_status_semantics",
+          "passed": true,
+          "detail": "severity_failures=[]"
+        }
+      ],
+      "remaining_forbidden": [],
+      "missing_tokens": []
+    },
+    {
+      "file": "leaf_qt/coating_thermal_conductivity_integration_owner.py",
+      "passed": true,
+      "checks": [
+        {
+          "name": "exists",
+          "passed": true,
+          "detail": "leaf_qt/coating_thermal_conductivity_integration_owner.py"
+        },
+        {
+          "name": "compiles",
+          "passed": true,
+          "detail": "compile pass"
+        },
+        {
+          "name": "shared_tokens_present",
+          "passed": true,
+          "detail": "all tokens present"
+        },
+        {
+          "name": "legacy_patterns_removed",
+          "passed": true,
+          "detail": "0 production pattern(s); ignored 0 helper fallback literal(s)"
+        },
+        {
+          "name": "phase_16u62_file_patch_completed",
+          "passed": true,
+          "detail": "patch payload pass"
+        },
+        {
+          "name": "module_imports",
+          "passed": true,
+          "detail": "module import pass"
+        },
+        {
+          "name": "helper_status_semantics",
+          "passed": true,
+          "detail": "severity_failures=[]"
+        }
+      ],
+      "remaining_forbidden": [],
+      "missing_tokens": []
+    },
+    {
+      "file": "leaf_qt/coating_thermal_resistance_integration_owner.py",
+      "passed": true,
+      "checks": [
+        {
+          "name": "exists",
+          "passed": true,
+          "detail": "leaf_qt/coating_thermal_resistance_integration_owner.py"
+        },
+        {
+          "name": "compiles",
+          "passed": true,
+          "detail": "compile pass"
+        },
+        {
+          "name": "shared_tokens_present",
+          "passed": true,
+          "detail": "all tokens present"
+        },
+        {
+          "name": "legacy_patterns_removed",
+          "passed": true,
+          "detail": "0 production pattern(s); ignored 0 helper fallback literal(s)"
+        },
+        {
+          "name": "phase_16u62_file_patch_completed",
+          "passed": true,
+          "detail": "patch payload pass"
+        },
+        {
+          "name": "module_imports",
+          "passed": true,
+          "detail": "module import pass"
+        },
+        {
+          "name": "helper_status_semantics",
+          "passed": true,
+          "detail": "severity_failures=[]"
+        }
+      ],
+      "remaining_forbidden": [],
+      "missing_tokens": []
+    },
+    {
+      "file": "leaf_qt/coating_thickness_integration_owner.py",
+      "passed": true,
+      "checks": [
+        {
+          "name": "exists",
+          "passed": true,
+          "detail": "leaf_qt/coating_thickness_integration_owner.py"
+        },
+        {
+          "name": "compiles",
+          "passed": true,
+          "detail": "compile pass"
+        },
+        {
+          "name": "shared_tokens_present",
+          "passed": true,
+          "detail": "all tokens present"
+        },
+        {
+          "name": "legacy_patterns_removed",
+          "passed": true,
+          "detail": "0 production pattern(s); ignored 0 helper fallback literal(s)"
+        },
+        {
+          "name": "phase_16u62_file_patch_completed",
+          "passed": true,
+          "detail": "patch payload pass"
+        },
+        {
+          "name": "module_imports",
+          "passed": true,
+          "detail": "module import pass"
+        },
+        {
+          "name": "helper_status_semantics",
+          "passed": true,
+          "detail": "severity_failures=[]"
+        }
+      ],
+      "remaining_forbidden": [],
+      "missing_tokens": []
+    },
+    {
+      "file": "leaf_qt/material_density_integration_owner.py",
+      "passed": true,
+      "checks": [
+        {
+          "name": "exists",
+          "passed": true,
+          "detail": "leaf_qt/material_density_integration_owner.py"
+        },
+        {
+          "name": "compiles",
+          "passed": true,
+          "detail": "compile pass"
+        },
+        {
+          "name": "shared_tokens_present",
+          "passed": true,
+          "detail": "all tokens present"
+        },
+        {
+          "name": "legacy_patterns_removed",
+          "passed": true,
+          "detail": "0 production pattern(s); ignored 0 helper fallback literal(s)"
+        },
+        {
+          "name": "phase_16u62_file_patch_completed",
+          "passed": true,
+          "detail": "patch payload pass"
+        },
+        {
+          "name": "module_imports",
+          "passed": true,
+          "detail": "module import pass"
+        },
+        {
+          "name": "helper_status_semantics",
+          "passed": true,
+          "detail": "severity_failures=[]"
+        }
+      ],
+      "remaining_forbidden": [],
+      "missing_tokens": []
+    },
+    {
+      "file": "leaf_qt/material_property_consumption_audit_owner.py",
+      "passed": true,
+      "checks": [
+        {
+          "name": "exists",
+          "passed": true,
+          "detail": "leaf_qt/material_property_consumption_audit_owner.py"
+        },
+        {
+          "name": "compiles",
+          "passed": true,
+          "detail": "compile pass"
+        },
+        {
+          "name": "shared_tokens_present",
+          "passed": true,
+          "detail": "all tokens present"
+        },
+        {
+          "name": "legacy_patterns_removed",
+          "passed": true,
+          "detail": "0 production pattern(s); ignored 0 helper fallback literal(s)"
+        },
+        {
+          "name": "phase_16u62_file_patch_completed",
+          "passed": true,
+          "detail": "patch payload pass"
+        },
+        {
+          "name": "module_imports",
+          "passed": true,
+          "detail": "module import pass"
+        },
+        {
+          "name": "helper_status_semantics",
+          "passed": true,
+          "detail": "severity_failures=[]"
+        }
+      ],
+      "remaining_forbidden": [],
+      "missing_tokens": []
+    },
+    {
+      "file": "leaf_qt/material_specific_heat_integration_owner.py",
+      "passed": true,
+      "checks": [
+        {
+          "name": "exists",
+          "passed": true,
+          "detail": "leaf_qt/material_specific_heat_integration_owner.py"
+        },
+        {
+          "name": "compiles",
+          "passed": true,
+          "detail": "compile pass"
+        },
+        {
+          "name": "shared_tokens_present",
+          "passed": true,
+          "detail": "all tokens present"
+        },
+        {
+          "name": "legacy_patterns_removed",
+          "passed": true,
+          "detail": "0 production pattern(s); ignored 0 helper fallback literal(s)"
+        },
+        {
+          "name": "phase_16u62_file_patch_completed",
+          "passed": true,
+          "detail": "patch payload pass"
+        },
+        {
+          "name": "module_imports",
+          "passed": true,
+          "detail": "module import pass"
+        },
+        {
+          "name": "helper_status_semantics",
+          "passed": true,
+          "detail": "severity_failures=[]"
+        }
+      ],
+      "remaining_forbidden": [],
+      "missing_tokens": []
+    },
+    {
+      "file": "leaf_qt/material_thermal_conductivity_integration_owner.py",
+      "passed": true,
+      "checks": [
+        {
+          "name": "exists",
+          "passed": true,
+          "detail": "leaf_qt/material_thermal_conductivity_integration_owner.py"
+        },
+        {
+          "name": "compiles",
+          "passed": true,
+          "detail": "compile pass"
+        },
+        {
+          "name": "shared_tokens_present",
+          "passed": true,
+          "detail": "all tokens present"
+        },
+        {
+          "name": "legacy_patterns_removed",
+          "passed": true,
+          "detail": "0 production pattern(s); ignored 0 helper fallback literal(s)"
+        },
+        {
+          "name": "phase_16u62_file_patch_completed",
+          "passed": true,
+          "detail": "patch payload pass"
+        },
+        {
+          "name": "module_imports",
+          "passed": true,
+          "detail": "module import pass"
+        },
+        {
+          "name": "helper_status_semantics",
+          "passed": true,
+          "detail": "severity_failures=[]"
+        }
+      ],
+      "remaining_forbidden": [],
+      "missing_tokens": []
+    }
+  ],
+  "phase_16u63_grouped_low_risk_owner_batch_regression_complete": true,
+  "next_phase": "16U.64 \u2014 First Grouped Low-Risk Owner Batch Closure Gate"
+}

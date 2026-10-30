@@ -1,0 +1,50 @@
+LEAF PHASE 16U.138
+WAVE 2 MANIFEST SELECTION
+=========================
+
+STATUS: PASS_PHASE_16U138_WAVE2_MANIFEST_SELECTION
+
+WAVE
+----
+16U-WAVE2 — Candidate blueprint, creation, and generation presentation migration
+
+ROADMAP STATE
+-------------
+Locked baseline: 68
+Closed before wave: 27
+Remaining before wave: 41
+Expected closed after wave audit: 39
+Expected remaining after wave audit: 29
+
+Selected files: 12
+
+SELECTED FILES
+--------------
+- regen_candidate_blueprint_completion_audit.py legacy_hits=1
+- regen_candidate_blueprint_generation_input_gate.py legacy_hits=1
+- regen_candidate_blueprint_mutation_validation.py legacy_hits=1
+- regen_candidate_blueprint_optimisation_completion_audit.py legacy_hits=1
+- regen_candidate_blueprint_population_completion_audit.py legacy_hits=1
+- regen_candidate_creation_completion_audit.py legacy_hits=1
+- regen_candidate_creation_input_audit.py legacy_hits=1
+- regen_candidate_creation_registration_owner.py legacy_hits=1
+- regen_candidate_creation_session_owner.py legacy_hits=1
+- regen_candidate_generation_completion_audit.py legacy_hits=1
+- regen_candidate_generation_input_gate.py legacy_hits=1
+- regen_candidate_generation_registration_owner.py legacy_hits=1
+
+ACCEPTANCE CONTRACT
+-------------------
+✓ backup per file
+✓ pre-hash per file
+✓ post-hash per file
+✓ compile per file
+✓ shared presentation layer per file
+✓ no legacy inline status logic per file
+✓ rollback per file
+✓ reject whole wave if any file fails
+✓ locked-baseline audit after wave
+✓ migration certificate required
+
+FAILURES
+--------

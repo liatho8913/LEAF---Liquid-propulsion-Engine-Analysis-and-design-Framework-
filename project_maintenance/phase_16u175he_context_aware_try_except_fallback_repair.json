@@ -1,0 +1,124 @@
+{
+  "phase": "16U.175H-E",
+  "input_failed_subset_count": 22,
+  "repaired_count": 22,
+  "skipped_count": 0,
+  "compile_failure_count": 0,
+  "repaired": [
+    {
+      "path": "leaf_qt/bond_coat_integration_owner.py",
+      "backup": "/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u175he_backups/20260629_010003__leaf_qt__bond_coat_integration_owner.py.bak",
+      "fallback_replaced": true
+    },
+    {
+      "path": "leaf_qt/coating_property_consumption_audit_owner.py",
+      "backup": "/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u175he_backups/20260629_010003__leaf_qt__coating_property_consumption_audit_owner.py.bak",
+      "fallback_replaced": true
+    },
+    {
+      "path": "leaf_qt/coating_temperature_limit_integration_owner.py",
+      "backup": "/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u175he_backups/20260629_010003__leaf_qt__coating_temperature_limit_integration_owner.py.bak",
+      "fallback_replaced": true
+    },
+    {
+      "path": "leaf_qt/coating_thermal_conductivity_integration_owner.py",
+      "backup": "/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u175he_backups/20260629_010003__leaf_qt__coating_thermal_conductivity_integration_owner.py.bak",
+      "fallback_replaced": true
+    },
+    {
+      "path": "leaf_qt/coating_thermal_resistance_integration_owner.py",
+      "backup": "/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u175he_backups/20260629_010003__leaf_qt__coating_thermal_resistance_integration_owner.py.bak",
+      "fallback_replaced": true
+    },
+    {
+      "path": "leaf_qt/coating_thickness_integration_owner.py",
+      "backup": "/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u175he_backups/20260629_010003__leaf_qt__coating_thickness_integration_owner.py.bak",
+      "fallback_replaced": true
+    },
+    {
+      "path": "leaf_qt/material_density_integration_owner.py",
+      "backup": "/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u175he_backups/20260629_010003__leaf_qt__material_density_integration_owner.py.bak",
+      "fallback_replaced": true
+    },
+    {
+      "path": "leaf_qt/material_property_consumption_audit_owner.py",
+      "backup": "/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u175he_backups/20260629_010003__leaf_qt__material_property_consumption_audit_owner.py.bak",
+      "fallback_replaced": true
+    },
+    {
+      "path": "leaf_qt/material_specific_heat_integration_owner.py",
+      "backup": "/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u175he_backups/20260629_010003__leaf_qt__material_specific_heat_integration_owner.py.bak",
+      "fallback_replaced": true
+    },
+    {
+      "path": "leaf_qt/material_strength_limit_integration_owner.py",
+      "backup": "/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u175he_backups/20260629_010003__leaf_qt__material_strength_limit_integration_owner.py.bak",
+      "fallback_replaced": true
+    },
+    {
+      "path": "leaf_qt/material_temperature_limit_integration_owner.py",
+      "backup": "/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u175he_backups/20260629_010003__leaf_qt__material_temperature_limit_integration_owner.py.bak",
+      "fallback_replaced": true
+    },
+    {
+      "path": "leaf_qt/material_thermal_conductivity_integration_owner.py",
+      "backup": "/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u175he_backups/20260629_010003__leaf_qt__material_thermal_conductivity_integration_owner.py.bak",
+      "fallback_replaced": true
+    },
+    {
+      "path": "leaf_qt/real_engine_benchmark_failure_owner.py",
+      "backup": "/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u175he_backups/20260629_010003__leaf_qt__real_engine_benchmark_failure_owner.py.bak",
+      "fallback_replaced": true
+    },
+    {
+      "path": "leaf_qt/regen_candidate_blueprint_population_validation_owner.py",
+      "backup": "/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u175he_backups/20260629_010003__leaf_qt__regen_candidate_blueprint_population_validation_owner.py.bak",
+      "fallback_replaced": true
+    },
+    {
+      "path": "leaf_qt/regen_candidate_creation_report_owner.py",
+      "backup": "/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u175he_backups/20260629_010003__leaf_qt__regen_candidate_creation_report_owner.py.bak",
+      "fallback_replaced": true
+    },
+    {
+      "path": "leaf_qt/regen_candidate_generation_report_owner.py",
+      "backup": "/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u175he_backups/20260629_010003__leaf_qt__regen_candidate_generation_report_owner.py.bak",
+      "fallback_replaced": true
+    },
+    {
+      "path": "leaf_qt/regen_candidate_mutation_report_owner.py",
+      "backup": "/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u175he_backups/20260629_010003__leaf_qt__regen_candidate_mutation_report_owner.py.bak",
+      "fallback_replaced": true
+    },
+    {
+      "path": "leaf_qt/regen_geometry_report_owner.py",
+      "backup": "/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u175he_backups/20260629_010003__leaf_qt__regen_geometry_report_owner.py.bak",
+      "fallback_replaced": true
+    },
+    {
+      "path": "leaf_qt/regen_optimisation_report_owner.py",
+      "backup": "/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u175he_backups/20260629_010003__leaf_qt__regen_optimisation_report_owner.py.bak",
+      "fallback_replaced": true
+    },
+    {
+      "path": "leaf_qt/regen_runtime_execution_report_owner.py",
+      "backup": "/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u175he_backups/20260629_010003__leaf_qt__regen_runtime_execution_report_owner.py.bak",
+      "fallback_replaced": true
+    },
+    {
+      "path": "leaf_qt/regen_runtime_optimisation_report_owner.py",
+      "backup": "/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u175he_backups/20260629_010003__leaf_qt__regen_runtime_optimisation_report_owner.py.bak",
+      "fallback_replaced": true
+    },
+    {
+      "path": "leaf_qt/regen_scalability_failure_owner.py",
+      "backup": "/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u175he_backups/20260629_010003__leaf_qt__regen_scalability_failure_owner.py.bak",
+      "fallback_replaced": true
+    }
+  ],
+  "skipped": [],
+  "compile_failures": [],
+  "passed": true,
+  "status": "PASS_PHASE_16U175HE_CONTEXT_AWARE_TRY_EXCEPT_FALLBACK_REPAIR",
+  "next_phase": "16U.175I_DEDUPLICATION_REGRESSION_AND_COMPATIBILITY_AUDIT"
+}

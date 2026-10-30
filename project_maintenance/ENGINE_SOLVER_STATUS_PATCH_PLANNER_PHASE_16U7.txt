@@ -1,0 +1,185 @@
+LEAF PHASE 16U.7
+ENGINE SOLVER STATUS PATCH PLANNER
+====================================
+
+STATUS: PASS_PHASE_16U7_ENGINE_SOLVER_STATUS_PATCH_PLANNER
+Generated: 2026-06-27T11:37:46
+
+SCOPE
+-----
+This phase creates a deterministic patch plan.
+No production files are modified.
+No solver equations are modified.
+
+SUMMARY
+-------
+Source low-risk findings: 39
+Unique patch items: 25
+Unchanged proposals requiring manual review: 0
+Wrappers required: solver_fail, solver_pass
+
+PATCH ITEMS BY FILE
+-------------------
+leaf_qt/engine_solver.py: 24
+leaf_qt/regen_geometry_solver.py: 1
+
+PATCH PLAN
+----------
+leaf_qt/engine_solver.py:6101 [PASS_NEGATION_CHECK]
+  current:  if results.get("coupled_split_auto_tuned_status") != "PASS":
+  proposed: if not solver_pass(results.get("coupled_split_auto_tuned_status")):
+  imports:  solver_pass
+  batch:    A1_LOW_RISK_EQUALITY_INEQUALITY
+
+leaf_qt/engine_solver.py:6253 [FAIL_NEGATION_CHECK]
+  current:  passing = [item for item in screened if item["status"] != "FAIL"]
+  proposed: passing = [item for item in screened if not solver_fail(item.get("status"))]
+  imports:  solver_fail
+  batch:    A1_LOW_RISK_EQUALITY_INEQUALITY
+
+leaf_qt/engine_solver.py:6543 [FAIL_NEGATION_CHECK]
+  current:  if status != "FAIL":
+  proposed: if not solver_fail(status):
+  imports:  solver_fail
+  batch:    A1_LOW_RISK_EQUALITY_INEQUALITY
+
+leaf_qt/engine_solver.py:7192 [PASS_EQUALITY_CHECK]
+  current:  if item.get("status") == "PASS"
+  proposed: if solver_pass(item.get("status"))
+  imports:  solver_pass
+  batch:    A1_LOW_RISK_EQUALITY_INEQUALITY
+
+leaf_qt/engine_solver.py:7418 [PASS_NEGATION_CHECK]
+  current:  if thermal_stress_failed_count > 0 and results.get("bond_coat_validation_status") != "PASS":
+  proposed: if thermal_stress_failed_count > 0 and not solver_pass(results.get("bond_coat_validation_status")):
+  imports:  solver_pass
+  batch:    A1_LOW_RISK_EQUALITY_INEQUALITY
+
+leaf_qt/engine_solver.py:8028 [PASS_NEGATION_CHECK]
+  current:  if source_data_gate != "PASS":
+  proposed: if not solver_pass(source_data_gate):
+  imports:  solver_pass
+  batch:    A1_LOW_RISK_EQUALITY_INEQUALITY
+
+leaf_qt/engine_solver.py:8033 [PASS_NEGATION_CHECK]
+  current:  if weighted_gate != "PASS":
+  proposed: if not solver_pass(weighted_gate):
+  imports:  solver_pass
+  batch:    A1_LOW_RISK_EQUALITY_INEQUALITY
+
+leaf_qt/engine_solver.py:9061 [FAIL_EQUALITY_CHECK]
+  current:  if results.get("explicit_coating_thermal_stress_status") == "FAIL":
+  proposed: if solver_fail(results.get("explicit_coating_thermal_stress_status")):
+  imports:  solver_fail
+  batch:    A1_LOW_RISK_EQUALITY_INEQUALITY
+
+leaf_qt/engine_solver.py:9072 [PASS_NEGATION_CHECK]
+  current:  if results.get("coating_stack_adhesion_risk_status") != "PASS":
+  proposed: if not solver_pass(results.get("coating_stack_adhesion_risk_status")):
+  imports:  solver_pass
+  batch:    A1_LOW_RISK_EQUALITY_INEQUALITY
+
+leaf_qt/engine_solver.py:9083 [PASS_NEGATION_CHECK]
+  current:  if results.get("coating_stack_spallation_fatigue_status") != "PASS":
+  proposed: if not solver_pass(results.get("coating_stack_spallation_fatigue_status")):
+  imports:  solver_pass
+  batch:    A1_LOW_RISK_EQUALITY_INEQUALITY
+
+leaf_qt/engine_solver.py:9094 [PASS_NEGATION_CHECK]
+  current:  if results.get("coating_stack_source_data_gate") != "PASS":
+  proposed: if not solver_pass(results.get("coating_stack_source_data_gate")):
+  imports:  solver_pass
+  batch:    A1_LOW_RISK_EQUALITY_INEQUALITY
+
+leaf_qt/engine_solver.py:9436 [PASS_NEGATION_CHECK]
+  current:  if data_mode != "SOURCED_VALIDATION_MODE" or source_gate != "PASS":
+  proposed: if data_mode != "SOURCED_VALIDATION_MODE" or not solver_pass(source_gate):
+  imports:  solver_pass
+  batch:    A1_LOW_RISK_EQUALITY_INEQUALITY
+
+leaf_qt/engine_solver.py:9447 [PASS_NEGATION_CHECK]
+  current:  if bond_status != "PASS":
+  proposed: if not solver_pass(bond_status):
+  imports:  solver_pass
+  batch:    A1_LOW_RISK_EQUALITY_INEQUALITY
+
+leaf_qt/engine_solver.py:9458 [PASS_NEGATION_CHECK]
+  current:  if thermal_stress_status != "PASS":
+  proposed: if not solver_pass(thermal_stress_status):
+  imports:  solver_pass
+  batch:    A1_LOW_RISK_EQUALITY_INEQUALITY
+
+leaf_qt/engine_solver.py:9469 [PASS_NEGATION_CHECK]
+  current:  if adhesion_status != "PASS":
+  proposed: if not solver_pass(adhesion_status):
+  imports:  solver_pass
+  batch:    A1_LOW_RISK_EQUALITY_INEQUALITY
+
+leaf_qt/engine_solver.py:9480 [PASS_NEGATION_CHECK]
+  current:  if fatigue_status != "PASS":
+  proposed: if not solver_pass(fatigue_status):
+  imports:  solver_pass
+  batch:    A1_LOW_RISK_EQUALITY_INEQUALITY
+
+leaf_qt/engine_solver.py:10593 [PASS_NEGATION_CHECK]
+  current:  if source_gate != "PASS" and final_acceptance == "VALIDATION_SUPPORT_ALLOWED":
+  proposed: if not solver_pass(source_gate) and final_acceptance == "VALIDATION_SUPPORT_ALLOWED":
+  imports:  solver_pass
+  batch:    A1_LOW_RISK_EQUALITY_INEQUALITY
+
+leaf_qt/engine_solver.py:11970 [PASS_NEGATION_CHECK]
+  current:  if preview_status != "PASS":
+  proposed: if not solver_pass(preview_status):
+  imports:  solver_pass
+  batch:    A1_LOW_RISK_EQUALITY_INEQUALITY
+
+leaf_qt/engine_solver.py:12469 [PASS_EQUALITY_CHECK]
+  current:  if feasibility == "REGEN_ONLY_FEASIBLE" and viability == "PASS":
+  proposed: if feasibility == "REGEN_ONLY_FEASIBLE" and solver_pass(viability):
+  imports:  solver_pass
+  batch:    A1_LOW_RISK_EQUALITY_INEQUALITY
+
+leaf_qt/engine_solver.py:15212 [PASS_EQUALITY_CHECK]
+  current:  if results.get("coupled_split_auto_tuned_status") == "PASS":
+  proposed: if solver_pass(results.get("coupled_split_auto_tuned_status")):
+  imports:  solver_pass
+  batch:    A1_LOW_RISK_EQUALITY_INEQUALITY
+
+leaf_qt/engine_solver.py:15472 [PASS_NEGATION_CHECK]
+  current:  if combined_status != "PASS":
+  proposed: if not solver_pass(combined_status):
+  imports:  solver_pass
+  batch:    A1_LOW_RISK_EQUALITY_INEQUALITY
+
+leaf_qt/engine_solver.py:15476 [FAIL_EQUALITY_CHECK]
+  current:  if results.get("velocity_limited_combined_preview_status") == "FAIL":
+  proposed: if solver_fail(results.get("velocity_limited_combined_preview_status")):
+  imports:  solver_fail
+  batch:    A1_LOW_RISK_EQUALITY_INEQUALITY
+
+leaf_qt/engine_solver.py:15523 [FAIL_EQUALITY_CHECK]
+  current:  if results.get("coupled_split_strategy_status") == "FAIL":
+  proposed: if solver_fail(results.get("coupled_split_strategy_status")):
+  imports:  solver_fail
+  batch:    A1_LOW_RISK_EQUALITY_INEQUALITY
+
+leaf_qt/engine_solver.py:15529 [PASS_EQUALITY_CHECK]
+  current:  if results.get("vl_split_strategy_status") == "PASS":
+  proposed: if solver_pass(results.get("vl_split_strategy_status")):
+  imports:  solver_pass
+  batch:    A1_LOW_RISK_EQUALITY_INEQUALITY
+
+leaf_qt/regen_geometry_solver.py:98 [PASS_EQUALITY_CHECK]
+  current:  solver_pass = candidate_report.get("status") == "PASS" and best_candidate is not None
+  proposed: solver_pass = solver_pass(candidate_report.get("status")) and best_candidate is not None
+  imports:  solver_pass
+  batch:    A1_LOW_RISK_EQUALITY_INEQUALITY
+
+NEXT PHASE
+----------
+PHASE 16U.8 — ENGINE SOLVER LOW-RISK STATUS WRAPPER PATCH
+
+COMPLETION NOTICE
+-----------------
+PHASE 16U.7 COMPLETE.
+The low-risk solver status patch plan is ready.

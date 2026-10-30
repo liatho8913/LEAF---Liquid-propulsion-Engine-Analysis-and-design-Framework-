@@ -1,0 +1,8 @@
+{
+  "phase": "16U.112",
+  "target": "leaf_qt/regen_runtime_execution_report_owner.py",
+  "passed": true,
+  "failures": [],
+  "phase_16u112_regen_runtime_execution_report_owner_regression_complete": true,
+  "next_phase": "16U.113 \u2014 Regen Runtime Execution Report Owner Closure Gate"
+}

@@ -1,0 +1,25 @@
+LEAF PHASE 16U.152
+WAVE 4 REGRESSION
+==================
+
+STATUS: PASS_PHASE_16U152_WAVE4_REGRESSION
+
+Files checked: 10
+Files passed: 10
+Files failed: 0
+
+FILES
+-----
+- regen_optimisation_completion_audit.py :: PASS
+- regen_optimisation_registration_owner.py :: PASS
+- regen_optimisation_session_owner.py :: PASS
+- regen_runtime_execution_completion_audit.py :: PASS
+- regen_runtime_execution_input_gate.py :: PASS
+- regen_runtime_execution_registration_owner.py :: PASS
+- regen_runtime_execution_session_owner.py :: PASS
+- regen_runtime_optimisation_input_gate.py :: PASS
+- regen_runtime_optimisation_registration_owner.py :: PASS
+- regen_runtime_optimisation_session_owner.py :: PASS
+
+FAILURES
+--------

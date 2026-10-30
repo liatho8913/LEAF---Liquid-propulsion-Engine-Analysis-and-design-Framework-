@@ -1,0 +1,37 @@
+{
+  "module_id": "regen",
+  "name": "Regenerative Cooling",
+  "domain": "thermal_management",
+  "version": "1.0.0",
+  "description": "Reference module definition for the existing regenerative cooling capability.",
+  "engineering_owner": "regen_engineering_module",
+  "entrypoint": "",
+  "contracts": {
+    "interface": "module_engine",
+    "solver": "regen_engineering_module",
+    "validation": "validation_engine",
+    "workflow": "workflow_engine",
+    "runtime": "runtime_engine",
+    "storage": "storage_engine",
+    "reports": "report_engine",
+    "notifications": "notification_engine"
+  },
+  "dependencies": [
+    "materials",
+    "coolant_properties",
+    "geometry"
+  ],
+  "outputs": [
+    "wall_temperature",
+    "coolant_temperature",
+    "pressure_drop",
+    "heat_flux"
+  ],
+  "tags": [
+    "reference_implementation",
+    "programme_29_migration_target"
+  ],
+  "enabled": true,
+  "requires_modules": [],
+  "runtime_binding": "stage_gated"
+}

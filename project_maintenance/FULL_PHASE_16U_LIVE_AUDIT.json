@@ -1,0 +1,2113 @@
+{
+  "audit": "FULL_PHASE_16U_LIVE_AUDIT",
+  "locked_baseline": 68,
+  "closed_targets": 15,
+  "remaining_candidates": 53,
+  "progress": "15/68",
+  "closed_files": [
+    "failure_root_cause_owner.py",
+    "regen_acceptance_audit.py",
+    "regen_acceptance_criteria_owner.py",
+    "regen_candidate_blueprint_population_validation_owner.py",
+    "regen_candidate_creation_report_owner.py",
+    "regen_candidate_generation_report_owner.py",
+    "regen_candidate_mutation_report_owner.py",
+    "regen_completion_gate_validation_owner.py",
+    "regen_geometry_constraint_owner.py",
+    "regen_geometry_report_owner.py",
+    "regen_optimisation_report_owner.py",
+    "regen_optimisation_scoring_owner.py",
+    "regen_runtime_execution_report_owner.py",
+    "regen_runtime_optimisation_report_owner.py",
+    "regen_system_signoff_validation_owner.py"
+  ],
+  "remaining_files": [
+    "bond_coat_integration_owner.py",
+    "coating_property_consumption_audit_owner.py",
+    "coating_temperature_limit_integration_owner.py",
+    "coating_thermal_conductivity_integration_owner.py",
+    "coating_thermal_resistance_integration_owner.py",
+    "coating_thickness_integration_owner.py",
+    "material_density_integration_owner.py",
+    "material_property_consumption_audit_owner.py",
+    "material_specific_heat_integration_owner.py",
+    "material_strength_limit_integration_owner.py",
+    "material_temperature_limit_integration_owner.py",
+    "material_thermal_conductivity_integration_owner.py",
+    "real_engine_benchmark_completion_audit.py",
+    "real_engine_benchmark_failure_owner.py",
+    "regen_autonomous_optimisation_input_audit.py",
+    "regen_candidate_blueprint_completion_audit.py",
+    "regen_candidate_blueprint_generation_input_gate.py",
+    "regen_candidate_blueprint_mutation_validation.py",
+    "regen_candidate_blueprint_optimisation_completion_audit.py",
+    "regen_candidate_blueprint_population_completion_audit.py",
+    "regen_candidate_creation_completion_audit.py",
+    "regen_candidate_creation_input_audit.py",
+    "regen_candidate_creation_registration_owner.py",
+    "regen_candidate_creation_session_owner.py",
+    "regen_candidate_generation_completion_audit.py",
+    "regen_candidate_generation_input_gate.py",
+    "regen_candidate_generation_registration_owner.py",
+    "regen_candidate_generation_session_owner.py",
+    "regen_candidate_mutation_completion_audit.py",
+    "regen_candidate_mutation_input_audit.py",
+    "regen_candidate_mutation_master_gate.py",
+    "regen_candidate_population_completion_audit.py",
+    "regen_candidate_population_master_gate.py",
+    "regen_candidate_ranking_completion_audit.py",
+    "regen_candidate_ranking_input_audit.py",
+    "regen_candidate_ranking_master_gate.py",
+    "regen_evolution_loop_completion_audit.py",
+    "regen_evolution_loop_input_audit.py",
+    "regen_evolution_loop_master_gate.py",
+    "regen_optimisation_completion_audit.py",
+    "regen_optimisation_registration_owner.py",
+    "regen_optimisation_session_owner.py",
+    "regen_runtime_execution_completion_audit.py",
+    "regen_runtime_execution_input_gate.py",
+    "regen_runtime_execution_registration_owner.py",
+    "regen_runtime_execution_session_owner.py",
+    "regen_runtime_optimisation_input_gate.py",
+    "regen_runtime_optimisation_registration_owner.py",
+    "regen_runtime_optimisation_session_owner.py",
+    "regen_scalability_failure_owner.py",
+    "regen_viewer_final_runtime_consistency_gate_phase_16q20.py",
+    "regen_viewer_gui_runtime_acceptance_gate_phase_16q28.py",
+    "regen_viewer_report_renderer.py"
+  ],
+  "compile_failures": [],
+  "details": [
+    {
+      "file": "bond_coat_integration_owner.py",
+      "status": "REMAINING",
+      "compile_ok": true,
+      "has_LegacyCompatibilityProducer": false,
+      "has_status_severity": true,
+      "legacy_hit_count": 0,
+      "legacy_hits": []
+    },
+    {
+      "file": "coating_property_consumption_audit_owner.py",
+      "status": "REMAINING",
+      "compile_ok": true,
+      "has_LegacyCompatibilityProducer": false,
+      "has_status_severity": true,
+      "legacy_hit_count": 0,
+      "legacy_hits": []
+    },
+    {
+      "file": "coating_temperature_limit_integration_owner.py",
+      "status": "REMAINING",
+      "compile_ok": true,
+      "has_LegacyCompatibilityProducer": false,
+      "has_status_severity": true,
+      "legacy_hit_count": 0,
+      "legacy_hits": []
+    },
+    {
+      "file": "coating_thermal_conductivity_integration_owner.py",
+      "status": "REMAINING",
+      "compile_ok": true,
+      "has_LegacyCompatibilityProducer": false,
+      "has_status_severity": true,
+      "legacy_hit_count": 0,
+      "legacy_hits": []
+    },
+    {
+      "file": "coating_thermal_resistance_integration_owner.py",
+      "status": "REMAINING",
+      "compile_ok": true,
+      "has_LegacyCompatibilityProducer": false,
+      "has_status_severity": true,
+      "legacy_hit_count": 0,
+      "legacy_hits": []
+    },
+    {
+      "file": "coating_thickness_integration_owner.py",
+      "status": "REMAINING",
+      "compile_ok": true,
+      "has_LegacyCompatibilityProducer": false,
+      "has_status_severity": true,
+      "legacy_hit_count": 0,
+      "legacy_hits": []
+    },
+    {
+      "file": "failure_root_cause_owner.py",
+      "status": "CLOSED",
+      "compile_ok": true,
+      "has_LegacyCompatibilityProducer": true,
+      "has_status_severity": true,
+      "legacy_hit_count": 0,
+      "legacy_hits": []
+    },
+    {
+      "file": "material_density_integration_owner.py",
+      "status": "REMAINING",
+      "compile_ok": true,
+      "has_LegacyCompatibilityProducer": false,
+      "has_status_severity": true,
+      "legacy_hit_count": 0,
+      "legacy_hits": []
+    },
+    {
+      "file": "material_property_consumption_audit_owner.py",
+      "status": "REMAINING",
+      "compile_ok": true,
+      "has_LegacyCompatibilityProducer": false,
+      "has_status_severity": true,
+      "legacy_hit_count": 0,
+      "legacy_hits": []
+    },
+    {
+      "file": "material_specific_heat_integration_owner.py",
+      "status": "REMAINING",
+      "compile_ok": true,
+      "has_LegacyCompatibilityProducer": false,
+      "has_status_severity": true,
+      "legacy_hit_count": 0,
+      "legacy_hits": []
+    },
+    {
+      "file": "material_strength_limit_integration_owner.py",
+      "status": "REMAINING",
+      "compile_ok": true,
+      "has_LegacyCompatibilityProducer": false,
+      "has_status_severity": true,
+      "legacy_hit_count": 0,
+      "legacy_hits": []
+    },
+    {
+      "file": "material_temperature_limit_integration_owner.py",
+      "status": "REMAINING",
+      "compile_ok": true,
+      "has_LegacyCompatibilityProducer": false,
+      "has_status_severity": true,
+      "legacy_hit_count": 0,
+      "legacy_hits": []
+    },
+    {
+      "file": "material_thermal_conductivity_integration_owner.py",
+      "status": "REMAINING",
+      "compile_ok": true,
+      "has_LegacyCompatibilityProducer": false,
+      "has_status_severity": true,
+      "legacy_hit_count": 0,
+      "legacy_hits": []
+    },
+    {
+      "file": "real_engine_benchmark_completion_audit.py",
+      "status": "REMAINING",
+      "compile_ok": true,
+      "has_LegacyCompatibilityProducer": false,
+      "has_status_severity": false,
+      "legacy_hit_count": 3,
+      "legacy_hits": [
+        {
+          "line": 277,
+          "pattern": "\"PASS\"\\s+if\\s+.+?\\s+else\\s+\"FAIL\"",
+          "content": "marker = \"PASS\" if check[\"passed\"] else \"FAIL\""
+        },
+        {
+          "line": 308,
+          "pattern": "\\.startswith\\(\\s*[\"\\'](?:PASS|FAIL|WARN|BLOCKED)",
+          "content": "if status.startswith(\"PASS\"):"
+        },
+        {
+          "line": 323,
+          "pattern": "\\.startswith\\(\\s*[\"\\'](?:PASS|FAIL|WARN|BLOCKED)",
+          "content": "if status.startswith(\"PASS\"):"
+        }
+      ]
+    },
+    {
+      "file": "real_engine_benchmark_failure_owner.py",
+      "status": "REMAINING",
+      "compile_ok": true,
+      "has_LegacyCompatibilityProducer": false,
+      "has_status_severity": true,
+      "legacy_hit_count": 0,
+      "legacy_hits": []
+    },
+    {
+      "file": "regen_acceptance_audit.py",
+      "status": "CLOSED",
+      "compile_ok": true,
+      "has_LegacyCompatibilityProducer": true,
+      "has_status_severity": true,
+      "legacy_hit_count": 0,
+      "legacy_hits": []
+    },
+    {
+      "file": "regen_acceptance_criteria_owner.py",
+      "status": "CLOSED",
+      "compile_ok": true,
+      "has_LegacyCompatibilityProducer": true,
+      "has_status_severity": true,
+      "legacy_hit_count": 0,
+      "legacy_hits": []
+    },
+    {
+      "file": "regen_autonomous_optimisation_input_audit.py",
+      "status": "REMAINING",
+      "compile_ok": true,
+      "has_LegacyCompatibilityProducer": false,
+      "has_status_severity": false,
+      "legacy_hit_count": 1,
+      "legacy_hits": [
+        {
+          "line": 159,
+          "pattern": "\"PASS\"\\s+if\\s+.+?\\s+else\\s+\"FAIL\"",
+          "content": "marker = \"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ]
+    },
+    {
+      "file": "regen_candidate_blueprint_completion_audit.py",
+      "status": "REMAINING",
+      "compile_ok": true,
+      "has_LegacyCompatibilityProducer": false,
+      "has_status_severity": false,
+      "legacy_hit_count": 1,
+      "legacy_hits": [
+        {
+          "line": 179,
+          "pattern": "\"PASS\"\\s+if\\s+.+?\\s+else\\s+\"FAIL\"",
+          "content": "marker = \"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ]
+    },
+    {
+      "file": "regen_candidate_blueprint_generation_input_gate.py",
+      "status": "REMAINING",
+      "compile_ok": true,
+      "has_LegacyCompatibilityProducer": false,
+      "has_status_severity": false,
+      "legacy_hit_count": 1,
+      "legacy_hits": [
+        {
+          "line": 225,
+          "pattern": "\"PASS\"\\s+if\\s+.+?\\s+else\\s+\"FAIL\"",
+          "content": "marker = \"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ]
+    },
+    {
+      "file": "regen_candidate_blueprint_mutation_validation.py",
+      "status": "REMAINING",
+      "compile_ok": true,
+      "has_LegacyCompatibilityProducer": false,
+      "has_status_severity": false,
+      "legacy_hit_count": 1,
+      "legacy_hits": [
+        {
+          "line": 243,
+          "pattern": "\"PASS\"\\s+if\\s+.+?\\s+else\\s+\"FAIL\"",
+          "content": "marker = \"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ]
+    },
+    {
+      "file": "regen_candidate_blueprint_optimisation_completion_audit.py",
+      "status": "REMAINING",
+      "compile_ok": true,
+      "has_LegacyCompatibilityProducer": false,
+      "has_status_severity": false,
+      "legacy_hit_count": 1,
+      "legacy_hits": [
+        {
+          "line": 215,
+          "pattern": "\"PASS\"\\s+if\\s+.+?\\s+else\\s+\"FAIL\"",
+          "content": "marker = \"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ]
+    },
+    {
+      "file": "regen_candidate_blueprint_population_completion_audit.py",
+      "status": "REMAINING",
+      "compile_ok": true,
+      "has_LegacyCompatibilityProducer": false,
+      "has_status_severity": false,
+      "legacy_hit_count": 1,
+      "legacy_hits": [
+        {
+          "line": 238,
+          "pattern": "\"PASS\"\\s+if\\s+.+?\\s+else\\s+\"FAIL\"",
+          "content": "marker = \"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ]
+    },
+    {
+      "file": "regen_candidate_blueprint_population_validation_owner.py",
+      "status": "CLOSED",
+      "compile_ok": true,
+      "has_LegacyCompatibilityProducer": true,
+      "has_status_severity": true,
+      "legacy_hit_count": 0,
+      "legacy_hits": []
+    },
+    {
+      "file": "regen_candidate_creation_completion_audit.py",
+      "status": "REMAINING",
+      "compile_ok": true,
+      "has_LegacyCompatibilityProducer": false,
+      "has_status_severity": false,
+      "legacy_hit_count": 1,
+      "legacy_hits": [
+        {
+          "line": 201,
+          "pattern": "\"PASS\"\\s+if\\s+.+?\\s+else\\s+\"FAIL\"",
+          "content": "marker = \"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ]
+    },
+    {
+      "file": "regen_candidate_creation_input_audit.py",
+      "status": "REMAINING",
+      "compile_ok": true,
+      "has_LegacyCompatibilityProducer": false,
+      "has_status_severity": false,
+      "legacy_hit_count": 1,
+      "legacy_hits": [
+        {
+          "line": 213,
+          "pattern": "\"PASS\"\\s+if\\s+.+?\\s+else\\s+\"FAIL\"",
+          "content": "marker = \"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ]
+    },
+    {
+      "file": "regen_candidate_creation_registration_owner.py",
+      "status": "REMAINING",
+      "compile_ok": true,
+      "has_LegacyCompatibilityProducer": false,
+      "has_status_severity": false,
+      "legacy_hit_count": 1,
+      "legacy_hits": [
+        {
+          "line": 185,
+          "pattern": "\"PASS\"\\s+if\\s+.+?\\s+else\\s+\"FAIL\"",
+          "content": "marker = \"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ]
+    },
+    {
+      "file": "regen_candidate_creation_report_owner.py",
+      "status": "CLOSED",
+      "compile_ok": true,
+      "has_LegacyCompatibilityProducer": true,
+      "has_status_severity": true,
+      "legacy_hit_count": 0,
+      "legacy_hits": []
+    },
+    {
+      "file": "regen_candidate_creation_session_owner.py",
+      "status": "REMAINING",
+      "compile_ok": true,
+      "has_LegacyCompatibilityProducer": false,
+      "has_status_severity": false,
+      "legacy_hit_count": 1,
+      "legacy_hits": [
+        {
+          "line": 209,
+          "pattern": "\"PASS\"\\s+if\\s+.+?\\s+else\\s+\"FAIL\"",
+          "content": "marker = \"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ]
+    },
+    {
+      "file": "regen_candidate_generation_completion_audit.py",
+      "status": "REMAINING",
+      "compile_ok": true,
+      "has_LegacyCompatibilityProducer": false,
+      "has_status_severity": false,
+      "legacy_hit_count": 1,
+      "legacy_hits": [
+        {
+          "line": 192,
+          "pattern": "\"PASS\"\\s+if\\s+.+?\\s+else\\s+\"FAIL\"",
+          "content": "marker = \"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ]
+    },
+    {
+      "file": "regen_candidate_generation_input_gate.py",
+      "status": "REMAINING",
+      "compile_ok": true,
+      "has_LegacyCompatibilityProducer": false,
+      "has_status_severity": false,
+      "legacy_hit_count": 1,
+      "legacy_hits": [
+        {
+          "line": 168,
+          "pattern": "\"PASS\"\\s+if\\s+.+?\\s+else\\s+\"FAIL\"",
+          "content": "marker = \"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ]
+    },
+    {
+      "file": "regen_candidate_generation_registration_owner.py",
+      "status": "REMAINING",
+      "compile_ok": true,
+      "has_LegacyCompatibilityProducer": false,
+      "has_status_severity": false,
+      "legacy_hit_count": 1,
+      "legacy_hits": [
+        {
+          "line": 178,
+          "pattern": "\"PASS\"\\s+if\\s+.+?\\s+else\\s+\"FAIL\"",
+          "content": "marker = \"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ]
+    },
+    {
+      "file": "regen_candidate_generation_report_owner.py",
+      "status": "CLOSED",
+      "compile_ok": true,
+      "has_LegacyCompatibilityProducer": true,
+      "has_status_severity": true,
+      "legacy_hit_count": 0,
+      "legacy_hits": []
+    },
+    {
+      "file": "regen_candidate_generation_session_owner.py",
+      "status": "REMAINING",
+      "compile_ok": true,
+      "has_LegacyCompatibilityProducer": false,
+      "has_status_severity": false,
+      "legacy_hit_count": 1,
+      "legacy_hits": [
+        {
+          "line": 197,
+          "pattern": "\"PASS\"\\s+if\\s+.+?\\s+else\\s+\"FAIL\"",
+          "content": "marker = \"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ]
+    },
+    {
+      "file": "regen_candidate_mutation_completion_audit.py",
+      "status": "REMAINING",
+      "compile_ok": true,
+      "has_LegacyCompatibilityProducer": false,
+      "has_status_severity": false,
+      "legacy_hit_count": 1,
+      "legacy_hits": [
+        {
+          "line": 336,
+          "pattern": "\"PASS\"\\s+if\\s+.+?\\s+else\\s+\"FAIL\"",
+          "content": "label = \"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ]
+    },
+    {
+      "file": "regen_candidate_mutation_input_audit.py",
+      "status": "REMAINING",
+      "compile_ok": true,
+      "has_LegacyCompatibilityProducer": false,
+      "has_status_severity": false,
+      "legacy_hit_count": 1,
+      "legacy_hits": [
+        {
+          "line": 428,
+          "pattern": "\"PASS\"\\s+if\\s+.+?\\s+else\\s+\"FAIL\"",
+          "content": "label = \"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ]
+    },
+    {
+      "file": "regen_candidate_mutation_master_gate.py",
+      "status": "REMAINING",
+      "compile_ok": true,
+      "has_LegacyCompatibilityProducer": false,
+      "has_status_severity": false,
+      "legacy_hit_count": 1,
+      "legacy_hits": [
+        {
+          "line": 331,
+          "pattern": "\"PASS\"\\s+if\\s+.+?\\s+else\\s+\"FAIL\"",
+          "content": "label = \"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ]
+    },
+    {
+      "file": "regen_candidate_mutation_report_owner.py",
+      "status": "CLOSED",
+      "compile_ok": true,
+      "has_LegacyCompatibilityProducer": true,
+      "has_status_severity": true,
+      "legacy_hit_count": 0,
+      "legacy_hits": []
+    },
+    {
+      "file": "regen_candidate_population_completion_audit.py",
+      "status": "REMAINING",
+      "compile_ok": true,
+      "has_LegacyCompatibilityProducer": false,
+      "has_status_severity": false,
+      "legacy_hit_count": 1,
+      "legacy_hits": [
+        {
+          "line": 505,
+          "pattern": "\"PASS\"\\s+if\\s+.+?\\s+else\\s+\"FAIL\"",
+          "content": "label = \"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ]
+    },
+    {
+      "file": "regen_candidate_population_master_gate.py",
+      "status": "REMAINING",
+      "compile_ok": true,
+      "has_LegacyCompatibilityProducer": false,
+      "has_status_severity": false,
+      "legacy_hit_count": 1,
+      "legacy_hits": [
+        {
+          "line": 300,
+          "pattern": "\"PASS\"\\s+if\\s+.+?\\s+else\\s+\"FAIL\"",
+          "content": "label = \"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ]
+    },
+    {
+      "file": "regen_candidate_ranking_completion_audit.py",
+      "status": "REMAINING",
+      "compile_ok": true,
+      "has_LegacyCompatibilityProducer": false,
+      "has_status_severity": false,
+      "legacy_hit_count": 1,
+      "legacy_hits": [
+        {
+          "line": 337,
+          "pattern": "\"PASS\"\\s+if\\s+.+?\\s+else\\s+\"FAIL\"",
+          "content": "label = \"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ]
+    },
+    {
+      "file": "regen_candidate_ranking_input_audit.py",
+      "status": "REMAINING",
+      "compile_ok": true,
+      "has_LegacyCompatibilityProducer": false,
+      "has_status_severity": false,
+      "legacy_hit_count": 1,
+      "legacy_hits": [
+        {
+          "line": 407,
+          "pattern": "\"PASS\"\\s+if\\s+.+?\\s+else\\s+\"FAIL\"",
+          "content": "label = \"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ]
+    },
+    {
+      "file": "regen_candidate_ranking_master_gate.py",
+      "status": "REMAINING",
+      "compile_ok": true,
+      "has_LegacyCompatibilityProducer": false,
+      "has_status_severity": false,
+      "legacy_hit_count": 1,
+      "legacy_hits": [
+        {
+          "line": 604,
+          "pattern": "\"PASS\"\\s+if\\s+.+?\\s+else\\s+\"FAIL\"",
+          "content": "label = \"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ]
+    },
+    {
+      "file": "regen_completion_gate_validation_owner.py",
+      "status": "CLOSED",
+      "compile_ok": true,
+      "has_LegacyCompatibilityProducer": true,
+      "has_status_severity": true,
+      "legacy_hit_count": 0,
+      "legacy_hits": []
+    },
+    {
+      "file": "regen_evolution_loop_completion_audit.py",
+      "status": "REMAINING",
+      "compile_ok": true,
+      "has_LegacyCompatibilityProducer": false,
+      "has_status_severity": false,
+      "legacy_hit_count": 1,
+      "legacy_hits": [
+        {
+          "line": 332,
+          "pattern": "\"PASS\"\\s+if\\s+.+?\\s+else\\s+\"FAIL\"",
+          "content": "label = \"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ]
+    },
+    {
+      "file": "regen_evolution_loop_input_audit.py",
+      "status": "REMAINING",
+      "compile_ok": true,
+      "has_LegacyCompatibilityProducer": false,
+      "has_status_severity": false,
+      "legacy_hit_count": 1,
+      "legacy_hits": [
+        {
+          "line": 374,
+          "pattern": "\"PASS\"\\s+if\\s+.+?\\s+else\\s+\"FAIL\"",
+          "content": "label = \"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ]
+    },
+    {
+      "file": "regen_evolution_loop_master_gate.py",
+      "status": "REMAINING",
+      "compile_ok": true,
+      "has_LegacyCompatibilityProducer": false,
+      "has_status_severity": false,
+      "legacy_hit_count": 1,
+      "legacy_hits": [
+        {
+          "line": 328,
+          "pattern": "\"PASS\"\\s+if\\s+.+?\\s+else\\s+\"FAIL\"",
+          "content": "label = \"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ]
+    },
+    {
+      "file": "regen_geometry_constraint_owner.py",
+      "status": "CLOSED",
+      "compile_ok": true,
+      "has_LegacyCompatibilityProducer": true,
+      "has_status_severity": true,
+      "legacy_hit_count": 0,
+      "legacy_hits": []
+    },
+    {
+      "file": "regen_geometry_report_owner.py",
+      "status": "CLOSED",
+      "compile_ok": true,
+      "has_LegacyCompatibilityProducer": true,
+      "has_status_severity": true,
+      "legacy_hit_count": 0,
+      "legacy_hits": []
+    },
+    {
+      "file": "regen_optimisation_completion_audit.py",
+      "status": "REMAINING",
+      "compile_ok": true,
+      "has_LegacyCompatibilityProducer": false,
+      "has_status_severity": false,
+      "legacy_hit_count": 1,
+      "legacy_hits": [
+        {
+          "line": 151,
+          "pattern": "\"PASS\"\\s+if\\s+.+?\\s+else\\s+\"FAIL\"",
+          "content": "marker = \"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ]
+    },
+    {
+      "file": "regen_optimisation_registration_owner.py",
+      "status": "REMAINING",
+      "compile_ok": true,
+      "has_LegacyCompatibilityProducer": false,
+      "has_status_severity": false,
+      "legacy_hit_count": 1,
+      "legacy_hits": [
+        {
+          "line": 194,
+          "pattern": "\"PASS\"\\s+if\\s+.+?\\s+else\\s+\"FAIL\"",
+          "content": "marker = \"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ]
+    },
+    {
+      "file": "regen_optimisation_report_owner.py",
+      "status": "CLOSED",
+      "compile_ok": true,
+      "has_LegacyCompatibilityProducer": true,
+      "has_status_severity": true,
+      "legacy_hit_count": 0,
+      "legacy_hits": []
+    },
+    {
+      "file": "regen_optimisation_scoring_owner.py",
+      "status": "CLOSED",
+      "compile_ok": true,
+      "has_LegacyCompatibilityProducer": true,
+      "has_status_severity": true,
+      "legacy_hit_count": 0,
+      "legacy_hits": []
+    },
+    {
+      "file": "regen_optimisation_session_owner.py",
+      "status": "REMAINING",
+      "compile_ok": true,
+      "has_LegacyCompatibilityProducer": false,
+      "has_status_severity": false,
+      "legacy_hit_count": 1,
+      "legacy_hits": [
+        {
+          "line": 165,
+          "pattern": "\"PASS\"\\s+if\\s+.+?\\s+else\\s+\"FAIL\"",
+          "content": "marker = \"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ]
+    },
+    {
+      "file": "regen_runtime_execution_completion_audit.py",
+      "status": "REMAINING",
+      "compile_ok": true,
+      "has_LegacyCompatibilityProducer": false,
+      "has_status_severity": false,
+      "legacy_hit_count": 1,
+      "legacy_hits": [
+        {
+          "line": 191,
+          "pattern": "\"PASS\"\\s+if\\s+.+?\\s+else\\s+\"FAIL\"",
+          "content": "marker = \"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ]
+    },
+    {
+      "file": "regen_runtime_execution_input_gate.py",
+      "status": "REMAINING",
+      "compile_ok": true,
+      "has_LegacyCompatibilityProducer": false,
+      "has_status_severity": false,
+      "legacy_hit_count": 1,
+      "legacy_hits": [
+        {
+          "line": 175,
+          "pattern": "\"PASS\"\\s+if\\s+.+?\\s+else\\s+\"FAIL\"",
+          "content": "marker = \"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ]
+    },
+    {
+      "file": "regen_runtime_execution_registration_owner.py",
+      "status": "REMAINING",
+      "compile_ok": true,
+      "has_LegacyCompatibilityProducer": false,
+      "has_status_severity": false,
+      "legacy_hit_count": 1,
+      "legacy_hits": [
+        {
+          "line": 226,
+          "pattern": "\"PASS\"\\s+if\\s+.+?\\s+else\\s+\"FAIL\"",
+          "content": "marker = \"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ]
+    },
+    {
+      "file": "regen_runtime_execution_report_owner.py",
+      "status": "CLOSED",
+      "compile_ok": true,
+      "has_LegacyCompatibilityProducer": true,
+      "has_status_severity": true,
+      "legacy_hit_count": 0,
+      "legacy_hits": []
+    },
+    {
+      "file": "regen_runtime_execution_session_owner.py",
+      "status": "REMAINING",
+      "compile_ok": true,
+      "has_LegacyCompatibilityProducer": false,
+      "has_status_severity": false,
+      "legacy_hit_count": 1,
+      "legacy_hits": [
+        {
+          "line": 193,
+          "pattern": "\"PASS\"\\s+if\\s+.+?\\s+else\\s+\"FAIL\"",
+          "content": "marker = \"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ]
+    },
+    {
+      "file": "regen_runtime_optimisation_input_gate.py",
+      "status": "REMAINING",
+      "compile_ok": true,
+      "has_LegacyCompatibilityProducer": false,
+      "has_status_severity": false,
+      "legacy_hit_count": 1,
+      "legacy_hits": [
+        {
+          "line": 158,
+          "pattern": "\"PASS\"\\s+if\\s+.+?\\s+else\\s+\"FAIL\"",
+          "content": "marker = \"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ]
+    },
+    {
+      "file": "regen_runtime_optimisation_registration_owner.py",
+      "status": "REMAINING",
+      "compile_ok": true,
+      "has_LegacyCompatibilityProducer": false,
+      "has_status_severity": false,
+      "legacy_hit_count": 1,
+      "legacy_hits": [
+        {
+          "line": 223,
+          "pattern": "\"PASS\"\\s+if\\s+.+?\\s+else\\s+\"FAIL\"",
+          "content": "marker = \"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ]
+    },
+    {
+      "file": "regen_runtime_optimisation_report_owner.py",
+      "status": "CLOSED",
+      "compile_ok": true,
+      "has_LegacyCompatibilityProducer": true,
+      "has_status_severity": true,
+      "legacy_hit_count": 0,
+      "legacy_hits": []
+    },
+    {
+      "file": "regen_runtime_optimisation_session_owner.py",
+      "status": "REMAINING",
+      "compile_ok": true,
+      "has_LegacyCompatibilityProducer": false,
+      "has_status_severity": false,
+      "legacy_hit_count": 1,
+      "legacy_hits": [
+        {
+          "line": 175,
+          "pattern": "\"PASS\"\\s+if\\s+.+?\\s+else\\s+\"FAIL\"",
+          "content": "marker = \"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ]
+    },
+    {
+      "file": "regen_scalability_failure_owner.py",
+      "status": "REMAINING",
+      "compile_ok": true,
+      "has_LegacyCompatibilityProducer": false,
+      "has_status_severity": true,
+      "legacy_hit_count": 0,
+      "legacy_hits": []
+    },
+    {
+      "file": "regen_system_signoff_validation_owner.py",
+      "status": "CLOSED",
+      "compile_ok": true,
+      "has_LegacyCompatibilityProducer": true,
+      "has_status_severity": true,
+      "legacy_hit_count": 0,
+      "legacy_hits": []
+    },
+    {
+      "file": "regen_viewer_final_runtime_consistency_gate_phase_16q20.py",
+      "status": "REMAINING",
+      "compile_ok": true,
+      "has_LegacyCompatibilityProducer": false,
+      "has_status_severity": false,
+      "legacy_hit_count": 1,
+      "legacy_hits": [
+        {
+          "line": 125,
+          "pattern": "\"PASS\"\\s+if\\s+.+?\\s+else\\s+\"FAIL\"",
+          "content": "state = \"PASS\" if item[\"passed\"] else \"FAIL\""
+        }
+      ]
+    },
+    {
+      "file": "regen_viewer_gui_runtime_acceptance_gate_phase_16q28.py",
+      "status": "REMAINING",
+      "compile_ok": true,
+      "has_LegacyCompatibilityProducer": false,
+      "has_status_severity": false,
+      "legacy_hit_count": 1,
+      "legacy_hits": [
+        {
+          "line": 93,
+          "pattern": "\"PASS\"\\s+if\\s+.+?\\s+else\\s+\"FAIL\"",
+          "content": "state = \"PASS\" if item[\"passed\"] else \"FAIL\""
+        }
+      ]
+    },
+    {
+      "file": "regen_viewer_report_renderer.py",
+      "status": "REMAINING",
+      "compile_ok": true,
+      "has_LegacyCompatibilityProducer": false,
+      "has_status_severity": false,
+      "legacy_hit_count": 1,
+      "legacy_hits": [
+        {
+          "line": 179,
+          "pattern": "'PASS'\\s+if\\s+.+?\\s+else\\s+'FAIL'",
+          "content": "f\"{'PASS' if item.get('passed') else 'FAIL'}\""
+        }
+      ]
+    }
+  ],
+  "phase_evidence_count": 130,
+  "phase_evidence": [
+    {
+      "file": "approved_migration_wave_closure_gate_phase_16u73.json",
+      "phase": "16U.73",
+      "target": null,
+      "passed": null,
+      "complete_flags": [
+        "phase_16u73_approved_migration_wave_closure_gate_complete"
+      ]
+    },
+    {
+      "file": "approved_migration_wave_regression_phase_16u72.json",
+      "phase": "16U.72",
+      "target": null,
+      "passed": null,
+      "complete_flags": [
+        "phase_16u71_patch_complete",
+        "phase_16u72_approved_migration_wave_regression_complete"
+      ]
+    },
+    {
+      "file": "bond_coat_integration_owner_presentation_layer_closure_gate_phase_16u52.json",
+      "phase": "16U.52",
+      "target": "leaf_qt/bond_coat_integration_owner.py",
+      "passed": null,
+      "complete_flags": [
+        "phase_16u52_bond_coat_integration_owner_presentation_layer_closure_gate_complete"
+      ]
+    },
+    {
+      "file": "bond_coat_integration_owner_presentation_layer_patch_phase_16u50.json",
+      "phase": "16U.50",
+      "target": "leaf_qt/bond_coat_integration_owner.py",
+      "passed": null,
+      "complete_flags": [
+        "phase_16u50_bond_coat_integration_owner_presentation_layer_patch_complete"
+      ]
+    },
+    {
+      "file": "bond_coat_integration_owner_presentation_layer_regression_phase_16u51.json",
+      "phase": "16U.51",
+      "target": "leaf_qt/bond_coat_integration_owner.py",
+      "passed": null,
+      "complete_flags": [
+        "phase_16u51_bond_coat_integration_owner_presentation_layer_regression_complete"
+      ]
+    },
+    {
+      "file": "coating_temperature_limit_integration_owner_presentation_layer_closure_gate_phase_16u56.json",
+      "phase": "16U.56",
+      "target": "leaf_qt/coating_temperature_limit_integration_owner.py",
+      "passed": null,
+      "complete_flags": [
+        "phase_16u56_coating_temperature_limit_integration_owner_presentation_layer_closure_gate_complete"
+      ]
+    },
+    {
+      "file": "coating_temperature_limit_integration_owner_presentation_layer_patch_phase_16u54.json",
+      "phase": "16U.54",
+      "target": "leaf_qt/coating_temperature_limit_integration_owner.py",
+      "passed": null,
+      "complete_flags": [
+        "phase_16u54_coating_temperature_limit_integration_owner_presentation_layer_patch_complete"
+      ]
+    },
+    {
+      "file": "coating_temperature_limit_integration_owner_presentation_layer_regression_phase_16u55.json",
+      "phase": "16U.55",
+      "target": "leaf_qt/coating_temperature_limit_integration_owner.py",
+      "passed": null,
+      "complete_flags": [
+        "phase_16u55_coating_temperature_limit_integration_owner_presentation_layer_regression_complete"
+      ]
+    },
+    {
+      "file": "engine_solver_low_risk_status_wrapper_patch_phase_16u8.json",
+      "phase": "16U.8",
+      "target": null,
+      "passed": null,
+      "complete_flags": [
+        "phase_16u8_engine_solver_low_risk_status_wrapper_patch_complete"
+      ]
+    },
+    {
+      "file": "engine_solver_low_risk_status_wrapper_regression_phase_16u9.json",
+      "phase": "16U.9",
+      "target": null,
+      "passed": null,
+      "complete_flags": [
+        "phase_16u9_engine_solver_low_risk_status_wrapper_regression_complete"
+      ]
+    },
+    {
+      "file": "engine_solver_medium_risk_status_consumer_audit_phase_16u10.json",
+      "phase": "16U.10",
+      "target": null,
+      "passed": null,
+      "complete_flags": [
+        "phase_16u10_engine_solver_medium_risk_status_consumer_audit_complete"
+      ]
+    },
+    {
+      "file": "engine_solver_medium_risk_status_wrapper_patch_phase_16u11.json",
+      "phase": "16U.11",
+      "target": null,
+      "passed": null,
+      "complete_flags": [
+        "phase_16u11_engine_solver_medium_risk_status_wrapper_patch_complete"
+      ]
+    },
+    {
+      "file": "engine_solver_medium_risk_status_wrapper_regression_phase_16u12.json",
+      "phase": "16U.12",
+      "target": null,
+      "passed": null,
+      "complete_flags": [
+        "phase_16u12_engine_solver_medium_risk_status_wrapper_regression_complete"
+      ]
+    },
+    {
+      "file": "engine_solver_remaining_status_consumer_review_phase_16u13.json",
+      "phase": "16U.13",
+      "target": null,
+      "passed": null,
+      "complete_flags": [
+        "phase_16u13_engine_solver_remaining_status_consumer_review_complete"
+      ]
+    },
+    {
+      "file": "engine_solver_status_consumer_integration_audit_phase_16u6.json",
+      "phase": "16U.6",
+      "target": null,
+      "passed": null,
+      "complete_flags": [
+        "phase_16u6_engine_solver_status_consumer_integration_audit_complete"
+      ]
+    },
+    {
+      "file": "engine_solver_status_patch_planner_phase_16u7.json",
+      "phase": "16U.7",
+      "target": null,
+      "passed": null,
+      "complete_flags": [
+        "phase_16u7_engine_solver_status_patch_planner_complete"
+      ]
+    },
+    {
+      "file": "global_remaining_candidate_audit_phase_16u69.json",
+      "phase": "16U.69",
+      "target": null,
+      "passed": null,
+      "complete_flags": [
+        "phase_16u69_global_remaining_candidate_audit_complete"
+      ]
+    },
+    {
+      "file": "grouped_low_risk_owner_batch_closure_gate_phase_16u64.json",
+      "phase": "16U.64",
+      "target": null,
+      "passed": null,
+      "complete_flags": [
+        "phase_16u64_grouped_low_risk_owner_batch_closure_gate_complete"
+      ]
+    },
+    {
+      "file": "grouped_low_risk_owner_batch_patch_phase_16u62.json",
+      "phase": "16U.62",
+      "target": null,
+      "passed": null,
+      "complete_flags": [
+        "phase_16u62_grouped_low_risk_owner_batch_patch_complete"
+      ]
+    },
+    {
+      "file": "grouped_low_risk_owner_batch_patch_phase_16u71.json",
+      "phase": "16U.71",
+      "target": null,
+      "passed": null,
+      "complete_flags": [
+        "phase_16u71_grouped_low_risk_owner_batch_patch_complete"
+      ]
+    },
+    {
+      "file": "grouped_low_risk_owner_batch_regression_phase_16u63.json",
+      "phase": "16U.63",
+      "target": null,
+      "passed": null,
+      "complete_flags": [
+        "phase_16u62_patch_complete",
+        "phase_16u63_grouped_low_risk_owner_batch_regression_complete"
+      ]
+    },
+    {
+      "file": "grouped_low_risk_owner_migration_framework_phase_16u61.json",
+      "phase": "16U.61",
+      "target": null,
+      "passed": null,
+      "complete_flags": [
+        "phase_16u61_grouped_low_risk_owner_migration_framework_complete"
+      ]
+    },
+    {
+      "file": "grouped_low_risk_owner_migration_framework_phase_16u65.json",
+      "phase": "16U.65",
+      "target": null,
+      "passed": null,
+      "complete_flags": [
+        "phase_16u65_grouped_low_risk_owner_migration_framework_complete"
+      ]
+    },
+    {
+      "file": "material_strength_limit_integration_owner_presentation_layer_closure_gate_phase_16u60.json",
+      "phase": "16U.60",
+      "target": "leaf_qt/material_strength_limit_integration_owner.py",
+      "passed": null,
+      "complete_flags": [
+        "phase_16u60_material_strength_limit_integration_owner_presentation_layer_closure_gate_complete"
+      ]
+    },
+    {
+      "file": "material_strength_limit_integration_owner_presentation_layer_patch_phase_16u58.json",
+      "phase": "16U.58",
+      "target": "leaf_qt/material_strength_limit_integration_owner.py",
+      "passed": null,
+      "complete_flags": [
+        "phase_16u58_material_strength_limit_integration_owner_presentation_layer_patch_complete"
+      ]
+    },
+    {
+      "file": "material_strength_limit_integration_owner_presentation_layer_regression_phase_16u59.json",
+      "phase": "16U.59",
+      "target": "leaf_qt/material_strength_limit_integration_owner.py",
+      "passed": null,
+      "complete_flags": [
+        "phase_16u59_material_strength_limit_integration_owner_presentation_layer_regression_complete"
+      ]
+    },
+    {
+      "file": "material_temperature_limit_integration_owner_presentation_layer_closure_gate_phase_16u68.json",
+      "phase": "16U.68",
+      "target": "leaf_qt/material_temperature_limit_integration_owner.py",
+      "passed": null,
+      "complete_flags": [
+        "phase_16u68_material_temperature_limit_integration_owner_presentation_layer_closure_gate_complete"
+      ]
+    },
+    {
+      "file": "material_temperature_limit_integration_owner_presentation_layer_patch_phase_16u66.json",
+      "phase": "16U.66",
+      "target": "leaf_qt/material_temperature_limit_integration_owner.py",
+      "passed": null,
+      "complete_flags": [
+        "phase_16u66_material_temperature_limit_integration_owner_presentation_layer_patch_complete"
+      ]
+    },
+    {
+      "file": "material_temperature_limit_integration_owner_presentation_layer_regression_phase_16u67.json",
+      "phase": "16U.67",
+      "target": "leaf_qt/material_temperature_limit_integration_owner.py",
+      "passed": null,
+      "complete_flags": [
+        "phase_16u67_material_temperature_limit_integration_owner_presentation_layer_regression_complete"
+      ]
+    },
+    {
+      "file": "next_migration_wave_decision_phase_16u70.json",
+      "phase": "16U.70",
+      "target": null,
+      "passed": null,
+      "complete_flags": [
+        "phase_16u70_next_migration_wave_decision_complete"
+      ]
+    },
+    {
+      "file": "next_report_owner_rollout_candidate_audit_phase_16u41.json",
+      "phase": "16U.41",
+      "target": null,
+      "passed": null,
+      "complete_flags": [
+        "phase_16u41_next_report_owner_rollout_candidate_audit_complete"
+      ]
+    },
+    {
+      "file": "next_report_owner_rollout_candidate_audit_phase_16u45.json",
+      "phase": "16U.45",
+      "target": null,
+      "passed": null,
+      "complete_flags": [
+        "phase_16u45_next_report_owner_rollout_candidate_audit_complete"
+      ]
+    },
+    {
+      "file": "next_report_owner_rollout_candidate_audit_phase_16u49.json",
+      "phase": "16U.49",
+      "target": null,
+      "passed": null,
+      "complete_flags": [
+        "phase_16u49_next_report_owner_rollout_candidate_audit_complete"
+      ]
+    },
+    {
+      "file": "next_report_owner_rollout_candidate_audit_phase_16u53.json",
+      "phase": "16U.53",
+      "target": null,
+      "passed": null,
+      "complete_flags": [
+        "phase_16u53_next_report_owner_rollout_candidate_audit_complete"
+      ]
+    },
+    {
+      "file": "next_report_owner_rollout_candidate_audit_phase_16u57.json",
+      "phase": "16U.57",
+      "target": null,
+      "passed": null,
+      "complete_flags": [
+        "phase_16u57_next_report_owner_rollout_candidate_audit_complete"
+      ]
+    },
+    {
+      "file": "phase_16u125_migration_roadmap_ledger.json",
+      "phase": "16U.125",
+      "target": null,
+      "passed": true,
+      "complete_flags": [
+        "phase_16u125_migration_roadmap_ledger_complete"
+      ]
+    },
+    {
+      "file": "phase_16u125b_corrected_migration_roadmap_ledger.json",
+      "phase": "16U.125B",
+      "target": null,
+      "passed": true,
+      "complete_flags": [
+        "phase_16u125b_corrected_migration_roadmap_ledger_complete"
+      ]
+    },
+    {
+      "file": "phase_16u126b_locked_migration_scope_baseline.json",
+      "phase": "16U.126B",
+      "target": null,
+      "passed": true,
+      "complete_flags": [
+        "phase_16u126b_locked_migration_scope_baseline_complete"
+      ]
+    },
+    {
+      "file": "real_engine_benchmark_failure_owner_presentation_layer_closure_gate_phase_16u48.json",
+      "phase": "16U.48",
+      "target": "leaf_qt/real_engine_benchmark_failure_owner.py",
+      "passed": null,
+      "complete_flags": [
+        "phase_16u48_real_engine_benchmark_failure_owner_presentation_layer_closure_gate_complete"
+      ]
+    },
+    {
+      "file": "real_engine_benchmark_failure_owner_presentation_layer_patch_phase_16u46.json",
+      "phase": "16U.46",
+      "target": "leaf_qt/real_engine_benchmark_failure_owner.py",
+      "passed": null,
+      "complete_flags": [
+        "phase_16u46_real_engine_benchmark_failure_owner_presentation_layer_patch_complete"
+      ]
+    },
+    {
+      "file": "real_engine_benchmark_failure_owner_presentation_layer_regression_phase_16u47.json",
+      "phase": "16U.47",
+      "target": "leaf_qt/real_engine_benchmark_failure_owner.py",
+      "passed": null,
+      "complete_flags": [
+        "phase_16u47_real_engine_benchmark_failure_owner_presentation_layer_regression_complete"
+      ]
+    },
+    {
+      "file": "regen_acceptance_audit_closure_gate_phase_16u118.json",
+      "phase": "16U.118",
+      "target": "leaf_qt/regen_acceptance_audit.py",
+      "passed": true,
+      "complete_flags": [
+        "phase_16u118_regen_acceptance_audit_closure_gate_complete"
+      ]
+    },
+    {
+      "file": "regen_acceptance_audit_presentation_layer_patch_phase_16u116.json",
+      "phase": "16U.116",
+      "target": "leaf_qt/regen_acceptance_audit.py",
+      "passed": true,
+      "complete_flags": [
+        "phase_16u116_regen_acceptance_audit_presentation_layer_patch_complete"
+      ]
+    },
+    {
+      "file": "regen_acceptance_audit_regression_phase_16u117.json",
+      "phase": "16U.117",
+      "target": "leaf_qt/regen_acceptance_audit.py",
+      "passed": true,
+      "complete_flags": [
+        "phase_16u117_regen_acceptance_audit_regression_complete"
+      ]
+    },
+    {
+      "file": "regen_acceptance_criteria_owner_closure_gate_phase_16u123.json",
+      "phase": "16U.123",
+      "target": "leaf_qt/regen_acceptance_criteria_owner.py",
+      "passed": true,
+      "complete_flags": [
+        "phase_16u123_regen_acceptance_criteria_owner_closure_gate_complete"
+      ]
+    },
+    {
+      "file": "regen_acceptance_criteria_owner_presentation_layer_patch_phase_16u121.json",
+      "phase": "16U.121",
+      "target": "leaf_qt/regen_acceptance_criteria_owner.py",
+      "passed": true,
+      "complete_flags": [
+        "phase_16u121_regen_acceptance_criteria_owner_presentation_layer_patch_complete"
+      ]
+    },
+    {
+      "file": "regen_acceptance_criteria_owner_regression_phase_16u122.json",
+      "phase": "16U.122",
+      "target": "leaf_qt/regen_acceptance_criteria_owner.py",
+      "passed": true,
+      "complete_flags": [
+        "phase_16u122_regen_acceptance_criteria_owner_regression_complete"
+      ]
+    },
+    {
+      "file": "regen_candidate_blueprint_population_validation_owner_presentation_layer_closure_gate_phase_16u93.json",
+      "phase": "16U.93",
+      "target": "leaf_qt/regen_candidate_blueprint_population_validation_owner.py",
+      "passed": null,
+      "complete_flags": [
+        "phase_16u93_regen_candidate_blueprint_population_validation_owner_presentation_layer_closure_gate_complete"
+      ]
+    },
+    {
+      "file": "regen_candidate_blueprint_population_validation_owner_presentation_layer_patch_phase_16u91.json",
+      "phase": "16U.91",
+      "target": "leaf_qt/regen_candidate_blueprint_population_validation_owner.py",
+      "passed": null,
+      "complete_flags": [
+        "phase_16u91_regen_candidate_blueprint_population_validation_owner_presentation_layer_patch_complete"
+      ]
+    },
+    {
+      "file": "regen_candidate_blueprint_population_validation_owner_presentation_layer_regression_phase_16u92.json",
+      "phase": "16U.92",
+      "target": "leaf_qt/regen_candidate_blueprint_population_validation_owner.py",
+      "passed": null,
+      "complete_flags": [
+        "phase_16u92_regen_candidate_blueprint_population_validation_owner_presentation_layer_regression_complete"
+      ]
+    },
+    {
+      "file": "regen_candidate_creation_report_owner_presentation_layer_closure_gate_phase_16u98.json",
+      "phase": "16U.98",
+      "target": "leaf_qt/regen_candidate_creation_report_owner.py",
+      "passed": null,
+      "complete_flags": [
+        "phase_16u98_regen_candidate_creation_report_owner_presentation_layer_closure_gate_complete"
+      ]
+    },
+    {
+      "file": "regen_candidate_creation_report_owner_presentation_layer_patch_phase_16u96.json",
+      "phase": "16U.96",
+      "target": "leaf_qt/regen_candidate_creation_report_owner.py",
+      "passed": null,
+      "complete_flags": [
+        "phase_16u96_regen_candidate_creation_report_owner_presentation_layer_patch_complete"
+      ]
+    },
+    {
+      "file": "regen_candidate_creation_report_owner_presentation_layer_regression_phase_16u97.json",
+      "phase": "16U.97",
+      "target": "leaf_qt/regen_candidate_creation_report_owner.py",
+      "passed": null,
+      "complete_flags": [
+        "phase_16u97_regen_candidate_creation_report_owner_presentation_layer_regression_complete"
+      ]
+    },
+    {
+      "file": "regen_candidate_generation_report_owner_presentation_layer_closure_gate_phase_16u103.json",
+      "phase": "16U.103",
+      "target": "leaf_qt/regen_candidate_generation_report_owner.py",
+      "passed": null,
+      "complete_flags": [
+        "phase_16u103_regen_candidate_generation_report_owner_presentation_layer_closure_gate_complete"
+      ]
+    },
+    {
+      "file": "regen_candidate_generation_report_owner_presentation_layer_patch_phase_16u101.json",
+      "phase": "16U.101",
+      "target": "leaf_qt/regen_candidate_generation_report_owner.py",
+      "passed": null,
+      "complete_flags": [
+        "phase_16u101_regen_candidate_generation_report_owner_presentation_layer_patch_complete"
+      ]
+    },
+    {
+      "file": "regen_candidate_generation_report_owner_presentation_layer_regression_phase_16u102.json",
+      "phase": "16U.102",
+      "target": "leaf_qt/regen_candidate_generation_report_owner.py",
+      "passed": null,
+      "complete_flags": [
+        "phase_16u102_regen_candidate_generation_report_owner_presentation_layer_regression_complete"
+      ]
+    },
+    {
+      "file": "regen_candidate_mutation_report_owner_presentation_layer_closure_gate_phase_16u108.json",
+      "phase": "16U.108",
+      "target": "leaf_qt/regen_candidate_mutation_report_owner.py",
+      "passed": null,
+      "complete_flags": [
+        "phase_16u108_regen_candidate_mutation_report_owner_presentation_layer_closure_gate_complete"
+      ]
+    },
+    {
+      "file": "regen_candidate_mutation_report_owner_presentation_layer_patch_phase_16u106.json",
+      "phase": "16U.106",
+      "target": "leaf_qt/regen_candidate_mutation_report_owner.py",
+      "passed": null,
+      "complete_flags": [
+        "phase_16u106_regen_candidate_mutation_report_owner_presentation_layer_patch_complete"
+      ]
+    },
+    {
+      "file": "regen_candidate_mutation_report_owner_presentation_layer_regression_phase_16u107.json",
+      "phase": "16U.107",
+      "target": "leaf_qt/regen_candidate_mutation_report_owner.py",
+      "passed": null,
+      "complete_flags": [
+        "phase_16u107_regen_candidate_mutation_report_owner_presentation_layer_regression_complete"
+      ]
+    },
+    {
+      "file": "regen_cross_section_viewer_presentation_layer_closure_gate_phase_16u40.json",
+      "phase": "16U.40",
+      "target": "leaf_qt/regen_cross_section_viewer.py",
+      "passed": null,
+      "complete_flags": [
+        "phase_16u40_regen_cross_section_viewer_presentation_layer_closure_gate_complete"
+      ]
+    },
+    {
+      "file": "regen_cross_section_viewer_presentation_layer_patch_phase_16u38.json",
+      "phase": "16U.38",
+      "target": "leaf_qt/regen_cross_section_viewer.py",
+      "passed": null,
+      "complete_flags": [
+        "phase_16u38_regen_cross_section_viewer_presentation_layer_patch_complete"
+      ]
+    },
+    {
+      "file": "regen_cross_section_viewer_presentation_layer_regression_phase_16u39.json",
+      "phase": "16U.39",
+      "target": "leaf_qt/regen_cross_section_viewer.py",
+      "passed": null,
+      "complete_flags": [
+        "phase_16u39_regen_cross_section_viewer_presentation_layer_regression_complete"
+      ]
+    },
+    {
+      "file": "regen_geometry_constraint_owner_closure_gate_phase_16u129.json",
+      "phase": "16U.129",
+      "target": "leaf_qt/regen_geometry_constraint_owner.py",
+      "passed": true,
+      "complete_flags": [
+        "phase_16u129_regen_geometry_constraint_owner_closure_gate_complete"
+      ]
+    },
+    {
+      "file": "regen_geometry_constraint_owner_presentation_layer_patch_phase_16u127.json",
+      "phase": "16U.127",
+      "target": "leaf_qt/regen_geometry_constraint_owner.py",
+      "passed": true,
+      "complete_flags": [
+        "phase_16u127_regen_geometry_constraint_owner_presentation_layer_patch_complete"
+      ]
+    },
+    {
+      "file": "regen_geometry_constraint_owner_regression_phase_16u128.json",
+      "phase": "16U.128",
+      "target": "leaf_qt/regen_geometry_constraint_owner.py",
+      "passed": true,
+      "complete_flags": [
+        "phase_16u128_regen_geometry_constraint_owner_regression_complete"
+      ]
+    },
+    {
+      "file": "regen_geometry_report_owner_presentation_layer_closure_gate_phase_16u88.json",
+      "phase": "16U.88",
+      "target": "leaf_qt/regen_geometry_report_owner.py",
+      "passed": null,
+      "complete_flags": [
+        "phase_16u88_regen_geometry_report_owner_presentation_layer_closure_gate_complete"
+      ]
+    },
+    {
+      "file": "regen_geometry_report_owner_presentation_layer_patch_phase_16u86.json",
+      "phase": "16U.86",
+      "target": "leaf_qt/regen_geometry_report_owner.py",
+      "passed": null,
+      "complete_flags": [
+        "phase_16u86_regen_geometry_report_owner_presentation_layer_patch_complete"
+      ]
+    },
+    {
+      "file": "regen_geometry_report_owner_presentation_layer_regression_phase_16u87.json",
+      "phase": "16U.87",
+      "target": "leaf_qt/regen_geometry_report_owner.py",
+      "passed": null,
+      "complete_flags": [
+        "phase_16u87_regen_geometry_report_owner_presentation_layer_regression_complete"
+      ]
+    },
+    {
+      "file": "regen_optimisation_report_owner_presentation_layer_closure_gate_phase_16u78.json",
+      "phase": "16U.78",
+      "target": "leaf_qt/regen_optimisation_report_owner.py",
+      "passed": null,
+      "complete_flags": [
+        "phase_16u78_regen_optimisation_report_owner_presentation_layer_closure_gate_complete"
+      ]
+    },
+    {
+      "file": "regen_optimisation_report_owner_presentation_layer_patch_phase_16u76.json",
+      "phase": "16U.76",
+      "target": "leaf_qt/regen_optimisation_report_owner.py",
+      "passed": null,
+      "complete_flags": [
+        "phase_16u76_regen_optimisation_report_owner_presentation_layer_patch_complete"
+      ]
+    },
+    {
+      "file": "regen_optimisation_report_owner_presentation_layer_regression_phase_16u77.json",
+      "phase": "16U.77",
+      "target": "leaf_qt/regen_optimisation_report_owner.py",
+      "passed": null,
+      "complete_flags": [
+        "phase_16u77_regen_optimisation_report_owner_presentation_layer_regression_complete"
+      ]
+    },
+    {
+      "file": "regen_runtime_execution_report_owner_closure_gate_phase_16u113.json",
+      "phase": "16U.113",
+      "target": "leaf_qt/regen_runtime_execution_report_owner.py",
+      "passed": true,
+      "complete_flags": [
+        "phase_16u113_regen_runtime_execution_report_owner_closure_gate_complete"
+      ]
+    },
+    {
+      "file": "regen_runtime_execution_report_owner_presentation_layer_patch_phase_16u111.json",
+      "phase": "16U.111",
+      "target": "leaf_qt/regen_runtime_execution_report_owner.py",
+      "passed": null,
+      "complete_flags": [
+        "phase_16u111_regen_runtime_execution_report_owner_presentation_layer_patch_complete"
+      ]
+    },
+    {
+      "file": "regen_runtime_execution_report_owner_regression_phase_16u112.json",
+      "phase": "16U.112",
+      "target": "leaf_qt/regen_runtime_execution_report_owner.py",
+      "passed": true,
+      "complete_flags": [
+        "phase_16u112_regen_runtime_execution_report_owner_regression_complete"
+      ]
+    },
+    {
+      "file": "regen_runtime_optimisation_report_owner_presentation_layer_closure_gate_phase_16u83.json",
+      "phase": "16U.83",
+      "target": "leaf_qt/regen_runtime_optimisation_report_owner.py",
+      "passed": null,
+      "complete_flags": [
+        "phase_16u83_regen_runtime_optimisation_report_owner_presentation_layer_closure_gate_complete"
+      ]
+    },
+    {
+      "file": "regen_runtime_optimisation_report_owner_presentation_layer_patch_phase_16u81.json",
+      "phase": "16U.81",
+      "target": "leaf_qt/regen_runtime_optimisation_report_owner.py",
+      "passed": null,
+      "complete_flags": [
+        "phase_16u81_regen_runtime_optimisation_report_owner_presentation_layer_patch_complete"
+      ]
+    },
+    {
+      "file": "regen_runtime_optimisation_report_owner_presentation_layer_regression_phase_16u82.json",
+      "phase": "16U.82",
+      "target": "leaf_qt/regen_runtime_optimisation_report_owner.py",
+      "passed": null,
+      "complete_flags": [
+        "phase_16u82_regen_runtime_optimisation_report_owner_presentation_layer_regression_complete"
+      ]
+    },
+    {
+      "file": "regen_scalability_failure_owner_presentation_layer_closure_gate_phase_16u44.json",
+      "phase": "16U.44",
+      "target": "leaf_qt/regen_scalability_failure_owner.py",
+      "passed": null,
+      "complete_flags": [
+        "phase_16u44_regen_scalability_failure_owner_presentation_layer_closure_gate_complete"
+      ]
+    },
+    {
+      "file": "regen_scalability_failure_owner_presentation_layer_patch_phase_16u42.json",
+      "phase": "16U.42",
+      "target": "leaf_qt/regen_scalability_failure_owner.py",
+      "passed": null,
+      "complete_flags": [
+        "phase_16u42_regen_scalability_failure_owner_presentation_layer_patch_complete"
+      ]
+    },
+    {
+      "file": "regen_scalability_failure_owner_presentation_layer_regression_phase_16u43.json",
+      "phase": "16U.43",
+      "target": "leaf_qt/regen_scalability_failure_owner.py",
+      "passed": null,
+      "complete_flags": [
+        "phase_16u43_regen_scalability_failure_owner_presentation_layer_regression_complete"
+      ]
+    },
+    {
+      "file": "report_owner_presentation_layer_pilot_closure_gate_phase_16u36.json",
+      "phase": "16U.36",
+      "target": null,
+      "passed": null,
+      "complete_flags": [
+        "phase_16u36_report_owner_presentation_layer_pilot_closure_gate_complete"
+      ]
+    },
+    {
+      "file": "report_owner_presentation_layer_pilot_phase_16u34.json",
+      "phase": "16U.34",
+      "target": null,
+      "passed": null,
+      "complete_flags": [
+        "phase_16u34_report_owner_presentation_layer_pilot_integration_complete"
+      ]
+    },
+    {
+      "file": "report_owner_presentation_layer_pilot_regression_phase_16u35.json",
+      "phase": "16U.35",
+      "target": null,
+      "passed": null,
+      "complete_flags": [
+        "phase_16u35_report_owner_presentation_layer_pilot_regression_complete"
+      ]
+    },
+    {
+      "file": "report_owner_presentation_layer_rollout_audit_phase_16u37.json",
+      "phase": "16U.37",
+      "target": null,
+      "passed": null,
+      "complete_flags": [
+        "phase_16u37_report_owner_presentation_layer_rollout_audit_complete"
+      ]
+    },
+    {
+      "file": "report_status_semantics_classification_phase_16u31.json",
+      "phase": "16U.31",
+      "target": null,
+      "passed": null,
+      "complete_flags": [
+        "phase_16u31_report_status_semantics_classification_complete"
+      ]
+    },
+    {
+      "file": "single_file_decision_phase_16u115.json",
+      "phase": "16U.115",
+      "target": "leaf_qt/regen_acceptance_audit.py",
+      "passed": true,
+      "complete_flags": [
+        "phase_16u115_single_file_decision_complete"
+      ]
+    },
+    {
+      "file": "single_file_decision_phase_16u120.json",
+      "phase": "16U.120",
+      "target": "leaf_qt/regen_acceptance_criteria_owner.py",
+      "passed": true,
+      "complete_flags": [
+        "phase_16u120_single_file_decision_complete"
+      ]
+    },
+    {
+      "file": "single_file_decision_phase_16u126.json",
+      "phase": "16U.126",
+      "target": "leaf_qt/regen_geometry_constraint_owner.py",
+      "passed": true,
+      "complete_flags": [
+        "phase_16u126_single_file_decision_complete"
+      ]
+    },
+    {
+      "file": "single_file_migration_decision_phase_16u100.json",
+      "phase": "16U.100",
+      "target": null,
+      "passed": null,
+      "complete_flags": [
+        "phase_16u100_single_file_migration_decision_complete"
+      ]
+    },
+    {
+      "file": "single_file_migration_decision_phase_16u105.json",
+      "phase": "16U.105",
+      "target": null,
+      "passed": null,
+      "complete_flags": [
+        "phase_16u105_single_file_migration_decision_complete"
+      ]
+    },
+    {
+      "file": "single_file_migration_decision_phase_16u110.json",
+      "phase": "16U.110",
+      "target": null,
+      "passed": null,
+      "complete_flags": [
+        "phase_16u110_single_file_migration_decision_complete"
+      ]
+    },
+    {
+      "file": "single_file_migration_decision_phase_16u75.json",
+      "phase": "16U.75",
+      "target": null,
+      "passed": null,
+      "complete_flags": [
+        "phase_16u75_single_file_migration_decision_complete"
+      ]
+    },
+    {
+      "file": "single_file_migration_decision_phase_16u80.json",
+      "phase": "16U.80",
+      "target": null,
+      "passed": null,
+      "complete_flags": [
+        "phase_16u80_single_file_migration_decision_complete"
+      ]
+    },
+    {
+      "file": "single_file_migration_decision_phase_16u85.json",
+      "phase": "16U.85",
+      "target": null,
+      "passed": null,
+      "complete_flags": [
+        "phase_16u85_single_file_migration_decision_complete"
+      ]
+    },
+    {
+      "file": "single_file_migration_decision_phase_16u90.json",
+      "phase": "16U.90",
+      "target": null,
+      "passed": null,
+      "complete_flags": [
+        "phase_16u90_single_file_migration_decision_complete"
+      ]
+    },
+    {
+      "file": "single_file_migration_decision_phase_16u95.json",
+      "phase": "16U.95",
+      "target": null,
+      "passed": null,
+      "complete_flags": [
+        "phase_16u95_single_file_migration_decision_complete"
+      ]
+    },
+    {
+      "file": "status_presentation_completion_phase_16u32.json",
+      "phase": "16U.32",
+      "target": null,
+      "passed": null,
+      "complete_flags": [
+        "phase_16u32_shared_status_presentation_layer_complete"
+      ]
+    },
+    {
+      "file": "status_presentation_regression_phase_16u33.json",
+      "phase": "16U.33",
+      "target": null,
+      "passed": null,
+      "complete_flags": [
+        "phase_16u33_status_presentation_layer_regression_complete"
+      ]
+    },
+    {
+      "file": "structured_status_consumer_classification_phase_16u2.json",
+      "phase": "16U.2",
+      "target": null,
+      "passed": null,
+      "complete_flags": [
+        "phase_16u2_structured_status_consumer_classification_complete"
+      ]
+    },
+    {
+      "file": "structured_status_consumer_discovery_phase_16u1.json",
+      "phase": "16U.1",
+      "target": null,
+      "passed": null,
+      "complete_flags": [
+        "phase_16u1_structured_status_consumer_discovery_complete"
+      ]
+    },
+    {
+      "file": "structured_status_migration_roadmap_phase_16u3.json",
+      "phase": "16U.3",
+      "target": null,
+      "passed": null,
+      "complete_flags": [
+        "phase_16u3_structured_status_migration_roadmap_complete"
+      ]
+    },
+    {
+      "file": "updated_global_remaining_candidate_audit_phase_16u104.json",
+      "phase": "16U.104",
+      "target": null,
+      "passed": null,
+      "complete_flags": [
+        "phase_16u104_updated_global_remaining_candidate_audit_complete"
+      ]
+    },
+    {
+      "file": "updated_global_remaining_candidate_audit_phase_16u109.json",
+      "phase": "16U.109",
+      "target": null,
+      "passed": null,
+      "complete_flags": [
+        "phase_16u109_updated_global_remaining_candidate_audit_complete"
+      ]
+    },
+    {
+      "file": "updated_global_remaining_candidate_audit_phase_16u114.json",
+      "phase": "16U.114",
+      "target": null,
+      "passed": true,
+      "complete_flags": [
+        "phase_16u114_updated_global_remaining_candidate_audit_complete"
+      ]
+    },
+    {
+      "file": "updated_global_remaining_candidate_audit_phase_16u119.json",
+      "phase": "16U.119",
+      "target": null,
+      "passed": true,
+      "complete_flags": [
+        "phase_16u119_updated_global_remaining_candidate_audit_complete"
+      ]
+    },
+    {
+      "file": "updated_global_remaining_candidate_audit_phase_16u124.json",
+      "phase": "16U.124",
+      "target": null,
+      "passed": true,
+      "complete_flags": [
+        "phase_16u124_updated_global_remaining_candidate_audit_complete"
+      ]
+    },
+    {
+      "file": "updated_global_remaining_candidate_audit_phase_16u130.json",
+      "phase": "16U.130",
+      "target": null,
+      "passed": true,
+      "complete_flags": [
+        "phase_16u130_updated_global_remaining_candidate_audit_complete"
+      ]
+    },
+    {
+      "file": "updated_global_remaining_candidate_audit_phase_16u74.json",
+      "phase": "16U.74",
+      "target": null,
+      "passed": null,
+      "complete_flags": [
+        "phase_16u74_updated_global_remaining_candidate_audit_complete"
+      ]
+    },
+    {
+      "file": "updated_global_remaining_candidate_audit_phase_16u79.json",
+      "phase": "16U.79",
+      "target": null,
+      "passed": null,
+      "complete_flags": [
+        "phase_16u79_updated_global_remaining_candidate_audit_complete"
+      ]
+    },
+    {
+      "file": "updated_global_remaining_candidate_audit_phase_16u84.json",
+      "phase": "16U.84",
+      "target": null,
+      "passed": null,
+      "complete_flags": [
+        "phase_16u84_updated_global_remaining_candidate_audit_complete"
+      ]
+    },
+    {
+      "file": "updated_global_remaining_candidate_audit_phase_16u89.json",
+      "phase": "16U.89",
+      "target": null,
+      "passed": null,
+      "complete_flags": [
+        "phase_16u89_updated_global_remaining_candidate_audit_complete"
+      ]
+    },
+    {
+      "file": "updated_global_remaining_candidate_audit_phase_16u94.json",
+      "phase": "16U.94",
+      "target": null,
+      "passed": null,
+      "complete_flags": [
+        "phase_16u94_updated_global_remaining_candidate_audit_complete"
+      ]
+    },
+    {
+      "file": "updated_global_remaining_candidate_audit_phase_16u99.json",
+      "phase": "16U.99",
+      "target": null,
+      "passed": null,
+      "complete_flags": [
+        "phase_16u99_updated_global_remaining_candidate_audit_complete"
+      ]
+    },
+    {
+      "file": "wave_a_engine_solver_status_migration_closure_gate_phase_16u14.json",
+      "phase": "16U.14",
+      "target": null,
+      "passed": null,
+      "complete_flags": [
+        "phase_16u14_wave_a_engine_solver_status_migration_closure_gate_complete"
+      ]
+    },
+    {
+      "file": "wave_b_validation_owner_low_risk_status_wrapper_patch_phase_16u16.json",
+      "phase": "16U.16",
+      "target": null,
+      "passed": null,
+      "complete_flags": [
+        "phase_16u16_wave_b_validation_owner_low_risk_status_wrapper_patch_complete"
+      ]
+    },
+    {
+      "file": "wave_b_validation_owner_low_risk_status_wrapper_regression_phase_16u17.json",
+      "phase": "16U.17",
+      "target": null,
+      "passed": null,
+      "complete_flags": [
+        "phase_16u17_wave_b_validation_owner_low_risk_status_wrapper_regression_complete"
+      ]
+    },
+    {
+      "file": "wave_b_validation_owner_remaining_consumer_review_phase_16u18.json",
+      "phase": "16U.18",
+      "target": null,
+      "passed": null,
+      "complete_flags": [
+        "phase_16u18_wave_b_validation_owner_remaining_consumer_review_complete"
+      ]
+    },
+    {
+      "file": "wave_b_validation_owner_status_consumer_audit_phase_16u15.json",
+      "phase": "16U.15",
+      "target": null,
+      "passed": null,
+      "complete_flags": [
+        "phase_16u15_wave_b_validation_owner_status_consumer_audit_complete"
+      ]
+    },
+    {
+      "file": "wave_b_validation_owner_status_migration_closure_gate_phase_16u19.json",
+      "phase": "16U.19",
+      "target": null,
+      "passed": null,
+      "complete_flags": [
+        "phase_16u19_wave_b_validation_owner_status_migration_closure_gate_complete"
+      ]
+    },
+    {
+      "file": "wave_c_master_gate_low_risk_status_wrapper_patch_phase_16u21.json",
+      "phase": "16U.21",
+      "target": null,
+      "passed": null,
+      "complete_flags": [
+        "phase_16u21_wave_c_master_gate_low_risk_status_wrapper_patch_complete"
+      ]
+    },
+    {
+      "file": "wave_c_master_gate_low_risk_status_wrapper_regression_phase_16u22.json",
+      "phase": "16U.22",
+      "target": null,
+      "passed": null,
+      "complete_flags": [
+        "phase_16u22_wave_c_master_gate_low_risk_status_wrapper_regression_complete"
+      ]
+    },
+    {
+      "file": "wave_c_master_gate_remaining_consumer_review_phase_16u23.json",
+      "phase": "16U.23",
+      "target": null,
+      "passed": null,
+      "complete_flags": [
+        "phase_16u23_wave_c_master_gate_remaining_consumer_review_complete"
+      ]
+    },
+    {
+      "file": "wave_c_master_gate_status_consumer_audit_phase_16u20.json",
+      "phase": "16U.20",
+      "target": null,
+      "passed": null,
+      "complete_flags": [
+        "phase_16u20_wave_c_master_gate_status_consumer_audit_complete"
+      ]
+    },
+    {
+      "file": "wave_c_master_gate_status_migration_closure_gate_phase_16u24.json",
+      "phase": "16U.24",
+      "target": null,
+      "passed": null,
+      "complete_flags": [
+        "phase_16u24_wave_c_master_gate_status_migration_closure_gate_complete"
+      ]
+    },
+    {
+      "file": "wave_d_completion_audit_low_risk_status_wrapper_patch_phase_16u26.json",
+      "phase": "16U.26",
+      "target": null,
+      "passed": null,
+      "complete_flags": [
+        "phase_16u26_wave_d_completion_audit_low_risk_status_wrapper_patch_complete"
+      ]
+    },
+    {
+      "file": "wave_d_completion_audit_low_risk_status_wrapper_regression_phase_16u27.json",
+      "phase": "16U.27",
+      "target": null,
+      "passed": null,
+      "complete_flags": [
+        "phase_16u27_wave_d_completion_audit_low_risk_status_wrapper_regression_complete"
+      ]
+    },
+    {
+      "file": "wave_d_completion_audit_remaining_consumer_review_phase_16u28.json",
+      "phase": "16U.28",
+      "target": null,
+      "passed": null,
+      "complete_flags": [
+        "phase_16u28_wave_d_completion_audit_remaining_consumer_review_complete"
+      ]
+    },
+    {
+      "file": "wave_d_completion_audit_status_consumer_audit_phase_16u25.json",
+      "phase": "16U.25",
+      "target": null,
+      "passed": null,
+      "complete_flags": [
+        "phase_16u25_wave_d_completion_audit_status_consumer_audit_complete"
+      ]
+    },
+    {
+      "file": "wave_d_completion_audit_status_migration_closure_gate_phase_16u29.json",
+      "phase": "16U.29",
+      "target": null,
+      "passed": null,
+      "complete_flags": [
+        "phase_16u29_wave_d_completion_audit_status_migration_closure_gate_complete"
+      ]
+    },
+    {
+      "file": "wave_e_report_owner_status_consumer_audit_phase_16u30.json",
+      "phase": "16U.30",
+      "target": null,
+      "passed": null,
+      "complete_flags": [
+        "phase_16u30_wave_e_report_owner_status_consumer_audit_complete"
+      ]
+    }
+  ]
+}

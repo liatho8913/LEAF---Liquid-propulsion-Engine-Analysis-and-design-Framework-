@@ -1,0 +1,49 @@
+LEAF PHASE 16U.70
+NEXT MIGRATION WAVE DECISION
+============================
+
+STATUS: PASS_PHASE_16U70_NEXT_MIGRATION_WAVE_DECISION
+Generated: 2026-06-28T17:31:41
+
+FEATURE
+-------
+Decide whether the next grouped-safe candidates can be patched together safely.
+
+COUNTDOWN
+---------
+Current completed before this phase: 16U.69
+Estimated remaining after this phase if PASS: ~11–77 phases
+Likely final range: 16U.100–16U.120
+
+SUMMARY
+-------
+Target count: 4
+Approved count: 4
+Deferred count: 0
+
+PER-FILE DECISION
+-----------------
+leaf_qt/failure_root_cause_owner.py: APPROVE_FOR_16U71_BATCH_PATCH | findings=1 | simple=True | reason=simple owner-style status presentation findings only
+  - line 269 [fail_in_status_text]: "FAIL" in 
+leaf_qt/regen_completion_gate_validation_owner.py: APPROVE_FOR_16U71_BATCH_PATCH | findings=1 | simple=True | reason=simple owner-style status presentation findings only
+  - line 30 [blocked_in_status_text]: "BLOCKED" in 
+leaf_qt/regen_system_signoff_validation_owner.py: APPROVE_FOR_16U71_BATCH_PATCH | findings=1 | simple=True | reason=simple owner-style status presentation findings only
+  - line 30 [blocked_in_status_text]: "BLOCKED" in 
+leaf_qt/regen_optimisation_scoring_owner.py: APPROVE_FOR_16U71_BATCH_PATCH | findings=2 | simple=True | reason=simple owner-style status presentation findings only
+  - line 96 [status_startswith]: .startswith("PASS
+  - line 108 [status_startswith]: .startswith("PASS
+
+APPROVED TARGETS FOR 16U.71
+---------------------------
+leaf_qt/failure_root_cause_owner.py
+leaf_qt/regen_completion_gate_validation_owner.py
+leaf_qt/regen_system_signoff_validation_owner.py
+leaf_qt/regen_optimisation_scoring_owner.py
+
+COMPLETION NOTICE
+-----------------
+PHASE 16U.70 COMPLETE.
+
+NEXT FEATURE
+------------
+PHASE 16U.71 — APPROVED MIGRATION WAVE PATCH

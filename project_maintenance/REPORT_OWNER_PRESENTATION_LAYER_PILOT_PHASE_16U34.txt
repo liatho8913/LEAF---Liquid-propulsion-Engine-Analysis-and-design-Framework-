@@ -1,0 +1,42 @@
+LEAF PHASE 16U.34
+REPORT OWNER PRESENTATION LAYER PILOT INTEGRATION
+==================================================
+
+STATUS: PASS_PHASE_16U34_REPORT_OWNER_PRESENTATION_LAYER_PILOT_INTEGRATION
+Generated: 2026-06-28T02:10:04
+
+SCOPE
+-----
+This phase performs a single pilot integration of the shared presentation layer.
+Only one report/UI status-text rendering path is migrated.
+No engineering logic is modified.
+No report policy is modified.
+
+FILE MODIFIED
+-------------
+leaf_qt/foundation_test_runner_window.py
+
+PATCH
+-----
+OLD: status_text = "PASS" if passed else "FAIL"
+NEW: status_text = LegacyCompatibilityProducer.marker_from_bool(passed)
+
+SUMMARY
+-------
+Import added: True
+Applied: True
+Already applied: False
+Missing: False
+
+COMPILE RESULTS
+---------------
+leaf_qt/foundation_test_runner_window.py: PASS 
+leaf_qt/status_presentation.py: PASS 
+
+COMPLETION NOTICE
+-----------------
+PHASE 16U.34 COMPLETE.
+
+NEXT PHASE
+----------
+PHASE 16U.35 — REPORT OWNER PRESENTATION LAYER PILOT REGRESSION

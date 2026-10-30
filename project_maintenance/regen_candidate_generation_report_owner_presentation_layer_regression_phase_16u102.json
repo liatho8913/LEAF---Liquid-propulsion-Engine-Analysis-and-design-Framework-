@@ -1,0 +1,52 @@
+{
+  "phase": "16U.102",
+  "status": "PASS_PHASE_16U102_REGEN_CANDIDATE_GENERATION_REPORT_OWNER_PRESENTATION_LAYER_REGRESSION",
+  "generated": "2026-06-28T21:02:02",
+  "target": "leaf_qt/regen_candidate_generation_report_owner.py",
+  "checks": [
+    {
+      "name": "production_target_exists",
+      "passed": true,
+      "detail": "leaf_qt/regen_candidate_generation_report_owner.py"
+    },
+    {
+      "name": "phase_16u101_patch_json_exists",
+      "passed": true,
+      "detail": "project_maintenance/regen_candidate_generation_report_owner_presentation_layer_patch_phase_16u101.json"
+    },
+    {
+      "name": "production_target_compiles",
+      "passed": true,
+      "detail": "compile pass"
+    },
+    {
+      "name": "shared_presentation_tokens_present",
+      "passed": true,
+      "detail": "all tokens present"
+    },
+    {
+      "name": "legacy_status_patterns_removed",
+      "passed": true,
+      "detail": "0 forbidden production pattern(s); ignored 0 helper fallback literal(s)"
+    },
+    {
+      "name": "phase_16u101_patch_completed",
+      "passed": true,
+      "detail": "PASS_PHASE_16U101_REGEN_CANDIDATE_GENERATION_REPORT_OWNER_PRESENTATION_LAYER_PATCH"
+    },
+    {
+      "name": "production_module_imports",
+      "passed": true,
+      "detail": "module import pass"
+    },
+    {
+      "name": "helper_status_semantics",
+      "passed": true,
+      "detail": "severity_failures=[]"
+    }
+  ],
+  "missing_tokens": [],
+  "remaining_forbidden": [],
+  "phase_16u102_regen_candidate_generation_report_owner_presentation_layer_regression_complete": true,
+  "next_phase": "16U.103 \u2014 Regen Candidate Generation Report Owner Presentation Layer Closure Gate"
+}

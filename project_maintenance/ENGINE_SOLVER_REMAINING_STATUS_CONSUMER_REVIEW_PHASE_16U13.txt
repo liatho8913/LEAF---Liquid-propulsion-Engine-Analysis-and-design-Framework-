@@ -1,0 +1,130 @@
+LEAF PHASE 16U.13
+ENGINE SOLVER REMAINING STATUS CONSUMER REVIEW
+================================================
+
+STATUS: PASS_PHASE_16U13_ENGINE_SOLVER_REMAINING_STATUS_CONSUMER_REVIEW
+Generated: 2026-06-27T17:44:55
+
+SCOPE
+-----
+This phase reviews remaining Wave A solver status consumers.
+No production files are modified.
+No solver equations are modified.
+
+SUMMARY
+-------
+Remaining solver consumers: 18
+Wave closure blockers: 0
+
+CATEGORY BREAKDOWN
+------------------
+COMPOUND_VERDICT_INTENTIONAL_HOLD: 6
+DOMAIN_STATE_INTENTIONAL_HOLD: 1
+FREEFORM_TEXT_SEMANTIC_INTENTIONAL_HOLD: 4
+HIGH_RISK_MANUAL_REVIEW_REQUIRED: 6
+MIXED_DOMAIN_STATUS_INTENTIONAL_HOLD: 1
+
+REMAINING CONSUMERS
+-------------------
+leaf_qt/engine_solver.py:4054 [HIGH_RISK_MANUAL_REVIEW_REQUIRED]
+  snippet: "diagnostic_note": "PASS" if not failure_reasons else "CHECK",
+  recommendation: Hold for manual review; do not automate in Wave A.
+  reason: High-risk items require local engineering context and should not block closure if explicitly recorded.
+
+leaf_qt/engine_solver.py:5959 [HIGH_RISK_MANUAL_REVIEW_REQUIRED]
+  snippet: "PASS" if max_twg <= material_limit else "REQUIRED"
+  recommendation: Hold for manual review; do not automate in Wave A.
+  reason: High-risk items require local engineering context and should not block closure if explicitly recorded.
+
+leaf_qt/engine_solver.py:7675 [DOMAIN_STATE_INTENTIONAL_HOLD]
+  snippet: elif source_data_weighted_gate in ("PARTIAL", "FAIL"):
+  recommendation: Preserve until source-quality domain-state migration.
+  reason: PARTIAL is a source-quality state, not a simple status.
+
+leaf_qt/engine_solver.py:8456 [MIXED_DOMAIN_STATUS_INTENTIONAL_HOLD]
+  snippet: if item["status"] in ("MISSING", "PLACEHOLDER", "FAIL")
+  recommendation: Preserve until coating/material data-quality status migration.
+  reason: MISSING and PLACEHOLDER are data-quality states mixed with FAIL.
+
+leaf_qt/engine_solver.py:14139 [COMPOUND_VERDICT_INTENTIONAL_HOLD]
+  snippet: if "PLACEHOLDER" in source_status and verdict.endswith("PASS"):
+  recommendation: Preserve until compound verdict compatibility adapter exists.
+  reason: Suffix PASS handling may intentionally support compound legacy statuses.
+
+leaf_qt/engine_solver.py:14139 [COMPOUND_VERDICT_INTENTIONAL_HOLD]
+  snippet: if "PLACEHOLDER" in source_status and verdict.endswith("PASS"):
+  recommendation: Preserve until compound verdict compatibility adapter exists.
+  reason: Suffix PASS handling may intentionally support compound legacy statuses.
+
+leaf_qt/engine_solver.py:14143 [COMPOUND_VERDICT_INTENTIONAL_HOLD]
+  snippet: if ledger_status not in ("LEDGER_COMPLETE", "NO_FILLED_VALUES") and verdict.endswith("PASS"):
+  recommendation: Preserve until compound verdict compatibility adapter exists.
+  reason: Suffix PASS handling may intentionally support compound legacy statuses.
+
+leaf_qt/engine_solver.py:14143 [COMPOUND_VERDICT_INTENTIONAL_HOLD]
+  snippet: if ledger_status not in ("LEDGER_COMPLETE", "NO_FILLED_VALUES") and verdict.endswith("PASS"):
+  recommendation: Preserve until compound verdict compatibility adapter exists.
+  reason: Suffix PASS handling may intentionally support compound legacy statuses.
+
+leaf_qt/engine_solver.py:14149 [COMPOUND_VERDICT_INTENTIONAL_HOLD]
+  snippet: if quality_band in ("PLACEHOLDER", "LOW_CONFIDENCE_PUBLIC") and verdict.endswith("PASS"):
+  recommendation: Preserve until compound verdict compatibility adapter exists.
+  reason: Suffix PASS handling may intentionally support compound legacy statuses.
+
+leaf_qt/engine_solver.py:14149 [COMPOUND_VERDICT_INTENTIONAL_HOLD]
+  snippet: if quality_band in ("PLACEHOLDER", "LOW_CONFIDENCE_PUBLIC") and verdict.endswith("PASS"):
+  recommendation: Preserve until compound verdict compatibility adapter exists.
+  reason: Suffix PASS handling may intentionally support compound legacy statuses.
+
+leaf_qt/engine_solver.py:20628 [FREEFORM_TEXT_SEMANTIC_INTENTIONAL_HOLD]
+  snippet: if "FAIL" in text or "INVALID" in text:
+  recommendation: Preserve until text diagnostic parser is replaced with structured diagnostic payload.
+  reason: Freeform diagnostic text scanning is semantic and should not be wrapped blindly.
+
+leaf_qt/engine_solver.py:20628 [FREEFORM_TEXT_SEMANTIC_INTENTIONAL_HOLD]
+  snippet: if "FAIL" in text or "INVALID" in text:
+  recommendation: Preserve until text diagnostic parser is replaced with structured diagnostic payload.
+  reason: Freeform diagnostic text scanning is semantic and should not be wrapped blindly.
+
+leaf_qt/engine_solver.py:20649 [FREEFORM_TEXT_SEMANTIC_INTENTIONAL_HOLD]
+  snippet: elif "WARN" in text or "REVIEW" in text:
+  recommendation: Preserve until text diagnostic parser is replaced with structured diagnostic payload.
+  reason: Freeform diagnostic text scanning is semantic and should not be wrapped blindly.
+
+leaf_qt/engine_solver.py:20649 [FREEFORM_TEXT_SEMANTIC_INTENTIONAL_HOLD]
+  snippet: elif "WARN" in text or "REVIEW" in text:
+  recommendation: Preserve until text diagnostic parser is replaced with structured diagnostic payload.
+  reason: Freeform diagnostic text scanning is semantic and should not be wrapped blindly.
+
+leaf_qt/engine_solver.py:8011 [HIGH_RISK_MANUAL_REVIEW_REQUIRED]
+  snippet: "PASS",
+  recommendation: Hold for manual review; do not automate in Wave A.
+  reason: High-risk items require local engineering context and should not block closure if explicitly recorded.
+
+leaf_qt/engine_solver.py:10607 [HIGH_RISK_MANUAL_REVIEW_REQUIRED]
+  snippet: "FAIL",
+  recommendation: Hold for manual review; do not automate in Wave A.
+  reason: High-risk items require local engineering context and should not block closure if explicitly recorded.
+
+leaf_qt/engine_solver.py:13684 [HIGH_RISK_MANUAL_REVIEW_REQUIRED]
+  snippet: "PASS",
+  recommendation: Hold for manual review; do not automate in Wave A.
+  reason: High-risk items require local engineering context and should not block closure if explicitly recorded.
+
+leaf_qt/engine_solver.py:15208 [HIGH_RISK_MANUAL_REVIEW_REQUIRED]
+  snippet: verdict = "FAIL"
+  recommendation: Hold for manual review; do not automate in Wave A.
+  reason: High-risk items require local engineering context and should not block closure if explicitly recorded.
+
+COMPILE RESULTS
+---------------
+leaf_qt/engine_solver.py: PASS 
+leaf_qt/regen_geometry_solver.py: PASS 
+
+COMPLETION NOTICE
+-----------------
+PHASE 16U.13 COMPLETE.
+
+NEXT PHASE
+----------
+PHASE 16U.14 — WAVE A ENGINE SOLVER STATUS MIGRATION CLOSURE GATE

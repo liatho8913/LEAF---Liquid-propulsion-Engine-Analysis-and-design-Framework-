@@ -1,0 +1,94 @@
+LEAF PHASE 16U.41
+NEXT REPORT OWNER ROLLOUT CANDIDATE AUDIT
+==========================================
+
+STATUS: PASS_PHASE_16U41_NEXT_REPORT_OWNER_ROLLOUT_CANDIDATE_AUDIT
+Generated: 2026-06-28T02:30:09
+
+FEATURE
+-------
+Audit remaining production report-owner/UI files after closing the first rollout target.
+
+CLOSED TARGETS EXCLUDED
+-----------------------
+leaf_qt/foundation_test_runner_window.py
+leaf_qt/regen_cross_section_viewer.py
+
+SUMMARY
+-------
+Python files scanned: 1300
+Files with findings: 149
+Candidate count: 49
+
+NEXT CANDIDATE
+--------------
+File: leaf_qt/regen_scalability_failure_owner.py
+Classification: probable_report_or_ui_consumer
+Finding count: 5
+Risk score: 65
+Suggested action: CANDIDATE_FOR_PHASE_16U42_PATCH
+
+TOP CANDIDATES
+--------------
+1. leaf_qt/regen_scalability_failure_owner.py | findings=5 | risk=65
+   - line 184 [fail_in_status_text]: "FAIL" in 
+   - line 190 [fail_in_status_text]: "FAIL" in 
+   - line 187 [warn_in_status_text]: "WARN" in 
+   - line 184 [blocked_in_status_text]: "BLOCKED" in 
+   - line 190 [blocked_in_status_text]: "BLOCKED" in 
+2. leaf_qt/real_engine_benchmark_failure_owner.py | findings=3 | risk=59
+   - line 207 [fail_in_status_text]: "FAIL" in 
+   - line 213 [warn_in_status_text]: "WARN" in 
+   - line 207 [blocked_in_status_text]: "BLOCKED" in 
+3. leaf_qt/test_regen_geometry_constraint_validation_owner.py | findings=3 | risk=59
+   - line 48 [fail_in_status_text]: "FAIL" in 
+   - line 47 [warn_in_status_text]: "WARN" in 
+   - line 46 [pass_in_status_text]: "PASS" in 
+4. leaf_qt/bond_coat_integration_owner.py | findings=2 | risk=56
+   - line 141 [status_startswith]: .startswith("BLOCKED
+   - line 157 [status_startswith]: .startswith("BLOCKED
+5. leaf_qt/coating_temperature_limit_integration_owner.py | findings=2 | risk=56
+   - line 82 [status_startswith]: .startswith("BLOCKED
+   - line 97 [status_startswith]: .startswith("BLOCKED
+6. leaf_qt/material_strength_limit_integration_owner.py | findings=2 | risk=56
+   - line 87 [status_startswith]: .startswith("BLOCKED
+   - line 103 [status_startswith]: .startswith("BLOCKED
+7. leaf_qt/material_temperature_limit_integration_owner.py | findings=2 | risk=56
+   - line 77 [status_startswith]: .startswith("BLOCKED
+   - line 91 [status_startswith]: .startswith("BLOCKED
+8. leaf_qt/regen_geometry_report_owner.py | findings=2 | risk=56
+   - line 5 [inline_pass_fail_ternary]: "PASS" if value else "FAIL"
+   - line 39 [inline_pass_fail_ternary]: 'PASS' if solver_pass else 'FAIL'
+9. leaf_qt/regen_optimisation_scoring_owner.py | findings=2 | risk=56
+   - line 96 [status_startswith]: .startswith("PASS
+   - line 108 [status_startswith]: .startswith("PASS
+10. leaf_qt/coating_property_consumption_audit_owner.py | findings=1 | risk=53
+   - line 101 [status_startswith]: .startswith("BLOCKED
+11. leaf_qt/coating_thermal_conductivity_integration_owner.py | findings=1 | risk=53
+   - line 78 [status_startswith]: .startswith("BLOCKED
+12. leaf_qt/coating_thermal_resistance_integration_owner.py | findings=1 | risk=53
+   - line 84 [status_startswith]: .startswith("BLOCKED
+13. leaf_qt/coating_thickness_integration_owner.py | findings=1 | risk=53
+   - line 75 [status_startswith]: .startswith("BLOCKED
+14. leaf_qt/failure_root_cause_owner.py | findings=1 | risk=53
+   - line 269 [fail_in_status_text]: "FAIL" in 
+15. leaf_qt/material_density_integration_owner.py | findings=1 | risk=53
+   - line 83 [status_startswith]: .startswith("BLOCKED
+16. leaf_qt/material_property_consumption_audit_owner.py | findings=1 | risk=53
+   - line 96 [status_startswith]: .startswith("BLOCKED
+17. leaf_qt/material_specific_heat_integration_owner.py | findings=1 | risk=53
+   - line 81 [status_startswith]: .startswith("BLOCKED
+18. leaf_qt/material_thermal_conductivity_integration_owner.py | findings=1 | risk=53
+   - line 85 [status_startswith]: .startswith("BLOCKED
+19. leaf_qt/regen_acceptance_criteria_owner.py | findings=1 | risk=53
+   - line 173 [inline_pass_fail_ternary]: 'PASS' if item.get('passed') else 'FAIL'
+20. leaf_qt/regen_candidate_blueprint_population_validation_owner.py | findings=1 | risk=53
+   - line 231 [inline_pass_fail_ternary]: "PASS" if check["passed"] else "FAIL"
+
+COMPLETION NOTICE
+-----------------
+PHASE 16U.41 COMPLETE.
+
+NEXT FEATURE
+------------
+PHASE 16U.42 — NEXT REPORT OWNER PRESENTATION LAYER PATCH

@@ -1,0 +1,40 @@
+LEAF PHASE 16U.8
+ENGINE SOLVER LOW-RISK STATUS WRAPPER PATCH
+============================================
+
+STATUS: PASS_PHASE_16U8_ENGINE_SOLVER_LOW_RISK_STATUS_WRAPPER_PATCH
+Generated: 2026-06-27T17:21:09
+
+SCOPE
+-----
+This phase patches only low-risk Wave A solver status consumers.
+No solver equations are changed.
+No numerical calculations are changed.
+
+FILES MODIFIED
+--------------
+leaf_qt/engine_solver.py
+leaf_qt/regen_geometry_solver.py
+
+SUMMARY
+-------
+engine_solver applied: 24
+engine_solver already applied: 0
+engine_solver missing: 0
+regen_geometry_solver applied: 1
+regen_geometry_solver already applied: 0
+regen_geometry_solver missing: 0
+alias conflict present: False
+
+COMPILE RESULTS
+---------------
+leaf_qt/engine_solver.py: PASS 
+leaf_qt/regen_geometry_solver.py: PASS 
+
+COMPLETION NOTICE
+-----------------
+PHASE 16U.8 COMPLETE.
+
+NEXT PHASE
+----------
+PHASE 16U.9 — ENGINE SOLVER LOW-RISK STATUS WRAPPER REGRESSION

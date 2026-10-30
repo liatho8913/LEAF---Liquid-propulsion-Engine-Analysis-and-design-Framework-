@@ -1,0 +1,65 @@
+{
+  "phase": "16U.165",
+  "source_manifest": "/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u164_high_risk_presentation_debt_manifest.json",
+  "candidate_count": 9,
+  "touched_count": 8,
+  "skipped_count": 0,
+  "compile_failure_count": 1,
+  "patch_failure_count": 0,
+  "touched": [
+    {
+      "path": "leaf_qt/regen_multi_objective_scoring_controller.py",
+      "backup": "/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u165_backups/20260629_003546__leaf_qt__regen_multi_objective_scoring_controller.py.bak",
+      "replacement_count": 6
+    },
+    {
+      "path": "leaf_qt/design_history_narrative_builder.py",
+      "backup": "/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u165_backups/20260629_003546__leaf_qt__design_history_narrative_builder.py.bak",
+      "replacement_count": 2
+    },
+    {
+      "path": "leaf_qt/regen_failure_root_cause_system.py",
+      "backup": "/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u165_backups/20260629_003546__leaf_qt__regen_failure_root_cause_system.py.bak",
+      "replacement_count": 3
+    },
+    {
+      "path": "leaf_qt/regen_optimisation_candidate_generator.py",
+      "backup": "/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u165_backups/20260629_003546__leaf_qt__regen_optimisation_candidate_generator.py.bak",
+      "replacement_count": 2
+    },
+    {
+      "path": "leaf_qt/structured_status_access.py",
+      "backup": "/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u165_backups/20260629_003546__leaf_qt__structured_status_access.py.bak",
+      "replacement_count": 1
+    },
+    {
+      "path": "leaf_qt/failure_root_cause_owner.py",
+      "backup": "/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u165_backups/20260629_003546__leaf_qt__failure_root_cause_owner.py.bak",
+      "replacement_count": 2
+    },
+    {
+      "path": "leaf_qt/foundation_ui_launch_verification.py",
+      "backup": "/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u165_backups/20260629_003546__leaf_qt__foundation_ui_launch_verification.py.bak",
+      "replacement_count": 2
+    },
+    {
+      "path": "leaf_qt/regen_architecture_visibility_audit.py",
+      "backup": "/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u165_backups/20260629_003546__leaf_qt__regen_architecture_visibility_audit.py.bak",
+      "replacement_count": 1
+    }
+  ],
+  "skipped": [],
+  "compile_failures": [
+    {
+      "path": "leaf_qt/regen_viewer_integration_report_owner.py",
+      "backup": "/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u165_backups/20260629_003546__leaf_qt__regen_viewer_integration_report_owner.py.bak",
+      "error": "PyCompileError('  File \"/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/regen_viewer_integration_report_owner.py\", line 18\\n    from __future__ import annotations\\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\nSyntaxError: from __future__ imports must occur at the beginning of the file\\n', 'SyntaxError', SyntaxError('from __future__ imports must occur at the beginning of the file', ('/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/regen_viewer_integration_report_owner.py', 18, 1, 'from __future__ import annotations\\n', 18, 35)), '/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/regen_viewer_integration_report_owner.py')",
+      "rolled_back": true
+    }
+  ],
+  "patch_failures": [],
+  "backup_dir": "/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u165_backups",
+  "passed": false,
+  "status": "FAIL_PHASE_16U165_SAFE_TRANSACTIONAL_PRESENTATION_DEBT_CLEANUP_WAVE1",
+  "next_phase": "16U.166_SAFE_WAVE_REGRESSION_AND_RECLASSIFICATION"
+}

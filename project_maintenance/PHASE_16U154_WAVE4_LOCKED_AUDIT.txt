@@ -1,0 +1,37 @@
+LEAF PHASE 16U.154
+WAVE 4 LOCKED AUDIT
+====================
+
+STATUS: PASS_PHASE_16U154_WAVE4_LOCKED_AUDIT
+
+Locked baseline: 68
+Closed targets: 60
+Remaining candidates: 8
+Progress: 60/68
+
+WAVE 4 CLOSED FILES
+-------------------
+- regen_optimisation_completion_audit.py
+- regen_optimisation_registration_owner.py
+- regen_optimisation_session_owner.py
+- regen_runtime_execution_completion_audit.py
+- regen_runtime_execution_input_gate.py
+- regen_runtime_execution_registration_owner.py
+- regen_runtime_execution_session_owner.py
+- regen_runtime_optimisation_input_gate.py
+- regen_runtime_optimisation_registration_owner.py
+- regen_runtime_optimisation_session_owner.py
+
+REMAINING FILES
+---------------
+- real_engine_benchmark_completion_audit.py
+- real_engine_benchmark_failure_owner.py
+- regen_autonomous_optimisation_input_audit.py
+- regen_candidate_generation_session_owner.py
+- regen_scalability_failure_owner.py
+- regen_viewer_final_runtime_consistency_gate_phase_16q20.py
+- regen_viewer_gui_runtime_acceptance_gate_phase_16q28.py
+- regen_viewer_report_renderer.py
+
+FAILURES
+--------

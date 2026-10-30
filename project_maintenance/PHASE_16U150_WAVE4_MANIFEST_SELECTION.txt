@@ -1,0 +1,46 @@
+LEAF PHASE 16U.150
+WAVE 4 MANIFEST SELECTION
+=========================
+
+STATUS: PASS_PHASE_16U150_WAVE4_MANIFEST_SELECTION
+
+WAVE
+----
+16U-WAVE4 — Runtime and optimisation presentation migration
+
+ROADMAP STATE
+-------------
+Locked baseline: 68
+Closed before wave: 50
+Remaining before wave: 18
+Expected closed after wave audit: 60
+Expected remaining after wave audit: 8
+
+Selected files: 10
+
+SELECTED FILES
+--------------
+- regen_optimisation_completion_audit.py legacy_hits=1
+- regen_optimisation_registration_owner.py legacy_hits=1
+- regen_optimisation_session_owner.py legacy_hits=1
+- regen_runtime_execution_completion_audit.py legacy_hits=1
+- regen_runtime_execution_input_gate.py legacy_hits=1
+- regen_runtime_execution_registration_owner.py legacy_hits=1
+- regen_runtime_execution_session_owner.py legacy_hits=1
+- regen_runtime_optimisation_input_gate.py legacy_hits=1
+- regen_runtime_optimisation_registration_owner.py legacy_hits=1
+- regen_runtime_optimisation_session_owner.py legacy_hits=1
+
+REMAINING OUTSIDE WAVE 4
+------------------------
+- real_engine_benchmark_completion_audit.py
+- real_engine_benchmark_failure_owner.py
+- regen_autonomous_optimisation_input_audit.py
+- regen_candidate_generation_session_owner.py
+- regen_scalability_failure_owner.py
+- regen_viewer_final_runtime_consistency_gate_phase_16q20.py
+- regen_viewer_gui_runtime_acceptance_gate_phase_16q28.py
+- regen_viewer_report_renderer.py
+
+FAILURES
+--------

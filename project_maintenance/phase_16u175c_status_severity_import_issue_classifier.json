@@ -1,0 +1,841 @@
+{
+  "phase": "16U.175C",
+  "input_issue_count": 69,
+  "classification_counts": {
+    "LOCAL_STATUS_SEVERITY_DEFINITION": 68,
+    "SHARED_STATUS_SEVERITY_OWNER_MODULE": 1
+  },
+  "classified_issues": [
+    {
+      "path": "leaf_qt/bond_coat_integration_owner.py",
+      "issue": "leaf_qt/bond_coat_integration_owner.py: status_severity used without production import",
+      "classification": "LOCAL_STATUS_SEVERITY_DEFINITION",
+      "status_severity_line_numbers": [
+        5,
+        16,
+        18,
+        31,
+        35,
+        39
+      ]
+    },
+    {
+      "path": "leaf_qt/coating_property_consumption_audit_owner.py",
+      "issue": "leaf_qt/coating_property_consumption_audit_owner.py: status_severity used without production import",
+      "classification": "LOCAL_STATUS_SEVERITY_DEFINITION",
+      "status_severity_line_numbers": [
+        5,
+        16,
+        18,
+        31,
+        35,
+        39
+      ]
+    },
+    {
+      "path": "leaf_qt/coating_temperature_limit_integration_owner.py",
+      "issue": "leaf_qt/coating_temperature_limit_integration_owner.py: status_severity used without production import",
+      "classification": "LOCAL_STATUS_SEVERITY_DEFINITION",
+      "status_severity_line_numbers": [
+        5,
+        16,
+        18,
+        31,
+        35,
+        39
+      ]
+    },
+    {
+      "path": "leaf_qt/coating_thermal_conductivity_integration_owner.py",
+      "issue": "leaf_qt/coating_thermal_conductivity_integration_owner.py: status_severity used without production import",
+      "classification": "LOCAL_STATUS_SEVERITY_DEFINITION",
+      "status_severity_line_numbers": [
+        5,
+        16,
+        18,
+        31,
+        35,
+        39
+      ]
+    },
+    {
+      "path": "leaf_qt/coating_thermal_resistance_integration_owner.py",
+      "issue": "leaf_qt/coating_thermal_resistance_integration_owner.py: status_severity used without production import",
+      "classification": "LOCAL_STATUS_SEVERITY_DEFINITION",
+      "status_severity_line_numbers": [
+        5,
+        16,
+        18,
+        31,
+        35,
+        39
+      ]
+    },
+    {
+      "path": "leaf_qt/coating_thickness_integration_owner.py",
+      "issue": "leaf_qt/coating_thickness_integration_owner.py: status_severity used without production import",
+      "classification": "LOCAL_STATUS_SEVERITY_DEFINITION",
+      "status_severity_line_numbers": [
+        5,
+        16,
+        18,
+        31,
+        35,
+        39
+      ]
+    },
+    {
+      "path": "leaf_qt/material_density_integration_owner.py",
+      "issue": "leaf_qt/material_density_integration_owner.py: status_severity used without production import",
+      "classification": "LOCAL_STATUS_SEVERITY_DEFINITION",
+      "status_severity_line_numbers": [
+        5,
+        16,
+        18,
+        31,
+        35,
+        39
+      ]
+    },
+    {
+      "path": "leaf_qt/material_property_consumption_audit_owner.py",
+      "issue": "leaf_qt/material_property_consumption_audit_owner.py: status_severity used without production import",
+      "classification": "LOCAL_STATUS_SEVERITY_DEFINITION",
+      "status_severity_line_numbers": [
+        5,
+        16,
+        18,
+        31,
+        35,
+        39
+      ]
+    },
+    {
+      "path": "leaf_qt/material_specific_heat_integration_owner.py",
+      "issue": "leaf_qt/material_specific_heat_integration_owner.py: status_severity used without production import",
+      "classification": "LOCAL_STATUS_SEVERITY_DEFINITION",
+      "status_severity_line_numbers": [
+        5,
+        16,
+        18,
+        31,
+        35,
+        39
+      ]
+    },
+    {
+      "path": "leaf_qt/material_strength_limit_integration_owner.py",
+      "issue": "leaf_qt/material_strength_limit_integration_owner.py: status_severity used without production import",
+      "classification": "LOCAL_STATUS_SEVERITY_DEFINITION",
+      "status_severity_line_numbers": [
+        5,
+        16,
+        18,
+        31,
+        35,
+        39
+      ]
+    },
+    {
+      "path": "leaf_qt/material_temperature_limit_integration_owner.py",
+      "issue": "leaf_qt/material_temperature_limit_integration_owner.py: status_severity used without production import",
+      "classification": "LOCAL_STATUS_SEVERITY_DEFINITION",
+      "status_severity_line_numbers": [
+        5,
+        16,
+        18,
+        31,
+        35,
+        39
+      ]
+    },
+    {
+      "path": "leaf_qt/material_thermal_conductivity_integration_owner.py",
+      "issue": "leaf_qt/material_thermal_conductivity_integration_owner.py: status_severity used without production import",
+      "classification": "LOCAL_STATUS_SEVERITY_DEFINITION",
+      "status_severity_line_numbers": [
+        5,
+        16,
+        18,
+        31,
+        35,
+        39
+      ]
+    },
+    {
+      "path": "leaf_qt/real_engine_benchmark_completion_audit.py",
+      "issue": "leaf_qt/real_engine_benchmark_completion_audit.py: status_severity used without production import",
+      "classification": "LOCAL_STATUS_SEVERITY_DEFINITION",
+      "status_severity_line_numbers": [
+        28,
+        45,
+        51,
+        52,
+        337,
+        352
+      ]
+    },
+    {
+      "path": "leaf_qt/real_engine_benchmark_failure_owner.py",
+      "issue": "leaf_qt/real_engine_benchmark_failure_owner.py: status_severity used without production import",
+      "classification": "LOCAL_STATUS_SEVERITY_DEFINITION",
+      "status_severity_line_numbers": [
+        5,
+        16,
+        18,
+        31,
+        35,
+        39
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_acceptance_audit.py",
+      "issue": "leaf_qt/regen_acceptance_audit.py: status_severity used without production import",
+      "classification": "LOCAL_STATUS_SEVERITY_DEFINITION",
+      "status_severity_line_numbers": [
+        5,
+        22,
+        28,
+        29
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_acceptance_criteria_owner.py",
+      "issue": "leaf_qt/regen_acceptance_criteria_owner.py: status_severity used without production import",
+      "classification": "LOCAL_STATUS_SEVERITY_DEFINITION",
+      "status_severity_line_numbers": [
+        14,
+        31,
+        37,
+        38
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_autonomous_optimisation_input_audit.py",
+      "issue": "leaf_qt/regen_autonomous_optimisation_input_audit.py: status_severity used without production import",
+      "classification": "LOCAL_STATUS_SEVERITY_DEFINITION",
+      "status_severity_line_numbers": [
+        12,
+        29,
+        35,
+        36
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_candidate_blueprint_completion_audit.py",
+      "issue": "leaf_qt/regen_candidate_blueprint_completion_audit.py: status_severity used without production import",
+      "classification": "LOCAL_STATUS_SEVERITY_DEFINITION",
+      "status_severity_line_numbers": [
+        23,
+        40,
+        46,
+        47
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_candidate_blueprint_generation_input_gate.py",
+      "issue": "leaf_qt/regen_candidate_blueprint_generation_input_gate.py: status_severity used without production import",
+      "classification": "LOCAL_STATUS_SEVERITY_DEFINITION",
+      "status_severity_line_numbers": [
+        9,
+        26,
+        32,
+        33
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_candidate_blueprint_mutation_validation.py",
+      "issue": "leaf_qt/regen_candidate_blueprint_mutation_validation.py: status_severity used without production import",
+      "classification": "LOCAL_STATUS_SEVERITY_DEFINITION",
+      "status_severity_line_numbers": [
+        19,
+        36,
+        42,
+        43
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_candidate_blueprint_optimisation_completion_audit.py",
+      "issue": "leaf_qt/regen_candidate_blueprint_optimisation_completion_audit.py: status_severity used without production import",
+      "classification": "LOCAL_STATUS_SEVERITY_DEFINITION",
+      "status_severity_line_numbers": [
+        9,
+        26,
+        32,
+        33
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_candidate_blueprint_population_completion_audit.py",
+      "issue": "leaf_qt/regen_candidate_blueprint_population_completion_audit.py: status_severity used without production import",
+      "classification": "LOCAL_STATUS_SEVERITY_DEFINITION",
+      "status_severity_line_numbers": [
+        19,
+        36,
+        42,
+        43
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_candidate_blueprint_population_validation_owner.py",
+      "issue": "leaf_qt/regen_candidate_blueprint_population_validation_owner.py: status_severity used without production import",
+      "classification": "LOCAL_STATUS_SEVERITY_DEFINITION",
+      "status_severity_line_numbers": [
+        5,
+        16,
+        18,
+        31,
+        35,
+        39
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_candidate_creation_completion_audit.py",
+      "issue": "leaf_qt/regen_candidate_creation_completion_audit.py: status_severity used without production import",
+      "classification": "LOCAL_STATUS_SEVERITY_DEFINITION",
+      "status_severity_line_numbers": [
+        21,
+        38,
+        44,
+        45
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_candidate_creation_input_audit.py",
+      "issue": "leaf_qt/regen_candidate_creation_input_audit.py: status_severity used without production import",
+      "classification": "LOCAL_STATUS_SEVERITY_DEFINITION",
+      "status_severity_line_numbers": [
+        20,
+        37,
+        43,
+        44
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_candidate_creation_registration_owner.py",
+      "issue": "leaf_qt/regen_candidate_creation_registration_owner.py: status_severity used without production import",
+      "classification": "LOCAL_STATUS_SEVERITY_DEFINITION",
+      "status_severity_line_numbers": [
+        20,
+        37,
+        43,
+        44
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_candidate_creation_report_owner.py",
+      "issue": "leaf_qt/regen_candidate_creation_report_owner.py: status_severity used without production import",
+      "classification": "LOCAL_STATUS_SEVERITY_DEFINITION",
+      "status_severity_line_numbers": [
+        5,
+        16,
+        18,
+        31,
+        35,
+        39
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_candidate_creation_session_owner.py",
+      "issue": "leaf_qt/regen_candidate_creation_session_owner.py: status_severity used without production import",
+      "classification": "LOCAL_STATUS_SEVERITY_DEFINITION",
+      "status_severity_line_numbers": [
+        20,
+        37,
+        43,
+        44
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_candidate_generation_completion_audit.py",
+      "issue": "leaf_qt/regen_candidate_generation_completion_audit.py: status_severity used without production import",
+      "classification": "LOCAL_STATUS_SEVERITY_DEFINITION",
+      "status_severity_line_numbers": [
+        20,
+        37,
+        43,
+        44
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_candidate_generation_input_gate.py",
+      "issue": "leaf_qt/regen_candidate_generation_input_gate.py: status_severity used without production import",
+      "classification": "LOCAL_STATUS_SEVERITY_DEFINITION",
+      "status_severity_line_numbers": [
+        19,
+        36,
+        42,
+        43
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_candidate_generation_registration_owner.py",
+      "issue": "leaf_qt/regen_candidate_generation_registration_owner.py: status_severity used without production import",
+      "classification": "LOCAL_STATUS_SEVERITY_DEFINITION",
+      "status_severity_line_numbers": [
+        20,
+        37,
+        43,
+        44
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_candidate_generation_report_owner.py",
+      "issue": "leaf_qt/regen_candidate_generation_report_owner.py: status_severity used without production import",
+      "classification": "LOCAL_STATUS_SEVERITY_DEFINITION",
+      "status_severity_line_numbers": [
+        5,
+        16,
+        18,
+        31,
+        35,
+        39
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_candidate_generation_session_owner.py",
+      "issue": "leaf_qt/regen_candidate_generation_session_owner.py: status_severity used without production import",
+      "classification": "LOCAL_STATUS_SEVERITY_DEFINITION",
+      "status_severity_line_numbers": [
+        20,
+        37,
+        43,
+        44
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_candidate_mutation_completion_audit.py",
+      "issue": "leaf_qt/regen_candidate_mutation_completion_audit.py: status_severity used without production import",
+      "classification": "LOCAL_STATUS_SEVERITY_DEFINITION",
+      "status_severity_line_numbers": [
+        9,
+        26,
+        32,
+        33
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_candidate_mutation_input_audit.py",
+      "issue": "leaf_qt/regen_candidate_mutation_input_audit.py: status_severity used without production import",
+      "classification": "LOCAL_STATUS_SEVERITY_DEFINITION",
+      "status_severity_line_numbers": [
+        21,
+        38,
+        44,
+        45
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_candidate_mutation_master_gate.py",
+      "issue": "leaf_qt/regen_candidate_mutation_master_gate.py: status_severity used without production import",
+      "classification": "LOCAL_STATUS_SEVERITY_DEFINITION",
+      "status_severity_line_numbers": [
+        4,
+        21,
+        27,
+        28
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_candidate_mutation_report_owner.py",
+      "issue": "leaf_qt/regen_candidate_mutation_report_owner.py: status_severity used without production import",
+      "classification": "LOCAL_STATUS_SEVERITY_DEFINITION",
+      "status_severity_line_numbers": [
+        5,
+        16,
+        18,
+        31,
+        35,
+        39
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_candidate_population_completion_audit.py",
+      "issue": "leaf_qt/regen_candidate_population_completion_audit.py: status_severity used without production import",
+      "classification": "LOCAL_STATUS_SEVERITY_DEFINITION",
+      "status_severity_line_numbers": [
+        21,
+        38,
+        44,
+        45
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_candidate_population_master_gate.py",
+      "issue": "leaf_qt/regen_candidate_population_master_gate.py: status_severity used without production import",
+      "classification": "LOCAL_STATUS_SEVERITY_DEFINITION",
+      "status_severity_line_numbers": [
+        4,
+        21,
+        27,
+        28
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_candidate_ranking_completion_audit.py",
+      "issue": "leaf_qt/regen_candidate_ranking_completion_audit.py: status_severity used without production import",
+      "classification": "LOCAL_STATUS_SEVERITY_DEFINITION",
+      "status_severity_line_numbers": [
+        19,
+        36,
+        42,
+        43
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_candidate_ranking_input_audit.py",
+      "issue": "leaf_qt/regen_candidate_ranking_input_audit.py: status_severity used without production import",
+      "classification": "LOCAL_STATUS_SEVERITY_DEFINITION",
+      "status_severity_line_numbers": [
+        22,
+        39,
+        45,
+        46
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_candidate_ranking_master_gate.py",
+      "issue": "leaf_qt/regen_candidate_ranking_master_gate.py: status_severity used without production import",
+      "classification": "LOCAL_STATUS_SEVERITY_DEFINITION",
+      "status_severity_line_numbers": [
+        4,
+        21,
+        27,
+        28
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_completion_gate_validation_owner.py",
+      "issue": "leaf_qt/regen_completion_gate_validation_owner.py: status_severity used without production import",
+      "classification": "LOCAL_STATUS_SEVERITY_DEFINITION",
+      "status_severity_line_numbers": [
+        22,
+        32,
+        33,
+        35,
+        46,
+        48,
+        61,
+        65,
+        69
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_cross_section_viewer.py",
+      "issue": "leaf_qt/regen_cross_section_viewer.py: status_severity used without production import",
+      "classification": "LOCAL_STATUS_SEVERITY_DEFINITION",
+      "status_severity_line_numbers": [
+        46,
+        57,
+        59,
+        81,
+        85,
+        89,
+        94,
+        3093
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_evolution_loop_completion_audit.py",
+      "issue": "leaf_qt/regen_evolution_loop_completion_audit.py: status_severity used without production import",
+      "classification": "LOCAL_STATUS_SEVERITY_DEFINITION",
+      "status_severity_line_numbers": [
+        9,
+        26,
+        32,
+        33
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_evolution_loop_input_audit.py",
+      "issue": "leaf_qt/regen_evolution_loop_input_audit.py: status_severity used without production import",
+      "classification": "LOCAL_STATUS_SEVERITY_DEFINITION",
+      "status_severity_line_numbers": [
+        22,
+        39,
+        45,
+        46
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_evolution_loop_master_gate.py",
+      "issue": "leaf_qt/regen_evolution_loop_master_gate.py: status_severity used without production import",
+      "classification": "LOCAL_STATUS_SEVERITY_DEFINITION",
+      "status_severity_line_numbers": [
+        4,
+        21,
+        27,
+        28
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_geometry_constraint_owner.py",
+      "issue": "leaf_qt/regen_geometry_constraint_owner.py: status_severity used without production import",
+      "classification": "LOCAL_STATUS_SEVERITY_DEFINITION",
+      "status_severity_line_numbers": [
+        4,
+        21,
+        27,
+        28
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_geometry_report_owner.py",
+      "issue": "leaf_qt/regen_geometry_report_owner.py: status_severity used without production import",
+      "classification": "LOCAL_STATUS_SEVERITY_DEFINITION",
+      "status_severity_line_numbers": [
+        5,
+        16,
+        18,
+        31,
+        35,
+        39
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_optimisation_completion_audit.py",
+      "issue": "leaf_qt/regen_optimisation_completion_audit.py: status_severity used without production import",
+      "classification": "LOCAL_STATUS_SEVERITY_DEFINITION",
+      "status_severity_line_numbers": [
+        19,
+        36,
+        42,
+        43
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_optimisation_registration_owner.py",
+      "issue": "leaf_qt/regen_optimisation_registration_owner.py: status_severity used without production import",
+      "classification": "LOCAL_STATUS_SEVERITY_DEFINITION",
+      "status_severity_line_numbers": [
+        19,
+        36,
+        42,
+        43
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_optimisation_report_owner.py",
+      "issue": "leaf_qt/regen_optimisation_report_owner.py: status_severity used without production import",
+      "classification": "LOCAL_STATUS_SEVERITY_DEFINITION",
+      "status_severity_line_numbers": [
+        5,
+        16,
+        18,
+        31,
+        35,
+        39
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_optimisation_scoring_owner.py",
+      "issue": "leaf_qt/regen_optimisation_scoring_owner.py: status_severity used without production import",
+      "classification": "LOCAL_STATUS_SEVERITY_DEFINITION",
+      "status_severity_line_numbers": [
+        22,
+        32,
+        33,
+        35,
+        46,
+        48,
+        61,
+        65,
+        69
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_optimisation_session_owner.py",
+      "issue": "leaf_qt/regen_optimisation_session_owner.py: status_severity used without production import",
+      "classification": "LOCAL_STATUS_SEVERITY_DEFINITION",
+      "status_severity_line_numbers": [
+        19,
+        36,
+        42,
+        43
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_runtime_execution_completion_audit.py",
+      "issue": "leaf_qt/regen_runtime_execution_completion_audit.py: status_severity used without production import",
+      "classification": "LOCAL_STATUS_SEVERITY_DEFINITION",
+      "status_severity_line_numbers": [
+        20,
+        37,
+        43,
+        44
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_runtime_execution_input_gate.py",
+      "issue": "leaf_qt/regen_runtime_execution_input_gate.py: status_severity used without production import",
+      "classification": "LOCAL_STATUS_SEVERITY_DEFINITION",
+      "status_severity_line_numbers": [
+        20,
+        37,
+        43,
+        44
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_runtime_execution_registration_owner.py",
+      "issue": "leaf_qt/regen_runtime_execution_registration_owner.py: status_severity used without production import",
+      "classification": "LOCAL_STATUS_SEVERITY_DEFINITION",
+      "status_severity_line_numbers": [
+        20,
+        37,
+        43,
+        44
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_runtime_execution_report_owner.py",
+      "issue": "leaf_qt/regen_runtime_execution_report_owner.py: status_severity used without production import",
+      "classification": "LOCAL_STATUS_SEVERITY_DEFINITION",
+      "status_severity_line_numbers": [
+        5,
+        16,
+        18,
+        31,
+        35,
+        39
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_runtime_execution_session_owner.py",
+      "issue": "leaf_qt/regen_runtime_execution_session_owner.py: status_severity used without production import",
+      "classification": "LOCAL_STATUS_SEVERITY_DEFINITION",
+      "status_severity_line_numbers": [
+        19,
+        36,
+        42,
+        43
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_runtime_optimisation_input_gate.py",
+      "issue": "leaf_qt/regen_runtime_optimisation_input_gate.py: status_severity used without production import",
+      "classification": "LOCAL_STATUS_SEVERITY_DEFINITION",
+      "status_severity_line_numbers": [
+        19,
+        36,
+        42,
+        43
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_runtime_optimisation_registration_owner.py",
+      "issue": "leaf_qt/regen_runtime_optimisation_registration_owner.py: status_severity used without production import",
+      "classification": "LOCAL_STATUS_SEVERITY_DEFINITION",
+      "status_severity_line_numbers": [
+        19,
+        36,
+        42,
+        43
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_runtime_optimisation_report_owner.py",
+      "issue": "leaf_qt/regen_runtime_optimisation_report_owner.py: status_severity used without production import",
+      "classification": "LOCAL_STATUS_SEVERITY_DEFINITION",
+      "status_severity_line_numbers": [
+        5,
+        16,
+        18,
+        31,
+        35,
+        39
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_runtime_optimisation_session_owner.py",
+      "issue": "leaf_qt/regen_runtime_optimisation_session_owner.py: status_severity used without production import",
+      "classification": "LOCAL_STATUS_SEVERITY_DEFINITION",
+      "status_severity_line_numbers": [
+        19,
+        36,
+        42,
+        43
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_scalability_failure_owner.py",
+      "issue": "leaf_qt/regen_scalability_failure_owner.py: status_severity used without production import",
+      "classification": "LOCAL_STATUS_SEVERITY_DEFINITION",
+      "status_severity_line_numbers": [
+        5,
+        16,
+        18,
+        31,
+        35,
+        39
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_system_signoff_validation_owner.py",
+      "issue": "leaf_qt/regen_system_signoff_validation_owner.py: status_severity used without production import",
+      "classification": "LOCAL_STATUS_SEVERITY_DEFINITION",
+      "status_severity_line_numbers": [
+        22,
+        32,
+        33,
+        35,
+        46,
+        48,
+        61,
+        65,
+        69
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_viewer_final_runtime_consistency_gate_phase_16q20.py",
+      "issue": "leaf_qt/regen_viewer_final_runtime_consistency_gate_phase_16q20.py: status_severity used without production import",
+      "classification": "LOCAL_STATUS_SEVERITY_DEFINITION",
+      "status_severity_line_numbers": [
+        6,
+        23,
+        29,
+        30
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_viewer_gui_runtime_acceptance_gate_phase_16q28.py",
+      "issue": "leaf_qt/regen_viewer_gui_runtime_acceptance_gate_phase_16q28.py: status_severity used without production import",
+      "classification": "LOCAL_STATUS_SEVERITY_DEFINITION",
+      "status_severity_line_numbers": [
+        6,
+        23,
+        29,
+        30
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_viewer_report_renderer.py",
+      "issue": "leaf_qt/regen_viewer_report_renderer.py: status_severity used without production import",
+      "classification": "LOCAL_STATUS_SEVERITY_DEFINITION",
+      "status_severity_line_numbers": [
+        16,
+        33,
+        39,
+        40
+      ]
+    },
+    {
+      "path": "leaf_qt/status_presentation.py",
+      "issue": "leaf_qt/status_presentation.py: status_severity used without production import",
+      "classification": "SHARED_STATUS_SEVERITY_OWNER_MODULE",
+      "status_severity_line_numbers": [
+        70,
+        101,
+        111,
+        122,
+        134,
+        143,
+        180,
+        198
+      ]
+    }
+  ],
+  "passed": true,
+  "status": "PASS_PHASE_16U175C_STATUS_SEVERITY_IMPORT_ISSUE_CLASSIFIER",
+  "next_phase": "16U.175D_STATUS_IMPORT_SCOPE_REPAIR_OR_PATCH"
+}

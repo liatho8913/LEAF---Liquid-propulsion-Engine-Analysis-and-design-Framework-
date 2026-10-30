@@ -1,0 +1,65 @@
+LEAF PHASE 16U.16
+WAVE B VALIDATION OWNER LOW-RISK STATUS WRAPPER PATCH
+======================================================
+
+STATUS: PASS_PHASE_16U16_WAVE_B_VALIDATION_OWNER_LOW_RISK_STATUS_WRAPPER_PATCH
+Generated: 2026-06-28T00:58:52
+
+SCOPE
+-----
+This phase patches only deduplicated low-risk Wave B validation-owner consumers.
+Held/manual-review validation items are intentionally preserved.
+No solver equations are changed.
+No validation equations are changed.
+
+FILES MODIFIED
+--------------
+leaf_qt/regen_candidate_validator.py
+leaf_qt/regen_source_validation_gate.py
+
+SUMMARY
+-------
+Audit patchable rows: 7
+Deduplicated patch items: 3
+Applied: 3
+Already applied: 0
+Missing: 0
+Held/manual-review tokens preserved: True
+Forbidden tokens present: 0
+
+PATCH RESULTS
+-------------
+leaf_qt/regen_candidate_validator.py
+  import_added: True
+  applied: 1
+  already_applied: 0
+  missing: 0
+  OLD: if "FAIL" in severities:
+  NEW: if solver_highest_severity(severities) == "FAIL":
+
+leaf_qt/regen_source_validation_gate.py
+  import_added: True
+  applied: 2
+  already_applied: 0
+  missing: 0
+  OLD: if key in results and str(results.get(key)).upper().startswith("PASS"):
+  NEW: if key in results and is_pass(results.get(key)):
+  OLD: if "FAIL" in severities:
+  NEW: if solver_highest_severity(severities) == "FAIL":
+
+COMPILE RESULTS
+---------------
+leaf_qt/regen_candidate_blueprint_mutation_validation.py: PASS 
+leaf_qt/regen_candidate_blueprint_population_validation_owner.py: PASS 
+leaf_qt/regen_candidate_post_resolve_validation_owner.py: PASS 
+leaf_qt/regen_candidate_validator.py: PASS 
+leaf_qt/regen_geometry_constraint_validation_owner.py: PASS 
+leaf_qt/regen_source_validation_gate.py: PASS 
+
+COMPLETION NOTICE
+-----------------
+PHASE 16U.16 COMPLETE.
+
+NEXT PHASE
+----------
+PHASE 16U.17 — WAVE B VALIDATION OWNER LOW-RISK STATUS WRAPPER REGRESSION

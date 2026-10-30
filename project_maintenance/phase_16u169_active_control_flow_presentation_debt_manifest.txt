@@ -1,0 +1,151 @@
+LEAF PHASE 16U.169
+ACTIVE CONTROL-FLOW PRESENTATION DEBT MANIFEST
+======================================================
+status=PASS_PHASE_16U169_ACTIVE_CONTROL_FLOW_PRESENTATION_DEBT_MANIFEST
+active_control_flow_count=76
+
+PREDICATE SHAPE COUNTS
+------------------------
+EQUALITY_STATUS_LITERAL_PREDICATE=43
+INEQUALITY_STATUS_LITERAL_PREDICATE=28
+MEMBERSHIP_STATUS_LITERAL_PREDICATE=2
+SHARED_STATUS_SEVERITY_PREDICATE=3
+
+AST PARSE COUNTS
+----------------
+AST_NOT_PARSEABLE=74
+AST_PARSEABLE=2
+
+FILES BY SHAPE
+--------------
+
+EQUALITY_STATUS_LITERAL_PREDICATE
+  leaf_qt/engine_solver.py
+  leaf_qt/foundation_verification_harness.py
+  leaf_qt/regen_acceptance_master_gate.py
+  leaf_qt/regen_before_after_solver_comparison_report_owner.py
+  leaf_qt/regen_candidate_acceptance_completion_gate.py
+  leaf_qt/regen_convergence_master_gate.py
+  leaf_qt/regen_cross_section_viewer_integration.py
+  leaf_qt/regen_engineering_acceptance_report.py
+  leaf_qt/regen_failure_root_cause_system.py
+  leaf_qt/regen_final_completion_audit.py
+  leaf_qt/regen_final_master_gate.py
+  leaf_qt/regen_final_signoff_report.py
+  leaf_qt/regen_final_verification_audit.py
+  leaf_qt/regen_live_geometry_commit_execution.py
+  leaf_qt/regen_optimisation_completion_gate.py
+  leaf_qt/regen_optimisation_controller_master_gate.py
+  leaf_qt/regen_optimisation_narrative_master_gate.py
+  leaf_qt/regen_optimisation_proof_system.py
+  leaf_qt/regen_station_viewer_integration.py
+  leaf_qt/regen_validation_master_gate.py
+  leaf_qt/regen_viewer_completion_gate.py
+  leaf_qt/regen_viewer_data_adapter.py
+  leaf_qt/regen_viewer_navigation_system.py
+  leaf_qt/regen_viewer_ownership_architecture.py
+  leaf_qt/regen_viewer_report_renderer.py
+
+INEQUALITY_STATUS_LITERAL_PREDICATE
+  leaf_qt/regen_candidate_comparison_master_gate.py
+  leaf_qt/regen_completion_master_gate.py
+  leaf_qt/regen_evolution_tree_master_gate.py
+  leaf_qt/regen_optimisation_viewer_master_gate.py
+  leaf_qt/regen_runtime_candidate_evaluation_master_gate.py
+  leaf_qt/regen_runtime_convergence_master_gate.py
+  leaf_qt/regen_runtime_evolution_master_gate.py
+  leaf_qt/regen_runtime_selection_master_gate.py
+  leaf_qt/regen_system_signoff_master_gate.py
+  leaf_qt/regen_unified_ecosystem_master_gate.py
+  leaf_qt/regen_unified_validation_integration_master_gate.py
+  leaf_qt/regen_unified_viewer_integration_master_gate.py
+  leaf_qt/regen_viewer_gui_runtime_acceptance_gate_phase_16q28.py
+
+MEMBERSHIP_STATUS_LITERAL_PREDICATE
+  leaf_qt/engine_solver.py
+
+SHARED_STATUS_SEVERITY_PREDICATE
+  leaf_qt/design_history_narrative_builder.py
+  leaf_qt/structured_status_access.py
+
+ENTRIES
+-------
+leaf_qt/engine_solver.py:4559 [MEMBERSHIP_STATUS_LITERAL_PREDICATE] parseable=False :: if results.get("recommended_geometry_status") in (None, "BLOCKED_NO_RADIUS_DATA", "FAIL_NO_PHYSICAL_FIT"):
+leaf_qt/engine_solver.py:4559 [MEMBERSHIP_STATUS_LITERAL_PREDICATE] parseable=False :: if results.get("recommended_geometry_status") in (None, "BLOCKED_NO_RADIUS_DATA", "FAIL_NO_PHYSICAL_FIT"):
+leaf_qt/engine_solver.py:5323 [EQUALITY_STATUS_LITERAL_PREDICATE] parseable=False :: elif status == "FAIL_BUT_IMPROVED":
+leaf_qt/engine_solver.py:5323 [EQUALITY_STATUS_LITERAL_PREDICATE] parseable=False :: elif status == "FAIL_BUT_IMPROVED":
+leaf_qt/engine_solver.py:7746 [EQUALITY_STATUS_LITERAL_PREDICATE] parseable=False :: if results.get("explicit_coating_liner_status") == "FAIL_THERMAL_STRESS":
+leaf_qt/engine_solver.py:7746 [EQUALITY_STATUS_LITERAL_PREDICATE] parseable=False :: if results.get("explicit_coating_liner_status") == "FAIL_THERMAL_STRESS":
+leaf_qt/engine_solver.py:7767 [EQUALITY_STATUS_LITERAL_PREDICATE] parseable=False :: if results.get("explicit_coating_liner_status") == "FAIL_THERMAL_STRESS":
+leaf_qt/engine_solver.py:7767 [EQUALITY_STATUS_LITERAL_PREDICATE] parseable=False :: if results.get("explicit_coating_liner_status") == "FAIL_THERMAL_STRESS":
+leaf_qt/regen_convergence_master_gate.py:44 [EQUALITY_STATUS_LITERAL_PREDICATE] parseable=False :: if status == "PASS_REGEN_CONVERGENCE_MASTER_GATE_CONVERGED":
+leaf_qt/regen_convergence_master_gate.py:44 [EQUALITY_STATUS_LITERAL_PREDICATE] parseable=False :: if status == "PASS_REGEN_CONVERGENCE_MASTER_GATE_CONVERGED":
+leaf_qt/regen_convergence_master_gate.py:54 [EQUALITY_STATUS_LITERAL_PREDICATE] parseable=False :: elif status == "WARN_REGEN_CONVERGENCE_MASTER_GATE_RUNNING":
+leaf_qt/regen_convergence_master_gate.py:54 [EQUALITY_STATUS_LITERAL_PREDICATE] parseable=False :: elif status == "WARN_REGEN_CONVERGENCE_MASTER_GATE_RUNNING":
+leaf_qt/regen_convergence_master_gate.py:66 [EQUALITY_STATUS_LITERAL_PREDICATE] parseable=False :: elif status == "WARN_REGEN_CONVERGENCE_MASTER_GATE_MAX_GENERATIONS":
+leaf_qt/regen_convergence_master_gate.py:66 [EQUALITY_STATUS_LITERAL_PREDICATE] parseable=False :: elif status == "WARN_REGEN_CONVERGENCE_MASTER_GATE_MAX_GENERATIONS":
+leaf_qt/regen_optimisation_controller_master_gate.py:44 [EQUALITY_STATUS_LITERAL_PREDICATE] parseable=False :: if status == "PASS_REGEN_OPTIMISATION_MASTER_GATE_CONVERGED":
+leaf_qt/regen_optimisation_controller_master_gate.py:44 [EQUALITY_STATUS_LITERAL_PREDICATE] parseable=False :: if status == "PASS_REGEN_OPTIMISATION_MASTER_GATE_CONVERGED":
+leaf_qt/regen_optimisation_controller_master_gate.py:54 [EQUALITY_STATUS_LITERAL_PREDICATE] parseable=False :: elif status == "WARN_REGEN_OPTIMISATION_MASTER_GATE_NEXT_GENERATION_READY":
+leaf_qt/regen_optimisation_controller_master_gate.py:54 [EQUALITY_STATUS_LITERAL_PREDICATE] parseable=False :: elif status == "WARN_REGEN_OPTIMISATION_MASTER_GATE_NEXT_GENERATION_READY":
+leaf_qt/regen_optimisation_controller_master_gate.py:66 [EQUALITY_STATUS_LITERAL_PREDICATE] parseable=False :: elif status == "WARN_REGEN_OPTIMISATION_MASTER_GATE_WAITING":
+leaf_qt/regen_optimisation_controller_master_gate.py:66 [EQUALITY_STATUS_LITERAL_PREDICATE] parseable=False :: elif status == "WARN_REGEN_OPTIMISATION_MASTER_GATE_WAITING":
+leaf_qt/regen_viewer_gui_runtime_acceptance_gate_phase_16q28.py:81 [INEQUALITY_STATUS_LITERAL_PREDICATE] parseable=False :: if results.get("phase_16q24_real_button_toggle_status") != "PASS_REGEN_VIEWER_REAL_BUTTON_TOGGLE_OWNER_PHASE_16Q24":
+leaf_qt/regen_viewer_gui_runtime_acceptance_gate_phase_16q28.py:81 [INEQUALITY_STATUS_LITERAL_PREDICATE] parseable=False :: if results.get("phase_16q24_real_button_toggle_status") != "PASS_REGEN_VIEWER_REAL_BUTTON_TOGGLE_OWNER_PHASE_16Q24":
+leaf_qt/regen_viewer_gui_runtime_acceptance_gate_phase_16q28.py:84 [INEQUALITY_STATUS_LITERAL_PREDICATE] parseable=False :: if results.get("phase_16q27_toggle_ux_status") != "PASS_REGEN_VIEWER_TOGGLE_UX_CLEANUP_PHASE_16Q27":
+leaf_qt/regen_viewer_gui_runtime_acceptance_gate_phase_16q28.py:84 [INEQUALITY_STATUS_LITERAL_PREDICATE] parseable=False :: if results.get("phase_16q27_toggle_ux_status") != "PASS_REGEN_VIEWER_TOGGLE_UX_CLEANUP_PHASE_16Q27":
+leaf_qt/foundation_verification_harness.py:123 [EQUALITY_STATUS_LITERAL_PREDICATE] parseable=False :: if status == "PASS_FOUNDATION_VERIFICATION" and failed_count == 0:
+leaf_qt/foundation_verification_harness.py:123 [EQUALITY_STATUS_LITERAL_PREDICATE] parseable=False :: if status == "PASS_FOUNDATION_VERIFICATION" and failed_count == 0:
+leaf_qt/regen_candidate_comparison_master_gate.py:17 [INEQUALITY_STATUS_LITERAL_PREDICATE] parseable=False :: if results.get("regen_candidate_comparison_completion_audit_status") != "PASS_REGEN_CANDIDATE_COMPARISON_VIEWER_BACKEND_PHASE_15B":
+leaf_qt/regen_candidate_comparison_master_gate.py:17 [INEQUALITY_STATUS_LITERAL_PREDICATE] parseable=False :: if results.get("regen_candidate_comparison_completion_audit_status") != "PASS_REGEN_CANDIDATE_COMPARISON_VIEWER_BACKEND_PHASE_15B":
+leaf_qt/regen_completion_master_gate.py:17 [INEQUALITY_STATUS_LITERAL_PREDICATE] parseable=False :: if results.get("regen_completion_gate_completion_audit_status") != "PASS_REGEN_COMPLETION_GATE_AUDIT_PHASE_16F":
+leaf_qt/regen_completion_master_gate.py:17 [INEQUALITY_STATUS_LITERAL_PREDICATE] parseable=False :: if results.get("regen_completion_gate_completion_audit_status") != "PASS_REGEN_COMPLETION_GATE_AUDIT_PHASE_16F":
+leaf_qt/regen_evolution_tree_master_gate.py:17 [INEQUALITY_STATUS_LITERAL_PREDICATE] parseable=False :: if results.get("regen_evolution_tree_completion_audit_status") != "PASS_REGEN_EVOLUTION_TREE_BACKEND_PHASE_15C":
+leaf_qt/regen_evolution_tree_master_gate.py:17 [INEQUALITY_STATUS_LITERAL_PREDICATE] parseable=False :: if results.get("regen_evolution_tree_completion_audit_status") != "PASS_REGEN_EVOLUTION_TREE_BACKEND_PHASE_15C":
+leaf_qt/regen_optimisation_narrative_master_gate.py:58 [EQUALITY_STATUS_LITERAL_PREDICATE] parseable=False :: if status == "PASS_REGEN_OPTIMISATION_NARRATIVE_MASTER_GATE":
+leaf_qt/regen_optimisation_narrative_master_gate.py:58 [EQUALITY_STATUS_LITERAL_PREDICATE] parseable=False :: if status == "PASS_REGEN_OPTIMISATION_NARRATIVE_MASTER_GATE":
+leaf_qt/regen_optimisation_viewer_master_gate.py:17 [INEQUALITY_STATUS_LITERAL_PREDICATE] parseable=False :: if results.get("regen_optimisation_viewer_completion_audit_status") != "PASS_REGEN_OPTIMISATION_VIEWER_BACKEND_PHASE_15A":
+leaf_qt/regen_optimisation_viewer_master_gate.py:17 [INEQUALITY_STATUS_LITERAL_PREDICATE] parseable=False :: if results.get("regen_optimisation_viewer_completion_audit_status") != "PASS_REGEN_OPTIMISATION_VIEWER_BACKEND_PHASE_15A":
+leaf_qt/regen_runtime_candidate_evaluation_master_gate.py:17 [INEQUALITY_STATUS_LITERAL_PREDICATE] parseable=False :: if results.get("regen_runtime_candidate_evaluation_completion_audit_status") != "PASS_REGEN_RUNTIME_CANDIDATE_EVALUATION_PHASE_14B":
+leaf_qt/regen_runtime_candidate_evaluation_master_gate.py:17 [INEQUALITY_STATUS_LITERAL_PREDICATE] parseable=False :: if results.get("regen_runtime_candidate_evaluation_completion_audit_status") != "PASS_REGEN_RUNTIME_CANDIDATE_EVALUATION_PHASE_14B":
+leaf_qt/regen_runtime_convergence_master_gate.py:17 [INEQUALITY_STATUS_LITERAL_PREDICATE] parseable=False :: if results.get("regen_runtime_convergence_completion_audit_status") != "PASS_REGEN_RUNTIME_CONVERGENCE_PHASE_14E":
+leaf_qt/regen_runtime_convergence_master_gate.py:17 [INEQUALITY_STATUS_LITERAL_PREDICATE] parseable=False :: if results.get("regen_runtime_convergence_completion_audit_status") != "PASS_REGEN_RUNTIME_CONVERGENCE_PHASE_14E":
+leaf_qt/regen_runtime_evolution_master_gate.py:17 [INEQUALITY_STATUS_LITERAL_PREDICATE] parseable=False :: if results.get("regen_runtime_evolution_completion_audit_status") != "PASS_REGEN_RUNTIME_EVOLUTION_PHASE_14D":
+leaf_qt/regen_runtime_evolution_master_gate.py:17 [INEQUALITY_STATUS_LITERAL_PREDICATE] parseable=False :: if results.get("regen_runtime_evolution_completion_audit_status") != "PASS_REGEN_RUNTIME_EVOLUTION_PHASE_14D":
+leaf_qt/regen_runtime_selection_master_gate.py:17 [INEQUALITY_STATUS_LITERAL_PREDICATE] parseable=False :: if results.get("regen_runtime_selection_completion_audit_status") != "PASS_REGEN_RUNTIME_SELECTION_PHASE_14C":
+leaf_qt/regen_runtime_selection_master_gate.py:17 [INEQUALITY_STATUS_LITERAL_PREDICATE] parseable=False :: if results.get("regen_runtime_selection_completion_audit_status") != "PASS_REGEN_RUNTIME_SELECTION_PHASE_14C":
+leaf_qt/regen_system_signoff_master_gate.py:17 [INEQUALITY_STATUS_LITERAL_PREDICATE] parseable=False :: if results.get("regen_system_signoff_completion_audit_status") != "PASS_REGEN_SYSTEM_SIGNOFF_AUDIT_PHASE_16E":
+leaf_qt/regen_system_signoff_master_gate.py:17 [INEQUALITY_STATUS_LITERAL_PREDICATE] parseable=False :: if results.get("regen_system_signoff_completion_audit_status") != "PASS_REGEN_SYSTEM_SIGNOFF_AUDIT_PHASE_16E":
+leaf_qt/regen_unified_ecosystem_master_gate.py:17 [INEQUALITY_STATUS_LITERAL_PREDICATE] parseable=False :: if results.get("regen_unified_ecosystem_completion_audit_status") != "PASS_REGEN_UNIFIED_ECOSYSTEM_REGISTRY_PHASE_16A":
+leaf_qt/regen_unified_ecosystem_master_gate.py:17 [INEQUALITY_STATUS_LITERAL_PREDICATE] parseable=False :: if results.get("regen_unified_ecosystem_completion_audit_status") != "PASS_REGEN_UNIFIED_ECOSYSTEM_REGISTRY_PHASE_16A":
+leaf_qt/regen_unified_validation_integration_master_gate.py:143 [INEQUALITY_STATUS_LITERAL_PREDICATE] parseable=False :: if results.get("regen_unified_validation_integration_completion_audit_status") != "PASS_REGEN_UNIFIED_VALIDATION_INTEGRATION_PHASE_16D":
+leaf_qt/regen_unified_validation_integration_master_gate.py:143 [INEQUALITY_STATUS_LITERAL_PREDICATE] parseable=False :: if results.get("regen_unified_validation_integration_completion_audit_status") != "PASS_REGEN_UNIFIED_VALIDATION_INTEGRATION_PHASE_16D":
+leaf_qt/regen_unified_viewer_integration_master_gate.py:17 [INEQUALITY_STATUS_LITERAL_PREDICATE] parseable=False :: if results.get("regen_unified_viewer_integration_completion_audit_status") != "PASS_REGEN_UNIFIED_VIEWER_INTEGRATION_PHASE_16B":
+leaf_qt/regen_unified_viewer_integration_master_gate.py:17 [INEQUALITY_STATUS_LITERAL_PREDICATE] parseable=False :: if results.get("regen_unified_viewer_integration_completion_audit_status") != "PASS_REGEN_UNIFIED_VIEWER_INTEGRATION_PHASE_16B":
+leaf_qt/regen_validation_master_gate.py:69 [EQUALITY_STATUS_LITERAL_PREDICATE] parseable=False :: if status == "PASS_REGEN_VALIDATION_MASTER_GATE":
+leaf_qt/regen_validation_master_gate.py:69 [EQUALITY_STATUS_LITERAL_PREDICATE] parseable=False :: if status == "PASS_REGEN_VALIDATION_MASTER_GATE":
+leaf_qt/regen_acceptance_master_gate.py:64 [EQUALITY_STATUS_LITERAL_PREDICATE] parseable=False :: if status == PASS_STATUS:
+leaf_qt/regen_before_after_solver_comparison_report_owner.py:63 [EQUALITY_STATUS_LITERAL_PREDICATE] parseable=False :: if status == PASS_STATUS:
+leaf_qt/regen_candidate_acceptance_completion_gate.py:77 [EQUALITY_STATUS_LITERAL_PREDICATE] parseable=False :: if status == PASS_STATUS:
+leaf_qt/regen_cross_section_viewer_integration.py:71 [EQUALITY_STATUS_LITERAL_PREDICATE] parseable=False :: if status == PASS_STATUS:
+leaf_qt/regen_engineering_acceptance_report.py:41 [EQUALITY_STATUS_LITERAL_PREDICATE] parseable=False :: if status == PASS_STATUS:
+leaf_qt/regen_failure_root_cause_system.py:38 [EQUALITY_STATUS_LITERAL_PREDICATE] parseable=False :: if status == PASS_STATUS:
+leaf_qt/regen_final_completion_audit.py:53 [EQUALITY_STATUS_LITERAL_PREDICATE] parseable=False :: if status == PASS_STATUS:
+leaf_qt/regen_final_master_gate.py:61 [EQUALITY_STATUS_LITERAL_PREDICATE] parseable=False :: if status == PASS_STATUS:
+leaf_qt/regen_final_signoff_report.py:52 [EQUALITY_STATUS_LITERAL_PREDICATE] parseable=False :: if status == PASS_STATUS:
+leaf_qt/regen_final_verification_audit.py:70 [EQUALITY_STATUS_LITERAL_PREDICATE] parseable=False :: if status == PASS_STATUS:
+leaf_qt/regen_live_geometry_commit_execution.py:90 [EQUALITY_STATUS_LITERAL_PREDICATE] parseable=False :: if status == PASS_STATUS:
+leaf_qt/regen_optimisation_completion_gate.py:65 [EQUALITY_STATUS_LITERAL_PREDICATE] parseable=False :: if status == PASS_STATUS:
+leaf_qt/regen_optimisation_proof_system.py:67 [EQUALITY_STATUS_LITERAL_PREDICATE] parseable=False :: if status == PASS_STATUS:
+leaf_qt/regen_station_viewer_integration.py:64 [EQUALITY_STATUS_LITERAL_PREDICATE] parseable=False :: if status == PASS_STATUS:
+leaf_qt/regen_viewer_completion_gate.py:70 [EQUALITY_STATUS_LITERAL_PREDICATE] parseable=False :: if status == PASS_STATUS:
+leaf_qt/regen_viewer_data_adapter.py:54 [EQUALITY_STATUS_LITERAL_PREDICATE] parseable=False :: if status == PASS_STATUS:
+leaf_qt/regen_viewer_navigation_system.py:76 [EQUALITY_STATUS_LITERAL_PREDICATE] parseable=False :: if status == PASS_STATUS:
+leaf_qt/regen_viewer_ownership_architecture.py:82 [EQUALITY_STATUS_LITERAL_PREDICATE] parseable=False :: if status == PASS_STATUS:
+leaf_qt/regen_viewer_report_renderer.py:85 [EQUALITY_STATUS_LITERAL_PREDICATE] parseable=False :: if status == PASS_STATUS:
+leaf_qt/design_history_narrative_builder.py:332 [SHARED_STATUS_SEVERITY_PREDICATE] parseable=True :: return text in self.PASS_WORDS or status_severity(text) == "PASS"
+leaf_qt/design_history_narrative_builder.py:336 [SHARED_STATUS_SEVERITY_PREDICATE] parseable=True :: return text in self.FAIL_WORDS or status_severity(text) == "FAIL"
+leaf_qt/structured_status_access.py:45 [SHARED_STATUS_SEVERITY_PREDICATE] parseable=False :: if text in {"INFO", "PASS"} or text in PASS_LIKE or status_severity(text) == "PASS":
+
+json=/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u169_active_control_flow_presentation_debt_manifest.json
+text=/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u169_active_control_flow_presentation_debt_manifest.txt

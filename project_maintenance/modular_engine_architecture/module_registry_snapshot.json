@@ -1,0 +1,123 @@
+{
+  "schema": "LEAF_MODULE_REGISTRY_SNAPSHOT_V1",
+  "owner": "leaf_qt.module_engine.module_runtime_integrator.ModuleRuntimeIntegrator",
+  "module_count": 3,
+  "active_modules": [
+    "combustion_chamber",
+    "nozzle",
+    "regen"
+  ],
+  "deactivated_modules": [],
+  "records": {
+    "combustion_chamber": {
+      "module_id": "combustion_chamber",
+      "module_name": "Combustion Chamber",
+      "domain": "combustion",
+      "version": "1.0.0",
+      "entrypoint": "leaf_qt.combustion_chamber_module_interface_phase_30a",
+      "engineering_owner": "combustion_chamber_engineering_module",
+      "runtime_owner": "runtime_engine",
+      "verification_status": "PASS",
+      "runtime_status": "READY",
+      "outputs": [
+        "chamber_pressure",
+        "chamber_temperature",
+        "characteristic_velocity",
+        "mass_flow"
+      ],
+      "active_outputs": [
+        "chamber_pressure",
+        "chamber_temperature",
+        "characteristic_velocity",
+        "mass_flow"
+      ],
+      "dependencies": [
+        "engine_solver",
+        "materials"
+      ],
+      "enabled": true,
+      "requires_modules": [],
+      "activation_status": "Active",
+      "activation_reason": "Module enabled.",
+      "can_user_activate": true
+    },
+    "nozzle": {
+      "module_id": "nozzle",
+      "module_name": "Nozzle",
+      "domain": "engineering.nozzle",
+      "version": "1.0.0",
+      "entrypoint": "leaf_qt.module_engine.nozzle_migration_adapter.NozzleMigrationAdapter",
+      "engineering_owner": "engineering_modules.nozzle",
+      "runtime_owner": "leaf_qt.runtime",
+      "verification_status": "PASS",
+      "runtime_status": "READY",
+      "outputs": [
+        "nozzle_geometry",
+        "area_mach_solution",
+        "expansion_ratio",
+        "flow_stations",
+        "geometry_validation",
+        "nozzle_report",
+        "nozzle_plot",
+        "nozzle_export"
+      ],
+      "active_outputs": [
+        "nozzle_geometry",
+        "area_mach_solution",
+        "expansion_ratio",
+        "flow_stations",
+        "geometry_validation",
+        "nozzle_report",
+        "nozzle_plot",
+        "nozzle_export"
+      ],
+      "dependencies": [
+        "runtime",
+        "validation",
+        "reports",
+        "workflow",
+        "storage",
+        "notifications",
+        "module_engine"
+      ],
+      "enabled": true,
+      "requires_modules": [],
+      "activation_status": "Active",
+      "activation_reason": "Module enabled.",
+      "can_user_activate": true
+    },
+    "regen": {
+      "module_id": "regen",
+      "module_name": "Regenerative Cooling",
+      "domain": "thermal_management",
+      "version": "1.0.0",
+      "entrypoint": "leaf_qt.regen_solver",
+      "engineering_owner": "regen_engineering_module",
+      "runtime_owner": "runtime_engine",
+      "verification_status": "PASS",
+      "runtime_status": "READY",
+      "outputs": [
+        "wall_temperature",
+        "coolant_temperature",
+        "pressure_drop",
+        "heat_flux"
+      ],
+      "active_outputs": [
+        "wall_temperature",
+        "coolant_temperature",
+        "pressure_drop",
+        "heat_flux"
+      ],
+      "dependencies": [
+        "materials",
+        "coolant_properties",
+        "geometry"
+      ],
+      "enabled": true,
+      "requires_modules": [],
+      "activation_status": "Active",
+      "activation_reason": "Module enabled.",
+      "can_user_activate": true
+    }
+  }
+}

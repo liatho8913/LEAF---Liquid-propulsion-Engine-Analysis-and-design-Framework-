@@ -1,0 +1,18 @@
+LEAF PHASE 16U.130
+LOCKED BASELINE GLOBAL AUDIT
+============================
+
+STATUS: PASS_PHASE_16U130_UPDATED_GLOBAL_REMAINING_CANDIDATE_AUDIT
+
+Locked baseline: 68
+Closed targets: 15
+Remaining candidates: 53
+
+RECENTLY CLOSED
+---------------
+regen_geometry_constraint_owner.py
+
+PROGRESS
+--------
+15 / 68 migrated
+53 / 68 remaining

@@ -1,0 +1,41 @@
+LEAF PHASE 16U.42
+REGEN SCALABILITY FAILURE OWNER PRESENTATION LAYER PATCH
+========================================================
+
+STATUS: PASS_PHASE_16U42_REGEN_SCALABILITY_FAILURE_OWNER_PRESENTATION_LAYER_PATCH
+Generated: 2026-06-28T02:36:14
+
+FEATURE
+-------
+Patch the next selected report-owner/failure-owner production target onto the shared status presentation layer.
+
+TARGET
+------
+leaf_qt/regen_scalability_failure_owner.py
+
+PATCH ACCOUNTING
+----------------
+Helper inserted: False
+Applied migrations: 4
+Before forbidden count: 8
+After forbidden count: 0
+Compiled: True
+Compile error: 
+
+APPLIED
+-------
+migrate_fail_in_variable:2
+migrate_warn_in_variable:2
+migrate_pass_in_variable:2
+migrate_blocked_in_variable:2
+
+REMAINING FINDINGS
+------------------
+
+COMPLETION NOTICE
+-----------------
+PHASE 16U.42 COMPLETE.
+
+NEXT FEATURE
+------------
+PHASE 16U.43 — REGEN SCALABILITY FAILURE OWNER PRESENTATION LAYER REGRESSION

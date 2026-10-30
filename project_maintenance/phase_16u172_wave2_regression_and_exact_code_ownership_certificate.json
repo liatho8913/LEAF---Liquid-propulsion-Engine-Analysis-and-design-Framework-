@@ -1,0 +1,32 @@
+{
+  "phase": "16U.172",
+  "runs": [
+    {
+      "script": "project_maintenance/phase_16u162_global_repository_presentation_layer_sanity_audit.py",
+      "returncode": 1,
+      "stdout": "FAIL_PHASE_16U162_GLOBAL_REPOSITORY_PRESENTATION_LAYER_SANITY_AUDIT\nscanned_files=2512\nfinding_count=15512\ncompile_failure_count=0\ntext_report=/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u162_global_repository_presentation_layer_sanity_audit.txt\njson_report=/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u162_global_repository_presentation_layer_sanity_audit.json\n",
+      "stderr": ""
+    },
+    {
+      "script": "project_maintenance/phase_16u163_presentation_debt_classifier.py",
+      "returncode": 0,
+      "stdout": "PASS_PHASE_16U163_PRESENTATION_DEBT_CLASSIFICATION\ntotal_findings=15512\nhigh_risk_file_count=40\nhigh_risk_finding_count=82\ntext_report=/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u163_presentation_debt_classification.txt\njson_report=/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u163_presentation_debt_classification.json\n",
+      "stderr": ""
+    },
+    {
+      "script": "project_maintenance/phase_16u164_high_risk_presentation_debt_manifest.py",
+      "returncode": 0,
+      "stdout": "PASS_PHASE_16U164_HIGH_RISK_PRESENTATION_DEBT_MANIFEST\nhigh_risk_file_count=40\nhigh_risk_finding_count=82\nsafe_wave_candidate_count=0\npatch_mode_counts={'MANUAL_ARCHITECTURE_REVIEW': 2, 'MANUAL_REVIEW_REQUIRED': 38}\ntext_report=/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u164_high_risk_presentation_debt_manifest.txt\njson_report=/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u164_high_risk_presentation_debt_manifest.json\n",
+      "stderr": ""
+    }
+  ],
+  "compile_failure_count": 0,
+  "raw_finding_count": 15512,
+  "high_risk_file_count": 40,
+  "high_risk_finding_count": 82,
+  "exact_owned_count": 52,
+  "unresolved_count": 19,
+  "passed": true,
+  "status": "PASS_PHASE_16U172_WAVE2_REGRESSION_AND_EXACT_CODE_OWNERSHIP_CERTIFICATE",
+  "next_phase": "16U.173_UNQUOTED_STATUS_TOKEN_RESOLVER"
+}

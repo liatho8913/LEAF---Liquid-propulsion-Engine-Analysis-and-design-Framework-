@@ -1,0 +1,42 @@
+LEAF PHASE 16U.161
+FINAL MIGRATION CERTIFICATE
+===========================
+
+STATUS: PASS_PHASE_16U161_FINAL_MIGRATION_CERTIFICATE
+
+PROGRAMME
+---------
+Phase 16U — Presentation Layer Migration Programme
+
+FINAL RESULT
+------------
+Locked baseline: 68
+Closed targets: 68
+Remaining candidates: 0
+Progress: 68/68
+Compile failures: 0
+
+SECURITY STATEMENT
+------------------
+All 68 locked Phase 16U production targets compile, use shared presentation/status semantics,
+and contain no audited legacy inline PASS/WARN/FAIL presentation logic.
+
+WAVE CERTIFICATES
+-----------------
+- project_maintenance/phase_16u137_wave1_migration_certificate.json
+- project_maintenance/phase_16u143_wave2_migration_certificate.json
+- project_maintenance/phase_16u149_wave3_migration_certificate.json
+- project_maintenance/phase_16u155_wave4_migration_certificate.json
+
+EVIDENCE HASHES
+---------------
+- project_maintenance/phase_16u126b_locked_migration_scope_baseline.json: 21f986f5ee5ea7adf1c07552d8ef1aae8cea80deaf0f7f924e598acb52fd7a2f
+- project_maintenance/phase_16u160_final_locked_audit.json: 200e25f2105c5cba7c2215a302115eb08fbc14cafc80ad05a22f300e1ebbbb61
+- project_maintenance/phase_16u137_wave1_migration_certificate.json: 648750e19ee653dac12264bede12fff1e2dc023a59104e8563f9dc87326f1851
+- project_maintenance/phase_16u143_wave2_migration_certificate.json: ba889ce2e6e4f27f7e5c46b6b1c98dd49600b0984a19a3148b61786059791ada
+- project_maintenance/phase_16u149_wave3_migration_certificate.json: c565a36b35d302369b29775c80562f0532ce11cc50f4e8ad3f3926056a83d790
+- project_maintenance/phase_16u155_wave4_migration_certificate.json: 1649e8b873b0c2985fe3b738ce58aa141b597d5118d3cb73eefd2b0c705fe5a7
+
+FAILURES
+--------
+None

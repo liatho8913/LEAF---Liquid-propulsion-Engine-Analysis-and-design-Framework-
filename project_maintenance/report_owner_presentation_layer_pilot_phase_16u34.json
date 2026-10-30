@@ -1,0 +1,28 @@
+{
+  "phase": "16U.34",
+  "status": "PASS_PHASE_16U34_REPORT_OWNER_PRESENTATION_LAYER_PILOT_INTEGRATION",
+  "generated": "2026-06-28T02:10:04",
+  "target_file": "leaf_qt/foundation_test_runner_window.py",
+  "regression_status": "PASS_PHASE_16U33_STATUS_PRESENTATION_LAYER_REGRESSION",
+  "classification_status": "PASS_PHASE_16U31_REPORT_STATUS_SEMANTICS_CLASSIFICATION",
+  "import_added": true,
+  "applied": true,
+  "already_applied": false,
+  "missing": false,
+  "changed": true,
+  "old": "status_text = \"PASS\" if passed else \"FAIL\"",
+  "new": "status_text = LegacyCompatibilityProducer.marker_from_bool(passed)",
+  "compile_results": [
+    {
+      "file": "leaf_qt/foundation_test_runner_window.py",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "leaf_qt/status_presentation.py",
+      "passed": true,
+      "error": ""
+    }
+  ],
+  "phase_16u34_report_owner_presentation_layer_pilot_integration_complete": true
+}

@@ -1,0 +1,45 @@
+LEAF PHASE 16U.132
+WAVE 1 MANIFEST SELECTION
+=========================
+
+STATUS: PASS_PHASE_16U132_WAVE1_MANIFEST_SELECTION
+
+WAVE
+----
+16U-WAVE1 — Material and coating integration owner presentation migration
+
+ROADMAP STATE
+-------------
+Locked baseline: 68
+Closed before wave: 15
+Remaining before wave: 53
+
+Selected files: 12
+
+SELECTED FILES
+--------------
+- bond_coat_integration_owner.py
+- coating_property_consumption_audit_owner.py
+- coating_temperature_limit_integration_owner.py
+- coating_thermal_conductivity_integration_owner.py
+- coating_thermal_resistance_integration_owner.py
+- coating_thickness_integration_owner.py
+- material_density_integration_owner.py
+- material_property_consumption_audit_owner.py
+- material_specific_heat_integration_owner.py
+- material_strength_limit_integration_owner.py
+- material_temperature_limit_integration_owner.py
+- material_thermal_conductivity_integration_owner.py
+
+ACCEPTANCE CONTRACT
+-------------------
+✓ backup per file
+✓ pre-hash per file
+✓ post-hash per file
+✓ compile per file
+✓ shared presentation layer per file
+✓ no legacy inline status logic per file
+✓ rollback per file
+✓ reject whole wave if any file fails
+✓ locked-baseline audit after wave
+✓ migration certificate required

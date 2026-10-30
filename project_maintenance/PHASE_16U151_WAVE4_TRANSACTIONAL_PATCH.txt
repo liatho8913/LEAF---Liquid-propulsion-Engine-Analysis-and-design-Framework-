@@ -1,0 +1,25 @@
+LEAF PHASE 16U.151
+WAVE 4 TRANSACTIONAL PATCH
+==========================
+
+STATUS: PASS_PHASE_16U151_WAVE4_TRANSACTIONAL_PATCH
+
+Files attempted: 10
+Files passed: 10
+Files failed: 0
+
+FILES
+-----
+- regen_optimisation_completion_audit.py :: PASS :: inserted_status_presentation_import_fallback, legacy_replacement:"PASS"\s+if\s+([^,\n]+?)\s+else\s+"FAIL":1
+- regen_optimisation_registration_owner.py :: PASS :: inserted_status_presentation_import_fallback, legacy_replacement:"PASS"\s+if\s+([^,\n]+?)\s+else\s+"FAIL":1
+- regen_optimisation_session_owner.py :: PASS :: inserted_status_presentation_import_fallback, legacy_replacement:"PASS"\s+if\s+([^,\n]+?)\s+else\s+"FAIL":1
+- regen_runtime_execution_completion_audit.py :: PASS :: inserted_status_presentation_import_fallback, legacy_replacement:"PASS"\s+if\s+([^,\n]+?)\s+else\s+"FAIL":1
+- regen_runtime_execution_input_gate.py :: PASS :: inserted_status_presentation_import_fallback, legacy_replacement:"PASS"\s+if\s+([^,\n]+?)\s+else\s+"FAIL":1
+- regen_runtime_execution_registration_owner.py :: PASS :: inserted_status_presentation_import_fallback, legacy_replacement:"PASS"\s+if\s+([^,\n]+?)\s+else\s+"FAIL":1
+- regen_runtime_execution_session_owner.py :: PASS :: inserted_status_presentation_import_fallback, legacy_replacement:"PASS"\s+if\s+([^,\n]+?)\s+else\s+"FAIL":1
+- regen_runtime_optimisation_input_gate.py :: PASS :: inserted_status_presentation_import_fallback, legacy_replacement:"PASS"\s+if\s+([^,\n]+?)\s+else\s+"FAIL":1
+- regen_runtime_optimisation_registration_owner.py :: PASS :: inserted_status_presentation_import_fallback, legacy_replacement:"PASS"\s+if\s+([^,\n]+?)\s+else\s+"FAIL":1
+- regen_runtime_optimisation_session_owner.py :: PASS :: inserted_status_presentation_import_fallback, legacy_replacement:"PASS"\s+if\s+([^,\n]+?)\s+else\s+"FAIL":1
+
+FAILURES
+--------

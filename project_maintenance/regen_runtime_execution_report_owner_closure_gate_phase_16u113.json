@@ -1,0 +1,9 @@
+{
+  "phase": "16U.113",
+  "target": "leaf_qt/regen_runtime_execution_report_owner.py",
+  "passed": true,
+  "failures": [],
+  "phase_16u113_regen_runtime_execution_report_owner_closure_gate_complete": true,
+  "closed_target": "leaf_qt/regen_runtime_execution_report_owner.py",
+  "next_phase": "16U.114 \u2014 Updated Global Remaining Candidate Audit"
+}

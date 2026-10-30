@@ -1,0 +1,12 @@
+{
+  "phase": "16U.123",
+  "target": "leaf_qt/regen_acceptance_criteria_owner.py",
+  "passed": true,
+  "closed_target": "leaf_qt/regen_acceptance_criteria_owner.py",
+  "closed_targets_before_this": 13,
+  "remaining_candidates_before_this_closure": 55,
+  "expected_remaining_after_next_audit": 54,
+  "phase_16u123_regen_acceptance_criteria_owner_closure_gate_complete": true,
+  "next_phase": "16U.124 \u2014 Updated Global Remaining Candidate Audit",
+  "failures": []
+}

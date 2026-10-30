@@ -1,0 +1,14 @@
+LEAF PHASE 16U.125B
+CORRECTED MIGRATION ROADMAP LEDGER
+==================================
+
+STATUS: PASS_PHASE_16U125B_CORRECTED_MIGRATION_ROADMAP_LEDGER
+
+Closed targets: 14
+Remaining candidates: 54
+Total measured scope: 68
+
+NOTE
+----
+This ledger uses the latest global audit closed_verified list, then re-verifies each closed source file live.
+This avoids under-counting older closed targets that predate modern closure JSON records.

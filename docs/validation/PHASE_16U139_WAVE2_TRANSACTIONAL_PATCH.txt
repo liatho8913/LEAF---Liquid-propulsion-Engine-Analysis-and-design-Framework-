@@ -1,0 +1,27 @@
+LEAF PHASE 16U.139
+WAVE 2 TRANSACTIONAL PATCH
+==========================
+
+STATUS: PASS_PHASE_16U139_WAVE2_TRANSACTIONAL_PATCH
+
+Files attempted: 12
+Files passed: 12
+Files failed: 0
+
+FILES
+-----
+- regen_candidate_blueprint_completion_audit.py :: PASS :: inserted_status_presentation_import_fallback, legacy_replacement:"PASS"\s+if\s+([^,\n]+?)\s+else\s+"FAIL":1
+- regen_candidate_blueprint_generation_input_gate.py :: PASS :: inserted_status_presentation_import_fallback, legacy_replacement:"PASS"\s+if\s+([^,\n]+?)\s+else\s+"FAIL":1
+- regen_candidate_blueprint_mutation_validation.py :: PASS :: inserted_status_presentation_import_fallback, legacy_replacement:"PASS"\s+if\s+([^,\n]+?)\s+else\s+"FAIL":1
+- regen_candidate_blueprint_optimisation_completion_audit.py :: PASS :: inserted_status_presentation_import_fallback, legacy_replacement:"PASS"\s+if\s+([^,\n]+?)\s+else\s+"FAIL":1
+- regen_candidate_blueprint_population_completion_audit.py :: PASS :: inserted_status_presentation_import_fallback, legacy_replacement:"PASS"\s+if\s+([^,\n]+?)\s+else\s+"FAIL":1
+- regen_candidate_creation_completion_audit.py :: PASS :: inserted_status_presentation_import_fallback, legacy_replacement:"PASS"\s+if\s+([^,\n]+?)\s+else\s+"FAIL":1
+- regen_candidate_creation_input_audit.py :: PASS :: inserted_status_presentation_import_fallback, legacy_replacement:"PASS"\s+if\s+([^,\n]+?)\s+else\s+"FAIL":1
+- regen_candidate_creation_registration_owner.py :: PASS :: inserted_status_presentation_import_fallback, legacy_replacement:"PASS"\s+if\s+([^,\n]+?)\s+else\s+"FAIL":1
+- regen_candidate_creation_session_owner.py :: PASS :: inserted_status_presentation_import_fallback, legacy_replacement:"PASS"\s+if\s+([^,\n]+?)\s+else\s+"FAIL":1
+- regen_candidate_generation_completion_audit.py :: PASS :: inserted_status_presentation_import_fallback, legacy_replacement:"PASS"\s+if\s+([^,\n]+?)\s+else\s+"FAIL":1
+- regen_candidate_generation_input_gate.py :: PASS :: inserted_status_presentation_import_fallback, legacy_replacement:"PASS"\s+if\s+([^,\n]+?)\s+else\s+"FAIL":1
+- regen_candidate_generation_registration_owner.py :: PASS :: inserted_status_presentation_import_fallback, legacy_replacement:"PASS"\s+if\s+([^,\n]+?)\s+else\s+"FAIL":1
+
+FAILURES
+--------

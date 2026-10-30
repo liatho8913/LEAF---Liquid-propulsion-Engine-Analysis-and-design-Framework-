@@ -1,0 +1,16 @@
+LEAF PHASE 16U.128
+REGEN GEOMETRY CONSTRAINT OWNER REGRESSION
+==========================================
+
+STATUS: PASS_PHASE_16U128_REGEN_GEOMETRY_CONSTRAINT_OWNER_REGRESSION
+Target: leaf_qt/regen_geometry_constraint_owner.py
+
+ROADMAP
+-------
+Locked baseline: 68
+Closed before this target: 14
+Remaining before this target: 54
+Expected after closure + audit: closed=15, remaining=53
+
+FAILURES
+--------

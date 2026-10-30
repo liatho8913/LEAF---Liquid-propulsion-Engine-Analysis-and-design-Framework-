@@ -1,0 +1,18 @@
+{
+  "phase": "16U.96",
+  "status": "PASS_PHASE_16U96_REGEN_CANDIDATE_CREATION_REPORT_OWNER_PRESENTATION_LAYER_PATCH",
+  "generated": "2026-06-28T20:44:44",
+  "target": "leaf_qt/regen_candidate_creation_report_owner.py",
+  "backup": "leaf_qt/regen_candidate_creation_report_owner.py.phase_16u96_backup",
+  "helper_inserted": false,
+  "applied": [],
+  "before_forbidden_count": 0,
+  "after_forbidden_count": 0,
+  "ignored_helper_fallback_findings": 0,
+  "remaining_findings": [],
+  "compiled": true,
+  "compile_error": "",
+  "missing_tokens": [],
+  "phase_16u96_regen_candidate_creation_report_owner_presentation_layer_patch_complete": true,
+  "next_phase": "16U.97 \u2014 Regen Candidate Creation Report Owner Presentation Layer Regression"
+}

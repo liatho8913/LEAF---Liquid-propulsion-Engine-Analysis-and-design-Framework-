@@ -1,0 +1,25 @@
+LEAF PHASE 16U.117
+REGEN ACCEPTANCE AUDIT REGRESSION
+==================================
+
+STATUS: PASS_PHASE_16U117_REGEN_ACCEPTANCE_AUDIT_REGRESSION
+Target: leaf_qt/regen_acceptance_audit.py
+
+CHECKS
+------
+compile
+AST parse
+LegacyCompatibilityProducer
+status_severity
+shared marker usage
+legacy inline PASS/WARN/FAIL logic removed
+Phase 16U.116 patch JSON
+Phase 16U.116 patch completion flag
+audit-like top-level function presence
+
+Top-level function count: 4
+Audit-like functions: ['attach_regen_acceptance_audit', '_audit_item', '_build_report']
+
+COMPLETION
+----------
+Phase 16U.117 regression complete.

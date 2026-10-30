@@ -1,0 +1,214 @@
+from leaf_qt.structured_status_access import findings_highest_severity, highest_severity as gate_highest_severity, is_pass
+from pathlib import Path
+import sys
+
+ROOT = Path(__file__).resolve().parents[1]
+
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
+
+from project_maintenance.wave2_status_adapter_completion_audit_phase_16t3r import (
+    run_wave2_status_adapter_completion_audit,
+)
+
+
+PASS_STATUS = "PASS_WAVE2_STATUS_ADAPTER_MASTER_GATE_PHASE_16T3S"
+FAIL_STATUS = "FAIL_WAVE2_STATUS_ADAPTER_MASTER_GATE_PHASE_16T3S"
+
+
+def _finding(code, severity, message, evidence=None):
+    return {
+        "code": str(code),
+        "severity": str(severity).upper(),
+        "message": str(message),
+        "evidence": evidence or {},
+        "phase": "16T.3S",
+        "owner": "wave2_status_adapter_master_gate",
+    }
+
+
+def _canonical_status(findings):
+    severities = {str(f.get("severity", "")).upper() for f in findings}
+
+    if gate_highest_severity(severities) == "FAIL":
+        return "FAIL"
+
+    if "BLOCKED" in severities:
+        return "BLOCKED"
+
+    if "REVIEW_REQUIRED" in severities:
+        return "REVIEW_REQUIRED"
+
+    return "PASS"
+
+
+def run_wave2_status_adapter_master_gate():
+    audit = run_wave2_status_adapter_completion_audit()
+    findings = []
+
+    if audit.get("passed") is True:
+        findings.append(
+            _finding(
+                "WAVE2_COMPLETION_AUDIT_PASSED",
+                "INFO",
+                "Wave 2 completion audit passed.",
+                {
+                    "module_count": audit.get("module_count"),
+                    "module_pass_count": audit.get("module_pass_count"),
+                },
+            )
+        )
+    else:
+        findings.append(
+            _finding(
+                "WAVE2_COMPLETION_AUDIT_FAILED",
+                "FAIL",
+                "Wave 2 completion audit failed.",
+                {
+                    "status": audit.get("status"),
+                    "failed_modules": audit.get("failed_modules"),
+                    "missing_source_files": audit.get("missing_source_files"),
+                },
+            )
+        )
+
+    if audit.get("module_count") == 12:
+        findings.append(
+            _finding(
+                "WAVE2_MODULE_COUNT_CONFIRMED",
+                "INFO",
+                "Wave 2 module count is exactly 12.",
+                {"module_count": audit.get("module_count")},
+            )
+        )
+    else:
+        findings.append(
+            _finding(
+                "WAVE2_MODULE_COUNT_INVALID",
+                "FAIL",
+                "Wave 2 module count is not 12.",
+                {"module_count": audit.get("module_count")},
+            )
+        )
+
+    if audit.get("module_pass_count") == 12:
+        findings.append(
+            _finding(
+                "WAVE2_ALL_MODULES_PASSED",
+                "INFO",
+                "All Wave 2 modules passed adapter completion audit.",
+                {"module_pass_count": audit.get("module_pass_count")},
+            )
+        )
+    else:
+        findings.append(
+            _finding(
+                "WAVE2_MODULES_NOT_ALL_PASSED",
+                "FAIL",
+                "One or more Wave 2 modules failed adapter completion audit.",
+                {"module_pass_count": audit.get("module_pass_count")},
+            )
+        )
+
+    missing_tests = audit.get("missing_focused_tests") or []
+
+    if missing_tests:
+        findings.append(
+            _finding(
+                "WAVE2_FOCUSED_TESTS_MISSING",
+                "REVIEW_REQUIRED",
+                "One or more Wave 2 focused test files are missing.",
+                {"missing_focused_tests": missing_tests},
+            )
+        )
+    else:
+        findings.append(
+            _finding(
+                "WAVE2_FOCUSED_TESTS_PRESENT",
+                "INFO",
+                "All expected Wave 2 focused test files are present.",
+                {},
+            )
+        )
+
+    canonical = _canonical_status(findings)
+    passed = canonical == "PASS"
+
+    status = PASS_STATUS if passed else FAIL_STATUS
+
+    severity_counts = {}
+    for item in findings:
+        severity = item["severity"]
+        severity_counts[severity] = severity_counts.get(severity, 0) + 1
+
+    report_lines = [
+        "LEAF PHASE 16T.3S",
+        "WAVE 2 STATUS ADAPTER MASTER GATE",
+        "=================================",
+        "",
+        f"Status: {status}",
+        f"Canonical Status: {canonical}",
+        f"Passed: {passed}",
+        "",
+        "Inputs:",
+        f"- Completion audit status: {audit.get('status')}",
+        f"- Modules audited: {audit.get('module_count')} / 12",
+        f"- Modules passed: {audit.get('module_pass_count')} / 12",
+        f"- Missing source files: {len(audit.get('missing_source_files') or [])}",
+        f"- Failed modules: {len(audit.get('failed_modules') or [])}",
+        f"- Missing focused tests: {len(missing_tests)}",
+        "",
+        "Findings:",
+    ]
+
+    for item in findings:
+        report_lines.append(
+            f"- [{item['severity']}] {item['code']}: {item['message']}"
+        )
+
+    report_lines.extend(
+        [
+            "",
+            "Decision:",
+            (
+                "Wave 2 status adapter migration is formally signed off."
+                if passed
+                else "Wave 2 status adapter migration is not signed off."
+            ),
+        ]
+    )
+
+    report = "\n".join(report_lines)
+
+    return {
+        "phase": "16T.3S",
+        "passed": passed,
+        "status": status,
+        "canonical_status": canonical,
+        "global_status": canonical,
+        "structured_findings": findings,
+        "global_status_payload": {
+            "owner": "wave2_status_adapter_master_gate",
+            "phase": "16T.3S",
+            "canonical_status": canonical,
+            "global_status": canonical,
+            "legacy_status": status,
+            "passed": passed,
+            "finding_count": len(findings),
+            "severity_counts": severity_counts,
+            "findings": findings,
+            "input_audit_status": audit.get("status"),
+        },
+        "adapter_report": report,
+        "report": report,
+        "completion_audit": audit,
+        "wave2_status_adapter_master_gate_complete": passed,
+        "phase_16t3s_wave2_status_adapter_master_gate_complete": passed,
+    }
+
+
+if __name__ == "__main__":
+    result = run_wave2_status_adapter_master_gate()
+    print(result["report"])
+    if not result["passed"]:
+        raise SystemExit(1)

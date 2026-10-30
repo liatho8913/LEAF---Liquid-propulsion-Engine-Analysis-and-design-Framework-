@@ -1,0 +1,333 @@
+{
+  "phase": "16U.75",
+  "status": "PASS_PHASE_16U75_SINGLE_FILE_MIGRATION_DECISION",
+  "generated": "2026-06-28T18:29:43",
+  "previous_audit": "project_maintenance/updated_global_remaining_candidate_audit_phase_16u74.json",
+  "source_candidate_count": 20,
+  "rescanned_count": 20,
+  "selectable_count": 20,
+  "selected_target": {
+    "file": "leaf_qt/regen_optimisation_report_owner.py",
+    "exists": true,
+    "finding_count": 1,
+    "findings": [
+      {
+        "pattern": "inline_pass_fail_ternary",
+        "line": 185,
+        "snippet": "\"PASS\" if check[\"passed\"] else \"FAIL\""
+      }
+    ],
+    "risk_score": 55,
+    "imports_status_presentation": false,
+    "decision": "SELECTABLE"
+  },
+  "top_selectable": [
+    {
+      "file": "leaf_qt/regen_optimisation_report_owner.py",
+      "exists": true,
+      "finding_count": 1,
+      "findings": [
+        {
+          "pattern": "inline_pass_fail_ternary",
+          "line": 185,
+          "snippet": "\"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ],
+      "risk_score": 55,
+      "imports_status_presentation": false,
+      "decision": "SELECTABLE"
+    },
+    {
+      "file": "leaf_qt/regen_runtime_optimisation_report_owner.py",
+      "exists": true,
+      "finding_count": 1,
+      "findings": [
+        {
+          "pattern": "inline_pass_fail_ternary",
+          "line": 219,
+          "snippet": "\"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ],
+      "risk_score": 55,
+      "imports_status_presentation": false,
+      "decision": "SELECTABLE"
+    },
+    {
+      "file": "leaf_qt/regen_geometry_report_owner.py",
+      "exists": true,
+      "finding_count": 2,
+      "findings": [
+        {
+          "pattern": "inline_pass_fail_ternary",
+          "line": 5,
+          "snippet": "\"PASS\" if value else \"FAIL\""
+        },
+        {
+          "pattern": "inline_pass_fail_ternary",
+          "line": 39,
+          "snippet": "'PASS' if solver_pass else 'FAIL'"
+        }
+      ],
+      "risk_score": 50,
+      "imports_status_presentation": false,
+      "decision": "SELECTABLE"
+    },
+    {
+      "file": "leaf_qt/regen_candidate_blueprint_population_validation_owner.py",
+      "exists": true,
+      "finding_count": 1,
+      "findings": [
+        {
+          "pattern": "inline_pass_fail_ternary",
+          "line": 231,
+          "snippet": "\"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ],
+      "risk_score": 45,
+      "imports_status_presentation": false,
+      "decision": "SELECTABLE"
+    },
+    {
+      "file": "leaf_qt/regen_candidate_creation_report_owner.py",
+      "exists": true,
+      "finding_count": 1,
+      "findings": [
+        {
+          "pattern": "inline_pass_fail_ternary",
+          "line": 229,
+          "snippet": "\"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ],
+      "risk_score": 40,
+      "imports_status_presentation": false,
+      "decision": "SELECTABLE"
+    },
+    {
+      "file": "leaf_qt/regen_candidate_generation_report_owner.py",
+      "exists": true,
+      "finding_count": 1,
+      "findings": [
+        {
+          "pattern": "inline_pass_fail_ternary",
+          "line": 228,
+          "snippet": "\"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ],
+      "risk_score": 40,
+      "imports_status_presentation": false,
+      "decision": "SELECTABLE"
+    },
+    {
+      "file": "leaf_qt/regen_candidate_mutation_report_owner.py",
+      "exists": true,
+      "finding_count": 1,
+      "findings": [
+        {
+          "pattern": "inline_pass_fail_ternary",
+          "line": 305,
+          "snippet": "\"PASS\" if check.get(\"passed\") else \"FAIL\""
+        }
+      ],
+      "risk_score": 40,
+      "imports_status_presentation": false,
+      "decision": "SELECTABLE"
+    },
+    {
+      "file": "leaf_qt/regen_runtime_execution_report_owner.py",
+      "exists": true,
+      "finding_count": 1,
+      "findings": [
+        {
+          "pattern": "inline_pass_fail_ternary",
+          "line": 227,
+          "snippet": "\"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ],
+      "risk_score": 40,
+      "imports_status_presentation": false,
+      "decision": "SELECTABLE"
+    },
+    {
+      "file": "leaf_qt/regen_optimisation_registration_owner.py",
+      "exists": true,
+      "finding_count": 1,
+      "findings": [
+        {
+          "pattern": "inline_pass_fail_ternary",
+          "line": 194,
+          "snippet": "\"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ],
+      "risk_score": 35,
+      "imports_status_presentation": false,
+      "decision": "SELECTABLE"
+    },
+    {
+      "file": "leaf_qt/regen_optimisation_session_owner.py",
+      "exists": true,
+      "finding_count": 1,
+      "findings": [
+        {
+          "pattern": "inline_pass_fail_ternary",
+          "line": 165,
+          "snippet": "\"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ],
+      "risk_score": 35,
+      "imports_status_presentation": false,
+      "decision": "SELECTABLE"
+    },
+    {
+      "file": "leaf_qt/regen_runtime_optimisation_registration_owner.py",
+      "exists": true,
+      "finding_count": 1,
+      "findings": [
+        {
+          "pattern": "inline_pass_fail_ternary",
+          "line": 223,
+          "snippet": "\"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ],
+      "risk_score": 35,
+      "imports_status_presentation": false,
+      "decision": "SELECTABLE"
+    },
+    {
+      "file": "leaf_qt/regen_runtime_optimisation_session_owner.py",
+      "exists": true,
+      "finding_count": 1,
+      "findings": [
+        {
+          "pattern": "inline_pass_fail_ternary",
+          "line": 175,
+          "snippet": "\"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ],
+      "risk_score": 35,
+      "imports_status_presentation": false,
+      "decision": "SELECTABLE"
+    },
+    {
+      "file": "leaf_qt/regen_acceptance_criteria_owner.py",
+      "exists": true,
+      "finding_count": 1,
+      "findings": [
+        {
+          "pattern": "inline_pass_fail_ternary",
+          "line": 173,
+          "snippet": "'PASS' if item.get('passed') else 'FAIL'"
+        }
+      ],
+      "risk_score": 20,
+      "imports_status_presentation": false,
+      "decision": "SELECTABLE"
+    },
+    {
+      "file": "leaf_qt/regen_candidate_creation_registration_owner.py",
+      "exists": true,
+      "finding_count": 1,
+      "findings": [
+        {
+          "pattern": "inline_pass_fail_ternary",
+          "line": 185,
+          "snippet": "\"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ],
+      "risk_score": 20,
+      "imports_status_presentation": false,
+      "decision": "SELECTABLE"
+    },
+    {
+      "file": "leaf_qt/regen_candidate_creation_session_owner.py",
+      "exists": true,
+      "finding_count": 1,
+      "findings": [
+        {
+          "pattern": "inline_pass_fail_ternary",
+          "line": 209,
+          "snippet": "\"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ],
+      "risk_score": 20,
+      "imports_status_presentation": false,
+      "decision": "SELECTABLE"
+    },
+    {
+      "file": "leaf_qt/regen_candidate_generation_registration_owner.py",
+      "exists": true,
+      "finding_count": 1,
+      "findings": [
+        {
+          "pattern": "inline_pass_fail_ternary",
+          "line": 178,
+          "snippet": "\"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ],
+      "risk_score": 20,
+      "imports_status_presentation": false,
+      "decision": "SELECTABLE"
+    },
+    {
+      "file": "leaf_qt/regen_candidate_generation_session_owner.py",
+      "exists": true,
+      "finding_count": 1,
+      "findings": [
+        {
+          "pattern": "inline_pass_fail_ternary",
+          "line": 197,
+          "snippet": "\"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ],
+      "risk_score": 20,
+      "imports_status_presentation": false,
+      "decision": "SELECTABLE"
+    },
+    {
+      "file": "leaf_qt/regen_geometry_constraint_owner.py",
+      "exists": true,
+      "finding_count": 1,
+      "findings": [
+        {
+          "pattern": "inline_pass_fail_ternary",
+          "line": 96,
+          "snippet": "\"PASS\" if passed else \"FAIL\""
+        }
+      ],
+      "risk_score": 20,
+      "imports_status_presentation": false,
+      "decision": "SELECTABLE"
+    },
+    {
+      "file": "leaf_qt/regen_runtime_execution_registration_owner.py",
+      "exists": true,
+      "finding_count": 1,
+      "findings": [
+        {
+          "pattern": "inline_pass_fail_ternary",
+          "line": 226,
+          "snippet": "\"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ],
+      "risk_score": 20,
+      "imports_status_presentation": false,
+      "decision": "SELECTABLE"
+    },
+    {
+      "file": "leaf_qt/regen_runtime_execution_session_owner.py",
+      "exists": true,
+      "finding_count": 1,
+      "findings": [
+        {
+          "pattern": "inline_pass_fail_ternary",
+          "line": 193,
+          "snippet": "\"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ],
+      "risk_score": 20,
+      "imports_status_presentation": false,
+      "decision": "SELECTABLE"
+    }
+  ],
+  "phase_16u75_single_file_migration_decision_complete": true,
+  "next_phase": "16U.76 \u2014 Selected Single-File Presentation Layer Patch"
+}

@@ -1,0 +1,1199 @@
+LEAF PHASE 16U.3
+STRUCTURED STATUS MIGRATION ROADMAP
+======================================
+
+STATUS: PASS_PHASE_16U3_STRUCTURED_STATUS_MIGRATION_ROADMAP
+Generated: 2026-06-27T02:00:49
+
+SCOPE
+-----
+This phase creates the ordered migration roadmap from Phase 16U.2.
+No engineering logic is modified.
+No solver logic is modified.
+No GUI behaviour is modified.
+
+SUMMARY
+-------
+Source migration targets: 426
+Roadmap items: 426
+
+MIGRATION WAVES
+---------------
+A — Core Solver Status Consumers: 62
+B — Validation Owners: 34
+C — Master Gates: 93
+D — Completion Audits: 47
+E — GUI Consumers: 54
+F — Report Consumers: 8
+H — Utility / Developer Consumers: 128
+
+TOP MIGRATION FILES
+-------------------
+leaf_qt/engine_solver.py: 61
+leaf_qt/regen_cross_section_viewer.py: 31
+leaf_qt/regen_multi_objective_scoring_controller.py: 18
+leaf_qt/regen_candidate_ranking_master_gate.py: 13
+leaf_qt/real_engine_benchmark_master_gate.py: 11
+leaf_qt/regen_source_validation_gate.py: 9
+leaf_qt/regen_candidate_mutation_master_gate.py: 9
+leaf_qt/real_engine_benchmark_completion_audit.py: 9
+leaf_qt/regen_candidate_post_resolve_validation_owner.py: 8
+leaf_qt/regen_candidate_validator.py: 8
+leaf_qt/regen_candidate_acceptance_master_gate.py: 8
+leaf_qt/regen_evolution_loop_master_gate.py: 8
+leaf_qt/regen_optimisation_master_gate.py: 8
+leaf_qt/regen_axial_geometry_master_gate.py: 7
+leaf_qt/regen_scalability_master_gate.py: 7
+leaf_qt/regen_variable_geometry_master_gate.py: 7
+project_maintenance/wave2_final_status_migration_handover_phase_16t3u.py: 7
+leaf_qt/regen_candidate_population_master_gate.py: 6
+leaf_qt/regen_geometry_master_gate.py: 6
+leaf_qt/calculation_audit.py: 6
+leaf_qt/regen_geometry_output_architecture_owner.py: 6
+leaf_qt/regen_optimisation_candidate_generator.py: 6
+leaf_qt/regen_optimisation_scoring_owner.py: 6
+leaf_qt/regen_scalability_failure_owner.py: 6
+leaf_qt/regen_architecture_visibility_audit.py: 5
+leaf_qt/design_iteration_narrative.py: 5
+leaf_qt/failure_root_cause_owner.py: 5
+leaf_qt/regen_validation_master_gate.py: 4
+leaf_qt/regen_viewer_final_completion_lock_phase_16p23.py: 4
+leaf_qt/recommendation_explanation_owner.py: 4
+
+ROADMAP DETAILS
+---------------
+
+A — Core Solver Status Consumers
+--------------------------------
+leaf_qt/engine_solver.py:4054 [HIGH/SOLVER_CONSUMER/raw_status_literal] "diagnostic_note": "PASS" if not failure_reasons else "CHECK",
+  action: Wrap raw solver status decisions behind structured status access helpers without changing calculations.
+  dependency: Solver status values feed validation, gates, reports, and GUI; migrate first.
+leaf_qt/engine_solver.py:5517 [HIGH/SOLVER_CONSUMER/raw_status_literal] if status not in ("REQUIRED", "PASS"):
+  action: Wrap raw solver status decisions behind structured status access helpers without changing calculations.
+  dependency: Solver status values feed validation, gates, reports, and GUI; migrate first.
+leaf_qt/engine_solver.py:5959 [HIGH/SOLVER_CONSUMER/raw_status_literal] "PASS" if max_twg <= material_limit else "REQUIRED"
+  action: Wrap raw solver status decisions behind structured status access helpers without changing calculations.
+  dependency: Solver status values feed validation, gates, reports, and GUI; migrate first.
+leaf_qt/engine_solver.py:6101 [HIGH/SOLVER_CONSUMER/raw_status_literal] if results.get("coupled_split_auto_tuned_status") != "PASS":
+  action: Wrap raw solver status decisions behind structured status access helpers without changing calculations.
+  dependency: Solver status values feed validation, gates, reports, and GUI; migrate first.
+leaf_qt/engine_solver.py:6253 [HIGH/SOLVER_CONSUMER/raw_status_literal] passing = [item for item in screened if item["status"] != "FAIL"]
+  action: Wrap raw solver status decisions behind structured status access helpers without changing calculations.
+  dependency: Solver status values feed validation, gates, reports, and GUI; migrate first.
+leaf_qt/engine_solver.py:6543 [HIGH/SOLVER_CONSUMER/ast_status_compare] if status != "FAIL":
+  action: Wrap raw solver status decisions behind structured status access helpers without changing calculations.
+  dependency: Solver status values feed validation, gates, reports, and GUI; migrate first.
+leaf_qt/engine_solver.py:6543 [HIGH/SOLVER_CONSUMER/direct_status_inequality] if status != "FAIL":
+  action: Wrap raw solver status decisions behind structured status access helpers without changing calculations.
+  dependency: Solver status values feed validation, gates, reports, and GUI; migrate first.
+leaf_qt/engine_solver.py:6543 [HIGH/SOLVER_CONSUMER/raw_status_literal] if status != "FAIL":
+  action: Wrap raw solver status decisions behind structured status access helpers without changing calculations.
+  dependency: Solver status values feed validation, gates, reports, and GUI; migrate first.
+leaf_qt/engine_solver.py:7192 [HIGH/SOLVER_CONSUMER/raw_status_literal] if item.get("status") == "PASS"
+  action: Wrap raw solver status decisions behind structured status access helpers without changing calculations.
+  dependency: Solver status values feed validation, gates, reports, and GUI; migrate first.
+leaf_qt/engine_solver.py:7418 [HIGH/SOLVER_CONSUMER/raw_status_literal] if thermal_stress_failed_count > 0 and results.get("bond_coat_validation_status") != "PASS":
+  action: Wrap raw solver status decisions behind structured status access helpers without changing calculations.
+  dependency: Solver status values feed validation, gates, reports, and GUI; migrate first.
+leaf_qt/engine_solver.py:7675 [HIGH/SOLVER_CONSUMER/raw_status_literal] elif source_data_weighted_gate in ("PARTIAL", "FAIL"):
+  action: Wrap raw solver status decisions behind structured status access helpers without changing calculations.
+  dependency: Solver status values feed validation, gates, reports, and GUI; migrate first.
+leaf_qt/engine_solver.py:8028 [HIGH/SOLVER_CONSUMER/raw_status_literal] if source_data_gate != "PASS":
+  action: Wrap raw solver status decisions behind structured status access helpers without changing calculations.
+  dependency: Solver status values feed validation, gates, reports, and GUI; migrate first.
+leaf_qt/engine_solver.py:8033 [HIGH/SOLVER_CONSUMER/raw_status_literal] if weighted_gate != "PASS":
+  action: Wrap raw solver status decisions behind structured status access helpers without changing calculations.
+  dependency: Solver status values feed validation, gates, reports, and GUI; migrate first.
+leaf_qt/engine_solver.py:8456 [HIGH/SOLVER_CONSUMER/raw_status_literal] if item["status"] in ("MISSING", "PLACEHOLDER", "FAIL")
+  action: Wrap raw solver status decisions behind structured status access helpers without changing calculations.
+  dependency: Solver status values feed validation, gates, reports, and GUI; migrate first.
+leaf_qt/engine_solver.py:9061 [HIGH/SOLVER_CONSUMER/raw_status_literal] if results.get("explicit_coating_thermal_stress_status") == "FAIL":
+  action: Wrap raw solver status decisions behind structured status access helpers without changing calculations.
+  dependency: Solver status values feed validation, gates, reports, and GUI; migrate first.
+leaf_qt/engine_solver.py:9072 [HIGH/SOLVER_CONSUMER/raw_status_literal] if results.get("coating_stack_adhesion_risk_status") != "PASS":
+  action: Wrap raw solver status decisions behind structured status access helpers without changing calculations.
+  dependency: Solver status values feed validation, gates, reports, and GUI; migrate first.
+leaf_qt/engine_solver.py:9083 [HIGH/SOLVER_CONSUMER/raw_status_literal] if results.get("coating_stack_spallation_fatigue_status") != "PASS":
+  action: Wrap raw solver status decisions behind structured status access helpers without changing calculations.
+  dependency: Solver status values feed validation, gates, reports, and GUI; migrate first.
+leaf_qt/engine_solver.py:9094 [HIGH/SOLVER_CONSUMER/raw_status_literal] if results.get("coating_stack_source_data_gate") != "PASS":
+  action: Wrap raw solver status decisions behind structured status access helpers without changing calculations.
+  dependency: Solver status values feed validation, gates, reports, and GUI; migrate first.
+leaf_qt/engine_solver.py:9436 [HIGH/SOLVER_CONSUMER/raw_status_literal] if data_mode != "SOURCED_VALIDATION_MODE" or source_gate != "PASS":
+  action: Wrap raw solver status decisions behind structured status access helpers without changing calculations.
+  dependency: Solver status values feed validation, gates, reports, and GUI; migrate first.
+leaf_qt/engine_solver.py:9447 [HIGH/SOLVER_CONSUMER/ast_status_compare] if bond_status != "PASS":
+  action: Wrap raw solver status decisions behind structured status access helpers without changing calculations.
+  dependency: Solver status values feed validation, gates, reports, and GUI; migrate first.
+leaf_qt/engine_solver.py:9447 [HIGH/SOLVER_CONSUMER/direct_status_inequality] if bond_status != "PASS":
+  action: Wrap raw solver status decisions behind structured status access helpers without changing calculations.
+  dependency: Solver status values feed validation, gates, reports, and GUI; migrate first.
+leaf_qt/engine_solver.py:9447 [HIGH/SOLVER_CONSUMER/raw_status_literal] if bond_status != "PASS":
+  action: Wrap raw solver status decisions behind structured status access helpers without changing calculations.
+  dependency: Solver status values feed validation, gates, reports, and GUI; migrate first.
+leaf_qt/engine_solver.py:9458 [HIGH/SOLVER_CONSUMER/ast_status_compare] if thermal_stress_status != "PASS":
+  action: Wrap raw solver status decisions behind structured status access helpers without changing calculations.
+  dependency: Solver status values feed validation, gates, reports, and GUI; migrate first.
+leaf_qt/engine_solver.py:9458 [HIGH/SOLVER_CONSUMER/direct_status_inequality] if thermal_stress_status != "PASS":
+  action: Wrap raw solver status decisions behind structured status access helpers without changing calculations.
+  dependency: Solver status values feed validation, gates, reports, and GUI; migrate first.
+leaf_qt/engine_solver.py:9458 [HIGH/SOLVER_CONSUMER/raw_status_literal] if thermal_stress_status != "PASS":
+  action: Wrap raw solver status decisions behind structured status access helpers without changing calculations.
+  dependency: Solver status values feed validation, gates, reports, and GUI; migrate first.
+leaf_qt/engine_solver.py:9469 [HIGH/SOLVER_CONSUMER/ast_status_compare] if adhesion_status != "PASS":
+  action: Wrap raw solver status decisions behind structured status access helpers without changing calculations.
+  dependency: Solver status values feed validation, gates, reports, and GUI; migrate first.
+leaf_qt/engine_solver.py:9469 [HIGH/SOLVER_CONSUMER/direct_status_inequality] if adhesion_status != "PASS":
+  action: Wrap raw solver status decisions behind structured status access helpers without changing calculations.
+  dependency: Solver status values feed validation, gates, reports, and GUI; migrate first.
+leaf_qt/engine_solver.py:9469 [HIGH/SOLVER_CONSUMER/raw_status_literal] if adhesion_status != "PASS":
+  action: Wrap raw solver status decisions behind structured status access helpers without changing calculations.
+  dependency: Solver status values feed validation, gates, reports, and GUI; migrate first.
+leaf_qt/engine_solver.py:9480 [HIGH/SOLVER_CONSUMER/ast_status_compare] if fatigue_status != "PASS":
+  action: Wrap raw solver status decisions behind structured status access helpers without changing calculations.
+  dependency: Solver status values feed validation, gates, reports, and GUI; migrate first.
+leaf_qt/engine_solver.py:9480 [HIGH/SOLVER_CONSUMER/direct_status_inequality] if fatigue_status != "PASS":
+  action: Wrap raw solver status decisions behind structured status access helpers without changing calculations.
+  dependency: Solver status values feed validation, gates, reports, and GUI; migrate first.
+leaf_qt/engine_solver.py:9480 [HIGH/SOLVER_CONSUMER/raw_status_literal] if fatigue_status != "PASS":
+  action: Wrap raw solver status decisions behind structured status access helpers without changing calculations.
+  dependency: Solver status values feed validation, gates, reports, and GUI; migrate first.
+leaf_qt/engine_solver.py:10593 [HIGH/SOLVER_CONSUMER/raw_status_literal] if source_gate != "PASS" and final_acceptance == "VALIDATION_SUPPORT_ALLOWED":
+  action: Wrap raw solver status decisions behind structured status access helpers without changing calculations.
+  dependency: Solver status values feed validation, gates, reports, and GUI; migrate first.
+leaf_qt/engine_solver.py:11970 [HIGH/SOLVER_CONSUMER/ast_status_compare] if preview_status != "PASS":
+  action: Wrap raw solver status decisions behind structured status access helpers without changing calculations.
+  dependency: Solver status values feed validation, gates, reports, and GUI; migrate first.
+leaf_qt/engine_solver.py:11970 [HIGH/SOLVER_CONSUMER/direct_status_inequality] if preview_status != "PASS":
+  action: Wrap raw solver status decisions behind structured status access helpers without changing calculations.
+  dependency: Solver status values feed validation, gates, reports, and GUI; migrate first.
+leaf_qt/engine_solver.py:11970 [HIGH/SOLVER_CONSUMER/raw_status_literal] if preview_status != "PASS":
+  action: Wrap raw solver status decisions behind structured status access helpers without changing calculations.
+  dependency: Solver status values feed validation, gates, reports, and GUI; migrate first.
+leaf_qt/engine_solver.py:12469 [HIGH/SOLVER_CONSUMER/raw_status_literal] if feasibility == "REGEN_ONLY_FEASIBLE" and viability == "PASS":
+  action: Wrap raw solver status decisions behind structured status access helpers without changing calculations.
+  dependency: Solver status values feed validation, gates, reports, and GUI; migrate first.
+leaf_qt/engine_solver.py:14139 [HIGH/SOLVER_CONSUMER/ast_endswith_status] if "PLACEHOLDER" in source_status and verdict.endswith("PASS"):
+  action: Wrap raw solver status decisions behind structured status access helpers without changing calculations.
+  dependency: Solver status values feed validation, gates, reports, and GUI; migrate first.
+leaf_qt/engine_solver.py:14139 [HIGH/SOLVER_CONSUMER/raw_status_literal] if "PLACEHOLDER" in source_status and verdict.endswith("PASS"):
+  action: Wrap raw solver status decisions behind structured status access helpers without changing calculations.
+  dependency: Solver status values feed validation, gates, reports, and GUI; migrate first.
+leaf_qt/engine_solver.py:14143 [HIGH/SOLVER_CONSUMER/ast_endswith_status] if ledger_status not in ("LEDGER_COMPLETE", "NO_FILLED_VALUES") and verdict.endswith("PASS"):
+  action: Wrap raw solver status decisions behind structured status access helpers without changing calculations.
+  dependency: Solver status values feed validation, gates, reports, and GUI; migrate first.
+leaf_qt/engine_solver.py:14143 [HIGH/SOLVER_CONSUMER/raw_status_literal] if ledger_status not in ("LEDGER_COMPLETE", "NO_FILLED_VALUES") and verdict.endswith("PASS"):
+  action: Wrap raw solver status decisions behind structured status access helpers without changing calculations.
+  dependency: Solver status values feed validation, gates, reports, and GUI; migrate first.
+leaf_qt/engine_solver.py:14149 [HIGH/SOLVER_CONSUMER/ast_endswith_status] if quality_band in ("PLACEHOLDER", "LOW_CONFIDENCE_PUBLIC") and verdict.endswith("PASS"):
+  action: Wrap raw solver status decisions behind structured status access helpers without changing calculations.
+  dependency: Solver status values feed validation, gates, reports, and GUI; migrate first.
+leaf_qt/engine_solver.py:14149 [HIGH/SOLVER_CONSUMER/raw_status_literal] if quality_band in ("PLACEHOLDER", "LOW_CONFIDENCE_PUBLIC") and verdict.endswith("PASS"):
+  action: Wrap raw solver status decisions behind structured status access helpers without changing calculations.
+  dependency: Solver status values feed validation, gates, reports, and GUI; migrate first.
+leaf_qt/engine_solver.py:15212 [HIGH/SOLVER_CONSUMER/raw_status_literal] if results.get("coupled_split_auto_tuned_status") == "PASS":
+  action: Wrap raw solver status decisions behind structured status access helpers without changing calculations.
+  dependency: Solver status values feed validation, gates, reports, and GUI; migrate first.
+leaf_qt/engine_solver.py:15472 [HIGH/SOLVER_CONSUMER/ast_status_compare] if combined_status != "PASS":
+  action: Wrap raw solver status decisions behind structured status access helpers without changing calculations.
+  dependency: Solver status values feed validation, gates, reports, and GUI; migrate first.
+leaf_qt/engine_solver.py:15472 [HIGH/SOLVER_CONSUMER/direct_status_inequality] if combined_status != "PASS":
+  action: Wrap raw solver status decisions behind structured status access helpers without changing calculations.
+  dependency: Solver status values feed validation, gates, reports, and GUI; migrate first.
+leaf_qt/engine_solver.py:15472 [HIGH/SOLVER_CONSUMER/raw_status_literal] if combined_status != "PASS":
+  action: Wrap raw solver status decisions behind structured status access helpers without changing calculations.
+  dependency: Solver status values feed validation, gates, reports, and GUI; migrate first.
+leaf_qt/engine_solver.py:15476 [HIGH/SOLVER_CONSUMER/raw_status_literal] if results.get("velocity_limited_combined_preview_status") == "FAIL":
+  action: Wrap raw solver status decisions behind structured status access helpers without changing calculations.
+  dependency: Solver status values feed validation, gates, reports, and GUI; migrate first.
+leaf_qt/engine_solver.py:15523 [HIGH/SOLVER_CONSUMER/raw_status_literal] if results.get("coupled_split_strategy_status") == "FAIL":
+  action: Wrap raw solver status decisions behind structured status access helpers without changing calculations.
+  dependency: Solver status values feed validation, gates, reports, and GUI; migrate first.
+leaf_qt/engine_solver.py:15529 [HIGH/SOLVER_CONSUMER/raw_status_literal] if results.get("vl_split_strategy_status") == "PASS":
+  action: Wrap raw solver status decisions behind structured status access helpers without changing calculations.
+  dependency: Solver status values feed validation, gates, reports, and GUI; migrate first.
+leaf_qt/engine_solver.py:16280 [HIGH/SOLVER_CONSUMER/contains_status] if "FAIL" in statuses:
+  action: Wrap raw solver status decisions behind structured status access helpers without changing calculations.
+  dependency: Solver status values feed validation, gates, reports, and GUI; migrate first.
+leaf_qt/engine_solver.py:16280 [HIGH/SOLVER_CONSUMER/raw_status_literal] if "FAIL" in statuses:
+  action: Wrap raw solver status decisions behind structured status access helpers without changing calculations.
+  dependency: Solver status values feed validation, gates, reports, and GUI; migrate first.
+leaf_qt/engine_solver.py:16282 [HIGH/SOLVER_CONSUMER/contains_status] elif "WARN" in statuses:
+  action: Wrap raw solver status decisions behind structured status access helpers without changing calculations.
+  dependency: Solver status values feed validation, gates, reports, and GUI; migrate first.
+leaf_qt/engine_solver.py:16282 [HIGH/SOLVER_CONSUMER/raw_status_literal] elif "WARN" in statuses:
+  action: Wrap raw solver status decisions behind structured status access helpers without changing calculations.
+  dependency: Solver status values feed validation, gates, reports, and GUI; migrate first.
+leaf_qt/engine_solver.py:20628 [HIGH/SOLVER_CONSUMER/contains_status] if "FAIL" in text or "INVALID" in text:
+  action: Wrap raw solver status decisions behind structured status access helpers without changing calculations.
+  dependency: Solver status values feed validation, gates, reports, and GUI; migrate first.
+leaf_qt/engine_solver.py:20628 [HIGH/SOLVER_CONSUMER/raw_status_literal] if "FAIL" in text or "INVALID" in text:
+  action: Wrap raw solver status decisions behind structured status access helpers without changing calculations.
+  dependency: Solver status values feed validation, gates, reports, and GUI; migrate first.
+leaf_qt/engine_solver.py:20649 [HIGH/SOLVER_CONSUMER/contains_status] elif "WARN" in text or "REVIEW" in text:
+  action: Wrap raw solver status decisions behind structured status access helpers without changing calculations.
+  dependency: Solver status values feed validation, gates, reports, and GUI; migrate first.
+leaf_qt/engine_solver.py:20649 [HIGH/SOLVER_CONSUMER/raw_status_literal] elif "WARN" in text or "REVIEW" in text:
+  action: Wrap raw solver status decisions behind structured status access helpers without changing calculations.
+  dependency: Solver status values feed validation, gates, reports, and GUI; migrate first.
+leaf_qt/regen_geometry_solver.py:98 [HIGH/SOLVER_CONSUMER/raw_status_literal] solver_pass = candidate_report.get("status") == "PASS" and best_candidate is not None
+  action: Wrap raw solver status decisions behind structured status access helpers without changing calculations.
+  dependency: Solver status values feed validation, gates, reports, and GUI; migrate first.
+leaf_qt/engine_solver.py:8011 [MEDIUM/SOLVER_CONSUMER/raw_status_literal] "PASS",
+  action: Wrap raw solver status decisions behind structured status access helpers without changing calculations.
+  dependency: Solver status values feed validation, gates, reports, and GUI; migrate first.
+leaf_qt/engine_solver.py:10607 [MEDIUM/SOLVER_CONSUMER/raw_status_literal] "FAIL",
+  action: Wrap raw solver status decisions behind structured status access helpers without changing calculations.
+  dependency: Solver status values feed validation, gates, reports, and GUI; migrate first.
+leaf_qt/engine_solver.py:13684 [MEDIUM/SOLVER_CONSUMER/raw_status_literal] "PASS",
+  action: Wrap raw solver status decisions behind structured status access helpers without changing calculations.
+  dependency: Solver status values feed validation, gates, reports, and GUI; migrate first.
+leaf_qt/engine_solver.py:15208 [MEDIUM/SOLVER_CONSUMER/raw_status_literal] verdict = "FAIL"
+  action: Wrap raw solver status decisions behind structured status access helpers without changing calculations.
+  dependency: Solver status values feed validation, gates, reports, and GUI; migrate first.
+
+B — Validation Owners
+---------------------
+leaf_qt/regen_candidate_blueprint_mutation_validation.py:243 [HIGH/VALIDATION/raw_status_literal] marker = "PASS" if check["passed"] else "FAIL"
+  action: Consume structured findings/global payload instead of branching on raw status strings.
+  dependency: Validation owners sit immediately above solver outputs and below gates.
+leaf_qt/regen_candidate_blueprint_population_validation_owner.py:231 [HIGH/VALIDATION/raw_status_literal] marker = "PASS" if check["passed"] else "FAIL"
+  action: Consume structured findings/global payload instead of branching on raw status strings.
+  dependency: Validation owners sit immediately above solver outputs and below gates.
+leaf_qt/regen_candidate_post_resolve_validation_owner.py:199 [HIGH/VALIDATION/raw_status_literal] ("FAIL" not in text and "INVALID" not in text),
+  action: Consume structured findings/global payload instead of branching on raw status strings.
+  dependency: Validation owners sit immediately above solver outputs and below gates.
+leaf_qt/regen_candidate_post_resolve_validation_owner.py:207 [HIGH/VALIDATION/raw_status_literal] ("WARN" not in text and "REVIEW" not in text and "PLACEHOLDER" not in text),
+  action: Consume structured findings/global payload instead of branching on raw status strings.
+  dependency: Validation owners sit immediately above solver outputs and below gates.
+leaf_qt/regen_candidate_validator.py:359 [HIGH/VALIDATION/contains_status] if "FAIL" in severities:
+  action: Consume structured findings/global payload instead of branching on raw status strings.
+  dependency: Validation owners sit immediately above solver outputs and below gates.
+leaf_qt/regen_candidate_validator.py:359 [HIGH/VALIDATION/raw_status_literal] if "FAIL" in severities:
+  action: Consume structured findings/global payload instead of branching on raw status strings.
+  dependency: Validation owners sit immediately above solver outputs and below gates.
+leaf_qt/regen_geometry_constraint_validation_owner.py:266 [HIGH/VALIDATION/raw_status_literal] passed=("FAIL" not in text and "INVALID" not in text),
+  action: Consume structured findings/global payload instead of branching on raw status strings.
+  dependency: Validation owners sit immediately above solver outputs and below gates.
+leaf_qt/regen_geometry_constraint_validation_owner.py:274 [HIGH/VALIDATION/raw_status_literal] passed=("WARN" not in text and "REVIEW" not in text and "PLACEHOLDER" not in text),
+  action: Consume structured findings/global payload instead of branching on raw status strings.
+  dependency: Validation owners sit immediately above solver outputs and below gates.
+leaf_qt/regen_source_validation_gate.py:243 [HIGH/VALIDATION/ast_startswith_status] if key in results and str(results.get(key)).upper().startswith("PASS"):
+  action: Consume structured findings/global payload instead of branching on raw status strings.
+  dependency: Validation owners sit immediately above solver outputs and below gates.
+leaf_qt/regen_source_validation_gate.py:243 [HIGH/VALIDATION/raw_status_literal] if key in results and str(results.get(key)).upper().startswith("PASS"):
+  action: Consume structured findings/global payload instead of branching on raw status strings.
+  dependency: Validation owners sit immediately above solver outputs and below gates.
+leaf_qt/regen_source_validation_gate.py:243 [HIGH/VALIDATION/startswith_status] if key in results and str(results.get(key)).upper().startswith("PASS"):
+  action: Consume structured findings/global payload instead of branching on raw status strings.
+  dependency: Validation owners sit immediately above solver outputs and below gates.
+leaf_qt/regen_source_validation_gate.py:360 [HIGH/VALIDATION/contains_status] if "FAIL" in severities:
+  action: Consume structured findings/global payload instead of branching on raw status strings.
+  dependency: Validation owners sit immediately above solver outputs and below gates.
+leaf_qt/regen_source_validation_gate.py:360 [HIGH/VALIDATION/raw_status_literal] if "FAIL" in severities:
+  action: Consume structured findings/global payload instead of branching on raw status strings.
+  dependency: Validation owners sit immediately above solver outputs and below gates.
+leaf_qt/regen_validation_master_gate.py:77 [HIGH/MASTER_GATE/contains_status] elif "FAIL" in status:
+  action: Consume structured findings/global payload instead of branching on raw status strings.
+  dependency: Validation owners sit immediately above solver outputs and below gates.
+leaf_qt/regen_validation_master_gate.py:77 [HIGH/MASTER_GATE/raw_status_literal] elif "FAIL" in status:
+  action: Consume structured findings/global payload instead of branching on raw status strings.
+  dependency: Validation owners sit immediately above solver outputs and below gates.
+leaf_qt/regen_validation_master_gate.py:194 [HIGH/MASTER_GATE/contains_status] elif "FAIL" in validation_status_text or "INVALID" in validation_status_text:
+  action: Consume structured findings/global payload instead of branching on raw status strings.
+  dependency: Validation owners sit immediately above solver outputs and below gates.
+leaf_qt/regen_validation_master_gate.py:194 [HIGH/MASTER_GATE/raw_status_literal] elif "FAIL" in validation_status_text or "INVALID" in validation_status_text:
+  action: Consume structured findings/global payload instead of branching on raw status strings.
+  dependency: Validation owners sit immediately above solver outputs and below gates.
+leaf_qt/regen_candidate_post_resolve_validation_owner.py:161 [MEDIUM/VALIDATION/raw_status_literal] "FAIL",
+  action: Consume structured findings/global payload instead of branching on raw status strings.
+  dependency: Validation owners sit immediately above solver outputs and below gates.
+leaf_qt/regen_candidate_post_resolve_validation_owner.py:177 [MEDIUM/VALIDATION/raw_status_literal] "FAIL",
+  action: Consume structured findings/global payload instead of branching on raw status strings.
+  dependency: Validation owners sit immediately above solver outputs and below gates.
+leaf_qt/regen_candidate_post_resolve_validation_owner.py:185 [MEDIUM/VALIDATION/raw_status_literal] "FAIL",
+  action: Consume structured findings/global payload instead of branching on raw status strings.
+  dependency: Validation owners sit immediately above solver outputs and below gates.
+leaf_qt/regen_candidate_post_resolve_validation_owner.py:200 [MEDIUM/VALIDATION/raw_status_literal] "FAIL",
+  action: Consume structured findings/global payload instead of branching on raw status strings.
+  dependency: Validation owners sit immediately above solver outputs and below gates.
+leaf_qt/regen_candidate_post_resolve_validation_owner.py:217 [MEDIUM/VALIDATION/raw_status_literal] "FAIL",
+  action: Consume structured findings/global payload instead of branching on raw status strings.
+  dependency: Validation owners sit immediately above solver outputs and below gates.
+leaf_qt/regen_candidate_post_resolve_validation_owner.py:230 [MEDIUM/VALIDATION/raw_status_literal] "FAIL",
+  action: Consume structured findings/global payload instead of branching on raw status strings.
+  dependency: Validation owners sit immediately above solver outputs and below gates.
+leaf_qt/regen_candidate_validator.py:360 [MEDIUM/VALIDATION/raw_status_literal] return "FAIL"
+  action: Consume structured findings/global payload instead of branching on raw status strings.
+  dependency: Validation owners sit immediately above solver outputs and below gates.
+leaf_qt/regen_candidate_validator.py:369 [MEDIUM/VALIDATION/raw_status_literal] return "PASS"
+  action: Consume structured findings/global payload instead of branching on raw status strings.
+  dependency: Validation owners sit immediately above solver outputs and below gates.
+leaf_qt/regen_candidate_validator.py:371 [MEDIUM/VALIDATION/raw_status_literal] return "FAIL"
+  action: Consume structured findings/global payload instead of branching on raw status strings.
+  dependency: Validation owners sit immediately above solver outputs and below gates.
+leaf_qt/regen_candidate_validator.py:381 [MEDIUM/VALIDATION/raw_status_literal] "FAIL",
+  action: Consume structured findings/global payload instead of branching on raw status strings.
+  dependency: Validation owners sit immediately above solver outputs and below gates.
+leaf_qt/regen_candidate_validator.py:495 [MEDIUM/VALIDATION/raw_status_literal] "FAIL",
+  action: Consume structured findings/global payload instead of branching on raw status strings.
+  dependency: Validation owners sit immediately above solver outputs and below gates.
+leaf_qt/regen_candidate_validator.py:548 [MEDIUM/VALIDATION/raw_status_literal] "FAIL",
+  action: Consume structured findings/global payload instead of branching on raw status strings.
+  dependency: Validation owners sit immediately above solver outputs and below gates.
+leaf_qt/regen_source_validation_gate.py:361 [MEDIUM/VALIDATION/raw_status_literal] return "FAIL"
+  action: Consume structured findings/global payload instead of branching on raw status strings.
+  dependency: Validation owners sit immediately above solver outputs and below gates.
+leaf_qt/regen_source_validation_gate.py:367 [MEDIUM/VALIDATION/raw_status_literal] return "PASS"
+  action: Consume structured findings/global payload instead of branching on raw status strings.
+  dependency: Validation owners sit immediately above solver outputs and below gates.
+leaf_qt/regen_source_validation_gate.py:368 [MEDIUM/VALIDATION/raw_status_literal] return "FAIL"
+  action: Consume structured findings/global payload instead of branching on raw status strings.
+  dependency: Validation owners sit immediately above solver outputs and below gates.
+leaf_qt/regen_source_validation_gate.py:378 [MEDIUM/VALIDATION/raw_status_literal] "FAIL",
+  action: Consume structured findings/global payload instead of branching on raw status strings.
+  dependency: Validation owners sit immediately above solver outputs and below gates.
+leaf_qt/regen_viewer_physical_geometry_validation_owner_phase_16p15.py:116 [MEDIUM/GUI/raw_status_literal] if str(results.get("regen_geometry_status", "")).upper() not in ("FAIL", "ERROR"):
+  action: Consume structured findings/global payload instead of branching on raw status strings.
+  dependency: Validation owners sit immediately above solver outputs and below gates.
+
+C — Master Gates
+----------------
+leaf_qt/real_engine_benchmark_master_gate.py:65 [HIGH/MASTER_GATE/contains_status] if "FAIL" in reason_text.upper() or "ERROR" in reason_text.upper() or "INVALID" in reason_text.upper():
+  action: Replace raw status/severity aggregation with structured finding severity aggregation.
+  dependency: Master gates should migrate after validations expose structured status consistently.
+leaf_qt/real_engine_benchmark_master_gate.py:65 [HIGH/MASTER_GATE/raw_status_literal] if "FAIL" in reason_text.upper() or "ERROR" in reason_text.upper() or "INVALID" in reason_text.upper():
+  action: Replace raw status/severity aggregation with structured finding severity aggregation.
+  dependency: Master gates should migrate after validations expose structured status consistently.
+leaf_qt/real_engine_benchmark_master_gate.py:363 [HIGH/MASTER_GATE/ast_startswith_status] if status.startswith("PASS"):
+  action: Replace raw status/severity aggregation with structured finding severity aggregation.
+  dependency: Master gates should migrate after validations expose structured status consistently.
+leaf_qt/real_engine_benchmark_master_gate.py:363 [HIGH/MASTER_GATE/raw_status_literal] if status.startswith("PASS"):
+  action: Replace raw status/severity aggregation with structured finding severity aggregation.
+  dependency: Master gates should migrate after validations expose structured status consistently.
+leaf_qt/real_engine_benchmark_master_gate.py:363 [HIGH/MASTER_GATE/startswith_status] if status.startswith("PASS"):
+  action: Replace raw status/severity aggregation with structured finding severity aggregation.
+  dependency: Master gates should migrate after validations expose structured status consistently.
+leaf_qt/real_engine_benchmark_master_gate.py:372 [HIGH/MASTER_GATE/ast_startswith_status] if status.startswith("PASS"):
+  action: Replace raw status/severity aggregation with structured finding severity aggregation.
+  dependency: Master gates should migrate after validations expose structured status consistently.
+leaf_qt/real_engine_benchmark_master_gate.py:372 [HIGH/MASTER_GATE/raw_status_literal] if status.startswith("PASS"):
+  action: Replace raw status/severity aggregation with structured finding severity aggregation.
+  dependency: Master gates should migrate after validations expose structured status consistently.
+leaf_qt/real_engine_benchmark_master_gate.py:372 [HIGH/MASTER_GATE/startswith_status] if status.startswith("PASS"):
+  action: Replace raw status/severity aggregation with structured finding severity aggregation.
+  dependency: Master gates should migrate after validations expose structured status consistently.
+leaf_qt/regen_axial_geometry_master_gate.py:136 [HIGH/MASTER_GATE/contains_status] if "FAIL" in severities:
+  action: Replace raw status/severity aggregation with structured finding severity aggregation.
+  dependency: Master gates should migrate after validations expose structured status consistently.
+leaf_qt/regen_axial_geometry_master_gate.py:136 [HIGH/MASTER_GATE/raw_status_literal] if "FAIL" in severities:
+  action: Replace raw status/severity aggregation with structured finding severity aggregation.
+  dependency: Master gates should migrate after validations expose structured status consistently.
+leaf_qt/regen_candidate_acceptance_master_gate.py:140 [HIGH/MASTER_GATE/contains_status] if "FAIL" in severities:
+  action: Replace raw status/severity aggregation with structured finding severity aggregation.
+  dependency: Master gates should migrate after validations expose structured status consistently.
+leaf_qt/regen_candidate_acceptance_master_gate.py:140 [HIGH/MASTER_GATE/raw_status_literal] if "FAIL" in severities:
+  action: Replace raw status/severity aggregation with structured finding severity aggregation.
+  dependency: Master gates should migrate after validations expose structured status consistently.
+leaf_qt/regen_candidate_mutation_master_gate.py:330 [HIGH/MASTER_GATE/raw_status_literal] label = "PASS" if check["passed"] else "FAIL"
+  action: Replace raw status/severity aggregation with structured finding severity aggregation.
+  dependency: Master gates should migrate after validations expose structured status consistently.
+leaf_qt/regen_candidate_mutation_master_gate.py:390 [HIGH/MASTER_GATE/contains_status] if "FAIL" in severities:
+  action: Replace raw status/severity aggregation with structured finding severity aggregation.
+  dependency: Master gates should migrate after validations expose structured status consistently.
+leaf_qt/regen_candidate_mutation_master_gate.py:390 [HIGH/MASTER_GATE/raw_status_literal] if "FAIL" in severities:
+  action: Replace raw status/severity aggregation with structured finding severity aggregation.
+  dependency: Master gates should migrate after validations expose structured status consistently.
+leaf_qt/regen_candidate_population_master_gate.py:299 [HIGH/MASTER_GATE/raw_status_literal] label = "PASS" if check["passed"] else "FAIL"
+  action: Replace raw status/severity aggregation with structured finding severity aggregation.
+  dependency: Master gates should migrate after validations expose structured status consistently.
+leaf_qt/regen_candidate_population_master_gate.py:405 [HIGH/MASTER_GATE/contains_status] if "FAIL" in text or "INVALID" in text or "ERROR" in text:
+  action: Replace raw status/severity aggregation with structured finding severity aggregation.
+  dependency: Master gates should migrate after validations expose structured status consistently.
+leaf_qt/regen_candidate_population_master_gate.py:405 [HIGH/MASTER_GATE/raw_status_literal] if "FAIL" in text or "INVALID" in text or "ERROR" in text:
+  action: Replace raw status/severity aggregation with structured finding severity aggregation.
+  dependency: Master gates should migrate after validations expose structured status consistently.
+leaf_qt/regen_candidate_population_master_gate.py:414 [HIGH/MASTER_GATE/contains_status] elif "WARN" in text or "REVIEW" in text or "PLACEHOLDER" in text:
+  action: Replace raw status/severity aggregation with structured finding severity aggregation.
+  dependency: Master gates should migrate after validations expose structured status consistently.
+leaf_qt/regen_candidate_population_master_gate.py:414 [HIGH/MASTER_GATE/raw_status_literal] elif "WARN" in text or "REVIEW" in text or "PLACEHOLDER" in text:
+  action: Replace raw status/severity aggregation with structured finding severity aggregation.
+  dependency: Master gates should migrate after validations expose structured status consistently.
+leaf_qt/regen_candidate_population_master_gate.py:521 [HIGH/MASTER_GATE/raw_status_literal] if canonical == "PASS":
+  action: Replace raw status/severity aggregation with structured finding severity aggregation.
+  dependency: Master gates should migrate after validations expose structured status consistently.
+leaf_qt/regen_candidate_ranking_master_gate.py:48 [HIGH/MASTER_GATE/contains_status] if "FAIL" in severities:
+  action: Replace raw status/severity aggregation with structured finding severity aggregation.
+  dependency: Master gates should migrate after validations expose structured status consistently.
+leaf_qt/regen_candidate_ranking_master_gate.py:48 [HIGH/MASTER_GATE/raw_status_literal] if "FAIL" in severities:
+  action: Replace raw status/severity aggregation with structured finding severity aggregation.
+  dependency: Master gates should migrate after validations expose structured status consistently.
+leaf_qt/regen_candidate_ranking_master_gate.py:184 [HIGH/MASTER_GATE/raw_status_literal] if ready is True and not any(f["severity"] in {"FAIL", "BLOCKED", "REVIEW_REQUIRED"} for f in findings):
+  action: Replace raw status/severity aggregation with structured finding severity aggregation.
+  dependency: Master gates should migrate after validations expose structured status consistently.
+leaf_qt/regen_candidate_ranking_master_gate.py:603 [HIGH/MASTER_GATE/raw_status_literal] label = "PASS" if check["passed"] else "FAIL"
+  action: Replace raw status/severity aggregation with structured finding severity aggregation.
+  dependency: Master gates should migrate after validations expose structured status consistently.
+leaf_qt/regen_evolution_loop_master_gate.py:327 [HIGH/MASTER_GATE/raw_status_literal] label = "PASS" if check["passed"] else "FAIL"
+  action: Replace raw status/severity aggregation with structured finding severity aggregation.
+  dependency: Master gates should migrate after validations expose structured status consistently.
+leaf_qt/regen_evolution_loop_master_gate.py:388 [HIGH/MASTER_GATE/contains_status] if "FAIL" in severities:
+  action: Replace raw status/severity aggregation with structured finding severity aggregation.
+  dependency: Master gates should migrate after validations expose structured status consistently.
+leaf_qt/regen_evolution_loop_master_gate.py:388 [HIGH/MASTER_GATE/raw_status_literal] if "FAIL" in severities:
+  action: Replace raw status/severity aggregation with structured finding severity aggregation.
+  dependency: Master gates should migrate after validations expose structured status consistently.
+leaf_qt/regen_geometry_master_gate.py:56 [HIGH/MASTER_GATE/raw_status_literal] elif history.get("iteration_history_status") != "PASS":
+  action: Replace raw status/severity aggregation with structured finding severity aggregation.
+  dependency: Master gates should migrate after validations expose structured status consistently.
+leaf_qt/regen_geometry_master_gate.py:250 [HIGH/MASTER_GATE/contains_status] if "FAIL" in text or "INVALID" in text:
+  action: Replace raw status/severity aggregation with structured finding severity aggregation.
+  dependency: Master gates should migrate after validations expose structured status consistently.
+leaf_qt/regen_geometry_master_gate.py:250 [HIGH/MASTER_GATE/raw_status_literal] if "FAIL" in text or "INVALID" in text:
+  action: Replace raw status/severity aggregation with structured finding severity aggregation.
+  dependency: Master gates should migrate after validations expose structured status consistently.
+leaf_qt/regen_geometry_master_gate.py:260 [HIGH/MASTER_GATE/contains_status] elif "WARN" in text or "REVIEW" in text or "PLACEHOLDER" in text:
+  action: Replace raw status/severity aggregation with structured finding severity aggregation.
+  dependency: Master gates should migrate after validations expose structured status consistently.
+leaf_qt/regen_geometry_master_gate.py:260 [HIGH/MASTER_GATE/raw_status_literal] elif "WARN" in text or "REVIEW" in text or "PLACEHOLDER" in text:
+  action: Replace raw status/severity aggregation with structured finding severity aggregation.
+  dependency: Master gates should migrate after validations expose structured status consistently.
+leaf_qt/regen_geometry_master_gate.py:418 [HIGH/MASTER_GATE/raw_status_literal] if canonical == "PASS":
+  action: Replace raw status/severity aggregation with structured finding severity aggregation.
+  dependency: Master gates should migrate after validations expose structured status consistently.
+leaf_qt/regen_optimisation_master_gate.py:274 [HIGH/MASTER_GATE/contains_status] if "FAIL" in severities:
+  action: Replace raw status/severity aggregation with structured finding severity aggregation.
+  dependency: Master gates should migrate after validations expose structured status consistently.
+leaf_qt/regen_optimisation_master_gate.py:274 [HIGH/MASTER_GATE/raw_status_literal] if "FAIL" in severities:
+  action: Replace raw status/severity aggregation with structured finding severity aggregation.
+  dependency: Master gates should migrate after validations expose structured status consistently.
+leaf_qt/regen_scalability_master_gate.py:218 [HIGH/MASTER_GATE/contains_status] if "FAIL" in severities:
+  action: Replace raw status/severity aggregation with structured finding severity aggregation.
+  dependency: Master gates should migrate after validations expose structured status consistently.
+leaf_qt/regen_scalability_master_gate.py:218 [HIGH/MASTER_GATE/raw_status_literal] if "FAIL" in severities:
+  action: Replace raw status/severity aggregation with structured finding severity aggregation.
+  dependency: Master gates should migrate after validations expose structured status consistently.
+leaf_qt/regen_variable_geometry_master_gate.py:149 [HIGH/MASTER_GATE/contains_status] if "FAIL" in severities:
+  action: Replace raw status/severity aggregation with structured finding severity aggregation.
+  dependency: Master gates should migrate after validations expose structured status consistently.
+leaf_qt/regen_variable_geometry_master_gate.py:149 [HIGH/MASTER_GATE/raw_status_literal] if "FAIL" in severities:
+  action: Replace raw status/severity aggregation with structured finding severity aggregation.
+  dependency: Master gates should migrate after validations expose structured status consistently.
+project_maintenance/wave2_status_adapter_master_gate_phase_16t3s.py:32 [HIGH/MASTER_GATE/contains_status] if "FAIL" in severities:
+  action: Replace raw status/severity aggregation with structured finding severity aggregation.
+  dependency: Master gates should migrate after validations expose structured status consistently.
+project_maintenance/wave2_status_adapter_master_gate_phase_16t3s.py:32 [HIGH/MASTER_GATE/raw_status_literal] if "FAIL" in severities:
+  action: Replace raw status/severity aggregation with structured finding severity aggregation.
+  dependency: Master gates should migrate after validations expose structured status consistently.
+project_maintenance/wave2_status_adapter_master_gate_phase_16t3s.py:134 [HIGH/MASTER_GATE/raw_status_literal] passed = canonical == "PASS"
+  action: Replace raw status/severity aggregation with structured finding severity aggregation.
+  dependency: Master gates should migrate after validations expose structured status consistently.
+leaf_qt/real_engine_benchmark_master_gate.py:25 [MEDIUM/MASTER_GATE/raw_status_literal] "PASS",
+  action: Replace raw status/severity aggregation with structured finding severity aggregation.
+  dependency: Master gates should migrate after validations expose structured status consistently.
+leaf_qt/real_engine_benchmark_master_gate.py:39 [MEDIUM/MASTER_GATE/raw_status_literal] "FAIL",
+  action: Replace raw status/severity aggregation with structured finding severity aggregation.
+  dependency: Master gates should migrate after validations expose structured status consistently.
+leaf_qt/real_engine_benchmark_master_gate.py:48 [MEDIUM/MASTER_GATE/raw_status_literal] "WARN",
+  action: Replace raw status/severity aggregation with structured finding severity aggregation.
+  dependency: Master gates should migrate after validations expose structured status consistently.
+leaf_qt/regen_axial_geometry_master_gate.py:137 [MEDIUM/MASTER_GATE/raw_status_literal] return "FAIL"
+  action: Replace raw status/severity aggregation with structured finding severity aggregation.
+  dependency: Master gates should migrate after validations expose structured status consistently.
+leaf_qt/regen_axial_geometry_master_gate.py:146 [MEDIUM/MASTER_GATE/raw_status_literal] return "PASS"
+  action: Replace raw status/severity aggregation with structured finding severity aggregation.
+  dependency: Master gates should migrate after validations expose structured status consistently.
+leaf_qt/regen_axial_geometry_master_gate.py:148 [MEDIUM/MASTER_GATE/raw_status_literal] return "FAIL"
+  action: Replace raw status/severity aggregation with structured finding severity aggregation.
+  dependency: Master gates should migrate after validations expose structured status consistently.
+leaf_qt/regen_axial_geometry_master_gate.py:158 [MEDIUM/MASTER_GATE/raw_status_literal] "FAIL",
+  action: Replace raw status/severity aggregation with structured finding severity aggregation.
+  dependency: Master gates should migrate after validations expose structured status consistently.
+leaf_qt/regen_axial_geometry_master_gate.py:237 [MEDIUM/MASTER_GATE/raw_status_literal] "FAIL",
+  action: Replace raw status/severity aggregation with structured finding severity aggregation.
+  dependency: Master gates should migrate after validations expose structured status consistently.
+leaf_qt/regen_candidate_acceptance_master_gate.py:141 [MEDIUM/MASTER_GATE/raw_status_literal] return "FAIL"
+  action: Replace raw status/severity aggregation with structured finding severity aggregation.
+  dependency: Master gates should migrate after validations expose structured status consistently.
+leaf_qt/regen_candidate_acceptance_master_gate.py:150 [MEDIUM/MASTER_GATE/raw_status_literal] return "PASS"
+  action: Replace raw status/severity aggregation with structured finding severity aggregation.
+  dependency: Master gates should migrate after validations expose structured status consistently.
+leaf_qt/regen_candidate_acceptance_master_gate.py:152 [MEDIUM/MASTER_GATE/raw_status_literal] return "FAIL"
+  action: Replace raw status/severity aggregation with structured finding severity aggregation.
+  dependency: Master gates should migrate after validations expose structured status consistently.
+leaf_qt/regen_candidate_acceptance_master_gate.py:162 [MEDIUM/MASTER_GATE/raw_status_literal] "FAIL",
+  action: Replace raw status/severity aggregation with structured finding severity aggregation.
+  dependency: Master gates should migrate after validations expose structured status consistently.
+leaf_qt/regen_candidate_acceptance_master_gate.py:257 [MEDIUM/MASTER_GATE/raw_status_literal] "FAIL",
+  action: Replace raw status/severity aggregation with structured finding severity aggregation.
+  dependency: Master gates should migrate after validations expose structured status consistently.
+leaf_qt/regen_candidate_acceptance_master_gate.py:334 [MEDIUM/MASTER_GATE/raw_status_literal] "FAIL",
+  action: Replace raw status/severity aggregation with structured finding severity aggregation.
+  dependency: Master gates should migrate after validations expose structured status consistently.
+leaf_qt/regen_candidate_mutation_master_gate.py:391 [MEDIUM/MASTER_GATE/raw_status_literal] return "FAIL"
+  action: Replace raw status/severity aggregation with structured finding severity aggregation.
+  dependency: Master gates should migrate after validations expose structured status consistently.
+leaf_qt/regen_candidate_mutation_master_gate.py:400 [MEDIUM/MASTER_GATE/raw_status_literal] return "PASS"
+  action: Replace raw status/severity aggregation with structured finding severity aggregation.
+  dependency: Master gates should migrate after validations expose structured status consistently.
+leaf_qt/regen_candidate_mutation_master_gate.py:402 [MEDIUM/MASTER_GATE/raw_status_literal] return "FAIL"
+  action: Replace raw status/severity aggregation with structured finding severity aggregation.
+  dependency: Master gates should migrate after validations expose structured status consistently.
+leaf_qt/regen_candidate_mutation_master_gate.py:412 [MEDIUM/MASTER_GATE/raw_status_literal] "FAIL",
+  action: Replace raw status/severity aggregation with structured finding severity aggregation.
+  dependency: Master gates should migrate after validations expose structured status consistently.
+leaf_qt/regen_candidate_mutation_master_gate.py:491 [MEDIUM/MASTER_GATE/raw_status_literal] "FAIL",
+  action: Replace raw status/severity aggregation with structured finding severity aggregation.
+  dependency: Master gates should migrate after validations expose structured status consistently.
+leaf_qt/regen_candidate_mutation_master_gate.py:605 [MEDIUM/MASTER_GATE/raw_status_literal] "FAIL",
+  action: Replace raw status/severity aggregation with structured finding severity aggregation.
+  dependency: Master gates should migrate after validations expose structured status consistently.
+leaf_qt/regen_candidate_ranking_master_gate.py:49 [MEDIUM/MASTER_GATE/raw_status_literal] return "FAIL"
+  action: Replace raw status/severity aggregation with structured finding severity aggregation.
+  dependency: Master gates should migrate after validations expose structured status consistently.
+leaf_qt/regen_candidate_ranking_master_gate.py:58 [MEDIUM/MASTER_GATE/raw_status_literal] return "PASS"
+  action: Replace raw status/severity aggregation with structured finding severity aggregation.
+  dependency: Master gates should migrate after validations expose structured status consistently.
+leaf_qt/regen_candidate_ranking_master_gate.py:60 [MEDIUM/MASTER_GATE/raw_status_literal] return "FAIL"
+  action: Replace raw status/severity aggregation with structured finding severity aggregation.
+  dependency: Master gates should migrate after validations expose structured status consistently.
+leaf_qt/regen_candidate_ranking_master_gate.py:75 [MEDIUM/MASTER_GATE/raw_status_literal] "FAIL",
+  action: Replace raw status/severity aggregation with structured finding severity aggregation.
+  dependency: Master gates should migrate after validations expose structured status consistently.
+leaf_qt/regen_candidate_ranking_master_gate.py:106 [MEDIUM/MASTER_GATE/raw_status_literal] "FAIL",
+  action: Replace raw status/severity aggregation with structured finding severity aggregation.
+  dependency: Master gates should migrate after validations expose structured status consistently.
+leaf_qt/regen_candidate_ranking_master_gate.py:129 [MEDIUM/MASTER_GATE/raw_status_literal] "FAIL",
+  action: Replace raw status/severity aggregation with structured finding severity aggregation.
+  dependency: Master gates should migrate after validations expose structured status consistently.
+leaf_qt/regen_candidate_ranking_master_gate.py:139 [MEDIUM/MASTER_GATE/raw_status_literal] "FAIL",
+  action: Replace raw status/severity aggregation with structured finding severity aggregation.
+  dependency: Master gates should migrate after validations expose structured status consistently.
+leaf_qt/regen_candidate_ranking_master_gate.py:168 [MEDIUM/MASTER_GATE/raw_status_literal] "FAIL",
+  action: Replace raw status/severity aggregation with structured finding severity aggregation.
+  dependency: Master gates should migrate after validations expose structured status consistently.
+leaf_qt/regen_candidate_ranking_master_gate.py:178 [MEDIUM/MASTER_GATE/raw_status_literal] "FAIL",
+  action: Replace raw status/severity aggregation with structured finding severity aggregation.
+  dependency: Master gates should migrate after validations expose structured status consistently.
+leaf_qt/regen_evolution_loop_master_gate.py:389 [MEDIUM/MASTER_GATE/raw_status_literal] return "FAIL"
+  action: Replace raw status/severity aggregation with structured finding severity aggregation.
+  dependency: Master gates should migrate after validations expose structured status consistently.
+leaf_qt/regen_evolution_loop_master_gate.py:398 [MEDIUM/MASTER_GATE/raw_status_literal] return "PASS"
+  action: Replace raw status/severity aggregation with structured finding severity aggregation.
+  dependency: Master gates should migrate after validations expose structured status consistently.
+leaf_qt/regen_evolution_loop_master_gate.py:400 [MEDIUM/MASTER_GATE/raw_status_literal] return "FAIL"
+  action: Replace raw status/severity aggregation with structured finding severity aggregation.
+  dependency: Master gates should migrate after validations expose structured status consistently.
+leaf_qt/regen_evolution_loop_master_gate.py:410 [MEDIUM/MASTER_GATE/raw_status_literal] "FAIL",
+  action: Replace raw status/severity aggregation with structured finding severity aggregation.
+  dependency: Master gates should migrate after validations expose structured status consistently.
+leaf_qt/regen_evolution_loop_master_gate.py:489 [MEDIUM/MASTER_GATE/raw_status_literal] "FAIL",
+  action: Replace raw status/severity aggregation with structured finding severity aggregation.
+  dependency: Master gates should migrate after validations expose structured status consistently.
+leaf_qt/regen_optimisation_master_gate.py:275 [MEDIUM/MASTER_GATE/raw_status_literal] return "FAIL"
+  action: Replace raw status/severity aggregation with structured finding severity aggregation.
+  dependency: Master gates should migrate after validations expose structured status consistently.
+leaf_qt/regen_optimisation_master_gate.py:284 [MEDIUM/MASTER_GATE/raw_status_literal] return "PASS"
+  action: Replace raw status/severity aggregation with structured finding severity aggregation.
+  dependency: Master gates should migrate after validations expose structured status consistently.
+leaf_qt/regen_optimisation_master_gate.py:286 [MEDIUM/MASTER_GATE/raw_status_literal] return "FAIL"
+  action: Replace raw status/severity aggregation with structured finding severity aggregation.
+  dependency: Master gates should migrate after validations expose structured status consistently.
+
+D — Completion Audits
+---------------------
+integrate_phase_16l3_acceptance_audit.py:159 [HIGH/COMPLETION_AUDIT/raw_status_literal] f"- {item.get('name')}: {'PASS' if item.get('passed') else 'FAIL'}"
+  action: Replace raw PASS/FAIL checks with structured status helper interpretation.
+  dependency: Completion audits depend on solver, validation, and gate outputs.
+leaf_qt/calculation_audit.py:205 [HIGH/COMPLETION_AUDIT/raw_status_literal] elif str(value).upper() == "PASS":
+  action: Replace raw PASS/FAIL checks with structured status helper interpretation.
+  dependency: Completion audits depend on solver, validation, and gate outputs.
+leaf_qt/material_and_coating_foundation_audit.py:103 [HIGH/COMPLETION_AUDIT/raw_status_literal] if not str(status).startswith(("PASS", "FAIL")):
+  action: Replace raw PASS/FAIL checks with structured status helper interpretation.
+  dependency: Completion audits depend on solver, validation, and gate outputs.
+leaf_qt/material_completion_audit.py:93 [HIGH/COMPLETION_AUDIT/raw_status_literal] if not str(status).startswith(("PASS", "FAIL")):
+  action: Replace raw PASS/FAIL checks with structured status helper interpretation.
+  dependency: Completion audits depend on solver, validation, and gate outputs.
+leaf_qt/real_engine_benchmark_completion_audit.py:277 [HIGH/COMPLETION_AUDIT/raw_status_literal] marker = "PASS" if check["passed"] else "FAIL"
+  action: Replace raw PASS/FAIL checks with structured status helper interpretation.
+  dependency: Completion audits depend on solver, validation, and gate outputs.
+leaf_qt/real_engine_benchmark_completion_audit.py:308 [HIGH/COMPLETION_AUDIT/ast_startswith_status] if status.startswith("PASS"):
+  action: Replace raw PASS/FAIL checks with structured status helper interpretation.
+  dependency: Completion audits depend on solver, validation, and gate outputs.
+leaf_qt/real_engine_benchmark_completion_audit.py:308 [HIGH/COMPLETION_AUDIT/raw_status_literal] if status.startswith("PASS"):
+  action: Replace raw PASS/FAIL checks with structured status helper interpretation.
+  dependency: Completion audits depend on solver, validation, and gate outputs.
+leaf_qt/real_engine_benchmark_completion_audit.py:308 [HIGH/COMPLETION_AUDIT/startswith_status] if status.startswith("PASS"):
+  action: Replace raw PASS/FAIL checks with structured status helper interpretation.
+  dependency: Completion audits depend on solver, validation, and gate outputs.
+leaf_qt/real_engine_benchmark_completion_audit.py:323 [HIGH/COMPLETION_AUDIT/ast_startswith_status] if status.startswith("PASS"):
+  action: Replace raw PASS/FAIL checks with structured status helper interpretation.
+  dependency: Completion audits depend on solver, validation, and gate outputs.
+leaf_qt/real_engine_benchmark_completion_audit.py:323 [HIGH/COMPLETION_AUDIT/raw_status_literal] if status.startswith("PASS"):
+  action: Replace raw PASS/FAIL checks with structured status helper interpretation.
+  dependency: Completion audits depend on solver, validation, and gate outputs.
+leaf_qt/real_engine_benchmark_completion_audit.py:323 [HIGH/COMPLETION_AUDIT/startswith_status] if status.startswith("PASS"):
+  action: Replace raw PASS/FAIL checks with structured status helper interpretation.
+  dependency: Completion audits depend on solver, validation, and gate outputs.
+leaf_qt/regen_acceptance_audit.py:154 [HIGH/COMPLETION_AUDIT/raw_status_literal] f"- {item.get('name')}: {'PASS' if item.get('passed') else 'FAIL'}"
+  action: Replace raw PASS/FAIL checks with structured status helper interpretation.
+  dependency: Completion audits depend on solver, validation, and gate outputs.
+leaf_qt/regen_architecture_visibility_audit.py:196 [HIGH/COMPLETION_AUDIT/ast_startswith_status] return value is True or value == 1 or value == "1" or str(value).upper().startswith("PASS")
+  action: Replace raw PASS/FAIL checks with structured status helper interpretation.
+  dependency: Completion audits depend on solver, validation, and gate outputs.
+leaf_qt/regen_architecture_visibility_audit.py:196 [HIGH/COMPLETION_AUDIT/raw_status_literal] return value is True or value == 1 or value == "1" or str(value).upper().startswith("PASS")
+  action: Replace raw PASS/FAIL checks with structured status helper interpretation.
+  dependency: Completion audits depend on solver, validation, and gate outputs.
+leaf_qt/regen_architecture_visibility_audit.py:196 [HIGH/COMPLETION_AUDIT/startswith_status] return value is True or value == 1 or value == "1" or str(value).upper().startswith("PASS")
+  action: Replace raw PASS/FAIL checks with structured status helper interpretation.
+  dependency: Completion audits depend on solver, validation, and gate outputs.
+leaf_qt/regen_architecture_visibility_audit.py:226 [HIGH/COMPLETION_AUDIT/contains_status] "FAIL" in str(value).upper() or "BLOCKED" in str(value).upper()
+  action: Replace raw PASS/FAIL checks with structured status helper interpretation.
+  dependency: Completion audits depend on solver, validation, and gate outputs.
+leaf_qt/regen_architecture_visibility_audit.py:226 [HIGH/COMPLETION_AUDIT/raw_status_literal] "FAIL" in str(value).upper() or "BLOCKED" in str(value).upper()
+  action: Replace raw PASS/FAIL checks with structured status helper interpretation.
+  dependency: Completion audits depend on solver, validation, and gate outputs.
+leaf_qt/regen_autonomous_optimisation_input_audit.py:159 [HIGH/COMPLETION_AUDIT/raw_status_literal] marker = "PASS" if check["passed"] else "FAIL"
+  action: Replace raw PASS/FAIL checks with structured status helper interpretation.
+  dependency: Completion audits depend on solver, validation, and gate outputs.
+leaf_qt/regen_candidate_blueprint_completion_audit.py:179 [HIGH/COMPLETION_AUDIT/raw_status_literal] marker = "PASS" if check["passed"] else "FAIL"
+  action: Replace raw PASS/FAIL checks with structured status helper interpretation.
+  dependency: Completion audits depend on solver, validation, and gate outputs.
+leaf_qt/regen_candidate_blueprint_optimisation_completion_audit.py:215 [HIGH/COMPLETION_AUDIT/raw_status_literal] marker = "PASS" if check["passed"] else "FAIL"
+  action: Replace raw PASS/FAIL checks with structured status helper interpretation.
+  dependency: Completion audits depend on solver, validation, and gate outputs.
+leaf_qt/regen_candidate_blueprint_population_completion_audit.py:238 [HIGH/COMPLETION_AUDIT/raw_status_literal] marker = "PASS" if check["passed"] else "FAIL"
+  action: Replace raw PASS/FAIL checks with structured status helper interpretation.
+  dependency: Completion audits depend on solver, validation, and gate outputs.
+leaf_qt/regen_candidate_creation_completion_audit.py:201 [HIGH/COMPLETION_AUDIT/raw_status_literal] marker = "PASS" if check["passed"] else "FAIL"
+  action: Replace raw PASS/FAIL checks with structured status helper interpretation.
+  dependency: Completion audits depend on solver, validation, and gate outputs.
+leaf_qt/regen_candidate_creation_input_audit.py:213 [HIGH/COMPLETION_AUDIT/raw_status_literal] marker = "PASS" if check["passed"] else "FAIL"
+  action: Replace raw PASS/FAIL checks with structured status helper interpretation.
+  dependency: Completion audits depend on solver, validation, and gate outputs.
+leaf_qt/regen_candidate_generation_completion_audit.py:192 [HIGH/COMPLETION_AUDIT/raw_status_literal] marker = "PASS" if check["passed"] else "FAIL"
+  action: Replace raw PASS/FAIL checks with structured status helper interpretation.
+  dependency: Completion audits depend on solver, validation, and gate outputs.
+leaf_qt/regen_candidate_mutation_completion_audit.py:336 [HIGH/COMPLETION_AUDIT/raw_status_literal] label = "PASS" if check["passed"] else "FAIL"
+  action: Replace raw PASS/FAIL checks with structured status helper interpretation.
+  dependency: Completion audits depend on solver, validation, and gate outputs.
+leaf_qt/regen_candidate_mutation_input_audit.py:428 [HIGH/COMPLETION_AUDIT/raw_status_literal] label = "PASS" if check["passed"] else "FAIL"
+  action: Replace raw PASS/FAIL checks with structured status helper interpretation.
+  dependency: Completion audits depend on solver, validation, and gate outputs.
+leaf_qt/regen_candidate_population_completion_audit.py:505 [HIGH/COMPLETION_AUDIT/raw_status_literal] label = "PASS" if check["passed"] else "FAIL"
+  action: Replace raw PASS/FAIL checks with structured status helper interpretation.
+  dependency: Completion audits depend on solver, validation, and gate outputs.
+leaf_qt/regen_candidate_ranking_completion_audit.py:337 [HIGH/COMPLETION_AUDIT/raw_status_literal] label = "PASS" if check["passed"] else "FAIL"
+  action: Replace raw PASS/FAIL checks with structured status helper interpretation.
+  dependency: Completion audits depend on solver, validation, and gate outputs.
+leaf_qt/regen_candidate_ranking_input_audit.py:407 [HIGH/COMPLETION_AUDIT/raw_status_literal] label = "PASS" if check["passed"] else "FAIL"
+  action: Replace raw PASS/FAIL checks with structured status helper interpretation.
+  dependency: Completion audits depend on solver, validation, and gate outputs.
+leaf_qt/regen_completion_audit.py:90 [HIGH/COMPLETION_AUDIT/contains_status] "FAIL" in status
+  action: Replace raw PASS/FAIL checks with structured status helper interpretation.
+  dependency: Completion audits depend on solver, validation, and gate outputs.
+leaf_qt/regen_completion_audit.py:90 [HIGH/COMPLETION_AUDIT/raw_status_literal] "FAIL" in status
+  action: Replace raw PASS/FAIL checks with structured status helper interpretation.
+  dependency: Completion audits depend on solver, validation, and gate outputs.
+leaf_qt/regen_evolution_loop_completion_audit.py:332 [HIGH/COMPLETION_AUDIT/raw_status_literal] label = "PASS" if check["passed"] else "FAIL"
+  action: Replace raw PASS/FAIL checks with structured status helper interpretation.
+  dependency: Completion audits depend on solver, validation, and gate outputs.
+leaf_qt/regen_evolution_loop_input_audit.py:374 [HIGH/COMPLETION_AUDIT/raw_status_literal] label = "PASS" if check["passed"] else "FAIL"
+  action: Replace raw PASS/FAIL checks with structured status helper interpretation.
+  dependency: Completion audits depend on solver, validation, and gate outputs.
+leaf_qt/regen_geometry_completion_audit.py:103 [HIGH/COMPLETION_AUDIT/raw_status_literal] if history.get("iteration_history_status") != "PASS":
+  action: Replace raw PASS/FAIL checks with structured status helper interpretation.
+  dependency: Completion audits depend on solver, validation, and gate outputs.
+leaf_qt/regen_optimisation_completion_audit.py:151 [HIGH/COMPLETION_AUDIT/raw_status_literal] marker = "PASS" if check["passed"] else "FAIL"
+  action: Replace raw PASS/FAIL checks with structured status helper interpretation.
+  dependency: Completion audits depend on solver, validation, and gate outputs.
+leaf_qt/regen_runtime_execution_completion_audit.py:191 [HIGH/COMPLETION_AUDIT/raw_status_literal] marker = "PASS" if check["passed"] else "FAIL"
+  action: Replace raw PASS/FAIL checks with structured status helper interpretation.
+  dependency: Completion audits depend on solver, validation, and gate outputs.
+leaf_qt/regen_viewer_gui_runtime_audit_phase_16q1.py:40 [HIGH/COMPLETION_AUDIT/raw_status_literal] if results.get("regen_viewer_completion_lock") != "PASS":
+  action: Replace raw PASS/FAIL checks with structured status helper interpretation.
+  dependency: Completion audits depend on solver, validation, and gate outputs.
+leaf_qt/temperature_dependent_solver_completion_audit_owner.py:89 [HIGH/COMPLETION_AUDIT/raw_status_literal] result_key_pass = result_key_status in (None, "PASS")
+  action: Replace raw PASS/FAIL checks with structured status helper interpretation.
+  dependency: Completion audits depend on solver, validation, and gate outputs.
+leaf_qt/temperature_dependent_solver_completion_audit_owner.py:95 [HIGH/COMPLETION_AUDIT/raw_status_literal] if report_bundle_status not in (None, "PASS"):
+  action: Replace raw PASS/FAIL checks with structured status helper interpretation.
+  dependency: Completion audits depend on solver, validation, and gate outputs.
+project_maintenance/wave2_status_adapter_completion_audit_phase_16t3r.py:238 [HIGH/COMPLETION_AUDIT/raw_status_literal] outcome = "PASS" if r["passed"] else "FAIL"
+  action: Replace raw PASS/FAIL checks with structured status helper interpretation.
+  dependency: Completion audits depend on solver, validation, and gate outputs.
+leaf_qt/calculation_audit.py:75 [MEDIUM/COMPLETION_AUDIT/raw_status_literal] "PASS",
+  action: Replace raw PASS/FAIL checks with structured status helper interpretation.
+  dependency: Completion audits depend on solver, validation, and gate outputs.
+leaf_qt/calculation_audit.py:128 [MEDIUM/COMPLETION_AUDIT/raw_status_literal] "FAIL",
+  action: Replace raw PASS/FAIL checks with structured status helper interpretation.
+  dependency: Completion audits depend on solver, validation, and gate outputs.
+leaf_qt/calculation_audit.py:218 [MEDIUM/COMPLETION_AUDIT/raw_status_literal] "FAIL",
+  action: Replace raw PASS/FAIL checks with structured status helper interpretation.
+  dependency: Completion audits depend on solver, validation, and gate outputs.
+leaf_qt/calculation_audit.py:229 [MEDIUM/COMPLETION_AUDIT/raw_status_literal] "FAIL",
+  action: Replace raw PASS/FAIL checks with structured status helper interpretation.
+  dependency: Completion audits depend on solver, validation, and gate outputs.
+leaf_qt/calculation_audit.py:241 [MEDIUM/COMPLETION_AUDIT/raw_status_literal] "FAIL",
+  action: Replace raw PASS/FAIL checks with structured status helper interpretation.
+  dependency: Completion audits depend on solver, validation, and gate outputs.
+leaf_qt/real_engine_benchmark_completion_audit.py:312 [MEDIUM/COMPLETION_AUDIT/raw_status_literal] "FAIL",
+  action: Replace raw PASS/FAIL checks with structured status helper interpretation.
+  dependency: Completion audits depend on solver, validation, and gate outputs.
+leaf_qt/real_engine_benchmark_completion_audit.py:327 [MEDIUM/COMPLETION_AUDIT/raw_status_literal] "WARN",
+  action: Replace raw PASS/FAIL checks with structured status helper interpretation.
+  dependency: Completion audits depend on solver, validation, and gate outputs.
+
+E — GUI Consumers
+-----------------
+integrate_phase_16k2_regen_viewer_report_renderer.py:184 [MEDIUM/REPORT/raw_status_literal] f"{'PASS' if item.get('passed') else 'FAIL'}"
+  action: Render structured findings/global status payload while retaining legacy display text.
+  dependency: GUI should migrate after backend status payloads are stable.
+leaf_qt/foundation_test_runner_window.py:100 [MEDIUM/GUI/raw_status_literal] status_text = "PASS" if passed else "FAIL"
+  action: Render structured findings/global status payload while retaining legacy display text.
+  dependency: GUI should migrate after backend status payloads are stable.
+leaf_qt/regen_cross_section_viewer.py:514 [MEDIUM/GUI/raw_status_literal] if status in ("1", "TRUE", "PASS", "VALID"):
+  action: Render structured findings/global status payload while retaining legacy display text.
+  dependency: GUI should migrate after backend status payloads are stable.
+leaf_qt/regen_cross_section_viewer.py:517 [MEDIUM/GUI/contains_status] if "PASS" in status and "FAIL" not in status:
+  action: Render structured findings/global status payload while retaining legacy display text.
+  dependency: GUI should migrate after backend status payloads are stable.
+leaf_qt/regen_cross_section_viewer.py:517 [MEDIUM/GUI/raw_status_literal] if "PASS" in status and "FAIL" not in status:
+  action: Render structured findings/global status payload while retaining legacy display text.
+  dependency: GUI should migrate after backend status payloads are stable.
+leaf_qt/regen_cross_section_viewer.py:520 [MEDIUM/GUI/contains_status] if "WARN" in status or "MARGINAL" in status or "PARTIAL" in status or "PLAUSIBLE" in status:
+  action: Render structured findings/global status payload while retaining legacy display text.
+  dependency: GUI should migrate after backend status payloads are stable.
+leaf_qt/regen_cross_section_viewer.py:520 [MEDIUM/GUI/raw_status_literal] if "WARN" in status or "MARGINAL" in status or "PARTIAL" in status or "PLAUSIBLE" in status:
+  action: Render structured findings/global status payload while retaining legacy display text.
+  dependency: GUI should migrate after backend status payloads are stable.
+leaf_qt/regen_cross_section_viewer.py:523 [MEDIUM/GUI/contains_status] if "FAIL" in status or "INVALID" in status or "BLOCKED" in status:
+  action: Render structured findings/global status payload while retaining legacy display text.
+  dependency: GUI should migrate after backend status payloads are stable.
+leaf_qt/regen_cross_section_viewer.py:523 [MEDIUM/GUI/raw_status_literal] if "FAIL" in status or "INVALID" in status or "BLOCKED" in status:
+  action: Render structured findings/global status payload while retaining legacy display text.
+  dependency: GUI should migrate after backend status payloads are stable.
+leaf_qt/regen_cross_section_viewer.py:1892 [MEDIUM/GUI/contains_status] "PASS" in scalability_status
+  action: Render structured findings/global status payload while retaining legacy display text.
+  dependency: GUI should migrate after backend status payloads are stable.
+leaf_qt/regen_cross_section_viewer.py:1892 [MEDIUM/GUI/raw_status_literal] "PASS" in scalability_status
+  action: Render structured findings/global status payload while retaining legacy display text.
+  dependency: GUI should migrate after backend status payloads are stable.
+leaf_qt/regen_cross_section_viewer.py:2010 [MEDIUM/GUI/contains_status] elif "INVALID" in upper or "FAIL" in upper:
+  action: Render structured findings/global status payload while retaining legacy display text.
+  dependency: GUI should migrate after backend status payloads are stable.
+leaf_qt/regen_cross_section_viewer.py:2010 [MEDIUM/GUI/raw_status_literal] elif "INVALID" in upper or "FAIL" in upper:
+  action: Render structured findings/global status payload while retaining legacy display text.
+  dependency: GUI should migrate after backend status payloads are stable.
+leaf_qt/regen_cross_section_viewer.py:9795 [MEDIUM/GUI/contains_status] if "FAIL" in status or "FAIL" in geometry or "FAIL" in thermal or "FAIL" in coolant:
+  action: Render structured findings/global status payload while retaining legacy display text.
+  dependency: GUI should migrate after backend status payloads are stable.
+leaf_qt/regen_cross_section_viewer.py:9795 [MEDIUM/GUI/raw_status_literal] if "FAIL" in status or "FAIL" in geometry or "FAIL" in thermal or "FAIL" in coolant:
+  action: Render structured findings/global status payload while retaining legacy display text.
+  dependency: GUI should migrate after backend status payloads are stable.
+leaf_qt/regen_cross_section_viewer.py:9809 [MEDIUM/GUI/contains_status] elif "PASS" in status:
+  action: Render structured findings/global status payload while retaining legacy display text.
+  dependency: GUI should migrate after backend status payloads are stable.
+leaf_qt/regen_cross_section_viewer.py:9809 [MEDIUM/GUI/raw_status_literal] elif "PASS" in status:
+  action: Render structured findings/global status payload while retaining legacy display text.
+  dependency: GUI should migrate after backend status payloads are stable.
+leaf_qt/regen_cross_section_viewer.py:9902 [MEDIUM/GUI/ast_startswith_status] if status.startswith("BLOCKED") or status.startswith("FAIL"):
+  action: Render structured findings/global status payload while retaining legacy display text.
+  dependency: GUI should migrate after backend status payloads are stable.
+leaf_qt/regen_cross_section_viewer.py:9902 [MEDIUM/GUI/raw_status_literal] if status.startswith("BLOCKED") or status.startswith("FAIL"):
+  action: Render structured findings/global status payload while retaining legacy display text.
+  dependency: GUI should migrate after backend status payloads are stable.
+leaf_qt/regen_cross_section_viewer.py:9902 [MEDIUM/GUI/startswith_status] if status.startswith("BLOCKED") or status.startswith("FAIL"):
+  action: Render structured findings/global status payload while retaining legacy display text.
+  dependency: GUI should migrate after backend status payloads are stable.
+leaf_qt/regen_cross_section_viewer.py:10104 [MEDIUM/GUI/contains_status] blocked = any("FAIL" in status or "BLOCKED" in status for status in blocked_statuses if status)
+  action: Render structured findings/global status payload while retaining legacy display text.
+  dependency: GUI should migrate after backend status payloads are stable.
+leaf_qt/regen_cross_section_viewer.py:10104 [MEDIUM/GUI/raw_status_literal] blocked = any("FAIL" in status or "BLOCKED" in status for status in blocked_statuses if status)
+  action: Render structured findings/global status payload while retaining legacy display text.
+  dependency: GUI should migrate after backend status payloads are stable.
+leaf_qt/regen_cross_section_viewer.py:10213 [MEDIUM/GUI/raw_status_literal] and not recommended_status.upper().startswith(("BLOCKED", "FAIL"))
+  action: Render structured findings/global status payload while retaining legacy display text.
+  dependency: GUI should migrate after backend status payloads are stable.
+leaf_qt/regen_cross_section_viewer.py:10227 [MEDIUM/GUI/raw_status_literal] and not best_status.upper().startswith(("FAIL", "BLOCKED"))
+  action: Render structured findings/global status payload while retaining legacy display text.
+  dependency: GUI should migrate after backend status payloads are stable.
+leaf_qt/regen_cross_section_viewer.py:10266 [MEDIUM/GUI/raw_status_literal] elif regen_status.upper() in ("FAIL", "NOT_RUN", "NONE"):
+  action: Render structured findings/global status payload while retaining legacy display text.
+  dependency: GUI should migrate after backend status payloads are stable.
+leaf_qt/regen_cross_section_viewer.py:10909 [MEDIUM/GUI/ast_startswith_status] if str(status).startswith("PASS"):
+  action: Render structured findings/global status payload while retaining legacy display text.
+  dependency: GUI should migrate after backend status payloads are stable.
+leaf_qt/regen_cross_section_viewer.py:10909 [MEDIUM/GUI/raw_status_literal] if str(status).startswith("PASS"):
+  action: Render structured findings/global status payload while retaining legacy display text.
+  dependency: GUI should migrate after backend status payloads are stable.
+leaf_qt/regen_cross_section_viewer.py:10909 [MEDIUM/GUI/startswith_status] if str(status).startswith("PASS"):
+  action: Render structured findings/global status payload while retaining legacy display text.
+  dependency: GUI should migrate after backend status payloads are stable.
+leaf_qt/regen_cross_section_viewer.py:11143 [MEDIUM/GUI/raw_status_literal] if self.results.get("regen_overall_status") == "FAIL":
+  action: Render structured findings/global status payload while retaining legacy display text.
+  dependency: GUI should migrate after backend status payloads are stable.
+leaf_qt/regen_cross_section_viewer.py:12626 [MEDIUM/GUI/contains_status] if "FAIL" in str(value).upper() or "BLOCKED" in str(value).upper()
+  action: Render structured findings/global status payload while retaining legacy display text.
+  dependency: GUI should migrate after backend status payloads are stable.
+leaf_qt/regen_cross_section_viewer.py:12626 [MEDIUM/GUI/raw_status_literal] if "FAIL" in str(value).upper() or "BLOCKED" in str(value).upper()
+  action: Render structured findings/global status payload while retaining legacy display text.
+  dependency: GUI should migrate after backend status payloads are stable.
+leaf_qt/regen_cross_section_viewer.py:12632 [MEDIUM/GUI/contains_status] if "WARN" in str(value).upper()
+  action: Render structured findings/global status payload while retaining legacy display text.
+  dependency: GUI should migrate after backend status payloads are stable.
+leaf_qt/regen_cross_section_viewer.py:12632 [MEDIUM/GUI/raw_status_literal] if "WARN" in str(value).upper()
+  action: Render structured findings/global status payload while retaining legacy display text.
+  dependency: GUI should migrate after backend status payloads are stable.
+leaf_qt/regen_geometry_output_window.py:253 [MEDIUM/GUI/raw_status_literal] for state in ("FAIL", "WARN", "PASS", "NOT_AVAILABLE"):
+  action: Render structured findings/global status payload while retaining legacy display text.
+  dependency: GUI should migrate after backend status payloads are stable.
+leaf_qt/regen_geometry_output_window.py:340 [MEDIUM/GUI/raw_status_literal] for state in ("FAIL", "WARN"):
+  action: Render structured findings/global status payload while retaining legacy display text.
+  dependency: GUI should migrate after backend status payloads are stable.
+leaf_qt/regen_viewer_auto_geometry_handover_lock_phase_16q10.py:99 [MEDIUM/GUI/raw_status_literal] state = "PASS" if item["passed"] else "FAIL"
+  action: Render structured findings/global status payload while retaining legacy display text.
+  dependency: GUI should migrate after backend status payloads are stable.
+leaf_qt/regen_viewer_final_closure_handover_phase_16q30.py:100 [MEDIUM/GUI/raw_status_literal] state = "PASS" if item["passed"] else "FAIL"
+  action: Render structured findings/global status payload while retaining legacy display text.
+  dependency: GUI should migrate after backend status payloads are stable.
+leaf_qt/regen_viewer_final_completion_declaration_phase_16q7.py:35 [MEDIUM/GUI/raw_status_literal] if results.get("regen_viewer_completion_lock") != "PASS":
+  action: Render structured findings/global status payload while retaining legacy display text.
+  dependency: GUI should migrate after backend status payloads are stable.
+leaf_qt/regen_viewer_final_completion_declaration_phase_16q7.py:112 [MEDIUM/GUI/raw_status_literal] state = "PASS" if item["passed"] else "FAIL"
+  action: Render structured findings/global status payload while retaining legacy display text.
+  dependency: GUI should migrate after backend status payloads are stable.
+leaf_qt/regen_viewer_final_completion_lock_phase_16p23.py:34 [MEDIUM/GUI/raw_status_literal] if results.get("regen_viewer_runtime_signoff") != "PASS":
+  action: Render structured findings/global status payload while retaining legacy display text.
+  dependency: GUI should migrate after backend status payloads are stable.
+leaf_qt/regen_viewer_final_completion_lock_phase_16p23.py:98 [MEDIUM/GUI/raw_status_literal] state = "PASS" if item["passed"] else "FAIL"
+  action: Render structured findings/global status payload while retaining legacy display text.
+  dependency: GUI should migrate after backend status payloads are stable.
+leaf_qt/regen_viewer_final_completion_lock_phase_16p23.py:138 [MEDIUM/GUI/raw_status_literal] results["regen_viewer_completion_lock"] = "PASS"
+  action: Render structured findings/global status payload while retaining legacy display text.
+  dependency: GUI should migrate after backend status payloads are stable.
+leaf_qt/regen_viewer_final_completion_lock_phase_16p23.py:141 [MEDIUM/GUI/raw_status_literal] results["regen_viewer_completion_lock"] = "FAIL"
+  action: Render structured findings/global status payload while retaining legacy display text.
+  dependency: GUI should migrate after backend status payloads are stable.
+leaf_qt/regen_viewer_final_runtime_consistency_gate_phase_16q20.py:125 [MEDIUM/GUI/raw_status_literal] state = "PASS" if item["passed"] else "FAIL"
+  action: Render structured findings/global status payload while retaining legacy display text.
+  dependency: GUI should migrate after backend status payloads are stable.
+leaf_qt/regen_viewer_gui_runtime_acceptance_gate_phase_16q28.py:93 [MEDIUM/GUI/raw_status_literal] state = "PASS" if item["passed"] else "FAIL"
+  action: Render structured findings/global status payload while retaining legacy display text.
+  dependency: GUI should migrate after backend status payloads are stable.
+leaf_qt/regen_viewer_gui_runtime_acceptance_gate_phase_16q28.py:146 [MEDIUM/GUI/raw_status_literal] results["regen_viewer_gui_runtime_acceptance"] = "PASS"
+  action: Render structured findings/global status payload while retaining legacy display text.
+  dependency: GUI should migrate after backend status payloads are stable.
+leaf_qt/regen_viewer_gui_runtime_acceptance_gate_phase_16q28.py:149 [MEDIUM/GUI/raw_status_literal] results["regen_viewer_gui_runtime_acceptance"] = "FAIL"
+  action: Render structured findings/global status payload while retaining legacy display text.
+  dependency: GUI should migrate after backend status payloads are stable.
+leaf_qt/regen_viewer_gui_runtime_checklist_phase_16p22.py:38 [MEDIUM/GUI/raw_status_literal] runtime_signoff_pass = results.get("regen_viewer_runtime_signoff") == "PASS"
+  action: Render structured findings/global status payload while retaining legacy display text.
+  dependency: GUI should migrate after backend status payloads are stable.
+leaf_qt/regen_viewer_gui_runtime_checklist_phase_16p22.py:89 [MEDIUM/GUI/raw_status_literal] state = "PASS" if item["present"] else "FAIL"
+  action: Render structured findings/global status payload while retaining legacy display text.
+  dependency: GUI should migrate after backend status payloads are stable.
+leaf_qt/regen_viewer_integration_report_owner.py:89 [MEDIUM/REPORT/ast_startswith_status] if not check.status.startswith("PASS")
+  action: Render structured findings/global status payload while retaining legacy display text.
+  dependency: GUI should migrate after backend status payloads are stable.
+leaf_qt/regen_viewer_integration_report_owner.py:89 [MEDIUM/REPORT/raw_status_literal] if not check.status.startswith("PASS")
+  action: Render structured findings/global status payload while retaining legacy display text.
+  dependency: GUI should migrate after backend status payloads are stable.
+leaf_qt/regen_viewer_integration_report_owner.py:89 [MEDIUM/REPORT/startswith_status] if not check.status.startswith("PASS")
+  action: Render structured findings/global status payload while retaining legacy display text.
+  dependency: GUI should migrate after backend status payloads are stable.
+leaf_qt/regen_viewer_report_renderer.py:179 [MEDIUM/REPORT/raw_status_literal] f"{'PASS' if item.get('passed') else 'FAIL'}"
+  action: Render structured findings/global status payload while retaining legacy display text.
+  dependency: GUI should migrate after backend status payloads are stable.
+leaf_qt/regen_viewer_station_geometry_dump_phase_16p17.py:150 [MEDIUM/GUI/raw_status_literal] overall = "PASS" if fail_count == 0 else "FAIL"
+  action: Render structured findings/global status payload while retaining legacy display text.
+  dependency: GUI should migrate after backend status payloads are stable.
+
+F — Report Consumers
+--------------------
+leaf_qt/regen_candidate_creation_report_owner.py:229 [MEDIUM/REPORT/raw_status_literal] marker = "PASS" if check["passed"] else "FAIL"
+  action: Generate report sections from structured findings and adapter reports.
+  dependency: Reports should reflect migrated backend/GUI workflow state.
+leaf_qt/regen_candidate_generation_report_owner.py:228 [MEDIUM/REPORT/raw_status_literal] marker = "PASS" if check["passed"] else "FAIL"
+  action: Generate report sections from structured findings and adapter reports.
+  dependency: Reports should reflect migrated backend/GUI workflow state.
+leaf_qt/regen_candidate_mutation_report_owner.py:305 [MEDIUM/REPORT/raw_status_literal] label = "PASS" if check.get("passed") else "FAIL"
+  action: Generate report sections from structured findings and adapter reports.
+  dependency: Reports should reflect migrated backend/GUI workflow state.
+leaf_qt/regen_geometry_report_owner.py:5 [MEDIUM/REPORT/raw_status_literal] return "PASS" if value else "FAIL"
+  action: Generate report sections from structured findings and adapter reports.
+  dependency: Reports should reflect migrated backend/GUI workflow state.
+leaf_qt/regen_geometry_report_owner.py:39 [MEDIUM/REPORT/raw_status_literal] lines.append(f"Solver pass: {'PASS' if solver_pass else 'FAIL'}")
+  action: Generate report sections from structured findings and adapter reports.
+  dependency: Reports should reflect migrated backend/GUI workflow state.
+leaf_qt/regen_optimisation_report_owner.py:185 [MEDIUM/REPORT/raw_status_literal] marker = "PASS" if check["passed"] else "FAIL"
+  action: Generate report sections from structured findings and adapter reports.
+  dependency: Reports should reflect migrated backend/GUI workflow state.
+leaf_qt/regen_runtime_execution_report_owner.py:227 [MEDIUM/REPORT/raw_status_literal] marker = "PASS" if check["passed"] else "FAIL"
+  action: Generate report sections from structured findings and adapter reports.
+  dependency: Reports should reflect migrated backend/GUI workflow state.
+leaf_qt/regen_runtime_optimisation_report_owner.py:219 [MEDIUM/REPORT/raw_status_literal] marker = "PASS" if check["passed"] else "FAIL"
+  action: Generate report sections from structured findings and adapter reports.
+  dependency: Reports should reflect migrated backend/GUI workflow state.
+
+H — Utility / Developer Consumers
+---------------------------------
+leaf_qt/design_history_narrative_builder.py:12 [MEDIUM/UTILITY/raw_status_literal] FAIL_WORDS = {"FAIL", "FAILED", "INVALID", "ERROR", "BLOCKED"}
+  action: Keep compatibility unless the utility drives production completion.
+  dependency: Developer utilities are lower risk and can be migrated after production path.
+leaf_qt/foundation_attachment_pipeline.py:134 [MEDIUM/UTILITY/raw_status_literal] "PASS",
+  action: Keep compatibility unless the utility drives production completion.
+  dependency: Developer utilities are lower risk and can be migrated after production path.
+leaf_qt/foundation_verification_harness.py:1599 [MEDIUM/UTILITY/raw_status_literal] "WARN": [
+  action: Keep compatibility unless the utility drives production completion.
+  dependency: Developer utilities are lower risk and can be migrated after production path.
+leaf_qt/foundation_verification_harness.py:1601 [MEDIUM/UTILITY/raw_status_literal] "validation_state": "WARN",
+  action: Keep compatibility unless the utility drives production completion.
+  dependency: Developer utilities are lower risk and can be migrated after production path.
+leaf_qt/real_engine_benchmark_band_owner.py:194 [MEDIUM/UTILITY/raw_status_literal] "FAIL",
+  action: Keep compatibility unless the utility drives production completion.
+  dependency: Developer utilities are lower risk and can be migrated after production path.
+leaf_qt/recommendation_explanation_owner.py:37 [MEDIUM/UTILITY/raw_status_literal] "FAIL": 4,
+  action: Keep compatibility unless the utility drives production completion.
+  dependency: Developer utilities are lower risk and can be migrated after production path.
+leaf_qt/regen_geometry_output_architecture_owner.py:104 [MEDIUM/UTILITY/raw_status_literal] "PASS": [],
+  action: Keep compatibility unless the utility drives production completion.
+  dependency: Developer utilities are lower risk and can be migrated after production path.
+leaf_qt/regen_geometry_output_architecture_owner.py:105 [MEDIUM/UTILITY/raw_status_literal] "WARN": [],
+  action: Keep compatibility unless the utility drives production completion.
+  dependency: Developer utilities are lower risk and can be migrated after production path.
+leaf_qt/regen_geometry_output_architecture_owner.py:106 [MEDIUM/UTILITY/raw_status_literal] "FAIL": [],
+  action: Keep compatibility unless the utility drives production completion.
+  dependency: Developer utilities are lower risk and can be migrated after production path.
+leaf_qt/regen_geometry_output_architecture_owner.py:120 [MEDIUM/UTILITY/raw_status_literal] "pass_count": len(grouped.get("PASS", [])),
+  action: Keep compatibility unless the utility drives production completion.
+  dependency: Developer utilities are lower risk and can be migrated after production path.
+leaf_qt/regen_geometry_output_architecture_owner.py:121 [MEDIUM/UTILITY/raw_status_literal] "warn_count": len(grouped.get("WARN", [])),
+  action: Keep compatibility unless the utility drives production completion.
+  dependency: Developer utilities are lower risk and can be migrated after production path.
+leaf_qt/regen_geometry_output_architecture_owner.py:122 [MEDIUM/UTILITY/raw_status_literal] "fail_count": len(grouped.get("FAIL", [])),
+  action: Keep compatibility unless the utility drives production completion.
+  dependency: Developer utilities are lower risk and can be migrated after production path.
+project_maintenance/global_status_classification_engine_phase_16t3g.py:19 [MEDIUM/DEVELOPER_TOOL/raw_status_literal] STATUS_PASS = "PASS"
+  action: Keep compatibility unless the utility drives production completion.
+  dependency: Developer utilities are lower risk and can be migrated after production path.
+project_maintenance/global_status_classification_engine_phase_16t3g.py:22 [MEDIUM/DEVELOPER_TOOL/raw_status_literal] STATUS_FAIL = "FAIL"
+  action: Keep compatibility unless the utility drives production completion.
+  dependency: Developer utilities are lower risk and can be migrated after production path.
+project_maintenance/global_status_classification_engine_phase_16t3g.py:36 [MEDIUM/DEVELOPER_TOOL/raw_status_literal] FINDING_FAIL = "FAIL"
+  action: Keep compatibility unless the utility drives production completion.
+  dependency: Developer utilities are lower risk and can be migrated after production path.
+project_maintenance/structured_status_consumer_discovery_phase_16u1.py:34 [MEDIUM/DEVELOPER_TOOL/raw_status_literal] RAW_STATUS_TERMS = ("PASS", "WARN", "FAIL")
+  action: Keep compatibility unless the utility drives production completion.
+  dependency: Developer utilities are lower risk and can be migrated after production path.
+project_maintenance/wave2_final_status_migration_handover_phase_16t3u.py:71 [MEDIUM/DEVELOPER_TOOL/raw_status_literal] return "FAIL"
+  action: Keep compatibility unless the utility drives production completion.
+  dependency: Developer utilities are lower risk and can be migrated after production path.
+project_maintenance/wave2_final_status_migration_handover_phase_16t3u.py:76 [MEDIUM/DEVELOPER_TOOL/raw_status_literal] return "PASS"
+  action: Keep compatibility unless the utility drives production completion.
+  dependency: Developer utilities are lower risk and can be migrated after production path.
+project_maintenance/wave2_final_status_migration_handover_phase_16t3u.py:96 [MEDIUM/DEVELOPER_TOOL/raw_status_literal] "FAIL",
+  action: Keep compatibility unless the utility drives production completion.
+  dependency: Developer utilities are lower risk and can be migrated after production path.
+project_maintenance/wave2_final_status_migration_handover_phase_16t3u.py:115 [MEDIUM/DEVELOPER_TOOL/raw_status_literal] "FAIL",
+  action: Keep compatibility unless the utility drives production completion.
+  dependency: Developer utilities are lower risk and can be migrated after production path.
+integrate_phase_16j6_failure_root_cause_system.py:116 [LOW/UTILITY/startswith_status] if key.endswith("_status") and isinstance(value, str) and value.startswith("FAIL_"):
+  action: Keep compatibility unless the utility drives production completion.
+  dependency: Developer utilities are lower risk and can be migrated after production path.
+integrate_phase_16j7_optimisation_proof_system.py:174 [LOW/UTILITY/raw_status_literal] f"- {item.get('check')}: {'PASS' if item.get('passed') else 'FAIL'} "
+  action: Keep compatibility unless the utility drives production completion.
+  dependency: Developer utilities are lower risk and can be migrated after production path.
+integrate_phase_16l1_regen_acceptance_criteria_owner.py:178 [LOW/UTILITY/raw_status_literal] f"- {item.get('name')}: {'PASS' if item.get('passed') else 'FAIL'}"
+  action: Keep compatibility unless the utility drives production completion.
+  dependency: Developer utilities are lower risk and can be migrated after production path.
+leaf_qt/benchmark_evaluator.py:132 [LOW/UTILITY/raw_status_literal] if comparison["status"] not in ("PASS",)
+  action: Keep compatibility unless the utility drives production completion.
+  dependency: Developer utilities are lower risk and can be migrated after production path.
+leaf_qt/design_history_narrative_builder.py:288 [LOW/UTILITY/raw_status_literal] if status and status not in ("PASS", "PASSED", "OK"):
+  action: Keep compatibility unless the utility drives production completion.
+  dependency: Developer utilities are lower risk and can be migrated after production path.
+leaf_qt/design_iteration_narrative.py:88 [LOW/UTILITY/raw_status_literal] return value in (True, 1, "1", "PASS", "pass", "Pass", "TRUE", "true")
+  action: Keep compatibility unless the utility drives production completion.
+  dependency: Developer utilities are lower risk and can be migrated after production path.
+leaf_qt/design_iteration_narrative.py:92 [LOW/UTILITY/raw_status_literal] return "PASS" if _truthy_pass(value) else "FAIL"
+  action: Keep compatibility unless the utility drives production completion.
+  dependency: Developer utilities are lower risk and can be migrated after production path.
+leaf_qt/design_iteration_narrative.py:135 [LOW/UTILITY/raw_status_literal] if str(recommended_status).upper() == "PASS" or _truthy_pass(recommended_pass):
+  action: Keep compatibility unless the utility drives production completion.
+  dependency: Developer utilities are lower risk and can be migrated after production path.
+leaf_qt/design_iteration_narrative.py:166 [LOW/UTILITY/raw_status_literal] if _truthy_pass(full_pass) or str(full_status).upper() == "PASS":
+  action: Keep compatibility unless the utility drives production completion.
+  dependency: Developer utilities are lower risk and can be migrated after production path.
+leaf_qt/design_iteration_narrative.py:200 [LOW/UTILITY/raw_status_literal] if _truthy_pass(best_pass) or str(best_status).upper() == "PASS":
+  action: Keep compatibility unless the utility drives production completion.
+  dependency: Developer utilities are lower risk and can be migrated after production path.
+leaf_qt/diagnostics_engine.py:373 [LOW/UTILITY/raw_status_literal] if overall == "FAIL":
+  action: Keep compatibility unless the utility drives production completion.
+  dependency: Developer utilities are lower risk and can be migrated after production path.
+leaf_qt/failure_root_cause.py:16 [LOW/UTILITY/raw_status_literal] return value in (True, 1, "1", "PASS", "pass", "Pass", "TRUE", "true")
+  action: Keep compatibility unless the utility drives production completion.
+  dependency: Developer utilities are lower risk and can be migrated after production path.
+leaf_qt/failure_root_cause_owner.py:184 [LOW/UTILITY/raw_status_literal] if severity not in {"CRITICAL", "ERROR", "FAIL", "WARNING"}:
+  action: Keep compatibility unless the utility drives production completion.
+  dependency: Developer utilities are lower risk and can be migrated after production path.
+leaf_qt/failure_root_cause_owner.py:204 [LOW/UTILITY/raw_status_literal] if status in {"PASS", "PASSED", "OK", "SKIPPED"}:
+  action: Keep compatibility unless the utility drives production completion.
+  dependency: Developer utilities are lower risk and can be migrated after production path.
+leaf_qt/failure_root_cause_owner.py:266 [LOW/UTILITY/raw_status_literal] text in {"FAIL", "FAILED", "INVALID", "ERROR", "BLOCKED"}
+  action: Keep compatibility unless the utility drives production completion.
+  dependency: Developer utilities are lower risk and can be migrated after production path.
+leaf_qt/failure_root_cause_owner.py:269 [LOW/UTILITY/contains_status] or "FAIL" in text
+  action: Keep compatibility unless the utility drives production completion.
+  dependency: Developer utilities are lower risk and can be migrated after production path.
+leaf_qt/failure_root_cause_owner.py:269 [LOW/UTILITY/raw_status_literal] or "FAIL" in text
+  action: Keep compatibility unless the utility drives production completion.
+  dependency: Developer utilities are lower risk and can be migrated after production path.
+leaf_qt/foundation_regression_tests.py:219 [LOW/UTILITY/raw_status_literal] result = "PASS" if test.get("passed") else "FAIL"
+  action: Keep compatibility unless the utility drives production completion.
+  dependency: Developer utilities are lower risk and can be migrated after production path.
+leaf_qt/foundation_ui_launch_verification.py:93 [LOW/UTILITY/ast_startswith_status] "foundation_ui_launch_verified": failed_count == 0 and status.startswith("PASS"),
+  action: Keep compatibility unless the utility drives production completion.
+  dependency: Developer utilities are lower risk and can be migrated after production path.
+leaf_qt/foundation_ui_launch_verification.py:93 [LOW/UTILITY/raw_status_literal] "foundation_ui_launch_verified": failed_count == 0 and status.startswith("PASS"),
+  action: Keep compatibility unless the utility drives production completion.
+  dependency: Developer utilities are lower risk and can be migrated after production path.
+leaf_qt/foundation_ui_launch_verification.py:93 [LOW/UTILITY/startswith_status] "foundation_ui_launch_verified": failed_count == 0 and status.startswith("PASS"),
+  action: Keep compatibility unless the utility drives production completion.
+  dependency: Developer utilities are lower risk and can be migrated after production path.
+leaf_qt/foundation_ui_launch_verification.py:117 [LOW/UTILITY/raw_status_literal] marker = "PASS" if test["passed"] else "FAIL"
+  action: Keep compatibility unless the utility drives production completion.
+  dependency: Developer utilities are lower risk and can be migrated after production path.
+leaf_qt/foundation_verification_harness.py:1795 [LOW/UTILITY/raw_status_literal] marker = "PASS" if test["passed"] else "FAIL"
+  action: Keep compatibility unless the utility drives production completion.
+  dependency: Developer utilities are lower risk and can be migrated after production path.
+leaf_qt/optimisation_proof.py:11 [LOW/UTILITY/raw_status_literal] return value in (True, 1, "1", "PASS", "pass", "Pass", "TRUE", "true")
+  action: Keep compatibility unless the utility drives production completion.
+  dependency: Developer utilities are lower risk and can be migrated after production path.
+leaf_qt/optimisation_proof.py:113 [LOW/UTILITY/raw_status_literal] elif str(recommended_status).upper() in ("PASS", "BEST_AVAILABLE_BELOW_TARGET"):
+  action: Keep compatibility unless the utility drives production completion.
+  dependency: Developer utilities are lower risk and can be migrated after production path.
+leaf_qt/optimisation_proof.py:131 [LOW/UTILITY/raw_status_literal] if _truthy_pass(best_pass) or str(best_status).upper() == "PASS":
+  action: Keep compatibility unless the utility drives production completion.
+  dependency: Developer utilities are lower risk and can be migrated after production path.
+leaf_qt/optimisation_proof_owner.py:221 [LOW/UTILITY/raw_status_literal] return text in {"PASS", "PASSED", "OK", "VALID", "RECORDED", "COMPLETE"}
+  action: Keep compatibility unless the utility drives production completion.
+  dependency: Developer utilities are lower risk and can be migrated after production path.
+leaf_qt/optimisation_proof_owner.py:225 [LOW/UTILITY/raw_status_literal] return text in {"FAIL", "FAILED", "INVALID", "ERROR", "BLOCKED"}
+  action: Keep compatibility unless the utility drives production completion.
+  dependency: Developer utilities are lower risk and can be migrated after production path.
+leaf_qt/real_engine_benchmark_band_owner.py:307 [LOW/UTILITY/raw_status_literal] if existing_status in {"PASS", "IN_BAND", "OK"}:
+  action: Keep compatibility unless the utility drives production completion.
+  dependency: Developer utilities are lower risk and can be migrated after production path.
+leaf_qt/real_engine_benchmark_band_owner.py:309 [LOW/UTILITY/raw_status_literal] elif existing_status in {"FAIL", "OUT_OF_BAND"}:
+  action: Keep compatibility unless the utility drives production completion.
+  dependency: Developer utilities are lower risk and can be migrated after production path.
+leaf_qt/real_engine_benchmark_failure_owner.py:207 [LOW/UTILITY/contains_status] if "FAIL" in value or "BLOCKED" in value or "INVALID" in value or "ERROR" in value:
+  action: Keep compatibility unless the utility drives production completion.
+  dependency: Developer utilities are lower risk and can be migrated after production path.
+leaf_qt/real_engine_benchmark_failure_owner.py:207 [LOW/UTILITY/raw_status_literal] if "FAIL" in value or "BLOCKED" in value or "INVALID" in value or "ERROR" in value:
+  action: Keep compatibility unless the utility drives production completion.
+  dependency: Developer utilities are lower risk and can be migrated after production path.
+leaf_qt/real_engine_benchmark_failure_owner.py:213 [LOW/UTILITY/contains_status] if "WARN" in value or "REVIEW" in value or "LIMITED" in value:
+  action: Keep compatibility unless the utility drives production completion.
+  dependency: Developer utilities are lower risk and can be migrated after production path.
+leaf_qt/real_engine_benchmark_failure_owner.py:213 [LOW/UTILITY/raw_status_literal] if "WARN" in value or "REVIEW" in value or "LIMITED" in value:
+  action: Keep compatibility unless the utility drives production completion.
+  dependency: Developer utilities are lower risk and can be migrated after production path.
+leaf_qt/recommendation_explanation_owner.py:315 [LOW/UTILITY/raw_status_literal] if "FAIL" not in status and status not in {"INVALID", "ERROR", "BLOCKED"}:
+  action: Keep compatibility unless the utility drives production completion.
+  dependency: Developer utilities are lower risk and can be migrated after production path.
+leaf_qt/recommendation_explanation_owner.py:346 [LOW/UTILITY/raw_status_literal] if "FAIL" not in status and status not in {"INVALID", "ERROR", "BLOCKED"}:
+  action: Keep compatibility unless the utility drives production completion.
+  dependency: Developer utilities are lower risk and can be migrated after production path.
+leaf_qt/recommendation_explanation_owner.py:369 [LOW/UTILITY/raw_status_literal] if severity in {"CRITICAL", "ERROR", "FAIL"}:
+  action: Keep compatibility unless the utility drives production completion.
+  dependency: Developer utilities are lower risk and can be migrated after production path.
+leaf_qt/recommended_design_controller.py:164 [LOW/UTILITY/raw_status_literal] if status not in ("PASS", "BEST_AVAILABLE_BELOW_TARGET") and valid != 1:
+  action: Keep compatibility unless the utility drives production completion.
+  dependency: Developer utilities are lower risk and can be migrated after production path.
+leaf_qt/regen_acceptance_criteria_owner.py:173 [LOW/UTILITY/raw_status_literal] f"- {item.get('name')}: {'PASS' if item.get('passed') else 'FAIL'}"
+  action: Keep compatibility unless the utility drives production completion.
+  dependency: Developer utilities are lower risk and can be migrated after production path.
+leaf_qt/regen_automatic_geometry_decision_owner.py:258 [LOW/UTILITY/raw_status_literal] return text in ("1", "1.0", "TRUE", "PASS", "VALID", "READY")
+  action: Keep compatibility unless the utility drives production completion.
+  dependency: Developer utilities are lower risk and can be migrated after production path.
+leaf_qt/regen_candidate_blueprint_generation_input_gate.py:225 [LOW/UTILITY/raw_status_literal] marker = "PASS" if check["passed"] else "FAIL"
+  action: Keep compatibility unless the utility drives production completion.
+  dependency: Developer utilities are lower risk and can be migrated after production path.
+leaf_qt/regen_candidate_creation_registration_owner.py:185 [LOW/UTILITY/raw_status_literal] marker = "PASS" if check["passed"] else "FAIL"
+  action: Keep compatibility unless the utility drives production completion.
+  dependency: Developer utilities are lower risk and can be migrated after production path.
+leaf_qt/regen_candidate_creation_session_owner.py:209 [LOW/UTILITY/raw_status_literal] marker = "PASS" if check["passed"] else "FAIL"
+  action: Keep compatibility unless the utility drives production completion.
+  dependency: Developer utilities are lower risk and can be migrated after production path.
+leaf_qt/regen_candidate_generation_input_gate.py:168 [LOW/UTILITY/raw_status_literal] marker = "PASS" if check["passed"] else "FAIL"
+  action: Keep compatibility unless the utility drives production completion.
+  dependency: Developer utilities are lower risk and can be migrated after production path.
+leaf_qt/regen_candidate_generation_registration_owner.py:178 [LOW/UTILITY/raw_status_literal] marker = "PASS" if check["passed"] else "FAIL"
+  action: Keep compatibility unless the utility drives production completion.
+  dependency: Developer utilities are lower risk and can be migrated after production path.
+leaf_qt/regen_candidate_generation_session_owner.py:197 [LOW/UTILITY/raw_status_literal] marker = "PASS" if check["passed"] else "FAIL"
+  action: Keep compatibility unless the utility drives production completion.
+  dependency: Developer utilities are lower risk and can be migrated after production path.
+leaf_qt/regen_failure_root_cause_system.py:111 [LOW/UTILITY/ast_startswith_status] if key.endswith("_status") and isinstance(value, str) and value.startswith("FAIL_"):
+  action: Keep compatibility unless the utility drives production completion.
+  dependency: Developer utilities are lower risk and can be migrated after production path.
+leaf_qt/regen_failure_root_cause_system.py:111 [LOW/UTILITY/startswith_status] if key.endswith("_status") and isinstance(value, str) and value.startswith("FAIL_"):
+  action: Keep compatibility unless the utility drives production completion.
+  dependency: Developer utilities are lower risk and can be migrated after production path.
+leaf_qt/regen_geometry_failure_explanation_owner.py:50 [LOW/UTILITY/raw_status_literal] if state in ("FAIL", "WARN"):
+  action: Keep compatibility unless the utility drives production completion.
+  dependency: Developer utilities are lower risk and can be migrated after production path.
+leaf_qt/regen_geometry_failure_explanation_owner.py:55 [LOW/UTILITY/raw_status_literal] if item["validation_state"] == "FAIL"
+  action: Keep compatibility unless the utility drives production completion.
+  dependency: Developer utilities are lower risk and can be migrated after production path.
+leaf_qt/regen_geometry_failure_explanation_owner.py:60 [LOW/UTILITY/raw_status_literal] if item["validation_state"] == "WARN"
+  action: Keep compatibility unless the utility drives production completion.
+  dependency: Developer utilities are lower risk and can be migrated after production path.
+leaf_qt/regen_geometry_recommendation_engine_owner.py:67 [LOW/UTILITY/raw_status_literal] if state not in ("FAIL", "WARN"):
+  action: Keep compatibility unless the utility drives production completion.
+  dependency: Developer utilities are lower risk and can be migrated after production path.
+leaf_qt/regen_geometry_recommendation_engine_owner.py:686 [LOW/UTILITY/raw_status_literal] if state == "FAIL":
+  action: Keep compatibility unless the utility drives production completion.
+  dependency: Developer utilities are lower risk and can be migrated after production path.
+leaf_qt/regen_geometry_recommendation_engine_owner.py:688 [LOW/UTILITY/raw_status_literal] if state == "WARN":
+  action: Keep compatibility unless the utility drives production completion.
+  dependency: Developer utilities are lower risk and can be migrated after production path.
+leaf_qt/regen_multi_objective_scoring_controller.py:240 [LOW/UTILITY/ast_startswith_status] if material_status.startswith("PASS"):
+  action: Keep compatibility unless the utility drives production completion.
+  dependency: Developer utilities are lower risk and can be migrated after production path.
+leaf_qt/regen_multi_objective_scoring_controller.py:240 [LOW/UTILITY/raw_status_literal] if material_status.startswith("PASS"):
+  action: Keep compatibility unless the utility drives production completion.
+  dependency: Developer utilities are lower risk and can be migrated after production path.
+leaf_qt/regen_multi_objective_scoring_controller.py:240 [LOW/UTILITY/startswith_status] if material_status.startswith("PASS"):
+  action: Keep compatibility unless the utility drives production completion.
+  dependency: Developer utilities are lower risk and can be migrated after production path.
+leaf_qt/regen_multi_objective_scoring_controller.py:242 [LOW/UTILITY/ast_startswith_status] if material_status.startswith("WARN"):
+  action: Keep compatibility unless the utility drives production completion.
+  dependency: Developer utilities are lower risk and can be migrated after production path.
+leaf_qt/regen_multi_objective_scoring_controller.py:242 [LOW/UTILITY/raw_status_literal] if material_status.startswith("WARN"):
+  action: Keep compatibility unless the utility drives production completion.
+  dependency: Developer utilities are lower risk and can be migrated after production path.
+leaf_qt/regen_multi_objective_scoring_controller.py:242 [LOW/UTILITY/startswith_status] if material_status.startswith("WARN"):
+  action: Keep compatibility unless the utility drives production completion.
+  dependency: Developer utilities are lower risk and can be migrated after production path.
+
+DEVELOPMENT ORDER
+-----------------
+16U.4 — Wave A Core Solver Status Consumer Wrappers
+16U.5 — Wave B Validation Owner Consumer Migration
+16U.6 — Wave C Master Gate Consumer Migration
+16U.7 — Wave D Completion Audit Consumer Migration
+16U.8 — Wave E GUI Consumer Migration
+16U.9 — Wave F/G Report and Export Consumer Migration
+16U.10 — Wave H/I Utility and Manual Review Cleanup
+16U.11 — Global Regression
+16U.12 — Consumer Migration Completion Audit
+16U.13 — Consumer Migration Master Gate
+
+COMPLETION NOTICE
+-----------------
+PHASE 16U.3 COMPLETE.
+A dependency-aware migration roadmap now exists.
+The project may now begin Wave A migration safely.

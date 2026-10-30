@@ -1,0 +1,14 @@
+{
+  "phase": "16U.129",
+  "target": "leaf_qt/regen_geometry_constraint_owner.py",
+  "passed": true,
+  "closed_target": "leaf_qt/regen_geometry_constraint_owner.py",
+  "locked_baseline": 68,
+  "closed_before_this_target": 14,
+  "remaining_before_this_target": 54,
+  "expected_closed_after_next_audit": 15,
+  "expected_remaining_after_next_audit": 53,
+  "phase_16u129_regen_geometry_constraint_owner_closure_gate_complete": true,
+  "next_phase": "16U.130 \u2014 Updated Global Remaining Candidate Audit",
+  "failures": []
+}

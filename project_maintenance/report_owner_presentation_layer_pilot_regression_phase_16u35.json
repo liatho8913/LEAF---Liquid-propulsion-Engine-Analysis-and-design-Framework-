@@ -1,0 +1,86 @@
+{
+  "phase": "16U.35",
+  "status": "PASS_PHASE_16U35_REPORT_OWNER_PRESENTATION_LAYER_PILOT_REGRESSION",
+  "generated": "2026-06-28T02:20:56",
+  "target_files": [
+    "leaf_qt/status_presentation.py",
+    "leaf_qt/foundation_test_runner_window.py"
+  ],
+  "missing_api": [],
+  "missing_pilot_tokens": [],
+  "forbidden_matches": [],
+  "compile_results": [
+    {
+      "file": "leaf_qt/status_presentation.py",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "leaf_qt/foundation_test_runner_window.py",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "project_maintenance/test_status_presentation_phase_16u32.py",
+      "passed": true,
+      "error": ""
+    }
+  ],
+  "status_test": {
+    "exists": true,
+    "returncode": 0,
+    "stdout": "PASS_PHASE_16U32_SHARED_STATUS_PRESENTATION_LAYER\n",
+    "stderr": "",
+    "passed": true,
+    "detail": "returncode=0"
+  },
+  "presentation_failures": [],
+  "checks": [
+    {
+      "name": "status_presentation_file_exists",
+      "passed": true,
+      "detail": "leaf_qt/status_presentation.py"
+    },
+    {
+      "name": "pilot_window_file_exists",
+      "passed": true,
+      "detail": "leaf_qt/foundation_test_runner_window.py"
+    },
+    {
+      "name": "compile_passed",
+      "passed": true,
+      "detail": "3/3 compiled"
+    },
+    {
+      "name": "required_status_api_present",
+      "passed": true,
+      "detail": "all required API present"
+    },
+    {
+      "name": "legacy_compatibility_marker_behaviour",
+      "passed": true,
+      "detail": "True->PASS, False->FAIL"
+    },
+    {
+      "name": "pilot_uses_shared_presentation_layer",
+      "passed": true,
+      "detail": "pilot tokens present"
+    },
+    {
+      "name": "legacy_inline_marker_removed_from_pilot",
+      "passed": true,
+      "detail": "0 forbidden pattern(s) present"
+    },
+    {
+      "name": "status_presentation_unit_tests",
+      "passed": true,
+      "detail": "returncode=0"
+    },
+    {
+      "name": "presentation_semantics_regression",
+      "passed": true,
+      "detail": "0 semantic regression(s)"
+    }
+  ],
+  "phase_16u35_report_owner_presentation_layer_pilot_regression_complete": true
+}

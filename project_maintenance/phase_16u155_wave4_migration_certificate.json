@@ -1,0 +1,60 @@
+{
+  "phase": "16U.155",
+  "wave_id": "16U-WAVE4",
+  "wave_name": "Runtime and optimisation presentation migration",
+  "passed": true,
+  "issued_at_utc": "2026-06-28T22:56:16.572930+00:00",
+  "security_statement": "Wave 4 batched implementation only. Verification remained per-file and transactional.",
+  "locked_baseline": 68,
+  "closed_before_wave": 50,
+  "remaining_before_wave": 18,
+  "closed_after_wave": 60,
+  "remaining_after_wave": 8,
+  "net_files_closed": 10,
+  "selected_files": [
+    "regen_optimisation_completion_audit.py",
+    "regen_optimisation_registration_owner.py",
+    "regen_optimisation_session_owner.py",
+    "regen_runtime_execution_completion_audit.py",
+    "regen_runtime_execution_input_gate.py",
+    "regen_runtime_execution_registration_owner.py",
+    "regen_runtime_execution_session_owner.py",
+    "regen_runtime_optimisation_input_gate.py",
+    "regen_runtime_optimisation_registration_owner.py",
+    "regen_runtime_optimisation_session_owner.py"
+  ],
+  "closed_files": [
+    "regen_optimisation_completion_audit.py",
+    "regen_optimisation_registration_owner.py",
+    "regen_optimisation_session_owner.py",
+    "regen_runtime_execution_completion_audit.py",
+    "regen_runtime_execution_input_gate.py",
+    "regen_runtime_execution_registration_owner.py",
+    "regen_runtime_execution_session_owner.py",
+    "regen_runtime_optimisation_input_gate.py",
+    "regen_runtime_optimisation_registration_owner.py",
+    "regen_runtime_optimisation_session_owner.py"
+  ],
+  "checks": {
+    "manifest_passed": true,
+    "patch_passed": true,
+    "regression_passed": true,
+    "closure_passed": true,
+    "locked_audit_passed": true,
+    "files_selected_10": true,
+    "files_patched_10": true,
+    "files_regressed_10": true,
+    "files_closed_10": true,
+    "audit_progress_correct": true
+  },
+  "evidence_hashes": {
+    "project_maintenance/phase_16u150_wave4_manifest_selection.json": "d2befc5f3d2c86714370f5d778f5dd5af9c9b0e5ab72fc02919d1c5f3d998c6a",
+    "project_maintenance/phase_16u151_wave4_transactional_patch.json": "dc0f3a25097684e1a93f047f4a5f735f01bd500814ada749402aad539c11d809",
+    "project_maintenance/phase_16u152_wave4_regression.json": "b18699e6ada19cdfa6e96220fb13330a18ba71937faa74df61dbfc1dd39cfb61",
+    "project_maintenance/phase_16u153_wave4_closure_gate.json": "8a273fdfba599f4dc963ab9988a9fa93c452e04d1e0d576c771be56147edec61",
+    "project_maintenance/phase_16u154_wave4_locked_audit.json": "6dc5a7f92de09dfc259e9c293a09a388d54ed9327957a9f20823906cfc5b605b"
+  },
+  "failures": [],
+  "phase_16u155_wave4_migration_certificate_complete": true,
+  "next_phase": "16U.156 \u2014 Final Wave Manifest Selection"
+}

@@ -1,0 +1,339 @@
+{
+  "phase": "16U.144",
+  "passed": true,
+  "wave_id": "16U-WAVE3",
+  "wave_name": "Candidate mutation, population, ranking, and evolution presentation migration",
+  "selected_count": 11,
+  "selected_files": [
+    "regen_candidate_mutation_completion_audit.py",
+    "regen_candidate_mutation_input_audit.py",
+    "regen_candidate_mutation_master_gate.py",
+    "regen_candidate_population_completion_audit.py",
+    "regen_candidate_population_master_gate.py",
+    "regen_candidate_ranking_completion_audit.py",
+    "regen_candidate_ranking_input_audit.py",
+    "regen_candidate_ranking_master_gate.py",
+    "regen_evolution_loop_completion_audit.py",
+    "regen_evolution_loop_input_audit.py",
+    "regen_evolution_loop_master_gate.py"
+  ],
+  "locked_baseline": 68,
+  "closed_targets_before_wave": 39,
+  "remaining_candidates_before_wave": 29,
+  "expected_closed_after_wave_audit": 50,
+  "expected_remaining_after_wave_audit": 18,
+  "acceptance_contract": {
+    "backup_required_for_each_file": true,
+    "pre_hash_required_for_each_file": true,
+    "post_hash_required_for_each_file": true,
+    "compile_required_for_each_file": true,
+    "shared_layer_required_for_each_file": true,
+    "legacy_inline_status_logic_removed_for_each_file": true,
+    "rollback_available_for_each_file": true,
+    "wave_rejected_if_any_file_fails": true,
+    "locked_baseline_audit_required_after_wave": true,
+    "migration_certificate_required": true
+  },
+  "manifest": [
+    {
+      "file": "regen_candidate_mutation_completion_audit.py",
+      "path": "leaf_qt/regen_candidate_mutation_completion_audit.py",
+      "exists": true,
+      "sha256_before": "187c1ef5929b434e06084ec646b5534ebaa7e19917042cb7b05cb42beda36624",
+      "compile_before": true,
+      "compile_error": null,
+      "has_LegacyCompatibilityProducer": false,
+      "has_status_severity": false,
+      "legacy_hit_count": 1,
+      "legacy_hits": [
+        {
+          "line": 336,
+          "pattern": "\"PASS\"\\s+if\\s+.+?\\s+else\\s+\"FAIL\"",
+          "content": "label = \"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ],
+      "wave": "16U-WAVE3",
+      "reason": "candidate mutation/population/ranking/evolution family with common status presentation migration pattern",
+      "expected_edits": [
+        "ensure LegacyCompatibilityProducer import/fallback",
+        "ensure status_severity availability",
+        "replace inline PASS/WARN/FAIL marker/label ternaries",
+        "no solver behaviour changes",
+        "no public API changes"
+      ]
+    },
+    {
+      "file": "regen_candidate_mutation_input_audit.py",
+      "path": "leaf_qt/regen_candidate_mutation_input_audit.py",
+      "exists": true,
+      "sha256_before": "2ac5c0ea31a0a17dc2d8b496b285114fba4a9962c55ae0edf5ed3ee710741d53",
+      "compile_before": true,
+      "compile_error": null,
+      "has_LegacyCompatibilityProducer": false,
+      "has_status_severity": false,
+      "legacy_hit_count": 1,
+      "legacy_hits": [
+        {
+          "line": 428,
+          "pattern": "\"PASS\"\\s+if\\s+.+?\\s+else\\s+\"FAIL\"",
+          "content": "label = \"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ],
+      "wave": "16U-WAVE3",
+      "reason": "candidate mutation/population/ranking/evolution family with common status presentation migration pattern",
+      "expected_edits": [
+        "ensure LegacyCompatibilityProducer import/fallback",
+        "ensure status_severity availability",
+        "replace inline PASS/WARN/FAIL marker/label ternaries",
+        "no solver behaviour changes",
+        "no public API changes"
+      ]
+    },
+    {
+      "file": "regen_candidate_mutation_master_gate.py",
+      "path": "leaf_qt/regen_candidate_mutation_master_gate.py",
+      "exists": true,
+      "sha256_before": "b0d15c444413a9f1685a8f14b23a167aa5f9192ff252abfb814056eb247de0f1",
+      "compile_before": true,
+      "compile_error": null,
+      "has_LegacyCompatibilityProducer": false,
+      "has_status_severity": false,
+      "legacy_hit_count": 1,
+      "legacy_hits": [
+        {
+          "line": 331,
+          "pattern": "\"PASS\"\\s+if\\s+.+?\\s+else\\s+\"FAIL\"",
+          "content": "label = \"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ],
+      "wave": "16U-WAVE3",
+      "reason": "candidate mutation/population/ranking/evolution family with common status presentation migration pattern",
+      "expected_edits": [
+        "ensure LegacyCompatibilityProducer import/fallback",
+        "ensure status_severity availability",
+        "replace inline PASS/WARN/FAIL marker/label ternaries",
+        "no solver behaviour changes",
+        "no public API changes"
+      ]
+    },
+    {
+      "file": "regen_candidate_population_completion_audit.py",
+      "path": "leaf_qt/regen_candidate_population_completion_audit.py",
+      "exists": true,
+      "sha256_before": "138d673ad18d2f6331f0089c3eeac94fab90d7791cefebce6324dcf0c9ad1eec",
+      "compile_before": true,
+      "compile_error": null,
+      "has_LegacyCompatibilityProducer": false,
+      "has_status_severity": false,
+      "legacy_hit_count": 1,
+      "legacy_hits": [
+        {
+          "line": 505,
+          "pattern": "\"PASS\"\\s+if\\s+.+?\\s+else\\s+\"FAIL\"",
+          "content": "label = \"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ],
+      "wave": "16U-WAVE3",
+      "reason": "candidate mutation/population/ranking/evolution family with common status presentation migration pattern",
+      "expected_edits": [
+        "ensure LegacyCompatibilityProducer import/fallback",
+        "ensure status_severity availability",
+        "replace inline PASS/WARN/FAIL marker/label ternaries",
+        "no solver behaviour changes",
+        "no public API changes"
+      ]
+    },
+    {
+      "file": "regen_candidate_population_master_gate.py",
+      "path": "leaf_qt/regen_candidate_population_master_gate.py",
+      "exists": true,
+      "sha256_before": "854a875975a72dbb3ed8616d012fd5644de87e6ed030d9dc6db942fc5fbbd1e2",
+      "compile_before": true,
+      "compile_error": null,
+      "has_LegacyCompatibilityProducer": false,
+      "has_status_severity": false,
+      "legacy_hit_count": 1,
+      "legacy_hits": [
+        {
+          "line": 300,
+          "pattern": "\"PASS\"\\s+if\\s+.+?\\s+else\\s+\"FAIL\"",
+          "content": "label = \"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ],
+      "wave": "16U-WAVE3",
+      "reason": "candidate mutation/population/ranking/evolution family with common status presentation migration pattern",
+      "expected_edits": [
+        "ensure LegacyCompatibilityProducer import/fallback",
+        "ensure status_severity availability",
+        "replace inline PASS/WARN/FAIL marker/label ternaries",
+        "no solver behaviour changes",
+        "no public API changes"
+      ]
+    },
+    {
+      "file": "regen_candidate_ranking_completion_audit.py",
+      "path": "leaf_qt/regen_candidate_ranking_completion_audit.py",
+      "exists": true,
+      "sha256_before": "1aa4ce5ef48e8686bb06d16fb1b0753ad93c442dd1e2de4799868c94bd95464f",
+      "compile_before": true,
+      "compile_error": null,
+      "has_LegacyCompatibilityProducer": false,
+      "has_status_severity": false,
+      "legacy_hit_count": 1,
+      "legacy_hits": [
+        {
+          "line": 337,
+          "pattern": "\"PASS\"\\s+if\\s+.+?\\s+else\\s+\"FAIL\"",
+          "content": "label = \"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ],
+      "wave": "16U-WAVE3",
+      "reason": "candidate mutation/population/ranking/evolution family with common status presentation migration pattern",
+      "expected_edits": [
+        "ensure LegacyCompatibilityProducer import/fallback",
+        "ensure status_severity availability",
+        "replace inline PASS/WARN/FAIL marker/label ternaries",
+        "no solver behaviour changes",
+        "no public API changes"
+      ]
+    },
+    {
+      "file": "regen_candidate_ranking_input_audit.py",
+      "path": "leaf_qt/regen_candidate_ranking_input_audit.py",
+      "exists": true,
+      "sha256_before": "807da05c1aeba4553b0da04286931b59b41fa03ec3414e4af37ee02b4e73b63c",
+      "compile_before": true,
+      "compile_error": null,
+      "has_LegacyCompatibilityProducer": false,
+      "has_status_severity": false,
+      "legacy_hit_count": 1,
+      "legacy_hits": [
+        {
+          "line": 407,
+          "pattern": "\"PASS\"\\s+if\\s+.+?\\s+else\\s+\"FAIL\"",
+          "content": "label = \"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ],
+      "wave": "16U-WAVE3",
+      "reason": "candidate mutation/population/ranking/evolution family with common status presentation migration pattern",
+      "expected_edits": [
+        "ensure LegacyCompatibilityProducer import/fallback",
+        "ensure status_severity availability",
+        "replace inline PASS/WARN/FAIL marker/label ternaries",
+        "no solver behaviour changes",
+        "no public API changes"
+      ]
+    },
+    {
+      "file": "regen_candidate_ranking_master_gate.py",
+      "path": "leaf_qt/regen_candidate_ranking_master_gate.py",
+      "exists": true,
+      "sha256_before": "b7edeec094ac420faf8720c2f51aedddfe19747ae49c6dbe40d459cced6e7231",
+      "compile_before": true,
+      "compile_error": null,
+      "has_LegacyCompatibilityProducer": false,
+      "has_status_severity": false,
+      "legacy_hit_count": 1,
+      "legacy_hits": [
+        {
+          "line": 604,
+          "pattern": "\"PASS\"\\s+if\\s+.+?\\s+else\\s+\"FAIL\"",
+          "content": "label = \"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ],
+      "wave": "16U-WAVE3",
+      "reason": "candidate mutation/population/ranking/evolution family with common status presentation migration pattern",
+      "expected_edits": [
+        "ensure LegacyCompatibilityProducer import/fallback",
+        "ensure status_severity availability",
+        "replace inline PASS/WARN/FAIL marker/label ternaries",
+        "no solver behaviour changes",
+        "no public API changes"
+      ]
+    },
+    {
+      "file": "regen_evolution_loop_completion_audit.py",
+      "path": "leaf_qt/regen_evolution_loop_completion_audit.py",
+      "exists": true,
+      "sha256_before": "82a61e7c099fb9f2f2c5808e2d3c447ecdc9a9cb7b1a87d1e7a62b29f4896ac6",
+      "compile_before": true,
+      "compile_error": null,
+      "has_LegacyCompatibilityProducer": false,
+      "has_status_severity": false,
+      "legacy_hit_count": 1,
+      "legacy_hits": [
+        {
+          "line": 332,
+          "pattern": "\"PASS\"\\s+if\\s+.+?\\s+else\\s+\"FAIL\"",
+          "content": "label = \"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ],
+      "wave": "16U-WAVE3",
+      "reason": "candidate mutation/population/ranking/evolution family with common status presentation migration pattern",
+      "expected_edits": [
+        "ensure LegacyCompatibilityProducer import/fallback",
+        "ensure status_severity availability",
+        "replace inline PASS/WARN/FAIL marker/label ternaries",
+        "no solver behaviour changes",
+        "no public API changes"
+      ]
+    },
+    {
+      "file": "regen_evolution_loop_input_audit.py",
+      "path": "leaf_qt/regen_evolution_loop_input_audit.py",
+      "exists": true,
+      "sha256_before": "9767d5b3fabcb092b0740c6251b566cd842aadd7a3aaaadf5167a97b72e887fa",
+      "compile_before": true,
+      "compile_error": null,
+      "has_LegacyCompatibilityProducer": false,
+      "has_status_severity": false,
+      "legacy_hit_count": 1,
+      "legacy_hits": [
+        {
+          "line": 374,
+          "pattern": "\"PASS\"\\s+if\\s+.+?\\s+else\\s+\"FAIL\"",
+          "content": "label = \"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ],
+      "wave": "16U-WAVE3",
+      "reason": "candidate mutation/population/ranking/evolution family with common status presentation migration pattern",
+      "expected_edits": [
+        "ensure LegacyCompatibilityProducer import/fallback",
+        "ensure status_severity availability",
+        "replace inline PASS/WARN/FAIL marker/label ternaries",
+        "no solver behaviour changes",
+        "no public API changes"
+      ]
+    },
+    {
+      "file": "regen_evolution_loop_master_gate.py",
+      "path": "leaf_qt/regen_evolution_loop_master_gate.py",
+      "exists": true,
+      "sha256_before": "485af0f52785a6126e491924b10305c8c199539679ed1a4889d4cb178cf7ddbf",
+      "compile_before": true,
+      "compile_error": null,
+      "has_LegacyCompatibilityProducer": false,
+      "has_status_severity": false,
+      "legacy_hit_count": 1,
+      "legacy_hits": [
+        {
+          "line": 328,
+          "pattern": "\"PASS\"\\s+if\\s+.+?\\s+else\\s+\"FAIL\"",
+          "content": "label = \"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ],
+      "wave": "16U-WAVE3",
+      "reason": "candidate mutation/population/ranking/evolution family with common status presentation migration pattern",
+      "expected_edits": [
+        "ensure LegacyCompatibilityProducer import/fallback",
+        "ensure status_severity availability",
+        "replace inline PASS/WARN/FAIL marker/label ternaries",
+        "no solver behaviour changes",
+        "no public API changes"
+      ]
+    }
+  ],
+  "phase_16u144_wave3_manifest_selection_complete": true,
+  "next_phase": "16U.145 \u2014 Wave 3 Transactional Patch",
+  "failures": []
+}

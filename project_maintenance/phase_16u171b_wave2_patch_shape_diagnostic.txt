@@ -1,0 +1,299 @@
+LEAF PHASE 16U.171B
+WAVE 2 PATCH SHAPE DIAGNOSTIC
+========================================
+status=PASS_PHASE_16U171B_WAVE2_PATCH_SHAPE_DIAGNOSTIC
+diagnostic_count=71
+
+SHAPE COUNTS
+------------
+COMPARE_SHAPE_NOT_YET_SUPPORTED=71
+
+DIAGNOSTICS
+-----------
+
+leaf_qt/engine_solver.py:5323 [COMPARE_SHAPE_NOT_YET_SUPPORTED]
+statement_lines=5323-5323
+>>  5323:     elif status == "FAIL_BUT_IMPROVED":
+
+leaf_qt/engine_solver.py:5323 [COMPARE_SHAPE_NOT_YET_SUPPORTED]
+statement_lines=5323-5323
+>>  5323:     elif status == "FAIL_BUT_IMPROVED":
+
+leaf_qt/engine_solver.py:7746 [COMPARE_SHAPE_NOT_YET_SUPPORTED]
+statement_lines=7746-7746
+>>  7746:         if results.get("explicit_coating_liner_status") == "FAIL_THERMAL_STRESS":
+
+leaf_qt/engine_solver.py:7746 [COMPARE_SHAPE_NOT_YET_SUPPORTED]
+statement_lines=7746-7746
+>>  7746:         if results.get("explicit_coating_liner_status") == "FAIL_THERMAL_STRESS":
+
+leaf_qt/engine_solver.py:7767 [COMPARE_SHAPE_NOT_YET_SUPPORTED]
+statement_lines=7767-7767
+>>  7767:         if results.get("explicit_coating_liner_status") == "FAIL_THERMAL_STRESS":
+
+leaf_qt/engine_solver.py:7767 [COMPARE_SHAPE_NOT_YET_SUPPORTED]
+statement_lines=7767-7767
+>>  7767:         if results.get("explicit_coating_liner_status") == "FAIL_THERMAL_STRESS":
+
+leaf_qt/regen_convergence_master_gate.py:44 [COMPARE_SHAPE_NOT_YET_SUPPORTED]
+statement_lines=44-44
+>>    44:     if status == "PASS_REGEN_CONVERGENCE_MASTER_GATE_CONVERGED":
+
+leaf_qt/regen_convergence_master_gate.py:44 [COMPARE_SHAPE_NOT_YET_SUPPORTED]
+statement_lines=44-44
+>>    44:     if status == "PASS_REGEN_CONVERGENCE_MASTER_GATE_CONVERGED":
+
+leaf_qt/regen_convergence_master_gate.py:54 [COMPARE_SHAPE_NOT_YET_SUPPORTED]
+statement_lines=54-54
+>>    54:     elif status == "WARN_REGEN_CONVERGENCE_MASTER_GATE_RUNNING":
+
+leaf_qt/regen_convergence_master_gate.py:54 [COMPARE_SHAPE_NOT_YET_SUPPORTED]
+statement_lines=54-54
+>>    54:     elif status == "WARN_REGEN_CONVERGENCE_MASTER_GATE_RUNNING":
+
+leaf_qt/regen_convergence_master_gate.py:66 [COMPARE_SHAPE_NOT_YET_SUPPORTED]
+statement_lines=66-66
+>>    66:     elif status == "WARN_REGEN_CONVERGENCE_MASTER_GATE_MAX_GENERATIONS":
+
+leaf_qt/regen_convergence_master_gate.py:66 [COMPARE_SHAPE_NOT_YET_SUPPORTED]
+statement_lines=66-66
+>>    66:     elif status == "WARN_REGEN_CONVERGENCE_MASTER_GATE_MAX_GENERATIONS":
+
+leaf_qt/regen_optimisation_controller_master_gate.py:44 [COMPARE_SHAPE_NOT_YET_SUPPORTED]
+statement_lines=44-44
+>>    44:     if status == "PASS_REGEN_OPTIMISATION_MASTER_GATE_CONVERGED":
+
+leaf_qt/regen_optimisation_controller_master_gate.py:44 [COMPARE_SHAPE_NOT_YET_SUPPORTED]
+statement_lines=44-44
+>>    44:     if status == "PASS_REGEN_OPTIMISATION_MASTER_GATE_CONVERGED":
+
+leaf_qt/regen_optimisation_controller_master_gate.py:54 [COMPARE_SHAPE_NOT_YET_SUPPORTED]
+statement_lines=54-54
+>>    54:     elif status == "WARN_REGEN_OPTIMISATION_MASTER_GATE_NEXT_GENERATION_READY":
+
+leaf_qt/regen_optimisation_controller_master_gate.py:54 [COMPARE_SHAPE_NOT_YET_SUPPORTED]
+statement_lines=54-54
+>>    54:     elif status == "WARN_REGEN_OPTIMISATION_MASTER_GATE_NEXT_GENERATION_READY":
+
+leaf_qt/regen_optimisation_controller_master_gate.py:66 [COMPARE_SHAPE_NOT_YET_SUPPORTED]
+statement_lines=66-66
+>>    66:     elif status == "WARN_REGEN_OPTIMISATION_MASTER_GATE_WAITING":
+
+leaf_qt/regen_optimisation_controller_master_gate.py:66 [COMPARE_SHAPE_NOT_YET_SUPPORTED]
+statement_lines=66-66
+>>    66:     elif status == "WARN_REGEN_OPTIMISATION_MASTER_GATE_WAITING":
+
+leaf_qt/regen_viewer_gui_runtime_acceptance_gate_phase_16q28.py:81 [COMPARE_SHAPE_NOT_YET_SUPPORTED]
+statement_lines=81-81
+>>    81:     if results.get("phase_16q24_real_button_toggle_status") != "PASS_REGEN_VIEWER_REAL_BUTTON_TOGGLE_OWNER_PHASE_16Q24":
+
+leaf_qt/regen_viewer_gui_runtime_acceptance_gate_phase_16q28.py:81 [COMPARE_SHAPE_NOT_YET_SUPPORTED]
+statement_lines=81-81
+>>    81:     if results.get("phase_16q24_real_button_toggle_status") != "PASS_REGEN_VIEWER_REAL_BUTTON_TOGGLE_OWNER_PHASE_16Q24":
+
+leaf_qt/regen_viewer_gui_runtime_acceptance_gate_phase_16q28.py:84 [COMPARE_SHAPE_NOT_YET_SUPPORTED]
+statement_lines=84-84
+>>    84:     if results.get("phase_16q27_toggle_ux_status") != "PASS_REGEN_VIEWER_TOGGLE_UX_CLEANUP_PHASE_16Q27":
+
+leaf_qt/regen_viewer_gui_runtime_acceptance_gate_phase_16q28.py:84 [COMPARE_SHAPE_NOT_YET_SUPPORTED]
+statement_lines=84-84
+>>    84:     if results.get("phase_16q27_toggle_ux_status") != "PASS_REGEN_VIEWER_TOGGLE_UX_CLEANUP_PHASE_16Q27":
+
+leaf_qt/foundation_verification_harness.py:123 [COMPARE_SHAPE_NOT_YET_SUPPORTED]
+statement_lines=123-123
+>>   123:     if status == "PASS_FOUNDATION_VERIFICATION" and failed_count == 0:
+
+leaf_qt/foundation_verification_harness.py:123 [COMPARE_SHAPE_NOT_YET_SUPPORTED]
+statement_lines=123-123
+>>   123:     if status == "PASS_FOUNDATION_VERIFICATION" and failed_count == 0:
+
+leaf_qt/regen_candidate_comparison_master_gate.py:17 [COMPARE_SHAPE_NOT_YET_SUPPORTED]
+statement_lines=17-17
+>>    17:     if results.get("regen_candidate_comparison_completion_audit_status") != "PASS_REGEN_CANDIDATE_COMPARISON_VIEWER_BACKEND_PHASE_15B":
+
+leaf_qt/regen_candidate_comparison_master_gate.py:17 [COMPARE_SHAPE_NOT_YET_SUPPORTED]
+statement_lines=17-17
+>>    17:     if results.get("regen_candidate_comparison_completion_audit_status") != "PASS_REGEN_CANDIDATE_COMPARISON_VIEWER_BACKEND_PHASE_15B":
+
+leaf_qt/regen_completion_master_gate.py:17 [COMPARE_SHAPE_NOT_YET_SUPPORTED]
+statement_lines=17-17
+>>    17:     if results.get("regen_completion_gate_completion_audit_status") != "PASS_REGEN_COMPLETION_GATE_AUDIT_PHASE_16F":
+
+leaf_qt/regen_completion_master_gate.py:17 [COMPARE_SHAPE_NOT_YET_SUPPORTED]
+statement_lines=17-17
+>>    17:     if results.get("regen_completion_gate_completion_audit_status") != "PASS_REGEN_COMPLETION_GATE_AUDIT_PHASE_16F":
+
+leaf_qt/regen_evolution_tree_master_gate.py:17 [COMPARE_SHAPE_NOT_YET_SUPPORTED]
+statement_lines=17-17
+>>    17:     if results.get("regen_evolution_tree_completion_audit_status") != "PASS_REGEN_EVOLUTION_TREE_BACKEND_PHASE_15C":
+
+leaf_qt/regen_evolution_tree_master_gate.py:17 [COMPARE_SHAPE_NOT_YET_SUPPORTED]
+statement_lines=17-17
+>>    17:     if results.get("regen_evolution_tree_completion_audit_status") != "PASS_REGEN_EVOLUTION_TREE_BACKEND_PHASE_15C":
+
+leaf_qt/regen_optimisation_narrative_master_gate.py:58 [COMPARE_SHAPE_NOT_YET_SUPPORTED]
+statement_lines=58-58
+>>    58:     if status == "PASS_REGEN_OPTIMISATION_NARRATIVE_MASTER_GATE":
+
+leaf_qt/regen_optimisation_narrative_master_gate.py:58 [COMPARE_SHAPE_NOT_YET_SUPPORTED]
+statement_lines=58-58
+>>    58:     if status == "PASS_REGEN_OPTIMISATION_NARRATIVE_MASTER_GATE":
+
+leaf_qt/regen_optimisation_viewer_master_gate.py:17 [COMPARE_SHAPE_NOT_YET_SUPPORTED]
+statement_lines=17-17
+>>    17:     if results.get("regen_optimisation_viewer_completion_audit_status") != "PASS_REGEN_OPTIMISATION_VIEWER_BACKEND_PHASE_15A":
+
+leaf_qt/regen_optimisation_viewer_master_gate.py:17 [COMPARE_SHAPE_NOT_YET_SUPPORTED]
+statement_lines=17-17
+>>    17:     if results.get("regen_optimisation_viewer_completion_audit_status") != "PASS_REGEN_OPTIMISATION_VIEWER_BACKEND_PHASE_15A":
+
+leaf_qt/regen_runtime_candidate_evaluation_master_gate.py:17 [COMPARE_SHAPE_NOT_YET_SUPPORTED]
+statement_lines=17-17
+>>    17:     if results.get("regen_runtime_candidate_evaluation_completion_audit_status") != "PASS_REGEN_RUNTIME_CANDIDATE_EVALUATION_PHASE_14B":
+
+leaf_qt/regen_runtime_candidate_evaluation_master_gate.py:17 [COMPARE_SHAPE_NOT_YET_SUPPORTED]
+statement_lines=17-17
+>>    17:     if results.get("regen_runtime_candidate_evaluation_completion_audit_status") != "PASS_REGEN_RUNTIME_CANDIDATE_EVALUATION_PHASE_14B":
+
+leaf_qt/regen_runtime_convergence_master_gate.py:17 [COMPARE_SHAPE_NOT_YET_SUPPORTED]
+statement_lines=17-17
+>>    17:     if results.get("regen_runtime_convergence_completion_audit_status") != "PASS_REGEN_RUNTIME_CONVERGENCE_PHASE_14E":
+
+leaf_qt/regen_runtime_convergence_master_gate.py:17 [COMPARE_SHAPE_NOT_YET_SUPPORTED]
+statement_lines=17-17
+>>    17:     if results.get("regen_runtime_convergence_completion_audit_status") != "PASS_REGEN_RUNTIME_CONVERGENCE_PHASE_14E":
+
+leaf_qt/regen_runtime_evolution_master_gate.py:17 [COMPARE_SHAPE_NOT_YET_SUPPORTED]
+statement_lines=17-17
+>>    17:     if results.get("regen_runtime_evolution_completion_audit_status") != "PASS_REGEN_RUNTIME_EVOLUTION_PHASE_14D":
+
+leaf_qt/regen_runtime_evolution_master_gate.py:17 [COMPARE_SHAPE_NOT_YET_SUPPORTED]
+statement_lines=17-17
+>>    17:     if results.get("regen_runtime_evolution_completion_audit_status") != "PASS_REGEN_RUNTIME_EVOLUTION_PHASE_14D":
+
+leaf_qt/regen_runtime_selection_master_gate.py:17 [COMPARE_SHAPE_NOT_YET_SUPPORTED]
+statement_lines=17-17
+>>    17:     if results.get("regen_runtime_selection_completion_audit_status") != "PASS_REGEN_RUNTIME_SELECTION_PHASE_14C":
+
+leaf_qt/regen_runtime_selection_master_gate.py:17 [COMPARE_SHAPE_NOT_YET_SUPPORTED]
+statement_lines=17-17
+>>    17:     if results.get("regen_runtime_selection_completion_audit_status") != "PASS_REGEN_RUNTIME_SELECTION_PHASE_14C":
+
+leaf_qt/regen_system_signoff_master_gate.py:17 [COMPARE_SHAPE_NOT_YET_SUPPORTED]
+statement_lines=17-17
+>>    17:     if results.get("regen_system_signoff_completion_audit_status") != "PASS_REGEN_SYSTEM_SIGNOFF_AUDIT_PHASE_16E":
+
+leaf_qt/regen_system_signoff_master_gate.py:17 [COMPARE_SHAPE_NOT_YET_SUPPORTED]
+statement_lines=17-17
+>>    17:     if results.get("regen_system_signoff_completion_audit_status") != "PASS_REGEN_SYSTEM_SIGNOFF_AUDIT_PHASE_16E":
+
+leaf_qt/regen_unified_ecosystem_master_gate.py:17 [COMPARE_SHAPE_NOT_YET_SUPPORTED]
+statement_lines=17-17
+>>    17:     if results.get("regen_unified_ecosystem_completion_audit_status") != "PASS_REGEN_UNIFIED_ECOSYSTEM_REGISTRY_PHASE_16A":
+
+leaf_qt/regen_unified_ecosystem_master_gate.py:17 [COMPARE_SHAPE_NOT_YET_SUPPORTED]
+statement_lines=17-17
+>>    17:     if results.get("regen_unified_ecosystem_completion_audit_status") != "PASS_REGEN_UNIFIED_ECOSYSTEM_REGISTRY_PHASE_16A":
+
+leaf_qt/regen_unified_validation_integration_master_gate.py:143 [COMPARE_SHAPE_NOT_YET_SUPPORTED]
+statement_lines=143-143
+>>   143:     if results.get("regen_unified_validation_integration_completion_audit_status") != "PASS_REGEN_UNIFIED_VALIDATION_INTEGRATION_PHASE_16D":
+
+leaf_qt/regen_unified_validation_integration_master_gate.py:143 [COMPARE_SHAPE_NOT_YET_SUPPORTED]
+statement_lines=143-143
+>>   143:     if results.get("regen_unified_validation_integration_completion_audit_status") != "PASS_REGEN_UNIFIED_VALIDATION_INTEGRATION_PHASE_16D":
+
+leaf_qt/regen_unified_viewer_integration_master_gate.py:17 [COMPARE_SHAPE_NOT_YET_SUPPORTED]
+statement_lines=17-17
+>>    17:     if results.get("regen_unified_viewer_integration_completion_audit_status") != "PASS_REGEN_UNIFIED_VIEWER_INTEGRATION_PHASE_16B":
+
+leaf_qt/regen_unified_viewer_integration_master_gate.py:17 [COMPARE_SHAPE_NOT_YET_SUPPORTED]
+statement_lines=17-17
+>>    17:     if results.get("regen_unified_viewer_integration_completion_audit_status") != "PASS_REGEN_UNIFIED_VIEWER_INTEGRATION_PHASE_16B":
+
+leaf_qt/regen_validation_master_gate.py:69 [COMPARE_SHAPE_NOT_YET_SUPPORTED]
+statement_lines=69-69
+>>    69:     if status == "PASS_REGEN_VALIDATION_MASTER_GATE":
+
+leaf_qt/regen_validation_master_gate.py:69 [COMPARE_SHAPE_NOT_YET_SUPPORTED]
+statement_lines=69-69
+>>    69:     if status == "PASS_REGEN_VALIDATION_MASTER_GATE":
+
+leaf_qt/regen_acceptance_master_gate.py:64 [COMPARE_SHAPE_NOT_YET_SUPPORTED]
+statement_lines=64-64
+>>    64:     if status == PASS_STATUS:
+
+leaf_qt/regen_before_after_solver_comparison_report_owner.py:63 [COMPARE_SHAPE_NOT_YET_SUPPORTED]
+statement_lines=63-63
+>>    63:     if status == PASS_STATUS:
+
+leaf_qt/regen_candidate_acceptance_completion_gate.py:77 [COMPARE_SHAPE_NOT_YET_SUPPORTED]
+statement_lines=77-77
+>>    77:     if status == PASS_STATUS:
+
+leaf_qt/regen_cross_section_viewer_integration.py:71 [COMPARE_SHAPE_NOT_YET_SUPPORTED]
+statement_lines=71-71
+>>    71:     if status == PASS_STATUS:
+
+leaf_qt/regen_engineering_acceptance_report.py:41 [COMPARE_SHAPE_NOT_YET_SUPPORTED]
+statement_lines=41-41
+>>    41:     if status == PASS_STATUS:
+
+leaf_qt/regen_failure_root_cause_system.py:38 [COMPARE_SHAPE_NOT_YET_SUPPORTED]
+statement_lines=38-38
+>>    38:     if status == PASS_STATUS:
+
+leaf_qt/regen_final_completion_audit.py:53 [COMPARE_SHAPE_NOT_YET_SUPPORTED]
+statement_lines=53-53
+>>    53:     if status == PASS_STATUS:
+
+leaf_qt/regen_final_master_gate.py:61 [COMPARE_SHAPE_NOT_YET_SUPPORTED]
+statement_lines=61-61
+>>    61:     if status == PASS_STATUS:
+
+leaf_qt/regen_final_signoff_report.py:52 [COMPARE_SHAPE_NOT_YET_SUPPORTED]
+statement_lines=52-52
+>>    52:     if status == PASS_STATUS:
+
+leaf_qt/regen_final_verification_audit.py:70 [COMPARE_SHAPE_NOT_YET_SUPPORTED]
+statement_lines=70-70
+>>    70:     if status == PASS_STATUS:
+
+leaf_qt/regen_live_geometry_commit_execution.py:90 [COMPARE_SHAPE_NOT_YET_SUPPORTED]
+statement_lines=90-90
+>>    90:     if status == PASS_STATUS:
+
+leaf_qt/regen_optimisation_completion_gate.py:65 [COMPARE_SHAPE_NOT_YET_SUPPORTED]
+statement_lines=65-65
+>>    65:     if status == PASS_STATUS:
+
+leaf_qt/regen_optimisation_proof_system.py:67 [COMPARE_SHAPE_NOT_YET_SUPPORTED]
+statement_lines=67-67
+>>    67:     if status == PASS_STATUS:
+
+leaf_qt/regen_station_viewer_integration.py:64 [COMPARE_SHAPE_NOT_YET_SUPPORTED]
+statement_lines=64-64
+>>    64:     if status == PASS_STATUS:
+
+leaf_qt/regen_viewer_completion_gate.py:70 [COMPARE_SHAPE_NOT_YET_SUPPORTED]
+statement_lines=70-70
+>>    70:     if status == PASS_STATUS:
+
+leaf_qt/regen_viewer_data_adapter.py:54 [COMPARE_SHAPE_NOT_YET_SUPPORTED]
+statement_lines=54-54
+>>    54:     if status == PASS_STATUS:
+
+leaf_qt/regen_viewer_navigation_system.py:76 [COMPARE_SHAPE_NOT_YET_SUPPORTED]
+statement_lines=76-76
+>>    76:     if status == PASS_STATUS:
+
+leaf_qt/regen_viewer_ownership_architecture.py:82 [COMPARE_SHAPE_NOT_YET_SUPPORTED]
+statement_lines=82-82
+>>    82:     if status == PASS_STATUS:
+
+leaf_qt/regen_viewer_report_renderer.py:85 [COMPARE_SHAPE_NOT_YET_SUPPORTED]
+statement_lines=85-85
+>>    85:     if status == PASS_STATUS:
+
+json=/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u171b_wave2_patch_shape_diagnostic.json
+text=/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u171b_wave2_patch_shape_diagnostic.txt

@@ -1,0 +1,19 @@
+{
+  "phase": "16U.26",
+  "status": "PASS_PHASE_16U26_WAVE_D_COMPLETION_AUDIT_LOW_RISK_STATUS_WRAPPER_PATCH",
+  "generated": "2026-06-28T01:35:35",
+  "audit_status": "PASS_PHASE_16U25_WAVE_D_COMPLETION_AUDIT_STATUS_CONSUMER_AUDIT",
+  "audit_patchable_next_phase_count": 1,
+  "target_file": "leaf_qt/regen_geometry_completion_audit.py",
+  "import_added": true,
+  "applied": true,
+  "already_applied": false,
+  "missing": false,
+  "changed": true,
+  "compile_result": {
+    "file": "leaf_qt/regen_geometry_completion_audit.py",
+    "passed": true,
+    "error": ""
+  },
+  "phase_16u26_wave_d_completion_audit_low_risk_status_wrapper_patch_complete": true
+}

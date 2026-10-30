@@ -1,0 +1,803 @@
+{
+  "phase": "16U.79",
+  "status": "PASS_PHASE_16U79_UPDATED_GLOBAL_REMAINING_CANDIDATE_AUDIT",
+  "generated": "2026-06-28T19:05:54",
+  "closed_target_count": 21,
+  "scanned_leaf_qt_python_files": 966,
+  "files_with_findings": 83,
+  "remaining_production_candidates": 19,
+  "grouped_safe_count": 0,
+  "single_file_required_count": 19,
+  "complex_deferred_count": 10,
+  "test_or_maintenance_count": 1,
+  "supporting_or_deferred_count": 53,
+  "next_batch": [],
+  "top_production_candidates": [
+    {
+      "file": "leaf_qt/regen_acceptance_criteria_owner.py",
+      "classification": "production_owner_candidate",
+      "finding_count": 1,
+      "findings": [
+        {
+          "pattern": "inline_pass_fail_ternary",
+          "line": 173,
+          "snippet": "'PASS' if item.get('passed') else 'FAIL'"
+        }
+      ],
+      "simple_only": false,
+      "grouped_safe": false,
+      "single_file_required": true,
+      "imports_status_presentation": false
+    },
+    {
+      "file": "leaf_qt/regen_candidate_blueprint_population_validation_owner.py",
+      "classification": "production_owner_candidate",
+      "finding_count": 1,
+      "findings": [
+        {
+          "pattern": "inline_pass_fail_ternary",
+          "line": 231,
+          "snippet": "\"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ],
+      "simple_only": false,
+      "grouped_safe": false,
+      "single_file_required": true,
+      "imports_status_presentation": false
+    },
+    {
+      "file": "leaf_qt/regen_candidate_creation_registration_owner.py",
+      "classification": "production_owner_candidate",
+      "finding_count": 1,
+      "findings": [
+        {
+          "pattern": "inline_pass_fail_ternary",
+          "line": 185,
+          "snippet": "\"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ],
+      "simple_only": false,
+      "grouped_safe": false,
+      "single_file_required": true,
+      "imports_status_presentation": false
+    },
+    {
+      "file": "leaf_qt/regen_candidate_creation_report_owner.py",
+      "classification": "production_owner_candidate",
+      "finding_count": 1,
+      "findings": [
+        {
+          "pattern": "inline_pass_fail_ternary",
+          "line": 229,
+          "snippet": "\"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ],
+      "simple_only": false,
+      "grouped_safe": false,
+      "single_file_required": true,
+      "imports_status_presentation": false
+    },
+    {
+      "file": "leaf_qt/regen_candidate_creation_session_owner.py",
+      "classification": "production_owner_candidate",
+      "finding_count": 1,
+      "findings": [
+        {
+          "pattern": "inline_pass_fail_ternary",
+          "line": 209,
+          "snippet": "\"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ],
+      "simple_only": false,
+      "grouped_safe": false,
+      "single_file_required": true,
+      "imports_status_presentation": false
+    },
+    {
+      "file": "leaf_qt/regen_candidate_generation_registration_owner.py",
+      "classification": "production_owner_candidate",
+      "finding_count": 1,
+      "findings": [
+        {
+          "pattern": "inline_pass_fail_ternary",
+          "line": 178,
+          "snippet": "\"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ],
+      "simple_only": false,
+      "grouped_safe": false,
+      "single_file_required": true,
+      "imports_status_presentation": false
+    },
+    {
+      "file": "leaf_qt/regen_candidate_generation_report_owner.py",
+      "classification": "production_owner_candidate",
+      "finding_count": 1,
+      "findings": [
+        {
+          "pattern": "inline_pass_fail_ternary",
+          "line": 228,
+          "snippet": "\"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ],
+      "simple_only": false,
+      "grouped_safe": false,
+      "single_file_required": true,
+      "imports_status_presentation": false
+    },
+    {
+      "file": "leaf_qt/regen_candidate_generation_session_owner.py",
+      "classification": "production_owner_candidate",
+      "finding_count": 1,
+      "findings": [
+        {
+          "pattern": "inline_pass_fail_ternary",
+          "line": 197,
+          "snippet": "\"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ],
+      "simple_only": false,
+      "grouped_safe": false,
+      "single_file_required": true,
+      "imports_status_presentation": false
+    },
+    {
+      "file": "leaf_qt/regen_candidate_mutation_report_owner.py",
+      "classification": "production_owner_candidate",
+      "finding_count": 1,
+      "findings": [
+        {
+          "pattern": "inline_pass_fail_ternary",
+          "line": 305,
+          "snippet": "\"PASS\" if check.get(\"passed\") else \"FAIL\""
+        }
+      ],
+      "simple_only": false,
+      "grouped_safe": false,
+      "single_file_required": true,
+      "imports_status_presentation": false
+    },
+    {
+      "file": "leaf_qt/regen_geometry_constraint_owner.py",
+      "classification": "production_owner_candidate",
+      "finding_count": 1,
+      "findings": [
+        {
+          "pattern": "inline_pass_fail_ternary",
+          "line": 96,
+          "snippet": "\"PASS\" if passed else \"FAIL\""
+        }
+      ],
+      "simple_only": false,
+      "grouped_safe": false,
+      "single_file_required": true,
+      "imports_status_presentation": false
+    },
+    {
+      "file": "leaf_qt/regen_optimisation_registration_owner.py",
+      "classification": "production_owner_candidate",
+      "finding_count": 1,
+      "findings": [
+        {
+          "pattern": "inline_pass_fail_ternary",
+          "line": 194,
+          "snippet": "\"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ],
+      "simple_only": false,
+      "grouped_safe": false,
+      "single_file_required": true,
+      "imports_status_presentation": false
+    },
+    {
+      "file": "leaf_qt/regen_optimisation_session_owner.py",
+      "classification": "production_owner_candidate",
+      "finding_count": 1,
+      "findings": [
+        {
+          "pattern": "inline_pass_fail_ternary",
+          "line": 165,
+          "snippet": "\"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ],
+      "simple_only": false,
+      "grouped_safe": false,
+      "single_file_required": true,
+      "imports_status_presentation": false
+    },
+    {
+      "file": "leaf_qt/regen_runtime_execution_registration_owner.py",
+      "classification": "production_owner_candidate",
+      "finding_count": 1,
+      "findings": [
+        {
+          "pattern": "inline_pass_fail_ternary",
+          "line": 226,
+          "snippet": "\"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ],
+      "simple_only": false,
+      "grouped_safe": false,
+      "single_file_required": true,
+      "imports_status_presentation": false
+    },
+    {
+      "file": "leaf_qt/regen_runtime_execution_report_owner.py",
+      "classification": "production_owner_candidate",
+      "finding_count": 1,
+      "findings": [
+        {
+          "pattern": "inline_pass_fail_ternary",
+          "line": 227,
+          "snippet": "\"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ],
+      "simple_only": false,
+      "grouped_safe": false,
+      "single_file_required": true,
+      "imports_status_presentation": false
+    },
+    {
+      "file": "leaf_qt/regen_runtime_execution_session_owner.py",
+      "classification": "production_owner_candidate",
+      "finding_count": 1,
+      "findings": [
+        {
+          "pattern": "inline_pass_fail_ternary",
+          "line": 193,
+          "snippet": "\"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ],
+      "simple_only": false,
+      "grouped_safe": false,
+      "single_file_required": true,
+      "imports_status_presentation": false
+    },
+    {
+      "file": "leaf_qt/regen_runtime_optimisation_registration_owner.py",
+      "classification": "production_owner_candidate",
+      "finding_count": 1,
+      "findings": [
+        {
+          "pattern": "inline_pass_fail_ternary",
+          "line": 223,
+          "snippet": "\"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ],
+      "simple_only": false,
+      "grouped_safe": false,
+      "single_file_required": true,
+      "imports_status_presentation": false
+    },
+    {
+      "file": "leaf_qt/regen_runtime_optimisation_report_owner.py",
+      "classification": "production_owner_candidate",
+      "finding_count": 1,
+      "findings": [
+        {
+          "pattern": "inline_pass_fail_ternary",
+          "line": 219,
+          "snippet": "\"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ],
+      "simple_only": false,
+      "grouped_safe": false,
+      "single_file_required": true,
+      "imports_status_presentation": false
+    },
+    {
+      "file": "leaf_qt/regen_runtime_optimisation_session_owner.py",
+      "classification": "production_owner_candidate",
+      "finding_count": 1,
+      "findings": [
+        {
+          "pattern": "inline_pass_fail_ternary",
+          "line": 175,
+          "snippet": "\"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ],
+      "simple_only": false,
+      "grouped_safe": false,
+      "single_file_required": true,
+      "imports_status_presentation": false
+    },
+    {
+      "file": "leaf_qt/regen_geometry_report_owner.py",
+      "classification": "production_owner_candidate",
+      "finding_count": 2,
+      "findings": [
+        {
+          "pattern": "inline_pass_fail_ternary",
+          "line": 5,
+          "snippet": "\"PASS\" if value else \"FAIL\""
+        },
+        {
+          "pattern": "inline_pass_fail_ternary",
+          "line": 39,
+          "snippet": "'PASS' if solver_pass else 'FAIL'"
+        }
+      ],
+      "simple_only": false,
+      "grouped_safe": false,
+      "single_file_required": true,
+      "imports_status_presentation": false
+    }
+  ],
+  "single_file_required": [
+    {
+      "file": "leaf_qt/regen_geometry_report_owner.py",
+      "classification": "production_owner_candidate",
+      "finding_count": 2,
+      "findings": [
+        {
+          "pattern": "inline_pass_fail_ternary",
+          "line": 5,
+          "snippet": "\"PASS\" if value else \"FAIL\""
+        },
+        {
+          "pattern": "inline_pass_fail_ternary",
+          "line": 39,
+          "snippet": "'PASS' if solver_pass else 'FAIL'"
+        }
+      ],
+      "simple_only": false,
+      "grouped_safe": false,
+      "single_file_required": true,
+      "imports_status_presentation": false
+    },
+    {
+      "file": "leaf_qt/regen_acceptance_criteria_owner.py",
+      "classification": "production_owner_candidate",
+      "finding_count": 1,
+      "findings": [
+        {
+          "pattern": "inline_pass_fail_ternary",
+          "line": 173,
+          "snippet": "'PASS' if item.get('passed') else 'FAIL'"
+        }
+      ],
+      "simple_only": false,
+      "grouped_safe": false,
+      "single_file_required": true,
+      "imports_status_presentation": false
+    },
+    {
+      "file": "leaf_qt/regen_candidate_blueprint_population_validation_owner.py",
+      "classification": "production_owner_candidate",
+      "finding_count": 1,
+      "findings": [
+        {
+          "pattern": "inline_pass_fail_ternary",
+          "line": 231,
+          "snippet": "\"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ],
+      "simple_only": false,
+      "grouped_safe": false,
+      "single_file_required": true,
+      "imports_status_presentation": false
+    },
+    {
+      "file": "leaf_qt/regen_candidate_creation_registration_owner.py",
+      "classification": "production_owner_candidate",
+      "finding_count": 1,
+      "findings": [
+        {
+          "pattern": "inline_pass_fail_ternary",
+          "line": 185,
+          "snippet": "\"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ],
+      "simple_only": false,
+      "grouped_safe": false,
+      "single_file_required": true,
+      "imports_status_presentation": false
+    },
+    {
+      "file": "leaf_qt/regen_candidate_creation_report_owner.py",
+      "classification": "production_owner_candidate",
+      "finding_count": 1,
+      "findings": [
+        {
+          "pattern": "inline_pass_fail_ternary",
+          "line": 229,
+          "snippet": "\"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ],
+      "simple_only": false,
+      "grouped_safe": false,
+      "single_file_required": true,
+      "imports_status_presentation": false
+    },
+    {
+      "file": "leaf_qt/regen_candidate_creation_session_owner.py",
+      "classification": "production_owner_candidate",
+      "finding_count": 1,
+      "findings": [
+        {
+          "pattern": "inline_pass_fail_ternary",
+          "line": 209,
+          "snippet": "\"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ],
+      "simple_only": false,
+      "grouped_safe": false,
+      "single_file_required": true,
+      "imports_status_presentation": false
+    },
+    {
+      "file": "leaf_qt/regen_candidate_generation_registration_owner.py",
+      "classification": "production_owner_candidate",
+      "finding_count": 1,
+      "findings": [
+        {
+          "pattern": "inline_pass_fail_ternary",
+          "line": 178,
+          "snippet": "\"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ],
+      "simple_only": false,
+      "grouped_safe": false,
+      "single_file_required": true,
+      "imports_status_presentation": false
+    },
+    {
+      "file": "leaf_qt/regen_candidate_generation_report_owner.py",
+      "classification": "production_owner_candidate",
+      "finding_count": 1,
+      "findings": [
+        {
+          "pattern": "inline_pass_fail_ternary",
+          "line": 228,
+          "snippet": "\"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ],
+      "simple_only": false,
+      "grouped_safe": false,
+      "single_file_required": true,
+      "imports_status_presentation": false
+    },
+    {
+      "file": "leaf_qt/regen_candidate_generation_session_owner.py",
+      "classification": "production_owner_candidate",
+      "finding_count": 1,
+      "findings": [
+        {
+          "pattern": "inline_pass_fail_ternary",
+          "line": 197,
+          "snippet": "\"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ],
+      "simple_only": false,
+      "grouped_safe": false,
+      "single_file_required": true,
+      "imports_status_presentation": false
+    },
+    {
+      "file": "leaf_qt/regen_candidate_mutation_report_owner.py",
+      "classification": "production_owner_candidate",
+      "finding_count": 1,
+      "findings": [
+        {
+          "pattern": "inline_pass_fail_ternary",
+          "line": 305,
+          "snippet": "\"PASS\" if check.get(\"passed\") else \"FAIL\""
+        }
+      ],
+      "simple_only": false,
+      "grouped_safe": false,
+      "single_file_required": true,
+      "imports_status_presentation": false
+    },
+    {
+      "file": "leaf_qt/regen_geometry_constraint_owner.py",
+      "classification": "production_owner_candidate",
+      "finding_count": 1,
+      "findings": [
+        {
+          "pattern": "inline_pass_fail_ternary",
+          "line": 96,
+          "snippet": "\"PASS\" if passed else \"FAIL\""
+        }
+      ],
+      "simple_only": false,
+      "grouped_safe": false,
+      "single_file_required": true,
+      "imports_status_presentation": false
+    },
+    {
+      "file": "leaf_qt/regen_optimisation_registration_owner.py",
+      "classification": "production_owner_candidate",
+      "finding_count": 1,
+      "findings": [
+        {
+          "pattern": "inline_pass_fail_ternary",
+          "line": 194,
+          "snippet": "\"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ],
+      "simple_only": false,
+      "grouped_safe": false,
+      "single_file_required": true,
+      "imports_status_presentation": false
+    },
+    {
+      "file": "leaf_qt/regen_optimisation_session_owner.py",
+      "classification": "production_owner_candidate",
+      "finding_count": 1,
+      "findings": [
+        {
+          "pattern": "inline_pass_fail_ternary",
+          "line": 165,
+          "snippet": "\"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ],
+      "simple_only": false,
+      "grouped_safe": false,
+      "single_file_required": true,
+      "imports_status_presentation": false
+    },
+    {
+      "file": "leaf_qt/regen_runtime_execution_registration_owner.py",
+      "classification": "production_owner_candidate",
+      "finding_count": 1,
+      "findings": [
+        {
+          "pattern": "inline_pass_fail_ternary",
+          "line": 226,
+          "snippet": "\"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ],
+      "simple_only": false,
+      "grouped_safe": false,
+      "single_file_required": true,
+      "imports_status_presentation": false
+    },
+    {
+      "file": "leaf_qt/regen_runtime_execution_report_owner.py",
+      "classification": "production_owner_candidate",
+      "finding_count": 1,
+      "findings": [
+        {
+          "pattern": "inline_pass_fail_ternary",
+          "line": 227,
+          "snippet": "\"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ],
+      "simple_only": false,
+      "grouped_safe": false,
+      "single_file_required": true,
+      "imports_status_presentation": false
+    },
+    {
+      "file": "leaf_qt/regen_runtime_execution_session_owner.py",
+      "classification": "production_owner_candidate",
+      "finding_count": 1,
+      "findings": [
+        {
+          "pattern": "inline_pass_fail_ternary",
+          "line": 193,
+          "snippet": "\"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ],
+      "simple_only": false,
+      "grouped_safe": false,
+      "single_file_required": true,
+      "imports_status_presentation": false
+    },
+    {
+      "file": "leaf_qt/regen_runtime_optimisation_registration_owner.py",
+      "classification": "production_owner_candidate",
+      "finding_count": 1,
+      "findings": [
+        {
+          "pattern": "inline_pass_fail_ternary",
+          "line": 223,
+          "snippet": "\"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ],
+      "simple_only": false,
+      "grouped_safe": false,
+      "single_file_required": true,
+      "imports_status_presentation": false
+    },
+    {
+      "file": "leaf_qt/regen_runtime_optimisation_report_owner.py",
+      "classification": "production_owner_candidate",
+      "finding_count": 1,
+      "findings": [
+        {
+          "pattern": "inline_pass_fail_ternary",
+          "line": 219,
+          "snippet": "\"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ],
+      "simple_only": false,
+      "grouped_safe": false,
+      "single_file_required": true,
+      "imports_status_presentation": false
+    },
+    {
+      "file": "leaf_qt/regen_runtime_optimisation_session_owner.py",
+      "classification": "production_owner_candidate",
+      "finding_count": 1,
+      "findings": [
+        {
+          "pattern": "inline_pass_fail_ternary",
+          "line": 175,
+          "snippet": "\"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ],
+      "simple_only": false,
+      "grouped_safe": false,
+      "single_file_required": true,
+      "imports_status_presentation": false
+    }
+  ],
+  "complex_deferred": [
+    {
+      "file": "leaf_qt/regen_viewer_gui_runtime_acceptance_gate_phase_16q28.py",
+      "classification": "complex_ui_deferred",
+      "finding_count": 1,
+      "findings": [
+        {
+          "pattern": "inline_pass_fail_ternary",
+          "line": 93,
+          "snippet": "\"PASS\" if item[\"passed\"] else \"FAIL\""
+        }
+      ],
+      "simple_only": false,
+      "grouped_safe": false,
+      "single_file_required": false,
+      "imports_status_presentation": false
+    },
+    {
+      "file": "leaf_qt/regen_viewer_gui_runtime_checklist_phase_16p22.py",
+      "classification": "complex_ui_deferred",
+      "finding_count": 1,
+      "findings": [
+        {
+          "pattern": "inline_pass_fail_ternary",
+          "line": 89,
+          "snippet": "\"PASS\" if item[\"present\"] else \"FAIL\""
+        }
+      ],
+      "simple_only": false,
+      "grouped_safe": false,
+      "single_file_required": false,
+      "imports_status_presentation": false
+    },
+    {
+      "file": "leaf_qt/regen_viewer_report_renderer.py",
+      "classification": "complex_ui_deferred",
+      "finding_count": 1,
+      "findings": [
+        {
+          "pattern": "inline_pass_fail_ternary",
+          "line": 179,
+          "snippet": "'PASS' if item.get('passed') else 'FAIL'"
+        }
+      ],
+      "simple_only": false,
+      "grouped_safe": false,
+      "single_file_required": false,
+      "imports_status_presentation": false
+    },
+    {
+      "file": "leaf_qt/regen_viewer_final_completion_lock_phase_16p23.py",
+      "classification": "complex_ui_deferred",
+      "finding_count": 1,
+      "findings": [
+        {
+          "pattern": "inline_pass_fail_ternary",
+          "line": 98,
+          "snippet": "\"PASS\" if item[\"passed\"] else \"FAIL\""
+        }
+      ],
+      "simple_only": false,
+      "grouped_safe": false,
+      "single_file_required": false,
+      "imports_status_presentation": false
+    },
+    {
+      "file": "leaf_qt/regen_viewer_auto_geometry_handover_lock_phase_16q10.py",
+      "classification": "complex_ui_deferred",
+      "finding_count": 1,
+      "findings": [
+        {
+          "pattern": "inline_pass_fail_ternary",
+          "line": 99,
+          "snippet": "\"PASS\" if item[\"passed\"] else \"FAIL\""
+        }
+      ],
+      "simple_only": false,
+      "grouped_safe": false,
+      "single_file_required": false,
+      "imports_status_presentation": false
+    },
+    {
+      "file": "leaf_qt/regen_viewer_final_completion_declaration_phase_16q7.py",
+      "classification": "complex_ui_deferred",
+      "finding_count": 1,
+      "findings": [
+        {
+          "pattern": "inline_pass_fail_ternary",
+          "line": 112,
+          "snippet": "\"PASS\" if item[\"passed\"] else \"FAIL\""
+        }
+      ],
+      "simple_only": false,
+      "grouped_safe": false,
+      "single_file_required": false,
+      "imports_status_presentation": false
+    },
+    {
+      "file": "leaf_qt/regen_viewer_final_closure_handover_phase_16q30.py",
+      "classification": "complex_ui_deferred",
+      "finding_count": 1,
+      "findings": [
+        {
+          "pattern": "inline_pass_fail_ternary",
+          "line": 100,
+          "snippet": "\"PASS\" if item[\"passed\"] else \"FAIL\""
+        }
+      ],
+      "simple_only": false,
+      "grouped_safe": false,
+      "single_file_required": false,
+      "imports_status_presentation": false
+    },
+    {
+      "file": "leaf_qt/regen_viewer_final_runtime_consistency_gate_phase_16q20.py",
+      "classification": "complex_ui_deferred",
+      "finding_count": 1,
+      "findings": [
+        {
+          "pattern": "inline_pass_fail_ternary",
+          "line": 125,
+          "snippet": "\"PASS\" if item[\"passed\"] else \"FAIL\""
+        }
+      ],
+      "simple_only": false,
+      "grouped_safe": false,
+      "single_file_required": false,
+      "imports_status_presentation": false
+    },
+    {
+      "file": "leaf_qt/regen_viewer_integration_report_owner.py",
+      "classification": "complex_ui_deferred",
+      "finding_count": 1,
+      "findings": [
+        {
+          "pattern": "status_startswith",
+          "line": 89,
+          "snippet": ".startswith(\"PASS"
+        }
+      ],
+      "simple_only": true,
+      "grouped_safe": false,
+      "single_file_required": false,
+      "imports_status_presentation": false
+    },
+    {
+      "file": "leaf_qt/regen_viewer_station_geometry_dump_phase_16p17.py",
+      "classification": "complex_ui_deferred",
+      "finding_count": 1,
+      "findings": [
+        {
+          "pattern": "inline_pass_fail_ternary",
+          "line": 150,
+          "snippet": "\"PASS\" if fail_count == 0 else \"FAIL\""
+        }
+      ],
+      "simple_only": false,
+      "grouped_safe": false,
+      "single_file_required": false,
+      "imports_status_presentation": false
+    }
+  ],
+  "recommended_next_action": "PHASE_16U75_SINGLE_FILE_MIGRATION_DECISION",
+  "recommended_next_mode": "SINGLE_FILE_REQUIRED",
+  "phase_16u79_updated_global_remaining_candidate_audit_complete": true,
+  "next_phase": "16U.80 \u2014 Single-File Migration Decision"
+}

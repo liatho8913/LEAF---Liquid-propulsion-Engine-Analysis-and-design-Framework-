@@ -1,0 +1,836 @@
+LEAF FOUNDATION VERIFICATION HARNESS
+====================================
+
+Status: FAIL_FOUNDATION_VERIFICATION
+Passed: 387
+Failed: 9
+
+CASE: sourced_valid_no_coating
+------------------------------
+[PASS] Foundation attachment pipeline status matches expectation
+  pipeline_status=PASS
+[PASS] Stage U completion matches expectation
+  stage_u_regen_validation_complete=True
+[PASS] Main scalar outputs are not polluted by long report text
+  polluted_keys=[]
+[PASS] Report viewer bundle exposes required foundation reports
+  missing_reports=[]
+[PASS] Stage V completion matches expectation
+  stage_v_complete=True; stage_v_status=PASS_REGEN_SCALABILITY_COMPLETION_AUDIT
+[PASS] Stage W completion matches expectation
+  stage_w_complete=True; stage_w_status=PASS_REAL_ENGINE_BENCHMARK_COMPLETION_AUDIT
+[PASS] Result key audit exists
+  status=WARN_UNREGISTERED_KEYS
+[FAIL] Result key audit fully passes
+  status=WARN_UNREGISTERED_KEYS
+[PASS] Phase 10A solver integration planning owner exists
+  status=PASS_PHASE_10A_SOLVER_INTEGRATION_PLANNING_OWNER; complete=True
+[PASS] Phase 10B.1 material property consumption audit owner exists
+  status=PASS_PHASE_10B1_MATERIAL_PROPERTY_CONSUMPTION_AUDIT_OWNER; complete=True
+[PASS] Phase 10B.2 material thermal conductivity integration owner exists
+  status=PASS_PHASE_10B2_MATERIAL_THERMAL_CONDUCTIVITY_INTEGRATION_OWNER; complete=True
+[PASS] Phase 10B.3 material specific heat integration owner exists
+  status=PASS_PHASE_10B3_MATERIAL_SPECIFIC_HEAT_INTEGRATION_OWNER; complete=True
+[PASS] Phase 10B.4 material density integration owner exists
+  status=PASS_PHASE_10B4_MATERIAL_DENSITY_INTEGRATION_OWNER; complete=True
+[PASS] Phase 10B.5 material temperature limit integration owner exists
+  status=PASS_PHASE_10B5_MATERIAL_TEMPERATURE_LIMIT_INTEGRATION_OWNER; complete=True
+[PASS] Phase 10B.6 material strength limit integration owner exists
+  status=PASS_PHASE_10B6_MATERIAL_STRENGTH_LIMIT_INTEGRATION_OWNER; complete=True
+[PASS] Phase 10B.7 material integration validation owner exists
+  status=FAIL_PHASE_10B7_MATERIAL_INTEGRATION_VALIDATION_OWNER; complete=True
+[PASS] Phase 10B.8 material integration completion audit exists
+  status=FAIL_MATERIAL_INTEGRATION_COMPLETION_AUDIT; complete=True
+[PASS] Phase 10C.1 coating property consumption audit owner exists
+  status=PASS_PHASE_10C1_COATING_PROPERTY_CONSUMPTION_AUDIT_OWNER; complete=True
+[PASS] Phase 10C.2 coating thermal conductivity integration owner exists
+  status=PASS_PHASE_10C2_COATING_THERMAL_CONDUCTIVITY_INTEGRATION_OWNER; complete=True
+[PASS] Phase 10C.3 coating thickness integration owner exists
+  status=PASS_PHASE_10C3_COATING_THICKNESS_INTEGRATION_OWNER; complete=True
+[PASS] Phase 10C.4 coating thermal resistance integration owner exists
+  status=PASS_PHASE_10C4_COATING_THERMAL_RESISTANCE_INTEGRATION_OWNER; complete=True
+[PASS] Phase 10C.5 coating temperature limit integration owner exists
+  status=PASS_PHASE_10C5_COATING_TEMPERATURE_LIMIT_INTEGRATION_OWNER; complete=True
+[PASS] Phase 10C.6 bond coat integration owner exists
+  status=PASS_PHASE_10C6_BOND_COAT_INTEGRATION_OWNER; complete=True
+[PASS] Phase 10C.7 coating integration validation owner exists
+  status=PASS_PHASE_10C7_COATING_INTEGRATION_VALIDATION_OWNER; complete=True
+[PASS] Phase 10C.8 coating integration completion audit exists
+  status=PASS_COATING_INTEGRATION_COMPLETION_AUDIT; complete=True
+[PASS] Phase 10D.1 temperature dependency discovery audit owner exists
+  status=PASS_PHASE_10D1_TEMPERATURE_DEPENDENCY_DISCOVERY_AUDIT_OWNER; complete=True
+[PASS] Phase 10D.2 material conductivity consumption audit owner exists
+  status=PASS_PHASE_10D2_MATERIAL_CONDUCTIVITY_CONSUMPTION_AUDIT_OWNER; expected=PASS_PHASE_10D2_MATERIAL_CONDUCTIVITY_CONSUMPTION_AUDIT_OWNER; complete=True
+[PASS] Phase 10D.3 specific heat consumption audit owner exists
+  status=PASS_PHASE_10D3_SPECIFIC_HEAT_CONSUMPTION_AUDIT_OWNER; expected=PASS_PHASE_10D3_SPECIFIC_HEAT_CONSUMPTION_AUDIT_OWNER; complete=True
+[PASS] Phase 10D.4 density coolant property consumption audit owner exists
+  status=PASS_PHASE_10D4_DENSITY_COOLANT_PROPERTY_CONSUMPTION_AUDIT_OWNER; expected=PASS_PHASE_10D4_DENSITY_COOLANT_PROPERTY_CONSUMPTION_AUDIT_OWNER; complete=True
+[PASS] Phase 10D.5 coating thermal consumption audit owner exists
+  status=PASS_PHASE_10D5_COATING_THERMAL_CONSUMPTION_AUDIT_OWNER; expected=PASS_PHASE_10D5_COATING_THERMAL_CONSUMPTION_AUDIT_OWNER; complete=True
+[PASS] Phase 10D.6 bond-coat consumption audit owner exists
+  status=PASS_PHASE_10D6_BOND_COAT_CONSUMPTION_AUDIT_OWNER; expected=PASS_PHASE_10D6_BOND_COAT_CONSUMPTION_AUDIT_OWNER; complete=True
+[PASS] Phase 10D.7 temperature-dependent solver completion audit owner exists
+  status=PASS_PHASE_10D7_TEMPERATURE_DEPENDENT_SOLVER_COMPLETION_AUDIT_OWNER; expected=PASS_PHASE_10D7_TEMPERATURE_DEPENDENT_SOLVER_COMPLETION_AUDIT_OWNER; complete=True
+[PASS] Phase 11A.1 regen geometry constraint discovery audit owner exists
+  status=PASS_PHASE_11A1_REGEN_GEOMETRY_CONSTRAINT_DISCOVERY_AUDIT_OWNER; complete=True; constraints=18; discovered=4
+[PASS] Phase 11A.2 regen geometry constraint validation owner exists
+  status=PASS_PHASE_11A2_REGEN_GEOMETRY_CONSTRAINT_VALIDATION_OWNER; complete=True; results=18; engineering_status=PASS_REGEN_GEOMETRY_CONSTRAINT_VALIDATION
+[PASS] Phase 11A.3 regen geometry failure explanation owner exists
+  status=PASS_PHASE_11A3_REGEN_GEOMETRY_FAILURE_EXPLANATION_OWNER; complete=True; explanations=0; engineering_status=PASS_REGEN_GEOMETRY_FAILURE_EXPLANATION
+[PASS] Phase 11A.4 regen geometry recommendation engine owner exists
+  status=PASS_PHASE_11A4_REGEN_GEOMETRY_RECOMMENDATION_ENGINE_OWNER; complete=True; recommendations=0; engineering_status=PASS_REGEN_GEOMETRY_RECOMMENDATION_ENGINE
+[PASS] Phase 11A.5 apply recommended geometry owner exists
+  status=PASS_PHASE_11A5_REGEN_GEOMETRY_APPLY_RECOMMENDATION_OWNER; complete=True; candidate_keys=14; engineering_status=PASS_REGEN_GEOMETRY_APPLY_RECOMMENDATION
+[PASS] Phase 11A.6 regen geometry output architecture owner exists
+  status=PASS_PHASE_11A6_REGEN_GEOMETRY_OUTPUT_ARCHITECTURE_OWNER; complete=True; summary_keys=10; engineering_status=PASS_REGEN_GEOMETRY_OUTPUT_ARCHITECTURE
+[PASS] Phase 11A.7 regen geometry output window is importable
+  importable=True
+[PASS] Phase 11A.8 regen geometry candidate acceptance owner exists
+  status=PASS_PHASE_11A8_REGEN_GEOMETRY_CANDIDATE_ACCEPTANCE_OWNER; complete=True; patch_keys=0; engineering_status=PASS_REGEN_GEOMETRY_NO_CANDIDATE_ACCEPTANCE_REQUIRED
+[PASS] Phase 11A.9 candidate acceptance UI controls exist
+  phase_11a9_ready=True
+[PASS] Phase 11A.10 full visual recommendation integration exists
+  phase_11a10_ready=True
+[PASS] Foundation save/load roundtrip preserves required state
+  PASS_FOUNDATION_SAVE_LOAD_VERIFICATION
+[PASS] Foundation UI/report bundle verification passes
+  PASS_FOUNDATION_UI_LAUNCH_VERIFICATION
+
+CASE: placeholder_material_blocks_pass
+--------------------------------------
+[PASS] Foundation attachment pipeline status matches expectation
+  pipeline_status=PASS
+[PASS] Stage U completion matches expectation
+  stage_u_regen_validation_complete=False
+[PASS] Main scalar outputs are not polluted by long report text
+  polluted_keys=[]
+[PASS] Report viewer bundle exposes required foundation reports
+  missing_reports=[]
+[PASS] Stage V completion matches expectation
+  stage_v_complete=False; stage_v_status=FAIL_REGEN_SCALABILITY_COMPLETION_AUDIT
+[PASS] Stage W completion matches expectation
+  stage_w_complete=False; stage_w_status=FAIL_REAL_ENGINE_BENCHMARK_COMPLETION_AUDIT
+[PASS] Result key audit exists
+  status=WARN_UNREGISTERED_KEYS
+[FAIL] Result key audit fully passes
+  status=WARN_UNREGISTERED_KEYS
+[PASS] Phase 10A solver integration planning owner exists
+  status=PASS_PHASE_10A_SOLVER_INTEGRATION_PLANNING_OWNER; complete=True
+[PASS] Phase 10B.1 material property consumption audit owner exists
+  status=PASS_PHASE_10B1_MATERIAL_PROPERTY_CONSUMPTION_AUDIT_OWNER; complete=True
+[PASS] Phase 10B.2 material thermal conductivity integration owner exists
+  status=PASS_PHASE_10B2_MATERIAL_THERMAL_CONDUCTIVITY_INTEGRATION_OWNER; complete=True
+[PASS] Phase 10B.3 material specific heat integration owner exists
+  status=PASS_PHASE_10B3_MATERIAL_SPECIFIC_HEAT_INTEGRATION_OWNER; complete=True
+[PASS] Phase 10B.4 material density integration owner exists
+  status=PASS_PHASE_10B4_MATERIAL_DENSITY_INTEGRATION_OWNER; complete=True
+[PASS] Phase 10B.5 material temperature limit integration owner exists
+  status=PASS_PHASE_10B5_MATERIAL_TEMPERATURE_LIMIT_INTEGRATION_OWNER; complete=True
+[PASS] Phase 10B.6 material strength limit integration owner exists
+  status=PASS_PHASE_10B6_MATERIAL_STRENGTH_LIMIT_INTEGRATION_OWNER; complete=True
+[PASS] Phase 10B.7 material integration validation owner exists
+  status=FAIL_PHASE_10B7_MATERIAL_INTEGRATION_VALIDATION_OWNER; complete=True
+[PASS] Phase 10B.8 material integration completion audit exists
+  status=FAIL_MATERIAL_INTEGRATION_COMPLETION_AUDIT; complete=True
+[PASS] Phase 10C.1 coating property consumption audit owner exists
+  status=PASS_PHASE_10C1_COATING_PROPERTY_CONSUMPTION_AUDIT_OWNER; complete=True
+[PASS] Phase 10C.2 coating thermal conductivity integration owner exists
+  status=PASS_PHASE_10C2_COATING_THERMAL_CONDUCTIVITY_INTEGRATION_OWNER; complete=True
+[PASS] Phase 10C.3 coating thickness integration owner exists
+  status=PASS_PHASE_10C3_COATING_THICKNESS_INTEGRATION_OWNER; complete=True
+[PASS] Phase 10C.4 coating thermal resistance integration owner exists
+  status=PASS_PHASE_10C4_COATING_THERMAL_RESISTANCE_INTEGRATION_OWNER; complete=True
+[PASS] Phase 10C.5 coating temperature limit integration owner exists
+  status=PASS_PHASE_10C5_COATING_TEMPERATURE_LIMIT_INTEGRATION_OWNER; complete=True
+[PASS] Phase 10C.6 bond coat integration owner exists
+  status=PASS_PHASE_10C6_BOND_COAT_INTEGRATION_OWNER; complete=True
+[PASS] Phase 10C.7 coating integration validation owner exists
+  status=PASS_PHASE_10C7_COATING_INTEGRATION_VALIDATION_OWNER; complete=True
+[PASS] Phase 10C.8 coating integration completion audit exists
+  status=PASS_COATING_INTEGRATION_COMPLETION_AUDIT; complete=True
+[PASS] Phase 10D.1 temperature dependency discovery audit owner exists
+  status=PASS_PHASE_10D1_TEMPERATURE_DEPENDENCY_DISCOVERY_AUDIT_OWNER; complete=True
+[PASS] Phase 10D.2 material conductivity consumption audit owner exists
+  status=FAIL_PHASE_10D2_MATERIAL_CONDUCTIVITY_CONSUMPTION_AUDIT_OWNER; expected=FAIL_PHASE_10D2_MATERIAL_CONDUCTIVITY_CONSUMPTION_AUDIT_OWNER; complete=True
+[PASS] Phase 10D.3 specific heat consumption audit owner exists
+  status=FAIL_PHASE_10D3_SPECIFIC_HEAT_CONSUMPTION_AUDIT_OWNER; expected=FAIL_PHASE_10D3_SPECIFIC_HEAT_CONSUMPTION_AUDIT_OWNER; complete=True
+[PASS] Phase 10D.4 density coolant property consumption audit owner exists
+  status=FAIL_PHASE_10D4_DENSITY_COOLANT_PROPERTY_CONSUMPTION_AUDIT_OWNER; expected=FAIL_PHASE_10D4_DENSITY_COOLANT_PROPERTY_CONSUMPTION_AUDIT_OWNER; complete=True
+[PASS] Phase 10D.5 coating thermal consumption audit owner exists
+  status=PASS_PHASE_10D5_COATING_THERMAL_CONSUMPTION_AUDIT_OWNER; expected=PASS_PHASE_10D5_COATING_THERMAL_CONSUMPTION_AUDIT_OWNER; complete=True
+[PASS] Phase 10D.6 bond-coat consumption audit owner exists
+  status=PASS_PHASE_10D6_BOND_COAT_CONSUMPTION_AUDIT_OWNER; expected=PASS_PHASE_10D6_BOND_COAT_CONSUMPTION_AUDIT_OWNER; complete=True
+[PASS] Phase 10D.7 temperature-dependent solver completion audit owner exists
+  status=FAIL_PHASE_10D7_TEMPERATURE_DEPENDENT_SOLVER_COMPLETION_AUDIT_OWNER; expected=FAIL_PHASE_10D7_TEMPERATURE_DEPENDENT_SOLVER_COMPLETION_AUDIT_OWNER; complete=True
+[PASS] Phase 11A.1 regen geometry constraint discovery audit owner exists
+  status=PASS_PHASE_11A1_REGEN_GEOMETRY_CONSTRAINT_DISCOVERY_AUDIT_OWNER; complete=True; constraints=18; discovered=4
+[PASS] Phase 11A.2 regen geometry constraint validation owner exists
+  status=PASS_PHASE_11A2_REGEN_GEOMETRY_CONSTRAINT_VALIDATION_OWNER; complete=True; results=18; engineering_status=PASS_REGEN_GEOMETRY_CONSTRAINT_VALIDATION
+[PASS] Phase 11A.3 regen geometry failure explanation owner exists
+  status=PASS_PHASE_11A3_REGEN_GEOMETRY_FAILURE_EXPLANATION_OWNER; complete=True; explanations=0; engineering_status=PASS_REGEN_GEOMETRY_FAILURE_EXPLANATION
+[PASS] Phase 11A.4 regen geometry recommendation engine owner exists
+  status=PASS_PHASE_11A4_REGEN_GEOMETRY_RECOMMENDATION_ENGINE_OWNER; complete=True; recommendations=0; engineering_status=PASS_REGEN_GEOMETRY_RECOMMENDATION_ENGINE
+[PASS] Phase 11A.5 apply recommended geometry owner exists
+  status=PASS_PHASE_11A5_REGEN_GEOMETRY_APPLY_RECOMMENDATION_OWNER; complete=True; candidate_keys=14; engineering_status=PASS_REGEN_GEOMETRY_APPLY_RECOMMENDATION
+[PASS] Phase 11A.6 regen geometry output architecture owner exists
+  status=PASS_PHASE_11A6_REGEN_GEOMETRY_OUTPUT_ARCHITECTURE_OWNER; complete=True; summary_keys=10; engineering_status=PASS_REGEN_GEOMETRY_OUTPUT_ARCHITECTURE
+[PASS] Phase 11A.7 regen geometry output window is importable
+  importable=True
+[PASS] Phase 11A.8 regen geometry candidate acceptance owner exists
+  status=PASS_PHASE_11A8_REGEN_GEOMETRY_CANDIDATE_ACCEPTANCE_OWNER; complete=True; patch_keys=0; engineering_status=PASS_REGEN_GEOMETRY_NO_CANDIDATE_ACCEPTANCE_REQUIRED
+[PASS] Phase 11A.9 candidate acceptance UI controls exist
+  phase_11a9_ready=True
+[PASS] Phase 11A.10 full visual recommendation integration exists
+  phase_11a10_ready=True
+[PASS] Foundation save/load roundtrip preserves required state
+  PASS_FOUNDATION_SAVE_LOAD_VERIFICATION
+[PASS] Foundation UI/report bundle verification passes
+  PASS_FOUNDATION_UI_LAUNCH_VERIFICATION
+
+CASE: partial_source_blocks_final_pass
+--------------------------------------
+[PASS] Foundation attachment pipeline status matches expectation
+  pipeline_status=PASS
+[PASS] Stage U completion matches expectation
+  stage_u_regen_validation_complete=False
+[PASS] Main scalar outputs are not polluted by long report text
+  polluted_keys=[]
+[PASS] Report viewer bundle exposes required foundation reports
+  missing_reports=[]
+[PASS] Stage V completion matches expectation
+  stage_v_complete=False; stage_v_status=FAIL_REGEN_SCALABILITY_COMPLETION_AUDIT
+[PASS] Stage W completion matches expectation
+  stage_w_complete=False; stage_w_status=FAIL_REAL_ENGINE_BENCHMARK_COMPLETION_AUDIT
+[PASS] Result key audit exists
+  status=WARN_UNREGISTERED_KEYS
+[FAIL] Result key audit fully passes
+  status=WARN_UNREGISTERED_KEYS
+[PASS] Phase 10A solver integration planning owner exists
+  status=PASS_PHASE_10A_SOLVER_INTEGRATION_PLANNING_OWNER; complete=True
+[PASS] Phase 10B.1 material property consumption audit owner exists
+  status=PASS_PHASE_10B1_MATERIAL_PROPERTY_CONSUMPTION_AUDIT_OWNER; complete=True
+[PASS] Phase 10B.2 material thermal conductivity integration owner exists
+  status=PASS_PHASE_10B2_MATERIAL_THERMAL_CONDUCTIVITY_INTEGRATION_OWNER; complete=True
+[PASS] Phase 10B.3 material specific heat integration owner exists
+  status=PASS_PHASE_10B3_MATERIAL_SPECIFIC_HEAT_INTEGRATION_OWNER; complete=True
+[PASS] Phase 10B.4 material density integration owner exists
+  status=PASS_PHASE_10B4_MATERIAL_DENSITY_INTEGRATION_OWNER; complete=True
+[PASS] Phase 10B.5 material temperature limit integration owner exists
+  status=PASS_PHASE_10B5_MATERIAL_TEMPERATURE_LIMIT_INTEGRATION_OWNER; complete=True
+[PASS] Phase 10B.6 material strength limit integration owner exists
+  status=PASS_PHASE_10B6_MATERIAL_STRENGTH_LIMIT_INTEGRATION_OWNER; complete=True
+[PASS] Phase 10B.7 material integration validation owner exists
+  status=FAIL_PHASE_10B7_MATERIAL_INTEGRATION_VALIDATION_OWNER; complete=True
+[PASS] Phase 10B.8 material integration completion audit exists
+  status=FAIL_MATERIAL_INTEGRATION_COMPLETION_AUDIT; complete=True
+[PASS] Phase 10C.1 coating property consumption audit owner exists
+  status=PASS_PHASE_10C1_COATING_PROPERTY_CONSUMPTION_AUDIT_OWNER; complete=True
+[PASS] Phase 10C.2 coating thermal conductivity integration owner exists
+  status=PASS_PHASE_10C2_COATING_THERMAL_CONDUCTIVITY_INTEGRATION_OWNER; complete=True
+[PASS] Phase 10C.3 coating thickness integration owner exists
+  status=PASS_PHASE_10C3_COATING_THICKNESS_INTEGRATION_OWNER; complete=True
+[PASS] Phase 10C.4 coating thermal resistance integration owner exists
+  status=PASS_PHASE_10C4_COATING_THERMAL_RESISTANCE_INTEGRATION_OWNER; complete=True
+[PASS] Phase 10C.5 coating temperature limit integration owner exists
+  status=PASS_PHASE_10C5_COATING_TEMPERATURE_LIMIT_INTEGRATION_OWNER; complete=True
+[PASS] Phase 10C.6 bond coat integration owner exists
+  status=PASS_PHASE_10C6_BOND_COAT_INTEGRATION_OWNER; complete=True
+[PASS] Phase 10C.7 coating integration validation owner exists
+  status=PASS_PHASE_10C7_COATING_INTEGRATION_VALIDATION_OWNER; complete=True
+[PASS] Phase 10C.8 coating integration completion audit exists
+  status=PASS_COATING_INTEGRATION_COMPLETION_AUDIT; complete=True
+[PASS] Phase 10D.1 temperature dependency discovery audit owner exists
+  status=PASS_PHASE_10D1_TEMPERATURE_DEPENDENCY_DISCOVERY_AUDIT_OWNER; complete=True
+[PASS] Phase 10D.2 material conductivity consumption audit owner exists
+  status=FAIL_PHASE_10D2_MATERIAL_CONDUCTIVITY_CONSUMPTION_AUDIT_OWNER; expected=FAIL_PHASE_10D2_MATERIAL_CONDUCTIVITY_CONSUMPTION_AUDIT_OWNER; complete=True
+[PASS] Phase 10D.3 specific heat consumption audit owner exists
+  status=FAIL_PHASE_10D3_SPECIFIC_HEAT_CONSUMPTION_AUDIT_OWNER; expected=FAIL_PHASE_10D3_SPECIFIC_HEAT_CONSUMPTION_AUDIT_OWNER; complete=True
+[PASS] Phase 10D.4 density coolant property consumption audit owner exists
+  status=FAIL_PHASE_10D4_DENSITY_COOLANT_PROPERTY_CONSUMPTION_AUDIT_OWNER; expected=FAIL_PHASE_10D4_DENSITY_COOLANT_PROPERTY_CONSUMPTION_AUDIT_OWNER; complete=True
+[PASS] Phase 10D.5 coating thermal consumption audit owner exists
+  status=PASS_PHASE_10D5_COATING_THERMAL_CONSUMPTION_AUDIT_OWNER; expected=PASS_PHASE_10D5_COATING_THERMAL_CONSUMPTION_AUDIT_OWNER; complete=True
+[PASS] Phase 10D.6 bond-coat consumption audit owner exists
+  status=PASS_PHASE_10D6_BOND_COAT_CONSUMPTION_AUDIT_OWNER; expected=PASS_PHASE_10D6_BOND_COAT_CONSUMPTION_AUDIT_OWNER; complete=True
+[PASS] Phase 10D.7 temperature-dependent solver completion audit owner exists
+  status=FAIL_PHASE_10D7_TEMPERATURE_DEPENDENT_SOLVER_COMPLETION_AUDIT_OWNER; expected=FAIL_PHASE_10D7_TEMPERATURE_DEPENDENT_SOLVER_COMPLETION_AUDIT_OWNER; complete=True
+[PASS] Phase 11A.1 regen geometry constraint discovery audit owner exists
+  status=PASS_PHASE_11A1_REGEN_GEOMETRY_CONSTRAINT_DISCOVERY_AUDIT_OWNER; complete=True; constraints=18; discovered=4
+[PASS] Phase 11A.2 regen geometry constraint validation owner exists
+  status=PASS_PHASE_11A2_REGEN_GEOMETRY_CONSTRAINT_VALIDATION_OWNER; complete=True; results=18; engineering_status=PASS_REGEN_GEOMETRY_CONSTRAINT_VALIDATION
+[PASS] Phase 11A.3 regen geometry failure explanation owner exists
+  status=PASS_PHASE_11A3_REGEN_GEOMETRY_FAILURE_EXPLANATION_OWNER; complete=True; explanations=0; engineering_status=PASS_REGEN_GEOMETRY_FAILURE_EXPLANATION
+[PASS] Phase 11A.4 regen geometry recommendation engine owner exists
+  status=PASS_PHASE_11A4_REGEN_GEOMETRY_RECOMMENDATION_ENGINE_OWNER; complete=True; recommendations=0; engineering_status=PASS_REGEN_GEOMETRY_RECOMMENDATION_ENGINE
+[PASS] Phase 11A.5 apply recommended geometry owner exists
+  status=PASS_PHASE_11A5_REGEN_GEOMETRY_APPLY_RECOMMENDATION_OWNER; complete=True; candidate_keys=14; engineering_status=PASS_REGEN_GEOMETRY_APPLY_RECOMMENDATION
+[PASS] Phase 11A.6 regen geometry output architecture owner exists
+  status=PASS_PHASE_11A6_REGEN_GEOMETRY_OUTPUT_ARCHITECTURE_OWNER; complete=True; summary_keys=10; engineering_status=PASS_REGEN_GEOMETRY_OUTPUT_ARCHITECTURE
+[PASS] Phase 11A.7 regen geometry output window is importable
+  importable=True
+[PASS] Phase 11A.8 regen geometry candidate acceptance owner exists
+  status=PASS_PHASE_11A8_REGEN_GEOMETRY_CANDIDATE_ACCEPTANCE_OWNER; complete=True; patch_keys=0; engineering_status=PASS_REGEN_GEOMETRY_NO_CANDIDATE_ACCEPTANCE_REQUIRED
+[PASS] Phase 11A.9 candidate acceptance UI controls exist
+  phase_11a9_ready=True
+[PASS] Phase 11A.10 full visual recommendation integration exists
+  phase_11a10_ready=True
+[PASS] Foundation save/load roundtrip preserves required state
+  PASS_FOUNDATION_SAVE_LOAD_VERIFICATION
+[PASS] Foundation UI/report bundle verification passes
+  PASS_FOUNDATION_UI_LAUNCH_VERIFICATION
+
+CASE: missing_material_table_blocks_pass
+----------------------------------------
+[PASS] Foundation attachment pipeline status matches expectation
+  pipeline_status=PASS
+[PASS] Stage U completion matches expectation
+  stage_u_regen_validation_complete=False
+[PASS] Main scalar outputs are not polluted by long report text
+  polluted_keys=[]
+[PASS] Report viewer bundle exposes required foundation reports
+  missing_reports=[]
+[PASS] Stage V completion matches expectation
+  stage_v_complete=False; stage_v_status=FAIL_REGEN_SCALABILITY_COMPLETION_AUDIT
+[PASS] Stage W completion matches expectation
+  stage_w_complete=False; stage_w_status=FAIL_REAL_ENGINE_BENCHMARK_COMPLETION_AUDIT
+[PASS] Result key audit exists
+  status=WARN_UNREGISTERED_KEYS
+[FAIL] Result key audit fully passes
+  status=WARN_UNREGISTERED_KEYS
+[PASS] Phase 10A solver integration planning owner exists
+  status=PASS_PHASE_10A_SOLVER_INTEGRATION_PLANNING_OWNER; complete=True
+[PASS] Phase 10B.1 material property consumption audit owner exists
+  status=PASS_PHASE_10B1_MATERIAL_PROPERTY_CONSUMPTION_AUDIT_OWNER; complete=True
+[PASS] Phase 10B.2 material thermal conductivity integration owner exists
+  status=PASS_PHASE_10B2_MATERIAL_THERMAL_CONDUCTIVITY_INTEGRATION_OWNER; complete=True
+[PASS] Phase 10B.3 material specific heat integration owner exists
+  status=PASS_PHASE_10B3_MATERIAL_SPECIFIC_HEAT_INTEGRATION_OWNER; complete=True
+[PASS] Phase 10B.4 material density integration owner exists
+  status=PASS_PHASE_10B4_MATERIAL_DENSITY_INTEGRATION_OWNER; complete=True
+[PASS] Phase 10B.5 material temperature limit integration owner exists
+  status=PASS_PHASE_10B5_MATERIAL_TEMPERATURE_LIMIT_INTEGRATION_OWNER; complete=True
+[PASS] Phase 10B.6 material strength limit integration owner exists
+  status=PASS_PHASE_10B6_MATERIAL_STRENGTH_LIMIT_INTEGRATION_OWNER; complete=True
+[PASS] Phase 10B.7 material integration validation owner exists
+  status=FAIL_PHASE_10B7_MATERIAL_INTEGRATION_VALIDATION_OWNER; complete=True
+[PASS] Phase 10B.8 material integration completion audit exists
+  status=FAIL_MATERIAL_INTEGRATION_COMPLETION_AUDIT; complete=True
+[PASS] Phase 10C.1 coating property consumption audit owner exists
+  status=PASS_PHASE_10C1_COATING_PROPERTY_CONSUMPTION_AUDIT_OWNER; complete=True
+[PASS] Phase 10C.2 coating thermal conductivity integration owner exists
+  status=PASS_PHASE_10C2_COATING_THERMAL_CONDUCTIVITY_INTEGRATION_OWNER; complete=True
+[PASS] Phase 10C.3 coating thickness integration owner exists
+  status=PASS_PHASE_10C3_COATING_THICKNESS_INTEGRATION_OWNER; complete=True
+[PASS] Phase 10C.4 coating thermal resistance integration owner exists
+  status=PASS_PHASE_10C4_COATING_THERMAL_RESISTANCE_INTEGRATION_OWNER; complete=True
+[PASS] Phase 10C.5 coating temperature limit integration owner exists
+  status=PASS_PHASE_10C5_COATING_TEMPERATURE_LIMIT_INTEGRATION_OWNER; complete=True
+[PASS] Phase 10C.6 bond coat integration owner exists
+  status=PASS_PHASE_10C6_BOND_COAT_INTEGRATION_OWNER; complete=True
+[PASS] Phase 10C.7 coating integration validation owner exists
+  status=PASS_PHASE_10C7_COATING_INTEGRATION_VALIDATION_OWNER; complete=True
+[PASS] Phase 10C.8 coating integration completion audit exists
+  status=PASS_COATING_INTEGRATION_COMPLETION_AUDIT; complete=True
+[PASS] Phase 10D.1 temperature dependency discovery audit owner exists
+  status=PASS_PHASE_10D1_TEMPERATURE_DEPENDENCY_DISCOVERY_AUDIT_OWNER; complete=True
+[PASS] Phase 10D.2 material conductivity consumption audit owner exists
+  status=PASS_PHASE_10D2_MATERIAL_CONDUCTIVITY_CONSUMPTION_AUDIT_OWNER; expected=PASS_PHASE_10D2_MATERIAL_CONDUCTIVITY_CONSUMPTION_AUDIT_OWNER; complete=True
+[PASS] Phase 10D.3 specific heat consumption audit owner exists
+  status=PASS_PHASE_10D3_SPECIFIC_HEAT_CONSUMPTION_AUDIT_OWNER; expected=PASS_PHASE_10D3_SPECIFIC_HEAT_CONSUMPTION_AUDIT_OWNER; complete=True
+[PASS] Phase 10D.4 density coolant property consumption audit owner exists
+  status=PASS_PHASE_10D4_DENSITY_COOLANT_PROPERTY_CONSUMPTION_AUDIT_OWNER; expected=PASS_PHASE_10D4_DENSITY_COOLANT_PROPERTY_CONSUMPTION_AUDIT_OWNER; complete=True
+[PASS] Phase 10D.5 coating thermal consumption audit owner exists
+  status=PASS_PHASE_10D5_COATING_THERMAL_CONSUMPTION_AUDIT_OWNER; expected=PASS_PHASE_10D5_COATING_THERMAL_CONSUMPTION_AUDIT_OWNER; complete=True
+[PASS] Phase 10D.6 bond-coat consumption audit owner exists
+  status=PASS_PHASE_10D6_BOND_COAT_CONSUMPTION_AUDIT_OWNER; expected=PASS_PHASE_10D6_BOND_COAT_CONSUMPTION_AUDIT_OWNER; complete=True
+[PASS] Phase 10D.7 temperature-dependent solver completion audit owner exists
+  status=PASS_PHASE_10D7_TEMPERATURE_DEPENDENT_SOLVER_COMPLETION_AUDIT_OWNER; expected=PASS_PHASE_10D7_TEMPERATURE_DEPENDENT_SOLVER_COMPLETION_AUDIT_OWNER; complete=True
+[PASS] Phase 11A.1 regen geometry constraint discovery audit owner exists
+  status=PASS_PHASE_11A1_REGEN_GEOMETRY_CONSTRAINT_DISCOVERY_AUDIT_OWNER; complete=True; constraints=18; discovered=4
+[PASS] Phase 11A.2 regen geometry constraint validation owner exists
+  status=PASS_PHASE_11A2_REGEN_GEOMETRY_CONSTRAINT_VALIDATION_OWNER; complete=True; results=18; engineering_status=PASS_REGEN_GEOMETRY_CONSTRAINT_VALIDATION
+[PASS] Phase 11A.3 regen geometry failure explanation owner exists
+  status=PASS_PHASE_11A3_REGEN_GEOMETRY_FAILURE_EXPLANATION_OWNER; complete=True; explanations=0; engineering_status=PASS_REGEN_GEOMETRY_FAILURE_EXPLANATION
+[PASS] Phase 11A.4 regen geometry recommendation engine owner exists
+  status=PASS_PHASE_11A4_REGEN_GEOMETRY_RECOMMENDATION_ENGINE_OWNER; complete=True; recommendations=0; engineering_status=PASS_REGEN_GEOMETRY_RECOMMENDATION_ENGINE
+[PASS] Phase 11A.5 apply recommended geometry owner exists
+  status=PASS_PHASE_11A5_REGEN_GEOMETRY_APPLY_RECOMMENDATION_OWNER; complete=True; candidate_keys=14; engineering_status=PASS_REGEN_GEOMETRY_APPLY_RECOMMENDATION
+[PASS] Phase 11A.6 regen geometry output architecture owner exists
+  status=PASS_PHASE_11A6_REGEN_GEOMETRY_OUTPUT_ARCHITECTURE_OWNER; complete=True; summary_keys=10; engineering_status=PASS_REGEN_GEOMETRY_OUTPUT_ARCHITECTURE
+[PASS] Phase 11A.7 regen geometry output window is importable
+  importable=True
+[PASS] Phase 11A.8 regen geometry candidate acceptance owner exists
+  status=PASS_PHASE_11A8_REGEN_GEOMETRY_CANDIDATE_ACCEPTANCE_OWNER; complete=True; patch_keys=0; engineering_status=PASS_REGEN_GEOMETRY_NO_CANDIDATE_ACCEPTANCE_REQUIRED
+[PASS] Phase 11A.9 candidate acceptance UI controls exist
+  phase_11a9_ready=True
+[PASS] Phase 11A.10 full visual recommendation integration exists
+  phase_11a10_ready=True
+[PASS] Foundation save/load roundtrip preserves required state
+  PASS_FOUNDATION_SAVE_LOAD_VERIFICATION
+[PASS] Foundation UI/report bundle verification passes
+  PASS_FOUNDATION_UI_LAUNCH_VERIFICATION
+
+CASE: selected_coating_missing_table_blocks_pass
+------------------------------------------------
+[PASS] Foundation attachment pipeline status matches expectation
+  pipeline_status=PASS
+[PASS] Stage U completion matches expectation
+  stage_u_regen_validation_complete=False
+[PASS] Main scalar outputs are not polluted by long report text
+  polluted_keys=[]
+[PASS] Report viewer bundle exposes required foundation reports
+  missing_reports=[]
+[PASS] Stage V completion matches expectation
+  stage_v_complete=False; stage_v_status=FAIL_REGEN_SCALABILITY_COMPLETION_AUDIT
+[PASS] Stage W completion matches expectation
+  stage_w_complete=False; stage_w_status=FAIL_REAL_ENGINE_BENCHMARK_COMPLETION_AUDIT
+[PASS] Result key audit exists
+  status=WARN_UNREGISTERED_KEYS
+[FAIL] Result key audit fully passes
+  status=WARN_UNREGISTERED_KEYS
+[PASS] Phase 10A solver integration planning owner exists
+  status=PASS_PHASE_10A_SOLVER_INTEGRATION_PLANNING_OWNER; complete=True
+[PASS] Phase 10B.1 material property consumption audit owner exists
+  status=PASS_PHASE_10B1_MATERIAL_PROPERTY_CONSUMPTION_AUDIT_OWNER; complete=True
+[PASS] Phase 10B.2 material thermal conductivity integration owner exists
+  status=PASS_PHASE_10B2_MATERIAL_THERMAL_CONDUCTIVITY_INTEGRATION_OWNER; complete=True
+[PASS] Phase 10B.3 material specific heat integration owner exists
+  status=PASS_PHASE_10B3_MATERIAL_SPECIFIC_HEAT_INTEGRATION_OWNER; complete=True
+[PASS] Phase 10B.4 material density integration owner exists
+  status=PASS_PHASE_10B4_MATERIAL_DENSITY_INTEGRATION_OWNER; complete=True
+[PASS] Phase 10B.5 material temperature limit integration owner exists
+  status=PASS_PHASE_10B5_MATERIAL_TEMPERATURE_LIMIT_INTEGRATION_OWNER; complete=True
+[PASS] Phase 10B.6 material strength limit integration owner exists
+  status=PASS_PHASE_10B6_MATERIAL_STRENGTH_LIMIT_INTEGRATION_OWNER; complete=True
+[PASS] Phase 10B.7 material integration validation owner exists
+  status=FAIL_PHASE_10B7_MATERIAL_INTEGRATION_VALIDATION_OWNER; complete=True
+[PASS] Phase 10B.8 material integration completion audit exists
+  status=FAIL_MATERIAL_INTEGRATION_COMPLETION_AUDIT; complete=True
+[PASS] Phase 10C.1 coating property consumption audit owner exists
+  status=PASS_PHASE_10C1_COATING_PROPERTY_CONSUMPTION_AUDIT_OWNER; complete=True
+[PASS] Phase 10C.2 coating thermal conductivity integration owner exists
+  status=PASS_PHASE_10C2_COATING_THERMAL_CONDUCTIVITY_INTEGRATION_OWNER; complete=True
+[PASS] Phase 10C.3 coating thickness integration owner exists
+  status=PASS_PHASE_10C3_COATING_THICKNESS_INTEGRATION_OWNER; complete=True
+[PASS] Phase 10C.4 coating thermal resistance integration owner exists
+  status=PASS_PHASE_10C4_COATING_THERMAL_RESISTANCE_INTEGRATION_OWNER; complete=True
+[PASS] Phase 10C.5 coating temperature limit integration owner exists
+  status=PASS_PHASE_10C5_COATING_TEMPERATURE_LIMIT_INTEGRATION_OWNER; complete=True
+[PASS] Phase 10C.6 bond coat integration owner exists
+  status=PASS_PHASE_10C6_BOND_COAT_INTEGRATION_OWNER; complete=True
+[PASS] Phase 10C.7 coating integration validation owner exists
+  status=FAIL_PHASE_10C7_COATING_INTEGRATION_VALIDATION_OWNER; complete=True
+[PASS] Phase 10C.8 coating integration completion audit exists
+  status=FAIL_COATING_INTEGRATION_COMPLETION_AUDIT; complete=True
+[PASS] Phase 10D.1 temperature dependency discovery audit owner exists
+  status=PASS_PHASE_10D1_TEMPERATURE_DEPENDENCY_DISCOVERY_AUDIT_OWNER; complete=True
+[PASS] Phase 10D.2 material conductivity consumption audit owner exists
+  status=PASS_PHASE_10D2_MATERIAL_CONDUCTIVITY_CONSUMPTION_AUDIT_OWNER; expected=PASS_PHASE_10D2_MATERIAL_CONDUCTIVITY_CONSUMPTION_AUDIT_OWNER; complete=True
+[PASS] Phase 10D.3 specific heat consumption audit owner exists
+  status=PASS_PHASE_10D3_SPECIFIC_HEAT_CONSUMPTION_AUDIT_OWNER; expected=PASS_PHASE_10D3_SPECIFIC_HEAT_CONSUMPTION_AUDIT_OWNER; complete=True
+[PASS] Phase 10D.4 density coolant property consumption audit owner exists
+  status=PASS_PHASE_10D4_DENSITY_COOLANT_PROPERTY_CONSUMPTION_AUDIT_OWNER; expected=PASS_PHASE_10D4_DENSITY_COOLANT_PROPERTY_CONSUMPTION_AUDIT_OWNER; complete=True
+[PASS] Phase 10D.5 coating thermal consumption audit owner exists
+  status=FAIL_PHASE_10D5_COATING_THERMAL_CONSUMPTION_AUDIT_OWNER; expected=FAIL_PHASE_10D5_COATING_THERMAL_CONSUMPTION_AUDIT_OWNER; complete=True
+[PASS] Phase 10D.6 bond-coat consumption audit owner exists
+  status=PASS_PHASE_10D6_BOND_COAT_CONSUMPTION_AUDIT_OWNER; expected=PASS_PHASE_10D6_BOND_COAT_CONSUMPTION_AUDIT_OWNER; complete=True
+[PASS] Phase 10D.7 temperature-dependent solver completion audit owner exists
+  status=FAIL_PHASE_10D7_TEMPERATURE_DEPENDENT_SOLVER_COMPLETION_AUDIT_OWNER; expected=FAIL_PHASE_10D7_TEMPERATURE_DEPENDENT_SOLVER_COMPLETION_AUDIT_OWNER; complete=True
+[PASS] Phase 11A.1 regen geometry constraint discovery audit owner exists
+  status=PASS_PHASE_11A1_REGEN_GEOMETRY_CONSTRAINT_DISCOVERY_AUDIT_OWNER; complete=True; constraints=18; discovered=4
+[PASS] Phase 11A.2 regen geometry constraint validation owner exists
+  status=PASS_PHASE_11A2_REGEN_GEOMETRY_CONSTRAINT_VALIDATION_OWNER; complete=True; results=18; engineering_status=PASS_REGEN_GEOMETRY_CONSTRAINT_VALIDATION
+[PASS] Phase 11A.3 regen geometry failure explanation owner exists
+  status=PASS_PHASE_11A3_REGEN_GEOMETRY_FAILURE_EXPLANATION_OWNER; complete=True; explanations=0; engineering_status=PASS_REGEN_GEOMETRY_FAILURE_EXPLANATION
+[PASS] Phase 11A.4 regen geometry recommendation engine owner exists
+  status=PASS_PHASE_11A4_REGEN_GEOMETRY_RECOMMENDATION_ENGINE_OWNER; complete=True; recommendations=0; engineering_status=PASS_REGEN_GEOMETRY_RECOMMENDATION_ENGINE
+[PASS] Phase 11A.5 apply recommended geometry owner exists
+  status=PASS_PHASE_11A5_REGEN_GEOMETRY_APPLY_RECOMMENDATION_OWNER; complete=True; candidate_keys=14; engineering_status=PASS_REGEN_GEOMETRY_APPLY_RECOMMENDATION
+[PASS] Phase 11A.6 regen geometry output architecture owner exists
+  status=PASS_PHASE_11A6_REGEN_GEOMETRY_OUTPUT_ARCHITECTURE_OWNER; complete=True; summary_keys=10; engineering_status=PASS_REGEN_GEOMETRY_OUTPUT_ARCHITECTURE
+[PASS] Phase 11A.7 regen geometry output window is importable
+  importable=True
+[PASS] Phase 11A.8 regen geometry candidate acceptance owner exists
+  status=PASS_PHASE_11A8_REGEN_GEOMETRY_CANDIDATE_ACCEPTANCE_OWNER; complete=True; patch_keys=0; engineering_status=PASS_REGEN_GEOMETRY_NO_CANDIDATE_ACCEPTANCE_REQUIRED
+[PASS] Phase 11A.9 candidate acceptance UI controls exist
+  phase_11a9_ready=True
+[PASS] Phase 11A.10 full visual recommendation integration exists
+  phase_11a10_ready=True
+[PASS] Foundation save/load roundtrip preserves required state
+  PASS_FOUNDATION_SAVE_LOAD_VERIFICATION
+[PASS] Foundation UI/report bundle verification passes
+  PASS_FOUNDATION_UI_LAUNCH_VERIFICATION
+
+CASE: overheated_wall_blocks_pass
+---------------------------------
+[PASS] Foundation attachment pipeline status matches expectation
+  pipeline_status=PASS
+[PASS] Stage U completion matches expectation
+  stage_u_regen_validation_complete=False
+[PASS] Main scalar outputs are not polluted by long report text
+  polluted_keys=[]
+[PASS] Report viewer bundle exposes required foundation reports
+  missing_reports=[]
+[PASS] Stage V completion matches expectation
+  stage_v_complete=False; stage_v_status=FAIL_REGEN_SCALABILITY_COMPLETION_AUDIT
+[PASS] Stage W completion matches expectation
+  stage_w_complete=False; stage_w_status=FAIL_REAL_ENGINE_BENCHMARK_COMPLETION_AUDIT
+[PASS] Result key audit exists
+  status=WARN_UNREGISTERED_KEYS
+[FAIL] Result key audit fully passes
+  status=WARN_UNREGISTERED_KEYS
+[PASS] Phase 10A solver integration planning owner exists
+  status=PASS_PHASE_10A_SOLVER_INTEGRATION_PLANNING_OWNER; complete=True
+[PASS] Phase 10B.1 material property consumption audit owner exists
+  status=PASS_PHASE_10B1_MATERIAL_PROPERTY_CONSUMPTION_AUDIT_OWNER; complete=True
+[PASS] Phase 10B.2 material thermal conductivity integration owner exists
+  status=PASS_PHASE_10B2_MATERIAL_THERMAL_CONDUCTIVITY_INTEGRATION_OWNER; complete=True
+[PASS] Phase 10B.3 material specific heat integration owner exists
+  status=PASS_PHASE_10B3_MATERIAL_SPECIFIC_HEAT_INTEGRATION_OWNER; complete=True
+[PASS] Phase 10B.4 material density integration owner exists
+  status=PASS_PHASE_10B4_MATERIAL_DENSITY_INTEGRATION_OWNER; complete=True
+[PASS] Phase 10B.5 material temperature limit integration owner exists
+  status=PASS_PHASE_10B5_MATERIAL_TEMPERATURE_LIMIT_INTEGRATION_OWNER; complete=True
+[PASS] Phase 10B.6 material strength limit integration owner exists
+  status=PASS_PHASE_10B6_MATERIAL_STRENGTH_LIMIT_INTEGRATION_OWNER; complete=True
+[PASS] Phase 10B.7 material integration validation owner exists
+  status=FAIL_PHASE_10B7_MATERIAL_INTEGRATION_VALIDATION_OWNER; complete=True
+[PASS] Phase 10B.8 material integration completion audit exists
+  status=FAIL_MATERIAL_INTEGRATION_COMPLETION_AUDIT; complete=True
+[PASS] Phase 10C.1 coating property consumption audit owner exists
+  status=PASS_PHASE_10C1_COATING_PROPERTY_CONSUMPTION_AUDIT_OWNER; complete=True
+[PASS] Phase 10C.2 coating thermal conductivity integration owner exists
+  status=PASS_PHASE_10C2_COATING_THERMAL_CONDUCTIVITY_INTEGRATION_OWNER; complete=True
+[PASS] Phase 10C.3 coating thickness integration owner exists
+  status=PASS_PHASE_10C3_COATING_THICKNESS_INTEGRATION_OWNER; complete=True
+[PASS] Phase 10C.4 coating thermal resistance integration owner exists
+  status=PASS_PHASE_10C4_COATING_THERMAL_RESISTANCE_INTEGRATION_OWNER; complete=True
+[PASS] Phase 10C.5 coating temperature limit integration owner exists
+  status=PASS_PHASE_10C5_COATING_TEMPERATURE_LIMIT_INTEGRATION_OWNER; complete=True
+[PASS] Phase 10C.6 bond coat integration owner exists
+  status=PASS_PHASE_10C6_BOND_COAT_INTEGRATION_OWNER; complete=True
+[PASS] Phase 10C.7 coating integration validation owner exists
+  status=PASS_PHASE_10C7_COATING_INTEGRATION_VALIDATION_OWNER; complete=True
+[PASS] Phase 10C.8 coating integration completion audit exists
+  status=PASS_COATING_INTEGRATION_COMPLETION_AUDIT; complete=True
+[PASS] Phase 10D.1 temperature dependency discovery audit owner exists
+  status=PASS_PHASE_10D1_TEMPERATURE_DEPENDENCY_DISCOVERY_AUDIT_OWNER; complete=True
+[PASS] Phase 10D.2 material conductivity consumption audit owner exists
+  status=PASS_PHASE_10D2_MATERIAL_CONDUCTIVITY_CONSUMPTION_AUDIT_OWNER; expected=PASS_PHASE_10D2_MATERIAL_CONDUCTIVITY_CONSUMPTION_AUDIT_OWNER; complete=True
+[PASS] Phase 10D.3 specific heat consumption audit owner exists
+  status=PASS_PHASE_10D3_SPECIFIC_HEAT_CONSUMPTION_AUDIT_OWNER; expected=PASS_PHASE_10D3_SPECIFIC_HEAT_CONSUMPTION_AUDIT_OWNER; complete=True
+[PASS] Phase 10D.4 density coolant property consumption audit owner exists
+  status=PASS_PHASE_10D4_DENSITY_COOLANT_PROPERTY_CONSUMPTION_AUDIT_OWNER; expected=PASS_PHASE_10D4_DENSITY_COOLANT_PROPERTY_CONSUMPTION_AUDIT_OWNER; complete=True
+[PASS] Phase 10D.5 coating thermal consumption audit owner exists
+  status=PASS_PHASE_10D5_COATING_THERMAL_CONSUMPTION_AUDIT_OWNER; expected=PASS_PHASE_10D5_COATING_THERMAL_CONSUMPTION_AUDIT_OWNER; complete=True
+[PASS] Phase 10D.6 bond-coat consumption audit owner exists
+  status=PASS_PHASE_10D6_BOND_COAT_CONSUMPTION_AUDIT_OWNER; expected=PASS_PHASE_10D6_BOND_COAT_CONSUMPTION_AUDIT_OWNER; complete=True
+[PASS] Phase 10D.7 temperature-dependent solver completion audit owner exists
+  status=PASS_PHASE_10D7_TEMPERATURE_DEPENDENT_SOLVER_COMPLETION_AUDIT_OWNER; expected=PASS_PHASE_10D7_TEMPERATURE_DEPENDENT_SOLVER_COMPLETION_AUDIT_OWNER; complete=True
+[PASS] Phase 11A.1 regen geometry constraint discovery audit owner exists
+  status=PASS_PHASE_11A1_REGEN_GEOMETRY_CONSTRAINT_DISCOVERY_AUDIT_OWNER; complete=True; constraints=18; discovered=4
+[PASS] Phase 11A.2 regen geometry constraint validation owner exists
+  status=PASS_PHASE_11A2_REGEN_GEOMETRY_CONSTRAINT_VALIDATION_OWNER; complete=True; results=18; engineering_status=PASS_REGEN_GEOMETRY_CONSTRAINT_VALIDATION
+[PASS] Phase 11A.3 regen geometry failure explanation owner exists
+  status=PASS_PHASE_11A3_REGEN_GEOMETRY_FAILURE_EXPLANATION_OWNER; complete=True; explanations=0; engineering_status=PASS_REGEN_GEOMETRY_FAILURE_EXPLANATION
+[PASS] Phase 11A.4 regen geometry recommendation engine owner exists
+  status=PASS_PHASE_11A4_REGEN_GEOMETRY_RECOMMENDATION_ENGINE_OWNER; complete=True; recommendations=0; engineering_status=PASS_REGEN_GEOMETRY_RECOMMENDATION_ENGINE
+[PASS] Phase 11A.5 apply recommended geometry owner exists
+  status=PASS_PHASE_11A5_REGEN_GEOMETRY_APPLY_RECOMMENDATION_OWNER; complete=True; candidate_keys=14; engineering_status=PASS_REGEN_GEOMETRY_APPLY_RECOMMENDATION
+[PASS] Phase 11A.6 regen geometry output architecture owner exists
+  status=PASS_PHASE_11A6_REGEN_GEOMETRY_OUTPUT_ARCHITECTURE_OWNER; complete=True; summary_keys=10; engineering_status=PASS_REGEN_GEOMETRY_OUTPUT_ARCHITECTURE
+[PASS] Phase 11A.7 regen geometry output window is importable
+  importable=True
+[PASS] Phase 11A.8 regen geometry candidate acceptance owner exists
+  status=PASS_PHASE_11A8_REGEN_GEOMETRY_CANDIDATE_ACCEPTANCE_OWNER; complete=True; patch_keys=0; engineering_status=PASS_REGEN_GEOMETRY_NO_CANDIDATE_ACCEPTANCE_REQUIRED
+[PASS] Phase 11A.9 candidate acceptance UI controls exist
+  phase_11a9_ready=True
+[PASS] Phase 11A.10 full visual recommendation integration exists
+  phase_11a10_ready=True
+[PASS] Foundation save/load roundtrip preserves required state
+  PASS_FOUNDATION_SAVE_LOAD_VERIFICATION
+[PASS] Foundation UI/report bundle verification passes
+  PASS_FOUNDATION_UI_LAUNCH_VERIFICATION
+
+CASE: low_coolant_velocity_blocks_scalability_signoff
+-----------------------------------------------------
+[PASS] Foundation attachment pipeline status matches expectation
+  pipeline_status=PASS
+[PASS] Stage U completion matches expectation
+  stage_u_regen_validation_complete=True
+[PASS] Main scalar outputs are not polluted by long report text
+  polluted_keys=[]
+[PASS] Report viewer bundle exposes required foundation reports
+  missing_reports=[]
+[PASS] Stage V completion matches expectation
+  stage_v_complete=False; stage_v_status=FAIL_REGEN_SCALABILITY_COMPLETION_AUDIT
+[PASS] Stage W completion matches expectation
+  stage_w_complete=False; stage_w_status=FAIL_REAL_ENGINE_BENCHMARK_COMPLETION_AUDIT
+[PASS] Result key audit exists
+  status=WARN_UNREGISTERED_KEYS
+[FAIL] Result key audit fully passes
+  status=WARN_UNREGISTERED_KEYS
+[PASS] Phase 10A solver integration planning owner exists
+  status=PASS_PHASE_10A_SOLVER_INTEGRATION_PLANNING_OWNER; complete=True
+[PASS] Phase 10B.1 material property consumption audit owner exists
+  status=PASS_PHASE_10B1_MATERIAL_PROPERTY_CONSUMPTION_AUDIT_OWNER; complete=True
+[PASS] Phase 10B.2 material thermal conductivity integration owner exists
+  status=PASS_PHASE_10B2_MATERIAL_THERMAL_CONDUCTIVITY_INTEGRATION_OWNER; complete=True
+[PASS] Phase 10B.3 material specific heat integration owner exists
+  status=PASS_PHASE_10B3_MATERIAL_SPECIFIC_HEAT_INTEGRATION_OWNER; complete=True
+[PASS] Phase 10B.4 material density integration owner exists
+  status=PASS_PHASE_10B4_MATERIAL_DENSITY_INTEGRATION_OWNER; complete=True
+[PASS] Phase 10B.5 material temperature limit integration owner exists
+  status=PASS_PHASE_10B5_MATERIAL_TEMPERATURE_LIMIT_INTEGRATION_OWNER; complete=True
+[PASS] Phase 10B.6 material strength limit integration owner exists
+  status=PASS_PHASE_10B6_MATERIAL_STRENGTH_LIMIT_INTEGRATION_OWNER; complete=True
+[PASS] Phase 10B.7 material integration validation owner exists
+  status=FAIL_PHASE_10B7_MATERIAL_INTEGRATION_VALIDATION_OWNER; complete=True
+[PASS] Phase 10B.8 material integration completion audit exists
+  status=FAIL_MATERIAL_INTEGRATION_COMPLETION_AUDIT; complete=True
+[PASS] Phase 10C.1 coating property consumption audit owner exists
+  status=PASS_PHASE_10C1_COATING_PROPERTY_CONSUMPTION_AUDIT_OWNER; complete=True
+[PASS] Phase 10C.2 coating thermal conductivity integration owner exists
+  status=PASS_PHASE_10C2_COATING_THERMAL_CONDUCTIVITY_INTEGRATION_OWNER; complete=True
+[PASS] Phase 10C.3 coating thickness integration owner exists
+  status=PASS_PHASE_10C3_COATING_THICKNESS_INTEGRATION_OWNER; complete=True
+[PASS] Phase 10C.4 coating thermal resistance integration owner exists
+  status=PASS_PHASE_10C4_COATING_THERMAL_RESISTANCE_INTEGRATION_OWNER; complete=True
+[PASS] Phase 10C.5 coating temperature limit integration owner exists
+  status=PASS_PHASE_10C5_COATING_TEMPERATURE_LIMIT_INTEGRATION_OWNER; complete=True
+[PASS] Phase 10C.6 bond coat integration owner exists
+  status=PASS_PHASE_10C6_BOND_COAT_INTEGRATION_OWNER; complete=True
+[PASS] Phase 10C.7 coating integration validation owner exists
+  status=PASS_PHASE_10C7_COATING_INTEGRATION_VALIDATION_OWNER; complete=True
+[PASS] Phase 10C.8 coating integration completion audit exists
+  status=PASS_COATING_INTEGRATION_COMPLETION_AUDIT; complete=True
+[PASS] Phase 10D.1 temperature dependency discovery audit owner exists
+  status=PASS_PHASE_10D1_TEMPERATURE_DEPENDENCY_DISCOVERY_AUDIT_OWNER; complete=True
+[PASS] Phase 10D.2 material conductivity consumption audit owner exists
+  status=PASS_PHASE_10D2_MATERIAL_CONDUCTIVITY_CONSUMPTION_AUDIT_OWNER; expected=PASS_PHASE_10D2_MATERIAL_CONDUCTIVITY_CONSUMPTION_AUDIT_OWNER; complete=True
+[PASS] Phase 10D.3 specific heat consumption audit owner exists
+  status=PASS_PHASE_10D3_SPECIFIC_HEAT_CONSUMPTION_AUDIT_OWNER; expected=PASS_PHASE_10D3_SPECIFIC_HEAT_CONSUMPTION_AUDIT_OWNER; complete=True
+[PASS] Phase 10D.4 density coolant property consumption audit owner exists
+  status=PASS_PHASE_10D4_DENSITY_COOLANT_PROPERTY_CONSUMPTION_AUDIT_OWNER; expected=PASS_PHASE_10D4_DENSITY_COOLANT_PROPERTY_CONSUMPTION_AUDIT_OWNER; complete=True
+[PASS] Phase 10D.5 coating thermal consumption audit owner exists
+  status=PASS_PHASE_10D5_COATING_THERMAL_CONSUMPTION_AUDIT_OWNER; expected=PASS_PHASE_10D5_COATING_THERMAL_CONSUMPTION_AUDIT_OWNER; complete=True
+[PASS] Phase 10D.6 bond-coat consumption audit owner exists
+  status=PASS_PHASE_10D6_BOND_COAT_CONSUMPTION_AUDIT_OWNER; expected=PASS_PHASE_10D6_BOND_COAT_CONSUMPTION_AUDIT_OWNER; complete=True
+[PASS] Phase 10D.7 temperature-dependent solver completion audit owner exists
+  status=PASS_PHASE_10D7_TEMPERATURE_DEPENDENT_SOLVER_COMPLETION_AUDIT_OWNER; expected=PASS_PHASE_10D7_TEMPERATURE_DEPENDENT_SOLVER_COMPLETION_AUDIT_OWNER; complete=True
+[PASS] Phase 11A.1 regen geometry constraint discovery audit owner exists
+  status=PASS_PHASE_11A1_REGEN_GEOMETRY_CONSTRAINT_DISCOVERY_AUDIT_OWNER; complete=True; constraints=18; discovered=4
+[PASS] Phase 11A.2 regen geometry constraint validation owner exists
+  status=PASS_PHASE_11A2_REGEN_GEOMETRY_CONSTRAINT_VALIDATION_OWNER; complete=True; results=18; engineering_status=WARN_REGEN_GEOMETRY_CONSTRAINT_VALIDATION
+[PASS] Phase 11A.3 regen geometry failure explanation owner exists
+  status=PASS_PHASE_11A3_REGEN_GEOMETRY_FAILURE_EXPLANATION_OWNER; complete=True; explanations=1; engineering_status=WARN_REGEN_GEOMETRY_FAILURE_EXPLANATION
+[PASS] Phase 11A.4 regen geometry recommendation engine owner exists
+  status=PASS_PHASE_11A4_REGEN_GEOMETRY_RECOMMENDATION_ENGINE_OWNER; complete=True; recommendations=1; engineering_status=WARN_REGEN_GEOMETRY_RECOMMENDATION_ENGINE
+[PASS] Phase 11A.5 apply recommended geometry owner exists
+  status=PASS_PHASE_11A5_REGEN_GEOMETRY_APPLY_RECOMMENDATION_OWNER; complete=True; candidate_keys=16; engineering_status=WARN_REGEN_GEOMETRY_APPLY_RECOMMENDATION_CANDIDATE_CREATED
+[PASS] Phase 11A.6 regen geometry output architecture owner exists
+  status=PASS_PHASE_11A6_REGEN_GEOMETRY_OUTPUT_ARCHITECTURE_OWNER; complete=True; summary_keys=10; engineering_status=WARN_REGEN_GEOMETRY_OUTPUT_ARCHITECTURE_ACTIONABLE
+[PASS] Phase 11A.7 regen geometry output window is importable
+  importable=True
+[PASS] Phase 11A.8 regen geometry candidate acceptance owner exists
+  status=PASS_PHASE_11A8_REGEN_GEOMETRY_CANDIDATE_ACCEPTANCE_OWNER; complete=True; patch_keys=2; engineering_status=WARN_REGEN_GEOMETRY_CANDIDATE_READY_FOR_USER_ACCEPTANCE
+[PASS] Phase 11A.9 candidate acceptance UI controls exist
+  phase_11a9_ready=True
+[PASS] Phase 11A.10 full visual recommendation integration exists
+  phase_11a10_ready=True
+[PASS] Foundation save/load roundtrip preserves required state
+  PASS_FOUNDATION_SAVE_LOAD_VERIFICATION
+[PASS] Foundation UI/report bundle verification passes
+  PASS_FOUNDATION_UI_LAUNCH_VERIFICATION
+
+CASE: low_confidence_public_benchmark_blocks_stage_w
+----------------------------------------------------
+[PASS] Foundation attachment pipeline status matches expectation
+  pipeline_status=PASS
+[PASS] Stage U completion matches expectation
+  stage_u_regen_validation_complete=True
+[PASS] Main scalar outputs are not polluted by long report text
+  polluted_keys=[]
+[PASS] Report viewer bundle exposes required foundation reports
+  missing_reports=[]
+[PASS] Stage V completion matches expectation
+  stage_v_complete=True; stage_v_status=PASS_REGEN_SCALABILITY_COMPLETION_AUDIT
+[PASS] Stage W completion matches expectation
+  stage_w_complete=False; stage_w_status=FAIL_REAL_ENGINE_BENCHMARK_COMPLETION_AUDIT
+[PASS] Result key audit exists
+  status=WARN_UNREGISTERED_KEYS
+[FAIL] Result key audit fully passes
+  status=WARN_UNREGISTERED_KEYS
+[PASS] Phase 10A solver integration planning owner exists
+  status=PASS_PHASE_10A_SOLVER_INTEGRATION_PLANNING_OWNER; complete=True
+[PASS] Phase 10B.1 material property consumption audit owner exists
+  status=PASS_PHASE_10B1_MATERIAL_PROPERTY_CONSUMPTION_AUDIT_OWNER; complete=True
+[PASS] Phase 10B.2 material thermal conductivity integration owner exists
+  status=PASS_PHASE_10B2_MATERIAL_THERMAL_CONDUCTIVITY_INTEGRATION_OWNER; complete=True
+[PASS] Phase 10B.3 material specific heat integration owner exists
+  status=PASS_PHASE_10B3_MATERIAL_SPECIFIC_HEAT_INTEGRATION_OWNER; complete=True
+[PASS] Phase 10B.4 material density integration owner exists
+  status=PASS_PHASE_10B4_MATERIAL_DENSITY_INTEGRATION_OWNER; complete=True
+[PASS] Phase 10B.5 material temperature limit integration owner exists
+  status=PASS_PHASE_10B5_MATERIAL_TEMPERATURE_LIMIT_INTEGRATION_OWNER; complete=True
+[PASS] Phase 10B.6 material strength limit integration owner exists
+  status=PASS_PHASE_10B6_MATERIAL_STRENGTH_LIMIT_INTEGRATION_OWNER; complete=True
+[PASS] Phase 10B.7 material integration validation owner exists
+  status=FAIL_PHASE_10B7_MATERIAL_INTEGRATION_VALIDATION_OWNER; complete=True
+[PASS] Phase 10B.8 material integration completion audit exists
+  status=FAIL_MATERIAL_INTEGRATION_COMPLETION_AUDIT; complete=True
+[PASS] Phase 10C.1 coating property consumption audit owner exists
+  status=PASS_PHASE_10C1_COATING_PROPERTY_CONSUMPTION_AUDIT_OWNER; complete=True
+[PASS] Phase 10C.2 coating thermal conductivity integration owner exists
+  status=PASS_PHASE_10C2_COATING_THERMAL_CONDUCTIVITY_INTEGRATION_OWNER; complete=True
+[PASS] Phase 10C.3 coating thickness integration owner exists
+  status=PASS_PHASE_10C3_COATING_THICKNESS_INTEGRATION_OWNER; complete=True
+[PASS] Phase 10C.4 coating thermal resistance integration owner exists
+  status=PASS_PHASE_10C4_COATING_THERMAL_RESISTANCE_INTEGRATION_OWNER; complete=True
+[PASS] Phase 10C.5 coating temperature limit integration owner exists
+  status=PASS_PHASE_10C5_COATING_TEMPERATURE_LIMIT_INTEGRATION_OWNER; complete=True
+[PASS] Phase 10C.6 bond coat integration owner exists
+  status=PASS_PHASE_10C6_BOND_COAT_INTEGRATION_OWNER; complete=True
+[PASS] Phase 10C.7 coating integration validation owner exists
+  status=PASS_PHASE_10C7_COATING_INTEGRATION_VALIDATION_OWNER; complete=True
+[PASS] Phase 10C.8 coating integration completion audit exists
+  status=PASS_COATING_INTEGRATION_COMPLETION_AUDIT; complete=True
+[PASS] Phase 10D.1 temperature dependency discovery audit owner exists
+  status=PASS_PHASE_10D1_TEMPERATURE_DEPENDENCY_DISCOVERY_AUDIT_OWNER; complete=True
+[PASS] Phase 10D.2 material conductivity consumption audit owner exists
+  status=PASS_PHASE_10D2_MATERIAL_CONDUCTIVITY_CONSUMPTION_AUDIT_OWNER; expected=PASS_PHASE_10D2_MATERIAL_CONDUCTIVITY_CONSUMPTION_AUDIT_OWNER; complete=True
+[PASS] Phase 10D.3 specific heat consumption audit owner exists
+  status=PASS_PHASE_10D3_SPECIFIC_HEAT_CONSUMPTION_AUDIT_OWNER; expected=PASS_PHASE_10D3_SPECIFIC_HEAT_CONSUMPTION_AUDIT_OWNER; complete=True
+[PASS] Phase 10D.4 density coolant property consumption audit owner exists
+  status=PASS_PHASE_10D4_DENSITY_COOLANT_PROPERTY_CONSUMPTION_AUDIT_OWNER; expected=PASS_PHASE_10D4_DENSITY_COOLANT_PROPERTY_CONSUMPTION_AUDIT_OWNER; complete=True
+[PASS] Phase 10D.5 coating thermal consumption audit owner exists
+  status=PASS_PHASE_10D5_COATING_THERMAL_CONSUMPTION_AUDIT_OWNER; expected=PASS_PHASE_10D5_COATING_THERMAL_CONSUMPTION_AUDIT_OWNER; complete=True
+[PASS] Phase 10D.6 bond-coat consumption audit owner exists
+  status=PASS_PHASE_10D6_BOND_COAT_CONSUMPTION_AUDIT_OWNER; expected=PASS_PHASE_10D6_BOND_COAT_CONSUMPTION_AUDIT_OWNER; complete=True
+[PASS] Phase 10D.7 temperature-dependent solver completion audit owner exists
+  status=PASS_PHASE_10D7_TEMPERATURE_DEPENDENT_SOLVER_COMPLETION_AUDIT_OWNER; expected=PASS_PHASE_10D7_TEMPERATURE_DEPENDENT_SOLVER_COMPLETION_AUDIT_OWNER; complete=True
+[PASS] Phase 11A.1 regen geometry constraint discovery audit owner exists
+  status=PASS_PHASE_11A1_REGEN_GEOMETRY_CONSTRAINT_DISCOVERY_AUDIT_OWNER; complete=True; constraints=18; discovered=4
+[PASS] Phase 11A.2 regen geometry constraint validation owner exists
+  status=PASS_PHASE_11A2_REGEN_GEOMETRY_CONSTRAINT_VALIDATION_OWNER; complete=True; results=18; engineering_status=PASS_REGEN_GEOMETRY_CONSTRAINT_VALIDATION
+[PASS] Phase 11A.3 regen geometry failure explanation owner exists
+  status=PASS_PHASE_11A3_REGEN_GEOMETRY_FAILURE_EXPLANATION_OWNER; complete=True; explanations=0; engineering_status=PASS_REGEN_GEOMETRY_FAILURE_EXPLANATION
+[PASS] Phase 11A.4 regen geometry recommendation engine owner exists
+  status=PASS_PHASE_11A4_REGEN_GEOMETRY_RECOMMENDATION_ENGINE_OWNER; complete=True; recommendations=0; engineering_status=PASS_REGEN_GEOMETRY_RECOMMENDATION_ENGINE
+[PASS] Phase 11A.5 apply recommended geometry owner exists
+  status=PASS_PHASE_11A5_REGEN_GEOMETRY_APPLY_RECOMMENDATION_OWNER; complete=True; candidate_keys=14; engineering_status=PASS_REGEN_GEOMETRY_APPLY_RECOMMENDATION
+[PASS] Phase 11A.6 regen geometry output architecture owner exists
+  status=PASS_PHASE_11A6_REGEN_GEOMETRY_OUTPUT_ARCHITECTURE_OWNER; complete=True; summary_keys=10; engineering_status=PASS_REGEN_GEOMETRY_OUTPUT_ARCHITECTURE
+[PASS] Phase 11A.7 regen geometry output window is importable
+  importable=True
+[PASS] Phase 11A.8 regen geometry candidate acceptance owner exists
+  status=PASS_PHASE_11A8_REGEN_GEOMETRY_CANDIDATE_ACCEPTANCE_OWNER; complete=True; patch_keys=0; engineering_status=PASS_REGEN_GEOMETRY_NO_CANDIDATE_ACCEPTANCE_REQUIRED
+[PASS] Phase 11A.9 candidate acceptance UI controls exist
+  phase_11a9_ready=True
+[PASS] Phase 11A.10 full visual recommendation integration exists
+  phase_11a10_ready=True
+[PASS] Foundation save/load roundtrip preserves required state
+  PASS_FOUNDATION_SAVE_LOAD_VERIFICATION
+[PASS] Foundation UI/report bundle verification passes
+  PASS_FOUNDATION_UI_LAUNCH_VERIFICATION
+
+CASE: out_of_band_public_benchmark_blocks_stage_w
+-------------------------------------------------
+[PASS] Foundation attachment pipeline status matches expectation
+  pipeline_status=PASS
+[PASS] Stage U completion matches expectation
+  stage_u_regen_validation_complete=True
+[PASS] Main scalar outputs are not polluted by long report text
+  polluted_keys=[]
+[PASS] Report viewer bundle exposes required foundation reports
+  missing_reports=[]
+[PASS] Stage V completion matches expectation
+  stage_v_complete=True; stage_v_status=PASS_REGEN_SCALABILITY_COMPLETION_AUDIT
+[PASS] Stage W completion matches expectation
+  stage_w_complete=False; stage_w_status=FAIL_REAL_ENGINE_BENCHMARK_COMPLETION_AUDIT
+[PASS] Result key audit exists
+  status=WARN_UNREGISTERED_KEYS
+[FAIL] Result key audit fully passes
+  status=WARN_UNREGISTERED_KEYS
+[PASS] Phase 10A solver integration planning owner exists
+  status=PASS_PHASE_10A_SOLVER_INTEGRATION_PLANNING_OWNER; complete=True
+[PASS] Phase 10B.1 material property consumption audit owner exists
+  status=PASS_PHASE_10B1_MATERIAL_PROPERTY_CONSUMPTION_AUDIT_OWNER; complete=True
+[PASS] Phase 10B.2 material thermal conductivity integration owner exists
+  status=PASS_PHASE_10B2_MATERIAL_THERMAL_CONDUCTIVITY_INTEGRATION_OWNER; complete=True
+[PASS] Phase 10B.3 material specific heat integration owner exists
+  status=PASS_PHASE_10B3_MATERIAL_SPECIFIC_HEAT_INTEGRATION_OWNER; complete=True
+[PASS] Phase 10B.4 material density integration owner exists
+  status=PASS_PHASE_10B4_MATERIAL_DENSITY_INTEGRATION_OWNER; complete=True
+[PASS] Phase 10B.5 material temperature limit integration owner exists
+  status=PASS_PHASE_10B5_MATERIAL_TEMPERATURE_LIMIT_INTEGRATION_OWNER; complete=True
+[PASS] Phase 10B.6 material strength limit integration owner exists
+  status=PASS_PHASE_10B6_MATERIAL_STRENGTH_LIMIT_INTEGRATION_OWNER; complete=True
+[PASS] Phase 10B.7 material integration validation owner exists
+  status=FAIL_PHASE_10B7_MATERIAL_INTEGRATION_VALIDATION_OWNER; complete=True
+[PASS] Phase 10B.8 material integration completion audit exists
+  status=FAIL_MATERIAL_INTEGRATION_COMPLETION_AUDIT; complete=True
+[PASS] Phase 10C.1 coating property consumption audit owner exists
+  status=PASS_PHASE_10C1_COATING_PROPERTY_CONSUMPTION_AUDIT_OWNER; complete=True
+[PASS] Phase 10C.2 coating thermal conductivity integration owner exists
+  status=PASS_PHASE_10C2_COATING_THERMAL_CONDUCTIVITY_INTEGRATION_OWNER; complete=True
+[PASS] Phase 10C.3 coating thickness integration owner exists
+  status=PASS_PHASE_10C3_COATING_THICKNESS_INTEGRATION_OWNER; complete=True
+[PASS] Phase 10C.4 coating thermal resistance integration owner exists
+  status=PASS_PHASE_10C4_COATING_THERMAL_RESISTANCE_INTEGRATION_OWNER; complete=True
+[PASS] Phase 10C.5 coating temperature limit integration owner exists
+  status=PASS_PHASE_10C5_COATING_TEMPERATURE_LIMIT_INTEGRATION_OWNER; complete=True
+[PASS] Phase 10C.6 bond coat integration owner exists
+  status=PASS_PHASE_10C6_BOND_COAT_INTEGRATION_OWNER; complete=True
+[PASS] Phase 10C.7 coating integration validation owner exists
+  status=PASS_PHASE_10C7_COATING_INTEGRATION_VALIDATION_OWNER; complete=True
+[PASS] Phase 10C.8 coating integration completion audit exists
+  status=PASS_COATING_INTEGRATION_COMPLETION_AUDIT; complete=True
+[PASS] Phase 10D.1 temperature dependency discovery audit owner exists
+  status=PASS_PHASE_10D1_TEMPERATURE_DEPENDENCY_DISCOVERY_AUDIT_OWNER; complete=True
+[PASS] Phase 10D.2 material conductivity consumption audit owner exists
+  status=PASS_PHASE_10D2_MATERIAL_CONDUCTIVITY_CONSUMPTION_AUDIT_OWNER; expected=PASS_PHASE_10D2_MATERIAL_CONDUCTIVITY_CONSUMPTION_AUDIT_OWNER; complete=True
+[PASS] Phase 10D.3 specific heat consumption audit owner exists
+  status=PASS_PHASE_10D3_SPECIFIC_HEAT_CONSUMPTION_AUDIT_OWNER; expected=PASS_PHASE_10D3_SPECIFIC_HEAT_CONSUMPTION_AUDIT_OWNER; complete=True
+[PASS] Phase 10D.4 density coolant property consumption audit owner exists
+  status=PASS_PHASE_10D4_DENSITY_COOLANT_PROPERTY_CONSUMPTION_AUDIT_OWNER; expected=PASS_PHASE_10D4_DENSITY_COOLANT_PROPERTY_CONSUMPTION_AUDIT_OWNER; complete=True
+[PASS] Phase 10D.5 coating thermal consumption audit owner exists
+  status=PASS_PHASE_10D5_COATING_THERMAL_CONSUMPTION_AUDIT_OWNER; expected=PASS_PHASE_10D5_COATING_THERMAL_CONSUMPTION_AUDIT_OWNER; complete=True
+[PASS] Phase 10D.6 bond-coat consumption audit owner exists
+  status=PASS_PHASE_10D6_BOND_COAT_CONSUMPTION_AUDIT_OWNER; expected=PASS_PHASE_10D6_BOND_COAT_CONSUMPTION_AUDIT_OWNER; complete=True
+[PASS] Phase 10D.7 temperature-dependent solver completion audit owner exists
+  status=PASS_PHASE_10D7_TEMPERATURE_DEPENDENT_SOLVER_COMPLETION_AUDIT_OWNER; expected=PASS_PHASE_10D7_TEMPERATURE_DEPENDENT_SOLVER_COMPLETION_AUDIT_OWNER; complete=True
+[PASS] Phase 11A.1 regen geometry constraint discovery audit owner exists
+  status=PASS_PHASE_11A1_REGEN_GEOMETRY_CONSTRAINT_DISCOVERY_AUDIT_OWNER; complete=True; constraints=18; discovered=4
+[PASS] Phase 11A.2 regen geometry constraint validation owner exists
+  status=PASS_PHASE_11A2_REGEN_GEOMETRY_CONSTRAINT_VALIDATION_OWNER; complete=True; results=18; engineering_status=PASS_REGEN_GEOMETRY_CONSTRAINT_VALIDATION
+[PASS] Phase 11A.3 regen geometry failure explanation owner exists
+  status=PASS_PHASE_11A3_REGEN_GEOMETRY_FAILURE_EXPLANATION_OWNER; complete=True; explanations=0; engineering_status=PASS_REGEN_GEOMETRY_FAILURE_EXPLANATION
+[PASS] Phase 11A.4 regen geometry recommendation engine owner exists
+  status=PASS_PHASE_11A4_REGEN_GEOMETRY_RECOMMENDATION_ENGINE_OWNER; complete=True; recommendations=0; engineering_status=PASS_REGEN_GEOMETRY_RECOMMENDATION_ENGINE
+[PASS] Phase 11A.5 apply recommended geometry owner exists
+  status=PASS_PHASE_11A5_REGEN_GEOMETRY_APPLY_RECOMMENDATION_OWNER; complete=True; candidate_keys=14; engineering_status=PASS_REGEN_GEOMETRY_APPLY_RECOMMENDATION
+[PASS] Phase 11A.6 regen geometry output architecture owner exists
+  status=PASS_PHASE_11A6_REGEN_GEOMETRY_OUTPUT_ARCHITECTURE_OWNER; complete=True; summary_keys=10; engineering_status=PASS_REGEN_GEOMETRY_OUTPUT_ARCHITECTURE
+[PASS] Phase 11A.7 regen geometry output window is importable
+  importable=True
+[PASS] Phase 11A.8 regen geometry candidate acceptance owner exists
+  status=PASS_PHASE_11A8_REGEN_GEOMETRY_CANDIDATE_ACCEPTANCE_OWNER; complete=True; patch_keys=0; engineering_status=PASS_REGEN_GEOMETRY_NO_CANDIDATE_ACCEPTANCE_REQUIRED
+[PASS] Phase 11A.9 candidate acceptance UI controls exist
+  phase_11a9_ready=True
+[PASS] Phase 11A.10 full visual recommendation integration exists
+  phase_11a10_ready=True
+[PASS] Foundation save/load roundtrip preserves required state
+  PASS_FOUNDATION_SAVE_LOAD_VERIFICATION
+[PASS] Foundation UI/report bundle verification passes
+  PASS_FOUNDATION_UI_LAUNCH_VERIFICATION
+
+Completion Rule:
+- LEAF Foundation Layer Verified only when every verification case passes.
+- Verification passing means the foundation is ready for regen geometry development.
+- Verification failing means fix the foundation before adding new physics.
+
+LEAF Foundation Layer NOT Verified
+LEAF Final Foundation Sign-Off NOT Complete
+FAIL_FOUNDATION_FINAL_SIGNOFF
+FAIL_FOUNDATION_COMPLETION_HANDOVER
+LEAF is NOT ready for Regen Geometry Completion Phase 1

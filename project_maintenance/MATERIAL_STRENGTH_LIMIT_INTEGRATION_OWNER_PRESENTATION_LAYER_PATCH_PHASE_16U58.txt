@@ -1,0 +1,35 @@
+LEAF PHASE 16U.58
+COATING TEMPERATURE LIMIT INTEGRATION OWNER PRESENTATION LAYER PATCH
+====================================================================
+
+STATUS: PASS_PHASE_16U58_MATERIAL_STRENGTH_LIMIT_INTEGRATION_OWNER_PRESENTATION_LAYER_PATCH
+Generated: 2026-06-28T11:37:11
+
+FEATURE
+-------
+Patch the material strength limit integration owner onto the shared status presentation layer.
+
+TARGET
+------
+leaf_qt/material_strength_limit_integration_owner.py
+
+PATCH ACCOUNTING
+----------------
+Helper inserted: False
+Applied migrations: 0
+Before forbidden production count: 0
+After forbidden production count: 0
+Ignored helper fallback literals: 0
+Compiled: True
+Compile error: 
+
+APPLIED
+-------
+
+COMPLETION NOTICE
+-----------------
+PHASE 16U.58 COMPLETE.
+
+NEXT FEATURE
+------------
+PHASE 16U.55 — COATING TEMPERATURE LIMIT INTEGRATION OWNER PRESENTATION LAYER REGRESSION

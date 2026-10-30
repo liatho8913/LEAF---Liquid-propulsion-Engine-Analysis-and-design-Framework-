@@ -1,0 +1,265 @@
+{
+  "phase": "16U.10",
+  "status": "PASS_PHASE_16U10_ENGINE_SOLVER_MEDIUM_RISK_STATUS_CONSUMER_AUDIT",
+  "generated": "2026-06-27T17:41:04",
+  "source_audit_status": "PASS_PHASE_16U6_ENGINE_SOLVER_STATUS_CONSUMER_INTEGRATION_AUDIT",
+  "low_risk_regression_status": "PASS_PHASE_16U9_ENGINE_SOLVER_LOW_RISK_STATUS_WRAPPER_REGRESSION",
+  "medium_risk_candidate_count": 17,
+  "patchable_next_phase_count": 5,
+  "manual_review_count": 12,
+  "by_resolution": {
+    "COMPOUND_STATUS_REVIEW_REQUIRED": 6,
+    "DOMAIN_STATE_REVIEW_REQUIRED": 1,
+    "MANUAL_REVIEW_REQUIRED": 1,
+    "SAFE_COLLECTION_AGGREGATION": 4,
+    "SAFE_DOMAIN_STATE_WITH_PASS_WRAPPER": 1,
+    "TEXT_SEMANTIC_REVIEW_REQUIRED": 4
+  },
+  "classified_candidates": [
+    {
+      "file": "leaf_qt/engine_solver.py",
+      "line": 5517,
+      "migration_group": "MEMBERSHIP_STATUS_CHECK",
+      "current_snippet": "if status not in (\"REQUIRED\", \"PASS\"):",
+      "recommended_action": "Preserve domain state REQUIRED and wrap PASS interpretation only.",
+      "proposed_wrapper": "status != \"REQUIRED\" and not solver_pass(status)",
+      "risk_resolution": "SAFE_DOMAIN_STATE_WITH_PASS_WRAPPER",
+      "patchable_in_next_phase": true,
+      "reason": "REQUIRED is a domain state, not a canonical status; it must remain explicit."
+    },
+    {
+      "file": "leaf_qt/engine_solver.py",
+      "line": 7675,
+      "migration_group": "MEMBERSHIP_STATUS_CHECK",
+      "current_snippet": "elif source_data_weighted_gate in (\"PARTIAL\", \"FAIL\"):",
+      "recommended_action": "Do not migrate yet; PARTIAL is a source-quality domain state.",
+      "proposed_wrapper": "manual review",
+      "risk_resolution": "DOMAIN_STATE_REVIEW_REQUIRED",
+      "patchable_in_next_phase": false,
+      "reason": "PARTIAL is not equivalent to WARN in all source-data contexts."
+    },
+    {
+      "file": "leaf_qt/engine_solver.py",
+      "line": 8456,
+      "migration_group": "MEMBERSHIP_STATUS_CHECK",
+      "current_snippet": "if item[\"status\"] in (\"MISSING\", \"PLACEHOLDER\", \"FAIL\")",
+      "recommended_action": "Manual review required.",
+      "proposed_wrapper": "manual review",
+      "risk_resolution": "MANUAL_REVIEW_REQUIRED",
+      "patchable_in_next_phase": false,
+      "reason": "No safe automated migration rule matched."
+    },
+    {
+      "file": "leaf_qt/engine_solver.py",
+      "line": 14139,
+      "migration_group": "PREFIX_SUFFIX_STATUS_CHECK",
+      "current_snippet": "if \"PLACEHOLDER\" in source_status and verdict.endswith(\"PASS\"):",
+      "recommended_action": "Do not migrate yet; suffix semantics may encode compound verdicts.",
+      "proposed_wrapper": "manual review",
+      "risk_resolution": "COMPOUND_STATUS_REVIEW_REQUIRED",
+      "patchable_in_next_phase": false,
+      "reason": "endswith('PASS') may intentionally accept compound statuses that need context."
+    },
+    {
+      "file": "leaf_qt/engine_solver.py",
+      "line": 14139,
+      "migration_group": "PREFIX_SUFFIX_STATUS_CHECK",
+      "current_snippet": "if \"PLACEHOLDER\" in source_status and verdict.endswith(\"PASS\"):",
+      "recommended_action": "Do not migrate yet; suffix semantics may encode compound verdicts.",
+      "proposed_wrapper": "manual review",
+      "risk_resolution": "COMPOUND_STATUS_REVIEW_REQUIRED",
+      "patchable_in_next_phase": false,
+      "reason": "endswith('PASS') may intentionally accept compound statuses that need context."
+    },
+    {
+      "file": "leaf_qt/engine_solver.py",
+      "line": 14143,
+      "migration_group": "PREFIX_SUFFIX_STATUS_CHECK",
+      "current_snippet": "if ledger_status not in (\"LEDGER_COMPLETE\", \"NO_FILLED_VALUES\") and verdict.endswith(\"PASS\"):",
+      "recommended_action": "Do not migrate yet; suffix semantics may encode compound verdicts.",
+      "proposed_wrapper": "manual review",
+      "risk_resolution": "COMPOUND_STATUS_REVIEW_REQUIRED",
+      "patchable_in_next_phase": false,
+      "reason": "endswith('PASS') may intentionally accept compound statuses that need context."
+    },
+    {
+      "file": "leaf_qt/engine_solver.py",
+      "line": 14143,
+      "migration_group": "PREFIX_SUFFIX_STATUS_CHECK",
+      "current_snippet": "if ledger_status not in (\"LEDGER_COMPLETE\", \"NO_FILLED_VALUES\") and verdict.endswith(\"PASS\"):",
+      "recommended_action": "Do not migrate yet; suffix semantics may encode compound verdicts.",
+      "proposed_wrapper": "manual review",
+      "risk_resolution": "COMPOUND_STATUS_REVIEW_REQUIRED",
+      "patchable_in_next_phase": false,
+      "reason": "endswith('PASS') may intentionally accept compound statuses that need context."
+    },
+    {
+      "file": "leaf_qt/engine_solver.py",
+      "line": 14149,
+      "migration_group": "PREFIX_SUFFIX_STATUS_CHECK",
+      "current_snippet": "if quality_band in (\"PLACEHOLDER\", \"LOW_CONFIDENCE_PUBLIC\") and verdict.endswith(\"PASS\"):",
+      "recommended_action": "Do not migrate yet; suffix semantics may encode compound verdicts.",
+      "proposed_wrapper": "manual review",
+      "risk_resolution": "COMPOUND_STATUS_REVIEW_REQUIRED",
+      "patchable_in_next_phase": false,
+      "reason": "endswith('PASS') may intentionally accept compound statuses that need context."
+    },
+    {
+      "file": "leaf_qt/engine_solver.py",
+      "line": 14149,
+      "migration_group": "PREFIX_SUFFIX_STATUS_CHECK",
+      "current_snippet": "if quality_band in (\"PLACEHOLDER\", \"LOW_CONFIDENCE_PUBLIC\") and verdict.endswith(\"PASS\"):",
+      "recommended_action": "Do not migrate yet; suffix semantics may encode compound verdicts.",
+      "proposed_wrapper": "manual review",
+      "risk_resolution": "COMPOUND_STATUS_REVIEW_REQUIRED",
+      "patchable_in_next_phase": false,
+      "reason": "endswith('PASS') may intentionally accept compound statuses that need context."
+    },
+    {
+      "file": "leaf_qt/engine_solver.py",
+      "line": 16280,
+      "migration_group": "FAIL_COLLECTION_OR_TEXT_CONTAINS",
+      "current_snippet": "if \"FAIL\" in statuses:",
+      "recommended_action": "Replace list membership failure aggregation with solver_highest_severity(statuses).",
+      "proposed_wrapper": "solver_highest_severity(statuses) == \"FAIL\"",
+      "risk_resolution": "SAFE_COLLECTION_AGGREGATION",
+      "patchable_in_next_phase": true,
+      "reason": "Variable name statuses indicates a collection of status values rather than arbitrary text."
+    },
+    {
+      "file": "leaf_qt/engine_solver.py",
+      "line": 16280,
+      "migration_group": "FAIL_COLLECTION_OR_TEXT_CONTAINS",
+      "current_snippet": "if \"FAIL\" in statuses:",
+      "recommended_action": "Replace list membership failure aggregation with solver_highest_severity(statuses).",
+      "proposed_wrapper": "solver_highest_severity(statuses) == \"FAIL\"",
+      "risk_resolution": "SAFE_COLLECTION_AGGREGATION",
+      "patchable_in_next_phase": true,
+      "reason": "Variable name statuses indicates a collection of status values rather than arbitrary text."
+    },
+    {
+      "file": "leaf_qt/engine_solver.py",
+      "line": 16282,
+      "migration_group": "WARN_COLLECTION_OR_TEXT_CONTAINS",
+      "current_snippet": "elif \"WARN\" in statuses:",
+      "recommended_action": "Replace list membership warning aggregation with solver_highest_severity(statuses).",
+      "proposed_wrapper": "solver_highest_severity(statuses) == \"WARN\"",
+      "risk_resolution": "SAFE_COLLECTION_AGGREGATION",
+      "patchable_in_next_phase": true,
+      "reason": "Variable name statuses indicates a collection of status values rather than arbitrary text."
+    },
+    {
+      "file": "leaf_qt/engine_solver.py",
+      "line": 16282,
+      "migration_group": "WARN_COLLECTION_OR_TEXT_CONTAINS",
+      "current_snippet": "elif \"WARN\" in statuses:",
+      "recommended_action": "Replace list membership warning aggregation with solver_highest_severity(statuses).",
+      "proposed_wrapper": "solver_highest_severity(statuses) == \"WARN\"",
+      "risk_resolution": "SAFE_COLLECTION_AGGREGATION",
+      "patchable_in_next_phase": true,
+      "reason": "Variable name statuses indicates a collection of status values rather than arbitrary text."
+    },
+    {
+      "file": "leaf_qt/engine_solver.py",
+      "line": 20628,
+      "migration_group": "FAIL_COLLECTION_OR_TEXT_CONTAINS",
+      "current_snippet": "if \"FAIL\" in text or \"INVALID\" in text:",
+      "recommended_action": "Do not migrate yet; text scanning may be semantic/freeform.",
+      "proposed_wrapper": "manual review",
+      "risk_resolution": "TEXT_SEMANTIC_REVIEW_REQUIRED",
+      "patchable_in_next_phase": false,
+      "reason": "Freeform text scanning should not be converted without understanding source text."
+    },
+    {
+      "file": "leaf_qt/engine_solver.py",
+      "line": 20628,
+      "migration_group": "FAIL_COLLECTION_OR_TEXT_CONTAINS",
+      "current_snippet": "if \"FAIL\" in text or \"INVALID\" in text:",
+      "recommended_action": "Do not migrate yet; text scanning may be semantic/freeform.",
+      "proposed_wrapper": "manual review",
+      "risk_resolution": "TEXT_SEMANTIC_REVIEW_REQUIRED",
+      "patchable_in_next_phase": false,
+      "reason": "Freeform text scanning should not be converted without understanding source text."
+    },
+    {
+      "file": "leaf_qt/engine_solver.py",
+      "line": 20649,
+      "migration_group": "WARN_COLLECTION_OR_TEXT_CONTAINS",
+      "current_snippet": "elif \"WARN\" in text or \"REVIEW\" in text:",
+      "recommended_action": "Do not migrate yet; text scanning may be semantic/freeform.",
+      "proposed_wrapper": "manual review",
+      "risk_resolution": "TEXT_SEMANTIC_REVIEW_REQUIRED",
+      "patchable_in_next_phase": false,
+      "reason": "Freeform text scanning should not be converted without understanding source text."
+    },
+    {
+      "file": "leaf_qt/engine_solver.py",
+      "line": 20649,
+      "migration_group": "WARN_COLLECTION_OR_TEXT_CONTAINS",
+      "current_snippet": "elif \"WARN\" in text or \"REVIEW\" in text:",
+      "recommended_action": "Do not migrate yet; text scanning may be semantic/freeform.",
+      "proposed_wrapper": "manual review",
+      "risk_resolution": "TEXT_SEMANTIC_REVIEW_REQUIRED",
+      "patchable_in_next_phase": false,
+      "reason": "Freeform text scanning should not be converted without understanding source text."
+    }
+  ],
+  "patchable_candidates": [
+    {
+      "file": "leaf_qt/engine_solver.py",
+      "line": 5517,
+      "migration_group": "MEMBERSHIP_STATUS_CHECK",
+      "current_snippet": "if status not in (\"REQUIRED\", \"PASS\"):",
+      "recommended_action": "Preserve domain state REQUIRED and wrap PASS interpretation only.",
+      "proposed_wrapper": "status != \"REQUIRED\" and not solver_pass(status)",
+      "risk_resolution": "SAFE_DOMAIN_STATE_WITH_PASS_WRAPPER",
+      "patchable_in_next_phase": true,
+      "reason": "REQUIRED is a domain state, not a canonical status; it must remain explicit."
+    },
+    {
+      "file": "leaf_qt/engine_solver.py",
+      "line": 16280,
+      "migration_group": "FAIL_COLLECTION_OR_TEXT_CONTAINS",
+      "current_snippet": "if \"FAIL\" in statuses:",
+      "recommended_action": "Replace list membership failure aggregation with solver_highest_severity(statuses).",
+      "proposed_wrapper": "solver_highest_severity(statuses) == \"FAIL\"",
+      "risk_resolution": "SAFE_COLLECTION_AGGREGATION",
+      "patchable_in_next_phase": true,
+      "reason": "Variable name statuses indicates a collection of status values rather than arbitrary text."
+    },
+    {
+      "file": "leaf_qt/engine_solver.py",
+      "line": 16280,
+      "migration_group": "FAIL_COLLECTION_OR_TEXT_CONTAINS",
+      "current_snippet": "if \"FAIL\" in statuses:",
+      "recommended_action": "Replace list membership failure aggregation with solver_highest_severity(statuses).",
+      "proposed_wrapper": "solver_highest_severity(statuses) == \"FAIL\"",
+      "risk_resolution": "SAFE_COLLECTION_AGGREGATION",
+      "patchable_in_next_phase": true,
+      "reason": "Variable name statuses indicates a collection of status values rather than arbitrary text."
+    },
+    {
+      "file": "leaf_qt/engine_solver.py",
+      "line": 16282,
+      "migration_group": "WARN_COLLECTION_OR_TEXT_CONTAINS",
+      "current_snippet": "elif \"WARN\" in statuses:",
+      "recommended_action": "Replace list membership warning aggregation with solver_highest_severity(statuses).",
+      "proposed_wrapper": "solver_highest_severity(statuses) == \"WARN\"",
+      "risk_resolution": "SAFE_COLLECTION_AGGREGATION",
+      "patchable_in_next_phase": true,
+      "reason": "Variable name statuses indicates a collection of status values rather than arbitrary text."
+    },
+    {
+      "file": "leaf_qt/engine_solver.py",
+      "line": 16282,
+      "migration_group": "WARN_COLLECTION_OR_TEXT_CONTAINS",
+      "current_snippet": "elif \"WARN\" in statuses:",
+      "recommended_action": "Replace list membership warning aggregation with solver_highest_severity(statuses).",
+      "proposed_wrapper": "solver_highest_severity(statuses) == \"WARN\"",
+      "risk_resolution": "SAFE_COLLECTION_AGGREGATION",
+      "patchable_in_next_phase": true,
+      "reason": "Variable name statuses indicates a collection of status values rather than arbitrary text."
+    }
+  ],
+  "phase_16u10_engine_solver_medium_risk_status_consumer_audit_complete": true
+}

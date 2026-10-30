@@ -1,0 +1,35 @@
+LEAF PHASE 16U.91
+REGEN CANDIDATE BLUEPRINT POPULATION VALIDATION OWNER PRESENTATION LAYER PATCH
+====================================================================
+
+STATUS: PASS_PHASE_16U91_REGEN_CANDIDATE_BLUEPRINT_POPULATION_VALIDATION_OWNER_PRESENTATION_LAYER_PATCH
+Generated: 2026-06-28T20:06:35
+
+FEATURE
+-------
+Patch the regen candidate blueprint population validation owner onto the shared status presentation layer.
+
+TARGET
+------
+leaf_qt/regen_candidate_blueprint_population_validation_owner.py
+
+PATCH ACCOUNTING
+----------------
+Helper inserted: False
+Applied migrations: 0
+Before forbidden production count: 0
+After forbidden production count: 0
+Ignored helper fallback literals: 0
+Compiled: True
+Compile error: 
+
+APPLIED
+-------
+
+COMPLETION NOTICE
+-----------------
+PHASE 16U.91 COMPLETE.
+
+NEXT FEATURE
+------------
+PHASE 16U.92 — REGEN CANDIDATE BLUEPRINT POPULATION VALIDATION OWNER PRESENTATION LAYER REGRESSION

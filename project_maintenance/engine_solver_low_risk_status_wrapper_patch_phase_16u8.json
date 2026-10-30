@@ -1,0 +1,144 @@
+{
+  "phase": "16U.8",
+  "status": "PASS_PHASE_16U8_ENGINE_SOLVER_LOW_RISK_STATUS_WRAPPER_PATCH",
+  "generated": "2026-06-27T17:21:09",
+  "plan_status": "PASS_PHASE_16U7_ENGINE_SOLVER_STATUS_PATCH_PLANNER",
+  "engine_result": {
+    "file": "leaf_qt/engine_solver.py",
+    "import_added": true,
+    "applied_count": 24,
+    "already_applied_count": 0,
+    "missing_count": 0,
+    "applied": [
+      {
+        "old": "if results.get(\"coupled_split_auto_tuned_status\") != \"PASS\":",
+        "new": "if not solver_pass(results.get(\"coupled_split_auto_tuned_status\")):"
+      },
+      {
+        "old": "passing = [item for item in screened if item[\"status\"] != \"FAIL\"]",
+        "new": "passing = [item for item in screened if not solver_fail(item.get(\"status\"))]"
+      },
+      {
+        "old": "if status != \"FAIL\":",
+        "new": "if not solver_fail(status):"
+      },
+      {
+        "old": "if item.get(\"status\") == \"PASS\"",
+        "new": "if solver_pass(item.get(\"status\"))"
+      },
+      {
+        "old": "if thermal_stress_failed_count > 0 and results.get(\"bond_coat_validation_status\") != \"PASS\":",
+        "new": "if thermal_stress_failed_count > 0 and not solver_pass(results.get(\"bond_coat_validation_status\")):"
+      },
+      {
+        "old": "if source_data_gate != \"PASS\":",
+        "new": "if not solver_pass(source_data_gate):"
+      },
+      {
+        "old": "if weighted_gate != \"PASS\":",
+        "new": "if not solver_pass(weighted_gate):"
+      },
+      {
+        "old": "if results.get(\"explicit_coating_thermal_stress_status\") == \"FAIL\":",
+        "new": "if solver_fail(results.get(\"explicit_coating_thermal_stress_status\")):"
+      },
+      {
+        "old": "if results.get(\"coating_stack_adhesion_risk_status\") != \"PASS\":",
+        "new": "if not solver_pass(results.get(\"coating_stack_adhesion_risk_status\")):"
+      },
+      {
+        "old": "if results.get(\"coating_stack_spallation_fatigue_status\") != \"PASS\":",
+        "new": "if not solver_pass(results.get(\"coating_stack_spallation_fatigue_status\")):"
+      },
+      {
+        "old": "if results.get(\"coating_stack_source_data_gate\") != \"PASS\":",
+        "new": "if not solver_pass(results.get(\"coating_stack_source_data_gate\")):"
+      },
+      {
+        "old": "if data_mode != \"SOURCED_VALIDATION_MODE\" or source_gate != \"PASS\":",
+        "new": "if data_mode != \"SOURCED_VALIDATION_MODE\" or not solver_pass(source_gate):"
+      },
+      {
+        "old": "if bond_status != \"PASS\":",
+        "new": "if not solver_pass(bond_status):"
+      },
+      {
+        "old": "if thermal_stress_status != \"PASS\":",
+        "new": "if not solver_pass(thermal_stress_status):"
+      },
+      {
+        "old": "if adhesion_status != \"PASS\":",
+        "new": "if not solver_pass(adhesion_status):"
+      },
+      {
+        "old": "if fatigue_status != \"PASS\":",
+        "new": "if not solver_pass(fatigue_status):"
+      },
+      {
+        "old": "if source_gate != \"PASS\" and final_acceptance == \"VALIDATION_SUPPORT_ALLOWED\":",
+        "new": "if not solver_pass(source_gate) and final_acceptance == \"VALIDATION_SUPPORT_ALLOWED\":"
+      },
+      {
+        "old": "if preview_status != \"PASS\":",
+        "new": "if not solver_pass(preview_status):"
+      },
+      {
+        "old": "if feasibility == \"REGEN_ONLY_FEASIBLE\" and viability == \"PASS\":",
+        "new": "if feasibility == \"REGEN_ONLY_FEASIBLE\" and solver_pass(viability):"
+      },
+      {
+        "old": "if results.get(\"coupled_split_auto_tuned_status\") == \"PASS\":",
+        "new": "if solver_pass(results.get(\"coupled_split_auto_tuned_status\")):"
+      },
+      {
+        "old": "if combined_status != \"PASS\":",
+        "new": "if not solver_pass(combined_status):"
+      },
+      {
+        "old": "if results.get(\"velocity_limited_combined_preview_status\") == \"FAIL\":",
+        "new": "if solver_fail(results.get(\"velocity_limited_combined_preview_status\")):"
+      },
+      {
+        "old": "if results.get(\"coupled_split_strategy_status\") == \"FAIL\":",
+        "new": "if solver_fail(results.get(\"coupled_split_strategy_status\")):"
+      },
+      {
+        "old": "if results.get(\"vl_split_strategy_status\") == \"PASS\":",
+        "new": "if solver_pass(results.get(\"vl_split_strategy_status\")):"
+      }
+    ],
+    "already_applied": [],
+    "missing": [],
+    "changed": true
+  },
+  "geometry_result": {
+    "file": "leaf_qt/regen_geometry_solver.py",
+    "import_added": true,
+    "applied_count": 1,
+    "already_applied_count": 0,
+    "missing_count": 0,
+    "applied": [
+      {
+        "old": "solver_pass = candidate_report.get(\"status\") == \"PASS\" and best_candidate is not None",
+        "new": "solver_pass = status_solver_pass(candidate_report.get(\"status\")) and best_candidate is not None"
+      }
+    ],
+    "already_applied": [],
+    "missing": [],
+    "changed": true
+  },
+  "compile_results": [
+    {
+      "file": "leaf_qt/engine_solver.py",
+      "compiled": true,
+      "error": ""
+    },
+    {
+      "file": "leaf_qt/regen_geometry_solver.py",
+      "compiled": true,
+      "error": ""
+    }
+  ],
+  "alias_conflict_present": false,
+  "phase_16u8_engine_solver_low_risk_status_wrapper_patch_complete": true
+}

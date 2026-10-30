@@ -1,0 +1,24 @@
+LEAF PHASE 16U.153
+WAVE 4 CLOSURE GATE
+====================
+
+STATUS: PASS_PHASE_16U153_WAVE4_CLOSURE_GATE
+
+Files closed: 10
+Files failed: 0
+
+CLOSED FILES
+------------
+- regen_optimisation_completion_audit.py
+- regen_optimisation_registration_owner.py
+- regen_optimisation_session_owner.py
+- regen_runtime_execution_completion_audit.py
+- regen_runtime_execution_input_gate.py
+- regen_runtime_execution_registration_owner.py
+- regen_runtime_execution_session_owner.py
+- regen_runtime_optimisation_input_gate.py
+- regen_runtime_optimisation_registration_owner.py
+- regen_runtime_optimisation_session_owner.py
+
+FAILURES
+--------

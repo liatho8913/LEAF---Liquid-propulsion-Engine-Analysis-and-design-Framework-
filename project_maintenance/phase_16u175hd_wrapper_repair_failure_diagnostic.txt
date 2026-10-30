@@ -1,0 +1,543 @@
+LEAF PHASE 16U.175H-D
+WRAPPER REPAIR FAILURE DIAGNOSTIC
+===========================================
+status=PASS_PHASE_16U175HD_WRAPPER_REPAIR_FAILURE_DIAGNOSTIC
+failure_count=22
+
+CLASSIFICATION COUNTS
+---------------------
+WRAPPER_INDENTATION_ERROR=22
+
+DIAGNOSTICS
+-----------
+
+leaf_qt/bond_coat_integration_owner.py :: WRAPPER_INDENTATION_ERROR
+error=PyCompileError("Sorry: IndentationError: expected an indented block after 'except' statement on line 5 (bond_coat_integration_owner.py, line 6)", 'IndentationError', IndentationError("expected an indented block after 'except' statement on line 5", ('/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/bond_coat_integration_owner.py', 6, 1, 'def status_severity(status):\n', 6, 4)), '/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/bond_coat_integration_owner.py')
+--- context around line 3 ---
+       1: 
+       2: try:
+>>     3:     from leaf_qt.status_presentation import LegacyCompatibilityProducer, status_severity
+       4: except Exception:
+       5:     def status_severity(value):
+       6:         text = str(value or "").upper()
+       7:         if _leaf_16u50_is_fail_like(text) or _leaf_16u50_is_fail_like(text) or "INVALID" in text or "ERROR" in text or "MISSING" in text:
+       8:             return "FAIL"
+       9:         if _leaf_16u50_is_warn_like(text) or "PARTIAL" in text or "MARGINAL" in text:
+--- context around line 5 ---
+       2: try:
+       3:     from leaf_qt.status_presentation import LegacyCompatibilityProducer, status_severity
+       4: except Exception:
+>>     5:     def status_severity(value):
+       6:         text = str(value or "").upper()
+       7:         if _leaf_16u50_is_fail_like(text) or _leaf_16u50_is_fail_like(text) or "INVALID" in text or "ERROR" in text or "MISSING" in text:
+       8:             return "FAIL"
+       9:         if _leaf_16u50_is_warn_like(text) or "PARTIAL" in text or "MARGINAL" in text:
+      10:             return "WARN"
+      11:         if _leaf_16u50_is_pass_like(text) or "VALID" in text or "COMPLETE" in text:
+
+leaf_qt/coating_property_consumption_audit_owner.py :: WRAPPER_INDENTATION_ERROR
+error=PyCompileError("Sorry: IndentationError: expected an indented block after 'except' statement on line 5 (coating_property_consumption_audit_owner.py, line 6)", 'IndentationError', IndentationError("expected an indented block after 'except' statement on line 5", ('/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/coating_property_consumption_audit_owner.py', 6, 1, 'def status_severity(status):\n', 6, 4)), '/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/coating_property_consumption_audit_owner.py')
+--- context around line 3 ---
+       1: 
+       2: try:
+>>     3:     from leaf_qt.status_presentation import LegacyCompatibilityProducer, status_severity
+       4: except Exception:
+       5:     def status_severity(value):
+       6:         text = str(value or "").upper()
+       7:         if _leaf_16u62_is_fail_like(text) or _leaf_16u62_is_fail_like(text) or "INVALID" in text or "ERROR" in text or "MISSING" in text:
+       8:             return "FAIL"
+       9:         if _leaf_16u62_is_warn_like(text) or "PARTIAL" in text or "MARGINAL" in text:
+--- context around line 5 ---
+       2: try:
+       3:     from leaf_qt.status_presentation import LegacyCompatibilityProducer, status_severity
+       4: except Exception:
+>>     5:     def status_severity(value):
+       6:         text = str(value or "").upper()
+       7:         if _leaf_16u62_is_fail_like(text) or _leaf_16u62_is_fail_like(text) or "INVALID" in text or "ERROR" in text or "MISSING" in text:
+       8:             return "FAIL"
+       9:         if _leaf_16u62_is_warn_like(text) or "PARTIAL" in text or "MARGINAL" in text:
+      10:             return "WARN"
+      11:         if _leaf_16u62_is_pass_like(text) or "VALID" in text or "COMPLETE" in text:
+
+leaf_qt/coating_temperature_limit_integration_owner.py :: WRAPPER_INDENTATION_ERROR
+error=PyCompileError("Sorry: IndentationError: expected an indented block after 'except' statement on line 5 (coating_temperature_limit_integration_owner.py, line 6)", 'IndentationError', IndentationError("expected an indented block after 'except' statement on line 5", ('/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/coating_temperature_limit_integration_owner.py', 6, 1, 'def status_severity(status):\n', 6, 4)), '/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/coating_temperature_limit_integration_owner.py')
+--- context around line 3 ---
+       1: 
+       2: try:
+>>     3:     from leaf_qt.status_presentation import LegacyCompatibilityProducer, status_severity
+       4: except Exception:
+       5:     def status_severity(value):
+       6:         text = str(value or "").upper()
+       7:         if _leaf_16u54_is_fail_like(text) or _leaf_16u54_is_fail_like(text) or "INVALID" in text or "ERROR" in text or "MISSING" in text:
+       8:             return "FAIL"
+       9:         if _leaf_16u54_is_warn_like(text) or "PARTIAL" in text or "MARGINAL" in text:
+--- context around line 5 ---
+       2: try:
+       3:     from leaf_qt.status_presentation import LegacyCompatibilityProducer, status_severity
+       4: except Exception:
+>>     5:     def status_severity(value):
+       6:         text = str(value or "").upper()
+       7:         if _leaf_16u54_is_fail_like(text) or _leaf_16u54_is_fail_like(text) or "INVALID" in text or "ERROR" in text or "MISSING" in text:
+       8:             return "FAIL"
+       9:         if _leaf_16u54_is_warn_like(text) or "PARTIAL" in text or "MARGINAL" in text:
+      10:             return "WARN"
+      11:         if _leaf_16u54_is_pass_like(text) or "VALID" in text or "COMPLETE" in text:
+
+leaf_qt/coating_thermal_conductivity_integration_owner.py :: WRAPPER_INDENTATION_ERROR
+error=PyCompileError("Sorry: IndentationError: expected an indented block after 'except' statement on line 5 (coating_thermal_conductivity_integration_owner.py, line 6)", 'IndentationError', IndentationError("expected an indented block after 'except' statement on line 5", ('/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/coating_thermal_conductivity_integration_owner.py', 6, 1, 'def status_severity(status):\n', 6, 4)), '/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/coating_thermal_conductivity_integration_owner.py')
+--- context around line 3 ---
+       1: 
+       2: try:
+>>     3:     from leaf_qt.status_presentation import LegacyCompatibilityProducer, status_severity
+       4: except Exception:
+       5:     def status_severity(value):
+       6:         text = str(value or "").upper()
+       7:         if _leaf_16u62_is_fail_like(text) or _leaf_16u62_is_fail_like(text) or "INVALID" in text or "ERROR" in text or "MISSING" in text:
+       8:             return "FAIL"
+       9:         if _leaf_16u62_is_warn_like(text) or "PARTIAL" in text or "MARGINAL" in text:
+--- context around line 5 ---
+       2: try:
+       3:     from leaf_qt.status_presentation import LegacyCompatibilityProducer, status_severity
+       4: except Exception:
+>>     5:     def status_severity(value):
+       6:         text = str(value or "").upper()
+       7:         if _leaf_16u62_is_fail_like(text) or _leaf_16u62_is_fail_like(text) or "INVALID" in text or "ERROR" in text or "MISSING" in text:
+       8:             return "FAIL"
+       9:         if _leaf_16u62_is_warn_like(text) or "PARTIAL" in text or "MARGINAL" in text:
+      10:             return "WARN"
+      11:         if _leaf_16u62_is_pass_like(text) or "VALID" in text or "COMPLETE" in text:
+
+leaf_qt/coating_thermal_resistance_integration_owner.py :: WRAPPER_INDENTATION_ERROR
+error=PyCompileError("Sorry: IndentationError: expected an indented block after 'except' statement on line 5 (coating_thermal_resistance_integration_owner.py, line 6)", 'IndentationError', IndentationError("expected an indented block after 'except' statement on line 5", ('/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/coating_thermal_resistance_integration_owner.py', 6, 1, 'def status_severity(status):\n', 6, 4)), '/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/coating_thermal_resistance_integration_owner.py')
+--- context around line 3 ---
+       1: 
+       2: try:
+>>     3:     from leaf_qt.status_presentation import LegacyCompatibilityProducer, status_severity
+       4: except Exception:
+       5:     def status_severity(value):
+       6:         text = str(value or "").upper()
+       7:         if _leaf_16u62_is_fail_like(text) or _leaf_16u62_is_fail_like(text) or "INVALID" in text or "ERROR" in text or "MISSING" in text:
+       8:             return "FAIL"
+       9:         if _leaf_16u62_is_warn_like(text) or "PARTIAL" in text or "MARGINAL" in text:
+--- context around line 5 ---
+       2: try:
+       3:     from leaf_qt.status_presentation import LegacyCompatibilityProducer, status_severity
+       4: except Exception:
+>>     5:     def status_severity(value):
+       6:         text = str(value or "").upper()
+       7:         if _leaf_16u62_is_fail_like(text) or _leaf_16u62_is_fail_like(text) or "INVALID" in text or "ERROR" in text or "MISSING" in text:
+       8:             return "FAIL"
+       9:         if _leaf_16u62_is_warn_like(text) or "PARTIAL" in text or "MARGINAL" in text:
+      10:             return "WARN"
+      11:         if _leaf_16u62_is_pass_like(text) or "VALID" in text or "COMPLETE" in text:
+
+leaf_qt/coating_thickness_integration_owner.py :: WRAPPER_INDENTATION_ERROR
+error=PyCompileError("Sorry: IndentationError: expected an indented block after 'except' statement on line 5 (coating_thickness_integration_owner.py, line 6)", 'IndentationError', IndentationError("expected an indented block after 'except' statement on line 5", ('/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/coating_thickness_integration_owner.py', 6, 1, 'def status_severity(status):\n', 6, 4)), '/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/coating_thickness_integration_owner.py')
+--- context around line 3 ---
+       1: 
+       2: try:
+>>     3:     from leaf_qt.status_presentation import LegacyCompatibilityProducer, status_severity
+       4: except Exception:
+       5:     def status_severity(value):
+       6:         text = str(value or "").upper()
+       7:         if _leaf_16u62_is_fail_like(text) or _leaf_16u62_is_fail_like(text) or "INVALID" in text or "ERROR" in text or "MISSING" in text:
+       8:             return "FAIL"
+       9:         if _leaf_16u62_is_warn_like(text) or "PARTIAL" in text or "MARGINAL" in text:
+--- context around line 5 ---
+       2: try:
+       3:     from leaf_qt.status_presentation import LegacyCompatibilityProducer, status_severity
+       4: except Exception:
+>>     5:     def status_severity(value):
+       6:         text = str(value or "").upper()
+       7:         if _leaf_16u62_is_fail_like(text) or _leaf_16u62_is_fail_like(text) or "INVALID" in text or "ERROR" in text or "MISSING" in text:
+       8:             return "FAIL"
+       9:         if _leaf_16u62_is_warn_like(text) or "PARTIAL" in text or "MARGINAL" in text:
+      10:             return "WARN"
+      11:         if _leaf_16u62_is_pass_like(text) or "VALID" in text or "COMPLETE" in text:
+
+leaf_qt/material_density_integration_owner.py :: WRAPPER_INDENTATION_ERROR
+error=PyCompileError("Sorry: IndentationError: expected an indented block after 'except' statement on line 5 (material_density_integration_owner.py, line 6)", 'IndentationError', IndentationError("expected an indented block after 'except' statement on line 5", ('/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/material_density_integration_owner.py', 6, 1, 'def status_severity(status):\n', 6, 4)), '/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/material_density_integration_owner.py')
+--- context around line 3 ---
+       1: 
+       2: try:
+>>     3:     from leaf_qt.status_presentation import LegacyCompatibilityProducer, status_severity
+       4: except Exception:
+       5:     def status_severity(value):
+       6:         text = str(value or "").upper()
+       7:         if _leaf_16u62_is_fail_like(text) or _leaf_16u62_is_fail_like(text) or "INVALID" in text or "ERROR" in text or "MISSING" in text:
+       8:             return "FAIL"
+       9:         if _leaf_16u62_is_warn_like(text) or "PARTIAL" in text or "MARGINAL" in text:
+--- context around line 5 ---
+       2: try:
+       3:     from leaf_qt.status_presentation import LegacyCompatibilityProducer, status_severity
+       4: except Exception:
+>>     5:     def status_severity(value):
+       6:         text = str(value or "").upper()
+       7:         if _leaf_16u62_is_fail_like(text) or _leaf_16u62_is_fail_like(text) or "INVALID" in text or "ERROR" in text or "MISSING" in text:
+       8:             return "FAIL"
+       9:         if _leaf_16u62_is_warn_like(text) or "PARTIAL" in text or "MARGINAL" in text:
+      10:             return "WARN"
+      11:         if _leaf_16u62_is_pass_like(text) or "VALID" in text or "COMPLETE" in text:
+
+leaf_qt/material_property_consumption_audit_owner.py :: WRAPPER_INDENTATION_ERROR
+error=PyCompileError("Sorry: IndentationError: expected an indented block after 'except' statement on line 5 (material_property_consumption_audit_owner.py, line 6)", 'IndentationError', IndentationError("expected an indented block after 'except' statement on line 5", ('/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/material_property_consumption_audit_owner.py', 6, 1, 'def status_severity(status):\n', 6, 4)), '/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/material_property_consumption_audit_owner.py')
+--- context around line 3 ---
+       1: 
+       2: try:
+>>     3:     from leaf_qt.status_presentation import LegacyCompatibilityProducer, status_severity
+       4: except Exception:
+       5:     def status_severity(value):
+       6:         text = str(value or "").upper()
+       7:         if _leaf_16u62_is_fail_like(text) or _leaf_16u62_is_fail_like(text) or "INVALID" in text or "ERROR" in text or "MISSING" in text:
+       8:             return "FAIL"
+       9:         if _leaf_16u62_is_warn_like(text) or "PARTIAL" in text or "MARGINAL" in text:
+--- context around line 5 ---
+       2: try:
+       3:     from leaf_qt.status_presentation import LegacyCompatibilityProducer, status_severity
+       4: except Exception:
+>>     5:     def status_severity(value):
+       6:         text = str(value or "").upper()
+       7:         if _leaf_16u62_is_fail_like(text) or _leaf_16u62_is_fail_like(text) or "INVALID" in text or "ERROR" in text or "MISSING" in text:
+       8:             return "FAIL"
+       9:         if _leaf_16u62_is_warn_like(text) or "PARTIAL" in text or "MARGINAL" in text:
+      10:             return "WARN"
+      11:         if _leaf_16u62_is_pass_like(text) or "VALID" in text or "COMPLETE" in text:
+
+leaf_qt/material_specific_heat_integration_owner.py :: WRAPPER_INDENTATION_ERROR
+error=PyCompileError("Sorry: IndentationError: expected an indented block after 'except' statement on line 5 (material_specific_heat_integration_owner.py, line 6)", 'IndentationError', IndentationError("expected an indented block after 'except' statement on line 5", ('/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/material_specific_heat_integration_owner.py', 6, 1, 'def status_severity(status):\n', 6, 4)), '/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/material_specific_heat_integration_owner.py')
+--- context around line 3 ---
+       1: 
+       2: try:
+>>     3:     from leaf_qt.status_presentation import LegacyCompatibilityProducer, status_severity
+       4: except Exception:
+       5:     def status_severity(value):
+       6:         text = str(value or "").upper()
+       7:         if _leaf_16u62_is_fail_like(text) or _leaf_16u62_is_fail_like(text) or "INVALID" in text or "ERROR" in text or "MISSING" in text:
+       8:             return "FAIL"
+       9:         if _leaf_16u62_is_warn_like(text) or "PARTIAL" in text or "MARGINAL" in text:
+--- context around line 5 ---
+       2: try:
+       3:     from leaf_qt.status_presentation import LegacyCompatibilityProducer, status_severity
+       4: except Exception:
+>>     5:     def status_severity(value):
+       6:         text = str(value or "").upper()
+       7:         if _leaf_16u62_is_fail_like(text) or _leaf_16u62_is_fail_like(text) or "INVALID" in text or "ERROR" in text or "MISSING" in text:
+       8:             return "FAIL"
+       9:         if _leaf_16u62_is_warn_like(text) or "PARTIAL" in text or "MARGINAL" in text:
+      10:             return "WARN"
+      11:         if _leaf_16u62_is_pass_like(text) or "VALID" in text or "COMPLETE" in text:
+
+leaf_qt/material_strength_limit_integration_owner.py :: WRAPPER_INDENTATION_ERROR
+error=PyCompileError("Sorry: IndentationError: expected an indented block after 'except' statement on line 5 (material_strength_limit_integration_owner.py, line 6)", 'IndentationError', IndentationError("expected an indented block after 'except' statement on line 5", ('/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/material_strength_limit_integration_owner.py', 6, 1, 'def status_severity(status):\n', 6, 4)), '/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/material_strength_limit_integration_owner.py')
+--- context around line 3 ---
+       1: 
+       2: try:
+>>     3:     from leaf_qt.status_presentation import LegacyCompatibilityProducer, status_severity
+       4: except Exception:
+       5:     def status_severity(value):
+       6:         text = str(value or "").upper()
+       7:         if _leaf_16u58_is_fail_like(text) or _leaf_16u58_is_fail_like(text) or "INVALID" in text or "ERROR" in text or "MISSING" in text:
+       8:             return "FAIL"
+       9:         if _leaf_16u58_is_warn_like(text) or "PARTIAL" in text or "MARGINAL" in text:
+--- context around line 5 ---
+       2: try:
+       3:     from leaf_qt.status_presentation import LegacyCompatibilityProducer, status_severity
+       4: except Exception:
+>>     5:     def status_severity(value):
+       6:         text = str(value or "").upper()
+       7:         if _leaf_16u58_is_fail_like(text) or _leaf_16u58_is_fail_like(text) or "INVALID" in text or "ERROR" in text or "MISSING" in text:
+       8:             return "FAIL"
+       9:         if _leaf_16u58_is_warn_like(text) or "PARTIAL" in text or "MARGINAL" in text:
+      10:             return "WARN"
+      11:         if _leaf_16u58_is_pass_like(text) or "VALID" in text or "COMPLETE" in text:
+
+leaf_qt/material_temperature_limit_integration_owner.py :: WRAPPER_INDENTATION_ERROR
+error=PyCompileError("Sorry: IndentationError: expected an indented block after 'except' statement on line 5 (material_temperature_limit_integration_owner.py, line 6)", 'IndentationError', IndentationError("expected an indented block after 'except' statement on line 5", ('/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/material_temperature_limit_integration_owner.py', 6, 1, 'def status_severity(status):\n', 6, 4)), '/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/material_temperature_limit_integration_owner.py')
+--- context around line 3 ---
+       1: 
+       2: try:
+>>     3:     from leaf_qt.status_presentation import LegacyCompatibilityProducer, status_severity
+       4: except Exception:
+       5:     def status_severity(value):
+       6:         text = str(value or "").upper()
+       7:         if _leaf_16u66_is_fail_like(text) or _leaf_16u66_is_fail_like(text) or "INVALID" in text or "ERROR" in text or "MISSING" in text:
+       8:             return "FAIL"
+       9:         if _leaf_16u66_is_warn_like(text) or "PARTIAL" in text or "MARGINAL" in text:
+--- context around line 5 ---
+       2: try:
+       3:     from leaf_qt.status_presentation import LegacyCompatibilityProducer, status_severity
+       4: except Exception:
+>>     5:     def status_severity(value):
+       6:         text = str(value or "").upper()
+       7:         if _leaf_16u66_is_fail_like(text) or _leaf_16u66_is_fail_like(text) or "INVALID" in text or "ERROR" in text or "MISSING" in text:
+       8:             return "FAIL"
+       9:         if _leaf_16u66_is_warn_like(text) or "PARTIAL" in text or "MARGINAL" in text:
+      10:             return "WARN"
+      11:         if _leaf_16u66_is_pass_like(text) or "VALID" in text or "COMPLETE" in text:
+
+leaf_qt/material_thermal_conductivity_integration_owner.py :: WRAPPER_INDENTATION_ERROR
+error=PyCompileError("Sorry: IndentationError: expected an indented block after 'except' statement on line 5 (material_thermal_conductivity_integration_owner.py, line 6)", 'IndentationError', IndentationError("expected an indented block after 'except' statement on line 5", ('/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/material_thermal_conductivity_integration_owner.py', 6, 1, 'def status_severity(status):\n', 6, 4)), '/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/material_thermal_conductivity_integration_owner.py')
+--- context around line 3 ---
+       1: 
+       2: try:
+>>     3:     from leaf_qt.status_presentation import LegacyCompatibilityProducer, status_severity
+       4: except Exception:
+       5:     def status_severity(value):
+       6:         text = str(value or "").upper()
+       7:         if _leaf_16u62_is_fail_like(text) or _leaf_16u62_is_fail_like(text) or "INVALID" in text or "ERROR" in text or "MISSING" in text:
+       8:             return "FAIL"
+       9:         if _leaf_16u62_is_warn_like(text) or "PARTIAL" in text or "MARGINAL" in text:
+--- context around line 5 ---
+       2: try:
+       3:     from leaf_qt.status_presentation import LegacyCompatibilityProducer, status_severity
+       4: except Exception:
+>>     5:     def status_severity(value):
+       6:         text = str(value or "").upper()
+       7:         if _leaf_16u62_is_fail_like(text) or _leaf_16u62_is_fail_like(text) or "INVALID" in text or "ERROR" in text or "MISSING" in text:
+       8:             return "FAIL"
+       9:         if _leaf_16u62_is_warn_like(text) or "PARTIAL" in text or "MARGINAL" in text:
+      10:             return "WARN"
+      11:         if _leaf_16u62_is_pass_like(text) or "VALID" in text or "COMPLETE" in text:
+
+leaf_qt/real_engine_benchmark_failure_owner.py :: WRAPPER_INDENTATION_ERROR
+error=PyCompileError("Sorry: IndentationError: expected an indented block after 'except' statement on line 5 (real_engine_benchmark_failure_owner.py, line 6)", 'IndentationError', IndentationError("expected an indented block after 'except' statement on line 5", ('/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/real_engine_benchmark_failure_owner.py', 6, 1, 'def status_severity(status):\n', 6, 4)), '/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/real_engine_benchmark_failure_owner.py')
+--- context around line 3 ---
+       1: 
+       2: try:
+>>     3:     from leaf_qt.status_presentation import LegacyCompatibilityProducer, status_severity
+       4: except Exception:
+       5:     def status_severity(value):
+       6:         text = str(value or "").upper()
+       7:         if _leaf_16u46_is_fail_like(text) or _leaf_16u46_is_fail_like(text) or "INVALID" in text or "ERROR" in text or "MISSING" in text:
+       8:             return "FAIL"
+       9:         if _leaf_16u46_is_warn_like(text) or "PARTIAL" in text or "MARGINAL" in text:
+--- context around line 5 ---
+       2: try:
+       3:     from leaf_qt.status_presentation import LegacyCompatibilityProducer, status_severity
+       4: except Exception:
+>>     5:     def status_severity(value):
+       6:         text = str(value or "").upper()
+       7:         if _leaf_16u46_is_fail_like(text) or _leaf_16u46_is_fail_like(text) or "INVALID" in text or "ERROR" in text or "MISSING" in text:
+       8:             return "FAIL"
+       9:         if _leaf_16u46_is_warn_like(text) or "PARTIAL" in text or "MARGINAL" in text:
+      10:             return "WARN"
+      11:         if _leaf_16u46_is_pass_like(text) or "VALID" in text or "COMPLETE" in text:
+
+leaf_qt/regen_candidate_blueprint_population_validation_owner.py :: WRAPPER_INDENTATION_ERROR
+error=PyCompileError("Sorry: IndentationError: expected an indented block after 'except' statement on line 5 (regen_candidate_blueprint_population_validation_owner.py, line 6)", 'IndentationError', IndentationError("expected an indented block after 'except' statement on line 5", ('/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/regen_candidate_blueprint_population_validation_owner.py', 6, 1, 'def status_severity(status):\n', 6, 4)), '/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/regen_candidate_blueprint_population_validation_owner.py')
+--- context around line 3 ---
+       1: 
+       2: try:
+>>     3:     from leaf_qt.status_presentation import LegacyCompatibilityProducer, status_severity
+       4: except Exception:
+       5:     def status_severity(value):
+       6:         text = str(value or "").upper()
+       7:         if _leaf_16u91_is_fail_like(text) or _leaf_16u91_is_fail_like(text) or "INVALID" in text or "ERROR" in text or "MISSING" in text:
+       8:             return "FAIL"
+       9:         if _leaf_16u91_is_warn_like(text) or "PARTIAL" in text or "MARGINAL" in text:
+--- context around line 5 ---
+       2: try:
+       3:     from leaf_qt.status_presentation import LegacyCompatibilityProducer, status_severity
+       4: except Exception:
+>>     5:     def status_severity(value):
+       6:         text = str(value or "").upper()
+       7:         if _leaf_16u91_is_fail_like(text) or _leaf_16u91_is_fail_like(text) or "INVALID" in text or "ERROR" in text or "MISSING" in text:
+       8:             return "FAIL"
+       9:         if _leaf_16u91_is_warn_like(text) or "PARTIAL" in text or "MARGINAL" in text:
+      10:             return "WARN"
+      11:         if _leaf_16u91_is_pass_like(text) or "VALID" in text or "COMPLETE" in text:
+
+leaf_qt/regen_candidate_creation_report_owner.py :: WRAPPER_INDENTATION_ERROR
+error=PyCompileError("Sorry: IndentationError: expected an indented block after 'except' statement on line 5 (regen_candidate_creation_report_owner.py, line 6)", 'IndentationError', IndentationError("expected an indented block after 'except' statement on line 5", ('/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/regen_candidate_creation_report_owner.py', 6, 1, 'def status_severity(status):\n', 6, 4)), '/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/regen_candidate_creation_report_owner.py')
+--- context around line 3 ---
+       1: 
+       2: try:
+>>     3:     from leaf_qt.status_presentation import LegacyCompatibilityProducer, status_severity
+       4: except Exception:
+       5:     def status_severity(value):
+       6:         text = str(value or "").upper()
+       7:         if _leaf_16u96_is_fail_like(text) or _leaf_16u96_is_fail_like(text) or "INVALID" in text or "ERROR" in text or "MISSING" in text:
+       8:             return "FAIL"
+       9:         if _leaf_16u96_is_warn_like(text) or "PARTIAL" in text or "MARGINAL" in text:
+--- context around line 5 ---
+       2: try:
+       3:     from leaf_qt.status_presentation import LegacyCompatibilityProducer, status_severity
+       4: except Exception:
+>>     5:     def status_severity(value):
+       6:         text = str(value or "").upper()
+       7:         if _leaf_16u96_is_fail_like(text) or _leaf_16u96_is_fail_like(text) or "INVALID" in text or "ERROR" in text or "MISSING" in text:
+       8:             return "FAIL"
+       9:         if _leaf_16u96_is_warn_like(text) or "PARTIAL" in text or "MARGINAL" in text:
+      10:             return "WARN"
+      11:         if _leaf_16u96_is_pass_like(text) or "VALID" in text or "COMPLETE" in text:
+
+leaf_qt/regen_candidate_generation_report_owner.py :: WRAPPER_INDENTATION_ERROR
+error=PyCompileError("Sorry: IndentationError: expected an indented block after 'except' statement on line 5 (regen_candidate_generation_report_owner.py, line 6)", 'IndentationError', IndentationError("expected an indented block after 'except' statement on line 5", ('/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/regen_candidate_generation_report_owner.py', 6, 1, 'def status_severity(status):\n', 6, 4)), '/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/regen_candidate_generation_report_owner.py')
+--- context around line 3 ---
+       1: 
+       2: try:
+>>     3:     from leaf_qt.status_presentation import LegacyCompatibilityProducer, status_severity
+       4: except Exception:
+       5:     def status_severity(value):
+       6:         text = str(value or "").upper()
+       7:         if _leaf_16u101_is_fail_like(text) or _leaf_16u101_is_fail_like(text) or "INVALID" in text or "ERROR" in text or "MISSING" in text:
+       8:             return "FAIL"
+       9:         if _leaf_16u101_is_warn_like(text) or "PARTIAL" in text or "MARGINAL" in text:
+--- context around line 5 ---
+       2: try:
+       3:     from leaf_qt.status_presentation import LegacyCompatibilityProducer, status_severity
+       4: except Exception:
+>>     5:     def status_severity(value):
+       6:         text = str(value or "").upper()
+       7:         if _leaf_16u101_is_fail_like(text) or _leaf_16u101_is_fail_like(text) or "INVALID" in text or "ERROR" in text or "MISSING" in text:
+       8:             return "FAIL"
+       9:         if _leaf_16u101_is_warn_like(text) or "PARTIAL" in text or "MARGINAL" in text:
+      10:             return "WARN"
+      11:         if _leaf_16u101_is_pass_like(text) or "VALID" in text or "COMPLETE" in text:
+
+leaf_qt/regen_candidate_mutation_report_owner.py :: WRAPPER_INDENTATION_ERROR
+error=PyCompileError("Sorry: IndentationError: expected an indented block after 'except' statement on line 5 (regen_candidate_mutation_report_owner.py, line 6)", 'IndentationError', IndentationError("expected an indented block after 'except' statement on line 5", ('/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/regen_candidate_mutation_report_owner.py', 6, 1, 'def status_severity(status):\n', 6, 4)), '/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/regen_candidate_mutation_report_owner.py')
+--- context around line 3 ---
+       1: 
+       2: try:
+>>     3:     from leaf_qt.status_presentation import LegacyCompatibilityProducer, status_severity
+       4: except Exception:
+       5:     def status_severity(value):
+       6:         text = str(value or "").upper()
+       7:         if _leaf_16u106_is_fail_like(text) or _leaf_16u106_is_fail_like(text) or "INVALID" in text or "ERROR" in text or "MISSING" in text:
+       8:             return "FAIL"
+       9:         if _leaf_16u106_is_warn_like(text) or "PARTIAL" in text or "MARGINAL" in text:
+--- context around line 5 ---
+       2: try:
+       3:     from leaf_qt.status_presentation import LegacyCompatibilityProducer, status_severity
+       4: except Exception:
+>>     5:     def status_severity(value):
+       6:         text = str(value or "").upper()
+       7:         if _leaf_16u106_is_fail_like(text) or _leaf_16u106_is_fail_like(text) or "INVALID" in text or "ERROR" in text or "MISSING" in text:
+       8:             return "FAIL"
+       9:         if _leaf_16u106_is_warn_like(text) or "PARTIAL" in text or "MARGINAL" in text:
+      10:             return "WARN"
+      11:         if _leaf_16u106_is_pass_like(text) or "VALID" in text or "COMPLETE" in text:
+
+leaf_qt/regen_geometry_report_owner.py :: WRAPPER_INDENTATION_ERROR
+error=PyCompileError("Sorry: IndentationError: expected an indented block after 'except' statement on line 5 (regen_geometry_report_owner.py, line 6)", 'IndentationError', IndentationError("expected an indented block after 'except' statement on line 5", ('/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/regen_geometry_report_owner.py', 6, 1, 'def status_severity(status):\n', 6, 4)), '/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/regen_geometry_report_owner.py')
+--- context around line 3 ---
+       1: 
+       2: try:
+>>     3:     from leaf_qt.status_presentation import LegacyCompatibilityProducer, status_severity
+       4: except Exception:
+       5:     def status_severity(value):
+       6:         text = str(value or "").upper()
+       7:         if _leaf_16u86_is_fail_like(text) or _leaf_16u86_is_fail_like(text) or "INVALID" in text or "ERROR" in text or "MISSING" in text:
+       8:             return "FAIL"
+       9:         if _leaf_16u86_is_warn_like(text) or "PARTIAL" in text or "MARGINAL" in text:
+--- context around line 5 ---
+       2: try:
+       3:     from leaf_qt.status_presentation import LegacyCompatibilityProducer, status_severity
+       4: except Exception:
+>>     5:     def status_severity(value):
+       6:         text = str(value or "").upper()
+       7:         if _leaf_16u86_is_fail_like(text) or _leaf_16u86_is_fail_like(text) or "INVALID" in text or "ERROR" in text or "MISSING" in text:
+       8:             return "FAIL"
+       9:         if _leaf_16u86_is_warn_like(text) or "PARTIAL" in text or "MARGINAL" in text:
+      10:             return "WARN"
+      11:         if _leaf_16u86_is_pass_like(text) or "VALID" in text or "COMPLETE" in text:
+
+leaf_qt/regen_optimisation_report_owner.py :: WRAPPER_INDENTATION_ERROR
+error=PyCompileError("Sorry: IndentationError: expected an indented block after 'except' statement on line 5 (regen_optimisation_report_owner.py, line 6)", 'IndentationError', IndentationError("expected an indented block after 'except' statement on line 5", ('/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/regen_optimisation_report_owner.py', 6, 1, 'def status_severity(status):\n', 6, 4)), '/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/regen_optimisation_report_owner.py')
+--- context around line 3 ---
+       1: 
+       2: try:
+>>     3:     from leaf_qt.status_presentation import LegacyCompatibilityProducer, status_severity
+       4: except Exception:
+       5:     def status_severity(value):
+       6:         text = str(value or "").upper()
+       7:         if _leaf_16u76_is_fail_like(text) or _leaf_16u76_is_fail_like(text) or "INVALID" in text or "ERROR" in text or "MISSING" in text:
+       8:             return "FAIL"
+       9:         if _leaf_16u76_is_warn_like(text) or "PARTIAL" in text or "MARGINAL" in text:
+--- context around line 5 ---
+       2: try:
+       3:     from leaf_qt.status_presentation import LegacyCompatibilityProducer, status_severity
+       4: except Exception:
+>>     5:     def status_severity(value):
+       6:         text = str(value or "").upper()
+       7:         if _leaf_16u76_is_fail_like(text) or _leaf_16u76_is_fail_like(text) or "INVALID" in text or "ERROR" in text or "MISSING" in text:
+       8:             return "FAIL"
+       9:         if _leaf_16u76_is_warn_like(text) or "PARTIAL" in text or "MARGINAL" in text:
+      10:             return "WARN"
+      11:         if _leaf_16u76_is_pass_like(text) or "VALID" in text or "COMPLETE" in text:
+
+leaf_qt/regen_runtime_execution_report_owner.py :: WRAPPER_INDENTATION_ERROR
+error=PyCompileError("Sorry: IndentationError: expected an indented block after 'except' statement on line 5 (regen_runtime_execution_report_owner.py, line 6)", 'IndentationError', IndentationError("expected an indented block after 'except' statement on line 5", ('/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/regen_runtime_execution_report_owner.py', 6, 1, 'def status_severity(status):\n', 6, 4)), '/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/regen_runtime_execution_report_owner.py')
+--- context around line 3 ---
+       1: 
+       2: try:
+>>     3:     from leaf_qt.status_presentation import LegacyCompatibilityProducer, status_severity
+       4: except Exception:
+       5:     def status_severity(value):
+       6:         text = str(value or "").upper()
+       7:         if _leaf_16u111_is_fail_like(text) or _leaf_16u111_is_fail_like(text) or "INVALID" in text or "ERROR" in text or "MISSING" in text:
+       8:             return "FAIL"
+       9:         if _leaf_16u111_is_warn_like(text) or "PARTIAL" in text or "MARGINAL" in text:
+--- context around line 5 ---
+       2: try:
+       3:     from leaf_qt.status_presentation import LegacyCompatibilityProducer, status_severity
+       4: except Exception:
+>>     5:     def status_severity(value):
+       6:         text = str(value or "").upper()
+       7:         if _leaf_16u111_is_fail_like(text) or _leaf_16u111_is_fail_like(text) or "INVALID" in text or "ERROR" in text or "MISSING" in text:
+       8:             return "FAIL"
+       9:         if _leaf_16u111_is_warn_like(text) or "PARTIAL" in text or "MARGINAL" in text:
+      10:             return "WARN"
+      11:         if _leaf_16u111_is_pass_like(text) or "VALID" in text or "COMPLETE" in text:
+
+leaf_qt/regen_runtime_optimisation_report_owner.py :: WRAPPER_INDENTATION_ERROR
+error=PyCompileError("Sorry: IndentationError: expected an indented block after 'except' statement on line 5 (regen_runtime_optimisation_report_owner.py, line 6)", 'IndentationError', IndentationError("expected an indented block after 'except' statement on line 5", ('/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/regen_runtime_optimisation_report_owner.py', 6, 1, 'def status_severity(status):\n', 6, 4)), '/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/regen_runtime_optimisation_report_owner.py')
+--- context around line 3 ---
+       1: 
+       2: try:
+>>     3:     from leaf_qt.status_presentation import LegacyCompatibilityProducer, status_severity
+       4: except Exception:
+       5:     def status_severity(value):
+       6:         text = str(value or "").upper()
+       7:         if _leaf_16u81_is_fail_like(text) or _leaf_16u81_is_fail_like(text) or "INVALID" in text or "ERROR" in text or "MISSING" in text:
+       8:             return "FAIL"
+       9:         if _leaf_16u81_is_warn_like(text) or "PARTIAL" in text or "MARGINAL" in text:
+--- context around line 5 ---
+       2: try:
+       3:     from leaf_qt.status_presentation import LegacyCompatibilityProducer, status_severity
+       4: except Exception:
+>>     5:     def status_severity(value):
+       6:         text = str(value or "").upper()
+       7:         if _leaf_16u81_is_fail_like(text) or _leaf_16u81_is_fail_like(text) or "INVALID" in text or "ERROR" in text or "MISSING" in text:
+       8:             return "FAIL"
+       9:         if _leaf_16u81_is_warn_like(text) or "PARTIAL" in text or "MARGINAL" in text:
+      10:             return "WARN"
+      11:         if _leaf_16u81_is_pass_like(text) or "VALID" in text or "COMPLETE" in text:
+
+leaf_qt/regen_scalability_failure_owner.py :: WRAPPER_INDENTATION_ERROR
+error=PyCompileError("Sorry: IndentationError: expected an indented block after 'except' statement on line 5 (regen_scalability_failure_owner.py, line 6)", 'IndentationError', IndentationError("expected an indented block after 'except' statement on line 5", ('/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/regen_scalability_failure_owner.py', 6, 1, 'def status_severity(status):\n', 6, 4)), '/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/regen_scalability_failure_owner.py')
+--- context around line 3 ---
+       1: 
+       2: try:
+>>     3:     from leaf_qt.status_presentation import LegacyCompatibilityProducer, status_severity
+       4: except Exception:
+       5:     def status_severity(value):
+       6:         text = str(value or "").upper()
+       7:         if _leaf_16u42_is_fail_like(text) or _leaf_16u42_is_fail_like(text) or "INVALID" in text or "ERROR" in text or "MISSING" in text:
+       8:             return "FAIL"
+       9:         if _leaf_16u42_is_warn_like(text) or "PARTIAL" in text or "MARGINAL" in text:
+--- context around line 5 ---
+       2: try:
+       3:     from leaf_qt.status_presentation import LegacyCompatibilityProducer, status_severity
+       4: except Exception:
+>>     5:     def status_severity(value):
+       6:         text = str(value or "").upper()
+       7:         if _leaf_16u42_is_fail_like(text) or _leaf_16u42_is_fail_like(text) or "INVALID" in text or "ERROR" in text or "MISSING" in text:
+       8:             return "FAIL"
+       9:         if _leaf_16u42_is_warn_like(text) or "PARTIAL" in text or "MARGINAL" in text:
+      10:             return "WARN"
+      11:         if _leaf_16u42_is_pass_like(text) or "VALID" in text or "COMPLETE" in text:
+
+json=/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u175hd_wrapper_repair_failure_diagnostic.json
+text=/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u175hd_wrapper_repair_failure_diagnostic.txt

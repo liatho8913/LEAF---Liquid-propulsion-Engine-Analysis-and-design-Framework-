@@ -1,0 +1,36 @@
+{
+  "module_id": "combustion_chamber",
+  "name": "Combustion Chamber",
+  "domain": "combustion",
+  "version": "1.0.0",
+  "description": "Reference module definition for the existing combustion chamber capability.",
+  "engineering_owner": "combustion_chamber_engineering_module",
+  "entrypoint": "",
+  "contracts": {
+    "interface": "module_engine",
+    "solver": "combustion_chamber_engineering_module",
+    "validation": "validation_engine",
+    "workflow": "workflow_engine",
+    "runtime": "runtime_engine",
+    "storage": "storage_engine",
+    "reports": "report_engine",
+    "notifications": "notification_engine"
+  },
+  "dependencies": [
+    "engine_solver",
+    "materials"
+  ],
+  "outputs": [
+    "chamber_pressure",
+    "chamber_temperature",
+    "characteristic_velocity",
+    "mass_flow"
+  ],
+  "tags": [
+    "reference_implementation",
+    "programme_30_migration_target"
+  ],
+  "enabled": true,
+  "requires_modules": [],
+  "runtime_binding": "stage_gated"
+}

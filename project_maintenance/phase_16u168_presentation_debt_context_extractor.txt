@@ -1,0 +1,776 @@
+LEAF PHASE 16U.168
+PRESENTATION DEBT CONTEXT EXTRACTOR
+============================================
+status=PASS_PHASE_16U168_PRESENTATION_DEBT_CONTEXT_EXTRACTOR
+manual_review_file_count=40
+sample_context_count=76
+
+CONTEXT CLASSIFICATION COUNTS
+-------------------------------
+ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED=76
+
+CONTEXT MANIFEST
+----------------
+
+leaf_qt/engine_solver.py
+  line 4559 [ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED]: if results.get("recommended_geometry_status") in (None, "BLOCKED_NO_RADIUS_DATA", "FAIL_NO_PHYSICAL_FIT"):
+        4555:     if coolant_mdot is None or coolant_mdot <= 0:
+        4556:         results["variable_channel_geometry_status"] = "NO_COOLANT_MASS_FLOW"
+        4557:         return results
+        4558: 
+    >>  4559:     if results.get("recommended_geometry_status") in (None, "BLOCKED_NO_RADIUS_DATA", "FAIL_NO_PHYSICAL_FIT"):
+        4560:         results = build_geometry_aware_recommended_regen_design(results)
+        4561: 
+        4562:     base_channel_count = int(results.get("recommended_channel_count") or min_channel_count)
+        4563:     base_channel_width = results.get("recommended_channel_width") or min_channel_width
+  line 4559 [ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED]: if results.get("recommended_geometry_status") in (None, "BLOCKED_NO_RADIUS_DATA", "FAIL_NO_PHYSICAL_FIT"):
+        4555:     if coolant_mdot is None or coolant_mdot <= 0:
+        4556:         results["variable_channel_geometry_status"] = "NO_COOLANT_MASS_FLOW"
+        4557:         return results
+        4558: 
+    >>  4559:     if results.get("recommended_geometry_status") in (None, "BLOCKED_NO_RADIUS_DATA", "FAIL_NO_PHYSICAL_FIT"):
+        4560:         results = build_geometry_aware_recommended_regen_design(results)
+        4561: 
+        4562:     base_channel_count = int(results.get("recommended_channel_count") or min_channel_count)
+        4563:     base_channel_width = results.get("recommended_channel_width") or min_channel_width
+  line 5323 [ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED]: elif status == "FAIL_BUT_IMPROVED":
+        5319:     if invalid_station_count > 0:
+        5320:         recommendation = (
+        5321:             "Variable geometry contains invalid stations. Thermal preview uses recommended-geometry fallback at invalid stations."
+        5322:         )
+    >>  5323:     elif status == "FAIL_BUT_IMPROVED":
+        5324:         recommendation = (
+        5325:             "Variable geometry improves valid stations but still fails material limits."
+        5326:         )
+        5327:     elif status == "PASS":
+  line 5323 [ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED]: elif status == "FAIL_BUT_IMPROVED":
+        5319:     if invalid_station_count > 0:
+        5320:         recommendation = (
+        5321:             "Variable geometry contains invalid stations. Thermal preview uses recommended-geometry fallback at invalid stations."
+        5322:         )
+    >>  5323:     elif status == "FAIL_BUT_IMPROVED":
+        5324:         recommendation = (
+        5325:             "Variable geometry improves valid stations but still fails material limits."
+        5326:         )
+        5327:     elif status == "PASS":
+
+leaf_qt/regen_convergence_master_gate.py
+  line 44 [ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED]: if status == "PASS_REGEN_CONVERGENCE_MASTER_GATE_CONVERGED":
+          40: ) -> tuple[list[dict[str, Any]], str | None]:
+          41:     findings: list[dict[str, Any]] = []
+          42:     lifecycle: str | None = None
+          43: 
+    >>    44:     if status == "PASS_REGEN_CONVERGENCE_MASTER_GATE_CONVERGED":
+          45:         findings.append(
+          46:             make_finding(
+          47:                 message=reason,
+          48:                 category="COMPLETE",
+  line 44 [ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED]: if status == "PASS_REGEN_CONVERGENCE_MASTER_GATE_CONVERGED":
+          40: ) -> tuple[list[dict[str, Any]], str | None]:
+          41:     findings: list[dict[str, Any]] = []
+          42:     lifecycle: str | None = None
+          43: 
+    >>    44:     if status == "PASS_REGEN_CONVERGENCE_MASTER_GATE_CONVERGED":
+          45:         findings.append(
+          46:             make_finding(
+          47:                 message=reason,
+          48:                 category="COMPLETE",
+  line 54 [ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED]: elif status == "WARN_REGEN_CONVERGENCE_MASTER_GATE_RUNNING":
+          50:                 evidence=evidence,
+          51:             )
+          52:         )
+          53: 
+    >>    54:     elif status == "WARN_REGEN_CONVERGENCE_MASTER_GATE_RUNNING":
+          55:         lifecycle = STATUS_RUNNING
+          56:         findings.append(
+          57:             make_finding(
+          58:                 message=reason,
+  line 54 [ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED]: elif status == "WARN_REGEN_CONVERGENCE_MASTER_GATE_RUNNING":
+          50:                 evidence=evidence,
+          51:             )
+          52:         )
+          53: 
+    >>    54:     elif status == "WARN_REGEN_CONVERGENCE_MASTER_GATE_RUNNING":
+          55:         lifecycle = STATUS_RUNNING
+          56:         findings.append(
+          57:             make_finding(
+          58:                 message=reason,
+
+leaf_qt/regen_optimisation_controller_master_gate.py
+  line 44 [ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED]: if status == "PASS_REGEN_OPTIMISATION_MASTER_GATE_CONVERGED":
+          40: ) -> tuple[list[dict[str, Any]], str | None]:
+          41:     findings: list[dict[str, Any]] = []
+          42:     lifecycle: str | None = None
+          43: 
+    >>    44:     if status == "PASS_REGEN_OPTIMISATION_MASTER_GATE_CONVERGED":
+          45:         findings.append(
+          46:             make_finding(
+          47:                 message=reason,
+          48:                 category="COMPLETE",
+  line 44 [ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED]: if status == "PASS_REGEN_OPTIMISATION_MASTER_GATE_CONVERGED":
+          40: ) -> tuple[list[dict[str, Any]], str | None]:
+          41:     findings: list[dict[str, Any]] = []
+          42:     lifecycle: str | None = None
+          43: 
+    >>    44:     if status == "PASS_REGEN_OPTIMISATION_MASTER_GATE_CONVERGED":
+          45:         findings.append(
+          46:             make_finding(
+          47:                 message=reason,
+          48:                 category="COMPLETE",
+  line 54 [ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED]: elif status == "WARN_REGEN_OPTIMISATION_MASTER_GATE_NEXT_GENERATION_READY":
+          50:                 evidence=evidence,
+          51:             )
+          52:         )
+          53: 
+    >>    54:     elif status == "WARN_REGEN_OPTIMISATION_MASTER_GATE_NEXT_GENERATION_READY":
+          55:         lifecycle = STATUS_RUNNING
+          56:         findings.append(
+          57:             make_finding(
+          58:                 message=reason,
+  line 54 [ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED]: elif status == "WARN_REGEN_OPTIMISATION_MASTER_GATE_NEXT_GENERATION_READY":
+          50:                 evidence=evidence,
+          51:             )
+          52:         )
+          53: 
+    >>    54:     elif status == "WARN_REGEN_OPTIMISATION_MASTER_GATE_NEXT_GENERATION_READY":
+          55:         lifecycle = STATUS_RUNNING
+          56:         findings.append(
+          57:             make_finding(
+          58:                 message=reason,
+
+leaf_qt/regen_viewer_gui_runtime_acceptance_gate_phase_16q28.py
+  line 81 [ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED]: if results.get("phase_16q24_real_button_toggle_status") != "PASS_REGEN_VIEWER_REAL_BUTTON_TOGGLE_OWNER_PHASE_16Q24":
+          77:         warnings.append("Automatic geometry button was not discovered by text scanner.")
+          78:     if not found_rec:
+          79:         warnings.append("Recommended/manual geometry button was not discovered by text scanner.")
+          80: 
+    >>    81:     if results.get("phase_16q24_real_button_toggle_status") != "PASS_REGEN_VIEWER_REAL_BUTTON_TOGGLE_OWNER_PHASE_16Q24":
+          82:         blockers.append("Real button toggle owner status is not PASS.")
+          83: 
+          84:     if results.get("phase_16q27_toggle_ux_status") != "PASS_REGEN_VIEWER_TOGGLE_UX_CLEANUP_PHASE_16Q27":
+          85:         blockers.append("Toggle UX cleanup status is not PASS.")
+  line 81 [ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED]: if results.get("phase_16q24_real_button_toggle_status") != "PASS_REGEN_VIEWER_REAL_BUTTON_TOGGLE_OWNER_PHASE_16Q24":
+          77:         warnings.append("Automatic geometry button was not discovered by text scanner.")
+          78:     if not found_rec:
+          79:         warnings.append("Recommended/manual geometry button was not discovered by text scanner.")
+          80: 
+    >>    81:     if results.get("phase_16q24_real_button_toggle_status") != "PASS_REGEN_VIEWER_REAL_BUTTON_TOGGLE_OWNER_PHASE_16Q24":
+          82:         blockers.append("Real button toggle owner status is not PASS.")
+          83: 
+          84:     if results.get("phase_16q27_toggle_ux_status") != "PASS_REGEN_VIEWER_TOGGLE_UX_CLEANUP_PHASE_16Q27":
+          85:         blockers.append("Toggle UX cleanup status is not PASS.")
+  line 84 [ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED]: if results.get("phase_16q27_toggle_ux_status") != "PASS_REGEN_VIEWER_TOGGLE_UX_CLEANUP_PHASE_16Q27":
+          80: 
+          81:     if results.get("phase_16q24_real_button_toggle_status") != "PASS_REGEN_VIEWER_REAL_BUTTON_TOGGLE_OWNER_PHASE_16Q24":
+          82:         blockers.append("Real button toggle owner status is not PASS.")
+          83: 
+    >>    84:     if results.get("phase_16q27_toggle_ux_status") != "PASS_REGEN_VIEWER_TOGGLE_UX_CLEANUP_PHASE_16Q27":
+          85:         blockers.append("Toggle UX cleanup status is not PASS.")
+          86: 
+          87:     if results.get("phase_16q25_auto_geometry_cache_available") is True:
+          88:         if "cached" not in str(results.get("phase_16q27_toggle_ux_hint", "")).lower():
+  line 84 [ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED]: if results.get("phase_16q27_toggle_ux_status") != "PASS_REGEN_VIEWER_TOGGLE_UX_CLEANUP_PHASE_16Q27":
+          80: 
+          81:     if results.get("phase_16q24_real_button_toggle_status") != "PASS_REGEN_VIEWER_REAL_BUTTON_TOGGLE_OWNER_PHASE_16Q24":
+          82:         blockers.append("Real button toggle owner status is not PASS.")
+          83: 
+    >>    84:     if results.get("phase_16q27_toggle_ux_status") != "PASS_REGEN_VIEWER_TOGGLE_UX_CLEANUP_PHASE_16Q27":
+          85:         blockers.append("Toggle UX cleanup status is not PASS.")
+          86: 
+          87:     if results.get("phase_16q25_auto_geometry_cache_available") is True:
+          88:         if "cached" not in str(results.get("phase_16q27_toggle_ux_hint", "")).lower():
+
+leaf_qt/foundation_verification_harness.py
+  line 123 [ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED]: if status == "PASS_FOUNDATION_VERIFICATION" and failed_count == 0:
+         119:     status = result.get("foundation_verification_status")
+         120:     failed_count = int(result.get("foundation_verification_failed_count", 0) or 0)
+         121:     passed_count = int(result.get("foundation_verification_passed_count", 0) or 0)
+         122: 
+    >>   123:     if status == "PASS_FOUNDATION_VERIFICATION" and failed_count == 0:
+         124:         findings.append(
+         125:             _leaf_16t3w1_make_finding(
+         126:                 message="Foundation verification harness passed with legacy output preserved.",
+         127:                 category="COMPLETE",
+  line 123 [ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED]: if status == "PASS_FOUNDATION_VERIFICATION" and failed_count == 0:
+         119:     status = result.get("foundation_verification_status")
+         120:     failed_count = int(result.get("foundation_verification_failed_count", 0) or 0)
+         121:     passed_count = int(result.get("foundation_verification_passed_count", 0) or 0)
+         122: 
+    >>   123:     if status == "PASS_FOUNDATION_VERIFICATION" and failed_count == 0:
+         124:         findings.append(
+         125:             _leaf_16t3w1_make_finding(
+         126:                 message="Foundation verification harness passed with legacy output preserved.",
+         127:                 category="COMPLETE",
+
+leaf_qt/regen_candidate_comparison_master_gate.py
+  line 17 [ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED]: if results.get("regen_candidate_comparison_completion_audit_status") != "PASS_REGEN_CANDIDATE_COMPARISON_VIEWER_BACKEND_PHASE_15B":
+          13: 
+          14:     if results.get("regen_candidate_comparison_completion_audit_ready") is not True:
+          15:         blockers.append("15B candidate comparison completion audit is not ready.")
+          16: 
+    >>    17:     if results.get("regen_candidate_comparison_completion_audit_status") != "PASS_REGEN_CANDIDATE_COMPARISON_VIEWER_BACKEND_PHASE_15B":
+          18:         blockers.append("15B candidate comparison completion audit has not passed.")
+          19: 
+          20:     if results.get("phase_15c_evolution_tree_backend_allowed") is not True:
+          21:         blockers.append("Phase 15C evolution tree backend was not unlocked.")
+  line 17 [ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED]: if results.get("regen_candidate_comparison_completion_audit_status") != "PASS_REGEN_CANDIDATE_COMPARISON_VIEWER_BACKEND_PHASE_15B":
+          13: 
+          14:     if results.get("regen_candidate_comparison_completion_audit_ready") is not True:
+          15:         blockers.append("15B candidate comparison completion audit is not ready.")
+          16: 
+    >>    17:     if results.get("regen_candidate_comparison_completion_audit_status") != "PASS_REGEN_CANDIDATE_COMPARISON_VIEWER_BACKEND_PHASE_15B":
+          18:         blockers.append("15B candidate comparison completion audit has not passed.")
+          19: 
+          20:     if results.get("phase_15c_evolution_tree_backend_allowed") is not True:
+          21:         blockers.append("Phase 15C evolution tree backend was not unlocked.")
+
+leaf_qt/regen_completion_master_gate.py
+  line 17 [ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED]: if results.get("regen_completion_gate_completion_audit_status") != "PASS_REGEN_COMPLETION_GATE_AUDIT_PHASE_16F":
+          13: 
+          14:     if results.get("regen_completion_gate_completion_audit_ready") is not True:
+          15:         blockers.append("16F regen completion gate audit is not ready.")
+          16: 
+    >>    17:     if results.get("regen_completion_gate_completion_audit_status") != "PASS_REGEN_COMPLETION_GATE_AUDIT_PHASE_16F":
+          18:         blockers.append("16F regen completion gate audit has not passed.")
+          19: 
+          20:     if results.get("regen_system_completion_gate_ready") is not True:
+          21:         blockers.append("Regen system completion gate is not ready.")
+  line 17 [ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED]: if results.get("regen_completion_gate_completion_audit_status") != "PASS_REGEN_COMPLETION_GATE_AUDIT_PHASE_16F":
+          13: 
+          14:     if results.get("regen_completion_gate_completion_audit_ready") is not True:
+          15:         blockers.append("16F regen completion gate audit is not ready.")
+          16: 
+    >>    17:     if results.get("regen_completion_gate_completion_audit_status") != "PASS_REGEN_COMPLETION_GATE_AUDIT_PHASE_16F":
+          18:         blockers.append("16F regen completion gate audit has not passed.")
+          19: 
+          20:     if results.get("regen_system_completion_gate_ready") is not True:
+          21:         blockers.append("Regen system completion gate is not ready.")
+
+leaf_qt/regen_evolution_tree_master_gate.py
+  line 17 [ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED]: if results.get("regen_evolution_tree_completion_audit_status") != "PASS_REGEN_EVOLUTION_TREE_BACKEND_PHASE_15C":
+          13: 
+          14:     if results.get("regen_evolution_tree_completion_audit_ready") is not True:
+          15:         blockers.append("15C evolution tree completion audit is not ready.")
+          16: 
+    >>    17:     if results.get("regen_evolution_tree_completion_audit_status") != "PASS_REGEN_EVOLUTION_TREE_BACKEND_PHASE_15C":
+          18:         blockers.append("15C evolution tree completion audit has not passed.")
+          19: 
+          20:     if results.get("phase_15d_optimisation_report_backend_allowed") is not True:
+          21:         blockers.append("Phase 15D optimisation report backend was not unlocked.")
+  line 17 [ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED]: if results.get("regen_evolution_tree_completion_audit_status") != "PASS_REGEN_EVOLUTION_TREE_BACKEND_PHASE_15C":
+          13: 
+          14:     if results.get("regen_evolution_tree_completion_audit_ready") is not True:
+          15:         blockers.append("15C evolution tree completion audit is not ready.")
+          16: 
+    >>    17:     if results.get("regen_evolution_tree_completion_audit_status") != "PASS_REGEN_EVOLUTION_TREE_BACKEND_PHASE_15C":
+          18:         blockers.append("15C evolution tree completion audit has not passed.")
+          19: 
+          20:     if results.get("phase_15d_optimisation_report_backend_allowed") is not True:
+          21:         blockers.append("Phase 15D optimisation report backend was not unlocked.")
+
+leaf_qt/regen_optimisation_narrative_master_gate.py
+  line 58 [ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED]: if status == "PASS_REGEN_OPTIMISATION_NARRATIVE_MASTER_GATE":
+          54:     status: str,
+          55:     reason: str,
+          56:     evidence: dict[str, Any],
+          57: ) -> list[dict[str, Any]]:
+    >>    58:     if status == "PASS_REGEN_OPTIMISATION_NARRATIVE_MASTER_GATE":
+          59:         return [
+          60:             make_finding(
+          61:                 message=reason,
+          62:                 category="COMPLETE",
+  line 58 [ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED]: if status == "PASS_REGEN_OPTIMISATION_NARRATIVE_MASTER_GATE":
+          54:     status: str,
+          55:     reason: str,
+          56:     evidence: dict[str, Any],
+          57: ) -> list[dict[str, Any]]:
+    >>    58:     if status == "PASS_REGEN_OPTIMISATION_NARRATIVE_MASTER_GATE":
+          59:         return [
+          60:             make_finding(
+          61:                 message=reason,
+          62:                 category="COMPLETE",
+
+leaf_qt/regen_optimisation_viewer_master_gate.py
+  line 17 [ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED]: if results.get("regen_optimisation_viewer_completion_audit_status") != "PASS_REGEN_OPTIMISATION_VIEWER_BACKEND_PHASE_15A":
+          13: 
+          14:     if results.get("regen_optimisation_viewer_completion_audit_ready") is not True:
+          15:         blockers.append("15A optimisation viewer completion audit is not ready.")
+          16: 
+    >>    17:     if results.get("regen_optimisation_viewer_completion_audit_status") != "PASS_REGEN_OPTIMISATION_VIEWER_BACKEND_PHASE_15A":
+          18:         blockers.append("15A optimisation viewer completion audit has not passed.")
+          19: 
+          20:     if results.get("phase_15b_candidate_comparison_viewer_backend_allowed") is not True:
+          21:         blockers.append("Phase 15B candidate comparison backend was not unlocked.")
+  line 17 [ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED]: if results.get("regen_optimisation_viewer_completion_audit_status") != "PASS_REGEN_OPTIMISATION_VIEWER_BACKEND_PHASE_15A":
+          13: 
+          14:     if results.get("regen_optimisation_viewer_completion_audit_ready") is not True:
+          15:         blockers.append("15A optimisation viewer completion audit is not ready.")
+          16: 
+    >>    17:     if results.get("regen_optimisation_viewer_completion_audit_status") != "PASS_REGEN_OPTIMISATION_VIEWER_BACKEND_PHASE_15A":
+          18:         blockers.append("15A optimisation viewer completion audit has not passed.")
+          19: 
+          20:     if results.get("phase_15b_candidate_comparison_viewer_backend_allowed") is not True:
+          21:         blockers.append("Phase 15B candidate comparison backend was not unlocked.")
+
+leaf_qt/regen_runtime_candidate_evaluation_master_gate.py
+  line 17 [ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED]: if results.get("regen_runtime_candidate_evaluation_completion_audit_status") != "PASS_REGEN_RUNTIME_CANDIDATE_EVALUATION_PHASE_14B":
+          13: 
+          14:     if results.get("regen_runtime_candidate_evaluation_completion_audit_ready") is not True:
+          15:         blockers.append("14B runtime candidate evaluation completion audit is not ready.")
+          16: 
+    >>    17:     if results.get("regen_runtime_candidate_evaluation_completion_audit_status") != "PASS_REGEN_RUNTIME_CANDIDATE_EVALUATION_PHASE_14B":
+          18:         blockers.append("14B runtime candidate evaluation completion audit has not passed.")
+          19: 
+          20:     if results.get("phase_14c_runtime_selection_allowed") is not True:
+          21:         blockers.append("Phase 14C runtime selection has not been unlocked.")
+  line 17 [ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED]: if results.get("regen_runtime_candidate_evaluation_completion_audit_status") != "PASS_REGEN_RUNTIME_CANDIDATE_EVALUATION_PHASE_14B":
+          13: 
+          14:     if results.get("regen_runtime_candidate_evaluation_completion_audit_ready") is not True:
+          15:         blockers.append("14B runtime candidate evaluation completion audit is not ready.")
+          16: 
+    >>    17:     if results.get("regen_runtime_candidate_evaluation_completion_audit_status") != "PASS_REGEN_RUNTIME_CANDIDATE_EVALUATION_PHASE_14B":
+          18:         blockers.append("14B runtime candidate evaluation completion audit has not passed.")
+          19: 
+          20:     if results.get("phase_14c_runtime_selection_allowed") is not True:
+          21:         blockers.append("Phase 14C runtime selection has not been unlocked.")
+
+leaf_qt/regen_runtime_convergence_master_gate.py
+  line 17 [ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED]: if results.get("regen_runtime_convergence_completion_audit_status") != "PASS_REGEN_RUNTIME_CONVERGENCE_PHASE_14E":
+          13: 
+          14:     if results.get("regen_runtime_convergence_completion_audit_ready") is not True:
+          15:         blockers.append("14E runtime convergence completion audit is not ready.")
+          16: 
+    >>    17:     if results.get("regen_runtime_convergence_completion_audit_status") != "PASS_REGEN_RUNTIME_CONVERGENCE_PHASE_14E":
+          18:         blockers.append("14E runtime convergence completion audit has not passed.")
+          19: 
+          20:     if results.get("phase_14f_runtime_optimisation_audit_allowed") is not True:
+          21:         blockers.append("Phase 14F runtime optimisation audit has not been unlocked.")
+  line 17 [ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED]: if results.get("regen_runtime_convergence_completion_audit_status") != "PASS_REGEN_RUNTIME_CONVERGENCE_PHASE_14E":
+          13: 
+          14:     if results.get("regen_runtime_convergence_completion_audit_ready") is not True:
+          15:         blockers.append("14E runtime convergence completion audit is not ready.")
+          16: 
+    >>    17:     if results.get("regen_runtime_convergence_completion_audit_status") != "PASS_REGEN_RUNTIME_CONVERGENCE_PHASE_14E":
+          18:         blockers.append("14E runtime convergence completion audit has not passed.")
+          19: 
+          20:     if results.get("phase_14f_runtime_optimisation_audit_allowed") is not True:
+          21:         blockers.append("Phase 14F runtime optimisation audit has not been unlocked.")
+
+leaf_qt/regen_runtime_evolution_master_gate.py
+  line 17 [ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED]: if results.get("regen_runtime_evolution_completion_audit_status") != "PASS_REGEN_RUNTIME_EVOLUTION_PHASE_14D":
+          13: 
+          14:     if results.get("regen_runtime_evolution_completion_audit_ready") is not True:
+          15:         blockers.append("14D runtime evolution completion audit is not ready.")
+          16: 
+    >>    17:     if results.get("regen_runtime_evolution_completion_audit_status") != "PASS_REGEN_RUNTIME_EVOLUTION_PHASE_14D":
+          18:         blockers.append("14D runtime evolution completion audit has not passed.")
+          19: 
+          20:     if results.get("phase_14e_runtime_convergence_allowed") is not True:
+          21:         blockers.append("Phase 14E runtime convergence has not been unlocked.")
+  line 17 [ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED]: if results.get("regen_runtime_evolution_completion_audit_status") != "PASS_REGEN_RUNTIME_EVOLUTION_PHASE_14D":
+          13: 
+          14:     if results.get("regen_runtime_evolution_completion_audit_ready") is not True:
+          15:         blockers.append("14D runtime evolution completion audit is not ready.")
+          16: 
+    >>    17:     if results.get("regen_runtime_evolution_completion_audit_status") != "PASS_REGEN_RUNTIME_EVOLUTION_PHASE_14D":
+          18:         blockers.append("14D runtime evolution completion audit has not passed.")
+          19: 
+          20:     if results.get("phase_14e_runtime_convergence_allowed") is not True:
+          21:         blockers.append("Phase 14E runtime convergence has not been unlocked.")
+
+leaf_qt/regen_runtime_selection_master_gate.py
+  line 17 [ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED]: if results.get("regen_runtime_selection_completion_audit_status") != "PASS_REGEN_RUNTIME_SELECTION_PHASE_14C":
+          13: 
+          14:     if results.get("regen_runtime_selection_completion_audit_ready") is not True:
+          15:         blockers.append("14C runtime selection completion audit is not ready.")
+          16: 
+    >>    17:     if results.get("regen_runtime_selection_completion_audit_status") != "PASS_REGEN_RUNTIME_SELECTION_PHASE_14C":
+          18:         blockers.append("14C runtime selection completion audit has not passed.")
+          19: 
+          20:     if results.get("phase_14d_runtime_evolution_allowed") is not True:
+          21:         blockers.append("Phase 14D runtime evolution has not been unlocked.")
+  line 17 [ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED]: if results.get("regen_runtime_selection_completion_audit_status") != "PASS_REGEN_RUNTIME_SELECTION_PHASE_14C":
+          13: 
+          14:     if results.get("regen_runtime_selection_completion_audit_ready") is not True:
+          15:         blockers.append("14C runtime selection completion audit is not ready.")
+          16: 
+    >>    17:     if results.get("regen_runtime_selection_completion_audit_status") != "PASS_REGEN_RUNTIME_SELECTION_PHASE_14C":
+          18:         blockers.append("14C runtime selection completion audit has not passed.")
+          19: 
+          20:     if results.get("phase_14d_runtime_evolution_allowed") is not True:
+          21:         blockers.append("Phase 14D runtime evolution has not been unlocked.")
+
+leaf_qt/regen_system_signoff_master_gate.py
+  line 17 [ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED]: if results.get("regen_system_signoff_completion_audit_status") != "PASS_REGEN_SYSTEM_SIGNOFF_AUDIT_PHASE_16E":
+          13: 
+          14:     if results.get("regen_system_signoff_completion_audit_ready") is not True:
+          15:         blockers.append("16E regen system signoff completion audit is not ready.")
+          16: 
+    >>    17:     if results.get("regen_system_signoff_completion_audit_status") != "PASS_REGEN_SYSTEM_SIGNOFF_AUDIT_PHASE_16E":
+          18:         blockers.append("16E regen system signoff completion audit has not passed.")
+          19: 
+          20:     if results.get("phase_16f_regen_completion_gate_allowed") is not True:
+          21:         blockers.append("Phase 16F regen completion gate was not unlocked.")
+  line 17 [ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED]: if results.get("regen_system_signoff_completion_audit_status") != "PASS_REGEN_SYSTEM_SIGNOFF_AUDIT_PHASE_16E":
+          13: 
+          14:     if results.get("regen_system_signoff_completion_audit_ready") is not True:
+          15:         blockers.append("16E regen system signoff completion audit is not ready.")
+          16: 
+    >>    17:     if results.get("regen_system_signoff_completion_audit_status") != "PASS_REGEN_SYSTEM_SIGNOFF_AUDIT_PHASE_16E":
+          18:         blockers.append("16E regen system signoff completion audit has not passed.")
+          19: 
+          20:     if results.get("phase_16f_regen_completion_gate_allowed") is not True:
+          21:         blockers.append("Phase 16F regen completion gate was not unlocked.")
+
+leaf_qt/regen_unified_ecosystem_master_gate.py
+  line 17 [ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED]: if results.get("regen_unified_ecosystem_completion_audit_status") != "PASS_REGEN_UNIFIED_ECOSYSTEM_REGISTRY_PHASE_16A":
+          13: 
+          14:     if results.get("regen_unified_ecosystem_completion_audit_ready") is not True:
+          15:         blockers.append("16A unified ecosystem completion audit is not ready.")
+          16: 
+    >>    17:     if results.get("regen_unified_ecosystem_completion_audit_status") != "PASS_REGEN_UNIFIED_ECOSYSTEM_REGISTRY_PHASE_16A":
+          18:         blockers.append("16A unified ecosystem completion audit has not passed.")
+          19: 
+          20:     if results.get("phase_16b_viewer_integration_allowed") is not True:
+          21:         blockers.append("Phase 16B viewer integration was not unlocked.")
+  line 17 [ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED]: if results.get("regen_unified_ecosystem_completion_audit_status") != "PASS_REGEN_UNIFIED_ECOSYSTEM_REGISTRY_PHASE_16A":
+          13: 
+          14:     if results.get("regen_unified_ecosystem_completion_audit_ready") is not True:
+          15:         blockers.append("16A unified ecosystem completion audit is not ready.")
+          16: 
+    >>    17:     if results.get("regen_unified_ecosystem_completion_audit_status") != "PASS_REGEN_UNIFIED_ECOSYSTEM_REGISTRY_PHASE_16A":
+          18:         blockers.append("16A unified ecosystem completion audit has not passed.")
+          19: 
+          20:     if results.get("phase_16b_viewer_integration_allowed") is not True:
+          21:         blockers.append("Phase 16B viewer integration was not unlocked.")
+
+leaf_qt/regen_unified_validation_integration_master_gate.py
+  line 143 [ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED]: if results.get("regen_unified_validation_integration_completion_audit_status") != "PASS_REGEN_UNIFIED_VALIDATION_INTEGRATION_PHASE_16D":
+         139: 
+         140:     if results.get("regen_unified_validation_integration_completion_audit_ready") is not True:
+         141:         blockers.append("16D unified validation integration completion audit is not ready.")
+         142: 
+    >>   143:     if results.get("regen_unified_validation_integration_completion_audit_status") != "PASS_REGEN_UNIFIED_VALIDATION_INTEGRATION_PHASE_16D":
+         144:         blockers.append("16D unified validation integration completion audit has not passed.")
+         145: 
+         146:     if results.get("phase_16e_regen_signoff_allowed") is not True:
+         147:         blockers.append("Phase 16E regen signoff was not unlocked.")
+  line 143 [ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED]: if results.get("regen_unified_validation_integration_completion_audit_status") != "PASS_REGEN_UNIFIED_VALIDATION_INTEGRATION_PHASE_16D":
+         139: 
+         140:     if results.get("regen_unified_validation_integration_completion_audit_ready") is not True:
+         141:         blockers.append("16D unified validation integration completion audit is not ready.")
+         142: 
+    >>   143:     if results.get("regen_unified_validation_integration_completion_audit_status") != "PASS_REGEN_UNIFIED_VALIDATION_INTEGRATION_PHASE_16D":
+         144:         blockers.append("16D unified validation integration completion audit has not passed.")
+         145: 
+         146:     if results.get("phase_16e_regen_signoff_allowed") is not True:
+         147:         blockers.append("Phase 16E regen signoff was not unlocked.")
+
+leaf_qt/regen_unified_viewer_integration_master_gate.py
+  line 17 [ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED]: if results.get("regen_unified_viewer_integration_completion_audit_status") != "PASS_REGEN_UNIFIED_VIEWER_INTEGRATION_PHASE_16B":
+          13: 
+          14:     if results.get("regen_unified_viewer_integration_completion_audit_ready") is not True:
+          15:         blockers.append("16B unified viewer integration completion audit is not ready.")
+          16: 
+    >>    17:     if results.get("regen_unified_viewer_integration_completion_audit_status") != "PASS_REGEN_UNIFIED_VIEWER_INTEGRATION_PHASE_16B":
+          18:         blockers.append("16B unified viewer integration completion audit has not passed.")
+          19: 
+          20:     if results.get("phase_16c_report_integration_allowed") is not True:
+          21:         blockers.append("Phase 16C report integration was not unlocked.")
+  line 17 [ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED]: if results.get("regen_unified_viewer_integration_completion_audit_status") != "PASS_REGEN_UNIFIED_VIEWER_INTEGRATION_PHASE_16B":
+          13: 
+          14:     if results.get("regen_unified_viewer_integration_completion_audit_ready") is not True:
+          15:         blockers.append("16B unified viewer integration completion audit is not ready.")
+          16: 
+    >>    17:     if results.get("regen_unified_viewer_integration_completion_audit_status") != "PASS_REGEN_UNIFIED_VIEWER_INTEGRATION_PHASE_16B":
+          18:         blockers.append("16B unified viewer integration completion audit has not passed.")
+          19: 
+          20:     if results.get("phase_16c_report_integration_allowed") is not True:
+          21:         blockers.append("Phase 16C report integration was not unlocked.")
+
+leaf_qt/regen_validation_master_gate.py
+  line 69 [ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED]: if status == "PASS_REGEN_VALIDATION_MASTER_GATE":
+          65:     status: str,
+          66:     reason: str,
+          67:     evidence: dict[str, Any],
+          68: ) -> list[dict[str, Any]]:
+    >>    69:     if status == "PASS_REGEN_VALIDATION_MASTER_GATE":
+          70:         category = "COMPLETE"
+          71:     elif "PLACEHOLDER" in status:
+          72:         category = "PLACEHOLDER_DATA"
+          73:     elif "PARTIAL" in status:
+  line 69 [ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED]: if status == "PASS_REGEN_VALIDATION_MASTER_GATE":
+          65:     status: str,
+          66:     reason: str,
+          67:     evidence: dict[str, Any],
+          68: ) -> list[dict[str, Any]]:
+    >>    69:     if status == "PASS_REGEN_VALIDATION_MASTER_GATE":
+          70:         category = "COMPLETE"
+          71:     elif "PLACEHOLDER" in status:
+          72:         category = "PLACEHOLDER_DATA"
+          73:     elif "PARTIAL" in status:
+
+leaf_qt/regen_acceptance_master_gate.py
+  line 64 [ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED]: if status == PASS_STATUS:
+          60: 
+          61:     status = PASS_STATUS if not blockers else FAIL_STATUS
+          62: 
+          63:     payload = None
+    >>    64:     if status == PASS_STATUS:
+          65:         payload = {
+          66:             "status": status,
+          67:             "completion_state": "REGEN_ACCEPTANCE_FRAMEWORK_COMPLETE",
+          68:             "candidate_id": candidate_ids[0] if candidate_ids else report_payload.get("candidate_id"),
+
+leaf_qt/regen_before_after_solver_comparison_report_owner.py
+  line 63 [ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED]: if status == PASS_STATUS:
+          59: 
+          60:     status = PASS_STATUS if not blockers else FAIL_STATUS
+          61: 
+          62:     report_payload = None
+    >>    63:     if status == PASS_STATUS:
+          64:         report_payload = {
+          65:             "status": status,
+          66:             "candidate_id": _candidate_id_from_results(results, audit),
+          67:             "source_phase": "16J.4E",
+
+leaf_qt/regen_candidate_acceptance_completion_gate.py
+  line 77 [ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED]: if status == PASS_STATUS:
+          73: 
+          74:     status = PASS_STATUS if not blockers else FAIL_STATUS
+          75: 
+          76:     gate_payload = None
+    >>    77:     if status == PASS_STATUS:
+          78:         gate_payload = {
+          79:             "status": status,
+          80:             "candidate_id": resolved_candidate_id,
+          81:             "completion_state": "CANDIDATE_ACCEPTANCE_PIPELINE_COMPLETE",
+
+leaf_qt/regen_cross_section_viewer_integration.py
+  line 71 [ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED]: if status == PASS_STATUS:
+          67: 
+          68:     status = PASS_STATUS if not blockers else FAIL_STATUS
+          69: 
+          70:     payload = None
+    >>    71:     if status == PASS_STATUS:
+          72:         payload = {
+          73:             "status": status,
+          74:             "source_phase": "16K.5",
+          75:             "visibility": "UI_REPORT_VIEW",
+
+leaf_qt/regen_engineering_acceptance_report.py
+  line 41 [ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED]: if status == PASS_STATUS:
+          37: 
+          38:     status = PASS_STATUS if not blockers else FAIL_STATUS
+          39: 
+          40:     report_payload = None
+    >>    41:     if status == PASS_STATUS:
+          42:         report_payload = {
+          43:             "status": status,
+          44:             "source_phase": "16L.2",
+          45:             "visibility": "REPORT_ONLY",
+
+leaf_qt/regen_failure_root_cause_system.py
+  line 38 [ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED]: if status == PASS_STATUS:
+          34: 
+          35:     status = PASS_STATUS if not blockers else FAIL_STATUS
+          36: 
+          37:     payload = None
+    >>    38:     if status == PASS_STATUS:
+          39:         payload = {
+          40:             "status": status,
+          41:             "visibility": "REPORT_ONLY",
+          42:             "source_phase": "16J.6",
+
+leaf_qt/regen_final_completion_audit.py
+  line 53 [ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED]: if status == PASS_STATUS:
+          49: 
+          50:     status = PASS_STATUS if not blockers else FAIL_STATUS
+          51: 
+          52:     payload = None
+    >>    53:     if status == PASS_STATUS:
+          54:         payload = {
+          55:             "status": status,
+          56:             "source_phase": "16M.1",
+          57:             "visibility": "REPORT_ONLY",
+
+leaf_qt/regen_final_master_gate.py
+  line 61 [ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED]: if status == PASS_STATUS:
+          57: 
+          58:     status = PASS_STATUS if not blockers else FAIL_STATUS
+          59: 
+          60:     payload = None
+    >>    61:     if status == PASS_STATUS:
+          62:         payload = {
+          63:             "status": status,
+          64:             "completion_state": "REGEN_SOFTWARE_SYSTEM_SIGNED_OFF",
+          65:             "candidate_id": candidate_ids[0] if candidate_ids else None,
+
+leaf_qt/regen_final_signoff_report.py
+  line 52 [ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED]: if status == PASS_STATUS:
+          48: 
+          49:     status = PASS_STATUS if not blockers else FAIL_STATUS
+          50: 
+          51:     payload = None
+    >>    52:     if status == PASS_STATUS:
+          53:         payload = {
+          54:             "status": status,
+          55:             "source_phase": "16M.3",
+          56:             "visibility": "REPORT_ONLY",
+
+leaf_qt/regen_final_verification_audit.py
+  line 70 [ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED]: if status == PASS_STATUS:
+          66: 
+          67:     status = PASS_STATUS if not blockers else FAIL_STATUS
+          68: 
+          69:     payload = None
+    >>    70:     if status == PASS_STATUS:
+          71:         payload = {
+          72:             "status": status,
+          73:             "source_phase": "16M.2",
+          74:             "visibility": "REPORT_ONLY",
+
+leaf_qt/regen_live_geometry_commit_execution.py
+  line 90 [ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED]: if status == PASS_STATUS:
+          86: 
+          87:     status = PASS_STATUS if not blockers else FAIL_STATUS
+          88: 
+          89:     audit_record = None
+    >>    90:     if status == PASS_STATUS:
+          91:         audit_record = {
+          92:             "event_type": "REGEN_LIVE_GEOMETRY_COMMIT_EXECUTED",
+          93:             "phase": "16J.4C",
+          94:             "timestamp_utc": datetime.now(timezone.utc).isoformat(),
+
+leaf_qt/regen_optimisation_completion_gate.py
+  line 65 [ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED]: if status == PASS_STATUS:
+          61: 
+          62:     status = PASS_STATUS if not blockers else FAIL_STATUS
+          63: 
+          64:     payload = None
+    >>    65:     if status == PASS_STATUS:
+          66:         payload = {
+          67:             "status": status,
+          68:             "completion_state": "REGEN_OPTIMISATION_PIPELINE_COMPLETE",
+          69:             "visibility": "REPORT_ONLY",
+
+leaf_qt/regen_optimisation_proof_system.py
+  line 67 [ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED]: if status == PASS_STATUS:
+          63:     trust_score = _trust_score(proof_ledger)
+          64:     status = PASS_STATUS if not blockers else FAIL_STATUS
+          65: 
+          66:     payload = None
+    >>    67:     if status == PASS_STATUS:
+          68:         payload = {
+          69:             "status": status,
+          70:             "visibility": "REPORT_ONLY",
+          71:             "source_phase": "16J.7",
+
+leaf_qt/regen_station_viewer_integration.py
+  line 64 [ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED]: if status == PASS_STATUS:
+          60: 
+          61:     status = PASS_STATUS if not blockers else FAIL_STATUS
+          62: 
+          63:     payload = None
+    >>    64:     if status == PASS_STATUS:
+          65:         payload = {
+          66:             "status": status,
+          67:             "source_phase": "16K.6",
+          68:             "visibility": "UI_REPORT_VIEW",
+
+leaf_qt/regen_viewer_completion_gate.py
+  line 70 [ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED]: if status == PASS_STATUS:
+          66: 
+          67:     status = PASS_STATUS if not blockers else FAIL_STATUS
+          68: 
+          69:     completion_payload = None
+    >>    70:     if status == PASS_STATUS:
+          71:         completion_payload = {
+          72:             "status": status,
+          73:             "completion_state": "REGEN_VIEWER_COMPLETE",
+          74:             "candidate_id": candidate_ids[0],
+
+leaf_qt/regen_viewer_data_adapter.py
+  line 54 [ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED]: if status == PASS_STATUS:
+          50:     status = PASS_STATUS if not blockers else FAIL_STATUS
+          51: 
+          52:     viewer_payload = None
+          53: 
+    >>    54:     if status == PASS_STATUS:
+          55:         viewer_payload = {
+          56:             "status": status,
+          57:             "source_phase": "16K.1",
+          58:             "visibility": "UI_REPORT_VIEW",
+
+leaf_qt/regen_viewer_navigation_system.py
+  line 76 [ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED]: if status == PASS_STATUS:
+          72:     status = PASS_STATUS if not blockers else FAIL_STATUS
+          73: 
+          74:     navigation_payload = None
+          75: 
+    >>    76:     if status == PASS_STATUS:
+          77:         default_key = "summary"
+          78:         selected_section = {
+          79:             "key": default_key,
+          80:             "label": SECTION_LABELS[default_key],
+
+leaf_qt/regen_viewer_ownership_architecture.py
+  line 82 [ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED]: if status == PASS_STATUS:
+          78:     validation_payload = None
+          79:     audit_payload = None
+          80:     gate_payload = None
+          81: 
+    >>    82:     if status == PASS_STATUS:
+          83:         candidate_id = viewer_payload.get("candidate_id")
+          84: 
+          85:         owner_payload = {
+          86:             "owner": "regen_viewer_owner",
+
+leaf_qt/regen_viewer_report_renderer.py
+  line 85 [ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED]: if status == PASS_STATUS:
+          81:                 rendered_sections[section_name] = _render_section(section_name, section)
+          82: 
+          83:     status = PASS_STATUS if not blockers else FAIL_STATUS
+          84: 
+    >>    85:     if status == PASS_STATUS:
+          86:         full_report = _build_full_report(payload, rendered_sections)
+          87: 
+          88:     results["regen_viewer_report_renderer_complete"] = True
+          89:     results["phase_16k2_complete"] = status == PASS_STATUS
+
+leaf_qt/design_history_narrative_builder.py
+  line 332 [ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED]: return text in self.PASS_WORDS or status_severity(text) == "PASS"
+         328:         return f"{label}: {old} -> {new}"
+         329: 
+         330:     def _is_pass(self, value):
+         331:         text = str(value or "").strip().upper()
+    >>   332:         return text in self.PASS_WORDS or status_severity(text) == "PASS"
+         333: 
+         334:     def _is_fail(self, value):
+         335:         text = str(value or "").strip().upper()
+         336:         return text in self.FAIL_WORDS or status_severity(text) == "FAIL"
+  line 336 [ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED]: return text in self.FAIL_WORDS or status_severity(text) == "FAIL"
+         332:         return text in self.PASS_WORDS or status_severity(text) == "PASS"
+         333: 
+         334:     def _is_fail(self, value):
+         335:         text = str(value or "").strip().upper()
+    >>   336:         return text in self.FAIL_WORDS or status_severity(text) == "FAIL"
+         337: 
+         338:     def _safe_dict(self, value):
+         339:         return value if isinstance(value, dict) else {}
+         340: 
+
+leaf_qt/structured_status_access.py
+  line 45 [ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED]: if text in {"INFO", "PASS"} or text in PASS_LIKE or status_severity(text) == "PASS":
+          41: 
+          42: def canonical_status(value: Any) -> str:
+          43:     text = _normalise(value)
+          44: 
+    >>    45:     if text in {"INFO", "PASS"} or text in PASS_LIKE or status_severity(text) == "PASS":
+          46:         return "PASS"
+          47: 
+          48:     if text in {"FAIL", "BLOCKED"} or text in FAIL_LIKE or any(
+          49:         token in text for token in ("FAIL", "ERROR", "INVALID", "BLOCKED")
+
+json=/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u168_presentation_debt_context_extractor.json
+text=/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u168_presentation_debt_context_extractor.txt

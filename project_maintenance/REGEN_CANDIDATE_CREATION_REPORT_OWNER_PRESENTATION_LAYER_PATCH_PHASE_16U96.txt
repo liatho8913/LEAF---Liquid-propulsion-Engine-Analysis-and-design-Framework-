@@ -1,0 +1,35 @@
+LEAF PHASE 16U.96
+REGEN CANDIDATE CREATION REPORT OWNER PRESENTATION LAYER PATCH
+====================================================================
+
+STATUS: PASS_PHASE_16U96_REGEN_CANDIDATE_CREATION_REPORT_OWNER_PRESENTATION_LAYER_PATCH
+Generated: 2026-06-28T20:44:44
+
+FEATURE
+-------
+Patch the regen candidate creation report owner onto the shared status presentation layer.
+
+TARGET
+------
+leaf_qt/regen_candidate_creation_report_owner.py
+
+PATCH ACCOUNTING
+----------------
+Helper inserted: False
+Applied migrations: 0
+Before forbidden production count: 0
+After forbidden production count: 0
+Ignored helper fallback literals: 0
+Compiled: True
+Compile error: 
+
+APPLIED
+-------
+
+COMPLETION NOTICE
+-----------------
+PHASE 16U.96 COMPLETE.
+
+NEXT FEATURE
+------------
+PHASE 16U.97 — REGEN CANDIDATE CREATION REPORT OWNER PRESENTATION LAYER REGRESSION

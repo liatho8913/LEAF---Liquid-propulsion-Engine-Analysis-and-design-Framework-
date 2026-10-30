@@ -1,0 +1,33 @@
+{
+  "phase": "16U.11",
+  "status": "PASS_PHASE_16U11_ENGINE_SOLVER_MEDIUM_RISK_STATUS_WRAPPER_PATCH",
+  "generated": "2026-06-27T17:42:29",
+  "audit_status": "PASS_PHASE_16U10_ENGINE_SOLVER_MEDIUM_RISK_STATUS_CONSUMER_AUDIT",
+  "import_changed": true,
+  "applied_count": 3,
+  "already_applied_count": 0,
+  "missing_count": 0,
+  "applied": [
+    {
+      "old": "if status not in (\"REQUIRED\", \"PASS\"):",
+      "new": "if status != \"REQUIRED\" and not solver_pass(status):"
+    },
+    {
+      "old": "if \"FAIL\" in statuses:",
+      "new": "if solver_highest_severity(statuses) == \"FAIL\":"
+    },
+    {
+      "old": "elif \"WARN\" in statuses:",
+      "new": "elif solver_highest_severity(statuses) == \"WARN\":"
+    }
+  ],
+  "already_applied": [],
+  "missing": [],
+  "compile_result": {
+    "file": "leaf_qt/engine_solver.py",
+    "passed": true,
+    "error": ""
+  },
+  "manual_review_preserved": true,
+  "phase_16u11_engine_solver_medium_risk_status_wrapper_patch_complete": true
+}

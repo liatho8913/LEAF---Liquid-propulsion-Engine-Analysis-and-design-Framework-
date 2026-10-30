@@ -1,0 +1,30 @@
+LEAF PHASE 16U.175I
+DEDUPLICATION REGRESSION AND COMPATIBILITY AUDIT
+==========================================================
+status=PASS_PHASE_16U175I_DEDUPLICATION_REGRESSION_AND_COMPATIBILITY_AUDIT
+production_file_count=989
+compile_failure_count=0
+local_status_definition_count=1
+shared_status_import_user_count=77
+owner_self_test_failure_count=0
+
+INTERPRETATION
+--------------
+45 files had local status_severity removed directly.
+22 fallback-pattern files were repaired with valid try/except structure.
+The shared owner now carries extended severity semantics.
+
+LOCAL STATUS DEFINITIONS STILL PRESENT
+--------------------------------------
+leaf_qt/structured_status_access.py
+
+COMPILE FAILURES
+----------------
+None.
+
+OWNER SELF TEST FAILURES
+------------------------
+None.
+
+json=/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u175i_deduplication_regression_and_compatibility_audit.json
+text=/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u175i_deduplication_regression_and_compatibility_audit.txt

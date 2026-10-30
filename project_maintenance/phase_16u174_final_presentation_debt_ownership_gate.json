@@ -1,0 +1,18 @@
+{
+  "phase": "16U.174",
+  "compile_failure_count": 0,
+  "high_risk_file_count": 40,
+  "high_risk_finding_count": 82,
+  "exact_owned_count": 52,
+  "symbolic_owned_count": 19,
+  "remaining_unowned_count": 0,
+  "passed": true,
+  "status": "PASS_PHASE_16U174_FINAL_PRESENTATION_DEBT_OWNERSHIP_GATE",
+  "interpretation": {
+    "presentation_migration_status": "OWNED_NOT_ALL_PATCHED",
+    "exact_code_logic": "PROTECTED_AS_STATE_MACHINE_OR_PAYLOAD_LOGIC",
+    "symbolic_compare_logic": "OWNED_AS_SYMBOLIC_STATUS_COMPARISON_REVIEW",
+    "remaining_action": "CERTIFY_PROGRAMME_OR_CREATE_SYMBOLIC_STATUS_OWNER_HELPER"
+  },
+  "next_phase": "16U.175_PRESENTATION_MIGRATION_CLOSEOUT_CERTIFICATE"
+}

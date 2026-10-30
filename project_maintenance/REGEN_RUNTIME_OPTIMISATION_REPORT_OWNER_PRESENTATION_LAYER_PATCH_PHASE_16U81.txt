@@ -1,0 +1,35 @@
+LEAF PHASE 16U.81
+REGEN RUNTIME OPTIMISATION REPORT OWNER PRESENTATION LAYER PATCH
+====================================================================
+
+STATUS: PASS_PHASE_16U81_REGEN_RUNTIME_OPTIMISATION_REPORT_OWNER_PRESENTATION_LAYER_PATCH
+Generated: 2026-06-28T19:23:32
+
+FEATURE
+-------
+Patch the regen runtime optimisation report owner onto the shared status presentation layer.
+
+TARGET
+------
+leaf_qt/regen_runtime_optimisation_report_owner.py
+
+PATCH ACCOUNTING
+----------------
+Helper inserted: False
+Applied migrations: 0
+Before forbidden production count: 0
+After forbidden production count: 0
+Ignored helper fallback literals: 0
+Compiled: True
+Compile error: 
+
+APPLIED
+-------
+
+COMPLETION NOTICE
+-----------------
+PHASE 16U.81 COMPLETE.
+
+NEXT FEATURE
+------------
+PHASE 16U.82 — REGEN RUNTIME OPTIMISATION REPORT OWNER PRESENTATION LAYER REGRESSION

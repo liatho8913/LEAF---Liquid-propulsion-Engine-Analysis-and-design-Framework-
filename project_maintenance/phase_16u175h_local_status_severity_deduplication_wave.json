@@ -1,0 +1,417 @@
+{
+  "phase": "16U.175H",
+  "candidate_count": 67,
+  "touched_count": 45,
+  "skipped_count": 0,
+  "compile_failure_count": 22,
+  "touched": [
+    {
+      "path": "leaf_qt/real_engine_benchmark_completion_audit.py",
+      "backup": "/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u175h_backups/20260629_005617__leaf_qt__real_engine_benchmark_completion_audit.py.bak",
+      "local_definition_removed": true,
+      "shared_import_inserted": true
+    },
+    {
+      "path": "leaf_qt/regen_acceptance_criteria_owner.py",
+      "backup": "/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u175h_backups/20260629_005617__leaf_qt__regen_acceptance_criteria_owner.py.bak",
+      "local_definition_removed": true,
+      "shared_import_inserted": true
+    },
+    {
+      "path": "leaf_qt/regen_autonomous_optimisation_input_audit.py",
+      "backup": "/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u175h_backups/20260629_005617__leaf_qt__regen_autonomous_optimisation_input_audit.py.bak",
+      "local_definition_removed": true,
+      "shared_import_inserted": true
+    },
+    {
+      "path": "leaf_qt/regen_candidate_blueprint_completion_audit.py",
+      "backup": "/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u175h_backups/20260629_005617__leaf_qt__regen_candidate_blueprint_completion_audit.py.bak",
+      "local_definition_removed": true,
+      "shared_import_inserted": true
+    },
+    {
+      "path": "leaf_qt/regen_candidate_blueprint_generation_input_gate.py",
+      "backup": "/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u175h_backups/20260629_005617__leaf_qt__regen_candidate_blueprint_generation_input_gate.py.bak",
+      "local_definition_removed": true,
+      "shared_import_inserted": true
+    },
+    {
+      "path": "leaf_qt/regen_candidate_blueprint_mutation_validation.py",
+      "backup": "/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u175h_backups/20260629_005617__leaf_qt__regen_candidate_blueprint_mutation_validation.py.bak",
+      "local_definition_removed": true,
+      "shared_import_inserted": true
+    },
+    {
+      "path": "leaf_qt/regen_candidate_blueprint_optimisation_completion_audit.py",
+      "backup": "/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u175h_backups/20260629_005617__leaf_qt__regen_candidate_blueprint_optimisation_completion_audit.py.bak",
+      "local_definition_removed": true,
+      "shared_import_inserted": true
+    },
+    {
+      "path": "leaf_qt/regen_candidate_blueprint_population_completion_audit.py",
+      "backup": "/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u175h_backups/20260629_005617__leaf_qt__regen_candidate_blueprint_population_completion_audit.py.bak",
+      "local_definition_removed": true,
+      "shared_import_inserted": true
+    },
+    {
+      "path": "leaf_qt/regen_candidate_creation_completion_audit.py",
+      "backup": "/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u175h_backups/20260629_005617__leaf_qt__regen_candidate_creation_completion_audit.py.bak",
+      "local_definition_removed": true,
+      "shared_import_inserted": true
+    },
+    {
+      "path": "leaf_qt/regen_candidate_creation_input_audit.py",
+      "backup": "/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u175h_backups/20260629_005617__leaf_qt__regen_candidate_creation_input_audit.py.bak",
+      "local_definition_removed": true,
+      "shared_import_inserted": true
+    },
+    {
+      "path": "leaf_qt/regen_candidate_creation_registration_owner.py",
+      "backup": "/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u175h_backups/20260629_005617__leaf_qt__regen_candidate_creation_registration_owner.py.bak",
+      "local_definition_removed": true,
+      "shared_import_inserted": true
+    },
+    {
+      "path": "leaf_qt/regen_candidate_creation_session_owner.py",
+      "backup": "/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u175h_backups/20260629_005617__leaf_qt__regen_candidate_creation_session_owner.py.bak",
+      "local_definition_removed": true,
+      "shared_import_inserted": true
+    },
+    {
+      "path": "leaf_qt/regen_candidate_generation_completion_audit.py",
+      "backup": "/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u175h_backups/20260629_005617__leaf_qt__regen_candidate_generation_completion_audit.py.bak",
+      "local_definition_removed": true,
+      "shared_import_inserted": true
+    },
+    {
+      "path": "leaf_qt/regen_candidate_generation_input_gate.py",
+      "backup": "/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u175h_backups/20260629_005617__leaf_qt__regen_candidate_generation_input_gate.py.bak",
+      "local_definition_removed": true,
+      "shared_import_inserted": true
+    },
+    {
+      "path": "leaf_qt/regen_candidate_generation_registration_owner.py",
+      "backup": "/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u175h_backups/20260629_005617__leaf_qt__regen_candidate_generation_registration_owner.py.bak",
+      "local_definition_removed": true,
+      "shared_import_inserted": true
+    },
+    {
+      "path": "leaf_qt/regen_candidate_generation_session_owner.py",
+      "backup": "/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u175h_backups/20260629_005617__leaf_qt__regen_candidate_generation_session_owner.py.bak",
+      "local_definition_removed": true,
+      "shared_import_inserted": true
+    },
+    {
+      "path": "leaf_qt/regen_candidate_mutation_completion_audit.py",
+      "backup": "/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u175h_backups/20260629_005617__leaf_qt__regen_candidate_mutation_completion_audit.py.bak",
+      "local_definition_removed": true,
+      "shared_import_inserted": true
+    },
+    {
+      "path": "leaf_qt/regen_candidate_mutation_input_audit.py",
+      "backup": "/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u175h_backups/20260629_005617__leaf_qt__regen_candidate_mutation_input_audit.py.bak",
+      "local_definition_removed": true,
+      "shared_import_inserted": true
+    },
+    {
+      "path": "leaf_qt/regen_candidate_mutation_master_gate.py",
+      "backup": "/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u175h_backups/20260629_005617__leaf_qt__regen_candidate_mutation_master_gate.py.bak",
+      "local_definition_removed": true,
+      "shared_import_inserted": true
+    },
+    {
+      "path": "leaf_qt/regen_candidate_population_completion_audit.py",
+      "backup": "/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u175h_backups/20260629_005617__leaf_qt__regen_candidate_population_completion_audit.py.bak",
+      "local_definition_removed": true,
+      "shared_import_inserted": true
+    },
+    {
+      "path": "leaf_qt/regen_candidate_population_master_gate.py",
+      "backup": "/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u175h_backups/20260629_005617__leaf_qt__regen_candidate_population_master_gate.py.bak",
+      "local_definition_removed": true,
+      "shared_import_inserted": true
+    },
+    {
+      "path": "leaf_qt/regen_candidate_ranking_completion_audit.py",
+      "backup": "/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u175h_backups/20260629_005617__leaf_qt__regen_candidate_ranking_completion_audit.py.bak",
+      "local_definition_removed": true,
+      "shared_import_inserted": true
+    },
+    {
+      "path": "leaf_qt/regen_candidate_ranking_input_audit.py",
+      "backup": "/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u175h_backups/20260629_005617__leaf_qt__regen_candidate_ranking_input_audit.py.bak",
+      "local_definition_removed": true,
+      "shared_import_inserted": true
+    },
+    {
+      "path": "leaf_qt/regen_candidate_ranking_master_gate.py",
+      "backup": "/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u175h_backups/20260629_005617__leaf_qt__regen_candidate_ranking_master_gate.py.bak",
+      "local_definition_removed": true,
+      "shared_import_inserted": true
+    },
+    {
+      "path": "leaf_qt/regen_completion_gate_validation_owner.py",
+      "backup": "/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u175h_backups/20260629_005617__leaf_qt__regen_completion_gate_validation_owner.py.bak",
+      "local_definition_removed": true,
+      "shared_import_inserted": true
+    },
+    {
+      "path": "leaf_qt/regen_cross_section_viewer.py",
+      "backup": "/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u175h_backups/20260629_005617__leaf_qt__regen_cross_section_viewer.py.bak",
+      "local_definition_removed": true,
+      "shared_import_inserted": true
+    },
+    {
+      "path": "leaf_qt/regen_evolution_loop_completion_audit.py",
+      "backup": "/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u175h_backups/20260629_005617__leaf_qt__regen_evolution_loop_completion_audit.py.bak",
+      "local_definition_removed": true,
+      "shared_import_inserted": true
+    },
+    {
+      "path": "leaf_qt/regen_evolution_loop_input_audit.py",
+      "backup": "/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u175h_backups/20260629_005617__leaf_qt__regen_evolution_loop_input_audit.py.bak",
+      "local_definition_removed": true,
+      "shared_import_inserted": true
+    },
+    {
+      "path": "leaf_qt/regen_evolution_loop_master_gate.py",
+      "backup": "/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u175h_backups/20260629_005617__leaf_qt__regen_evolution_loop_master_gate.py.bak",
+      "local_definition_removed": true,
+      "shared_import_inserted": true
+    },
+    {
+      "path": "leaf_qt/regen_geometry_constraint_owner.py",
+      "backup": "/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u175h_backups/20260629_005617__leaf_qt__regen_geometry_constraint_owner.py.bak",
+      "local_definition_removed": true,
+      "shared_import_inserted": true
+    },
+    {
+      "path": "leaf_qt/regen_optimisation_completion_audit.py",
+      "backup": "/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u175h_backups/20260629_005617__leaf_qt__regen_optimisation_completion_audit.py.bak",
+      "local_definition_removed": true,
+      "shared_import_inserted": true
+    },
+    {
+      "path": "leaf_qt/regen_optimisation_registration_owner.py",
+      "backup": "/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u175h_backups/20260629_005617__leaf_qt__regen_optimisation_registration_owner.py.bak",
+      "local_definition_removed": true,
+      "shared_import_inserted": true
+    },
+    {
+      "path": "leaf_qt/regen_optimisation_scoring_owner.py",
+      "backup": "/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u175h_backups/20260629_005617__leaf_qt__regen_optimisation_scoring_owner.py.bak",
+      "local_definition_removed": true,
+      "shared_import_inserted": true
+    },
+    {
+      "path": "leaf_qt/regen_optimisation_session_owner.py",
+      "backup": "/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u175h_backups/20260629_005617__leaf_qt__regen_optimisation_session_owner.py.bak",
+      "local_definition_removed": true,
+      "shared_import_inserted": true
+    },
+    {
+      "path": "leaf_qt/regen_runtime_execution_completion_audit.py",
+      "backup": "/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u175h_backups/20260629_005617__leaf_qt__regen_runtime_execution_completion_audit.py.bak",
+      "local_definition_removed": true,
+      "shared_import_inserted": true
+    },
+    {
+      "path": "leaf_qt/regen_runtime_execution_input_gate.py",
+      "backup": "/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u175h_backups/20260629_005617__leaf_qt__regen_runtime_execution_input_gate.py.bak",
+      "local_definition_removed": true,
+      "shared_import_inserted": true
+    },
+    {
+      "path": "leaf_qt/regen_runtime_execution_registration_owner.py",
+      "backup": "/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u175h_backups/20260629_005617__leaf_qt__regen_runtime_execution_registration_owner.py.bak",
+      "local_definition_removed": true,
+      "shared_import_inserted": true
+    },
+    {
+      "path": "leaf_qt/regen_runtime_execution_session_owner.py",
+      "backup": "/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u175h_backups/20260629_005617__leaf_qt__regen_runtime_execution_session_owner.py.bak",
+      "local_definition_removed": true,
+      "shared_import_inserted": true
+    },
+    {
+      "path": "leaf_qt/regen_runtime_optimisation_input_gate.py",
+      "backup": "/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u175h_backups/20260629_005617__leaf_qt__regen_runtime_optimisation_input_gate.py.bak",
+      "local_definition_removed": true,
+      "shared_import_inserted": true
+    },
+    {
+      "path": "leaf_qt/regen_runtime_optimisation_registration_owner.py",
+      "backup": "/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u175h_backups/20260629_005617__leaf_qt__regen_runtime_optimisation_registration_owner.py.bak",
+      "local_definition_removed": true,
+      "shared_import_inserted": true
+    },
+    {
+      "path": "leaf_qt/regen_runtime_optimisation_session_owner.py",
+      "backup": "/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u175h_backups/20260629_005617__leaf_qt__regen_runtime_optimisation_session_owner.py.bak",
+      "local_definition_removed": true,
+      "shared_import_inserted": true
+    },
+    {
+      "path": "leaf_qt/regen_system_signoff_validation_owner.py",
+      "backup": "/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u175h_backups/20260629_005617__leaf_qt__regen_system_signoff_validation_owner.py.bak",
+      "local_definition_removed": true,
+      "shared_import_inserted": true
+    },
+    {
+      "path": "leaf_qt/regen_viewer_final_runtime_consistency_gate_phase_16q20.py",
+      "backup": "/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u175h_backups/20260629_005617__leaf_qt__regen_viewer_final_runtime_consistency_gate_phase_16q20.py.bak",
+      "local_definition_removed": true,
+      "shared_import_inserted": true
+    },
+    {
+      "path": "leaf_qt/regen_viewer_gui_runtime_acceptance_gate_phase_16q28.py",
+      "backup": "/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u175h_backups/20260629_005617__leaf_qt__regen_viewer_gui_runtime_acceptance_gate_phase_16q28.py.bak",
+      "local_definition_removed": true,
+      "shared_import_inserted": true
+    },
+    {
+      "path": "leaf_qt/regen_viewer_report_renderer.py",
+      "backup": "/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u175h_backups/20260629_005617__leaf_qt__regen_viewer_report_renderer.py.bak",
+      "local_definition_removed": true,
+      "shared_import_inserted": true
+    }
+  ],
+  "skipped": [],
+  "compile_failures": [
+    {
+      "path": "leaf_qt/bond_coat_integration_owner.py",
+      "error": "PyCompileError(\"Sorry: IndentationError: expected an indented block after 'except' statement on line 5 (bond_coat_integration_owner.py, line 6)\", 'IndentationError', IndentationError(\"expected an indented block after 'except' statement on line 5\", ('/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/bond_coat_integration_owner.py', 6, 1, 'def _leaf_16u50_status_severity(value):\\n', 6, 4)), '/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/bond_coat_integration_owner.py')",
+      "backup": "/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u175h_backups/20260629_005617__leaf_qt__bond_coat_integration_owner.py.bak",
+      "rolled_back": true
+    },
+    {
+      "path": "leaf_qt/coating_property_consumption_audit_owner.py",
+      "error": "PyCompileError(\"Sorry: IndentationError: expected an indented block after 'except' statement on line 5 (coating_property_consumption_audit_owner.py, line 6)\", 'IndentationError', IndentationError(\"expected an indented block after 'except' statement on line 5\", ('/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/coating_property_consumption_audit_owner.py', 6, 1, 'def _leaf_16u62_status_severity(value):\\n', 6, 4)), '/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/coating_property_consumption_audit_owner.py')",
+      "backup": "/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u175h_backups/20260629_005617__leaf_qt__coating_property_consumption_audit_owner.py.bak",
+      "rolled_back": true
+    },
+    {
+      "path": "leaf_qt/coating_temperature_limit_integration_owner.py",
+      "error": "PyCompileError(\"Sorry: IndentationError: expected an indented block after 'except' statement on line 5 (coating_temperature_limit_integration_owner.py, line 6)\", 'IndentationError', IndentationError(\"expected an indented block after 'except' statement on line 5\", ('/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/coating_temperature_limit_integration_owner.py', 6, 1, 'def _leaf_16u54_status_severity(value):\\n', 6, 4)), '/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/coating_temperature_limit_integration_owner.py')",
+      "backup": "/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u175h_backups/20260629_005617__leaf_qt__coating_temperature_limit_integration_owner.py.bak",
+      "rolled_back": true
+    },
+    {
+      "path": "leaf_qt/coating_thermal_conductivity_integration_owner.py",
+      "error": "PyCompileError(\"Sorry: IndentationError: expected an indented block after 'except' statement on line 5 (coating_thermal_conductivity_integration_owner.py, line 6)\", 'IndentationError', IndentationError(\"expected an indented block after 'except' statement on line 5\", ('/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/coating_thermal_conductivity_integration_owner.py', 6, 1, 'def _leaf_16u62_status_severity(value):\\n', 6, 4)), '/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/coating_thermal_conductivity_integration_owner.py')",
+      "backup": "/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u175h_backups/20260629_005617__leaf_qt__coating_thermal_conductivity_integration_owner.py.bak",
+      "rolled_back": true
+    },
+    {
+      "path": "leaf_qt/coating_thermal_resistance_integration_owner.py",
+      "error": "PyCompileError(\"Sorry: IndentationError: expected an indented block after 'except' statement on line 5 (coating_thermal_resistance_integration_owner.py, line 6)\", 'IndentationError', IndentationError(\"expected an indented block after 'except' statement on line 5\", ('/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/coating_thermal_resistance_integration_owner.py', 6, 1, 'def _leaf_16u62_status_severity(value):\\n', 6, 4)), '/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/coating_thermal_resistance_integration_owner.py')",
+      "backup": "/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u175h_backups/20260629_005617__leaf_qt__coating_thermal_resistance_integration_owner.py.bak",
+      "rolled_back": true
+    },
+    {
+      "path": "leaf_qt/coating_thickness_integration_owner.py",
+      "error": "PyCompileError(\"Sorry: IndentationError: expected an indented block after 'except' statement on line 5 (coating_thickness_integration_owner.py, line 6)\", 'IndentationError', IndentationError(\"expected an indented block after 'except' statement on line 5\", ('/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/coating_thickness_integration_owner.py', 6, 1, 'def _leaf_16u62_status_severity(value):\\n', 6, 4)), '/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/coating_thickness_integration_owner.py')",
+      "backup": "/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u175h_backups/20260629_005617__leaf_qt__coating_thickness_integration_owner.py.bak",
+      "rolled_back": true
+    },
+    {
+      "path": "leaf_qt/material_density_integration_owner.py",
+      "error": "PyCompileError(\"Sorry: IndentationError: expected an indented block after 'except' statement on line 5 (material_density_integration_owner.py, line 6)\", 'IndentationError', IndentationError(\"expected an indented block after 'except' statement on line 5\", ('/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/material_density_integration_owner.py', 6, 1, 'def _leaf_16u62_status_severity(value):\\n', 6, 4)), '/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/material_density_integration_owner.py')",
+      "backup": "/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u175h_backups/20260629_005617__leaf_qt__material_density_integration_owner.py.bak",
+      "rolled_back": true
+    },
+    {
+      "path": "leaf_qt/material_property_consumption_audit_owner.py",
+      "error": "PyCompileError(\"Sorry: IndentationError: expected an indented block after 'except' statement on line 5 (material_property_consumption_audit_owner.py, line 6)\", 'IndentationError', IndentationError(\"expected an indented block after 'except' statement on line 5\", ('/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/material_property_consumption_audit_owner.py', 6, 1, 'def _leaf_16u62_status_severity(value):\\n', 6, 4)), '/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/material_property_consumption_audit_owner.py')",
+      "backup": "/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u175h_backups/20260629_005617__leaf_qt__material_property_consumption_audit_owner.py.bak",
+      "rolled_back": true
+    },
+    {
+      "path": "leaf_qt/material_specific_heat_integration_owner.py",
+      "error": "PyCompileError(\"Sorry: IndentationError: expected an indented block after 'except' statement on line 5 (material_specific_heat_integration_owner.py, line 6)\", 'IndentationError', IndentationError(\"expected an indented block after 'except' statement on line 5\", ('/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/material_specific_heat_integration_owner.py', 6, 1, 'def _leaf_16u62_status_severity(value):\\n', 6, 4)), '/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/material_specific_heat_integration_owner.py')",
+      "backup": "/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u175h_backups/20260629_005617__leaf_qt__material_specific_heat_integration_owner.py.bak",
+      "rolled_back": true
+    },
+    {
+      "path": "leaf_qt/material_strength_limit_integration_owner.py",
+      "error": "PyCompileError(\"Sorry: IndentationError: expected an indented block after 'except' statement on line 5 (material_strength_limit_integration_owner.py, line 6)\", 'IndentationError', IndentationError(\"expected an indented block after 'except' statement on line 5\", ('/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/material_strength_limit_integration_owner.py', 6, 1, 'def _leaf_16u58_status_severity(value):\\n', 6, 4)), '/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/material_strength_limit_integration_owner.py')",
+      "backup": "/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u175h_backups/20260629_005617__leaf_qt__material_strength_limit_integration_owner.py.bak",
+      "rolled_back": true
+    },
+    {
+      "path": "leaf_qt/material_temperature_limit_integration_owner.py",
+      "error": "PyCompileError(\"Sorry: IndentationError: expected an indented block after 'except' statement on line 5 (material_temperature_limit_integration_owner.py, line 6)\", 'IndentationError', IndentationError(\"expected an indented block after 'except' statement on line 5\", ('/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/material_temperature_limit_integration_owner.py', 6, 1, 'def _leaf_16u66_status_severity(value):\\n', 6, 4)), '/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/material_temperature_limit_integration_owner.py')",
+      "backup": "/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u175h_backups/20260629_005617__leaf_qt__material_temperature_limit_integration_owner.py.bak",
+      "rolled_back": true
+    },
+    {
+      "path": "leaf_qt/material_thermal_conductivity_integration_owner.py",
+      "error": "PyCompileError(\"Sorry: IndentationError: expected an indented block after 'except' statement on line 5 (material_thermal_conductivity_integration_owner.py, line 6)\", 'IndentationError', IndentationError(\"expected an indented block after 'except' statement on line 5\", ('/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/material_thermal_conductivity_integration_owner.py', 6, 1, 'def _leaf_16u62_status_severity(value):\\n', 6, 4)), '/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/material_thermal_conductivity_integration_owner.py')",
+      "backup": "/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u175h_backups/20260629_005617__leaf_qt__material_thermal_conductivity_integration_owner.py.bak",
+      "rolled_back": true
+    },
+    {
+      "path": "leaf_qt/real_engine_benchmark_failure_owner.py",
+      "error": "PyCompileError(\"Sorry: IndentationError: expected an indented block after 'except' statement on line 5 (real_engine_benchmark_failure_owner.py, line 6)\", 'IndentationError', IndentationError(\"expected an indented block after 'except' statement on line 5\", ('/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/real_engine_benchmark_failure_owner.py', 6, 1, 'def _leaf_16u46_status_severity(value):\\n', 6, 4)), '/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/real_engine_benchmark_failure_owner.py')",
+      "backup": "/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u175h_backups/20260629_005617__leaf_qt__real_engine_benchmark_failure_owner.py.bak",
+      "rolled_back": true
+    },
+    {
+      "path": "leaf_qt/regen_candidate_blueprint_population_validation_owner.py",
+      "error": "PyCompileError(\"Sorry: IndentationError: expected an indented block after 'except' statement on line 5 (regen_candidate_blueprint_population_validation_owner.py, line 6)\", 'IndentationError', IndentationError(\"expected an indented block after 'except' statement on line 5\", ('/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/regen_candidate_blueprint_population_validation_owner.py', 6, 1, 'def _leaf_16u91_status_severity(value):\\n', 6, 4)), '/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/regen_candidate_blueprint_population_validation_owner.py')",
+      "backup": "/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u175h_backups/20260629_005617__leaf_qt__regen_candidate_blueprint_population_validation_owner.py.bak",
+      "rolled_back": true
+    },
+    {
+      "path": "leaf_qt/regen_candidate_creation_report_owner.py",
+      "error": "PyCompileError(\"Sorry: IndentationError: expected an indented block after 'except' statement on line 5 (regen_candidate_creation_report_owner.py, line 6)\", 'IndentationError', IndentationError(\"expected an indented block after 'except' statement on line 5\", ('/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/regen_candidate_creation_report_owner.py', 6, 1, 'def _leaf_16u96_status_severity(value):\\n', 6, 4)), '/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/regen_candidate_creation_report_owner.py')",
+      "backup": "/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u175h_backups/20260629_005617__leaf_qt__regen_candidate_creation_report_owner.py.bak",
+      "rolled_back": true
+    },
+    {
+      "path": "leaf_qt/regen_candidate_generation_report_owner.py",
+      "error": "PyCompileError(\"Sorry: IndentationError: expected an indented block after 'except' statement on line 5 (regen_candidate_generation_report_owner.py, line 6)\", 'IndentationError', IndentationError(\"expected an indented block after 'except' statement on line 5\", ('/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/regen_candidate_generation_report_owner.py', 6, 1, 'def _leaf_16u101_status_severity(value):\\n', 6, 4)), '/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/regen_candidate_generation_report_owner.py')",
+      "backup": "/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u175h_backups/20260629_005617__leaf_qt__regen_candidate_generation_report_owner.py.bak",
+      "rolled_back": true
+    },
+    {
+      "path": "leaf_qt/regen_candidate_mutation_report_owner.py",
+      "error": "PyCompileError(\"Sorry: IndentationError: expected an indented block after 'except' statement on line 5 (regen_candidate_mutation_report_owner.py, line 6)\", 'IndentationError', IndentationError(\"expected an indented block after 'except' statement on line 5\", ('/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/regen_candidate_mutation_report_owner.py', 6, 1, 'def _leaf_16u106_status_severity(value):\\n', 6, 4)), '/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/regen_candidate_mutation_report_owner.py')",
+      "backup": "/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u175h_backups/20260629_005617__leaf_qt__regen_candidate_mutation_report_owner.py.bak",
+      "rolled_back": true
+    },
+    {
+      "path": "leaf_qt/regen_geometry_report_owner.py",
+      "error": "PyCompileError(\"Sorry: IndentationError: expected an indented block after 'except' statement on line 5 (regen_geometry_report_owner.py, line 6)\", 'IndentationError', IndentationError(\"expected an indented block after 'except' statement on line 5\", ('/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/regen_geometry_report_owner.py', 6, 1, 'def _leaf_16u86_status_severity(value):\\n', 6, 4)), '/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/regen_geometry_report_owner.py')",
+      "backup": "/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u175h_backups/20260629_005617__leaf_qt__regen_geometry_report_owner.py.bak",
+      "rolled_back": true
+    },
+    {
+      "path": "leaf_qt/regen_optimisation_report_owner.py",
+      "error": "PyCompileError(\"Sorry: IndentationError: expected an indented block after 'except' statement on line 5 (regen_optimisation_report_owner.py, line 6)\", 'IndentationError', IndentationError(\"expected an indented block after 'except' statement on line 5\", ('/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/regen_optimisation_report_owner.py', 6, 1, 'def _leaf_16u76_status_severity(value):\\n', 6, 4)), '/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/regen_optimisation_report_owner.py')",
+      "backup": "/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u175h_backups/20260629_005617__leaf_qt__regen_optimisation_report_owner.py.bak",
+      "rolled_back": true
+    },
+    {
+      "path": "leaf_qt/regen_runtime_execution_report_owner.py",
+      "error": "PyCompileError(\"Sorry: IndentationError: expected an indented block after 'except' statement on line 5 (regen_runtime_execution_report_owner.py, line 6)\", 'IndentationError', IndentationError(\"expected an indented block after 'except' statement on line 5\", ('/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/regen_runtime_execution_report_owner.py', 6, 1, 'def _leaf_16u111_status_severity(value):\\n', 6, 4)), '/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/regen_runtime_execution_report_owner.py')",
+      "backup": "/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u175h_backups/20260629_005617__leaf_qt__regen_runtime_execution_report_owner.py.bak",
+      "rolled_back": true
+    },
+    {
+      "path": "leaf_qt/regen_runtime_optimisation_report_owner.py",
+      "error": "PyCompileError(\"Sorry: IndentationError: expected an indented block after 'except' statement on line 5 (regen_runtime_optimisation_report_owner.py, line 6)\", 'IndentationError', IndentationError(\"expected an indented block after 'except' statement on line 5\", ('/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/regen_runtime_optimisation_report_owner.py', 6, 1, 'def _leaf_16u81_status_severity(value):\\n', 6, 4)), '/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/regen_runtime_optimisation_report_owner.py')",
+      "backup": "/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u175h_backups/20260629_005617__leaf_qt__regen_runtime_optimisation_report_owner.py.bak",
+      "rolled_back": true
+    },
+    {
+      "path": "leaf_qt/regen_scalability_failure_owner.py",
+      "error": "PyCompileError(\"Sorry: IndentationError: expected an indented block after 'except' statement on line 5 (regen_scalability_failure_owner.py, line 6)\", 'IndentationError', IndentationError(\"expected an indented block after 'except' statement on line 5\", ('/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/regen_scalability_failure_owner.py', 6, 1, 'def _leaf_16u42_status_severity(value):\\n', 6, 4)), '/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/regen_scalability_failure_owner.py')",
+      "backup": "/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u175h_backups/20260629_005617__leaf_qt__regen_scalability_failure_owner.py.bak",
+      "rolled_back": true
+    }
+  ],
+  "passed": false,
+  "status": "FAIL_PHASE_16U175H_LOCAL_STATUS_SEVERITY_DEDUPLICATION_WAVE",
+  "next_phase": "16U.175I_DEDUPLICATION_REGRESSION_AND_COMPATIBILITY_AUDIT"
+}

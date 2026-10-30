@@ -1,0 +1,294 @@
+LEAF PHASE 16U.25
+WAVE D COMPLETION AUDIT STATUS CONSUMER AUDIT
+================================================
+
+STATUS: PASS_PHASE_16U25_WAVE_D_COMPLETION_AUDIT_STATUS_CONSUMER_AUDIT
+Generated: 2026-06-28T01:31:17
+
+SCOPE
+-----
+This phase audits Wave D completion-audit status consumers.
+No production files are modified.
+No completion-audit policy is modified.
+
+SUMMARY
+-------
+Completion-audit candidates: 47
+Patchable next phase: 1
+Hold/manual-review: 46
+
+GROUP BREAKDOWN
+---------------
+MANUAL_REVIEW_REQUIRED: 22
+PAYLOAD_LITERAL_CONTEXT: 7
+PRESENTATION_MARKER: 17
+STATUS_PASS_NEGATION: 1
+
+RISK BREAKDOWN
+--------------
+HOLD: 24
+LOW: 1
+MEDIUM: 22
+
+FILES
+-----
+integrate_phase_16l3_acceptance_audit.py: 1
+leaf_qt/calculation_audit.py: 6
+leaf_qt/material_and_coating_foundation_audit.py: 1
+leaf_qt/material_completion_audit.py: 1
+leaf_qt/real_engine_benchmark_completion_audit.py: 9
+leaf_qt/regen_acceptance_audit.py: 1
+leaf_qt/regen_architecture_visibility_audit.py: 5
+leaf_qt/regen_autonomous_optimisation_input_audit.py: 1
+leaf_qt/regen_candidate_blueprint_completion_audit.py: 1
+leaf_qt/regen_candidate_blueprint_optimisation_completion_audit.py: 1
+leaf_qt/regen_candidate_blueprint_population_completion_audit.py: 1
+leaf_qt/regen_candidate_creation_completion_audit.py: 1
+leaf_qt/regen_candidate_creation_input_audit.py: 1
+leaf_qt/regen_candidate_generation_completion_audit.py: 1
+leaf_qt/regen_candidate_mutation_completion_audit.py: 1
+leaf_qt/regen_candidate_mutation_input_audit.py: 1
+leaf_qt/regen_candidate_population_completion_audit.py: 1
+leaf_qt/regen_candidate_ranking_completion_audit.py: 1
+leaf_qt/regen_candidate_ranking_input_audit.py: 1
+leaf_qt/regen_completion_audit.py: 2
+leaf_qt/regen_evolution_loop_completion_audit.py: 1
+leaf_qt/regen_evolution_loop_input_audit.py: 1
+leaf_qt/regen_geometry_completion_audit.py: 1
+leaf_qt/regen_optimisation_completion_audit.py: 1
+leaf_qt/regen_runtime_execution_completion_audit.py: 1
+leaf_qt/regen_viewer_gui_runtime_audit_phase_16q1.py: 1
+leaf_qt/temperature_dependent_solver_completion_audit_owner.py: 2
+project_maintenance/wave2_status_adapter_completion_audit_phase_16t3r.py: 1
+
+PATCHABLE NEXT PHASE
+--------------------
+leaf_qt/regen_geometry_completion_audit.py:103 [STATUS_PASS_NEGATION]
+  current: if history.get("iteration_history_status") != "PASS":
+  wrapper: not is_pass(status_value)
+  reason: Direct non-PASS check can be wrapped through structured status access.
+
+HELD / MANUAL REVIEW
+--------------------
+integrate_phase_16l3_acceptance_audit.py:159 [MANUAL_REVIEW_REQUIRED]
+  current: f"- {item.get('name')}: {'PASS' if item.get('passed') else 'FAIL'}"
+  reason: No safe automated completion-audit migration rule matched.
+
+leaf_qt/calculation_audit.py:205 [MANUAL_REVIEW_REQUIRED]
+  current: elif str(value).upper() == "PASS":
+  reason: No safe automated completion-audit migration rule matched.
+
+leaf_qt/material_and_coating_foundation_audit.py:103 [MANUAL_REVIEW_REQUIRED]
+  current: if not str(status).startswith(("PASS", "FAIL")):
+  reason: No safe automated completion-audit migration rule matched.
+
+leaf_qt/material_completion_audit.py:93 [MANUAL_REVIEW_REQUIRED]
+  current: if not str(status).startswith(("PASS", "FAIL")):
+  reason: No safe automated completion-audit migration rule matched.
+
+leaf_qt/real_engine_benchmark_completion_audit.py:277 [PRESENTATION_MARKER]
+  current: marker = "PASS" if check["passed"] else "FAIL"
+  reason: Boolean-to-text marker is audit/report rendering, not status consumption.
+
+leaf_qt/real_engine_benchmark_completion_audit.py:308 [MANUAL_REVIEW_REQUIRED]
+  current: if status.startswith("PASS"):
+  reason: No safe automated completion-audit migration rule matched.
+
+leaf_qt/real_engine_benchmark_completion_audit.py:308 [MANUAL_REVIEW_REQUIRED]
+  current: if status.startswith("PASS"):
+  reason: No safe automated completion-audit migration rule matched.
+
+leaf_qt/real_engine_benchmark_completion_audit.py:308 [MANUAL_REVIEW_REQUIRED]
+  current: if status.startswith("PASS"):
+  reason: No safe automated completion-audit migration rule matched.
+
+leaf_qt/real_engine_benchmark_completion_audit.py:323 [MANUAL_REVIEW_REQUIRED]
+  current: if status.startswith("PASS"):
+  reason: No safe automated completion-audit migration rule matched.
+
+leaf_qt/real_engine_benchmark_completion_audit.py:323 [MANUAL_REVIEW_REQUIRED]
+  current: if status.startswith("PASS"):
+  reason: No safe automated completion-audit migration rule matched.
+
+leaf_qt/real_engine_benchmark_completion_audit.py:323 [MANUAL_REVIEW_REQUIRED]
+  current: if status.startswith("PASS"):
+  reason: No safe automated completion-audit migration rule matched.
+
+leaf_qt/regen_acceptance_audit.py:154 [MANUAL_REVIEW_REQUIRED]
+  current: f"- {item.get('name')}: {'PASS' if item.get('passed') else 'FAIL'}"
+  reason: No safe automated completion-audit migration rule matched.
+
+leaf_qt/regen_architecture_visibility_audit.py:196 [MANUAL_REVIEW_REQUIRED]
+  current: return value is True or value == 1 or value == "1" or str(value).upper().startswith("PASS")
+  reason: No safe automated completion-audit migration rule matched.
+
+leaf_qt/regen_architecture_visibility_audit.py:196 [MANUAL_REVIEW_REQUIRED]
+  current: return value is True or value == 1 or value == "1" or str(value).upper().startswith("PASS")
+  reason: No safe automated completion-audit migration rule matched.
+
+leaf_qt/regen_architecture_visibility_audit.py:196 [MANUAL_REVIEW_REQUIRED]
+  current: return value is True or value == 1 or value == "1" or str(value).upper().startswith("PASS")
+  reason: No safe automated completion-audit migration rule matched.
+
+leaf_qt/regen_architecture_visibility_audit.py:226 [MANUAL_REVIEW_REQUIRED]
+  current: "FAIL" in str(value).upper() or "BLOCKED" in str(value).upper()
+  reason: No safe automated completion-audit migration rule matched.
+
+leaf_qt/regen_architecture_visibility_audit.py:226 [MANUAL_REVIEW_REQUIRED]
+  current: "FAIL" in str(value).upper() or "BLOCKED" in str(value).upper()
+  reason: No safe automated completion-audit migration rule matched.
+
+leaf_qt/regen_autonomous_optimisation_input_audit.py:159 [PRESENTATION_MARKER]
+  current: marker = "PASS" if check["passed"] else "FAIL"
+  reason: Boolean-to-text marker is audit/report rendering, not status consumption.
+
+leaf_qt/regen_candidate_blueprint_completion_audit.py:179 [PRESENTATION_MARKER]
+  current: marker = "PASS" if check["passed"] else "FAIL"
+  reason: Boolean-to-text marker is audit/report rendering, not status consumption.
+
+leaf_qt/regen_candidate_blueprint_optimisation_completion_audit.py:215 [PRESENTATION_MARKER]
+  current: marker = "PASS" if check["passed"] else "FAIL"
+  reason: Boolean-to-text marker is audit/report rendering, not status consumption.
+
+leaf_qt/regen_candidate_blueprint_population_completion_audit.py:238 [PRESENTATION_MARKER]
+  current: marker = "PASS" if check["passed"] else "FAIL"
+  reason: Boolean-to-text marker is audit/report rendering, not status consumption.
+
+leaf_qt/regen_candidate_creation_completion_audit.py:201 [PRESENTATION_MARKER]
+  current: marker = "PASS" if check["passed"] else "FAIL"
+  reason: Boolean-to-text marker is audit/report rendering, not status consumption.
+
+leaf_qt/regen_candidate_creation_input_audit.py:213 [PRESENTATION_MARKER]
+  current: marker = "PASS" if check["passed"] else "FAIL"
+  reason: Boolean-to-text marker is audit/report rendering, not status consumption.
+
+leaf_qt/regen_candidate_generation_completion_audit.py:192 [PRESENTATION_MARKER]
+  current: marker = "PASS" if check["passed"] else "FAIL"
+  reason: Boolean-to-text marker is audit/report rendering, not status consumption.
+
+leaf_qt/regen_candidate_mutation_completion_audit.py:336 [PRESENTATION_MARKER]
+  current: label = "PASS" if check["passed"] else "FAIL"
+  reason: Boolean-to-text marker is audit/report rendering, not status consumption.
+
+leaf_qt/regen_candidate_mutation_input_audit.py:428 [PRESENTATION_MARKER]
+  current: label = "PASS" if check["passed"] else "FAIL"
+  reason: Boolean-to-text marker is audit/report rendering, not status consumption.
+
+leaf_qt/regen_candidate_population_completion_audit.py:505 [PRESENTATION_MARKER]
+  current: label = "PASS" if check["passed"] else "FAIL"
+  reason: Boolean-to-text marker is audit/report rendering, not status consumption.
+
+leaf_qt/regen_candidate_ranking_completion_audit.py:337 [PRESENTATION_MARKER]
+  current: label = "PASS" if check["passed"] else "FAIL"
+  reason: Boolean-to-text marker is audit/report rendering, not status consumption.
+
+leaf_qt/regen_candidate_ranking_input_audit.py:407 [PRESENTATION_MARKER]
+  current: label = "PASS" if check["passed"] else "FAIL"
+  reason: Boolean-to-text marker is audit/report rendering, not status consumption.
+
+leaf_qt/regen_completion_audit.py:90 [MANUAL_REVIEW_REQUIRED]
+  current: "FAIL" in status
+  reason: No safe automated completion-audit migration rule matched.
+
+leaf_qt/regen_completion_audit.py:90 [MANUAL_REVIEW_REQUIRED]
+  current: "FAIL" in status
+  reason: No safe automated completion-audit migration rule matched.
+
+leaf_qt/regen_evolution_loop_completion_audit.py:332 [PRESENTATION_MARKER]
+  current: label = "PASS" if check["passed"] else "FAIL"
+  reason: Boolean-to-text marker is audit/report rendering, not status consumption.
+
+leaf_qt/regen_evolution_loop_input_audit.py:374 [PRESENTATION_MARKER]
+  current: label = "PASS" if check["passed"] else "FAIL"
+  reason: Boolean-to-text marker is audit/report rendering, not status consumption.
+
+leaf_qt/regen_optimisation_completion_audit.py:151 [PRESENTATION_MARKER]
+  current: marker = "PASS" if check["passed"] else "FAIL"
+  reason: Boolean-to-text marker is audit/report rendering, not status consumption.
+
+leaf_qt/regen_runtime_execution_completion_audit.py:191 [PRESENTATION_MARKER]
+  current: marker = "PASS" if check["passed"] else "FAIL"
+  reason: Boolean-to-text marker is audit/report rendering, not status consumption.
+
+leaf_qt/regen_viewer_gui_runtime_audit_phase_16q1.py:40 [MANUAL_REVIEW_REQUIRED]
+  current: if results.get("regen_viewer_completion_lock") != "PASS":
+  reason: No safe automated completion-audit migration rule matched.
+
+leaf_qt/temperature_dependent_solver_completion_audit_owner.py:89 [MANUAL_REVIEW_REQUIRED]
+  current: result_key_pass = result_key_status in (None, "PASS")
+  reason: No safe automated completion-audit migration rule matched.
+
+leaf_qt/temperature_dependent_solver_completion_audit_owner.py:95 [MANUAL_REVIEW_REQUIRED]
+  current: if report_bundle_status not in (None, "PASS"):
+  reason: No safe automated completion-audit migration rule matched.
+
+project_maintenance/wave2_status_adapter_completion_audit_phase_16t3r.py:238 [MANUAL_REVIEW_REQUIRED]
+  current: outcome = "PASS" if r["passed"] else "FAIL"
+  reason: No safe automated completion-audit migration rule matched.
+
+leaf_qt/calculation_audit.py:75 [PAYLOAD_LITERAL_CONTEXT]
+  current: "PASS",
+  reason: Standalone literal likely belongs to audit evidence payload construction.
+
+leaf_qt/calculation_audit.py:128 [PAYLOAD_LITERAL_CONTEXT]
+  current: "FAIL",
+  reason: Standalone literal likely belongs to audit evidence payload construction.
+
+leaf_qt/calculation_audit.py:218 [PAYLOAD_LITERAL_CONTEXT]
+  current: "FAIL",
+  reason: Standalone literal likely belongs to audit evidence payload construction.
+
+leaf_qt/calculation_audit.py:229 [PAYLOAD_LITERAL_CONTEXT]
+  current: "FAIL",
+  reason: Standalone literal likely belongs to audit evidence payload construction.
+
+leaf_qt/calculation_audit.py:241 [PAYLOAD_LITERAL_CONTEXT]
+  current: "FAIL",
+  reason: Standalone literal likely belongs to audit evidence payload construction.
+
+leaf_qt/real_engine_benchmark_completion_audit.py:312 [PAYLOAD_LITERAL_CONTEXT]
+  current: "FAIL",
+  reason: Standalone literal likely belongs to audit evidence payload construction.
+
+leaf_qt/real_engine_benchmark_completion_audit.py:327 [PAYLOAD_LITERAL_CONTEXT]
+  current: "WARN",
+  reason: Standalone literal likely belongs to audit evidence payload construction.
+
+COMPILE RESULTS
+---------------
+integrate_phase_16l3_acceptance_audit.py: PASS 
+leaf_qt/calculation_audit.py: PASS 
+leaf_qt/material_and_coating_foundation_audit.py: PASS 
+leaf_qt/material_completion_audit.py: PASS 
+leaf_qt/real_engine_benchmark_completion_audit.py: PASS 
+leaf_qt/regen_acceptance_audit.py: PASS 
+leaf_qt/regen_architecture_visibility_audit.py: PASS 
+leaf_qt/regen_autonomous_optimisation_input_audit.py: PASS 
+leaf_qt/regen_candidate_blueprint_completion_audit.py: PASS 
+leaf_qt/regen_candidate_blueprint_optimisation_completion_audit.py: PASS 
+leaf_qt/regen_candidate_blueprint_population_completion_audit.py: PASS 
+leaf_qt/regen_candidate_creation_completion_audit.py: PASS 
+leaf_qt/regen_candidate_creation_input_audit.py: PASS 
+leaf_qt/regen_candidate_generation_completion_audit.py: PASS 
+leaf_qt/regen_candidate_mutation_completion_audit.py: PASS 
+leaf_qt/regen_candidate_mutation_input_audit.py: PASS 
+leaf_qt/regen_candidate_population_completion_audit.py: PASS 
+leaf_qt/regen_candidate_ranking_completion_audit.py: PASS 
+leaf_qt/regen_candidate_ranking_input_audit.py: PASS 
+leaf_qt/regen_completion_audit.py: PASS 
+leaf_qt/regen_evolution_loop_completion_audit.py: PASS 
+leaf_qt/regen_evolution_loop_input_audit.py: PASS 
+leaf_qt/regen_geometry_completion_audit.py: PASS 
+leaf_qt/regen_optimisation_completion_audit.py: PASS 
+leaf_qt/regen_runtime_execution_completion_audit.py: PASS 
+leaf_qt/regen_viewer_gui_runtime_audit_phase_16q1.py: PASS 
+leaf_qt/temperature_dependent_solver_completion_audit_owner.py: PASS 
+project_maintenance/wave2_status_adapter_completion_audit_phase_16t3r.py: PASS 
+
+COMPLETION NOTICE
+-----------------
+PHASE 16U.25 COMPLETE.
+
+NEXT PHASE
+----------
+PHASE 16U.26 — WAVE D COMPLETION AUDIT LOW-RISK STATUS WRAPPER PATCH

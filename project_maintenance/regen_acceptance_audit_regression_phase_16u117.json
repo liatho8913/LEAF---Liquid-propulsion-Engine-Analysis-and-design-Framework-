@@ -1,0 +1,14 @@
+{
+  "phase": "16U.117",
+  "target": "leaf_qt/regen_acceptance_audit.py",
+  "passed": true,
+  "function_count": 4,
+  "audit_like_functions": [
+    "attach_regen_acceptance_audit",
+    "_audit_item",
+    "_build_report"
+  ],
+  "failures": [],
+  "phase_16u117_regen_acceptance_audit_regression_complete": true,
+  "next_phase": "16U.118 \u2014 Closure Gate"
+}

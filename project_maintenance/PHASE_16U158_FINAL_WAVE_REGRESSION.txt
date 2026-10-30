@@ -1,0 +1,23 @@
+LEAF PHASE 16U.158
+FINAL WAVE REGRESSION
+======================
+
+STATUS: PASS_PHASE_16U158_FINAL_WAVE_REGRESSION
+
+Files checked: 8
+Files passed: 8
+Files failed: 0
+
+FILES
+-----
+- real_engine_benchmark_completion_audit.py :: PASS :: evidence=patch
+- real_engine_benchmark_failure_owner.py :: PASS :: evidence=patch
+- regen_autonomous_optimisation_input_audit.py :: PASS :: evidence=patch
+- regen_candidate_generation_session_owner.py :: PASS :: evidence=patch
+- regen_scalability_failure_owner.py :: PASS :: evidence=patch
+- regen_viewer_final_runtime_consistency_gate_phase_16q20.py :: PASS :: evidence=repair
+- regen_viewer_gui_runtime_acceptance_gate_phase_16q28.py :: PASS :: evidence=repair
+- regen_viewer_report_renderer.py :: PASS :: evidence=patch
+
+FAILURES
+--------

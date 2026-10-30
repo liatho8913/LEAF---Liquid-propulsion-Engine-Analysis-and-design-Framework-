@@ -1,0 +1,19 @@
+LEAF PHASE 16U.126
+SINGLE FILE DECISION
+====================
+
+STATUS: PASS_PHASE_16U126_SINGLE_FILE_DECISION
+
+ROADMAP STATE
+-------------
+Closed targets: 14
+Remaining before selection: 54
+Total measured scope: 68
+
+SELECTED TARGET
+---------------
+leaf_qt/regen_geometry_constraint_owner.py
+
+DECISION
+--------
+Proceed to Phase 16U.127 presentation-layer patch for the selected single file.

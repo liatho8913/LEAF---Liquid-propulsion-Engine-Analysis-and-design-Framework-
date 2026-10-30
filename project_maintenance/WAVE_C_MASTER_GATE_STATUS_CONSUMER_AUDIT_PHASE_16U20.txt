@@ -1,0 +1,478 @@
+LEAF PHASE 16U.20
+WAVE C MASTER GATE STATUS CONSUMER AUDIT
+=========================================
+
+STATUS: PASS_PHASE_16U20_WAVE_C_MASTER_GATE_STATUS_CONSUMER_AUDIT
+Generated: 2026-06-28T01:13:42
+
+SCOPE
+-----
+This phase audits Wave C master-gate status consumers.
+No production files are modified.
+No master-gate logic is modified.
+
+SUMMARY
+-------
+Master-gate candidates: 93
+Patchable next phase: 28
+Hold/manual-review: 65
+
+GROUP BREAKDOWN
+---------------
+CANONICAL_PASS_EQUALITY: 3
+MANUAL_REVIEW_REQUIRED: 3
+PAYLOAD_LITERAL_CONTEXT: 26
+PRESENTATION_MARKER: 4
+SEVERITY_COLLECTION_FAIL_AGGREGATION: 18
+STATUS_PREFIX_PASS_CHECK: 6
+STATUS_PRODUCER_RETURN: 24
+STRUCTURED_FINDING_SEVERITY_AGGREGATION: 1
+TEXT_SEMANTIC_GATE: 8
+
+RISK BREAKDOWN
+--------------
+HOLD: 54
+LOW: 28
+MEDIUM: 11
+
+FILES
+-----
+leaf_qt/real_engine_benchmark_master_gate.py: 11
+leaf_qt/regen_axial_geometry_master_gate.py: 7
+leaf_qt/regen_candidate_acceptance_master_gate.py: 8
+leaf_qt/regen_candidate_mutation_master_gate.py: 9
+leaf_qt/regen_candidate_population_master_gate.py: 6
+leaf_qt/regen_candidate_ranking_master_gate.py: 13
+leaf_qt/regen_evolution_loop_master_gate.py: 8
+leaf_qt/regen_geometry_master_gate.py: 6
+leaf_qt/regen_optimisation_master_gate.py: 8
+leaf_qt/regen_scalability_master_gate.py: 7
+leaf_qt/regen_variable_geometry_master_gate.py: 7
+project_maintenance/wave2_status_adapter_master_gate_phase_16t3s.py: 3
+
+PATCHABLE NEXT PHASE
+--------------------
+leaf_qt/real_engine_benchmark_master_gate.py:363 [STATUS_PREFIX_PASS_CHECK]
+  current: if status.startswith("PASS"):
+  wrapper: is_pass(status)
+  reason: Direct PASS-prefix status check can be routed through structured status access.
+
+leaf_qt/real_engine_benchmark_master_gate.py:363 [STATUS_PREFIX_PASS_CHECK]
+  current: if status.startswith("PASS"):
+  wrapper: is_pass(status)
+  reason: Direct PASS-prefix status check can be routed through structured status access.
+
+leaf_qt/real_engine_benchmark_master_gate.py:363 [STATUS_PREFIX_PASS_CHECK]
+  current: if status.startswith("PASS"):
+  wrapper: is_pass(status)
+  reason: Direct PASS-prefix status check can be routed through structured status access.
+
+leaf_qt/real_engine_benchmark_master_gate.py:372 [STATUS_PREFIX_PASS_CHECK]
+  current: if status.startswith("PASS"):
+  wrapper: is_pass(status)
+  reason: Direct PASS-prefix status check can be routed through structured status access.
+
+leaf_qt/real_engine_benchmark_master_gate.py:372 [STATUS_PREFIX_PASS_CHECK]
+  current: if status.startswith("PASS"):
+  wrapper: is_pass(status)
+  reason: Direct PASS-prefix status check can be routed through structured status access.
+
+leaf_qt/real_engine_benchmark_master_gate.py:372 [STATUS_PREFIX_PASS_CHECK]
+  current: if status.startswith("PASS"):
+  wrapper: is_pass(status)
+  reason: Direct PASS-prefix status check can be routed through structured status access.
+
+leaf_qt/regen_axial_geometry_master_gate.py:136 [SEVERITY_COLLECTION_FAIL_AGGREGATION]
+  current: if "FAIL" in severities:
+  wrapper: highest_severity(severities) == "FAIL"
+  reason: Variable name severities indicates structured severity aggregation.
+
+leaf_qt/regen_axial_geometry_master_gate.py:136 [SEVERITY_COLLECTION_FAIL_AGGREGATION]
+  current: if "FAIL" in severities:
+  wrapper: highest_severity(severities) == "FAIL"
+  reason: Variable name severities indicates structured severity aggregation.
+
+leaf_qt/regen_candidate_acceptance_master_gate.py:140 [SEVERITY_COLLECTION_FAIL_AGGREGATION]
+  current: if "FAIL" in severities:
+  wrapper: highest_severity(severities) == "FAIL"
+  reason: Variable name severities indicates structured severity aggregation.
+
+leaf_qt/regen_candidate_acceptance_master_gate.py:140 [SEVERITY_COLLECTION_FAIL_AGGREGATION]
+  current: if "FAIL" in severities:
+  wrapper: highest_severity(severities) == "FAIL"
+  reason: Variable name severities indicates structured severity aggregation.
+
+leaf_qt/regen_candidate_mutation_master_gate.py:390 [SEVERITY_COLLECTION_FAIL_AGGREGATION]
+  current: if "FAIL" in severities:
+  wrapper: highest_severity(severities) == "FAIL"
+  reason: Variable name severities indicates structured severity aggregation.
+
+leaf_qt/regen_candidate_mutation_master_gate.py:390 [SEVERITY_COLLECTION_FAIL_AGGREGATION]
+  current: if "FAIL" in severities:
+  wrapper: highest_severity(severities) == "FAIL"
+  reason: Variable name severities indicates structured severity aggregation.
+
+leaf_qt/regen_candidate_population_master_gate.py:521 [CANONICAL_PASS_EQUALITY]
+  current: if canonical == "PASS":
+  wrapper: is_pass(canonical)
+  reason: Canonical PASS check can be routed through shared status access.
+
+leaf_qt/regen_candidate_ranking_master_gate.py:48 [SEVERITY_COLLECTION_FAIL_AGGREGATION]
+  current: if "FAIL" in severities:
+  wrapper: highest_severity(severities) == "FAIL"
+  reason: Variable name severities indicates structured severity aggregation.
+
+leaf_qt/regen_candidate_ranking_master_gate.py:48 [SEVERITY_COLLECTION_FAIL_AGGREGATION]
+  current: if "FAIL" in severities:
+  wrapper: highest_severity(severities) == "FAIL"
+  reason: Variable name severities indicates structured severity aggregation.
+
+leaf_qt/regen_candidate_ranking_master_gate.py:184 [STRUCTURED_FINDING_SEVERITY_AGGREGATION]
+  current: if ready is True and not any(f["severity"] in {"FAIL", "BLOCKED", "REVIEW_REQUIRED"} for f in findings):
+  wrapper: findings_highest_severity(findings)
+  reason: This already consumes structured findings and can be routed through shared severity access.
+
+leaf_qt/regen_evolution_loop_master_gate.py:388 [SEVERITY_COLLECTION_FAIL_AGGREGATION]
+  current: if "FAIL" in severities:
+  wrapper: highest_severity(severities) == "FAIL"
+  reason: Variable name severities indicates structured severity aggregation.
+
+leaf_qt/regen_evolution_loop_master_gate.py:388 [SEVERITY_COLLECTION_FAIL_AGGREGATION]
+  current: if "FAIL" in severities:
+  wrapper: highest_severity(severities) == "FAIL"
+  reason: Variable name severities indicates structured severity aggregation.
+
+leaf_qt/regen_geometry_master_gate.py:418 [CANONICAL_PASS_EQUALITY]
+  current: if canonical == "PASS":
+  wrapper: is_pass(canonical)
+  reason: Canonical PASS check can be routed through shared status access.
+
+leaf_qt/regen_optimisation_master_gate.py:274 [SEVERITY_COLLECTION_FAIL_AGGREGATION]
+  current: if "FAIL" in severities:
+  wrapper: highest_severity(severities) == "FAIL"
+  reason: Variable name severities indicates structured severity aggregation.
+
+leaf_qt/regen_optimisation_master_gate.py:274 [SEVERITY_COLLECTION_FAIL_AGGREGATION]
+  current: if "FAIL" in severities:
+  wrapper: highest_severity(severities) == "FAIL"
+  reason: Variable name severities indicates structured severity aggregation.
+
+leaf_qt/regen_scalability_master_gate.py:218 [SEVERITY_COLLECTION_FAIL_AGGREGATION]
+  current: if "FAIL" in severities:
+  wrapper: highest_severity(severities) == "FAIL"
+  reason: Variable name severities indicates structured severity aggregation.
+
+leaf_qt/regen_scalability_master_gate.py:218 [SEVERITY_COLLECTION_FAIL_AGGREGATION]
+  current: if "FAIL" in severities:
+  wrapper: highest_severity(severities) == "FAIL"
+  reason: Variable name severities indicates structured severity aggregation.
+
+leaf_qt/regen_variable_geometry_master_gate.py:149 [SEVERITY_COLLECTION_FAIL_AGGREGATION]
+  current: if "FAIL" in severities:
+  wrapper: highest_severity(severities) == "FAIL"
+  reason: Variable name severities indicates structured severity aggregation.
+
+leaf_qt/regen_variable_geometry_master_gate.py:149 [SEVERITY_COLLECTION_FAIL_AGGREGATION]
+  current: if "FAIL" in severities:
+  wrapper: highest_severity(severities) == "FAIL"
+  reason: Variable name severities indicates structured severity aggregation.
+
+project_maintenance/wave2_status_adapter_master_gate_phase_16t3s.py:32 [SEVERITY_COLLECTION_FAIL_AGGREGATION]
+  current: if "FAIL" in severities:
+  wrapper: highest_severity(severities) == "FAIL"
+  reason: Variable name severities indicates structured severity aggregation.
+
+project_maintenance/wave2_status_adapter_master_gate_phase_16t3s.py:32 [SEVERITY_COLLECTION_FAIL_AGGREGATION]
+  current: if "FAIL" in severities:
+  wrapper: highest_severity(severities) == "FAIL"
+  reason: Variable name severities indicates structured severity aggregation.
+
+project_maintenance/wave2_status_adapter_master_gate_phase_16t3s.py:134 [CANONICAL_PASS_EQUALITY]
+  current: passed = canonical == "PASS"
+  wrapper: is_pass(canonical)
+  reason: Canonical PASS check can be routed through shared status access.
+
+HELD / MANUAL REVIEW
+--------------------
+leaf_qt/real_engine_benchmark_master_gate.py:65 [MANUAL_REVIEW_REQUIRED]
+  current: if "FAIL" in reason_text.upper() or "ERROR" in reason_text.upper() or "INVALID" in reason_text.upper():
+  reason: No safe automated migration rule matched.
+
+leaf_qt/real_engine_benchmark_master_gate.py:65 [MANUAL_REVIEW_REQUIRED]
+  current: if "FAIL" in reason_text.upper() or "ERROR" in reason_text.upper() or "INVALID" in reason_text.upper():
+  reason: No safe automated migration rule matched.
+
+leaf_qt/regen_candidate_mutation_master_gate.py:330 [PRESENTATION_MARKER]
+  current: label = "PASS" if check["passed"] else "FAIL"
+  reason: Boolean-to-text marker is presentation/evidence rendering, not status consumption.
+
+leaf_qt/regen_candidate_population_master_gate.py:299 [PRESENTATION_MARKER]
+  current: label = "PASS" if check["passed"] else "FAIL"
+  reason: Boolean-to-text marker is presentation/evidence rendering, not status consumption.
+
+leaf_qt/regen_candidate_population_master_gate.py:405 [TEXT_SEMANTIC_GATE]
+  current: if "FAIL" in text or "INVALID" in text or "ERROR" in text:
+  reason: Freeform text scanning should not be blindly converted.
+
+leaf_qt/regen_candidate_population_master_gate.py:405 [TEXT_SEMANTIC_GATE]
+  current: if "FAIL" in text or "INVALID" in text or "ERROR" in text:
+  reason: Freeform text scanning should not be blindly converted.
+
+leaf_qt/regen_candidate_population_master_gate.py:414 [TEXT_SEMANTIC_GATE]
+  current: elif "WARN" in text or "REVIEW" in text or "PLACEHOLDER" in text:
+  reason: Freeform text scanning should not be blindly converted.
+
+leaf_qt/regen_candidate_population_master_gate.py:414 [TEXT_SEMANTIC_GATE]
+  current: elif "WARN" in text or "REVIEW" in text or "PLACEHOLDER" in text:
+  reason: Freeform text scanning should not be blindly converted.
+
+leaf_qt/regen_candidate_ranking_master_gate.py:603 [PRESENTATION_MARKER]
+  current: label = "PASS" if check["passed"] else "FAIL"
+  reason: Boolean-to-text marker is presentation/evidence rendering, not status consumption.
+
+leaf_qt/regen_evolution_loop_master_gate.py:327 [PRESENTATION_MARKER]
+  current: label = "PASS" if check["passed"] else "FAIL"
+  reason: Boolean-to-text marker is presentation/evidence rendering, not status consumption.
+
+leaf_qt/regen_geometry_master_gate.py:56 [MANUAL_REVIEW_REQUIRED]
+  current: elif history.get("iteration_history_status") != "PASS":
+  reason: No safe automated migration rule matched.
+
+leaf_qt/regen_geometry_master_gate.py:250 [TEXT_SEMANTIC_GATE]
+  current: if "FAIL" in text or "INVALID" in text:
+  reason: Freeform text scanning should not be blindly converted.
+
+leaf_qt/regen_geometry_master_gate.py:250 [TEXT_SEMANTIC_GATE]
+  current: if "FAIL" in text or "INVALID" in text:
+  reason: Freeform text scanning should not be blindly converted.
+
+leaf_qt/regen_geometry_master_gate.py:260 [TEXT_SEMANTIC_GATE]
+  current: elif "WARN" in text or "REVIEW" in text or "PLACEHOLDER" in text:
+  reason: Freeform text scanning should not be blindly converted.
+
+leaf_qt/regen_geometry_master_gate.py:260 [TEXT_SEMANTIC_GATE]
+  current: elif "WARN" in text or "REVIEW" in text or "PLACEHOLDER" in text:
+  reason: Freeform text scanning should not be blindly converted.
+
+leaf_qt/real_engine_benchmark_master_gate.py:25 [PAYLOAD_LITERAL_CONTEXT]
+  current: "PASS",
+  reason: Standalone literal likely belongs to payload/evidence construction.
+
+leaf_qt/real_engine_benchmark_master_gate.py:39 [PAYLOAD_LITERAL_CONTEXT]
+  current: "FAIL",
+  reason: Standalone literal likely belongs to payload/evidence construction.
+
+leaf_qt/real_engine_benchmark_master_gate.py:48 [PAYLOAD_LITERAL_CONTEXT]
+  current: "WARN",
+  reason: Standalone literal likely belongs to payload/evidence construction.
+
+leaf_qt/regen_axial_geometry_master_gate.py:137 [STATUS_PRODUCER_RETURN]
+  current: return "FAIL"
+  reason: Return literal produces legacy-compatible status output.
+
+leaf_qt/regen_axial_geometry_master_gate.py:146 [STATUS_PRODUCER_RETURN]
+  current: return "PASS"
+  reason: Return literal produces legacy-compatible status output.
+
+leaf_qt/regen_axial_geometry_master_gate.py:148 [STATUS_PRODUCER_RETURN]
+  current: return "FAIL"
+  reason: Return literal produces legacy-compatible status output.
+
+leaf_qt/regen_axial_geometry_master_gate.py:158 [PAYLOAD_LITERAL_CONTEXT]
+  current: "FAIL",
+  reason: Standalone literal likely belongs to payload/evidence construction.
+
+leaf_qt/regen_axial_geometry_master_gate.py:237 [PAYLOAD_LITERAL_CONTEXT]
+  current: "FAIL",
+  reason: Standalone literal likely belongs to payload/evidence construction.
+
+leaf_qt/regen_candidate_acceptance_master_gate.py:141 [STATUS_PRODUCER_RETURN]
+  current: return "FAIL"
+  reason: Return literal produces legacy-compatible status output.
+
+leaf_qt/regen_candidate_acceptance_master_gate.py:150 [STATUS_PRODUCER_RETURN]
+  current: return "PASS"
+  reason: Return literal produces legacy-compatible status output.
+
+leaf_qt/regen_candidate_acceptance_master_gate.py:152 [STATUS_PRODUCER_RETURN]
+  current: return "FAIL"
+  reason: Return literal produces legacy-compatible status output.
+
+leaf_qt/regen_candidate_acceptance_master_gate.py:162 [PAYLOAD_LITERAL_CONTEXT]
+  current: "FAIL",
+  reason: Standalone literal likely belongs to payload/evidence construction.
+
+leaf_qt/regen_candidate_acceptance_master_gate.py:257 [PAYLOAD_LITERAL_CONTEXT]
+  current: "FAIL",
+  reason: Standalone literal likely belongs to payload/evidence construction.
+
+leaf_qt/regen_candidate_acceptance_master_gate.py:334 [PAYLOAD_LITERAL_CONTEXT]
+  current: "FAIL",
+  reason: Standalone literal likely belongs to payload/evidence construction.
+
+leaf_qt/regen_candidate_mutation_master_gate.py:391 [STATUS_PRODUCER_RETURN]
+  current: return "FAIL"
+  reason: Return literal produces legacy-compatible status output.
+
+leaf_qt/regen_candidate_mutation_master_gate.py:400 [STATUS_PRODUCER_RETURN]
+  current: return "PASS"
+  reason: Return literal produces legacy-compatible status output.
+
+leaf_qt/regen_candidate_mutation_master_gate.py:402 [STATUS_PRODUCER_RETURN]
+  current: return "FAIL"
+  reason: Return literal produces legacy-compatible status output.
+
+leaf_qt/regen_candidate_mutation_master_gate.py:412 [PAYLOAD_LITERAL_CONTEXT]
+  current: "FAIL",
+  reason: Standalone literal likely belongs to payload/evidence construction.
+
+leaf_qt/regen_candidate_mutation_master_gate.py:491 [PAYLOAD_LITERAL_CONTEXT]
+  current: "FAIL",
+  reason: Standalone literal likely belongs to payload/evidence construction.
+
+leaf_qt/regen_candidate_mutation_master_gate.py:605 [PAYLOAD_LITERAL_CONTEXT]
+  current: "FAIL",
+  reason: Standalone literal likely belongs to payload/evidence construction.
+
+leaf_qt/regen_candidate_ranking_master_gate.py:49 [STATUS_PRODUCER_RETURN]
+  current: return "FAIL"
+  reason: Return literal produces legacy-compatible status output.
+
+leaf_qt/regen_candidate_ranking_master_gate.py:58 [STATUS_PRODUCER_RETURN]
+  current: return "PASS"
+  reason: Return literal produces legacy-compatible status output.
+
+leaf_qt/regen_candidate_ranking_master_gate.py:60 [STATUS_PRODUCER_RETURN]
+  current: return "FAIL"
+  reason: Return literal produces legacy-compatible status output.
+
+leaf_qt/regen_candidate_ranking_master_gate.py:75 [PAYLOAD_LITERAL_CONTEXT]
+  current: "FAIL",
+  reason: Standalone literal likely belongs to payload/evidence construction.
+
+leaf_qt/regen_candidate_ranking_master_gate.py:106 [PAYLOAD_LITERAL_CONTEXT]
+  current: "FAIL",
+  reason: Standalone literal likely belongs to payload/evidence construction.
+
+leaf_qt/regen_candidate_ranking_master_gate.py:129 [PAYLOAD_LITERAL_CONTEXT]
+  current: "FAIL",
+  reason: Standalone literal likely belongs to payload/evidence construction.
+
+leaf_qt/regen_candidate_ranking_master_gate.py:139 [PAYLOAD_LITERAL_CONTEXT]
+  current: "FAIL",
+  reason: Standalone literal likely belongs to payload/evidence construction.
+
+leaf_qt/regen_candidate_ranking_master_gate.py:168 [PAYLOAD_LITERAL_CONTEXT]
+  current: "FAIL",
+  reason: Standalone literal likely belongs to payload/evidence construction.
+
+leaf_qt/regen_candidate_ranking_master_gate.py:178 [PAYLOAD_LITERAL_CONTEXT]
+  current: "FAIL",
+  reason: Standalone literal likely belongs to payload/evidence construction.
+
+leaf_qt/regen_evolution_loop_master_gate.py:389 [STATUS_PRODUCER_RETURN]
+  current: return "FAIL"
+  reason: Return literal produces legacy-compatible status output.
+
+leaf_qt/regen_evolution_loop_master_gate.py:398 [STATUS_PRODUCER_RETURN]
+  current: return "PASS"
+  reason: Return literal produces legacy-compatible status output.
+
+leaf_qt/regen_evolution_loop_master_gate.py:400 [STATUS_PRODUCER_RETURN]
+  current: return "FAIL"
+  reason: Return literal produces legacy-compatible status output.
+
+leaf_qt/regen_evolution_loop_master_gate.py:410 [PAYLOAD_LITERAL_CONTEXT]
+  current: "FAIL",
+  reason: Standalone literal likely belongs to payload/evidence construction.
+
+leaf_qt/regen_evolution_loop_master_gate.py:489 [PAYLOAD_LITERAL_CONTEXT]
+  current: "FAIL",
+  reason: Standalone literal likely belongs to payload/evidence construction.
+
+leaf_qt/regen_optimisation_master_gate.py:275 [STATUS_PRODUCER_RETURN]
+  current: return "FAIL"
+  reason: Return literal produces legacy-compatible status output.
+
+leaf_qt/regen_optimisation_master_gate.py:284 [STATUS_PRODUCER_RETURN]
+  current: return "PASS"
+  reason: Return literal produces legacy-compatible status output.
+
+leaf_qt/regen_optimisation_master_gate.py:286 [STATUS_PRODUCER_RETURN]
+  current: return "FAIL"
+  reason: Return literal produces legacy-compatible status output.
+
+leaf_qt/regen_optimisation_master_gate.py:296 [PAYLOAD_LITERAL_CONTEXT]
+  current: "FAIL",
+  reason: Standalone literal likely belongs to payload/evidence construction.
+
+leaf_qt/regen_optimisation_master_gate.py:375 [PAYLOAD_LITERAL_CONTEXT]
+  current: "FAIL",
+  reason: Standalone literal likely belongs to payload/evidence construction.
+
+leaf_qt/regen_optimisation_master_gate.py:521 [PAYLOAD_LITERAL_CONTEXT]
+  current: "FAIL",
+  reason: Standalone literal likely belongs to payload/evidence construction.
+
+leaf_qt/regen_scalability_master_gate.py:219 [STATUS_PRODUCER_RETURN]
+  current: return "FAIL"
+  reason: Return literal produces legacy-compatible status output.
+
+leaf_qt/regen_scalability_master_gate.py:225 [STATUS_PRODUCER_RETURN]
+  current: return "PASS"
+  reason: Return literal produces legacy-compatible status output.
+
+leaf_qt/regen_scalability_master_gate.py:226 [STATUS_PRODUCER_RETURN]
+  current: return "FAIL"
+  reason: Return literal produces legacy-compatible status output.
+
+leaf_qt/regen_scalability_master_gate.py:236 [PAYLOAD_LITERAL_CONTEXT]
+  current: "FAIL",
+  reason: Standalone literal likely belongs to payload/evidence construction.
+
+leaf_qt/regen_scalability_master_gate.py:311 [PAYLOAD_LITERAL_CONTEXT]
+  current: "FAIL",
+  reason: Standalone literal likely belongs to payload/evidence construction.
+
+leaf_qt/regen_variable_geometry_master_gate.py:150 [STATUS_PRODUCER_RETURN]
+  current: return "FAIL"
+  reason: Return literal produces legacy-compatible status output.
+
+leaf_qt/regen_variable_geometry_master_gate.py:159 [STATUS_PRODUCER_RETURN]
+  current: return "PASS"
+  reason: Return literal produces legacy-compatible status output.
+
+leaf_qt/regen_variable_geometry_master_gate.py:161 [STATUS_PRODUCER_RETURN]
+  current: return "FAIL"
+  reason: Return literal produces legacy-compatible status output.
+
+leaf_qt/regen_variable_geometry_master_gate.py:171 [PAYLOAD_LITERAL_CONTEXT]
+  current: "FAIL",
+  reason: Standalone literal likely belongs to payload/evidence construction.
+
+leaf_qt/regen_variable_geometry_master_gate.py:250 [PAYLOAD_LITERAL_CONTEXT]
+  current: "FAIL",
+  reason: Standalone literal likely belongs to payload/evidence construction.
+
+COMPILE RESULTS
+---------------
+leaf_qt/real_engine_benchmark_master_gate.py: PASS 
+leaf_qt/regen_axial_geometry_master_gate.py: PASS 
+leaf_qt/regen_candidate_acceptance_master_gate.py: PASS 
+leaf_qt/regen_candidate_mutation_master_gate.py: PASS 
+leaf_qt/regen_candidate_population_master_gate.py: PASS 
+leaf_qt/regen_candidate_ranking_master_gate.py: PASS 
+leaf_qt/regen_evolution_loop_master_gate.py: PASS 
+leaf_qt/regen_geometry_master_gate.py: PASS 
+leaf_qt/regen_optimisation_master_gate.py: PASS 
+leaf_qt/regen_scalability_master_gate.py: PASS 
+leaf_qt/regen_variable_geometry_master_gate.py: PASS 
+project_maintenance/wave2_status_adapter_master_gate_phase_16t3s.py: PASS 
+
+COMPLETION NOTICE
+-----------------
+PHASE 16U.20 COMPLETE.
+
+NEXT PHASE
+----------
+PHASE 16U.21 — WAVE C MASTER GATE LOW-RISK STATUS WRAPPER PATCH

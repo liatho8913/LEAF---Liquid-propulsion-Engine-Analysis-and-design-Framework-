@@ -1,0 +1,44 @@
+LEAF PHASE 16U.156
+FINAL WAVE MANIFEST SELECTION
+=============================
+
+STATUS: PASS_PHASE_16U156_FINAL_WAVE_MANIFEST_SELECTION
+
+ROADMAP STATE
+-------------
+Locked baseline: 68
+Closed before final wave: 60
+Remaining before final wave: 8
+Expected closed after final audit: 68
+Expected remaining after final audit: 0
+
+Selected files: 8
+
+SELECTED FILES
+--------------
+- real_engine_benchmark_completion_audit.py legacy_hits=3
+- real_engine_benchmark_failure_owner.py legacy_hits=0
+- regen_autonomous_optimisation_input_audit.py legacy_hits=1
+- regen_candidate_generation_session_owner.py legacy_hits=1
+- regen_scalability_failure_owner.py legacy_hits=0
+- regen_viewer_final_runtime_consistency_gate_phase_16q20.py legacy_hits=1
+- regen_viewer_gui_runtime_acceptance_gate_phase_16q28.py legacy_hits=1
+- regen_viewer_report_renderer.py legacy_hits=1
+
+ACCEPTANCE CONTRACT
+-------------------
+✓ backup per file
+✓ pre-hash per file
+✓ post-hash per file
+✓ compile per file
+✓ shared presentation layer per file
+✓ no legacy inline status logic per file
+✓ no legacy status startswith/endswith checks per file unless safely migrated
+✓ rollback per file
+✓ reject whole wave if any file fails
+✓ locked-baseline audit after wave
+✓ migration certificate required
+✓ final global signoff required
+
+FAILURES
+--------

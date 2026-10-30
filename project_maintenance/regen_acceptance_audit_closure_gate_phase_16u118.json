@@ -1,0 +1,9 @@
+{
+  "phase": "16U.118",
+  "target": "leaf_qt/regen_acceptance_audit.py",
+  "passed": true,
+  "failures": [],
+  "phase_16u118_regen_acceptance_audit_closure_gate_complete": true,
+  "closed_target": "leaf_qt/regen_acceptance_audit.py",
+  "next_phase": "16U.119 \u2014 Updated Global Remaining Candidate Audit"
+}

@@ -1,0 +1,311 @@
+{
+  "phase": "16U.150",
+  "passed": true,
+  "wave_id": "16U-WAVE4",
+  "wave_name": "Runtime and optimisation presentation migration",
+  "selected_count": 10,
+  "selected_files": [
+    "regen_optimisation_completion_audit.py",
+    "regen_optimisation_registration_owner.py",
+    "regen_optimisation_session_owner.py",
+    "regen_runtime_execution_completion_audit.py",
+    "regen_runtime_execution_input_gate.py",
+    "regen_runtime_execution_registration_owner.py",
+    "regen_runtime_execution_session_owner.py",
+    "regen_runtime_optimisation_input_gate.py",
+    "regen_runtime_optimisation_registration_owner.py",
+    "regen_runtime_optimisation_session_owner.py"
+  ],
+  "locked_baseline": 68,
+  "closed_targets_before_wave": 50,
+  "remaining_candidates_before_wave": 18,
+  "expected_closed_after_wave_audit": 60,
+  "expected_remaining_after_wave_audit": 8,
+  "acceptance_contract": {
+    "backup_required_for_each_file": true,
+    "pre_hash_required_for_each_file": true,
+    "post_hash_required_for_each_file": true,
+    "compile_required_for_each_file": true,
+    "shared_layer_required_for_each_file": true,
+    "legacy_inline_status_logic_removed_for_each_file": true,
+    "rollback_available_for_each_file": true,
+    "wave_rejected_if_any_file_fails": true,
+    "locked_baseline_audit_required_after_wave": true,
+    "migration_certificate_required": true
+  },
+  "manifest": [
+    {
+      "file": "regen_optimisation_completion_audit.py",
+      "path": "leaf_qt/regen_optimisation_completion_audit.py",
+      "exists": true,
+      "sha256_before": "b02ba194b493604dd2909f229e1db6c1a18a6d315821fb290fb76ce7633bf56b",
+      "compile_before": true,
+      "compile_error": null,
+      "has_LegacyCompatibilityProducer": false,
+      "has_status_severity": false,
+      "legacy_hit_count": 1,
+      "legacy_hits": [
+        {
+          "line": 151,
+          "pattern": "\"PASS\"\\s+if\\s+.+?\\s+else\\s+\"FAIL\"",
+          "content": "marker = \"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ],
+      "wave": "16U-WAVE4",
+      "reason": "runtime and optimisation family with common status presentation migration pattern",
+      "expected_edits": [
+        "ensure LegacyCompatibilityProducer import/fallback",
+        "ensure status_severity availability",
+        "replace inline PASS/WARN/FAIL marker/label ternaries",
+        "no solver behaviour changes",
+        "no public API changes"
+      ]
+    },
+    {
+      "file": "regen_optimisation_registration_owner.py",
+      "path": "leaf_qt/regen_optimisation_registration_owner.py",
+      "exists": true,
+      "sha256_before": "81a254f91a7ee52711f8838173468ba259356133e978184972e4cf24eab226c2",
+      "compile_before": true,
+      "compile_error": null,
+      "has_LegacyCompatibilityProducer": false,
+      "has_status_severity": false,
+      "legacy_hit_count": 1,
+      "legacy_hits": [
+        {
+          "line": 194,
+          "pattern": "\"PASS\"\\s+if\\s+.+?\\s+else\\s+\"FAIL\"",
+          "content": "marker = \"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ],
+      "wave": "16U-WAVE4",
+      "reason": "runtime and optimisation family with common status presentation migration pattern",
+      "expected_edits": [
+        "ensure LegacyCompatibilityProducer import/fallback",
+        "ensure status_severity availability",
+        "replace inline PASS/WARN/FAIL marker/label ternaries",
+        "no solver behaviour changes",
+        "no public API changes"
+      ]
+    },
+    {
+      "file": "regen_optimisation_session_owner.py",
+      "path": "leaf_qt/regen_optimisation_session_owner.py",
+      "exists": true,
+      "sha256_before": "ff8a7adea19a56c5d7117c112ced863b6af99f2dca23d097e334c24b60c64403",
+      "compile_before": true,
+      "compile_error": null,
+      "has_LegacyCompatibilityProducer": false,
+      "has_status_severity": false,
+      "legacy_hit_count": 1,
+      "legacy_hits": [
+        {
+          "line": 165,
+          "pattern": "\"PASS\"\\s+if\\s+.+?\\s+else\\s+\"FAIL\"",
+          "content": "marker = \"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ],
+      "wave": "16U-WAVE4",
+      "reason": "runtime and optimisation family with common status presentation migration pattern",
+      "expected_edits": [
+        "ensure LegacyCompatibilityProducer import/fallback",
+        "ensure status_severity availability",
+        "replace inline PASS/WARN/FAIL marker/label ternaries",
+        "no solver behaviour changes",
+        "no public API changes"
+      ]
+    },
+    {
+      "file": "regen_runtime_execution_completion_audit.py",
+      "path": "leaf_qt/regen_runtime_execution_completion_audit.py",
+      "exists": true,
+      "sha256_before": "db6963c839cd6c3796b63d64c904018296e54abad54fb430c7be14608152bc99",
+      "compile_before": true,
+      "compile_error": null,
+      "has_LegacyCompatibilityProducer": false,
+      "has_status_severity": false,
+      "legacy_hit_count": 1,
+      "legacy_hits": [
+        {
+          "line": 191,
+          "pattern": "\"PASS\"\\s+if\\s+.+?\\s+else\\s+\"FAIL\"",
+          "content": "marker = \"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ],
+      "wave": "16U-WAVE4",
+      "reason": "runtime and optimisation family with common status presentation migration pattern",
+      "expected_edits": [
+        "ensure LegacyCompatibilityProducer import/fallback",
+        "ensure status_severity availability",
+        "replace inline PASS/WARN/FAIL marker/label ternaries",
+        "no solver behaviour changes",
+        "no public API changes"
+      ]
+    },
+    {
+      "file": "regen_runtime_execution_input_gate.py",
+      "path": "leaf_qt/regen_runtime_execution_input_gate.py",
+      "exists": true,
+      "sha256_before": "49a37bdf10207da786e5043c1dbf1f77accb4b8e169ee9104ca96fb5641f73b7",
+      "compile_before": true,
+      "compile_error": null,
+      "has_LegacyCompatibilityProducer": false,
+      "has_status_severity": false,
+      "legacy_hit_count": 1,
+      "legacy_hits": [
+        {
+          "line": 175,
+          "pattern": "\"PASS\"\\s+if\\s+.+?\\s+else\\s+\"FAIL\"",
+          "content": "marker = \"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ],
+      "wave": "16U-WAVE4",
+      "reason": "runtime and optimisation family with common status presentation migration pattern",
+      "expected_edits": [
+        "ensure LegacyCompatibilityProducer import/fallback",
+        "ensure status_severity availability",
+        "replace inline PASS/WARN/FAIL marker/label ternaries",
+        "no solver behaviour changes",
+        "no public API changes"
+      ]
+    },
+    {
+      "file": "regen_runtime_execution_registration_owner.py",
+      "path": "leaf_qt/regen_runtime_execution_registration_owner.py",
+      "exists": true,
+      "sha256_before": "ac24477b468539c6eeb95e0001175d1ab1103bb5c9e255158b35acf557bd3d86",
+      "compile_before": true,
+      "compile_error": null,
+      "has_LegacyCompatibilityProducer": false,
+      "has_status_severity": false,
+      "legacy_hit_count": 1,
+      "legacy_hits": [
+        {
+          "line": 226,
+          "pattern": "\"PASS\"\\s+if\\s+.+?\\s+else\\s+\"FAIL\"",
+          "content": "marker = \"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ],
+      "wave": "16U-WAVE4",
+      "reason": "runtime and optimisation family with common status presentation migration pattern",
+      "expected_edits": [
+        "ensure LegacyCompatibilityProducer import/fallback",
+        "ensure status_severity availability",
+        "replace inline PASS/WARN/FAIL marker/label ternaries",
+        "no solver behaviour changes",
+        "no public API changes"
+      ]
+    },
+    {
+      "file": "regen_runtime_execution_session_owner.py",
+      "path": "leaf_qt/regen_runtime_execution_session_owner.py",
+      "exists": true,
+      "sha256_before": "9ac1396e4fcd5e920eaff4670a42afbc78dd5903e6c918fc396f71f71d3580f6",
+      "compile_before": true,
+      "compile_error": null,
+      "has_LegacyCompatibilityProducer": false,
+      "has_status_severity": false,
+      "legacy_hit_count": 1,
+      "legacy_hits": [
+        {
+          "line": 193,
+          "pattern": "\"PASS\"\\s+if\\s+.+?\\s+else\\s+\"FAIL\"",
+          "content": "marker = \"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ],
+      "wave": "16U-WAVE4",
+      "reason": "runtime and optimisation family with common status presentation migration pattern",
+      "expected_edits": [
+        "ensure LegacyCompatibilityProducer import/fallback",
+        "ensure status_severity availability",
+        "replace inline PASS/WARN/FAIL marker/label ternaries",
+        "no solver behaviour changes",
+        "no public API changes"
+      ]
+    },
+    {
+      "file": "regen_runtime_optimisation_input_gate.py",
+      "path": "leaf_qt/regen_runtime_optimisation_input_gate.py",
+      "exists": true,
+      "sha256_before": "8d2956a402d205059a389087a0fb715252662df906a984104d00131d36399423",
+      "compile_before": true,
+      "compile_error": null,
+      "has_LegacyCompatibilityProducer": false,
+      "has_status_severity": false,
+      "legacy_hit_count": 1,
+      "legacy_hits": [
+        {
+          "line": 158,
+          "pattern": "\"PASS\"\\s+if\\s+.+?\\s+else\\s+\"FAIL\"",
+          "content": "marker = \"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ],
+      "wave": "16U-WAVE4",
+      "reason": "runtime and optimisation family with common status presentation migration pattern",
+      "expected_edits": [
+        "ensure LegacyCompatibilityProducer import/fallback",
+        "ensure status_severity availability",
+        "replace inline PASS/WARN/FAIL marker/label ternaries",
+        "no solver behaviour changes",
+        "no public API changes"
+      ]
+    },
+    {
+      "file": "regen_runtime_optimisation_registration_owner.py",
+      "path": "leaf_qt/regen_runtime_optimisation_registration_owner.py",
+      "exists": true,
+      "sha256_before": "e53cf9adddd25d9f341d8607d5cca11514f9f2aa8308a36e323a78f8334a6336",
+      "compile_before": true,
+      "compile_error": null,
+      "has_LegacyCompatibilityProducer": false,
+      "has_status_severity": false,
+      "legacy_hit_count": 1,
+      "legacy_hits": [
+        {
+          "line": 223,
+          "pattern": "\"PASS\"\\s+if\\s+.+?\\s+else\\s+\"FAIL\"",
+          "content": "marker = \"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ],
+      "wave": "16U-WAVE4",
+      "reason": "runtime and optimisation family with common status presentation migration pattern",
+      "expected_edits": [
+        "ensure LegacyCompatibilityProducer import/fallback",
+        "ensure status_severity availability",
+        "replace inline PASS/WARN/FAIL marker/label ternaries",
+        "no solver behaviour changes",
+        "no public API changes"
+      ]
+    },
+    {
+      "file": "regen_runtime_optimisation_session_owner.py",
+      "path": "leaf_qt/regen_runtime_optimisation_session_owner.py",
+      "exists": true,
+      "sha256_before": "743943988708bf1495b1398168d7f78eca5e2eeb69c6710b6135b164fa0c4554",
+      "compile_before": true,
+      "compile_error": null,
+      "has_LegacyCompatibilityProducer": false,
+      "has_status_severity": false,
+      "legacy_hit_count": 1,
+      "legacy_hits": [
+        {
+          "line": 175,
+          "pattern": "\"PASS\"\\s+if\\s+.+?\\s+else\\s+\"FAIL\"",
+          "content": "marker = \"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ],
+      "wave": "16U-WAVE4",
+      "reason": "runtime and optimisation family with common status presentation migration pattern",
+      "expected_edits": [
+        "ensure LegacyCompatibilityProducer import/fallback",
+        "ensure status_severity availability",
+        "replace inline PASS/WARN/FAIL marker/label ternaries",
+        "no solver behaviour changes",
+        "no public API changes"
+      ]
+    }
+  ],
+  "phase_16u150_wave4_manifest_selection_complete": true,
+  "next_phase": "16U.151 \u2014 Wave 4 Transactional Patch",
+  "failures": []
+}

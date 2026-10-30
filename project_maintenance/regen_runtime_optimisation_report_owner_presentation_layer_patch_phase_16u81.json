@@ -1,0 +1,18 @@
+{
+  "phase": "16U.81",
+  "status": "PASS_PHASE_16U81_REGEN_RUNTIME_OPTIMISATION_REPORT_OWNER_PRESENTATION_LAYER_PATCH",
+  "generated": "2026-06-28T19:23:32",
+  "target": "leaf_qt/regen_runtime_optimisation_report_owner.py",
+  "backup": "leaf_qt/regen_runtime_optimisation_report_owner.py.phase_16u81_backup",
+  "helper_inserted": false,
+  "applied": [],
+  "before_forbidden_count": 0,
+  "after_forbidden_count": 0,
+  "ignored_helper_fallback_findings": 0,
+  "remaining_findings": [],
+  "compiled": true,
+  "compile_error": "",
+  "missing_tokens": [],
+  "phase_16u81_regen_runtime_optimisation_report_owner_presentation_layer_patch_complete": true,
+  "next_phase": "16U.82 \u2014 Regen Runtime Optimisation Report Owner Presentation Layer Regression"
+}

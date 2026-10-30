@@ -1,0 +1,557 @@
+{
+  "phase": "16U.175F",
+  "deduplication_candidate_count": 68,
+  "deduplication_action_counts": {
+    "UPGRADE_SHARED_OWNER_THEN_DEDUPLICATE": 67,
+    "RESCAN_OR_FALSE_POSITIVE": 1
+  },
+  "entries": [
+    {
+      "path": "leaf_qt/bond_coat_integration_owner.py",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "deduplication_action": "UPGRADE_SHARED_OWNER_THEN_DEDUPLICATE",
+      "local_start_line": 5,
+      "local_end_line": 13,
+      "returns": []
+    },
+    {
+      "path": "leaf_qt/coating_property_consumption_audit_owner.py",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "deduplication_action": "UPGRADE_SHARED_OWNER_THEN_DEDUPLICATE",
+      "local_start_line": 5,
+      "local_end_line": 13,
+      "returns": []
+    },
+    {
+      "path": "leaf_qt/coating_temperature_limit_integration_owner.py",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "deduplication_action": "UPGRADE_SHARED_OWNER_THEN_DEDUPLICATE",
+      "local_start_line": 5,
+      "local_end_line": 13,
+      "returns": []
+    },
+    {
+      "path": "leaf_qt/coating_thermal_conductivity_integration_owner.py",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "deduplication_action": "UPGRADE_SHARED_OWNER_THEN_DEDUPLICATE",
+      "local_start_line": 5,
+      "local_end_line": 13,
+      "returns": []
+    },
+    {
+      "path": "leaf_qt/coating_thermal_resistance_integration_owner.py",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "deduplication_action": "UPGRADE_SHARED_OWNER_THEN_DEDUPLICATE",
+      "local_start_line": 5,
+      "local_end_line": 13,
+      "returns": []
+    },
+    {
+      "path": "leaf_qt/coating_thickness_integration_owner.py",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "deduplication_action": "UPGRADE_SHARED_OWNER_THEN_DEDUPLICATE",
+      "local_start_line": 5,
+      "local_end_line": 13,
+      "returns": []
+    },
+    {
+      "path": "leaf_qt/material_density_integration_owner.py",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "deduplication_action": "UPGRADE_SHARED_OWNER_THEN_DEDUPLICATE",
+      "local_start_line": 5,
+      "local_end_line": 13,
+      "returns": []
+    },
+    {
+      "path": "leaf_qt/material_property_consumption_audit_owner.py",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "deduplication_action": "UPGRADE_SHARED_OWNER_THEN_DEDUPLICATE",
+      "local_start_line": 5,
+      "local_end_line": 13,
+      "returns": []
+    },
+    {
+      "path": "leaf_qt/material_specific_heat_integration_owner.py",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "deduplication_action": "UPGRADE_SHARED_OWNER_THEN_DEDUPLICATE",
+      "local_start_line": 5,
+      "local_end_line": 13,
+      "returns": []
+    },
+    {
+      "path": "leaf_qt/material_strength_limit_integration_owner.py",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "deduplication_action": "UPGRADE_SHARED_OWNER_THEN_DEDUPLICATE",
+      "local_start_line": 5,
+      "local_end_line": 13,
+      "returns": []
+    },
+    {
+      "path": "leaf_qt/material_temperature_limit_integration_owner.py",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "deduplication_action": "UPGRADE_SHARED_OWNER_THEN_DEDUPLICATE",
+      "local_start_line": 5,
+      "local_end_line": 13,
+      "returns": []
+    },
+    {
+      "path": "leaf_qt/material_thermal_conductivity_integration_owner.py",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "deduplication_action": "UPGRADE_SHARED_OWNER_THEN_DEDUPLICATE",
+      "local_start_line": 5,
+      "local_end_line": 13,
+      "returns": []
+    },
+    {
+      "path": "leaf_qt/real_engine_benchmark_completion_audit.py",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "deduplication_action": "UPGRADE_SHARED_OWNER_THEN_DEDUPLICATE",
+      "local_start_line": 28,
+      "local_end_line": 36,
+      "returns": []
+    },
+    {
+      "path": "leaf_qt/real_engine_benchmark_failure_owner.py",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "deduplication_action": "UPGRADE_SHARED_OWNER_THEN_DEDUPLICATE",
+      "local_start_line": 5,
+      "local_end_line": 13,
+      "returns": []
+    },
+    {
+      "path": "leaf_qt/regen_acceptance_audit.py",
+      "variant": "NO_LOCAL_DEFINITION_SOURCE",
+      "deduplication_action": "RESCAN_OR_FALSE_POSITIVE",
+      "local_start_line": null,
+      "local_end_line": null,
+      "returns": []
+    },
+    {
+      "path": "leaf_qt/regen_acceptance_criteria_owner.py",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "deduplication_action": "UPGRADE_SHARED_OWNER_THEN_DEDUPLICATE",
+      "local_start_line": 14,
+      "local_end_line": 22,
+      "returns": []
+    },
+    {
+      "path": "leaf_qt/regen_autonomous_optimisation_input_audit.py",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "deduplication_action": "UPGRADE_SHARED_OWNER_THEN_DEDUPLICATE",
+      "local_start_line": 12,
+      "local_end_line": 20,
+      "returns": []
+    },
+    {
+      "path": "leaf_qt/regen_candidate_blueprint_completion_audit.py",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "deduplication_action": "UPGRADE_SHARED_OWNER_THEN_DEDUPLICATE",
+      "local_start_line": 23,
+      "local_end_line": 31,
+      "returns": []
+    },
+    {
+      "path": "leaf_qt/regen_candidate_blueprint_generation_input_gate.py",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "deduplication_action": "UPGRADE_SHARED_OWNER_THEN_DEDUPLICATE",
+      "local_start_line": 9,
+      "local_end_line": 17,
+      "returns": []
+    },
+    {
+      "path": "leaf_qt/regen_candidate_blueprint_mutation_validation.py",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "deduplication_action": "UPGRADE_SHARED_OWNER_THEN_DEDUPLICATE",
+      "local_start_line": 19,
+      "local_end_line": 27,
+      "returns": []
+    },
+    {
+      "path": "leaf_qt/regen_candidate_blueprint_optimisation_completion_audit.py",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "deduplication_action": "UPGRADE_SHARED_OWNER_THEN_DEDUPLICATE",
+      "local_start_line": 9,
+      "local_end_line": 17,
+      "returns": []
+    },
+    {
+      "path": "leaf_qt/regen_candidate_blueprint_population_completion_audit.py",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "deduplication_action": "UPGRADE_SHARED_OWNER_THEN_DEDUPLICATE",
+      "local_start_line": 19,
+      "local_end_line": 27,
+      "returns": []
+    },
+    {
+      "path": "leaf_qt/regen_candidate_blueprint_population_validation_owner.py",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "deduplication_action": "UPGRADE_SHARED_OWNER_THEN_DEDUPLICATE",
+      "local_start_line": 5,
+      "local_end_line": 13,
+      "returns": []
+    },
+    {
+      "path": "leaf_qt/regen_candidate_creation_completion_audit.py",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "deduplication_action": "UPGRADE_SHARED_OWNER_THEN_DEDUPLICATE",
+      "local_start_line": 21,
+      "local_end_line": 29,
+      "returns": []
+    },
+    {
+      "path": "leaf_qt/regen_candidate_creation_input_audit.py",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "deduplication_action": "UPGRADE_SHARED_OWNER_THEN_DEDUPLICATE",
+      "local_start_line": 20,
+      "local_end_line": 28,
+      "returns": []
+    },
+    {
+      "path": "leaf_qt/regen_candidate_creation_registration_owner.py",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "deduplication_action": "UPGRADE_SHARED_OWNER_THEN_DEDUPLICATE",
+      "local_start_line": 20,
+      "local_end_line": 28,
+      "returns": []
+    },
+    {
+      "path": "leaf_qt/regen_candidate_creation_report_owner.py",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "deduplication_action": "UPGRADE_SHARED_OWNER_THEN_DEDUPLICATE",
+      "local_start_line": 5,
+      "local_end_line": 13,
+      "returns": []
+    },
+    {
+      "path": "leaf_qt/regen_candidate_creation_session_owner.py",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "deduplication_action": "UPGRADE_SHARED_OWNER_THEN_DEDUPLICATE",
+      "local_start_line": 20,
+      "local_end_line": 28,
+      "returns": []
+    },
+    {
+      "path": "leaf_qt/regen_candidate_generation_completion_audit.py",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "deduplication_action": "UPGRADE_SHARED_OWNER_THEN_DEDUPLICATE",
+      "local_start_line": 20,
+      "local_end_line": 28,
+      "returns": []
+    },
+    {
+      "path": "leaf_qt/regen_candidate_generation_input_gate.py",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "deduplication_action": "UPGRADE_SHARED_OWNER_THEN_DEDUPLICATE",
+      "local_start_line": 19,
+      "local_end_line": 27,
+      "returns": []
+    },
+    {
+      "path": "leaf_qt/regen_candidate_generation_registration_owner.py",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "deduplication_action": "UPGRADE_SHARED_OWNER_THEN_DEDUPLICATE",
+      "local_start_line": 20,
+      "local_end_line": 28,
+      "returns": []
+    },
+    {
+      "path": "leaf_qt/regen_candidate_generation_report_owner.py",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "deduplication_action": "UPGRADE_SHARED_OWNER_THEN_DEDUPLICATE",
+      "local_start_line": 5,
+      "local_end_line": 13,
+      "returns": []
+    },
+    {
+      "path": "leaf_qt/regen_candidate_generation_session_owner.py",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "deduplication_action": "UPGRADE_SHARED_OWNER_THEN_DEDUPLICATE",
+      "local_start_line": 20,
+      "local_end_line": 28,
+      "returns": []
+    },
+    {
+      "path": "leaf_qt/regen_candidate_mutation_completion_audit.py",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "deduplication_action": "UPGRADE_SHARED_OWNER_THEN_DEDUPLICATE",
+      "local_start_line": 9,
+      "local_end_line": 17,
+      "returns": []
+    },
+    {
+      "path": "leaf_qt/regen_candidate_mutation_input_audit.py",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "deduplication_action": "UPGRADE_SHARED_OWNER_THEN_DEDUPLICATE",
+      "local_start_line": 21,
+      "local_end_line": 29,
+      "returns": []
+    },
+    {
+      "path": "leaf_qt/regen_candidate_mutation_master_gate.py",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "deduplication_action": "UPGRADE_SHARED_OWNER_THEN_DEDUPLICATE",
+      "local_start_line": 4,
+      "local_end_line": 12,
+      "returns": []
+    },
+    {
+      "path": "leaf_qt/regen_candidate_mutation_report_owner.py",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "deduplication_action": "UPGRADE_SHARED_OWNER_THEN_DEDUPLICATE",
+      "local_start_line": 5,
+      "local_end_line": 13,
+      "returns": []
+    },
+    {
+      "path": "leaf_qt/regen_candidate_population_completion_audit.py",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "deduplication_action": "UPGRADE_SHARED_OWNER_THEN_DEDUPLICATE",
+      "local_start_line": 21,
+      "local_end_line": 29,
+      "returns": []
+    },
+    {
+      "path": "leaf_qt/regen_candidate_population_master_gate.py",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "deduplication_action": "UPGRADE_SHARED_OWNER_THEN_DEDUPLICATE",
+      "local_start_line": 4,
+      "local_end_line": 12,
+      "returns": []
+    },
+    {
+      "path": "leaf_qt/regen_candidate_ranking_completion_audit.py",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "deduplication_action": "UPGRADE_SHARED_OWNER_THEN_DEDUPLICATE",
+      "local_start_line": 19,
+      "local_end_line": 27,
+      "returns": []
+    },
+    {
+      "path": "leaf_qt/regen_candidate_ranking_input_audit.py",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "deduplication_action": "UPGRADE_SHARED_OWNER_THEN_DEDUPLICATE",
+      "local_start_line": 22,
+      "local_end_line": 30,
+      "returns": []
+    },
+    {
+      "path": "leaf_qt/regen_candidate_ranking_master_gate.py",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "deduplication_action": "UPGRADE_SHARED_OWNER_THEN_DEDUPLICATE",
+      "local_start_line": 4,
+      "local_end_line": 12,
+      "returns": []
+    },
+    {
+      "path": "leaf_qt/regen_completion_gate_validation_owner.py",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "deduplication_action": "UPGRADE_SHARED_OWNER_THEN_DEDUPLICATE",
+      "local_start_line": 35,
+      "local_end_line": 43,
+      "returns": []
+    },
+    {
+      "path": "leaf_qt/regen_cross_section_viewer.py",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "deduplication_action": "UPGRADE_SHARED_OWNER_THEN_DEDUPLICATE",
+      "local_start_line": 46,
+      "local_end_line": 54,
+      "returns": []
+    },
+    {
+      "path": "leaf_qt/regen_evolution_loop_completion_audit.py",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "deduplication_action": "UPGRADE_SHARED_OWNER_THEN_DEDUPLICATE",
+      "local_start_line": 9,
+      "local_end_line": 17,
+      "returns": []
+    },
+    {
+      "path": "leaf_qt/regen_evolution_loop_input_audit.py",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "deduplication_action": "UPGRADE_SHARED_OWNER_THEN_DEDUPLICATE",
+      "local_start_line": 22,
+      "local_end_line": 30,
+      "returns": []
+    },
+    {
+      "path": "leaf_qt/regen_evolution_loop_master_gate.py",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "deduplication_action": "UPGRADE_SHARED_OWNER_THEN_DEDUPLICATE",
+      "local_start_line": 4,
+      "local_end_line": 12,
+      "returns": []
+    },
+    {
+      "path": "leaf_qt/regen_geometry_constraint_owner.py",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "deduplication_action": "UPGRADE_SHARED_OWNER_THEN_DEDUPLICATE",
+      "local_start_line": 4,
+      "local_end_line": 12,
+      "returns": []
+    },
+    {
+      "path": "leaf_qt/regen_geometry_report_owner.py",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "deduplication_action": "UPGRADE_SHARED_OWNER_THEN_DEDUPLICATE",
+      "local_start_line": 5,
+      "local_end_line": 13,
+      "returns": []
+    },
+    {
+      "path": "leaf_qt/regen_optimisation_completion_audit.py",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "deduplication_action": "UPGRADE_SHARED_OWNER_THEN_DEDUPLICATE",
+      "local_start_line": 19,
+      "local_end_line": 27,
+      "returns": []
+    },
+    {
+      "path": "leaf_qt/regen_optimisation_registration_owner.py",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "deduplication_action": "UPGRADE_SHARED_OWNER_THEN_DEDUPLICATE",
+      "local_start_line": 19,
+      "local_end_line": 27,
+      "returns": []
+    },
+    {
+      "path": "leaf_qt/regen_optimisation_report_owner.py",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "deduplication_action": "UPGRADE_SHARED_OWNER_THEN_DEDUPLICATE",
+      "local_start_line": 5,
+      "local_end_line": 13,
+      "returns": []
+    },
+    {
+      "path": "leaf_qt/regen_optimisation_scoring_owner.py",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "deduplication_action": "UPGRADE_SHARED_OWNER_THEN_DEDUPLICATE",
+      "local_start_line": 35,
+      "local_end_line": 43,
+      "returns": []
+    },
+    {
+      "path": "leaf_qt/regen_optimisation_session_owner.py",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "deduplication_action": "UPGRADE_SHARED_OWNER_THEN_DEDUPLICATE",
+      "local_start_line": 19,
+      "local_end_line": 27,
+      "returns": []
+    },
+    {
+      "path": "leaf_qt/regen_runtime_execution_completion_audit.py",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "deduplication_action": "UPGRADE_SHARED_OWNER_THEN_DEDUPLICATE",
+      "local_start_line": 20,
+      "local_end_line": 28,
+      "returns": []
+    },
+    {
+      "path": "leaf_qt/regen_runtime_execution_input_gate.py",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "deduplication_action": "UPGRADE_SHARED_OWNER_THEN_DEDUPLICATE",
+      "local_start_line": 20,
+      "local_end_line": 28,
+      "returns": []
+    },
+    {
+      "path": "leaf_qt/regen_runtime_execution_registration_owner.py",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "deduplication_action": "UPGRADE_SHARED_OWNER_THEN_DEDUPLICATE",
+      "local_start_line": 20,
+      "local_end_line": 28,
+      "returns": []
+    },
+    {
+      "path": "leaf_qt/regen_runtime_execution_report_owner.py",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "deduplication_action": "UPGRADE_SHARED_OWNER_THEN_DEDUPLICATE",
+      "local_start_line": 5,
+      "local_end_line": 13,
+      "returns": []
+    },
+    {
+      "path": "leaf_qt/regen_runtime_execution_session_owner.py",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "deduplication_action": "UPGRADE_SHARED_OWNER_THEN_DEDUPLICATE",
+      "local_start_line": 19,
+      "local_end_line": 27,
+      "returns": []
+    },
+    {
+      "path": "leaf_qt/regen_runtime_optimisation_input_gate.py",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "deduplication_action": "UPGRADE_SHARED_OWNER_THEN_DEDUPLICATE",
+      "local_start_line": 19,
+      "local_end_line": 27,
+      "returns": []
+    },
+    {
+      "path": "leaf_qt/regen_runtime_optimisation_registration_owner.py",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "deduplication_action": "UPGRADE_SHARED_OWNER_THEN_DEDUPLICATE",
+      "local_start_line": 19,
+      "local_end_line": 27,
+      "returns": []
+    },
+    {
+      "path": "leaf_qt/regen_runtime_optimisation_report_owner.py",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "deduplication_action": "UPGRADE_SHARED_OWNER_THEN_DEDUPLICATE",
+      "local_start_line": 5,
+      "local_end_line": 13,
+      "returns": []
+    },
+    {
+      "path": "leaf_qt/regen_runtime_optimisation_session_owner.py",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "deduplication_action": "UPGRADE_SHARED_OWNER_THEN_DEDUPLICATE",
+      "local_start_line": 19,
+      "local_end_line": 27,
+      "returns": []
+    },
+    {
+      "path": "leaf_qt/regen_scalability_failure_owner.py",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "deduplication_action": "UPGRADE_SHARED_OWNER_THEN_DEDUPLICATE",
+      "local_start_line": 5,
+      "local_end_line": 13,
+      "returns": []
+    },
+    {
+      "path": "leaf_qt/regen_system_signoff_validation_owner.py",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "deduplication_action": "UPGRADE_SHARED_OWNER_THEN_DEDUPLICATE",
+      "local_start_line": 35,
+      "local_end_line": 43,
+      "returns": []
+    },
+    {
+      "path": "leaf_qt/regen_viewer_final_runtime_consistency_gate_phase_16q20.py",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "deduplication_action": "UPGRADE_SHARED_OWNER_THEN_DEDUPLICATE",
+      "local_start_line": 6,
+      "local_end_line": 14,
+      "returns": []
+    },
+    {
+      "path": "leaf_qt/regen_viewer_gui_runtime_acceptance_gate_phase_16q28.py",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "deduplication_action": "UPGRADE_SHARED_OWNER_THEN_DEDUPLICATE",
+      "local_start_line": 6,
+      "local_end_line": 14,
+      "returns": []
+    },
+    {
+      "path": "leaf_qt/regen_viewer_report_renderer.py",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "deduplication_action": "UPGRADE_SHARED_OWNER_THEN_DEDUPLICATE",
+      "local_start_line": 16,
+      "local_end_line": 24,
+      "returns": []
+    }
+  ],
+  "passed": true,
+  "status": "PASS_PHASE_16U175F_LOCAL_STATUS_SEVERITY_DEDUPLICATION_MANIFEST",
+  "next_phase": "16U.175G_SHARED_STATUS_SEVERITY_EXTENDED_OWNER_UPGRADE"
+}

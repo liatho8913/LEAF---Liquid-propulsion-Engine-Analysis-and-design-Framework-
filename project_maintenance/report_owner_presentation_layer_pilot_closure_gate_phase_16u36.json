@@ -1,0 +1,49 @@
+{
+  "phase": "16U.36",
+  "status": "PASS_PHASE_16U36_REPORT_OWNER_PRESENTATION_LAYER_PILOT_CLOSURE_GATE",
+  "generated": "2026-06-28T02:20:56",
+  "checks": [
+    {
+      "name": "status_presentation_exists",
+      "passed": true,
+      "detail": "leaf_qt/status_presentation.py"
+    },
+    {
+      "name": "pilot_window_exists",
+      "passed": true,
+      "detail": "leaf_qt/foundation_test_runner_window.py"
+    },
+    {
+      "name": "phase_16u35_script_exists",
+      "passed": true,
+      "detail": "project_maintenance/report_owner_presentation_layer_pilot_regression_phase_16u35.py"
+    },
+    {
+      "name": "phase_16u35_regression_rerun_passed",
+      "passed": true,
+      "detail": "returncode=0"
+    },
+    {
+      "name": "phase_16u35_json_exists",
+      "passed": true,
+      "detail": "project_maintenance/report_owner_presentation_layer_pilot_regression_phase_16u35.json"
+    },
+    {
+      "name": "phase_16u35_completion_flag_true",
+      "passed": true,
+      "detail": "True"
+    },
+    {
+      "name": "pilot_imports_legacy_compatibility_producer",
+      "passed": true,
+      "detail": "pilot uses shared presentation import"
+    },
+    {
+      "name": "pilot_uses_marker_from_bool",
+      "passed": true,
+      "detail": "pilot status marker delegated to shared layer"
+    }
+  ],
+  "phase_16u36_report_owner_presentation_layer_pilot_closure_gate_complete": true,
+  "next_phase": "16U.37 \u2014 Report Owner Presentation Layer Rollout Audit"
+}

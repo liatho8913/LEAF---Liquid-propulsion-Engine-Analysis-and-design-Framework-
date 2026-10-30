@@ -1,0 +1,816 @@
+{
+  "phase": "16U.164",
+  "source_classification": "/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u163_presentation_debt_classification.json",
+  "high_risk_file_count": 40,
+  "high_risk_finding_count": 82,
+  "patch_mode_counts": {
+    "MANUAL_ARCHITECTURE_REVIEW": 2,
+    "MANUAL_REVIEW_REQUIRED": 38
+  },
+  "safe_wave_candidate_count": 0,
+  "safe_wave_candidates": [],
+  "manifest": [
+    {
+      "path": "leaf_qt/engine_solver.py",
+      "finding_count": 14,
+      "patch_mode": "MANUAL_REVIEW_REQUIRED",
+      "patterns": [
+        "inline_pass_fail_warn_literal",
+        "inline_status_contains_check"
+      ],
+      "sample_lines": [
+        {
+          "line_number": 4559,
+          "pattern": "inline_pass_fail_warn_literal",
+          "line": "if results.get(\"recommended_geometry_status\") in (None, \"BLOCKED_NO_RADIUS_DATA\", \"FAIL_NO_PHYSICAL_FIT\"):"
+        },
+        {
+          "line_number": 4559,
+          "pattern": "inline_status_contains_check",
+          "line": "if results.get(\"recommended_geometry_status\") in (None, \"BLOCKED_NO_RADIUS_DATA\", \"FAIL_NO_PHYSICAL_FIT\"):"
+        },
+        {
+          "line_number": 5323,
+          "pattern": "inline_pass_fail_warn_literal",
+          "line": "elif status == \"FAIL_BUT_IMPROVED\":"
+        },
+        {
+          "line_number": 5323,
+          "pattern": "inline_status_contains_check",
+          "line": "elif status == \"FAIL_BUT_IMPROVED\":"
+        },
+        {
+          "line_number": 7746,
+          "pattern": "inline_pass_fail_warn_literal",
+          "line": "if results.get(\"explicit_coating_liner_status\") == \"FAIL_THERMAL_STRESS\":"
+        },
+        {
+          "line_number": 7746,
+          "pattern": "inline_status_contains_check",
+          "line": "if results.get(\"explicit_coating_liner_status\") == \"FAIL_THERMAL_STRESS\":"
+        },
+        {
+          "line_number": 7767,
+          "pattern": "inline_pass_fail_warn_literal",
+          "line": "if results.get(\"explicit_coating_liner_status\") == \"FAIL_THERMAL_STRESS\":"
+        },
+        {
+          "line_number": 7767,
+          "pattern": "inline_status_contains_check",
+          "line": "if results.get(\"explicit_coating_liner_status\") == \"FAIL_THERMAL_STRESS\":"
+        }
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_convergence_master_gate.py",
+      "finding_count": 6,
+      "patch_mode": "MANUAL_REVIEW_REQUIRED",
+      "patterns": [
+        "inline_pass_fail_warn_literal",
+        "inline_status_contains_check"
+      ],
+      "sample_lines": [
+        {
+          "line_number": 44,
+          "pattern": "inline_pass_fail_warn_literal",
+          "line": "if status == \"PASS_REGEN_CONVERGENCE_MASTER_GATE_CONVERGED\":"
+        },
+        {
+          "line_number": 44,
+          "pattern": "inline_status_contains_check",
+          "line": "if status == \"PASS_REGEN_CONVERGENCE_MASTER_GATE_CONVERGED\":"
+        },
+        {
+          "line_number": 54,
+          "pattern": "inline_pass_fail_warn_literal",
+          "line": "elif status == \"WARN_REGEN_CONVERGENCE_MASTER_GATE_RUNNING\":"
+        },
+        {
+          "line_number": 54,
+          "pattern": "inline_status_contains_check",
+          "line": "elif status == \"WARN_REGEN_CONVERGENCE_MASTER_GATE_RUNNING\":"
+        },
+        {
+          "line_number": 66,
+          "pattern": "inline_pass_fail_warn_literal",
+          "line": "elif status == \"WARN_REGEN_CONVERGENCE_MASTER_GATE_MAX_GENERATIONS\":"
+        },
+        {
+          "line_number": 66,
+          "pattern": "inline_status_contains_check",
+          "line": "elif status == \"WARN_REGEN_CONVERGENCE_MASTER_GATE_MAX_GENERATIONS\":"
+        }
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_optimisation_controller_master_gate.py",
+      "finding_count": 6,
+      "patch_mode": "MANUAL_REVIEW_REQUIRED",
+      "patterns": [
+        "inline_pass_fail_warn_literal",
+        "inline_status_contains_check"
+      ],
+      "sample_lines": [
+        {
+          "line_number": 44,
+          "pattern": "inline_pass_fail_warn_literal",
+          "line": "if status == \"PASS_REGEN_OPTIMISATION_MASTER_GATE_CONVERGED\":"
+        },
+        {
+          "line_number": 44,
+          "pattern": "inline_status_contains_check",
+          "line": "if status == \"PASS_REGEN_OPTIMISATION_MASTER_GATE_CONVERGED\":"
+        },
+        {
+          "line_number": 54,
+          "pattern": "inline_pass_fail_warn_literal",
+          "line": "elif status == \"WARN_REGEN_OPTIMISATION_MASTER_GATE_NEXT_GENERATION_READY\":"
+        },
+        {
+          "line_number": 54,
+          "pattern": "inline_status_contains_check",
+          "line": "elif status == \"WARN_REGEN_OPTIMISATION_MASTER_GATE_NEXT_GENERATION_READY\":"
+        },
+        {
+          "line_number": 66,
+          "pattern": "inline_pass_fail_warn_literal",
+          "line": "elif status == \"WARN_REGEN_OPTIMISATION_MASTER_GATE_WAITING\":"
+        },
+        {
+          "line_number": 66,
+          "pattern": "inline_status_contains_check",
+          "line": "elif status == \"WARN_REGEN_OPTIMISATION_MASTER_GATE_WAITING\":"
+        }
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_viewer_gui_runtime_acceptance_gate_phase_16q28.py",
+      "finding_count": 4,
+      "patch_mode": "MANUAL_REVIEW_REQUIRED",
+      "patterns": [
+        "inline_pass_fail_warn_literal",
+        "inline_status_contains_check"
+      ],
+      "sample_lines": [
+        {
+          "line_number": 81,
+          "pattern": "inline_pass_fail_warn_literal",
+          "line": "if results.get(\"phase_16q24_real_button_toggle_status\") != \"PASS_REGEN_VIEWER_REAL_BUTTON_TOGGLE_OWNER_PHASE_16Q24\":"
+        },
+        {
+          "line_number": 81,
+          "pattern": "inline_status_contains_check",
+          "line": "if results.get(\"phase_16q24_real_button_toggle_status\") != \"PASS_REGEN_VIEWER_REAL_BUTTON_TOGGLE_OWNER_PHASE_16Q24\":"
+        },
+        {
+          "line_number": 84,
+          "pattern": "inline_pass_fail_warn_literal",
+          "line": "if results.get(\"phase_16q27_toggle_ux_status\") != \"PASS_REGEN_VIEWER_TOGGLE_UX_CLEANUP_PHASE_16Q27\":"
+        },
+        {
+          "line_number": 84,
+          "pattern": "inline_status_contains_check",
+          "line": "if results.get(\"phase_16q27_toggle_ux_status\") != \"PASS_REGEN_VIEWER_TOGGLE_UX_CLEANUP_PHASE_16Q27\":"
+        }
+      ]
+    },
+    {
+      "path": "leaf_qt/design_history_narrative_builder.py",
+      "finding_count": 2,
+      "patch_mode": "MANUAL_ARCHITECTURE_REVIEW",
+      "patterns": [
+        "inline_status_contains_check"
+      ],
+      "sample_lines": [
+        {
+          "line_number": 332,
+          "pattern": "inline_status_contains_check",
+          "line": "return text in self.PASS_WORDS or status_severity(text) == \"PASS\""
+        },
+        {
+          "line_number": 336,
+          "pattern": "inline_status_contains_check",
+          "line": "return text in self.FAIL_WORDS or status_severity(text) == \"FAIL\""
+        }
+      ]
+    },
+    {
+      "path": "leaf_qt/foundation_verification_harness.py",
+      "finding_count": 2,
+      "patch_mode": "MANUAL_REVIEW_REQUIRED",
+      "patterns": [
+        "inline_pass_fail_warn_literal",
+        "inline_status_contains_check"
+      ],
+      "sample_lines": [
+        {
+          "line_number": 123,
+          "pattern": "inline_pass_fail_warn_literal",
+          "line": "if status == \"PASS_FOUNDATION_VERIFICATION\" and failed_count == 0:"
+        },
+        {
+          "line_number": 123,
+          "pattern": "inline_status_contains_check",
+          "line": "if status == \"PASS_FOUNDATION_VERIFICATION\" and failed_count == 0:"
+        }
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_candidate_comparison_master_gate.py",
+      "finding_count": 2,
+      "patch_mode": "MANUAL_REVIEW_REQUIRED",
+      "patterns": [
+        "inline_pass_fail_warn_literal",
+        "inline_status_contains_check"
+      ],
+      "sample_lines": [
+        {
+          "line_number": 17,
+          "pattern": "inline_pass_fail_warn_literal",
+          "line": "if results.get(\"regen_candidate_comparison_completion_audit_status\") != \"PASS_REGEN_CANDIDATE_COMPARISON_VIEWER_BACKEND_PHASE_15B\":"
+        },
+        {
+          "line_number": 17,
+          "pattern": "inline_status_contains_check",
+          "line": "if results.get(\"regen_candidate_comparison_completion_audit_status\") != \"PASS_REGEN_CANDIDATE_COMPARISON_VIEWER_BACKEND_PHASE_15B\":"
+        }
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_completion_master_gate.py",
+      "finding_count": 2,
+      "patch_mode": "MANUAL_REVIEW_REQUIRED",
+      "patterns": [
+        "inline_pass_fail_warn_literal",
+        "inline_status_contains_check"
+      ],
+      "sample_lines": [
+        {
+          "line_number": 17,
+          "pattern": "inline_pass_fail_warn_literal",
+          "line": "if results.get(\"regen_completion_gate_completion_audit_status\") != \"PASS_REGEN_COMPLETION_GATE_AUDIT_PHASE_16F\":"
+        },
+        {
+          "line_number": 17,
+          "pattern": "inline_status_contains_check",
+          "line": "if results.get(\"regen_completion_gate_completion_audit_status\") != \"PASS_REGEN_COMPLETION_GATE_AUDIT_PHASE_16F\":"
+        }
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_evolution_tree_master_gate.py",
+      "finding_count": 2,
+      "patch_mode": "MANUAL_REVIEW_REQUIRED",
+      "patterns": [
+        "inline_pass_fail_warn_literal",
+        "inline_status_contains_check"
+      ],
+      "sample_lines": [
+        {
+          "line_number": 17,
+          "pattern": "inline_pass_fail_warn_literal",
+          "line": "if results.get(\"regen_evolution_tree_completion_audit_status\") != \"PASS_REGEN_EVOLUTION_TREE_BACKEND_PHASE_15C\":"
+        },
+        {
+          "line_number": 17,
+          "pattern": "inline_status_contains_check",
+          "line": "if results.get(\"regen_evolution_tree_completion_audit_status\") != \"PASS_REGEN_EVOLUTION_TREE_BACKEND_PHASE_15C\":"
+        }
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_optimisation_narrative_master_gate.py",
+      "finding_count": 2,
+      "patch_mode": "MANUAL_REVIEW_REQUIRED",
+      "patterns": [
+        "inline_pass_fail_warn_literal",
+        "inline_status_contains_check"
+      ],
+      "sample_lines": [
+        {
+          "line_number": 58,
+          "pattern": "inline_pass_fail_warn_literal",
+          "line": "if status == \"PASS_REGEN_OPTIMISATION_NARRATIVE_MASTER_GATE\":"
+        },
+        {
+          "line_number": 58,
+          "pattern": "inline_status_contains_check",
+          "line": "if status == \"PASS_REGEN_OPTIMISATION_NARRATIVE_MASTER_GATE\":"
+        }
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_optimisation_viewer_master_gate.py",
+      "finding_count": 2,
+      "patch_mode": "MANUAL_REVIEW_REQUIRED",
+      "patterns": [
+        "inline_pass_fail_warn_literal",
+        "inline_status_contains_check"
+      ],
+      "sample_lines": [
+        {
+          "line_number": 17,
+          "pattern": "inline_pass_fail_warn_literal",
+          "line": "if results.get(\"regen_optimisation_viewer_completion_audit_status\") != \"PASS_REGEN_OPTIMISATION_VIEWER_BACKEND_PHASE_15A\":"
+        },
+        {
+          "line_number": 17,
+          "pattern": "inline_status_contains_check",
+          "line": "if results.get(\"regen_optimisation_viewer_completion_audit_status\") != \"PASS_REGEN_OPTIMISATION_VIEWER_BACKEND_PHASE_15A\":"
+        }
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_runtime_candidate_evaluation_master_gate.py",
+      "finding_count": 2,
+      "patch_mode": "MANUAL_REVIEW_REQUIRED",
+      "patterns": [
+        "inline_pass_fail_warn_literal",
+        "inline_status_contains_check"
+      ],
+      "sample_lines": [
+        {
+          "line_number": 17,
+          "pattern": "inline_pass_fail_warn_literal",
+          "line": "if results.get(\"regen_runtime_candidate_evaluation_completion_audit_status\") != \"PASS_REGEN_RUNTIME_CANDIDATE_EVALUATION_PHASE_14B\":"
+        },
+        {
+          "line_number": 17,
+          "pattern": "inline_status_contains_check",
+          "line": "if results.get(\"regen_runtime_candidate_evaluation_completion_audit_status\") != \"PASS_REGEN_RUNTIME_CANDIDATE_EVALUATION_PHASE_14B\":"
+        }
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_runtime_convergence_master_gate.py",
+      "finding_count": 2,
+      "patch_mode": "MANUAL_REVIEW_REQUIRED",
+      "patterns": [
+        "inline_pass_fail_warn_literal",
+        "inline_status_contains_check"
+      ],
+      "sample_lines": [
+        {
+          "line_number": 17,
+          "pattern": "inline_pass_fail_warn_literal",
+          "line": "if results.get(\"regen_runtime_convergence_completion_audit_status\") != \"PASS_REGEN_RUNTIME_CONVERGENCE_PHASE_14E\":"
+        },
+        {
+          "line_number": 17,
+          "pattern": "inline_status_contains_check",
+          "line": "if results.get(\"regen_runtime_convergence_completion_audit_status\") != \"PASS_REGEN_RUNTIME_CONVERGENCE_PHASE_14E\":"
+        }
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_runtime_evolution_master_gate.py",
+      "finding_count": 2,
+      "patch_mode": "MANUAL_REVIEW_REQUIRED",
+      "patterns": [
+        "inline_pass_fail_warn_literal",
+        "inline_status_contains_check"
+      ],
+      "sample_lines": [
+        {
+          "line_number": 17,
+          "pattern": "inline_pass_fail_warn_literal",
+          "line": "if results.get(\"regen_runtime_evolution_completion_audit_status\") != \"PASS_REGEN_RUNTIME_EVOLUTION_PHASE_14D\":"
+        },
+        {
+          "line_number": 17,
+          "pattern": "inline_status_contains_check",
+          "line": "if results.get(\"regen_runtime_evolution_completion_audit_status\") != \"PASS_REGEN_RUNTIME_EVOLUTION_PHASE_14D\":"
+        }
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_runtime_selection_master_gate.py",
+      "finding_count": 2,
+      "patch_mode": "MANUAL_REVIEW_REQUIRED",
+      "patterns": [
+        "inline_pass_fail_warn_literal",
+        "inline_status_contains_check"
+      ],
+      "sample_lines": [
+        {
+          "line_number": 17,
+          "pattern": "inline_pass_fail_warn_literal",
+          "line": "if results.get(\"regen_runtime_selection_completion_audit_status\") != \"PASS_REGEN_RUNTIME_SELECTION_PHASE_14C\":"
+        },
+        {
+          "line_number": 17,
+          "pattern": "inline_status_contains_check",
+          "line": "if results.get(\"regen_runtime_selection_completion_audit_status\") != \"PASS_REGEN_RUNTIME_SELECTION_PHASE_14C\":"
+        }
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_system_signoff_master_gate.py",
+      "finding_count": 2,
+      "patch_mode": "MANUAL_REVIEW_REQUIRED",
+      "patterns": [
+        "inline_pass_fail_warn_literal",
+        "inline_status_contains_check"
+      ],
+      "sample_lines": [
+        {
+          "line_number": 17,
+          "pattern": "inline_pass_fail_warn_literal",
+          "line": "if results.get(\"regen_system_signoff_completion_audit_status\") != \"PASS_REGEN_SYSTEM_SIGNOFF_AUDIT_PHASE_16E\":"
+        },
+        {
+          "line_number": 17,
+          "pattern": "inline_status_contains_check",
+          "line": "if results.get(\"regen_system_signoff_completion_audit_status\") != \"PASS_REGEN_SYSTEM_SIGNOFF_AUDIT_PHASE_16E\":"
+        }
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_unified_ecosystem_master_gate.py",
+      "finding_count": 2,
+      "patch_mode": "MANUAL_REVIEW_REQUIRED",
+      "patterns": [
+        "inline_pass_fail_warn_literal",
+        "inline_status_contains_check"
+      ],
+      "sample_lines": [
+        {
+          "line_number": 17,
+          "pattern": "inline_pass_fail_warn_literal",
+          "line": "if results.get(\"regen_unified_ecosystem_completion_audit_status\") != \"PASS_REGEN_UNIFIED_ECOSYSTEM_REGISTRY_PHASE_16A\":"
+        },
+        {
+          "line_number": 17,
+          "pattern": "inline_status_contains_check",
+          "line": "if results.get(\"regen_unified_ecosystem_completion_audit_status\") != \"PASS_REGEN_UNIFIED_ECOSYSTEM_REGISTRY_PHASE_16A\":"
+        }
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_unified_validation_integration_master_gate.py",
+      "finding_count": 2,
+      "patch_mode": "MANUAL_REVIEW_REQUIRED",
+      "patterns": [
+        "inline_pass_fail_warn_literal",
+        "inline_status_contains_check"
+      ],
+      "sample_lines": [
+        {
+          "line_number": 143,
+          "pattern": "inline_pass_fail_warn_literal",
+          "line": "if results.get(\"regen_unified_validation_integration_completion_audit_status\") != \"PASS_REGEN_UNIFIED_VALIDATION_INTEGRATION_PHASE_16D\":"
+        },
+        {
+          "line_number": 143,
+          "pattern": "inline_status_contains_check",
+          "line": "if results.get(\"regen_unified_validation_integration_completion_audit_status\") != \"PASS_REGEN_UNIFIED_VALIDATION_INTEGRATION_PHASE_16D\":"
+        }
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_unified_viewer_integration_master_gate.py",
+      "finding_count": 2,
+      "patch_mode": "MANUAL_REVIEW_REQUIRED",
+      "patterns": [
+        "inline_pass_fail_warn_literal",
+        "inline_status_contains_check"
+      ],
+      "sample_lines": [
+        {
+          "line_number": 17,
+          "pattern": "inline_pass_fail_warn_literal",
+          "line": "if results.get(\"regen_unified_viewer_integration_completion_audit_status\") != \"PASS_REGEN_UNIFIED_VIEWER_INTEGRATION_PHASE_16B\":"
+        },
+        {
+          "line_number": 17,
+          "pattern": "inline_status_contains_check",
+          "line": "if results.get(\"regen_unified_viewer_integration_completion_audit_status\") != \"PASS_REGEN_UNIFIED_VIEWER_INTEGRATION_PHASE_16B\":"
+        }
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_validation_master_gate.py",
+      "finding_count": 2,
+      "patch_mode": "MANUAL_REVIEW_REQUIRED",
+      "patterns": [
+        "inline_pass_fail_warn_literal",
+        "inline_status_contains_check"
+      ],
+      "sample_lines": [
+        {
+          "line_number": 69,
+          "pattern": "inline_pass_fail_warn_literal",
+          "line": "if status == \"PASS_REGEN_VALIDATION_MASTER_GATE\":"
+        },
+        {
+          "line_number": 69,
+          "pattern": "inline_status_contains_check",
+          "line": "if status == \"PASS_REGEN_VALIDATION_MASTER_GATE\":"
+        }
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_acceptance_master_gate.py",
+      "finding_count": 1,
+      "patch_mode": "MANUAL_REVIEW_REQUIRED",
+      "patterns": [
+        "inline_status_contains_check"
+      ],
+      "sample_lines": [
+        {
+          "line_number": 64,
+          "pattern": "inline_status_contains_check",
+          "line": "if status == PASS_STATUS:"
+        }
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_before_after_solver_comparison_report_owner.py",
+      "finding_count": 1,
+      "patch_mode": "MANUAL_REVIEW_REQUIRED",
+      "patterns": [
+        "inline_status_contains_check"
+      ],
+      "sample_lines": [
+        {
+          "line_number": 63,
+          "pattern": "inline_status_contains_check",
+          "line": "if status == PASS_STATUS:"
+        }
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_candidate_acceptance_completion_gate.py",
+      "finding_count": 1,
+      "patch_mode": "MANUAL_REVIEW_REQUIRED",
+      "patterns": [
+        "inline_status_contains_check"
+      ],
+      "sample_lines": [
+        {
+          "line_number": 77,
+          "pattern": "inline_status_contains_check",
+          "line": "if status == PASS_STATUS:"
+        }
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_cross_section_viewer_integration.py",
+      "finding_count": 1,
+      "patch_mode": "MANUAL_REVIEW_REQUIRED",
+      "patterns": [
+        "inline_status_contains_check"
+      ],
+      "sample_lines": [
+        {
+          "line_number": 71,
+          "pattern": "inline_status_contains_check",
+          "line": "if status == PASS_STATUS:"
+        }
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_engineering_acceptance_report.py",
+      "finding_count": 1,
+      "patch_mode": "MANUAL_REVIEW_REQUIRED",
+      "patterns": [
+        "inline_status_contains_check"
+      ],
+      "sample_lines": [
+        {
+          "line_number": 41,
+          "pattern": "inline_status_contains_check",
+          "line": "if status == PASS_STATUS:"
+        }
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_failure_root_cause_system.py",
+      "finding_count": 1,
+      "patch_mode": "MANUAL_REVIEW_REQUIRED",
+      "patterns": [
+        "inline_status_contains_check"
+      ],
+      "sample_lines": [
+        {
+          "line_number": 38,
+          "pattern": "inline_status_contains_check",
+          "line": "if status == PASS_STATUS:"
+        }
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_final_completion_audit.py",
+      "finding_count": 1,
+      "patch_mode": "MANUAL_REVIEW_REQUIRED",
+      "patterns": [
+        "inline_status_contains_check"
+      ],
+      "sample_lines": [
+        {
+          "line_number": 53,
+          "pattern": "inline_status_contains_check",
+          "line": "if status == PASS_STATUS:"
+        }
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_final_master_gate.py",
+      "finding_count": 1,
+      "patch_mode": "MANUAL_REVIEW_REQUIRED",
+      "patterns": [
+        "inline_status_contains_check"
+      ],
+      "sample_lines": [
+        {
+          "line_number": 61,
+          "pattern": "inline_status_contains_check",
+          "line": "if status == PASS_STATUS:"
+        }
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_final_signoff_report.py",
+      "finding_count": 1,
+      "patch_mode": "MANUAL_REVIEW_REQUIRED",
+      "patterns": [
+        "inline_status_contains_check"
+      ],
+      "sample_lines": [
+        {
+          "line_number": 52,
+          "pattern": "inline_status_contains_check",
+          "line": "if status == PASS_STATUS:"
+        }
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_final_verification_audit.py",
+      "finding_count": 1,
+      "patch_mode": "MANUAL_REVIEW_REQUIRED",
+      "patterns": [
+        "inline_status_contains_check"
+      ],
+      "sample_lines": [
+        {
+          "line_number": 70,
+          "pattern": "inline_status_contains_check",
+          "line": "if status == PASS_STATUS:"
+        }
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_live_geometry_commit_execution.py",
+      "finding_count": 1,
+      "patch_mode": "MANUAL_REVIEW_REQUIRED",
+      "patterns": [
+        "inline_status_contains_check"
+      ],
+      "sample_lines": [
+        {
+          "line_number": 90,
+          "pattern": "inline_status_contains_check",
+          "line": "if status == PASS_STATUS:"
+        }
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_optimisation_completion_gate.py",
+      "finding_count": 1,
+      "patch_mode": "MANUAL_REVIEW_REQUIRED",
+      "patterns": [
+        "inline_status_contains_check"
+      ],
+      "sample_lines": [
+        {
+          "line_number": 65,
+          "pattern": "inline_status_contains_check",
+          "line": "if status == PASS_STATUS:"
+        }
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_optimisation_proof_system.py",
+      "finding_count": 1,
+      "patch_mode": "MANUAL_REVIEW_REQUIRED",
+      "patterns": [
+        "inline_status_contains_check"
+      ],
+      "sample_lines": [
+        {
+          "line_number": 67,
+          "pattern": "inline_status_contains_check",
+          "line": "if status == PASS_STATUS:"
+        }
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_station_viewer_integration.py",
+      "finding_count": 1,
+      "patch_mode": "MANUAL_REVIEW_REQUIRED",
+      "patterns": [
+        "inline_status_contains_check"
+      ],
+      "sample_lines": [
+        {
+          "line_number": 64,
+          "pattern": "inline_status_contains_check",
+          "line": "if status == PASS_STATUS:"
+        }
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_viewer_completion_gate.py",
+      "finding_count": 1,
+      "patch_mode": "MANUAL_REVIEW_REQUIRED",
+      "patterns": [
+        "inline_status_contains_check"
+      ],
+      "sample_lines": [
+        {
+          "line_number": 70,
+          "pattern": "inline_status_contains_check",
+          "line": "if status == PASS_STATUS:"
+        }
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_viewer_data_adapter.py",
+      "finding_count": 1,
+      "patch_mode": "MANUAL_REVIEW_REQUIRED",
+      "patterns": [
+        "inline_status_contains_check"
+      ],
+      "sample_lines": [
+        {
+          "line_number": 54,
+          "pattern": "inline_status_contains_check",
+          "line": "if status == PASS_STATUS:"
+        }
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_viewer_navigation_system.py",
+      "finding_count": 1,
+      "patch_mode": "MANUAL_REVIEW_REQUIRED",
+      "patterns": [
+        "inline_status_contains_check"
+      ],
+      "sample_lines": [
+        {
+          "line_number": 76,
+          "pattern": "inline_status_contains_check",
+          "line": "if status == PASS_STATUS:"
+        }
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_viewer_ownership_architecture.py",
+      "finding_count": 1,
+      "patch_mode": "MANUAL_REVIEW_REQUIRED",
+      "patterns": [
+        "inline_status_contains_check"
+      ],
+      "sample_lines": [
+        {
+          "line_number": 82,
+          "pattern": "inline_status_contains_check",
+          "line": "if status == PASS_STATUS:"
+        }
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_viewer_report_renderer.py",
+      "finding_count": 1,
+      "patch_mode": "MANUAL_REVIEW_REQUIRED",
+      "patterns": [
+        "inline_status_contains_check"
+      ],
+      "sample_lines": [
+        {
+          "line_number": 85,
+          "pattern": "inline_status_contains_check",
+          "line": "if status == PASS_STATUS:"
+        }
+      ]
+    },
+    {
+      "path": "leaf_qt/structured_status_access.py",
+      "finding_count": 1,
+      "patch_mode": "MANUAL_ARCHITECTURE_REVIEW",
+      "patterns": [
+        "inline_status_contains_check"
+      ],
+      "sample_lines": [
+        {
+          "line_number": 45,
+          "pattern": "inline_status_contains_check",
+          "line": "if text in {\"INFO\", \"PASS\"} or text in PASS_LIKE or status_severity(text) == \"PASS\":"
+        }
+      ]
+    }
+  ],
+  "passed": true,
+  "status": "PASS_PHASE_16U164_HIGH_RISK_PRESENTATION_DEBT_MANIFEST",
+  "next_phase": "16U.165_SAFE_TRANSACTIONAL_PRESENTATION_DEBT_CLEANUP_WAVE_1"
+}

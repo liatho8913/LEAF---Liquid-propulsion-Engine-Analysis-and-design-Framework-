@@ -1,0 +1,28 @@
+LEAF PHASE 16U.136
+WAVE 1 LOCKED AUDIT
+====================
+
+STATUS: PASS_PHASE_16U136_WAVE1_LOCKED_AUDIT
+
+Locked baseline: 68
+Closed targets: 27
+Remaining candidates: 41
+Progress: 27/68
+
+WAVE 1 CLOSED FILES
+-------------------
+- bond_coat_integration_owner.py
+- coating_property_consumption_audit_owner.py
+- coating_temperature_limit_integration_owner.py
+- coating_thermal_conductivity_integration_owner.py
+- coating_thermal_resistance_integration_owner.py
+- coating_thickness_integration_owner.py
+- material_density_integration_owner.py
+- material_property_consumption_audit_owner.py
+- material_specific_heat_integration_owner.py
+- material_strength_limit_integration_owner.py
+- material_temperature_limit_integration_owner.py
+- material_thermal_conductivity_integration_owner.py
+
+FAILURES
+--------

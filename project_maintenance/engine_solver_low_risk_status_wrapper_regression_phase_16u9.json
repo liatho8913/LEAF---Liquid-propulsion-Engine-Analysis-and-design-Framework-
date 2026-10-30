@@ -1,0 +1,64 @@
+{
+  "phase": "16U.9",
+  "status": "PASS_PHASE_16U9_ENGINE_SOLVER_LOW_RISK_STATUS_WRAPPER_REGRESSION",
+  "generated": "2026-06-27T17:38:22",
+  "missing_required_token_count": 0,
+  "forbidden_token_present_count": 0,
+  "missing_required_tokens": [],
+  "forbidden_tokens_present": [],
+  "compile_results": [
+    {
+      "file": "leaf_qt/engine_solver.py",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "leaf_qt/regen_geometry_solver.py",
+      "passed": true,
+      "error": ""
+    }
+  ],
+  "checks": [
+    {
+      "name": "phase_16u8_patch_passed",
+      "passed": true,
+      "detail": "PASS_PHASE_16U8_ENGINE_SOLVER_LOW_RISK_STATUS_WRAPPER_PATCH"
+    },
+    {
+      "name": "phase_16u7_plan_available",
+      "passed": true,
+      "detail": "PASS_PHASE_16U7_ENGINE_SOLVER_STATUS_PATCH_PLANNER"
+    },
+    {
+      "name": "engine_import_present",
+      "passed": true,
+      "detail": "from leaf_qt.solver_status_access import solver_fail, solver_pass"
+    },
+    {
+      "name": "geometry_alias_import_present",
+      "passed": true,
+      "detail": "from leaf_qt.solver_status_access import solver_pass as status_solver_pass"
+    },
+    {
+      "name": "required_wrapper_tokens_present",
+      "passed": true,
+      "detail": "0 missing"
+    },
+    {
+      "name": "forbidden_legacy_tokens_absent",
+      "passed": true,
+      "detail": "0 present"
+    },
+    {
+      "name": "compile_engine_solver.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "compile_regen_geometry_solver.py",
+      "passed": true,
+      "detail": ""
+    }
+  ],
+  "phase_16u9_engine_solver_low_risk_status_wrapper_regression_complete": true
+}

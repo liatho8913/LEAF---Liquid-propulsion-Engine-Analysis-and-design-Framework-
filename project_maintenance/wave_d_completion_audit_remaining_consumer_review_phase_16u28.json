@@ -1,0 +1,615 @@
+{
+  "phase": "16U.28",
+  "status": "PASS_PHASE_16U28_WAVE_D_COMPLETION_AUDIT_REMAINING_CONSUMER_REVIEW",
+  "generated": "2026-06-28T01:41:05",
+  "audit_status": "PASS_PHASE_16U25_WAVE_D_COMPLETION_AUDIT_STATUS_CONSUMER_AUDIT",
+  "regression_status": "PASS_PHASE_16U27_WAVE_D_COMPLETION_AUDIT_LOW_RISK_STATUS_WRAPPER_REGRESSION",
+  "remaining_candidate_count": 46,
+  "closure_blocker_count": 0,
+  "by_category": {
+    "MANUAL_REVIEW_INTENTIONAL_HOLD": 22,
+    "PAYLOAD_LITERAL_INTENTIONAL_HOLD": 7,
+    "PRESENTATION_MARKER_INTENTIONAL_HOLD": 17
+  },
+  "remaining_consumers": [
+    {
+      "file": "integrate_phase_16l3_acceptance_audit.py",
+      "line": 159,
+      "original_group": "MANUAL_REVIEW_REQUIRED",
+      "remaining_category": "MANUAL_REVIEW_INTENTIONAL_HOLD",
+      "closure_blocker": false,
+      "recommendation": "Record for targeted future review; do not block Wave D closure.",
+      "reason": "Manual-review item is explicitly recorded and should not be automated in this wave.",
+      "snippet": "f\"- {item.get('name')}: {'PASS' if item.get('passed') else 'FAIL'}\""
+    },
+    {
+      "file": "leaf_qt/calculation_audit.py",
+      "line": 205,
+      "original_group": "MANUAL_REVIEW_REQUIRED",
+      "remaining_category": "MANUAL_REVIEW_INTENTIONAL_HOLD",
+      "closure_blocker": false,
+      "recommendation": "Record for targeted future review; do not block Wave D closure.",
+      "reason": "Manual-review item is explicitly recorded and should not be automated in this wave.",
+      "snippet": "elif str(value).upper() == \"PASS\":"
+    },
+    {
+      "file": "leaf_qt/material_and_coating_foundation_audit.py",
+      "line": 103,
+      "original_group": "MANUAL_REVIEW_REQUIRED",
+      "remaining_category": "MANUAL_REVIEW_INTENTIONAL_HOLD",
+      "closure_blocker": false,
+      "recommendation": "Record for targeted future review; do not block Wave D closure.",
+      "reason": "Manual-review item is explicitly recorded and should not be automated in this wave.",
+      "snippet": "if not str(status).startswith((\"PASS\", \"FAIL\")):"
+    },
+    {
+      "file": "leaf_qt/material_completion_audit.py",
+      "line": 93,
+      "original_group": "MANUAL_REVIEW_REQUIRED",
+      "remaining_category": "MANUAL_REVIEW_INTENTIONAL_HOLD",
+      "closure_blocker": false,
+      "recommendation": "Record for targeted future review; do not block Wave D closure.",
+      "reason": "Manual-review item is explicitly recorded and should not be automated in this wave.",
+      "snippet": "if not str(status).startswith((\"PASS\", \"FAIL\")):"
+    },
+    {
+      "file": "leaf_qt/real_engine_benchmark_completion_audit.py",
+      "line": 277,
+      "original_group": "PRESENTATION_MARKER",
+      "remaining_category": "PRESENTATION_MARKER_INTENTIONAL_HOLD",
+      "closure_blocker": false,
+      "recommendation": "Preserve as completion-audit report/evidence rendering.",
+      "reason": "Boolean-to-text markers are report presentation, not status consumers.",
+      "snippet": "marker = \"PASS\" if check[\"passed\"] else \"FAIL\""
+    },
+    {
+      "file": "leaf_qt/real_engine_benchmark_completion_audit.py",
+      "line": 308,
+      "original_group": "MANUAL_REVIEW_REQUIRED",
+      "remaining_category": "MANUAL_REVIEW_INTENTIONAL_HOLD",
+      "closure_blocker": false,
+      "recommendation": "Record for targeted future review; do not block Wave D closure.",
+      "reason": "Manual-review item is explicitly recorded and should not be automated in this wave.",
+      "snippet": "if status.startswith(\"PASS\"):"
+    },
+    {
+      "file": "leaf_qt/real_engine_benchmark_completion_audit.py",
+      "line": 308,
+      "original_group": "MANUAL_REVIEW_REQUIRED",
+      "remaining_category": "MANUAL_REVIEW_INTENTIONAL_HOLD",
+      "closure_blocker": false,
+      "recommendation": "Record for targeted future review; do not block Wave D closure.",
+      "reason": "Manual-review item is explicitly recorded and should not be automated in this wave.",
+      "snippet": "if status.startswith(\"PASS\"):"
+    },
+    {
+      "file": "leaf_qt/real_engine_benchmark_completion_audit.py",
+      "line": 308,
+      "original_group": "MANUAL_REVIEW_REQUIRED",
+      "remaining_category": "MANUAL_REVIEW_INTENTIONAL_HOLD",
+      "closure_blocker": false,
+      "recommendation": "Record for targeted future review; do not block Wave D closure.",
+      "reason": "Manual-review item is explicitly recorded and should not be automated in this wave.",
+      "snippet": "if status.startswith(\"PASS\"):"
+    },
+    {
+      "file": "leaf_qt/real_engine_benchmark_completion_audit.py",
+      "line": 323,
+      "original_group": "MANUAL_REVIEW_REQUIRED",
+      "remaining_category": "MANUAL_REVIEW_INTENTIONAL_HOLD",
+      "closure_blocker": false,
+      "recommendation": "Record for targeted future review; do not block Wave D closure.",
+      "reason": "Manual-review item is explicitly recorded and should not be automated in this wave.",
+      "snippet": "if status.startswith(\"PASS\"):"
+    },
+    {
+      "file": "leaf_qt/real_engine_benchmark_completion_audit.py",
+      "line": 323,
+      "original_group": "MANUAL_REVIEW_REQUIRED",
+      "remaining_category": "MANUAL_REVIEW_INTENTIONAL_HOLD",
+      "closure_blocker": false,
+      "recommendation": "Record for targeted future review; do not block Wave D closure.",
+      "reason": "Manual-review item is explicitly recorded and should not be automated in this wave.",
+      "snippet": "if status.startswith(\"PASS\"):"
+    },
+    {
+      "file": "leaf_qt/real_engine_benchmark_completion_audit.py",
+      "line": 323,
+      "original_group": "MANUAL_REVIEW_REQUIRED",
+      "remaining_category": "MANUAL_REVIEW_INTENTIONAL_HOLD",
+      "closure_blocker": false,
+      "recommendation": "Record for targeted future review; do not block Wave D closure.",
+      "reason": "Manual-review item is explicitly recorded and should not be automated in this wave.",
+      "snippet": "if status.startswith(\"PASS\"):"
+    },
+    {
+      "file": "leaf_qt/regen_acceptance_audit.py",
+      "line": 154,
+      "original_group": "MANUAL_REVIEW_REQUIRED",
+      "remaining_category": "MANUAL_REVIEW_INTENTIONAL_HOLD",
+      "closure_blocker": false,
+      "recommendation": "Record for targeted future review; do not block Wave D closure.",
+      "reason": "Manual-review item is explicitly recorded and should not be automated in this wave.",
+      "snippet": "f\"- {item.get('name')}: {'PASS' if item.get('passed') else 'FAIL'}\""
+    },
+    {
+      "file": "leaf_qt/regen_architecture_visibility_audit.py",
+      "line": 196,
+      "original_group": "MANUAL_REVIEW_REQUIRED",
+      "remaining_category": "MANUAL_REVIEW_INTENTIONAL_HOLD",
+      "closure_blocker": false,
+      "recommendation": "Record for targeted future review; do not block Wave D closure.",
+      "reason": "Manual-review item is explicitly recorded and should not be automated in this wave.",
+      "snippet": "return value is True or value == 1 or value == \"1\" or str(value).upper().startswith(\"PASS\")"
+    },
+    {
+      "file": "leaf_qt/regen_architecture_visibility_audit.py",
+      "line": 196,
+      "original_group": "MANUAL_REVIEW_REQUIRED",
+      "remaining_category": "MANUAL_REVIEW_INTENTIONAL_HOLD",
+      "closure_blocker": false,
+      "recommendation": "Record for targeted future review; do not block Wave D closure.",
+      "reason": "Manual-review item is explicitly recorded and should not be automated in this wave.",
+      "snippet": "return value is True or value == 1 or value == \"1\" or str(value).upper().startswith(\"PASS\")"
+    },
+    {
+      "file": "leaf_qt/regen_architecture_visibility_audit.py",
+      "line": 196,
+      "original_group": "MANUAL_REVIEW_REQUIRED",
+      "remaining_category": "MANUAL_REVIEW_INTENTIONAL_HOLD",
+      "closure_blocker": false,
+      "recommendation": "Record for targeted future review; do not block Wave D closure.",
+      "reason": "Manual-review item is explicitly recorded and should not be automated in this wave.",
+      "snippet": "return value is True or value == 1 or value == \"1\" or str(value).upper().startswith(\"PASS\")"
+    },
+    {
+      "file": "leaf_qt/regen_architecture_visibility_audit.py",
+      "line": 226,
+      "original_group": "MANUAL_REVIEW_REQUIRED",
+      "remaining_category": "MANUAL_REVIEW_INTENTIONAL_HOLD",
+      "closure_blocker": false,
+      "recommendation": "Record for targeted future review; do not block Wave D closure.",
+      "reason": "Manual-review item is explicitly recorded and should not be automated in this wave.",
+      "snippet": "\"FAIL\" in str(value).upper() or \"BLOCKED\" in str(value).upper()"
+    },
+    {
+      "file": "leaf_qt/regen_architecture_visibility_audit.py",
+      "line": 226,
+      "original_group": "MANUAL_REVIEW_REQUIRED",
+      "remaining_category": "MANUAL_REVIEW_INTENTIONAL_HOLD",
+      "closure_blocker": false,
+      "recommendation": "Record for targeted future review; do not block Wave D closure.",
+      "reason": "Manual-review item is explicitly recorded and should not be automated in this wave.",
+      "snippet": "\"FAIL\" in str(value).upper() or \"BLOCKED\" in str(value).upper()"
+    },
+    {
+      "file": "leaf_qt/regen_autonomous_optimisation_input_audit.py",
+      "line": 159,
+      "original_group": "PRESENTATION_MARKER",
+      "remaining_category": "PRESENTATION_MARKER_INTENTIONAL_HOLD",
+      "closure_blocker": false,
+      "recommendation": "Preserve as completion-audit report/evidence rendering.",
+      "reason": "Boolean-to-text markers are report presentation, not status consumers.",
+      "snippet": "marker = \"PASS\" if check[\"passed\"] else \"FAIL\""
+    },
+    {
+      "file": "leaf_qt/regen_candidate_blueprint_completion_audit.py",
+      "line": 179,
+      "original_group": "PRESENTATION_MARKER",
+      "remaining_category": "PRESENTATION_MARKER_INTENTIONAL_HOLD",
+      "closure_blocker": false,
+      "recommendation": "Preserve as completion-audit report/evidence rendering.",
+      "reason": "Boolean-to-text markers are report presentation, not status consumers.",
+      "snippet": "marker = \"PASS\" if check[\"passed\"] else \"FAIL\""
+    },
+    {
+      "file": "leaf_qt/regen_candidate_blueprint_optimisation_completion_audit.py",
+      "line": 215,
+      "original_group": "PRESENTATION_MARKER",
+      "remaining_category": "PRESENTATION_MARKER_INTENTIONAL_HOLD",
+      "closure_blocker": false,
+      "recommendation": "Preserve as completion-audit report/evidence rendering.",
+      "reason": "Boolean-to-text markers are report presentation, not status consumers.",
+      "snippet": "marker = \"PASS\" if check[\"passed\"] else \"FAIL\""
+    },
+    {
+      "file": "leaf_qt/regen_candidate_blueprint_population_completion_audit.py",
+      "line": 238,
+      "original_group": "PRESENTATION_MARKER",
+      "remaining_category": "PRESENTATION_MARKER_INTENTIONAL_HOLD",
+      "closure_blocker": false,
+      "recommendation": "Preserve as completion-audit report/evidence rendering.",
+      "reason": "Boolean-to-text markers are report presentation, not status consumers.",
+      "snippet": "marker = \"PASS\" if check[\"passed\"] else \"FAIL\""
+    },
+    {
+      "file": "leaf_qt/regen_candidate_creation_completion_audit.py",
+      "line": 201,
+      "original_group": "PRESENTATION_MARKER",
+      "remaining_category": "PRESENTATION_MARKER_INTENTIONAL_HOLD",
+      "closure_blocker": false,
+      "recommendation": "Preserve as completion-audit report/evidence rendering.",
+      "reason": "Boolean-to-text markers are report presentation, not status consumers.",
+      "snippet": "marker = \"PASS\" if check[\"passed\"] else \"FAIL\""
+    },
+    {
+      "file": "leaf_qt/regen_candidate_creation_input_audit.py",
+      "line": 213,
+      "original_group": "PRESENTATION_MARKER",
+      "remaining_category": "PRESENTATION_MARKER_INTENTIONAL_HOLD",
+      "closure_blocker": false,
+      "recommendation": "Preserve as completion-audit report/evidence rendering.",
+      "reason": "Boolean-to-text markers are report presentation, not status consumers.",
+      "snippet": "marker = \"PASS\" if check[\"passed\"] else \"FAIL\""
+    },
+    {
+      "file": "leaf_qt/regen_candidate_generation_completion_audit.py",
+      "line": 192,
+      "original_group": "PRESENTATION_MARKER",
+      "remaining_category": "PRESENTATION_MARKER_INTENTIONAL_HOLD",
+      "closure_blocker": false,
+      "recommendation": "Preserve as completion-audit report/evidence rendering.",
+      "reason": "Boolean-to-text markers are report presentation, not status consumers.",
+      "snippet": "marker = \"PASS\" if check[\"passed\"] else \"FAIL\""
+    },
+    {
+      "file": "leaf_qt/regen_candidate_mutation_completion_audit.py",
+      "line": 336,
+      "original_group": "PRESENTATION_MARKER",
+      "remaining_category": "PRESENTATION_MARKER_INTENTIONAL_HOLD",
+      "closure_blocker": false,
+      "recommendation": "Preserve as completion-audit report/evidence rendering.",
+      "reason": "Boolean-to-text markers are report presentation, not status consumers.",
+      "snippet": "label = \"PASS\" if check[\"passed\"] else \"FAIL\""
+    },
+    {
+      "file": "leaf_qt/regen_candidate_mutation_input_audit.py",
+      "line": 428,
+      "original_group": "PRESENTATION_MARKER",
+      "remaining_category": "PRESENTATION_MARKER_INTENTIONAL_HOLD",
+      "closure_blocker": false,
+      "recommendation": "Preserve as completion-audit report/evidence rendering.",
+      "reason": "Boolean-to-text markers are report presentation, not status consumers.",
+      "snippet": "label = \"PASS\" if check[\"passed\"] else \"FAIL\""
+    },
+    {
+      "file": "leaf_qt/regen_candidate_population_completion_audit.py",
+      "line": 505,
+      "original_group": "PRESENTATION_MARKER",
+      "remaining_category": "PRESENTATION_MARKER_INTENTIONAL_HOLD",
+      "closure_blocker": false,
+      "recommendation": "Preserve as completion-audit report/evidence rendering.",
+      "reason": "Boolean-to-text markers are report presentation, not status consumers.",
+      "snippet": "label = \"PASS\" if check[\"passed\"] else \"FAIL\""
+    },
+    {
+      "file": "leaf_qt/regen_candidate_ranking_completion_audit.py",
+      "line": 337,
+      "original_group": "PRESENTATION_MARKER",
+      "remaining_category": "PRESENTATION_MARKER_INTENTIONAL_HOLD",
+      "closure_blocker": false,
+      "recommendation": "Preserve as completion-audit report/evidence rendering.",
+      "reason": "Boolean-to-text markers are report presentation, not status consumers.",
+      "snippet": "label = \"PASS\" if check[\"passed\"] else \"FAIL\""
+    },
+    {
+      "file": "leaf_qt/regen_candidate_ranking_input_audit.py",
+      "line": 407,
+      "original_group": "PRESENTATION_MARKER",
+      "remaining_category": "PRESENTATION_MARKER_INTENTIONAL_HOLD",
+      "closure_blocker": false,
+      "recommendation": "Preserve as completion-audit report/evidence rendering.",
+      "reason": "Boolean-to-text markers are report presentation, not status consumers.",
+      "snippet": "label = \"PASS\" if check[\"passed\"] else \"FAIL\""
+    },
+    {
+      "file": "leaf_qt/regen_completion_audit.py",
+      "line": 90,
+      "original_group": "MANUAL_REVIEW_REQUIRED",
+      "remaining_category": "MANUAL_REVIEW_INTENTIONAL_HOLD",
+      "closure_blocker": false,
+      "recommendation": "Record for targeted future review; do not block Wave D closure.",
+      "reason": "Manual-review item is explicitly recorded and should not be automated in this wave.",
+      "snippet": "\"FAIL\" in status"
+    },
+    {
+      "file": "leaf_qt/regen_completion_audit.py",
+      "line": 90,
+      "original_group": "MANUAL_REVIEW_REQUIRED",
+      "remaining_category": "MANUAL_REVIEW_INTENTIONAL_HOLD",
+      "closure_blocker": false,
+      "recommendation": "Record for targeted future review; do not block Wave D closure.",
+      "reason": "Manual-review item is explicitly recorded and should not be automated in this wave.",
+      "snippet": "\"FAIL\" in status"
+    },
+    {
+      "file": "leaf_qt/regen_evolution_loop_completion_audit.py",
+      "line": 332,
+      "original_group": "PRESENTATION_MARKER",
+      "remaining_category": "PRESENTATION_MARKER_INTENTIONAL_HOLD",
+      "closure_blocker": false,
+      "recommendation": "Preserve as completion-audit report/evidence rendering.",
+      "reason": "Boolean-to-text markers are report presentation, not status consumers.",
+      "snippet": "label = \"PASS\" if check[\"passed\"] else \"FAIL\""
+    },
+    {
+      "file": "leaf_qt/regen_evolution_loop_input_audit.py",
+      "line": 374,
+      "original_group": "PRESENTATION_MARKER",
+      "remaining_category": "PRESENTATION_MARKER_INTENTIONAL_HOLD",
+      "closure_blocker": false,
+      "recommendation": "Preserve as completion-audit report/evidence rendering.",
+      "reason": "Boolean-to-text markers are report presentation, not status consumers.",
+      "snippet": "label = \"PASS\" if check[\"passed\"] else \"FAIL\""
+    },
+    {
+      "file": "leaf_qt/regen_optimisation_completion_audit.py",
+      "line": 151,
+      "original_group": "PRESENTATION_MARKER",
+      "remaining_category": "PRESENTATION_MARKER_INTENTIONAL_HOLD",
+      "closure_blocker": false,
+      "recommendation": "Preserve as completion-audit report/evidence rendering.",
+      "reason": "Boolean-to-text markers are report presentation, not status consumers.",
+      "snippet": "marker = \"PASS\" if check[\"passed\"] else \"FAIL\""
+    },
+    {
+      "file": "leaf_qt/regen_runtime_execution_completion_audit.py",
+      "line": 191,
+      "original_group": "PRESENTATION_MARKER",
+      "remaining_category": "PRESENTATION_MARKER_INTENTIONAL_HOLD",
+      "closure_blocker": false,
+      "recommendation": "Preserve as completion-audit report/evidence rendering.",
+      "reason": "Boolean-to-text markers are report presentation, not status consumers.",
+      "snippet": "marker = \"PASS\" if check[\"passed\"] else \"FAIL\""
+    },
+    {
+      "file": "leaf_qt/regen_viewer_gui_runtime_audit_phase_16q1.py",
+      "line": 40,
+      "original_group": "MANUAL_REVIEW_REQUIRED",
+      "remaining_category": "MANUAL_REVIEW_INTENTIONAL_HOLD",
+      "closure_blocker": false,
+      "recommendation": "Record for targeted future review; do not block Wave D closure.",
+      "reason": "Manual-review item is explicitly recorded and should not be automated in this wave.",
+      "snippet": "if results.get(\"regen_viewer_completion_lock\") != \"PASS\":"
+    },
+    {
+      "file": "leaf_qt/temperature_dependent_solver_completion_audit_owner.py",
+      "line": 89,
+      "original_group": "MANUAL_REVIEW_REQUIRED",
+      "remaining_category": "MANUAL_REVIEW_INTENTIONAL_HOLD",
+      "closure_blocker": false,
+      "recommendation": "Record for targeted future review; do not block Wave D closure.",
+      "reason": "Manual-review item is explicitly recorded and should not be automated in this wave.",
+      "snippet": "result_key_pass = result_key_status in (None, \"PASS\")"
+    },
+    {
+      "file": "leaf_qt/temperature_dependent_solver_completion_audit_owner.py",
+      "line": 95,
+      "original_group": "MANUAL_REVIEW_REQUIRED",
+      "remaining_category": "MANUAL_REVIEW_INTENTIONAL_HOLD",
+      "closure_blocker": false,
+      "recommendation": "Record for targeted future review; do not block Wave D closure.",
+      "reason": "Manual-review item is explicitly recorded and should not be automated in this wave.",
+      "snippet": "if report_bundle_status not in (None, \"PASS\"):"
+    },
+    {
+      "file": "project_maintenance/wave2_status_adapter_completion_audit_phase_16t3r.py",
+      "line": 238,
+      "original_group": "MANUAL_REVIEW_REQUIRED",
+      "remaining_category": "MANUAL_REVIEW_INTENTIONAL_HOLD",
+      "closure_blocker": false,
+      "recommendation": "Record for targeted future review; do not block Wave D closure.",
+      "reason": "Manual-review item is explicitly recorded and should not be automated in this wave.",
+      "snippet": "outcome = \"PASS\" if r[\"passed\"] else \"FAIL\""
+    },
+    {
+      "file": "leaf_qt/calculation_audit.py",
+      "line": 75,
+      "original_group": "PAYLOAD_LITERAL_CONTEXT",
+      "remaining_category": "PAYLOAD_LITERAL_INTENTIONAL_HOLD",
+      "closure_blocker": false,
+      "recommendation": "Preserve until audit payload schema migration.",
+      "reason": "Standalone literals are likely payload/evidence construction.",
+      "snippet": "\"PASS\","
+    },
+    {
+      "file": "leaf_qt/calculation_audit.py",
+      "line": 128,
+      "original_group": "PAYLOAD_LITERAL_CONTEXT",
+      "remaining_category": "PAYLOAD_LITERAL_INTENTIONAL_HOLD",
+      "closure_blocker": false,
+      "recommendation": "Preserve until audit payload schema migration.",
+      "reason": "Standalone literals are likely payload/evidence construction.",
+      "snippet": "\"FAIL\","
+    },
+    {
+      "file": "leaf_qt/calculation_audit.py",
+      "line": 218,
+      "original_group": "PAYLOAD_LITERAL_CONTEXT",
+      "remaining_category": "PAYLOAD_LITERAL_INTENTIONAL_HOLD",
+      "closure_blocker": false,
+      "recommendation": "Preserve until audit payload schema migration.",
+      "reason": "Standalone literals are likely payload/evidence construction.",
+      "snippet": "\"FAIL\","
+    },
+    {
+      "file": "leaf_qt/calculation_audit.py",
+      "line": 229,
+      "original_group": "PAYLOAD_LITERAL_CONTEXT",
+      "remaining_category": "PAYLOAD_LITERAL_INTENTIONAL_HOLD",
+      "closure_blocker": false,
+      "recommendation": "Preserve until audit payload schema migration.",
+      "reason": "Standalone literals are likely payload/evidence construction.",
+      "snippet": "\"FAIL\","
+    },
+    {
+      "file": "leaf_qt/calculation_audit.py",
+      "line": 241,
+      "original_group": "PAYLOAD_LITERAL_CONTEXT",
+      "remaining_category": "PAYLOAD_LITERAL_INTENTIONAL_HOLD",
+      "closure_blocker": false,
+      "recommendation": "Preserve until audit payload schema migration.",
+      "reason": "Standalone literals are likely payload/evidence construction.",
+      "snippet": "\"FAIL\","
+    },
+    {
+      "file": "leaf_qt/real_engine_benchmark_completion_audit.py",
+      "line": 312,
+      "original_group": "PAYLOAD_LITERAL_CONTEXT",
+      "remaining_category": "PAYLOAD_LITERAL_INTENTIONAL_HOLD",
+      "closure_blocker": false,
+      "recommendation": "Preserve until audit payload schema migration.",
+      "reason": "Standalone literals are likely payload/evidence construction.",
+      "snippet": "\"FAIL\","
+    },
+    {
+      "file": "leaf_qt/real_engine_benchmark_completion_audit.py",
+      "line": 327,
+      "original_group": "PAYLOAD_LITERAL_CONTEXT",
+      "remaining_category": "PAYLOAD_LITERAL_INTENTIONAL_HOLD",
+      "closure_blocker": false,
+      "recommendation": "Preserve until audit payload schema migration.",
+      "reason": "Standalone literals are likely payload/evidence construction.",
+      "snippet": "\"WARN\","
+    }
+  ],
+  "closure_blockers": [],
+  "compile_results": [
+    {
+      "file": "integrate_phase_16l3_acceptance_audit.py",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "leaf_qt/calculation_audit.py",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "leaf_qt/material_and_coating_foundation_audit.py",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "leaf_qt/material_completion_audit.py",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "leaf_qt/real_engine_benchmark_completion_audit.py",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "leaf_qt/regen_acceptance_audit.py",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "leaf_qt/regen_architecture_visibility_audit.py",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "leaf_qt/regen_autonomous_optimisation_input_audit.py",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "leaf_qt/regen_candidate_blueprint_completion_audit.py",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "leaf_qt/regen_candidate_blueprint_optimisation_completion_audit.py",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "leaf_qt/regen_candidate_blueprint_population_completion_audit.py",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "leaf_qt/regen_candidate_creation_completion_audit.py",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "leaf_qt/regen_candidate_creation_input_audit.py",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "leaf_qt/regen_candidate_generation_completion_audit.py",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "leaf_qt/regen_candidate_mutation_completion_audit.py",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "leaf_qt/regen_candidate_mutation_input_audit.py",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "leaf_qt/regen_candidate_population_completion_audit.py",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "leaf_qt/regen_candidate_ranking_completion_audit.py",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "leaf_qt/regen_candidate_ranking_input_audit.py",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "leaf_qt/regen_completion_audit.py",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "leaf_qt/regen_evolution_loop_completion_audit.py",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "leaf_qt/regen_evolution_loop_input_audit.py",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "leaf_qt/regen_optimisation_completion_audit.py",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "leaf_qt/regen_runtime_execution_completion_audit.py",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "leaf_qt/regen_viewer_gui_runtime_audit_phase_16q1.py",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "leaf_qt/temperature_dependent_solver_completion_audit_owner.py",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "project_maintenance/wave2_status_adapter_completion_audit_phase_16t3r.py",
+      "passed": true,
+      "error": ""
+    }
+  ],
+  "phase_16u28_wave_d_completion_audit_remaining_consumer_review_complete": true
+}

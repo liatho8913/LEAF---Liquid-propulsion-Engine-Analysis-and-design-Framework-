@@ -1,0 +1,10 @@
+{
+  "phase": "16U.121",
+  "target": "leaf_qt/regen_acceptance_criteria_owner.py",
+  "passed": true,
+  "applied": [],
+  "backup": "project_maintenance/regen_acceptance_criteria_owner_phase_16u121_backup.py",
+  "phase_16u121_regen_acceptance_criteria_owner_presentation_layer_patch_complete": true,
+  "failures": [],
+  "next_phase": "16U.122 \u2014 Regression"
+}

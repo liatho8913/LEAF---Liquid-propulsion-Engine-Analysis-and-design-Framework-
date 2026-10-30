@@ -1,0 +1,258 @@
+LEAF PHASE 16U.1
+STRUCTURED STATUS CONSUMER DISCOVERY
+======================================
+
+STATUS: PASS_PHASE_16U1_STRUCTURED_STATUS_CONSUMER_DISCOVERY
+Generated: 2026-06-27T01:55:33
+
+SCOPE
+-----
+This phase performs discovery only.
+No engineering logic is modified.
+No solver logic is modified.
+No GUI behaviour is modified.
+
+SUMMARY
+-------
+Python files scanned: 1252
+Raw status consumer findings: 3178
+High-priority migration findings: 1230
+
+FINDINGS BY CATEGORY
+--------------------
+COMPLETION_AUDIT: 213
+DEVELOPER_TOOL: 50
+EXPORT: 3
+GUI: 213
+MASTER_GATE: 279
+REGRESSION_TEST: 1360
+REPORT: 104
+SOLVER_CONSUMER: 249
+UTILITY: 538
+VALIDATION: 169
+
+FINDINGS BY PATTERN
+-------------------
+ast_endswith_status: 3
+ast_startswith_status: 24
+ast_status_compare: 39
+contains_status: 55
+direct_status_equality: 26
+direct_status_inequality: 7
+pass_banner_literal: 2209
+raw_status_literal: 790
+startswith_status: 25
+
+HIGH PRIORITY MIGRATION TARGETS
+-------------------------------
+codebase_cleanliness_audit_phase_16t2b.py:12 [COMPLETION_AUDIT/pass_banner_literal] PASS_STATUS = "PASS_CODEBASE_CLEANLINESS_AUDIT_PHASE_16T2B"
+codebase_project_intelligence_audit_phase_16t2c.py:12 [COMPLETION_AUDIT/pass_banner_literal] PASS_STATUS = "PASS_CODEBASE_PROJECT_INTELLIGENCE_AUDIT_PHASE_16T2C"
+integrate_phase_16j3g_recommendation_viewer_repair.py:21 [GUI/pass_banner_literal] PASS_STATUS = "PASS_REGEN_RECOMMENDATION_VIEWER_REPAIR_PHASE_16J3G"
+integrate_phase_16j3g_recommendation_viewer_repair.py:285 [GUI/pass_banner_literal] assert results["phase_16j3g_status"] == "PASS_REGEN_RECOMMENDATION_VIEWER_REPAIR_PHASE_16J3G"
+integrate_phase_16j3g_recommendation_viewer_repair.py:302 [GUI/pass_banner_literal] print("PASS_REGEN_RECOMMENDATION_VIEWER_REPAIR_PHASE_16J3G")
+integrate_phase_16j3h_end_to_end_selection_validation.py:26 [VALIDATION/pass_banner_literal] PASS_STATUS = "PASS_REGEN_END_TO_END_CANDIDATE_SELECTION_VALIDATION_PHASE_16J3H"
+integrate_phase_16j3h_end_to_end_selection_validation.py:296 [VALIDATION/pass_banner_literal] == "PASS_REGEN_END_TO_END_CANDIDATE_SELECTION_VALIDATION_PHASE_16J3H"
+integrate_phase_16j3h_end_to_end_selection_validation.py:317 [VALIDATION/pass_banner_literal] print("PASS_REGEN_END_TO_END_CANDIDATE_SELECTION_VALIDATION_PHASE_16J3H")
+integrate_phase_16j4b_pending_geometry_commit_validation.py:15 [VALIDATION/pass_banner_literal] PASS_STATUS = "PASS_REGEN_PENDING_GEOMETRY_COMMIT_VALIDATION_PHASE_16J4B"
+integrate_phase_16j4b_pending_geometry_commit_validation.py:191 [VALIDATION/pass_banner_literal] assert results["phase_16j4b_status"] == "PASS_REGEN_PENDING_GEOMETRY_COMMIT_VALIDATION_PHASE_16J4B"
+integrate_phase_16j4b_pending_geometry_commit_validation.py:206 [VALIDATION/pass_banner_literal] print("PASS_REGEN_PENDING_GEOMETRY_COMMIT_VALIDATION_PHASE_16J4B")
+integrate_phase_16j4d_solver_regeneration_after_commit.py:20 [SOLVER_CONSUMER/pass_banner_literal] PASS_STATUS = "PASS_REGEN_SOLVER_REGENERATION_AFTER_COMMIT_PHASE_16J4D"
+integrate_phase_16j4d_solver_regeneration_after_commit.py:262 [SOLVER_CONSUMER/pass_banner_literal] out["regen_validation_status"] = "PASS_REGENERATED_SOLVER_PAYLOAD"
+integrate_phase_16j4d_solver_regeneration_after_commit.py:300 [SOLVER_CONSUMER/pass_banner_literal] assert results["phase_16j4d_status"] == "PASS_REGEN_SOLVER_REGENERATION_AFTER_COMMIT_PHASE_16J4D"
+integrate_phase_16j4d_solver_regeneration_after_commit.py:305 [SOLVER_CONSUMER/pass_banner_literal] assert payload["regen_validation_status"] == "PASS_REGENERATED_SOLVER_PAYLOAD"
+integrate_phase_16j4d_solver_regeneration_after_commit.py:317 [SOLVER_CONSUMER/pass_banner_literal] print("PASS_REGEN_SOLVER_REGENERATION_AFTER_COMMIT_PHASE_16J4D")
+integrate_phase_16j4e_before_after_solver_comparison_report.py:16 [REPORT/pass_banner_literal] PASS_STATUS = "PASS_REGEN_BEFORE_AFTER_SOLVER_COMPARISON_REPORT_PHASE_16J4E"
+integrate_phase_16j4e_before_after_solver_comparison_report.py:218 [REPORT/pass_banner_literal] out["regen_validation_status"] = "PASS_REGENERATED_SOLVER_PAYLOAD"
+integrate_phase_16j4e_before_after_solver_comparison_report.py:258 [REPORT/pass_banner_literal] assert results["phase_16j4e_status"] == "PASS_REGEN_BEFORE_AFTER_SOLVER_COMPARISON_REPORT_PHASE_16J4E"
+integrate_phase_16j4e_before_after_solver_comparison_report.py:278 [REPORT/pass_banner_literal] print("PASS_REGEN_BEFORE_AFTER_SOLVER_COMPARISON_REPORT_PHASE_16J4E")
+integrate_phase_16k1_regen_viewer_data_adapter.py:18 [GUI/pass_banner_literal] PASS_STATUS = "PASS_REGEN_VIEWER_DATA_ADAPTER_PHASE_16K1"
+integrate_phase_16k1_regen_viewer_data_adapter.py:245 [GUI/pass_banner_literal] out["regen_validation_status"] = "PASS_REGENERATED_SOLVER_PAYLOAD"
+integrate_phase_16k1_regen_viewer_data_adapter.py:295 [GUI/pass_banner_literal] assert results["phase_16k1_status"] == "PASS_REGEN_VIEWER_DATA_ADAPTER_PHASE_16K1"
+integrate_phase_16k1_regen_viewer_data_adapter.py:308 [GUI/pass_banner_literal] print("PASS_REGEN_VIEWER_DATA_ADAPTER_PHASE_16K1")
+integrate_phase_16k2_regen_viewer_report_renderer.py:18 [REPORT/pass_banner_literal] PASS_STATUS = "PASS_REGEN_VIEWER_REPORT_RENDERER_PHASE_16K2"
+integrate_phase_16k2_regen_viewer_report_renderer.py:184 [REPORT/raw_status_literal] f"{'PASS' if item.get('passed') else 'FAIL'}"
+integrate_phase_16k2_regen_viewer_report_renderer.py:269 [REPORT/pass_banner_literal] out["regen_validation_status"] = "PASS_REGENERATED_SOLVER_PAYLOAD"
+integrate_phase_16k2_regen_viewer_report_renderer.py:320 [REPORT/pass_banner_literal] assert results["phase_16k2_status"] == "PASS_REGEN_VIEWER_REPORT_RENDERER_PHASE_16K2"
+integrate_phase_16k2_regen_viewer_report_renderer.py:336 [REPORT/pass_banner_literal] print("PASS_REGEN_VIEWER_REPORT_RENDERER_PHASE_16K2")
+integrate_phase_16k3_viewer_navigation_system.py:18 [GUI/pass_banner_literal] PASS_STATUS = "PASS_REGEN_VIEWER_NAVIGATION_SYSTEM_PHASE_16K3"
+integrate_phase_16k3_viewer_navigation_system.py:183 [GUI/pass_banner_literal] out["regen_validation_status"] = "PASS_REGENERATED_SOLVER_PAYLOAD"
+integrate_phase_16k3_viewer_navigation_system.py:235 [GUI/pass_banner_literal] assert results["phase_16k3_status"] == "PASS_REGEN_VIEWER_NAVIGATION_SYSTEM_PHASE_16K3"
+integrate_phase_16k3_viewer_navigation_system.py:249 [GUI/pass_banner_literal] print("PASS_REGEN_VIEWER_NAVIGATION_SYSTEM_PHASE_16K3")
+integrate_phase_16k4_viewer_ownership_architecture.py:18 [GUI/pass_banner_literal] PASS_STATUS = "PASS_REGEN_VIEWER_OWNERSHIP_ARCHITECTURE_PHASE_16K4"
+integrate_phase_16k4_viewer_ownership_architecture.py:118 [GUI/raw_status_literal] "status": "PASS",
+integrate_phase_16k4_viewer_ownership_architecture.py:244 [GUI/pass_banner_literal] out["regen_validation_status"] = "PASS_REGENERATED_SOLVER_PAYLOAD"
+integrate_phase_16k4_viewer_ownership_architecture.py:297 [GUI/pass_banner_literal] assert results["phase_16k4_status"] == "PASS_REGEN_VIEWER_OWNERSHIP_ARCHITECTURE_PHASE_16K4"
+integrate_phase_16k4_viewer_ownership_architecture.py:303 [GUI/raw_status_literal] assert results["regen_viewer_completion_audit_payload"]["status"] == "PASS"
+integrate_phase_16k4_viewer_ownership_architecture.py:315 [GUI/pass_banner_literal] print("PASS_REGEN_VIEWER_OWNERSHIP_ARCHITECTURE_PHASE_16K4")
+integrate_phase_16k5_cross_section_viewer_integration.py:18 [GUI/pass_banner_literal] PASS_STATUS = "PASS_REGEN_CROSS_SECTION_VIEWER_INTEGRATION_PHASE_16K5"
+integrate_phase_16k5_cross_section_viewer_integration.py:226 [GUI/pass_banner_literal] out["regen_validation_status"] = "PASS_REGENERATED_SOLVER_PAYLOAD"
+integrate_phase_16k5_cross_section_viewer_integration.py:280 [GUI/pass_banner_literal] assert results["phase_16k5_status"] == "PASS_REGEN_CROSS_SECTION_VIEWER_INTEGRATION_PHASE_16K5"
+integrate_phase_16k5_cross_section_viewer_integration.py:296 [GUI/pass_banner_literal] print("PASS_REGEN_CROSS_SECTION_VIEWER_INTEGRATION_PHASE_16K5")
+integrate_phase_16k6_station_viewer_integration.py:17 [GUI/pass_banner_literal] PASS_STATUS = "PASS_REGEN_STATION_VIEWER_INTEGRATION_PHASE_16K6"
+integrate_phase_16k6_station_viewer_integration.py:264 [GUI/pass_banner_literal] out["regen_validation_status"] = "PASS_REGENERATED_SOLVER_PAYLOAD"
+integrate_phase_16k6_station_viewer_integration.py:355 [GUI/pass_banner_literal] assert results["phase_16k6_status"] == "PASS_REGEN_STATION_VIEWER_INTEGRATION_PHASE_16K6"
+integrate_phase_16k6_station_viewer_integration.py:373 [GUI/pass_banner_literal] print("PASS_REGEN_STATION_VIEWER_INTEGRATION_PHASE_16K6")
+integrate_phase_16k7_viewer_completion_gate.py:12 [GUI/pass_banner_literal] PASS_STATUS = "PASS_REGEN_VIEWER_COMPLETION_GATE_PHASE_16K7"
+integrate_phase_16k7_viewer_completion_gate.py:178 [GUI/pass_banner_literal] out["regen_validation_status"] = "PASS_REGENERATED_SOLVER_PAYLOAD"
+integrate_phase_16k7_viewer_completion_gate.py:253 [GUI/pass_banner_literal] assert results["phase_16k7_status"] == "PASS_REGEN_VIEWER_COMPLETION_GATE_PHASE_16K7"
+integrate_phase_16k7_viewer_completion_gate.py:268 [GUI/pass_banner_literal] print("PASS_REGEN_VIEWER_COMPLETION_GATE_PHASE_16K7")
+integrate_phase_16l2_engineering_acceptance_report.py:16 [REPORT/pass_banner_literal] PASS_STATUS = "PASS_REGEN_ENGINEERING_ACCEPTANCE_REPORT_PHASE_16L2"
+integrate_phase_16l2_engineering_acceptance_report.py:196 [REPORT/pass_banner_literal] out["regen_validation_status"] = "PASS_REGENERATED_SOLVER_PAYLOAD"
+integrate_phase_16l2_engineering_acceptance_report.py:255 [REPORT/pass_banner_literal] assert results["phase_16l2_status"] == "PASS_REGEN_ENGINEERING_ACCEPTANCE_REPORT_PHASE_16L2"
+integrate_phase_16l2_engineering_acceptance_report.py:269 [REPORT/pass_banner_literal] print("PASS_REGEN_ENGINEERING_ACCEPTANCE_REPORT_PHASE_16L2")
+integrate_phase_16l3_acceptance_audit.py:16 [COMPLETION_AUDIT/pass_banner_literal] PASS_STATUS = "PASS_REGEN_ACCEPTANCE_AUDIT_PHASE_16L3"
+integrate_phase_16l3_acceptance_audit.py:159 [COMPLETION_AUDIT/raw_status_literal] f"- {item.get('name')}: {'PASS' if item.get('passed') else 'FAIL'}"
+integrate_phase_16l3_acceptance_audit.py:203 [COMPLETION_AUDIT/pass_banner_literal] out["regen_validation_status"] = "PASS_REGENERATED_SOLVER_PAYLOAD"
+integrate_phase_16l3_acceptance_audit.py:263 [COMPLETION_AUDIT/pass_banner_literal] assert results["phase_16l3_status"] == "PASS_REGEN_ACCEPTANCE_AUDIT_PHASE_16L3"
+integrate_phase_16l3_acceptance_audit.py:276 [COMPLETION_AUDIT/pass_banner_literal] print("PASS_REGEN_ACCEPTANCE_AUDIT_PHASE_16L3")
+integrate_phase_16l4_acceptance_master_gate.py:12 [MASTER_GATE/pass_banner_literal] PASS_STATUS = "PASS_REGEN_ACCEPTANCE_MASTER_GATE_PHASE_16L4"
+integrate_phase_16l4_acceptance_master_gate.py:166 [MASTER_GATE/pass_banner_literal] out["regen_validation_status"] = "PASS_REGENERATED_SOLVER_PAYLOAD"
+integrate_phase_16l4_acceptance_master_gate.py:227 [MASTER_GATE/pass_banner_literal] assert results["phase_16l4_status"] == "PASS_REGEN_ACCEPTANCE_MASTER_GATE_PHASE_16L4"
+integrate_phase_16l4_acceptance_master_gate.py:240 [MASTER_GATE/pass_banner_literal] print("PASS_REGEN_ACCEPTANCE_MASTER_GATE_PHASE_16L4")
+integrate_phase_16m1_final_regen_completion_audit.py:16 [COMPLETION_AUDIT/pass_banner_literal] PASS_STATUS = "PASS_REGEN_FINAL_COMPLETION_AUDIT_PHASE_16M1"
+integrate_phase_16m1_final_regen_completion_audit.py:168 [COMPLETION_AUDIT/pass_banner_literal] out["regen_validation_status"] = "PASS_REGENERATED_SOLVER_PAYLOAD"
+integrate_phase_16m1_final_regen_completion_audit.py:230 [COMPLETION_AUDIT/pass_banner_literal] assert results["phase_16m1_status"] == "PASS_REGEN_FINAL_COMPLETION_AUDIT_PHASE_16M1"
+integrate_phase_16m1_final_regen_completion_audit.py:242 [COMPLETION_AUDIT/pass_banner_literal] print("PASS_REGEN_FINAL_COMPLETION_AUDIT_PHASE_16M1")
+integrate_phase_16m2_final_regen_verification_audit.py:16 [COMPLETION_AUDIT/pass_banner_literal] PASS_STATUS = "PASS_REGEN_FINAL_VERIFICATION_AUDIT_PHASE_16M2"
+integrate_phase_16m2_final_regen_verification_audit.py:189 [COMPLETION_AUDIT/pass_banner_literal] out["regen_validation_status"] = "PASS_REGENERATED_SOLVER_PAYLOAD"
+integrate_phase_16m2_final_regen_verification_audit.py:252 [COMPLETION_AUDIT/pass_banner_literal] assert results["phase_16m2_status"] == "PASS_REGEN_FINAL_VERIFICATION_AUDIT_PHASE_16M2"
+integrate_phase_16m2_final_regen_verification_audit.py:264 [COMPLETION_AUDIT/pass_banner_literal] print("PASS_REGEN_FINAL_VERIFICATION_AUDIT_PHASE_16M2")
+integrate_phase_16m3_final_regen_signoff_report.py:16 [REPORT/pass_banner_literal] PASS_STATUS = "PASS_REGEN_FINAL_SIGNOFF_REPORT_PHASE_16M3"
+integrate_phase_16m3_final_regen_signoff_report.py:204 [REPORT/pass_banner_literal] out["regen_validation_status"] = "PASS_REGENERATED_SOLVER_PAYLOAD"
+integrate_phase_16m3_final_regen_signoff_report.py:268 [REPORT/pass_banner_literal] assert results["phase_16m3_status"] == "PASS_REGEN_FINAL_SIGNOFF_REPORT_PHASE_16M3"
+integrate_phase_16m3_final_regen_signoff_report.py:283 [REPORT/pass_banner_literal] print("PASS_REGEN_FINAL_SIGNOFF_REPORT_PHASE_16M3")
+integrate_phase_16m4_final_regen_master_gate.py:12 [MASTER_GATE/pass_banner_literal] PASS_STATUS = "PASS_REGEN_FINAL_MASTER_GATE_PHASE_16M4"
+integrate_phase_16m4_final_regen_master_gate.py:183 [MASTER_GATE/pass_banner_literal] out["regen_validation_status"] = "PASS_REGENERATED_SOLVER_PAYLOAD"
+integrate_phase_16m4_final_regen_master_gate.py:248 [MASTER_GATE/pass_banner_literal] assert results["phase_16m4_status"] == "PASS_REGEN_FINAL_MASTER_GATE_PHASE_16M4"
+integrate_phase_16m4_final_regen_master_gate.py:262 [MASTER_GATE/pass_banner_literal] print("PASS_REGEN_FINAL_MASTER_GATE_PHASE_16M4")
+leaf_qt/audit_panel.py:48 [COMPLETION_AUDIT/ast_status_compare] if status == "PASS":
+leaf_qt/audit_panel.py:48 [COMPLETION_AUDIT/direct_status_equality] if status == "PASS":
+leaf_qt/audit_panel.py:48 [COMPLETION_AUDIT/raw_status_literal] if status == "PASS":
+leaf_qt/audit_panel.py:49 [COMPLETION_AUDIT/raw_status_literal] item.setText(2, "PASS")
+leaf_qt/audit_panel.py:52 [COMPLETION_AUDIT/ast_status_compare] elif status == "FAIL":
+leaf_qt/audit_panel.py:52 [COMPLETION_AUDIT/direct_status_equality] elif status == "FAIL":
+leaf_qt/audit_panel.py:52 [COMPLETION_AUDIT/raw_status_literal] elif status == "FAIL":
+leaf_qt/audit_panel.py:53 [COMPLETION_AUDIT/raw_status_literal] item.setText(2, "FAIL")
+leaf_qt/bond_coat_consumption_audit_owner.py:38 [COMPLETION_AUDIT/pass_banner_literal] status = "PASS_PHASE_10D6_BOND_COAT_CONSUMPTION_AUDIT_OWNER"
+leaf_qt/bond_coat_consumption_audit_owner.py:284 [COMPLETION_AUDIT/pass_banner_literal] "PASS_PHASE_10D6_BOND_COAT_CONSUMPTION_AUDIT_OWNER"
+leaf_qt/calculation_audit.py:49 [COMPLETION_AUDIT/raw_status_literal] rows.append(self.status_row("Core", key, "FAIL", "Value is zero or negative."))
+leaf_qt/calculation_audit.py:51 [COMPLETION_AUDIT/raw_status_literal] rows.append(self.status_row("Core", key, "FAIL", "Gamma must be greater than 1."))
+leaf_qt/calculation_audit.py:53 [COMPLETION_AUDIT/raw_status_literal] rows.append(self.status_row("Core", key, "PASS", "Value is present and physically positive."))
+leaf_qt/calculation_audit.py:75 [COMPLETION_AUDIT/raw_status_literal] "PASS",
+leaf_qt/calculation_audit.py:92 [COMPLETION_AUDIT/raw_status_literal] rows.append(self.status_row("CEA", key, "FAIL", "CEA value is zero or negative."))
+leaf_qt/calculation_audit.py:94 [COMPLETION_AUDIT/raw_status_literal] rows.append(self.status_row("CEA", key, "PASS", "CEA value is present."))
+leaf_qt/calculation_audit.py:119 [COMPLETION_AUDIT/raw_status_literal] rows.append(self.status_row("Geometry", key, "FAIL", "Geometry value is zero or negative."))
+leaf_qt/calculation_audit.py:121 [COMPLETION_AUDIT/raw_status_literal] rows.append(self.status_row("Geometry", key, "PASS", "Geometry value is positive."))
+leaf_qt/calculation_audit.py:128 [COMPLETION_AUDIT/raw_status_literal] "FAIL",
+leaf_qt/calculation_audit.py:172 [COMPLETION_AUDIT/raw_status_literal] rows.append(self.status_row("Performance", key, "FAIL", "Performance value is zero or negative."))
+leaf_qt/calculation_audit.py:174 [COMPLETION_AUDIT/raw_status_literal] rows.append(self.status_row("Performance", key, "PASS", "Performance value is positive."))
+leaf_qt/calculation_audit.py:205 [COMPLETION_AUDIT/raw_status_literal] elif str(value).upper() == "PASS":
+leaf_qt/calculation_audit.py:206 [COMPLETION_AUDIT/raw_status_literal] rows.append(self.status_row("Regen", key, "PASS", "Regen check passed."))
+leaf_qt/calculation_audit.py:208 [COMPLETION_AUDIT/raw_status_literal] rows.append(self.status_row("Regen", key, "FAIL", f"Regen check returned {value}."))
+leaf_qt/calculation_audit.py:218 [COMPLETION_AUDIT/raw_status_literal] "FAIL",
+leaf_qt/calculation_audit.py:229 [COMPLETION_AUDIT/raw_status_literal] "FAIL",
+leaf_qt/calculation_audit.py:241 [COMPLETION_AUDIT/raw_status_literal] "FAIL",
+leaf_qt/coating_integration_completion_audit.py:145 [COMPLETION_AUDIT/pass_banner_literal] "PASS_COATING_INTEGRATION_COMPLETION_AUDIT"
+leaf_qt/coating_integration_validation_owner.py:18 [VALIDATION/pass_banner_literal] "expected_status": "PASS_PHASE_10C1_COATING_PROPERTY_CONSUMPTION_AUDIT_OWNER",
+leaf_qt/coating_integration_validation_owner.py:24 [VALIDATION/pass_banner_literal] "expected_status": "PASS_PHASE_10C2_COATING_THERMAL_CONDUCTIVITY_INTEGRATION_OWNER",
+leaf_qt/coating_integration_validation_owner.py:30 [VALIDATION/pass_banner_literal] "expected_status": "PASS_PHASE_10C3_COATING_THICKNESS_INTEGRATION_OWNER",
+leaf_qt/coating_integration_validation_owner.py:36 [VALIDATION/pass_banner_literal] "expected_status": "PASS_PHASE_10C4_COATING_THERMAL_RESISTANCE_INTEGRATION_OWNER",
+leaf_qt/coating_integration_validation_owner.py:42 [VALIDATION/pass_banner_literal] "expected_status": "PASS_PHASE_10C5_COATING_TEMPERATURE_LIMIT_INTEGRATION_OWNER",
+leaf_qt/coating_integration_validation_owner.py:48 [VALIDATION/pass_banner_literal] "expected_status": "PASS_PHASE_10C6_BOND_COAT_INTEGRATION_OWNER",
+leaf_qt/coating_integration_validation_owner.py:175 [VALIDATION/pass_banner_literal] "PASS_PHASE_10C7_COATING_INTEGRATION_VALIDATION_OWNER"
+leaf_qt/coating_property_consumption_audit_owner.py:110 [COMPLETION_AUDIT/pass_banner_literal] "PASS_PHASE_10C1_COATING_PROPERTY_CONSUMPTION_AUDIT_OWNER"
+leaf_qt/coating_thermal_consumption_audit_owner.py:38 [COMPLETION_AUDIT/pass_banner_literal] status = "PASS_PHASE_10D5_COATING_THERMAL_CONSUMPTION_AUDIT_OWNER"
+leaf_qt/coating_thermal_consumption_audit_owner.py:269 [COMPLETION_AUDIT/pass_banner_literal] "PASS_PHASE_10D5_COATING_THERMAL_CONSUMPTION_AUDIT_OWNER"
+leaf_qt/coating_validation_owner.py:123 [VALIDATION/pass_banner_literal] "PASS_COATING_VALIDATION_OWNER"
+leaf_qt/coating_validation_owner.py:286 [VALIDATION/raw_status_literal] severity="FAIL",
+leaf_qt/coating_validation_owner.py:304 [VALIDATION/raw_status_literal] severity="FAIL",
+leaf_qt/coating_validation_owner.py:315 [VALIDATION/raw_status_literal] severity="FAIL",
+leaf_qt/coating_validation_owner.py:323 [VALIDATION/raw_status_literal] severity="FAIL",
+leaf_qt/coating_validation_owner.py:334 [VALIDATION/raw_status_literal] severity="FAIL",
+leaf_qt/coating_validation_owner.py:342 [VALIDATION/raw_status_literal] severity="FAIL",
+leaf_qt/coating_validation_owner.py:351 [VALIDATION/raw_status_literal] severity="FAIL",
+leaf_qt/coating_validation_owner.py:450 [VALIDATION/ast_status_compare] blocking = (not bool(passed)) and severity == "FAIL"
+leaf_qt/coating_validation_owner.py:450 [VALIDATION/raw_status_literal] blocking = (not bool(passed)) and severity == "FAIL"
+leaf_qt/density_coolant_property_consumption_audit_owner.py:172 [COMPLETION_AUDIT/pass_banner_literal] "PASS_PHASE_10D4_DENSITY_COOLANT_PROPERTY_CONSUMPTION_AUDIT_OWNER"
+leaf_qt/engine_reproduction_validation.py:17 [VALIDATION/ast_status_compare] if status == "PASS":
+leaf_qt/engine_reproduction_validation.py:17 [VALIDATION/direct_status_equality] if status == "PASS":
+leaf_qt/engine_reproduction_validation.py:17 [VALIDATION/raw_status_literal] if status == "PASS":
+leaf_qt/engine_solver.py:3785 [SOLVER_CONSUMER/raw_status_literal] recommended_status = "PASS" if recommended_valid == 1.0 else "WARN_LIMITED"
+leaf_qt/engine_solver.py:4054 [SOLVER_CONSUMER/raw_status_literal] "diagnostic_note": "PASS" if not failure_reasons else "CHECK",
+leaf_qt/engine_solver.py:4107 [SOLVER_CONSUMER/raw_status_literal] status = "PASS"
+leaf_qt/engine_solver.py:4113 [SOLVER_CONSUMER/raw_status_literal] status = "FAIL"
+leaf_qt/engine_solver.py:4347 [SOLVER_CONSUMER/raw_status_literal] status = "PASS"
+leaf_qt/engine_solver.py:4815 [SOLVER_CONSUMER/raw_status_literal] status = "PASS"
+leaf_qt/engine_solver.py:5079 [SOLVER_CONSUMER/raw_status_literal] status = "PASS"
+leaf_qt/engine_solver.py:5310 [SOLVER_CONSUMER/raw_status_literal] status = "PASS"
+leaf_qt/engine_solver.py:5314 [SOLVER_CONSUMER/raw_status_literal] status = "FAIL"
+leaf_qt/engine_solver.py:5326 [SOLVER_CONSUMER/ast_status_compare] elif status == "PASS":
+leaf_qt/engine_solver.py:5326 [SOLVER_CONSUMER/direct_status_equality] elif status == "PASS":
+leaf_qt/engine_solver.py:5326 [SOLVER_CONSUMER/raw_status_literal] elif status == "PASS":
+leaf_qt/engine_solver.py:5428 [SOLVER_CONSUMER/raw_status_literal] results["velocity_limited_combined_preview_status"] = "PASS" if failed_count == 0 else "FAIL"
+leaf_qt/engine_solver.py:5479 [SOLVER_CONSUMER/raw_status_literal] results["vl_required_improvement_status"] = "PASS" if max_twg <= material_limit else "REQUIRED"
+leaf_qt/engine_solver.py:5517 [SOLVER_CONSUMER/raw_status_literal] if status not in ("REQUIRED", "PASS"):
+leaf_qt/engine_solver.py:5718 [SOLVER_CONSUMER/raw_status_literal] results["vl_split_strategy_status"] = "PASS" if failed_count == 0 else "FAIL"
+leaf_qt/engine_solver.py:5904 [SOLVER_CONSUMER/raw_status_literal] results["coupled_split_strategy_status"] = "PASS" if failed_count == 0 else "FAIL"
+leaf_qt/engine_solver.py:5959 [SOLVER_CONSUMER/raw_status_literal] "PASS" if max_twg <= material_limit else "REQUIRED"
+leaf_qt/engine_solver.py:6073 [SOLVER_CONSUMER/raw_status_literal] results["coupled_split_auto_tuned_status"] = "PASS" if failed_count == 0 else "FAIL"
+leaf_qt/engine_solver.py:6101 [SOLVER_CONSUMER/raw_status_literal] if results.get("coupled_split_auto_tuned_status") != "PASS":
+leaf_qt/engine_solver.py:6237 [SOLVER_CONSUMER/pass_banner_literal] status = "PASS_WITH_MARGIN"
+leaf_qt/engine_solver.py:6239 [SOLVER_CONSUMER/pass_banner_literal] status = "PASS_LOW_MARGIN"
+leaf_qt/engine_solver.py:6241 [SOLVER_CONSUMER/raw_status_literal] status = "FAIL"
+leaf_qt/engine_solver.py:6253 [SOLVER_CONSUMER/raw_status_literal] passing = [item for item in screened if item["status"] != "FAIL"]
+leaf_qt/engine_solver.py:6516 [SOLVER_CONSUMER/raw_status_literal] results["coupled_auto_balanced_rebalance_status"] = "PASS" if failed_count == 0 else "FAIL"
+leaf_qt/engine_solver.py:6543 [SOLVER_CONSUMER/ast_status_compare] if status != "FAIL":
+leaf_qt/engine_solver.py:6543 [SOLVER_CONSUMER/direct_status_inequality] if status != "FAIL":
+leaf_qt/engine_solver.py:6543 [SOLVER_CONSUMER/raw_status_literal] if status != "FAIL":
+leaf_qt/engine_solver.py:7003 [SOLVER_CONSUMER/raw_status_literal] thickness_margin_status = "PASS"
+leaf_qt/engine_solver.py:7005 [SOLVER_CONSUMER/raw_status_literal] thickness_margin_status = "FAIL"
+leaf_qt/engine_solver.py:7013 [SOLVER_CONSUMER/ast_status_compare] elif failed_count > 0 and thickness_margin_status == "PASS":
+leaf_qt/engine_solver.py:7013 [SOLVER_CONSUMER/direct_status_equality] elif failed_count > 0 and thickness_margin_status == "PASS":
+leaf_qt/engine_solver.py:7013 [SOLVER_CONSUMER/raw_status_literal] elif failed_count > 0 and thickness_margin_status == "PASS":
+leaf_qt/engine_solver.py:7017 [SOLVER_CONSUMER/ast_status_compare] elif thickness_margin_status == "FAIL":
+leaf_qt/engine_solver.py:7017 [SOLVER_CONSUMER/direct_status_equality] elif thickness_margin_status == "FAIL":
+leaf_qt/engine_solver.py:7017 [SOLVER_CONSUMER/raw_status_literal] elif thickness_margin_status == "FAIL":
+leaf_qt/engine_solver.py:7020 [SOLVER_CONSUMER/pass_banner_literal] status = "PASS_WITH_PLACEHOLDER_DATA"
+leaf_qt/engine_solver.py:7022 [SOLVER_CONSUMER/raw_status_literal] status = "PASS"
+leaf_qt/engine_solver.py:7166 [SOLVER_CONSUMER/raw_status_literal] status = "PASS" if margin >= 0.0 else "FAIL"
+leaf_qt/engine_solver.py:7192 [SOLVER_CONSUMER/raw_status_literal] if item.get("status") == "PASS"
+leaf_qt/engine_solver.py:7308 [SOLVER_CONSUMER/pass_banner_literal] results["bond_coat_validation_status"] = "PASS_WITH_PLACEHOLDER_DATA"
+leaf_qt/engine_solver.py:7314 [SOLVER_CONSUMER/raw_status_literal] results["bond_coat_validation_status"] = "PASS"
+leaf_qt/engine_solver.py:7327 [SOLVER_CONSUMER/pass_banner_literal] and results.get("bond_coat_validation_status") == "PASS_WITH_PLACEHOLDER_DATA"
+leaf_qt/engine_solver.py:7329 [SOLVER_CONSUMER/pass_banner_literal] coating_stack_validation_status = "PASS_WITH_PLACEHOLDER_DATA"
+leaf_qt/engine_solver.py:7340 [SOLVER_CONSUMER/pass_banner_literal] if coating_stack_validation_status == "PASS_WITH_PLACEHOLDER_DATA":
+leaf_qt/engine_solver.py:7362 [SOLVER_CONSUMER/pass_banner_literal] if coating_stack_validation_status == "PASS_WITH_PLACEHOLDER_DATA":
+leaf_qt/engine_solver.py:7418 [SOLVER_CONSUMER/raw_status_literal] if thermal_stress_failed_count > 0 and results.get("bond_coat_validation_status") != "PASS":
+leaf_qt/engine_solver.py:7648 [SOLVER_CONSUMER/raw_status_literal] source_data_weighted_gate = "PASS"
+leaf_qt/engine_solver.py:7652 [SOLVER_CONSUMER/raw_status_literal] source_data_weighted_gate = "FAIL"
+leaf_qt/engine_solver.py:7656 [SOLVER_CONSUMER/raw_status_literal] if source_data_weighted_gate == "PASS":
+leaf_qt/engine_solver.py:7657 [SOLVER_CONSUMER/raw_status_literal] coating_stack_source_data_gate = "PASS"
+leaf_qt/engine_solver.py:7662 [SOLVER_CONSUMER/raw_status_literal] elif source_data_weighted_gate == "FAIL":
+leaf_qt/engine_solver.py:7671 [SOLVER_CONSUMER/raw_status_literal] if source_data_weighted_gate == "PASS":
+leaf_qt/engine_solver.py:7672 [SOLVER_CONSUMER/raw_status_literal] coating_stack_source_data_gate = "PASS"
+leaf_qt/engine_solver.py:7675 [SOLVER_CONSUMER/raw_status_literal] elif source_data_weighted_gate in ("PARTIAL", "FAIL"):
+leaf_qt/engine_solver.py:7682 [SOLVER_CONSUMER/raw_status_literal] if coating_stack_source_data_gate == "PASS":
+leaf_qt/engine_solver.py:7975 [SOLVER_CONSUMER/raw_status_literal] results["bond_coat_validation_status"] = "FAIL"
+leaf_qt/engine_solver.py:7981 [SOLVER_CONSUMER/raw_status_literal] results["explicit_coating_thermal_stress_status"] = "FAIL"
+leaf_qt/engine_solver.py:7983 [SOLVER_CONSUMER/pass_banner_literal] results["explicit_coating_thermal_stress_status"] = "PASS_OR_NOT_EVALUATED"
+leaf_qt/engine_solver.py:8011 [SOLVER_CONSUMER/raw_status_literal] "PASS",
+leaf_qt/engine_solver.py:8012 [SOLVER_CONSUMER/pass_banner_literal] "PASS_WITH_PLACEHOLDER_DATA",
+leaf_qt/engine_solver.py:8023 [SOLVER_CONSUMER/pass_banner_literal] if explicit_status == "PASS_WITH_PLACEHOLDER_DATA":
+leaf_qt/engine_solver.py:8028 [SOLVER_CONSUMER/raw_status_literal] if source_data_gate != "PASS":
+leaf_qt/engine_solver.py:8033 [SOLVER_CONSUMER/raw_status_literal] if weighted_gate != "PASS":
+leaf_qt/engine_solver.py:8056 [SOLVER_CONSUMER/raw_status_literal] final_blocker_gate = "PASS"
+leaf_qt/engine_solver.py:8439 [SOLVER_CONSUMER/raw_status_literal] status="FAIL" if explicit_status == "FAIL_THERMAL_STRESS" else "AVAILABLE",
+leaf_qt/engine_solver.py:8456 [SOLVER_CONSUMER/raw_status_literal] if item["status"] in ("MISSING", "PLACEHOLDER", "FAIL")
+leaf_qt/engine_solver.py:8652 [SOLVER_CONSUMER/raw_status_literal] elif source_data_gate == "PASS" and evidence_status in ("READY_FOR_REVIEW", "INCOMPLETE"):
+... truncated 1030 additional high-priority findings
+
+NEXT PHASE
+----------
+PHASE 16U.2 — STRUCTURED STATUS CONSUMER CLASSIFICATION
+
+COMPLETION NOTICE
+-----------------
+PHASE 16U.1 COMPLETE.
+Consumer discovery is complete.
+The project may now classify and prioritise these consumers before migration.

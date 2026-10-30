@@ -1,0 +1,35 @@
+LEAF PHASE 16U.155
+WAVE 4 MIGRATION CERTIFICATE
+================================
+
+STATUS: PASS_PHASE_16U155_WAVE4_MIGRATION_CERTIFICATE
+
+CERTIFICATE SUMMARY
+-------------------
+Wave ID: 16U-WAVE4
+Locked baseline: 68
+Closed before wave: 50
+Remaining before wave: 18
+Closed after wave: 60
+Remaining after wave: 8
+Net files closed: 10
+
+SECURITY STATEMENT
+------------------
+Wave 4 batched implementation only. Verification remained per-file and transactional.
+
+CERTIFIED FILES
+---------------
+- regen_optimisation_completion_audit.py
+- regen_optimisation_registration_owner.py
+- regen_optimisation_session_owner.py
+- regen_runtime_execution_completion_audit.py
+- regen_runtime_execution_input_gate.py
+- regen_runtime_execution_registration_owner.py
+- regen_runtime_execution_session_owner.py
+- regen_runtime_optimisation_input_gate.py
+- regen_runtime_optimisation_registration_owner.py
+- regen_runtime_optimisation_session_owner.py
+
+FAILURES
+--------

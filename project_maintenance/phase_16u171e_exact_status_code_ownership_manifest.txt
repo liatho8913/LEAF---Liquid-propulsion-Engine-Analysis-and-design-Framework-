@@ -1,0 +1,164 @@
+LEAF PHASE 16U.171E
+EXACT STATUS CODE OWNERSHIP MANIFEST
+=============================================
+status=PASS_PHASE_16U171E_EXACT_STATUS_CODE_OWNERSHIP_MANIFEST
+entry_count=71
+
+OWNERSHIP ACTION COUNTS
+------------------------
+LOCAL_STATUS_STATE_MACHINE_OWNER_REQUIRED=20
+NO_LITERAL_RESCAN_REQUIRED=19
+RESULTS_PAYLOAD_EXACT_STATUS_OWNER_REQUIRED=32
+
+FILES
+-----
+
+leaf_qt/engine_solver.py
+  line 5323 [LOCAL_STATUS_STATE_MACHINE_OWNER_REQUIRED]: elif status == "FAIL_BUT_IMPROVED":
+  line 5323 [LOCAL_STATUS_STATE_MACHINE_OWNER_REQUIRED]: elif status == "FAIL_BUT_IMPROVED":
+  line 7746 [RESULTS_PAYLOAD_EXACT_STATUS_OWNER_REQUIRED]: if results.get("explicit_coating_liner_status") == "FAIL_THERMAL_STRESS":
+  line 7746 [RESULTS_PAYLOAD_EXACT_STATUS_OWNER_REQUIRED]: if results.get("explicit_coating_liner_status") == "FAIL_THERMAL_STRESS":
+  line 7767 [RESULTS_PAYLOAD_EXACT_STATUS_OWNER_REQUIRED]: if results.get("explicit_coating_liner_status") == "FAIL_THERMAL_STRESS":
+  line 7767 [RESULTS_PAYLOAD_EXACT_STATUS_OWNER_REQUIRED]: if results.get("explicit_coating_liner_status") == "FAIL_THERMAL_STRESS":
+
+leaf_qt/foundation_verification_harness.py
+  line 123 [LOCAL_STATUS_STATE_MACHINE_OWNER_REQUIRED]: if status == "PASS_FOUNDATION_VERIFICATION" and failed_count == 0:
+  line 123 [LOCAL_STATUS_STATE_MACHINE_OWNER_REQUIRED]: if status == "PASS_FOUNDATION_VERIFICATION" and failed_count == 0:
+
+leaf_qt/regen_acceptance_master_gate.py
+  line 64 [NO_LITERAL_RESCAN_REQUIRED]: if status == PASS_STATUS:
+
+leaf_qt/regen_before_after_solver_comparison_report_owner.py
+  line 63 [NO_LITERAL_RESCAN_REQUIRED]: if status == PASS_STATUS:
+
+leaf_qt/regen_candidate_acceptance_completion_gate.py
+  line 77 [NO_LITERAL_RESCAN_REQUIRED]: if status == PASS_STATUS:
+
+leaf_qt/regen_candidate_comparison_master_gate.py
+  line 17 [RESULTS_PAYLOAD_EXACT_STATUS_OWNER_REQUIRED]: if results.get("regen_candidate_comparison_completion_audit_status") != "PASS_REGEN_CANDIDATE_COMPARISON_VIEWER_BACKEND_PHASE_15B":
+  line 17 [RESULTS_PAYLOAD_EXACT_STATUS_OWNER_REQUIRED]: if results.get("regen_candidate_comparison_completion_audit_status") != "PASS_REGEN_CANDIDATE_COMPARISON_VIEWER_BACKEND_PHASE_15B":
+
+leaf_qt/regen_completion_master_gate.py
+  line 17 [RESULTS_PAYLOAD_EXACT_STATUS_OWNER_REQUIRED]: if results.get("regen_completion_gate_completion_audit_status") != "PASS_REGEN_COMPLETION_GATE_AUDIT_PHASE_16F":
+  line 17 [RESULTS_PAYLOAD_EXACT_STATUS_OWNER_REQUIRED]: if results.get("regen_completion_gate_completion_audit_status") != "PASS_REGEN_COMPLETION_GATE_AUDIT_PHASE_16F":
+
+leaf_qt/regen_convergence_master_gate.py
+  line 44 [LOCAL_STATUS_STATE_MACHINE_OWNER_REQUIRED]: if status == "PASS_REGEN_CONVERGENCE_MASTER_GATE_CONVERGED":
+  line 44 [LOCAL_STATUS_STATE_MACHINE_OWNER_REQUIRED]: if status == "PASS_REGEN_CONVERGENCE_MASTER_GATE_CONVERGED":
+  line 54 [LOCAL_STATUS_STATE_MACHINE_OWNER_REQUIRED]: elif status == "WARN_REGEN_CONVERGENCE_MASTER_GATE_RUNNING":
+  line 54 [LOCAL_STATUS_STATE_MACHINE_OWNER_REQUIRED]: elif status == "WARN_REGEN_CONVERGENCE_MASTER_GATE_RUNNING":
+  line 66 [LOCAL_STATUS_STATE_MACHINE_OWNER_REQUIRED]: elif status == "WARN_REGEN_CONVERGENCE_MASTER_GATE_MAX_GENERATIONS":
+  line 66 [LOCAL_STATUS_STATE_MACHINE_OWNER_REQUIRED]: elif status == "WARN_REGEN_CONVERGENCE_MASTER_GATE_MAX_GENERATIONS":
+
+leaf_qt/regen_cross_section_viewer_integration.py
+  line 71 [NO_LITERAL_RESCAN_REQUIRED]: if status == PASS_STATUS:
+
+leaf_qt/regen_engineering_acceptance_report.py
+  line 41 [NO_LITERAL_RESCAN_REQUIRED]: if status == PASS_STATUS:
+
+leaf_qt/regen_evolution_tree_master_gate.py
+  line 17 [RESULTS_PAYLOAD_EXACT_STATUS_OWNER_REQUIRED]: if results.get("regen_evolution_tree_completion_audit_status") != "PASS_REGEN_EVOLUTION_TREE_BACKEND_PHASE_15C":
+  line 17 [RESULTS_PAYLOAD_EXACT_STATUS_OWNER_REQUIRED]: if results.get("regen_evolution_tree_completion_audit_status") != "PASS_REGEN_EVOLUTION_TREE_BACKEND_PHASE_15C":
+
+leaf_qt/regen_failure_root_cause_system.py
+  line 38 [NO_LITERAL_RESCAN_REQUIRED]: if status == PASS_STATUS:
+
+leaf_qt/regen_final_completion_audit.py
+  line 53 [NO_LITERAL_RESCAN_REQUIRED]: if status == PASS_STATUS:
+
+leaf_qt/regen_final_master_gate.py
+  line 61 [NO_LITERAL_RESCAN_REQUIRED]: if status == PASS_STATUS:
+
+leaf_qt/regen_final_signoff_report.py
+  line 52 [NO_LITERAL_RESCAN_REQUIRED]: if status == PASS_STATUS:
+
+leaf_qt/regen_final_verification_audit.py
+  line 70 [NO_LITERAL_RESCAN_REQUIRED]: if status == PASS_STATUS:
+
+leaf_qt/regen_live_geometry_commit_execution.py
+  line 90 [NO_LITERAL_RESCAN_REQUIRED]: if status == PASS_STATUS:
+
+leaf_qt/regen_optimisation_completion_gate.py
+  line 65 [NO_LITERAL_RESCAN_REQUIRED]: if status == PASS_STATUS:
+
+leaf_qt/regen_optimisation_controller_master_gate.py
+  line 44 [LOCAL_STATUS_STATE_MACHINE_OWNER_REQUIRED]: if status == "PASS_REGEN_OPTIMISATION_MASTER_GATE_CONVERGED":
+  line 44 [LOCAL_STATUS_STATE_MACHINE_OWNER_REQUIRED]: if status == "PASS_REGEN_OPTIMISATION_MASTER_GATE_CONVERGED":
+  line 54 [LOCAL_STATUS_STATE_MACHINE_OWNER_REQUIRED]: elif status == "WARN_REGEN_OPTIMISATION_MASTER_GATE_NEXT_GENERATION_READY":
+  line 54 [LOCAL_STATUS_STATE_MACHINE_OWNER_REQUIRED]: elif status == "WARN_REGEN_OPTIMISATION_MASTER_GATE_NEXT_GENERATION_READY":
+  line 66 [LOCAL_STATUS_STATE_MACHINE_OWNER_REQUIRED]: elif status == "WARN_REGEN_OPTIMISATION_MASTER_GATE_WAITING":
+  line 66 [LOCAL_STATUS_STATE_MACHINE_OWNER_REQUIRED]: elif status == "WARN_REGEN_OPTIMISATION_MASTER_GATE_WAITING":
+
+leaf_qt/regen_optimisation_narrative_master_gate.py
+  line 58 [LOCAL_STATUS_STATE_MACHINE_OWNER_REQUIRED]: if status == "PASS_REGEN_OPTIMISATION_NARRATIVE_MASTER_GATE":
+  line 58 [LOCAL_STATUS_STATE_MACHINE_OWNER_REQUIRED]: if status == "PASS_REGEN_OPTIMISATION_NARRATIVE_MASTER_GATE":
+
+leaf_qt/regen_optimisation_proof_system.py
+  line 67 [NO_LITERAL_RESCAN_REQUIRED]: if status == PASS_STATUS:
+
+leaf_qt/regen_optimisation_viewer_master_gate.py
+  line 17 [RESULTS_PAYLOAD_EXACT_STATUS_OWNER_REQUIRED]: if results.get("regen_optimisation_viewer_completion_audit_status") != "PASS_REGEN_OPTIMISATION_VIEWER_BACKEND_PHASE_15A":
+  line 17 [RESULTS_PAYLOAD_EXACT_STATUS_OWNER_REQUIRED]: if results.get("regen_optimisation_viewer_completion_audit_status") != "PASS_REGEN_OPTIMISATION_VIEWER_BACKEND_PHASE_15A":
+
+leaf_qt/regen_runtime_candidate_evaluation_master_gate.py
+  line 17 [RESULTS_PAYLOAD_EXACT_STATUS_OWNER_REQUIRED]: if results.get("regen_runtime_candidate_evaluation_completion_audit_status") != "PASS_REGEN_RUNTIME_CANDIDATE_EVALUATION_PHASE_14B":
+  line 17 [RESULTS_PAYLOAD_EXACT_STATUS_OWNER_REQUIRED]: if results.get("regen_runtime_candidate_evaluation_completion_audit_status") != "PASS_REGEN_RUNTIME_CANDIDATE_EVALUATION_PHASE_14B":
+
+leaf_qt/regen_runtime_convergence_master_gate.py
+  line 17 [RESULTS_PAYLOAD_EXACT_STATUS_OWNER_REQUIRED]: if results.get("regen_runtime_convergence_completion_audit_status") != "PASS_REGEN_RUNTIME_CONVERGENCE_PHASE_14E":
+  line 17 [RESULTS_PAYLOAD_EXACT_STATUS_OWNER_REQUIRED]: if results.get("regen_runtime_convergence_completion_audit_status") != "PASS_REGEN_RUNTIME_CONVERGENCE_PHASE_14E":
+
+leaf_qt/regen_runtime_evolution_master_gate.py
+  line 17 [RESULTS_PAYLOAD_EXACT_STATUS_OWNER_REQUIRED]: if results.get("regen_runtime_evolution_completion_audit_status") != "PASS_REGEN_RUNTIME_EVOLUTION_PHASE_14D":
+  line 17 [RESULTS_PAYLOAD_EXACT_STATUS_OWNER_REQUIRED]: if results.get("regen_runtime_evolution_completion_audit_status") != "PASS_REGEN_RUNTIME_EVOLUTION_PHASE_14D":
+
+leaf_qt/regen_runtime_selection_master_gate.py
+  line 17 [RESULTS_PAYLOAD_EXACT_STATUS_OWNER_REQUIRED]: if results.get("regen_runtime_selection_completion_audit_status") != "PASS_REGEN_RUNTIME_SELECTION_PHASE_14C":
+  line 17 [RESULTS_PAYLOAD_EXACT_STATUS_OWNER_REQUIRED]: if results.get("regen_runtime_selection_completion_audit_status") != "PASS_REGEN_RUNTIME_SELECTION_PHASE_14C":
+
+leaf_qt/regen_station_viewer_integration.py
+  line 64 [NO_LITERAL_RESCAN_REQUIRED]: if status == PASS_STATUS:
+
+leaf_qt/regen_system_signoff_master_gate.py
+  line 17 [RESULTS_PAYLOAD_EXACT_STATUS_OWNER_REQUIRED]: if results.get("regen_system_signoff_completion_audit_status") != "PASS_REGEN_SYSTEM_SIGNOFF_AUDIT_PHASE_16E":
+  line 17 [RESULTS_PAYLOAD_EXACT_STATUS_OWNER_REQUIRED]: if results.get("regen_system_signoff_completion_audit_status") != "PASS_REGEN_SYSTEM_SIGNOFF_AUDIT_PHASE_16E":
+
+leaf_qt/regen_unified_ecosystem_master_gate.py
+  line 17 [RESULTS_PAYLOAD_EXACT_STATUS_OWNER_REQUIRED]: if results.get("regen_unified_ecosystem_completion_audit_status") != "PASS_REGEN_UNIFIED_ECOSYSTEM_REGISTRY_PHASE_16A":
+  line 17 [RESULTS_PAYLOAD_EXACT_STATUS_OWNER_REQUIRED]: if results.get("regen_unified_ecosystem_completion_audit_status") != "PASS_REGEN_UNIFIED_ECOSYSTEM_REGISTRY_PHASE_16A":
+
+leaf_qt/regen_unified_validation_integration_master_gate.py
+  line 143 [RESULTS_PAYLOAD_EXACT_STATUS_OWNER_REQUIRED]: if results.get("regen_unified_validation_integration_completion_audit_status") != "PASS_REGEN_UNIFIED_VALIDATION_INTEGRATION_PHASE_16D":
+  line 143 [RESULTS_PAYLOAD_EXACT_STATUS_OWNER_REQUIRED]: if results.get("regen_unified_validation_integration_completion_audit_status") != "PASS_REGEN_UNIFIED_VALIDATION_INTEGRATION_PHASE_16D":
+
+leaf_qt/regen_unified_viewer_integration_master_gate.py
+  line 17 [RESULTS_PAYLOAD_EXACT_STATUS_OWNER_REQUIRED]: if results.get("regen_unified_viewer_integration_completion_audit_status") != "PASS_REGEN_UNIFIED_VIEWER_INTEGRATION_PHASE_16B":
+  line 17 [RESULTS_PAYLOAD_EXACT_STATUS_OWNER_REQUIRED]: if results.get("regen_unified_viewer_integration_completion_audit_status") != "PASS_REGEN_UNIFIED_VIEWER_INTEGRATION_PHASE_16B":
+
+leaf_qt/regen_validation_master_gate.py
+  line 69 [LOCAL_STATUS_STATE_MACHINE_OWNER_REQUIRED]: if status == "PASS_REGEN_VALIDATION_MASTER_GATE":
+  line 69 [LOCAL_STATUS_STATE_MACHINE_OWNER_REQUIRED]: if status == "PASS_REGEN_VALIDATION_MASTER_GATE":
+
+leaf_qt/regen_viewer_completion_gate.py
+  line 70 [NO_LITERAL_RESCAN_REQUIRED]: if status == PASS_STATUS:
+
+leaf_qt/regen_viewer_data_adapter.py
+  line 54 [NO_LITERAL_RESCAN_REQUIRED]: if status == PASS_STATUS:
+
+leaf_qt/regen_viewer_gui_runtime_acceptance_gate_phase_16q28.py
+  line 81 [RESULTS_PAYLOAD_EXACT_STATUS_OWNER_REQUIRED]: if results.get("phase_16q24_real_button_toggle_status") != "PASS_REGEN_VIEWER_REAL_BUTTON_TOGGLE_OWNER_PHASE_16Q24":
+  line 81 [RESULTS_PAYLOAD_EXACT_STATUS_OWNER_REQUIRED]: if results.get("phase_16q24_real_button_toggle_status") != "PASS_REGEN_VIEWER_REAL_BUTTON_TOGGLE_OWNER_PHASE_16Q24":
+  line 84 [RESULTS_PAYLOAD_EXACT_STATUS_OWNER_REQUIRED]: if results.get("phase_16q27_toggle_ux_status") != "PASS_REGEN_VIEWER_TOGGLE_UX_CLEANUP_PHASE_16Q27":
+  line 84 [RESULTS_PAYLOAD_EXACT_STATUS_OWNER_REQUIRED]: if results.get("phase_16q27_toggle_ux_status") != "PASS_REGEN_VIEWER_TOGGLE_UX_CLEANUP_PHASE_16Q27":
+
+leaf_qt/regen_viewer_navigation_system.py
+  line 76 [NO_LITERAL_RESCAN_REQUIRED]: if status == PASS_STATUS:
+
+leaf_qt/regen_viewer_ownership_architecture.py
+  line 82 [NO_LITERAL_RESCAN_REQUIRED]: if status == PASS_STATUS:
+
+leaf_qt/regen_viewer_report_renderer.py
+  line 85 [NO_LITERAL_RESCAN_REQUIRED]: if status == PASS_STATUS:
+
+json=/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u171e_exact_status_code_ownership_manifest.json
+text=/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u171e_exact_status_code_ownership_manifest.txt

@@ -1,0 +1,55 @@
+LEAF PHASE 16U.38
+REGEN CROSS SECTION VIEWER PRESENTATION LAYER PATCH
+===================================================
+
+STATUS: PASS_PHASE_16U38_REGEN_CROSS_SECTION_VIEWER_PRESENTATION_LAYER_PATCH
+Generated: 2026-06-28T02:28:45
+
+FEATURE
+-------
+First wider report-owner/UI presentation-layer rollout patch.
+
+TARGET
+------
+leaf_qt/regen_cross_section_viewer.py
+
+PATCH ACCOUNTING
+----------------
+Changed: False
+Applied: 0
+Already applied: 12
+Missing expected anchors: 0
+
+APPLIED
+-------
+
+ALREADY APPLIED
+---------------
+insert_shared_status_presentation_import_and_helpers
+migrate_channel_topology_warning_colour_status_interpretation
+migrate_source_data_checklist_marker_presentation
+migrate_status_strip_fail_detection
+migrate_status_strip_pass_detection
+migrate_recommended_geometry_blocked_status_detection
+migrate_geometry_decision_blocked_status_detection
+migrate_recommended_available_blocked_status_detection
+migrate_automatic_available_blocked_status_detection
+migrate_runtime_signoff_label_marker_presentation
+migrate_hard_failure_status_collection
+migrate_warning_status_collection
+
+MISSING
+-------
+
+COMPILE
+-------
+Compiled: True
+Compile error: 
+
+COMPLETION NOTICE
+-----------------
+PHASE 16U.38 COMPLETE.
+
+NEXT FEATURE
+------------
+PHASE 16U.39 — FIRST REPORT OWNER PRESENTATION LAYER ROLLOUT REGRESSION

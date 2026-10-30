@@ -1,0 +1,66 @@
+{
+  "phase": "16U.33",
+  "status": "PASS_PHASE_16U33_STATUS_PRESENTATION_LAYER_REGRESSION",
+  "generated": "2026-06-28T02:06:37",
+  "completion_status": "PASS_PHASE_16U32_SHARED_STATUS_PRESENTATION_LAYER",
+  "missing_api_count": 0,
+  "missing_api": [],
+  "case_failure_count": 0,
+  "case_failures": [],
+  "filter_failure_count": 0,
+  "filter_failures": [],
+  "forbidden_imports_present": [],
+  "compile_results": [
+    {
+      "file": "leaf_qt/status_presentation.py",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "project_maintenance/test_status_presentation_phase_16u32.py",
+      "passed": true,
+      "error": ""
+    }
+  ],
+  "test_returncode": 0,
+  "test_stdout": "PASS_PHASE_16U32_SHARED_STATUS_PRESENTATION_LAYER\n",
+  "test_stderr": "",
+  "checks": [
+    {
+      "name": "phase_16u32_completion_passed",
+      "passed": true,
+      "detail": "PASS_PHASE_16U32_SHARED_STATUS_PRESENTATION_LAYER"
+    },
+    {
+      "name": "source_and_test_compile",
+      "passed": true,
+      "detail": "2/2 compiled"
+    },
+    {
+      "name": "public_api_present",
+      "passed": true,
+      "detail": "0 missing"
+    },
+    {
+      "name": "regression_cases_passed",
+      "passed": true,
+      "detail": "0 failures"
+    },
+    {
+      "name": "filter_cases_passed",
+      "passed": true,
+      "detail": "0 failures"
+    },
+    {
+      "name": "unit_test_passed",
+      "passed": true,
+      "detail": "returncode=0"
+    },
+    {
+      "name": "ui_dependency_absent",
+      "passed": true,
+      "detail": "0 forbidden UI imports"
+    }
+  ],
+  "phase_16u33_status_presentation_layer_regression_complete": true
+}

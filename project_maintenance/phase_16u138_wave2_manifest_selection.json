@@ -1,0 +1,367 @@
+{
+  "phase": "16U.138",
+  "passed": true,
+  "wave_id": "16U-WAVE2",
+  "wave_name": "Candidate blueprint, creation, and generation presentation migration",
+  "selected_count": 12,
+  "selected_files": [
+    "regen_candidate_blueprint_completion_audit.py",
+    "regen_candidate_blueprint_generation_input_gate.py",
+    "regen_candidate_blueprint_mutation_validation.py",
+    "regen_candidate_blueprint_optimisation_completion_audit.py",
+    "regen_candidate_blueprint_population_completion_audit.py",
+    "regen_candidate_creation_completion_audit.py",
+    "regen_candidate_creation_input_audit.py",
+    "regen_candidate_creation_registration_owner.py",
+    "regen_candidate_creation_session_owner.py",
+    "regen_candidate_generation_completion_audit.py",
+    "regen_candidate_generation_input_gate.py",
+    "regen_candidate_generation_registration_owner.py"
+  ],
+  "locked_baseline": 68,
+  "closed_targets_before_wave": 27,
+  "remaining_candidates_before_wave": 41,
+  "expected_closed_after_wave_audit": 39,
+  "expected_remaining_after_wave_audit": 29,
+  "acceptance_contract": {
+    "backup_required_for_each_file": true,
+    "pre_hash_required_for_each_file": true,
+    "post_hash_required_for_each_file": true,
+    "compile_required_for_each_file": true,
+    "shared_layer_required_for_each_file": true,
+    "legacy_inline_status_logic_removed_for_each_file": true,
+    "rollback_available_for_each_file": true,
+    "wave_rejected_if_any_file_fails": true,
+    "locked_baseline_audit_required_after_wave": true,
+    "migration_certificate_required": true
+  },
+  "manifest": [
+    {
+      "file": "regen_candidate_blueprint_completion_audit.py",
+      "path": "leaf_qt/regen_candidate_blueprint_completion_audit.py",
+      "exists": true,
+      "sha256_before": "a786cbd13636e0e6c668029d117715ed6d50be8787f655645d63c96f67c240de",
+      "compile_before": true,
+      "compile_error": null,
+      "has_LegacyCompatibilityProducer": false,
+      "has_status_severity": false,
+      "legacy_hit_count": 1,
+      "legacy_hits": [
+        {
+          "line": 179,
+          "pattern": "\"PASS\"\\s+if\\s+.+?\\s+else\\s+\"FAIL\"",
+          "content": "marker = \"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ],
+      "wave": "16U-WAVE2",
+      "reason": "candidate blueprint/creation/generation family with common status presentation migration pattern",
+      "expected_edits": [
+        "ensure LegacyCompatibilityProducer import/fallback",
+        "ensure status_severity availability",
+        "replace inline PASS/WARN/FAIL marker/label ternaries",
+        "no solver behaviour changes",
+        "no public API changes"
+      ]
+    },
+    {
+      "file": "regen_candidate_blueprint_generation_input_gate.py",
+      "path": "leaf_qt/regen_candidate_blueprint_generation_input_gate.py",
+      "exists": true,
+      "sha256_before": "0712065fd905b85f920984fe045cd40046ab493a4ae85444a1306644a7e38eab",
+      "compile_before": true,
+      "compile_error": null,
+      "has_LegacyCompatibilityProducer": false,
+      "has_status_severity": false,
+      "legacy_hit_count": 1,
+      "legacy_hits": [
+        {
+          "line": 225,
+          "pattern": "\"PASS\"\\s+if\\s+.+?\\s+else\\s+\"FAIL\"",
+          "content": "marker = \"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ],
+      "wave": "16U-WAVE2",
+      "reason": "candidate blueprint/creation/generation family with common status presentation migration pattern",
+      "expected_edits": [
+        "ensure LegacyCompatibilityProducer import/fallback",
+        "ensure status_severity availability",
+        "replace inline PASS/WARN/FAIL marker/label ternaries",
+        "no solver behaviour changes",
+        "no public API changes"
+      ]
+    },
+    {
+      "file": "regen_candidate_blueprint_mutation_validation.py",
+      "path": "leaf_qt/regen_candidate_blueprint_mutation_validation.py",
+      "exists": true,
+      "sha256_before": "01c17b25d5a510ae92aff26f2f4384784758a176171a8633399a4235aa2cc5a0",
+      "compile_before": true,
+      "compile_error": null,
+      "has_LegacyCompatibilityProducer": false,
+      "has_status_severity": false,
+      "legacy_hit_count": 1,
+      "legacy_hits": [
+        {
+          "line": 243,
+          "pattern": "\"PASS\"\\s+if\\s+.+?\\s+else\\s+\"FAIL\"",
+          "content": "marker = \"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ],
+      "wave": "16U-WAVE2",
+      "reason": "candidate blueprint/creation/generation family with common status presentation migration pattern",
+      "expected_edits": [
+        "ensure LegacyCompatibilityProducer import/fallback",
+        "ensure status_severity availability",
+        "replace inline PASS/WARN/FAIL marker/label ternaries",
+        "no solver behaviour changes",
+        "no public API changes"
+      ]
+    },
+    {
+      "file": "regen_candidate_blueprint_optimisation_completion_audit.py",
+      "path": "leaf_qt/regen_candidate_blueprint_optimisation_completion_audit.py",
+      "exists": true,
+      "sha256_before": "b71c8156b5eb4f855c9a41656027aff284c48df63358fd65445f4bfcf702741f",
+      "compile_before": true,
+      "compile_error": null,
+      "has_LegacyCompatibilityProducer": false,
+      "has_status_severity": false,
+      "legacy_hit_count": 1,
+      "legacy_hits": [
+        {
+          "line": 215,
+          "pattern": "\"PASS\"\\s+if\\s+.+?\\s+else\\s+\"FAIL\"",
+          "content": "marker = \"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ],
+      "wave": "16U-WAVE2",
+      "reason": "candidate blueprint/creation/generation family with common status presentation migration pattern",
+      "expected_edits": [
+        "ensure LegacyCompatibilityProducer import/fallback",
+        "ensure status_severity availability",
+        "replace inline PASS/WARN/FAIL marker/label ternaries",
+        "no solver behaviour changes",
+        "no public API changes"
+      ]
+    },
+    {
+      "file": "regen_candidate_blueprint_population_completion_audit.py",
+      "path": "leaf_qt/regen_candidate_blueprint_population_completion_audit.py",
+      "exists": true,
+      "sha256_before": "ce016187bbd897ff49b2fb2c37fe0dade6978df4ebdc67e35ccb9eed9a97541b",
+      "compile_before": true,
+      "compile_error": null,
+      "has_LegacyCompatibilityProducer": false,
+      "has_status_severity": false,
+      "legacy_hit_count": 1,
+      "legacy_hits": [
+        {
+          "line": 238,
+          "pattern": "\"PASS\"\\s+if\\s+.+?\\s+else\\s+\"FAIL\"",
+          "content": "marker = \"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ],
+      "wave": "16U-WAVE2",
+      "reason": "candidate blueprint/creation/generation family with common status presentation migration pattern",
+      "expected_edits": [
+        "ensure LegacyCompatibilityProducer import/fallback",
+        "ensure status_severity availability",
+        "replace inline PASS/WARN/FAIL marker/label ternaries",
+        "no solver behaviour changes",
+        "no public API changes"
+      ]
+    },
+    {
+      "file": "regen_candidate_creation_completion_audit.py",
+      "path": "leaf_qt/regen_candidate_creation_completion_audit.py",
+      "exists": true,
+      "sha256_before": "c310aaad98c86da2e278527ced190edd3e1f779f47d48be652ae64e3eb920ae2",
+      "compile_before": true,
+      "compile_error": null,
+      "has_LegacyCompatibilityProducer": false,
+      "has_status_severity": false,
+      "legacy_hit_count": 1,
+      "legacy_hits": [
+        {
+          "line": 201,
+          "pattern": "\"PASS\"\\s+if\\s+.+?\\s+else\\s+\"FAIL\"",
+          "content": "marker = \"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ],
+      "wave": "16U-WAVE2",
+      "reason": "candidate blueprint/creation/generation family with common status presentation migration pattern",
+      "expected_edits": [
+        "ensure LegacyCompatibilityProducer import/fallback",
+        "ensure status_severity availability",
+        "replace inline PASS/WARN/FAIL marker/label ternaries",
+        "no solver behaviour changes",
+        "no public API changes"
+      ]
+    },
+    {
+      "file": "regen_candidate_creation_input_audit.py",
+      "path": "leaf_qt/regen_candidate_creation_input_audit.py",
+      "exists": true,
+      "sha256_before": "db8476050a4864022274143c41f41811185ed22a587dd5769e70dd0622fcb076",
+      "compile_before": true,
+      "compile_error": null,
+      "has_LegacyCompatibilityProducer": false,
+      "has_status_severity": false,
+      "legacy_hit_count": 1,
+      "legacy_hits": [
+        {
+          "line": 213,
+          "pattern": "\"PASS\"\\s+if\\s+.+?\\s+else\\s+\"FAIL\"",
+          "content": "marker = \"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ],
+      "wave": "16U-WAVE2",
+      "reason": "candidate blueprint/creation/generation family with common status presentation migration pattern",
+      "expected_edits": [
+        "ensure LegacyCompatibilityProducer import/fallback",
+        "ensure status_severity availability",
+        "replace inline PASS/WARN/FAIL marker/label ternaries",
+        "no solver behaviour changes",
+        "no public API changes"
+      ]
+    },
+    {
+      "file": "regen_candidate_creation_registration_owner.py",
+      "path": "leaf_qt/regen_candidate_creation_registration_owner.py",
+      "exists": true,
+      "sha256_before": "01552aa6b7f655cfa32281f14f7b412b7f5e068f93a4b1797669d30502645f23",
+      "compile_before": true,
+      "compile_error": null,
+      "has_LegacyCompatibilityProducer": false,
+      "has_status_severity": false,
+      "legacy_hit_count": 1,
+      "legacy_hits": [
+        {
+          "line": 185,
+          "pattern": "\"PASS\"\\s+if\\s+.+?\\s+else\\s+\"FAIL\"",
+          "content": "marker = \"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ],
+      "wave": "16U-WAVE2",
+      "reason": "candidate blueprint/creation/generation family with common status presentation migration pattern",
+      "expected_edits": [
+        "ensure LegacyCompatibilityProducer import/fallback",
+        "ensure status_severity availability",
+        "replace inline PASS/WARN/FAIL marker/label ternaries",
+        "no solver behaviour changes",
+        "no public API changes"
+      ]
+    },
+    {
+      "file": "regen_candidate_creation_session_owner.py",
+      "path": "leaf_qt/regen_candidate_creation_session_owner.py",
+      "exists": true,
+      "sha256_before": "ca375ce532134b5d49d69f214fd88bfb62dc1e1bca7aeb42c169c42bfccd50ee",
+      "compile_before": true,
+      "compile_error": null,
+      "has_LegacyCompatibilityProducer": false,
+      "has_status_severity": false,
+      "legacy_hit_count": 1,
+      "legacy_hits": [
+        {
+          "line": 209,
+          "pattern": "\"PASS\"\\s+if\\s+.+?\\s+else\\s+\"FAIL\"",
+          "content": "marker = \"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ],
+      "wave": "16U-WAVE2",
+      "reason": "candidate blueprint/creation/generation family with common status presentation migration pattern",
+      "expected_edits": [
+        "ensure LegacyCompatibilityProducer import/fallback",
+        "ensure status_severity availability",
+        "replace inline PASS/WARN/FAIL marker/label ternaries",
+        "no solver behaviour changes",
+        "no public API changes"
+      ]
+    },
+    {
+      "file": "regen_candidate_generation_completion_audit.py",
+      "path": "leaf_qt/regen_candidate_generation_completion_audit.py",
+      "exists": true,
+      "sha256_before": "b2b14fca87a0dc4b491c8cbf04533c4e6175a6728844c5473fb8a001d834b920",
+      "compile_before": true,
+      "compile_error": null,
+      "has_LegacyCompatibilityProducer": false,
+      "has_status_severity": false,
+      "legacy_hit_count": 1,
+      "legacy_hits": [
+        {
+          "line": 192,
+          "pattern": "\"PASS\"\\s+if\\s+.+?\\s+else\\s+\"FAIL\"",
+          "content": "marker = \"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ],
+      "wave": "16U-WAVE2",
+      "reason": "candidate blueprint/creation/generation family with common status presentation migration pattern",
+      "expected_edits": [
+        "ensure LegacyCompatibilityProducer import/fallback",
+        "ensure status_severity availability",
+        "replace inline PASS/WARN/FAIL marker/label ternaries",
+        "no solver behaviour changes",
+        "no public API changes"
+      ]
+    },
+    {
+      "file": "regen_candidate_generation_input_gate.py",
+      "path": "leaf_qt/regen_candidate_generation_input_gate.py",
+      "exists": true,
+      "sha256_before": "ea07eb20925150bd6b5ea2fba01798b79b7edd6837ccb2c875a3a29514c03805",
+      "compile_before": true,
+      "compile_error": null,
+      "has_LegacyCompatibilityProducer": false,
+      "has_status_severity": false,
+      "legacy_hit_count": 1,
+      "legacy_hits": [
+        {
+          "line": 168,
+          "pattern": "\"PASS\"\\s+if\\s+.+?\\s+else\\s+\"FAIL\"",
+          "content": "marker = \"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ],
+      "wave": "16U-WAVE2",
+      "reason": "candidate blueprint/creation/generation family with common status presentation migration pattern",
+      "expected_edits": [
+        "ensure LegacyCompatibilityProducer import/fallback",
+        "ensure status_severity availability",
+        "replace inline PASS/WARN/FAIL marker/label ternaries",
+        "no solver behaviour changes",
+        "no public API changes"
+      ]
+    },
+    {
+      "file": "regen_candidate_generation_registration_owner.py",
+      "path": "leaf_qt/regen_candidate_generation_registration_owner.py",
+      "exists": true,
+      "sha256_before": "7c76fbb41c751a22b5a8c6f4506f0008d3736e2a1183b0222dda9f292488d334",
+      "compile_before": true,
+      "compile_error": null,
+      "has_LegacyCompatibilityProducer": false,
+      "has_status_severity": false,
+      "legacy_hit_count": 1,
+      "legacy_hits": [
+        {
+          "line": 178,
+          "pattern": "\"PASS\"\\s+if\\s+.+?\\s+else\\s+\"FAIL\"",
+          "content": "marker = \"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ],
+      "wave": "16U-WAVE2",
+      "reason": "candidate blueprint/creation/generation family with common status presentation migration pattern",
+      "expected_edits": [
+        "ensure LegacyCompatibilityProducer import/fallback",
+        "ensure status_severity availability",
+        "replace inline PASS/WARN/FAIL marker/label ternaries",
+        "no solver behaviour changes",
+        "no public API changes"
+      ]
+    }
+  ],
+  "phase_16u138_wave2_manifest_selection_complete": true,
+  "next_phase": "16U.139 \u2014 Wave 2 Transactional Patch",
+  "failures": []
+}

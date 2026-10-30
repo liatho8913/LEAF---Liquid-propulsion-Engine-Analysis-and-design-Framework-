@@ -1,0 +1,67 @@
+{
+  "phase": "16U.39",
+  "status": "PASS_PHASE_16U39_REGEN_CROSS_SECTION_VIEWER_PRESENTATION_LAYER_REGRESSION",
+  "generated": "2026-06-28T02:28:45",
+  "target": "leaf_qt/regen_cross_section_viewer.py",
+  "checks": [
+    {
+      "name": "production_target_exists",
+      "passed": true,
+      "detail": "leaf_qt/regen_cross_section_viewer.py"
+    },
+    {
+      "name": "upload_duplicate_exists_but_not_targeted",
+      "passed": true,
+      "detail": "LEAF_UPLOAD/leaf_qt/regen_cross_section_viewer.py"
+    },
+    {
+      "name": "phase_16u38_patch_json_exists",
+      "passed": true,
+      "detail": "project_maintenance/regen_cross_section_viewer_presentation_layer_patch_phase_16u38.json"
+    },
+    {
+      "name": "production_target_compiles",
+      "passed": true,
+      "detail": "compile pass"
+    },
+    {
+      "name": "shared_presentation_tokens_present",
+      "passed": true,
+      "detail": "all tokens present"
+    },
+    {
+      "name": "legacy_patterns_not_reintroduced",
+      "passed": true,
+      "detail": "0 forbidden pattern(s)"
+    },
+    {
+      "name": "phase_16u38_patch_completed",
+      "passed": true,
+      "detail": "PASS_PHASE_16U38_REGEN_CROSS_SECTION_VIEWER_PRESENTATION_LAYER_PATCH"
+    },
+    {
+      "name": "shared_status_compatibility_api_behaves",
+      "passed": true,
+      "detail": "True->PASS, False->FAIL"
+    },
+    {
+      "name": "production_viewer_imports",
+      "passed": true,
+      "detail": "module import pass"
+    },
+    {
+      "name": "viewer_helper_behaviour_regression",
+      "passed": true,
+      "detail": "severity_failures=[]; marker_pass=True"
+    },
+    {
+      "name": "leaf_upload_duplicate_not_patched",
+      "passed": true,
+      "detail": "duplicate untouched"
+    }
+  ],
+  "missing_tokens": [],
+  "forbidden_hits": [],
+  "phase_16u39_regen_cross_section_viewer_presentation_layer_regression_complete": true,
+  "next_phase": "16U.40 \u2014 First Report Owner Presentation Layer Rollout Closure Gate"
+}

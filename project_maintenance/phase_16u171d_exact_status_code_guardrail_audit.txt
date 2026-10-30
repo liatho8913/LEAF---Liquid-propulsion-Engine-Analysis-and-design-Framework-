@@ -1,0 +1,300 @@
+LEAF PHASE 16U.171D
+EXACT STATUS CODE GUARDRAIL AUDIT
+===========================================
+status=PASS_PHASE_16U171D_EXACT_STATUS_CODE_GUARDRAIL_AUDIT
+audited_count=71
+
+GUARDRAIL COUNTS
+-----------------
+EXACT_STATUS_CODE_LOGIC_REQUIRED=52
+NO_STATUS_CODE_LITERAL=19
+
+ENTRIES
+-------
+
+leaf_qt/engine_solver.py:5323 [EXACT_STATUS_CODE_LOGIC_REQUIRED]
+status_literals=['FAIL_BUT_IMPROVED']
+statement=elif status == "FAIL_BUT_IMPROVED":
+
+leaf_qt/engine_solver.py:5323 [EXACT_STATUS_CODE_LOGIC_REQUIRED]
+status_literals=['FAIL_BUT_IMPROVED']
+statement=elif status == "FAIL_BUT_IMPROVED":
+
+leaf_qt/engine_solver.py:7746 [EXACT_STATUS_CODE_LOGIC_REQUIRED]
+status_literals=['FAIL_THERMAL_STRESS']
+statement=if results.get("explicit_coating_liner_status") == "FAIL_THERMAL_STRESS":
+
+leaf_qt/engine_solver.py:7746 [EXACT_STATUS_CODE_LOGIC_REQUIRED]
+status_literals=['FAIL_THERMAL_STRESS']
+statement=if results.get("explicit_coating_liner_status") == "FAIL_THERMAL_STRESS":
+
+leaf_qt/engine_solver.py:7767 [EXACT_STATUS_CODE_LOGIC_REQUIRED]
+status_literals=['FAIL_THERMAL_STRESS']
+statement=if results.get("explicit_coating_liner_status") == "FAIL_THERMAL_STRESS":
+
+leaf_qt/engine_solver.py:7767 [EXACT_STATUS_CODE_LOGIC_REQUIRED]
+status_literals=['FAIL_THERMAL_STRESS']
+statement=if results.get("explicit_coating_liner_status") == "FAIL_THERMAL_STRESS":
+
+leaf_qt/regen_convergence_master_gate.py:44 [EXACT_STATUS_CODE_LOGIC_REQUIRED]
+status_literals=['PASS_REGEN_CONVERGENCE_MASTER_GATE_CONVERGED']
+statement=if status == "PASS_REGEN_CONVERGENCE_MASTER_GATE_CONVERGED":
+
+leaf_qt/regen_convergence_master_gate.py:44 [EXACT_STATUS_CODE_LOGIC_REQUIRED]
+status_literals=['PASS_REGEN_CONVERGENCE_MASTER_GATE_CONVERGED']
+statement=if status == "PASS_REGEN_CONVERGENCE_MASTER_GATE_CONVERGED":
+
+leaf_qt/regen_convergence_master_gate.py:54 [EXACT_STATUS_CODE_LOGIC_REQUIRED]
+status_literals=['WARN_REGEN_CONVERGENCE_MASTER_GATE_RUNNING']
+statement=elif status == "WARN_REGEN_CONVERGENCE_MASTER_GATE_RUNNING":
+
+leaf_qt/regen_convergence_master_gate.py:54 [EXACT_STATUS_CODE_LOGIC_REQUIRED]
+status_literals=['WARN_REGEN_CONVERGENCE_MASTER_GATE_RUNNING']
+statement=elif status == "WARN_REGEN_CONVERGENCE_MASTER_GATE_RUNNING":
+
+leaf_qt/regen_convergence_master_gate.py:66 [EXACT_STATUS_CODE_LOGIC_REQUIRED]
+status_literals=['WARN_REGEN_CONVERGENCE_MASTER_GATE_MAX_GENERATIONS']
+statement=elif status == "WARN_REGEN_CONVERGENCE_MASTER_GATE_MAX_GENERATIONS":
+
+leaf_qt/regen_convergence_master_gate.py:66 [EXACT_STATUS_CODE_LOGIC_REQUIRED]
+status_literals=['WARN_REGEN_CONVERGENCE_MASTER_GATE_MAX_GENERATIONS']
+statement=elif status == "WARN_REGEN_CONVERGENCE_MASTER_GATE_MAX_GENERATIONS":
+
+leaf_qt/regen_optimisation_controller_master_gate.py:44 [EXACT_STATUS_CODE_LOGIC_REQUIRED]
+status_literals=['PASS_REGEN_OPTIMISATION_MASTER_GATE_CONVERGED']
+statement=if status == "PASS_REGEN_OPTIMISATION_MASTER_GATE_CONVERGED":
+
+leaf_qt/regen_optimisation_controller_master_gate.py:44 [EXACT_STATUS_CODE_LOGIC_REQUIRED]
+status_literals=['PASS_REGEN_OPTIMISATION_MASTER_GATE_CONVERGED']
+statement=if status == "PASS_REGEN_OPTIMISATION_MASTER_GATE_CONVERGED":
+
+leaf_qt/regen_optimisation_controller_master_gate.py:54 [EXACT_STATUS_CODE_LOGIC_REQUIRED]
+status_literals=['WARN_REGEN_OPTIMISATION_MASTER_GATE_NEXT_GENERATION_READY']
+statement=elif status == "WARN_REGEN_OPTIMISATION_MASTER_GATE_NEXT_GENERATION_READY":
+
+leaf_qt/regen_optimisation_controller_master_gate.py:54 [EXACT_STATUS_CODE_LOGIC_REQUIRED]
+status_literals=['WARN_REGEN_OPTIMISATION_MASTER_GATE_NEXT_GENERATION_READY']
+statement=elif status == "WARN_REGEN_OPTIMISATION_MASTER_GATE_NEXT_GENERATION_READY":
+
+leaf_qt/regen_optimisation_controller_master_gate.py:66 [EXACT_STATUS_CODE_LOGIC_REQUIRED]
+status_literals=['WARN_REGEN_OPTIMISATION_MASTER_GATE_WAITING']
+statement=elif status == "WARN_REGEN_OPTIMISATION_MASTER_GATE_WAITING":
+
+leaf_qt/regen_optimisation_controller_master_gate.py:66 [EXACT_STATUS_CODE_LOGIC_REQUIRED]
+status_literals=['WARN_REGEN_OPTIMISATION_MASTER_GATE_WAITING']
+statement=elif status == "WARN_REGEN_OPTIMISATION_MASTER_GATE_WAITING":
+
+leaf_qt/regen_viewer_gui_runtime_acceptance_gate_phase_16q28.py:81 [EXACT_STATUS_CODE_LOGIC_REQUIRED]
+status_literals=['PASS_REGEN_VIEWER_REAL_BUTTON_TOGGLE_OWNER_PHASE_16Q24']
+statement=if results.get("phase_16q24_real_button_toggle_status") != "PASS_REGEN_VIEWER_REAL_BUTTON_TOGGLE_OWNER_PHASE_16Q24":
+
+leaf_qt/regen_viewer_gui_runtime_acceptance_gate_phase_16q28.py:81 [EXACT_STATUS_CODE_LOGIC_REQUIRED]
+status_literals=['PASS_REGEN_VIEWER_REAL_BUTTON_TOGGLE_OWNER_PHASE_16Q24']
+statement=if results.get("phase_16q24_real_button_toggle_status") != "PASS_REGEN_VIEWER_REAL_BUTTON_TOGGLE_OWNER_PHASE_16Q24":
+
+leaf_qt/regen_viewer_gui_runtime_acceptance_gate_phase_16q28.py:84 [EXACT_STATUS_CODE_LOGIC_REQUIRED]
+status_literals=['PASS_REGEN_VIEWER_TOGGLE_UX_CLEANUP_PHASE_16Q27']
+statement=if results.get("phase_16q27_toggle_ux_status") != "PASS_REGEN_VIEWER_TOGGLE_UX_CLEANUP_PHASE_16Q27":
+
+leaf_qt/regen_viewer_gui_runtime_acceptance_gate_phase_16q28.py:84 [EXACT_STATUS_CODE_LOGIC_REQUIRED]
+status_literals=['PASS_REGEN_VIEWER_TOGGLE_UX_CLEANUP_PHASE_16Q27']
+statement=if results.get("phase_16q27_toggle_ux_status") != "PASS_REGEN_VIEWER_TOGGLE_UX_CLEANUP_PHASE_16Q27":
+
+leaf_qt/foundation_verification_harness.py:123 [EXACT_STATUS_CODE_LOGIC_REQUIRED]
+status_literals=['PASS_FOUNDATION_VERIFICATION']
+statement=if status == "PASS_FOUNDATION_VERIFICATION" and failed_count == 0:
+
+leaf_qt/foundation_verification_harness.py:123 [EXACT_STATUS_CODE_LOGIC_REQUIRED]
+status_literals=['PASS_FOUNDATION_VERIFICATION']
+statement=if status == "PASS_FOUNDATION_VERIFICATION" and failed_count == 0:
+
+leaf_qt/regen_candidate_comparison_master_gate.py:17 [EXACT_STATUS_CODE_LOGIC_REQUIRED]
+status_literals=['PASS_REGEN_CANDIDATE_COMPARISON_VIEWER_BACKEND_PHASE_15B']
+statement=if results.get("regen_candidate_comparison_completion_audit_status") != "PASS_REGEN_CANDIDATE_COMPARISON_VIEWER_BACKEND_PHASE_15B":
+
+leaf_qt/regen_candidate_comparison_master_gate.py:17 [EXACT_STATUS_CODE_LOGIC_REQUIRED]
+status_literals=['PASS_REGEN_CANDIDATE_COMPARISON_VIEWER_BACKEND_PHASE_15B']
+statement=if results.get("regen_candidate_comparison_completion_audit_status") != "PASS_REGEN_CANDIDATE_COMPARISON_VIEWER_BACKEND_PHASE_15B":
+
+leaf_qt/regen_completion_master_gate.py:17 [EXACT_STATUS_CODE_LOGIC_REQUIRED]
+status_literals=['PASS_REGEN_COMPLETION_GATE_AUDIT_PHASE_16F']
+statement=if results.get("regen_completion_gate_completion_audit_status") != "PASS_REGEN_COMPLETION_GATE_AUDIT_PHASE_16F":
+
+leaf_qt/regen_completion_master_gate.py:17 [EXACT_STATUS_CODE_LOGIC_REQUIRED]
+status_literals=['PASS_REGEN_COMPLETION_GATE_AUDIT_PHASE_16F']
+statement=if results.get("regen_completion_gate_completion_audit_status") != "PASS_REGEN_COMPLETION_GATE_AUDIT_PHASE_16F":
+
+leaf_qt/regen_evolution_tree_master_gate.py:17 [EXACT_STATUS_CODE_LOGIC_REQUIRED]
+status_literals=['PASS_REGEN_EVOLUTION_TREE_BACKEND_PHASE_15C']
+statement=if results.get("regen_evolution_tree_completion_audit_status") != "PASS_REGEN_EVOLUTION_TREE_BACKEND_PHASE_15C":
+
+leaf_qt/regen_evolution_tree_master_gate.py:17 [EXACT_STATUS_CODE_LOGIC_REQUIRED]
+status_literals=['PASS_REGEN_EVOLUTION_TREE_BACKEND_PHASE_15C']
+statement=if results.get("regen_evolution_tree_completion_audit_status") != "PASS_REGEN_EVOLUTION_TREE_BACKEND_PHASE_15C":
+
+leaf_qt/regen_optimisation_narrative_master_gate.py:58 [EXACT_STATUS_CODE_LOGIC_REQUIRED]
+status_literals=['PASS_REGEN_OPTIMISATION_NARRATIVE_MASTER_GATE']
+statement=if status == "PASS_REGEN_OPTIMISATION_NARRATIVE_MASTER_GATE":
+
+leaf_qt/regen_optimisation_narrative_master_gate.py:58 [EXACT_STATUS_CODE_LOGIC_REQUIRED]
+status_literals=['PASS_REGEN_OPTIMISATION_NARRATIVE_MASTER_GATE']
+statement=if status == "PASS_REGEN_OPTIMISATION_NARRATIVE_MASTER_GATE":
+
+leaf_qt/regen_optimisation_viewer_master_gate.py:17 [EXACT_STATUS_CODE_LOGIC_REQUIRED]
+status_literals=['PASS_REGEN_OPTIMISATION_VIEWER_BACKEND_PHASE_15A']
+statement=if results.get("regen_optimisation_viewer_completion_audit_status") != "PASS_REGEN_OPTIMISATION_VIEWER_BACKEND_PHASE_15A":
+
+leaf_qt/regen_optimisation_viewer_master_gate.py:17 [EXACT_STATUS_CODE_LOGIC_REQUIRED]
+status_literals=['PASS_REGEN_OPTIMISATION_VIEWER_BACKEND_PHASE_15A']
+statement=if results.get("regen_optimisation_viewer_completion_audit_status") != "PASS_REGEN_OPTIMISATION_VIEWER_BACKEND_PHASE_15A":
+
+leaf_qt/regen_runtime_candidate_evaluation_master_gate.py:17 [EXACT_STATUS_CODE_LOGIC_REQUIRED]
+status_literals=['PASS_REGEN_RUNTIME_CANDIDATE_EVALUATION_PHASE_14B']
+statement=if results.get("regen_runtime_candidate_evaluation_completion_audit_status") != "PASS_REGEN_RUNTIME_CANDIDATE_EVALUATION_PHASE_14B":
+
+leaf_qt/regen_runtime_candidate_evaluation_master_gate.py:17 [EXACT_STATUS_CODE_LOGIC_REQUIRED]
+status_literals=['PASS_REGEN_RUNTIME_CANDIDATE_EVALUATION_PHASE_14B']
+statement=if results.get("regen_runtime_candidate_evaluation_completion_audit_status") != "PASS_REGEN_RUNTIME_CANDIDATE_EVALUATION_PHASE_14B":
+
+leaf_qt/regen_runtime_convergence_master_gate.py:17 [EXACT_STATUS_CODE_LOGIC_REQUIRED]
+status_literals=['PASS_REGEN_RUNTIME_CONVERGENCE_PHASE_14E']
+statement=if results.get("regen_runtime_convergence_completion_audit_status") != "PASS_REGEN_RUNTIME_CONVERGENCE_PHASE_14E":
+
+leaf_qt/regen_runtime_convergence_master_gate.py:17 [EXACT_STATUS_CODE_LOGIC_REQUIRED]
+status_literals=['PASS_REGEN_RUNTIME_CONVERGENCE_PHASE_14E']
+statement=if results.get("regen_runtime_convergence_completion_audit_status") != "PASS_REGEN_RUNTIME_CONVERGENCE_PHASE_14E":
+
+leaf_qt/regen_runtime_evolution_master_gate.py:17 [EXACT_STATUS_CODE_LOGIC_REQUIRED]
+status_literals=['PASS_REGEN_RUNTIME_EVOLUTION_PHASE_14D']
+statement=if results.get("regen_runtime_evolution_completion_audit_status") != "PASS_REGEN_RUNTIME_EVOLUTION_PHASE_14D":
+
+leaf_qt/regen_runtime_evolution_master_gate.py:17 [EXACT_STATUS_CODE_LOGIC_REQUIRED]
+status_literals=['PASS_REGEN_RUNTIME_EVOLUTION_PHASE_14D']
+statement=if results.get("regen_runtime_evolution_completion_audit_status") != "PASS_REGEN_RUNTIME_EVOLUTION_PHASE_14D":
+
+leaf_qt/regen_runtime_selection_master_gate.py:17 [EXACT_STATUS_CODE_LOGIC_REQUIRED]
+status_literals=['PASS_REGEN_RUNTIME_SELECTION_PHASE_14C']
+statement=if results.get("regen_runtime_selection_completion_audit_status") != "PASS_REGEN_RUNTIME_SELECTION_PHASE_14C":
+
+leaf_qt/regen_runtime_selection_master_gate.py:17 [EXACT_STATUS_CODE_LOGIC_REQUIRED]
+status_literals=['PASS_REGEN_RUNTIME_SELECTION_PHASE_14C']
+statement=if results.get("regen_runtime_selection_completion_audit_status") != "PASS_REGEN_RUNTIME_SELECTION_PHASE_14C":
+
+leaf_qt/regen_system_signoff_master_gate.py:17 [EXACT_STATUS_CODE_LOGIC_REQUIRED]
+status_literals=['PASS_REGEN_SYSTEM_SIGNOFF_AUDIT_PHASE_16E']
+statement=if results.get("regen_system_signoff_completion_audit_status") != "PASS_REGEN_SYSTEM_SIGNOFF_AUDIT_PHASE_16E":
+
+leaf_qt/regen_system_signoff_master_gate.py:17 [EXACT_STATUS_CODE_LOGIC_REQUIRED]
+status_literals=['PASS_REGEN_SYSTEM_SIGNOFF_AUDIT_PHASE_16E']
+statement=if results.get("regen_system_signoff_completion_audit_status") != "PASS_REGEN_SYSTEM_SIGNOFF_AUDIT_PHASE_16E":
+
+leaf_qt/regen_unified_ecosystem_master_gate.py:17 [EXACT_STATUS_CODE_LOGIC_REQUIRED]
+status_literals=['PASS_REGEN_UNIFIED_ECOSYSTEM_REGISTRY_PHASE_16A']
+statement=if results.get("regen_unified_ecosystem_completion_audit_status") != "PASS_REGEN_UNIFIED_ECOSYSTEM_REGISTRY_PHASE_16A":
+
+leaf_qt/regen_unified_ecosystem_master_gate.py:17 [EXACT_STATUS_CODE_LOGIC_REQUIRED]
+status_literals=['PASS_REGEN_UNIFIED_ECOSYSTEM_REGISTRY_PHASE_16A']
+statement=if results.get("regen_unified_ecosystem_completion_audit_status") != "PASS_REGEN_UNIFIED_ECOSYSTEM_REGISTRY_PHASE_16A":
+
+leaf_qt/regen_unified_validation_integration_master_gate.py:143 [EXACT_STATUS_CODE_LOGIC_REQUIRED]
+status_literals=['PASS_REGEN_UNIFIED_VALIDATION_INTEGRATION_PHASE_16D']
+statement=if results.get("regen_unified_validation_integration_completion_audit_status") != "PASS_REGEN_UNIFIED_VALIDATION_INTEGRATION_PHASE_16D":
+
+leaf_qt/regen_unified_validation_integration_master_gate.py:143 [EXACT_STATUS_CODE_LOGIC_REQUIRED]
+status_literals=['PASS_REGEN_UNIFIED_VALIDATION_INTEGRATION_PHASE_16D']
+statement=if results.get("regen_unified_validation_integration_completion_audit_status") != "PASS_REGEN_UNIFIED_VALIDATION_INTEGRATION_PHASE_16D":
+
+leaf_qt/regen_unified_viewer_integration_master_gate.py:17 [EXACT_STATUS_CODE_LOGIC_REQUIRED]
+status_literals=['PASS_REGEN_UNIFIED_VIEWER_INTEGRATION_PHASE_16B']
+statement=if results.get("regen_unified_viewer_integration_completion_audit_status") != "PASS_REGEN_UNIFIED_VIEWER_INTEGRATION_PHASE_16B":
+
+leaf_qt/regen_unified_viewer_integration_master_gate.py:17 [EXACT_STATUS_CODE_LOGIC_REQUIRED]
+status_literals=['PASS_REGEN_UNIFIED_VIEWER_INTEGRATION_PHASE_16B']
+statement=if results.get("regen_unified_viewer_integration_completion_audit_status") != "PASS_REGEN_UNIFIED_VIEWER_INTEGRATION_PHASE_16B":
+
+leaf_qt/regen_validation_master_gate.py:69 [EXACT_STATUS_CODE_LOGIC_REQUIRED]
+status_literals=['PASS_REGEN_VALIDATION_MASTER_GATE']
+statement=if status == "PASS_REGEN_VALIDATION_MASTER_GATE":
+
+leaf_qt/regen_validation_master_gate.py:69 [EXACT_STATUS_CODE_LOGIC_REQUIRED]
+status_literals=['PASS_REGEN_VALIDATION_MASTER_GATE']
+statement=if status == "PASS_REGEN_VALIDATION_MASTER_GATE":
+
+leaf_qt/regen_acceptance_master_gate.py:64 [NO_STATUS_CODE_LITERAL]
+status_literals=[]
+statement=if status == PASS_STATUS:
+
+leaf_qt/regen_before_after_solver_comparison_report_owner.py:63 [NO_STATUS_CODE_LITERAL]
+status_literals=[]
+statement=if status == PASS_STATUS:
+
+leaf_qt/regen_candidate_acceptance_completion_gate.py:77 [NO_STATUS_CODE_LITERAL]
+status_literals=[]
+statement=if status == PASS_STATUS:
+
+leaf_qt/regen_cross_section_viewer_integration.py:71 [NO_STATUS_CODE_LITERAL]
+status_literals=[]
+statement=if status == PASS_STATUS:
+
+leaf_qt/regen_engineering_acceptance_report.py:41 [NO_STATUS_CODE_LITERAL]
+status_literals=[]
+statement=if status == PASS_STATUS:
+
+leaf_qt/regen_failure_root_cause_system.py:38 [NO_STATUS_CODE_LITERAL]
+status_literals=[]
+statement=if status == PASS_STATUS:
+
+leaf_qt/regen_final_completion_audit.py:53 [NO_STATUS_CODE_LITERAL]
+status_literals=[]
+statement=if status == PASS_STATUS:
+
+leaf_qt/regen_final_master_gate.py:61 [NO_STATUS_CODE_LITERAL]
+status_literals=[]
+statement=if status == PASS_STATUS:
+
+leaf_qt/regen_final_signoff_report.py:52 [NO_STATUS_CODE_LITERAL]
+status_literals=[]
+statement=if status == PASS_STATUS:
+
+leaf_qt/regen_final_verification_audit.py:70 [NO_STATUS_CODE_LITERAL]
+status_literals=[]
+statement=if status == PASS_STATUS:
+
+leaf_qt/regen_live_geometry_commit_execution.py:90 [NO_STATUS_CODE_LITERAL]
+status_literals=[]
+statement=if status == PASS_STATUS:
+
+leaf_qt/regen_optimisation_completion_gate.py:65 [NO_STATUS_CODE_LITERAL]
+status_literals=[]
+statement=if status == PASS_STATUS:
+
+leaf_qt/regen_optimisation_proof_system.py:67 [NO_STATUS_CODE_LITERAL]
+status_literals=[]
+statement=if status == PASS_STATUS:
+
+leaf_qt/regen_station_viewer_integration.py:64 [NO_STATUS_CODE_LITERAL]
+status_literals=[]
+statement=if status == PASS_STATUS:
+
+leaf_qt/regen_viewer_completion_gate.py:70 [NO_STATUS_CODE_LITERAL]
+status_literals=[]
+statement=if status == PASS_STATUS:
+
+leaf_qt/regen_viewer_data_adapter.py:54 [NO_STATUS_CODE_LITERAL]
+status_literals=[]
+statement=if status == PASS_STATUS:
+
+leaf_qt/regen_viewer_navigation_system.py:76 [NO_STATUS_CODE_LITERAL]
+status_literals=[]
+statement=if status == PASS_STATUS:
+
+leaf_qt/regen_viewer_ownership_architecture.py:82 [NO_STATUS_CODE_LITERAL]
+status_literals=[]
+statement=if status == PASS_STATUS:
+
+leaf_qt/regen_viewer_report_renderer.py:85 [NO_STATUS_CODE_LITERAL]
+status_literals=[]
+statement=if status == PASS_STATUS:
+
+json=/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u171d_exact_status_code_guardrail_audit.json
+text=/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u171d_exact_status_code_guardrail_audit.txt

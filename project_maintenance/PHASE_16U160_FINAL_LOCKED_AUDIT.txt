@@ -1,0 +1,22 @@
+LEAF PHASE 16U.160
+FINAL LOCKED AUDIT
+==================
+
+STATUS: PASS_PHASE_16U160_FINAL_LOCKED_AUDIT
+
+Locked baseline: 68
+Closed targets: 68
+Remaining candidates: 0
+Progress: 68/68
+
+COMPILE FAILURES
+----------------
+None
+
+REMAINING FILES
+---------------
+None
+
+FAILURES
+--------
+None

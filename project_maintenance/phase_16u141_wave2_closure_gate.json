@@ -1,0 +1,134 @@
+{
+  "phase": "16U.141",
+  "wave_id": "16U-WAVE2",
+  "passed": true,
+  "files_closed": 12,
+  "files_failed": 0,
+  "closed_files": [
+    "regen_candidate_blueprint_completion_audit.py",
+    "regen_candidate_blueprint_generation_input_gate.py",
+    "regen_candidate_blueprint_mutation_validation.py",
+    "regen_candidate_blueprint_optimisation_completion_audit.py",
+    "regen_candidate_blueprint_population_completion_audit.py",
+    "regen_candidate_creation_completion_audit.py",
+    "regen_candidate_creation_input_audit.py",
+    "regen_candidate_creation_registration_owner.py",
+    "regen_candidate_creation_session_owner.py",
+    "regen_candidate_generation_completion_audit.py",
+    "regen_candidate_generation_input_gate.py",
+    "regen_candidate_generation_registration_owner.py"
+  ],
+  "closure_results": [
+    {
+      "file": "regen_candidate_blueprint_completion_audit.py",
+      "passed": true,
+      "backup": "project_maintenance/phase_16u139_wave2_backups/regen_candidate_blueprint_completion_audit.py",
+      "sha256_before": "a786cbd13636e0e6c668029d117715ed6d50be8787f655645d63c96f67c240de",
+      "sha256_after": "c6d36bdc0b4ca04166a002d1561c75edfa5915ff583b955544e1c0b2d700602e",
+      "sha256_current": "c6d36bdc0b4ca04166a002d1561c75edfa5915ff583b955544e1c0b2d700602e",
+      "failures": []
+    },
+    {
+      "file": "regen_candidate_blueprint_generation_input_gate.py",
+      "passed": true,
+      "backup": "project_maintenance/phase_16u139_wave2_backups/regen_candidate_blueprint_generation_input_gate.py",
+      "sha256_before": "0712065fd905b85f920984fe045cd40046ab493a4ae85444a1306644a7e38eab",
+      "sha256_after": "1675432d39c5cc5009f286a9d0991ae048b8e6133de9c8a28f22735352cf3515",
+      "sha256_current": "1675432d39c5cc5009f286a9d0991ae048b8e6133de9c8a28f22735352cf3515",
+      "failures": []
+    },
+    {
+      "file": "regen_candidate_blueprint_mutation_validation.py",
+      "passed": true,
+      "backup": "project_maintenance/phase_16u139_wave2_backups/regen_candidate_blueprint_mutation_validation.py",
+      "sha256_before": "01c17b25d5a510ae92aff26f2f4384784758a176171a8633399a4235aa2cc5a0",
+      "sha256_after": "1af4606a0116f2feed008edce47f8229ea0acaa9f6e8abddeb3e2bce2f0ae7e4",
+      "sha256_current": "1af4606a0116f2feed008edce47f8229ea0acaa9f6e8abddeb3e2bce2f0ae7e4",
+      "failures": []
+    },
+    {
+      "file": "regen_candidate_blueprint_optimisation_completion_audit.py",
+      "passed": true,
+      "backup": "project_maintenance/phase_16u139_wave2_backups/regen_candidate_blueprint_optimisation_completion_audit.py",
+      "sha256_before": "b71c8156b5eb4f855c9a41656027aff284c48df63358fd65445f4bfcf702741f",
+      "sha256_after": "75e906f9caa26f054f5290d0e59d3c471b4bcc19bc74ec99fcd37be3af573d26",
+      "sha256_current": "75e906f9caa26f054f5290d0e59d3c471b4bcc19bc74ec99fcd37be3af573d26",
+      "failures": []
+    },
+    {
+      "file": "regen_candidate_blueprint_population_completion_audit.py",
+      "passed": true,
+      "backup": "project_maintenance/phase_16u139_wave2_backups/regen_candidate_blueprint_population_completion_audit.py",
+      "sha256_before": "ce016187bbd897ff49b2fb2c37fe0dade6978df4ebdc67e35ccb9eed9a97541b",
+      "sha256_after": "da62fea805431f4c036e353fda397023fab9a4e240f1f4fc1b35887bd049ef11",
+      "sha256_current": "da62fea805431f4c036e353fda397023fab9a4e240f1f4fc1b35887bd049ef11",
+      "failures": []
+    },
+    {
+      "file": "regen_candidate_creation_completion_audit.py",
+      "passed": true,
+      "backup": "project_maintenance/phase_16u139_wave2_backups/regen_candidate_creation_completion_audit.py",
+      "sha256_before": "c310aaad98c86da2e278527ced190edd3e1f779f47d48be652ae64e3eb920ae2",
+      "sha256_after": "aa240851b0ce4376c4d47811b41ae47a4e86bb9142f64ee28603ad265e25d7bc",
+      "sha256_current": "aa240851b0ce4376c4d47811b41ae47a4e86bb9142f64ee28603ad265e25d7bc",
+      "failures": []
+    },
+    {
+      "file": "regen_candidate_creation_input_audit.py",
+      "passed": true,
+      "backup": "project_maintenance/phase_16u139_wave2_backups/regen_candidate_creation_input_audit.py",
+      "sha256_before": "db8476050a4864022274143c41f41811185ed22a587dd5769e70dd0622fcb076",
+      "sha256_after": "687e841b2b3c3f58e58b7205d635f16a183ab7e236eb50971b8c274bacf90e5c",
+      "sha256_current": "687e841b2b3c3f58e58b7205d635f16a183ab7e236eb50971b8c274bacf90e5c",
+      "failures": []
+    },
+    {
+      "file": "regen_candidate_creation_registration_owner.py",
+      "passed": true,
+      "backup": "project_maintenance/phase_16u139_wave2_backups/regen_candidate_creation_registration_owner.py",
+      "sha256_before": "01552aa6b7f655cfa32281f14f7b412b7f5e068f93a4b1797669d30502645f23",
+      "sha256_after": "cc4e6c0b9c77bfeac7458691c3edd6de502a02110c0693d1f8060951447164f6",
+      "sha256_current": "cc4e6c0b9c77bfeac7458691c3edd6de502a02110c0693d1f8060951447164f6",
+      "failures": []
+    },
+    {
+      "file": "regen_candidate_creation_session_owner.py",
+      "passed": true,
+      "backup": "project_maintenance/phase_16u139_wave2_backups/regen_candidate_creation_session_owner.py",
+      "sha256_before": "ca375ce532134b5d49d69f214fd88bfb62dc1e1bca7aeb42c169c42bfccd50ee",
+      "sha256_after": "0d07d37e09f4ab4753f24a47a91ece67c73af260c3bc4ba2458f1bb6d4a4de0e",
+      "sha256_current": "0d07d37e09f4ab4753f24a47a91ece67c73af260c3bc4ba2458f1bb6d4a4de0e",
+      "failures": []
+    },
+    {
+      "file": "regen_candidate_generation_completion_audit.py",
+      "passed": true,
+      "backup": "project_maintenance/phase_16u139_wave2_backups/regen_candidate_generation_completion_audit.py",
+      "sha256_before": "b2b14fca87a0dc4b491c8cbf04533c4e6175a6728844c5473fb8a001d834b920",
+      "sha256_after": "b1404583c34dd95ce6734aff057ee52aeef8875cb3207c50b624aa956f1524c3",
+      "sha256_current": "b1404583c34dd95ce6734aff057ee52aeef8875cb3207c50b624aa956f1524c3",
+      "failures": []
+    },
+    {
+      "file": "regen_candidate_generation_input_gate.py",
+      "passed": true,
+      "backup": "project_maintenance/phase_16u139_wave2_backups/regen_candidate_generation_input_gate.py",
+      "sha256_before": "ea07eb20925150bd6b5ea2fba01798b79b7edd6837ccb2c875a3a29514c03805",
+      "sha256_after": "c17cede66731c8bfc19e877b31b88aa348ea8a0e05a5206e9b617e84e7cad4fb",
+      "sha256_current": "c17cede66731c8bfc19e877b31b88aa348ea8a0e05a5206e9b617e84e7cad4fb",
+      "failures": []
+    },
+    {
+      "file": "regen_candidate_generation_registration_owner.py",
+      "passed": true,
+      "backup": "project_maintenance/phase_16u139_wave2_backups/regen_candidate_generation_registration_owner.py",
+      "sha256_before": "7c76fbb41c751a22b5a8c6f4506f0008d3736e2a1183b0222dda9f292488d334",
+      "sha256_after": "4089ad562a6cd53395a64cc45fb6a3b88e8777a3adf3075ad977207533be18fe",
+      "sha256_current": "4089ad562a6cd53395a64cc45fb6a3b88e8777a3adf3075ad977207533be18fe",
+      "failures": []
+    }
+  ],
+  "failures": [],
+  "phase_16u141_wave2_closure_gate_complete": true,
+  "next_phase": "16U.142 \u2014 Wave 2 Locked Audit"
+}

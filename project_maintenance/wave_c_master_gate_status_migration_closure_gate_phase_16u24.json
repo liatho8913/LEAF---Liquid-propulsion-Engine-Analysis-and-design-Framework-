@@ -1,0 +1,160 @@
+{
+  "phase": "16U.24",
+  "status": "PASS_PHASE_16U24_WAVE_C_MASTER_GATE_STATUS_MIGRATION_CLOSURE_GATE",
+  "generated": "2026-06-28T01:29:18",
+  "missing_json": [],
+  "missing_files": [],
+  "phase_checks": [
+    {
+      "phase": "16U.20",
+      "expected": "PASS_PHASE_16U20_WAVE_C_MASTER_GATE_STATUS_CONSUMER_AUDIT",
+      "actual": "PASS_PHASE_16U20_WAVE_C_MASTER_GATE_STATUS_CONSUMER_AUDIT",
+      "passed": true
+    },
+    {
+      "phase": "16U.21",
+      "expected": "PASS_PHASE_16U21_WAVE_C_MASTER_GATE_LOW_RISK_STATUS_WRAPPER_PATCH",
+      "actual": "PASS_PHASE_16U21_WAVE_C_MASTER_GATE_LOW_RISK_STATUS_WRAPPER_PATCH",
+      "passed": true
+    },
+    {
+      "phase": "16U.22",
+      "expected": "PASS_PHASE_16U22_WAVE_C_MASTER_GATE_LOW_RISK_STATUS_WRAPPER_REGRESSION",
+      "actual": "PASS_PHASE_16U22_WAVE_C_MASTER_GATE_LOW_RISK_STATUS_WRAPPER_REGRESSION",
+      "passed": true
+    },
+    {
+      "phase": "16U.23",
+      "expected": "PASS_PHASE_16U23_WAVE_C_MASTER_GATE_REMAINING_CONSUMER_REVIEW",
+      "actual": "PASS_PHASE_16U23_WAVE_C_MASTER_GATE_REMAINING_CONSUMER_REVIEW",
+      "passed": true
+    }
+  ],
+  "remaining_candidate_count": 65,
+  "closure_blocker_count": 0,
+  "held_categories": {
+    "FREEFORM_TEXT_SEMANTIC_INTENTIONAL_HOLD": 8,
+    "MANUAL_REVIEW_INTENTIONAL_HOLD": 3,
+    "PAYLOAD_LITERAL_INTENTIONAL_HOLD": 26,
+    "PRESENTATION_MARKER_INTENTIONAL_HOLD": 4,
+    "STATUS_PRODUCER_INTENTIONAL_HOLD": 24
+  },
+  "missing_wrapper_tokens": [],
+  "forbidden_tokens_present": [],
+  "compile_results": [
+    {
+      "file": "leaf_qt/real_engine_benchmark_master_gate.py",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "leaf_qt/regen_axial_geometry_master_gate.py",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "leaf_qt/regen_candidate_acceptance_master_gate.py",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "leaf_qt/regen_candidate_mutation_master_gate.py",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "leaf_qt/regen_candidate_population_master_gate.py",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "leaf_qt/regen_candidate_ranking_master_gate.py",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "leaf_qt/regen_evolution_loop_master_gate.py",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "leaf_qt/regen_geometry_master_gate.py",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "leaf_qt/regen_optimisation_master_gate.py",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "leaf_qt/regen_scalability_master_gate.py",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "leaf_qt/regen_variable_geometry_master_gate.py",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "project_maintenance/wave2_status_adapter_master_gate_phase_16t3s.py",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "leaf_qt/structured_status_access.py",
+      "passed": true,
+      "error": ""
+    }
+  ],
+  "checks": [
+    {
+      "name": "required_phase_json_present",
+      "passed": true,
+      "detail": "0 missing"
+    },
+    {
+      "name": "required_master_gate_files_present",
+      "passed": true,
+      "detail": "0 missing"
+    },
+    {
+      "name": "phase_statuses_passed",
+      "passed": true,
+      "detail": "4/4 passed"
+    },
+    {
+      "name": "wrapper_tokens_present",
+      "passed": true,
+      "detail": "0 missing"
+    },
+    {
+      "name": "patched_legacy_tokens_absent",
+      "passed": true,
+      "detail": "0 present"
+    },
+    {
+      "name": "remaining_consumers_recorded",
+      "passed": true,
+      "detail": "65"
+    },
+    {
+      "name": "closure_blockers_absent",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "held_categories_recorded",
+      "passed": true,
+      "detail": "5/5 categories present"
+    },
+    {
+      "name": "master_gate_files_compile",
+      "passed": true,
+      "detail": "13/13 compiled"
+    }
+  ],
+  "wave_c_master_gate_status_migration_closed": true,
+  "phase_16u24_wave_c_master_gate_status_migration_closure_gate_complete": true
+}

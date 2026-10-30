@@ -1,0 +1,151 @@
+{
+  "phase": "16U.157",
+  "wave_id": "16U-FINAL-WAVE",
+  "passed": false,
+  "files_attempted": 8,
+  "files_passed": 6,
+  "files_failed": 2,
+  "results": [
+    {
+      "file": "real_engine_benchmark_completion_audit.py",
+      "path": "leaf_qt/real_engine_benchmark_completion_audit.py",
+      "backup": "project_maintenance/phase_16u157_final_wave_backups/real_engine_benchmark_completion_audit.py",
+      "applied": [
+        "inserted_status_presentation_import_fallback",
+        "legacy_replacement:\"PASS\"\\s+if\\s+([^,\\n]+?)\\s+else\\s+\"FAIL\":1",
+        "status_prefix_suffix_replacement:([A-Za-z_][A-Za-z0-9_]*)\\.startswith\\(\\s*[\"\\']PASS[\"\\']\\s*\\):2"
+      ],
+      "failures": [],
+      "sha256_before": "63190ce60a561f1e590255a0dd8a3a502e3610eb6c5c38de7045c51f999d04d9",
+      "backup_created": true,
+      "compile_before": true,
+      "compile_after": true,
+      "sha256_after": "3419e8775d61ad15fff651286c327c9a1ed568f44335160fd2e89d32c60c2a3f"
+    },
+    {
+      "file": "real_engine_benchmark_failure_owner.py",
+      "path": "leaf_qt/real_engine_benchmark_failure_owner.py",
+      "backup": "project_maintenance/phase_16u157_final_wave_backups/real_engine_benchmark_failure_owner.py",
+      "applied": [
+        "extended_existing_status_presentation_import"
+      ],
+      "failures": [],
+      "sha256_before": "d0a686632e2fed86977fcdb2e271dc6061d09237f810e49489d7c1b6dbb1cbe5",
+      "backup_created": true,
+      "compile_before": true,
+      "compile_after": true,
+      "sha256_after": "9ffea6b74c02ee870bc4c6f7352cbfc150c3908908779548635e9e489b87fdf9"
+    },
+    {
+      "file": "regen_autonomous_optimisation_input_audit.py",
+      "path": "leaf_qt/regen_autonomous_optimisation_input_audit.py",
+      "backup": "project_maintenance/phase_16u157_final_wave_backups/regen_autonomous_optimisation_input_audit.py",
+      "applied": [
+        "inserted_status_presentation_import_fallback",
+        "legacy_replacement:\"PASS\"\\s+if\\s+([^,\\n]+?)\\s+else\\s+\"FAIL\":1"
+      ],
+      "failures": [],
+      "sha256_before": "7bca90cb192514297ac6363153d123617bded0e5404b664b3c0cc5e7536adf00",
+      "backup_created": true,
+      "compile_before": true,
+      "compile_after": true,
+      "sha256_after": "a042484d7f946197709734a000e654d849a31dc296be94fe83be4e260305e133"
+    },
+    {
+      "file": "regen_candidate_generation_session_owner.py",
+      "path": "leaf_qt/regen_candidate_generation_session_owner.py",
+      "backup": "project_maintenance/phase_16u157_final_wave_backups/regen_candidate_generation_session_owner.py",
+      "applied": [
+        "inserted_status_presentation_import_fallback",
+        "legacy_replacement:\"PASS\"\\s+if\\s+([^,\\n]+?)\\s+else\\s+\"FAIL\":1"
+      ],
+      "failures": [],
+      "sha256_before": "1fac448fbb0ea211cf74813e44178f7c4d2a0bc3ff430bd01af6621d6a973600",
+      "backup_created": true,
+      "compile_before": true,
+      "compile_after": true,
+      "sha256_after": "401c75091c82a7a3bfd6e2f4c78743eee4c5d4d2cb6e69c1f0d12e2806b3d844"
+    },
+    {
+      "file": "regen_scalability_failure_owner.py",
+      "path": "leaf_qt/regen_scalability_failure_owner.py",
+      "backup": "project_maintenance/phase_16u157_final_wave_backups/regen_scalability_failure_owner.py",
+      "applied": [
+        "extended_existing_status_presentation_import"
+      ],
+      "failures": [],
+      "sha256_before": "ae67b41c9a1bdf97d33c8e9de2bcc8b64e6045aa58d0d5ee7af4b4063e101515",
+      "backup_created": true,
+      "compile_before": true,
+      "compile_after": true,
+      "sha256_after": "88b0b5c74da72c2732a67e595d633953fd21da0b1e2f9534714a3f3a9450dda9"
+    },
+    {
+      "file": "regen_viewer_final_runtime_consistency_gate_phase_16q20.py",
+      "path": "leaf_qt/regen_viewer_final_runtime_consistency_gate_phase_16q20.py",
+      "backup": "project_maintenance/phase_16u157_final_wave_backups/regen_viewer_final_runtime_consistency_gate_phase_16q20.py",
+      "applied": [
+        "inserted_status_presentation_import_fallback",
+        "legacy_replacement:\"PASS\"\\s+if\\s+([^,\\n]+?)\\s+else\\s+\"FAIL\":1"
+      ],
+      "failures": [
+        "post_compile_failed:   File \"/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/regen_viewer_final_runtime_consistency_gate_phase_16q20.py\", line 30\n    from __future__ import annotations\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nSyntaxError: from __future__ imports must occur at the beginning of the file\n",
+        "LegacyCompatibilityProducer missing after patch",
+        "status_severity missing after patch",
+        "file unchanged after patch"
+      ],
+      "sha256_before": "2d697512eb5606e05ed2042d20c38ecab06308ba723e7981069c492dc4b673cd",
+      "backup_created": true,
+      "compile_before": true,
+      "compile_after": false,
+      "sha256_after": "2d697512eb5606e05ed2042d20c38ecab06308ba723e7981069c492dc4b673cd"
+    },
+    {
+      "file": "regen_viewer_gui_runtime_acceptance_gate_phase_16q28.py",
+      "path": "leaf_qt/regen_viewer_gui_runtime_acceptance_gate_phase_16q28.py",
+      "backup": "project_maintenance/phase_16u157_final_wave_backups/regen_viewer_gui_runtime_acceptance_gate_phase_16q28.py",
+      "applied": [
+        "inserted_status_presentation_import_fallback",
+        "legacy_replacement:\"PASS\"\\s+if\\s+([^,\\n]+?)\\s+else\\s+\"FAIL\":1"
+      ],
+      "failures": [
+        "post_compile_failed:   File \"/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/regen_viewer_gui_runtime_acceptance_gate_phase_16q28.py\", line 30\n    from __future__ import annotations\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nSyntaxError: from __future__ imports must occur at the beginning of the file\n",
+        "LegacyCompatibilityProducer missing after patch",
+        "status_severity missing after patch",
+        "file unchanged after patch"
+      ],
+      "sha256_before": "3021a90480d96eed56bd95e9337e4b81051d21e10f1225b81db8bd5a40bed3c1",
+      "backup_created": true,
+      "compile_before": true,
+      "compile_after": false,
+      "sha256_after": "3021a90480d96eed56bd95e9337e4b81051d21e10f1225b81db8bd5a40bed3c1"
+    },
+    {
+      "file": "regen_viewer_report_renderer.py",
+      "path": "leaf_qt/regen_viewer_report_renderer.py",
+      "backup": "project_maintenance/phase_16u157_final_wave_backups/regen_viewer_report_renderer.py",
+      "applied": [
+        "inserted_status_presentation_import_fallback",
+        "legacy_replacement:'PASS'\\s+if\\s+([^,\\n]+?)\\s+else\\s+'FAIL':1"
+      ],
+      "failures": [],
+      "sha256_before": "e4cfd73ed29216e1c90c18d97ee32426ad2895e9f4b13f49059bc1cc8d9e1ef1",
+      "backup_created": true,
+      "compile_before": true,
+      "compile_after": true,
+      "sha256_after": "60575d04cd5ac4014c4bd26584ca1c5437977336eecac9d1ffc5285e5c6d2755"
+    }
+  ],
+  "wave_failures": [
+    "regen_viewer_final_runtime_consistency_gate_phase_16q20.py: post_compile_failed:   File \"/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/regen_viewer_final_runtime_consistency_gate_phase_16q20.py\", line 30\n    from __future__ import annotations\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nSyntaxError: from __future__ imports must occur at the beginning of the file\n",
+    "regen_viewer_final_runtime_consistency_gate_phase_16q20.py: LegacyCompatibilityProducer missing after patch",
+    "regen_viewer_final_runtime_consistency_gate_phase_16q20.py: status_severity missing after patch",
+    "regen_viewer_final_runtime_consistency_gate_phase_16q20.py: file unchanged after patch",
+    "regen_viewer_gui_runtime_acceptance_gate_phase_16q28.py: post_compile_failed:   File \"/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/regen_viewer_gui_runtime_acceptance_gate_phase_16q28.py\", line 30\n    from __future__ import annotations\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nSyntaxError: from __future__ imports must occur at the beginning of the file\n",
+    "regen_viewer_gui_runtime_acceptance_gate_phase_16q28.py: LegacyCompatibilityProducer missing after patch",
+    "regen_viewer_gui_runtime_acceptance_gate_phase_16q28.py: status_severity missing after patch",
+    "regen_viewer_gui_runtime_acceptance_gate_phase_16q28.py: file unchanged after patch"
+  ],
+  "phase_16u157_final_wave_transactional_patch_complete": false,
+  "next_phase": "16U.158 \u2014 Final Wave Regression"
+}

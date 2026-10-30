@@ -1,0 +1,29 @@
+{
+  "phase": "16U.38",
+  "status": "PASS_PHASE_16U38_REGEN_CROSS_SECTION_VIEWER_PRESENTATION_LAYER_PATCH",
+  "generated": "2026-06-28T02:28:45",
+  "target": "leaf_qt/regen_cross_section_viewer.py",
+  "backup": "leaf_qt/regen_cross_section_viewer.py.phase_16u38_backup",
+  "changed": false,
+  "applied": [],
+  "already_applied": [
+    "insert_shared_status_presentation_import_and_helpers",
+    "migrate_channel_topology_warning_colour_status_interpretation",
+    "migrate_source_data_checklist_marker_presentation",
+    "migrate_status_strip_fail_detection",
+    "migrate_status_strip_pass_detection",
+    "migrate_recommended_geometry_blocked_status_detection",
+    "migrate_geometry_decision_blocked_status_detection",
+    "migrate_recommended_available_blocked_status_detection",
+    "migrate_automatic_available_blocked_status_detection",
+    "migrate_runtime_signoff_label_marker_presentation",
+    "migrate_hard_failure_status_collection",
+    "migrate_warning_status_collection"
+  ],
+  "missing": [],
+  "compiled": true,
+  "compile_error": "",
+  "missing_tokens": [],
+  "phase_16u38_regen_cross_section_viewer_presentation_layer_patch_complete": true,
+  "next_phase": "16U.39 \u2014 First Report Owner Presentation Layer Rollout Regression"
+}

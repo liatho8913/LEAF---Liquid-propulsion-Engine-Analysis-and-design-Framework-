@@ -1,0 +1,97 @@
+LEAF PHASE 16U.10
+ENGINE SOLVER MEDIUM-RISK STATUS CONSUMER AUDIT
+================================================
+
+STATUS: PASS_PHASE_16U10_ENGINE_SOLVER_MEDIUM_RISK_STATUS_CONSUMER_AUDIT
+Generated: 2026-06-27T17:41:04
+
+SCOPE
+-----
+This phase audits medium-risk Wave A solver status consumers.
+No production files are modified.
+No solver equations are modified.
+
+SUMMARY
+-------
+Medium-risk candidates: 17
+Patchable next phase: 5
+Manual review / hold: 12
+
+RESOLUTION BREAKDOWN
+--------------------
+COMPOUND_STATUS_REVIEW_REQUIRED: 6
+DOMAIN_STATE_REVIEW_REQUIRED: 1
+MANUAL_REVIEW_REQUIRED: 1
+SAFE_COLLECTION_AGGREGATION: 4
+SAFE_DOMAIN_STATE_WITH_PASS_WRAPPER: 1
+TEXT_SEMANTIC_REVIEW_REQUIRED: 4
+
+PATCHABLE NEXT PHASE
+--------------------
+leaf_qt/engine_solver.py:5517 [SAFE_DOMAIN_STATE_WITH_PASS_WRAPPER]
+  current: if status not in ("REQUIRED", "PASS"):
+  wrapper: status != "REQUIRED" and not solver_pass(status)
+  reason: REQUIRED is a domain state, not a canonical status; it must remain explicit.
+leaf_qt/engine_solver.py:16280 [SAFE_COLLECTION_AGGREGATION]
+  current: if "FAIL" in statuses:
+  wrapper: solver_highest_severity(statuses) == "FAIL"
+  reason: Variable name statuses indicates a collection of status values rather than arbitrary text.
+leaf_qt/engine_solver.py:16280 [SAFE_COLLECTION_AGGREGATION]
+  current: if "FAIL" in statuses:
+  wrapper: solver_highest_severity(statuses) == "FAIL"
+  reason: Variable name statuses indicates a collection of status values rather than arbitrary text.
+leaf_qt/engine_solver.py:16282 [SAFE_COLLECTION_AGGREGATION]
+  current: elif "WARN" in statuses:
+  wrapper: solver_highest_severity(statuses) == "WARN"
+  reason: Variable name statuses indicates a collection of status values rather than arbitrary text.
+leaf_qt/engine_solver.py:16282 [SAFE_COLLECTION_AGGREGATION]
+  current: elif "WARN" in statuses:
+  wrapper: solver_highest_severity(statuses) == "WARN"
+  reason: Variable name statuses indicates a collection of status values rather than arbitrary text.
+
+HELD FOR MANUAL REVIEW
+----------------------
+leaf_qt/engine_solver.py:7675 [DOMAIN_STATE_REVIEW_REQUIRED]
+  current: elif source_data_weighted_gate in ("PARTIAL", "FAIL"):
+  reason: PARTIAL is not equivalent to WARN in all source-data contexts.
+leaf_qt/engine_solver.py:8456 [MANUAL_REVIEW_REQUIRED]
+  current: if item["status"] in ("MISSING", "PLACEHOLDER", "FAIL")
+  reason: No safe automated migration rule matched.
+leaf_qt/engine_solver.py:14139 [COMPOUND_STATUS_REVIEW_REQUIRED]
+  current: if "PLACEHOLDER" in source_status and verdict.endswith("PASS"):
+  reason: endswith('PASS') may intentionally accept compound statuses that need context.
+leaf_qt/engine_solver.py:14139 [COMPOUND_STATUS_REVIEW_REQUIRED]
+  current: if "PLACEHOLDER" in source_status and verdict.endswith("PASS"):
+  reason: endswith('PASS') may intentionally accept compound statuses that need context.
+leaf_qt/engine_solver.py:14143 [COMPOUND_STATUS_REVIEW_REQUIRED]
+  current: if ledger_status not in ("LEDGER_COMPLETE", "NO_FILLED_VALUES") and verdict.endswith("PASS"):
+  reason: endswith('PASS') may intentionally accept compound statuses that need context.
+leaf_qt/engine_solver.py:14143 [COMPOUND_STATUS_REVIEW_REQUIRED]
+  current: if ledger_status not in ("LEDGER_COMPLETE", "NO_FILLED_VALUES") and verdict.endswith("PASS"):
+  reason: endswith('PASS') may intentionally accept compound statuses that need context.
+leaf_qt/engine_solver.py:14149 [COMPOUND_STATUS_REVIEW_REQUIRED]
+  current: if quality_band in ("PLACEHOLDER", "LOW_CONFIDENCE_PUBLIC") and verdict.endswith("PASS"):
+  reason: endswith('PASS') may intentionally accept compound statuses that need context.
+leaf_qt/engine_solver.py:14149 [COMPOUND_STATUS_REVIEW_REQUIRED]
+  current: if quality_band in ("PLACEHOLDER", "LOW_CONFIDENCE_PUBLIC") and verdict.endswith("PASS"):
+  reason: endswith('PASS') may intentionally accept compound statuses that need context.
+leaf_qt/engine_solver.py:20628 [TEXT_SEMANTIC_REVIEW_REQUIRED]
+  current: if "FAIL" in text or "INVALID" in text:
+  reason: Freeform text scanning should not be converted without understanding source text.
+leaf_qt/engine_solver.py:20628 [TEXT_SEMANTIC_REVIEW_REQUIRED]
+  current: if "FAIL" in text or "INVALID" in text:
+  reason: Freeform text scanning should not be converted without understanding source text.
+leaf_qt/engine_solver.py:20649 [TEXT_SEMANTIC_REVIEW_REQUIRED]
+  current: elif "WARN" in text or "REVIEW" in text:
+  reason: Freeform text scanning should not be converted without understanding source text.
+leaf_qt/engine_solver.py:20649 [TEXT_SEMANTIC_REVIEW_REQUIRED]
+  current: elif "WARN" in text or "REVIEW" in text:
+  reason: Freeform text scanning should not be converted without understanding source text.
+
+COMPLETION NOTICE
+-----------------
+PHASE 16U.10 COMPLETE.
+
+NEXT PHASE
+----------
+PHASE 16U.11 — ENGINE SOLVER MEDIUM-RISK STATUS WRAPPER PATCH

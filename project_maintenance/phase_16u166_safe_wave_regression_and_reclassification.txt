@@ -1,0 +1,46 @@
+LEAF PHASE 16U.166
+SAFE WAVE REGRESSION AND RECLASSIFICATION
+================================================
+status=PASS_PHASE_16U166_SAFE_WAVE_REGRESSION_AND_RECLASSIFICATION
+compile_failure_count=0
+raw_finding_count=15484
+high_risk_file_count=40
+high_risk_finding_count=82
+safe_wave_candidate_count=0
+
+SCRIPT RUNS
+-----------
+
+script=project_maintenance/phase_16u162_global_repository_presentation_layer_sanity_audit.py
+returncode=1
+stdout:
+FAIL_PHASE_16U162_GLOBAL_REPOSITORY_PRESENTATION_LAYER_SANITY_AUDIT
+scanned_files=2501
+finding_count=15484
+compile_failure_count=0
+text_report=/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u162_global_repository_presentation_layer_sanity_audit.txt
+json_report=/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u162_global_repository_presentation_layer_sanity_audit.json
+
+script=project_maintenance/phase_16u163_presentation_debt_classifier.py
+returncode=0
+stdout:
+PASS_PHASE_16U163_PRESENTATION_DEBT_CLASSIFICATION
+total_findings=15484
+high_risk_file_count=40
+high_risk_finding_count=82
+text_report=/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u163_presentation_debt_classification.txt
+json_report=/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u163_presentation_debt_classification.json
+
+script=project_maintenance/phase_16u164_high_risk_presentation_debt_manifest.py
+returncode=0
+stdout:
+PASS_PHASE_16U164_HIGH_RISK_PRESENTATION_DEBT_MANIFEST
+high_risk_file_count=40
+high_risk_finding_count=82
+safe_wave_candidate_count=0
+patch_mode_counts={'MANUAL_ARCHITECTURE_REVIEW': 2, 'MANUAL_REVIEW_REQUIRED': 38}
+text_report=/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u164_high_risk_presentation_debt_manifest.txt
+json_report=/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u164_high_risk_presentation_debt_manifest.json
+
+json=/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u166_safe_wave_regression_and_reclassification.json
+text=/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u166_safe_wave_regression_and_reclassification.txt

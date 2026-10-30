@@ -1,0 +1,371 @@
+{
+  "phase": "16U.7",
+  "status": "PASS_PHASE_16U7_ENGINE_SOLVER_STATUS_PATCH_PLANNER",
+  "generated": "2026-06-27T11:37:46",
+  "source_audit_status": "PASS_PHASE_16U6_ENGINE_SOLVER_STATUS_CONSUMER_INTEGRATION_AUDIT",
+  "source_low_risk_count": 39,
+  "unique_patch_item_count": 25,
+  "by_file": {
+    "leaf_qt/engine_solver.py": 24,
+    "leaf_qt/regen_geometry_solver.py": 1
+  },
+  "wrappers_required": [
+    "solver_fail",
+    "solver_pass"
+  ],
+  "unchanged_proposal_count": 0,
+  "unchanged_proposals": [],
+  "patch_plan": [
+    {
+      "file": "leaf_qt/engine_solver.py",
+      "line": 6101,
+      "migration_group": "PASS_NEGATION_CHECK",
+      "risk": "LOW",
+      "current_snippet": "if results.get(\"coupled_split_auto_tuned_status\") != \"PASS\":",
+      "proposed_snippet": "if not solver_pass(results.get(\"coupled_split_auto_tuned_status\")):",
+      "wrapper_imports_required": [
+        "solver_pass"
+      ],
+      "patch_batch": "A1_LOW_RISK_EQUALITY_INEQUALITY",
+      "regression_required": true,
+      "reason": "Direct non-PASS decision can be wrapped without changing numerical calculations."
+    },
+    {
+      "file": "leaf_qt/engine_solver.py",
+      "line": 6253,
+      "migration_group": "FAIL_NEGATION_CHECK",
+      "risk": "LOW",
+      "current_snippet": "passing = [item for item in screened if item[\"status\"] != \"FAIL\"]",
+      "proposed_snippet": "passing = [item for item in screened if not solver_fail(item.get(\"status\"))]",
+      "wrapper_imports_required": [
+        "solver_fail"
+      ],
+      "patch_batch": "A1_LOW_RISK_EQUALITY_INEQUALITY",
+      "regression_required": true,
+      "reason": "Direct non-FAIL decision can be wrapped by solver_fail."
+    },
+    {
+      "file": "leaf_qt/engine_solver.py",
+      "line": 6543,
+      "migration_group": "FAIL_NEGATION_CHECK",
+      "risk": "LOW",
+      "current_snippet": "if status != \"FAIL\":",
+      "proposed_snippet": "if not solver_fail(status):",
+      "wrapper_imports_required": [
+        "solver_fail"
+      ],
+      "patch_batch": "A1_LOW_RISK_EQUALITY_INEQUALITY",
+      "regression_required": true,
+      "reason": "Direct non-FAIL decision can be wrapped by solver_fail."
+    },
+    {
+      "file": "leaf_qt/engine_solver.py",
+      "line": 7192,
+      "migration_group": "PASS_EQUALITY_CHECK",
+      "risk": "LOW",
+      "current_snippet": "if item.get(\"status\") == \"PASS\"",
+      "proposed_snippet": "if solver_pass(item.get(\"status\"))",
+      "wrapper_imports_required": [
+        "solver_pass"
+      ],
+      "patch_batch": "A1_LOW_RISK_EQUALITY_INEQUALITY",
+      "regression_required": true,
+      "reason": "Direct PASS equality can be wrapped by solver_pass."
+    },
+    {
+      "file": "leaf_qt/engine_solver.py",
+      "line": 7418,
+      "migration_group": "PASS_NEGATION_CHECK",
+      "risk": "LOW",
+      "current_snippet": "if thermal_stress_failed_count > 0 and results.get(\"bond_coat_validation_status\") != \"PASS\":",
+      "proposed_snippet": "if thermal_stress_failed_count > 0 and not solver_pass(results.get(\"bond_coat_validation_status\")):",
+      "wrapper_imports_required": [
+        "solver_pass"
+      ],
+      "patch_batch": "A1_LOW_RISK_EQUALITY_INEQUALITY",
+      "regression_required": true,
+      "reason": "Direct non-PASS decision can be wrapped without changing numerical calculations."
+    },
+    {
+      "file": "leaf_qt/engine_solver.py",
+      "line": 8028,
+      "migration_group": "PASS_NEGATION_CHECK",
+      "risk": "LOW",
+      "current_snippet": "if source_data_gate != \"PASS\":",
+      "proposed_snippet": "if not solver_pass(source_data_gate):",
+      "wrapper_imports_required": [
+        "solver_pass"
+      ],
+      "patch_batch": "A1_LOW_RISK_EQUALITY_INEQUALITY",
+      "regression_required": true,
+      "reason": "Direct non-PASS decision can be wrapped without changing numerical calculations."
+    },
+    {
+      "file": "leaf_qt/engine_solver.py",
+      "line": 8033,
+      "migration_group": "PASS_NEGATION_CHECK",
+      "risk": "LOW",
+      "current_snippet": "if weighted_gate != \"PASS\":",
+      "proposed_snippet": "if not solver_pass(weighted_gate):",
+      "wrapper_imports_required": [
+        "solver_pass"
+      ],
+      "patch_batch": "A1_LOW_RISK_EQUALITY_INEQUALITY",
+      "regression_required": true,
+      "reason": "Direct non-PASS decision can be wrapped without changing numerical calculations."
+    },
+    {
+      "file": "leaf_qt/engine_solver.py",
+      "line": 9061,
+      "migration_group": "FAIL_EQUALITY_CHECK",
+      "risk": "LOW",
+      "current_snippet": "if results.get(\"explicit_coating_thermal_stress_status\") == \"FAIL\":",
+      "proposed_snippet": "if solver_fail(results.get(\"explicit_coating_thermal_stress_status\")):",
+      "wrapper_imports_required": [
+        "solver_fail"
+      ],
+      "patch_batch": "A1_LOW_RISK_EQUALITY_INEQUALITY",
+      "regression_required": true,
+      "reason": "Direct FAIL equality can be wrapped by solver_fail."
+    },
+    {
+      "file": "leaf_qt/engine_solver.py",
+      "line": 9072,
+      "migration_group": "PASS_NEGATION_CHECK",
+      "risk": "LOW",
+      "current_snippet": "if results.get(\"coating_stack_adhesion_risk_status\") != \"PASS\":",
+      "proposed_snippet": "if not solver_pass(results.get(\"coating_stack_adhesion_risk_status\")):",
+      "wrapper_imports_required": [
+        "solver_pass"
+      ],
+      "patch_batch": "A1_LOW_RISK_EQUALITY_INEQUALITY",
+      "regression_required": true,
+      "reason": "Direct non-PASS decision can be wrapped without changing numerical calculations."
+    },
+    {
+      "file": "leaf_qt/engine_solver.py",
+      "line": 9083,
+      "migration_group": "PASS_NEGATION_CHECK",
+      "risk": "LOW",
+      "current_snippet": "if results.get(\"coating_stack_spallation_fatigue_status\") != \"PASS\":",
+      "proposed_snippet": "if not solver_pass(results.get(\"coating_stack_spallation_fatigue_status\")):",
+      "wrapper_imports_required": [
+        "solver_pass"
+      ],
+      "patch_batch": "A1_LOW_RISK_EQUALITY_INEQUALITY",
+      "regression_required": true,
+      "reason": "Direct non-PASS decision can be wrapped without changing numerical calculations."
+    },
+    {
+      "file": "leaf_qt/engine_solver.py",
+      "line": 9094,
+      "migration_group": "PASS_NEGATION_CHECK",
+      "risk": "LOW",
+      "current_snippet": "if results.get(\"coating_stack_source_data_gate\") != \"PASS\":",
+      "proposed_snippet": "if not solver_pass(results.get(\"coating_stack_source_data_gate\")):",
+      "wrapper_imports_required": [
+        "solver_pass"
+      ],
+      "patch_batch": "A1_LOW_RISK_EQUALITY_INEQUALITY",
+      "regression_required": true,
+      "reason": "Direct non-PASS decision can be wrapped without changing numerical calculations."
+    },
+    {
+      "file": "leaf_qt/engine_solver.py",
+      "line": 9436,
+      "migration_group": "PASS_NEGATION_CHECK",
+      "risk": "LOW",
+      "current_snippet": "if data_mode != \"SOURCED_VALIDATION_MODE\" or source_gate != \"PASS\":",
+      "proposed_snippet": "if data_mode != \"SOURCED_VALIDATION_MODE\" or not solver_pass(source_gate):",
+      "wrapper_imports_required": [
+        "solver_pass"
+      ],
+      "patch_batch": "A1_LOW_RISK_EQUALITY_INEQUALITY",
+      "regression_required": true,
+      "reason": "Direct non-PASS decision can be wrapped without changing numerical calculations."
+    },
+    {
+      "file": "leaf_qt/engine_solver.py",
+      "line": 9447,
+      "migration_group": "PASS_NEGATION_CHECK",
+      "risk": "LOW",
+      "current_snippet": "if bond_status != \"PASS\":",
+      "proposed_snippet": "if not solver_pass(bond_status):",
+      "wrapper_imports_required": [
+        "solver_pass"
+      ],
+      "patch_batch": "A1_LOW_RISK_EQUALITY_INEQUALITY",
+      "regression_required": true,
+      "reason": "Direct non-PASS decision can be wrapped without changing numerical calculations."
+    },
+    {
+      "file": "leaf_qt/engine_solver.py",
+      "line": 9458,
+      "migration_group": "PASS_NEGATION_CHECK",
+      "risk": "LOW",
+      "current_snippet": "if thermal_stress_status != \"PASS\":",
+      "proposed_snippet": "if not solver_pass(thermal_stress_status):",
+      "wrapper_imports_required": [
+        "solver_pass"
+      ],
+      "patch_batch": "A1_LOW_RISK_EQUALITY_INEQUALITY",
+      "regression_required": true,
+      "reason": "Direct non-PASS decision can be wrapped without changing numerical calculations."
+    },
+    {
+      "file": "leaf_qt/engine_solver.py",
+      "line": 9469,
+      "migration_group": "PASS_NEGATION_CHECK",
+      "risk": "LOW",
+      "current_snippet": "if adhesion_status != \"PASS\":",
+      "proposed_snippet": "if not solver_pass(adhesion_status):",
+      "wrapper_imports_required": [
+        "solver_pass"
+      ],
+      "patch_batch": "A1_LOW_RISK_EQUALITY_INEQUALITY",
+      "regression_required": true,
+      "reason": "Direct non-PASS decision can be wrapped without changing numerical calculations."
+    },
+    {
+      "file": "leaf_qt/engine_solver.py",
+      "line": 9480,
+      "migration_group": "PASS_NEGATION_CHECK",
+      "risk": "LOW",
+      "current_snippet": "if fatigue_status != \"PASS\":",
+      "proposed_snippet": "if not solver_pass(fatigue_status):",
+      "wrapper_imports_required": [
+        "solver_pass"
+      ],
+      "patch_batch": "A1_LOW_RISK_EQUALITY_INEQUALITY",
+      "regression_required": true,
+      "reason": "Direct non-PASS decision can be wrapped without changing numerical calculations."
+    },
+    {
+      "file": "leaf_qt/engine_solver.py",
+      "line": 10593,
+      "migration_group": "PASS_NEGATION_CHECK",
+      "risk": "LOW",
+      "current_snippet": "if source_gate != \"PASS\" and final_acceptance == \"VALIDATION_SUPPORT_ALLOWED\":",
+      "proposed_snippet": "if not solver_pass(source_gate) and final_acceptance == \"VALIDATION_SUPPORT_ALLOWED\":",
+      "wrapper_imports_required": [
+        "solver_pass"
+      ],
+      "patch_batch": "A1_LOW_RISK_EQUALITY_INEQUALITY",
+      "regression_required": true,
+      "reason": "Direct non-PASS decision can be wrapped without changing numerical calculations."
+    },
+    {
+      "file": "leaf_qt/engine_solver.py",
+      "line": 11970,
+      "migration_group": "PASS_NEGATION_CHECK",
+      "risk": "LOW",
+      "current_snippet": "if preview_status != \"PASS\":",
+      "proposed_snippet": "if not solver_pass(preview_status):",
+      "wrapper_imports_required": [
+        "solver_pass"
+      ],
+      "patch_batch": "A1_LOW_RISK_EQUALITY_INEQUALITY",
+      "regression_required": true,
+      "reason": "Direct non-PASS decision can be wrapped without changing numerical calculations."
+    },
+    {
+      "file": "leaf_qt/engine_solver.py",
+      "line": 12469,
+      "migration_group": "PASS_EQUALITY_CHECK",
+      "risk": "LOW",
+      "current_snippet": "if feasibility == \"REGEN_ONLY_FEASIBLE\" and viability == \"PASS\":",
+      "proposed_snippet": "if feasibility == \"REGEN_ONLY_FEASIBLE\" and solver_pass(viability):",
+      "wrapper_imports_required": [
+        "solver_pass"
+      ],
+      "patch_batch": "A1_LOW_RISK_EQUALITY_INEQUALITY",
+      "regression_required": true,
+      "reason": "Direct PASS equality can be wrapped by solver_pass."
+    },
+    {
+      "file": "leaf_qt/engine_solver.py",
+      "line": 15212,
+      "migration_group": "PASS_EQUALITY_CHECK",
+      "risk": "LOW",
+      "current_snippet": "if results.get(\"coupled_split_auto_tuned_status\") == \"PASS\":",
+      "proposed_snippet": "if solver_pass(results.get(\"coupled_split_auto_tuned_status\")):",
+      "wrapper_imports_required": [
+        "solver_pass"
+      ],
+      "patch_batch": "A1_LOW_RISK_EQUALITY_INEQUALITY",
+      "regression_required": true,
+      "reason": "Direct PASS equality can be wrapped by solver_pass."
+    },
+    {
+      "file": "leaf_qt/engine_solver.py",
+      "line": 15472,
+      "migration_group": "PASS_NEGATION_CHECK",
+      "risk": "LOW",
+      "current_snippet": "if combined_status != \"PASS\":",
+      "proposed_snippet": "if not solver_pass(combined_status):",
+      "wrapper_imports_required": [
+        "solver_pass"
+      ],
+      "patch_batch": "A1_LOW_RISK_EQUALITY_INEQUALITY",
+      "regression_required": true,
+      "reason": "Direct non-PASS decision can be wrapped without changing numerical calculations."
+    },
+    {
+      "file": "leaf_qt/engine_solver.py",
+      "line": 15476,
+      "migration_group": "FAIL_EQUALITY_CHECK",
+      "risk": "LOW",
+      "current_snippet": "if results.get(\"velocity_limited_combined_preview_status\") == \"FAIL\":",
+      "proposed_snippet": "if solver_fail(results.get(\"velocity_limited_combined_preview_status\")):",
+      "wrapper_imports_required": [
+        "solver_fail"
+      ],
+      "patch_batch": "A1_LOW_RISK_EQUALITY_INEQUALITY",
+      "regression_required": true,
+      "reason": "Direct FAIL equality can be wrapped by solver_fail."
+    },
+    {
+      "file": "leaf_qt/engine_solver.py",
+      "line": 15523,
+      "migration_group": "FAIL_EQUALITY_CHECK",
+      "risk": "LOW",
+      "current_snippet": "if results.get(\"coupled_split_strategy_status\") == \"FAIL\":",
+      "proposed_snippet": "if solver_fail(results.get(\"coupled_split_strategy_status\")):",
+      "wrapper_imports_required": [
+        "solver_fail"
+      ],
+      "patch_batch": "A1_LOW_RISK_EQUALITY_INEQUALITY",
+      "regression_required": true,
+      "reason": "Direct FAIL equality can be wrapped by solver_fail."
+    },
+    {
+      "file": "leaf_qt/engine_solver.py",
+      "line": 15529,
+      "migration_group": "PASS_EQUALITY_CHECK",
+      "risk": "LOW",
+      "current_snippet": "if results.get(\"vl_split_strategy_status\") == \"PASS\":",
+      "proposed_snippet": "if solver_pass(results.get(\"vl_split_strategy_status\")):",
+      "wrapper_imports_required": [
+        "solver_pass"
+      ],
+      "patch_batch": "A1_LOW_RISK_EQUALITY_INEQUALITY",
+      "regression_required": true,
+      "reason": "Direct PASS equality can be wrapped by solver_pass."
+    },
+    {
+      "file": "leaf_qt/regen_geometry_solver.py",
+      "line": 98,
+      "migration_group": "PASS_EQUALITY_CHECK",
+      "risk": "LOW",
+      "current_snippet": "solver_pass = candidate_report.get(\"status\") == \"PASS\" and best_candidate is not None",
+      "proposed_snippet": "solver_pass = solver_pass(candidate_report.get(\"status\")) and best_candidate is not None",
+      "wrapper_imports_required": [
+        "solver_pass"
+      ],
+      "patch_batch": "A1_LOW_RISK_EQUALITY_INEQUALITY",
+      "regression_required": true,
+      "reason": "Direct PASS equality can be wrapped by solver_pass."
+    }
+  ],
+  "phase_16u7_engine_solver_status_patch_planner_complete": true
+}

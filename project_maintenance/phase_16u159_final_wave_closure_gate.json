@@ -1,0 +1,70 @@
+{
+  "phase": "16U.159",
+  "wave_id": "16U-FINAL-WAVE",
+  "passed": true,
+  "files_closed": 8,
+  "files_failed": 0,
+  "closed_files": [
+    "real_engine_benchmark_completion_audit.py",
+    "real_engine_benchmark_failure_owner.py",
+    "regen_autonomous_optimisation_input_audit.py",
+    "regen_candidate_generation_session_owner.py",
+    "regen_scalability_failure_owner.py",
+    "regen_viewer_final_runtime_consistency_gate_phase_16q20.py",
+    "regen_viewer_gui_runtime_acceptance_gate_phase_16q28.py",
+    "regen_viewer_report_renderer.py"
+  ],
+  "closure_results": [
+    {
+      "file": "real_engine_benchmark_completion_audit.py",
+      "passed": true,
+      "evidence_source": "patch",
+      "failures": []
+    },
+    {
+      "file": "real_engine_benchmark_failure_owner.py",
+      "passed": true,
+      "evidence_source": "patch",
+      "failures": []
+    },
+    {
+      "file": "regen_autonomous_optimisation_input_audit.py",
+      "passed": true,
+      "evidence_source": "patch",
+      "failures": []
+    },
+    {
+      "file": "regen_candidate_generation_session_owner.py",
+      "passed": true,
+      "evidence_source": "patch",
+      "failures": []
+    },
+    {
+      "file": "regen_scalability_failure_owner.py",
+      "passed": true,
+      "evidence_source": "patch",
+      "failures": []
+    },
+    {
+      "file": "regen_viewer_final_runtime_consistency_gate_phase_16q20.py",
+      "passed": true,
+      "evidence_source": "repair",
+      "failures": []
+    },
+    {
+      "file": "regen_viewer_gui_runtime_acceptance_gate_phase_16q28.py",
+      "passed": true,
+      "evidence_source": "repair",
+      "failures": []
+    },
+    {
+      "file": "regen_viewer_report_renderer.py",
+      "passed": true,
+      "evidence_source": "patch",
+      "failures": []
+    }
+  ],
+  "failures": [],
+  "phase_16u159_final_wave_closure_gate_complete": true,
+  "next_phase": "16U.160 \u2014 Final Locked Audit"
+}

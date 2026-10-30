@@ -1,0 +1,18 @@
+{
+  "phase": "16U.54",
+  "status": "PASS_PHASE_16U54_COATING_TEMPERATURE_LIMIT_INTEGRATION_OWNER_PRESENTATION_LAYER_PATCH",
+  "generated": "2026-06-28T02:57:55",
+  "target": "leaf_qt/coating_temperature_limit_integration_owner.py",
+  "backup": "leaf_qt/coating_temperature_limit_integration_owner.py.phase_16u54_backup",
+  "helper_inserted": false,
+  "applied": [],
+  "before_forbidden_count": 0,
+  "after_forbidden_count": 0,
+  "ignored_helper_fallback_findings": 0,
+  "remaining_findings": [],
+  "compiled": true,
+  "compile_error": "",
+  "missing_tokens": [],
+  "phase_16u54_coating_temperature_limit_integration_owner_presentation_layer_patch_complete": true,
+  "next_phase": "16U.55 \u2014 Coating Temperature Limit Integration Owner Presentation Layer Regression"
+}

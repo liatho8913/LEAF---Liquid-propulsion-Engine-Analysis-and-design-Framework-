@@ -1,0 +1,78 @@
+# macOS and IDE
+.DS_Store
+.idea/
+.vscode/
+
+# Python environments
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Build outputs
+build/
+dist/
+*.egg-info/
+
+# Temporary files
+*.log
+*.tmp
+*.bak
+*.swp
+
+# Historical packages and backups
+*.zip
+*.tar
+*.tar.gz
+
+# Local and quarantined material
+_external_repository_quarantine/
+_handover_exports/
+_leaf_archive/
+_leaf_artifacts/
+_leaf_clean_chat_upload_stage/
+_leaf_legacy_quarantine/
+_leaf_legacy_reduction_archive/
+_leaf_packages/
+_leaf_repository_cleanup_candidates/
+_leaf_strict_chat_upload_stage/
+
+# Local engine output and generated artefacts
+LEAF_Designs/
+LEAF_Exports/
+LEAF_Projects/
+LEAF_Reports/
+artifacts/
+
+# Local secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Large generated engineering reports
+project_maintenance/modular_engine_architecture/reports/phase_32a_nozzle_capability_discovery.json
+
+# Large generated engineering reports
+project_maintenance/modular_engine_architecture/reports/phase_32a_nozzle_capability_discovery.json
+
+# Generated validation and historical evidence
+LEAF_Validation/
+project_evidence/
+project_maintenance/modular_engine_architecture/reports/
+
+# Historical audit and generated reports
+LEAF_PY_AUDIT_20260629_010740/
+_leaf_reports/
+LEAF_FULL_PYTHON_SOURCE_20260807_003051_MANIFEST.txt
+
+# Historical generated maintenance diagnostics
+project_maintenance/phase_16u163_presentation_debt_classification.json
+project_maintenance/phase_16u162_global_repository_presentation_layer_sanity_audit.json
+project_maintenance/structured_status_consumer_classification_phase_16u2.json
+project_maintenance/structured_status_consumer_discovery_phase_16u1.json

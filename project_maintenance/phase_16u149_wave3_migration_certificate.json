@@ -1,0 +1,62 @@
+{
+  "phase": "16U.149",
+  "wave_id": "16U-WAVE3",
+  "wave_name": "Candidate mutation, population, ranking, and evolution presentation migration",
+  "passed": true,
+  "issued_at_utc": "2026-06-28T22:37:58.946323+00:00",
+  "security_statement": "Wave 3 batched implementation only. Verification remained per-file and transactional.",
+  "locked_baseline": 68,
+  "closed_before_wave": 39,
+  "remaining_before_wave": 29,
+  "closed_after_wave": 50,
+  "remaining_after_wave": 18,
+  "net_files_closed": 11,
+  "selected_files": [
+    "regen_candidate_mutation_completion_audit.py",
+    "regen_candidate_mutation_input_audit.py",
+    "regen_candidate_mutation_master_gate.py",
+    "regen_candidate_population_completion_audit.py",
+    "regen_candidate_population_master_gate.py",
+    "regen_candidate_ranking_completion_audit.py",
+    "regen_candidate_ranking_input_audit.py",
+    "regen_candidate_ranking_master_gate.py",
+    "regen_evolution_loop_completion_audit.py",
+    "regen_evolution_loop_input_audit.py",
+    "regen_evolution_loop_master_gate.py"
+  ],
+  "closed_files": [
+    "regen_candidate_mutation_completion_audit.py",
+    "regen_candidate_mutation_input_audit.py",
+    "regen_candidate_mutation_master_gate.py",
+    "regen_candidate_population_completion_audit.py",
+    "regen_candidate_population_master_gate.py",
+    "regen_candidate_ranking_completion_audit.py",
+    "regen_candidate_ranking_input_audit.py",
+    "regen_candidate_ranking_master_gate.py",
+    "regen_evolution_loop_completion_audit.py",
+    "regen_evolution_loop_input_audit.py",
+    "regen_evolution_loop_master_gate.py"
+  ],
+  "checks": {
+    "manifest_passed": true,
+    "patch_passed": true,
+    "regression_passed": true,
+    "closure_passed": true,
+    "locked_audit_passed": true,
+    "files_selected_11": true,
+    "files_patched_11": true,
+    "files_regressed_11": true,
+    "files_closed_11": true,
+    "audit_progress_correct": true
+  },
+  "evidence_hashes": {
+    "project_maintenance/phase_16u144_wave3_manifest_selection.json": "a52d9de37eb14f0e6cfdfab4427fb905065b9496dff775eea7ffd1baa93f7159",
+    "project_maintenance/phase_16u145_wave3_transactional_patch.json": "38970ac00a5ec7e2b4e34595c22d0b5996de19b11b89bc352a17cc839fc6af92",
+    "project_maintenance/phase_16u146_wave3_regression.json": "50a89ab758b0e1c8decfd6659f8ae30c8cd4509c3aa51c67a99bbc655c643b57",
+    "project_maintenance/phase_16u147_wave3_closure_gate.json": "119493ca1ea489300ed810fa5a28790e3fcef54d340c51f9bcf445401308098e",
+    "project_maintenance/phase_16u148_wave3_locked_audit.json": "a6f72c61fc90c2b340dcc167b8d77e2ebf580cb78e99884621f270ae4dbfdaac"
+  },
+  "failures": [],
+  "phase_16u149_wave3_migration_certificate_complete": true,
+  "next_phase": "16U.150 \u2014 Wave 4 Manifest Selection"
+}

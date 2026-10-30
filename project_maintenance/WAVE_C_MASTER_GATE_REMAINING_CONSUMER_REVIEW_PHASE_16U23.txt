@@ -1,0 +1,374 @@
+LEAF PHASE 16U.23
+WAVE C MASTER GATE REMAINING CONSUMER REVIEW
+================================================
+
+STATUS: PASS_PHASE_16U23_WAVE_C_MASTER_GATE_REMAINING_CONSUMER_REVIEW
+Generated: 2026-06-28T01:21:06
+
+SCOPE
+-----
+This phase reviews remaining Wave C master-gate status consumers.
+No production files are modified.
+No master-gate pass/fail policy is modified.
+
+SUMMARY
+-------
+Remaining master-gate consumers: 65
+Closure blockers: 0
+
+CATEGORY BREAKDOWN
+------------------
+FREEFORM_TEXT_SEMANTIC_INTENTIONAL_HOLD: 8
+MANUAL_REVIEW_INTENTIONAL_HOLD: 3
+PAYLOAD_LITERAL_INTENTIONAL_HOLD: 26
+PRESENTATION_MARKER_INTENTIONAL_HOLD: 4
+STATUS_PRODUCER_INTENTIONAL_HOLD: 24
+
+REMAINING CONSUMERS
+-------------------
+leaf_qt/real_engine_benchmark_master_gate.py:65 [MANUAL_REVIEW_INTENTIONAL_HOLD]
+  snippet: if "FAIL" in reason_text.upper() or "ERROR" in reason_text.upper() or "INVALID" in reason_text.upper():
+  recommendation: Record for future targeted review; do not block Wave C closure.
+  reason: Manual-review item is explicitly recorded and should not be automated in this wave.
+
+leaf_qt/real_engine_benchmark_master_gate.py:65 [MANUAL_REVIEW_INTENTIONAL_HOLD]
+  snippet: if "FAIL" in reason_text.upper() or "ERROR" in reason_text.upper() or "INVALID" in reason_text.upper():
+  recommendation: Record for future targeted review; do not block Wave C closure.
+  reason: Manual-review item is explicitly recorded and should not be automated in this wave.
+
+leaf_qt/regen_candidate_mutation_master_gate.py:330 [PRESENTATION_MARKER_INTENTIONAL_HOLD]
+  snippet: label = "PASS" if check["passed"] else "FAIL"
+  recommendation: Preserve as evidence/report rendering.
+  reason: Boolean-to-text marker is presentation output, not master-gate status consumption.
+
+leaf_qt/regen_candidate_population_master_gate.py:299 [PRESENTATION_MARKER_INTENTIONAL_HOLD]
+  snippet: label = "PASS" if check["passed"] else "FAIL"
+  recommendation: Preserve as evidence/report rendering.
+  reason: Boolean-to-text marker is presentation output, not master-gate status consumption.
+
+leaf_qt/regen_candidate_population_master_gate.py:405 [FREEFORM_TEXT_SEMANTIC_INTENTIONAL_HOLD]
+  snippet: if "FAIL" in text or "INVALID" in text or "ERROR" in text:
+  recommendation: Preserve until structured diagnostic payload replaces freeform text gate checks.
+  reason: Freeform text scanning is semantic rather than canonical status consumption.
+
+leaf_qt/regen_candidate_population_master_gate.py:405 [FREEFORM_TEXT_SEMANTIC_INTENTIONAL_HOLD]
+  snippet: if "FAIL" in text or "INVALID" in text or "ERROR" in text:
+  recommendation: Preserve until structured diagnostic payload replaces freeform text gate checks.
+  reason: Freeform text scanning is semantic rather than canonical status consumption.
+
+leaf_qt/regen_candidate_population_master_gate.py:414 [FREEFORM_TEXT_SEMANTIC_INTENTIONAL_HOLD]
+  snippet: elif "WARN" in text or "REVIEW" in text or "PLACEHOLDER" in text:
+  recommendation: Preserve until structured diagnostic payload replaces freeform text gate checks.
+  reason: Freeform text scanning is semantic rather than canonical status consumption.
+
+leaf_qt/regen_candidate_population_master_gate.py:414 [FREEFORM_TEXT_SEMANTIC_INTENTIONAL_HOLD]
+  snippet: elif "WARN" in text or "REVIEW" in text or "PLACEHOLDER" in text:
+  recommendation: Preserve until structured diagnostic payload replaces freeform text gate checks.
+  reason: Freeform text scanning is semantic rather than canonical status consumption.
+
+leaf_qt/regen_candidate_ranking_master_gate.py:603 [PRESENTATION_MARKER_INTENTIONAL_HOLD]
+  snippet: label = "PASS" if check["passed"] else "FAIL"
+  recommendation: Preserve as evidence/report rendering.
+  reason: Boolean-to-text marker is presentation output, not master-gate status consumption.
+
+leaf_qt/regen_evolution_loop_master_gate.py:327 [PRESENTATION_MARKER_INTENTIONAL_HOLD]
+  snippet: label = "PASS" if check["passed"] else "FAIL"
+  recommendation: Preserve as evidence/report rendering.
+  reason: Boolean-to-text marker is presentation output, not master-gate status consumption.
+
+leaf_qt/regen_geometry_master_gate.py:56 [MANUAL_REVIEW_INTENTIONAL_HOLD]
+  snippet: elif history.get("iteration_history_status") != "PASS":
+  recommendation: Record for future targeted review; do not block Wave C closure.
+  reason: Manual-review item is explicitly recorded and should not be automated in this wave.
+
+leaf_qt/regen_geometry_master_gate.py:250 [FREEFORM_TEXT_SEMANTIC_INTENTIONAL_HOLD]
+  snippet: if "FAIL" in text or "INVALID" in text:
+  recommendation: Preserve until structured diagnostic payload replaces freeform text gate checks.
+  reason: Freeform text scanning is semantic rather than canonical status consumption.
+
+leaf_qt/regen_geometry_master_gate.py:250 [FREEFORM_TEXT_SEMANTIC_INTENTIONAL_HOLD]
+  snippet: if "FAIL" in text or "INVALID" in text:
+  recommendation: Preserve until structured diagnostic payload replaces freeform text gate checks.
+  reason: Freeform text scanning is semantic rather than canonical status consumption.
+
+leaf_qt/regen_geometry_master_gate.py:260 [FREEFORM_TEXT_SEMANTIC_INTENTIONAL_HOLD]
+  snippet: elif "WARN" in text or "REVIEW" in text or "PLACEHOLDER" in text:
+  recommendation: Preserve until structured diagnostic payload replaces freeform text gate checks.
+  reason: Freeform text scanning is semantic rather than canonical status consumption.
+
+leaf_qt/regen_geometry_master_gate.py:260 [FREEFORM_TEXT_SEMANTIC_INTENTIONAL_HOLD]
+  snippet: elif "WARN" in text or "REVIEW" in text or "PLACEHOLDER" in text:
+  recommendation: Preserve until structured diagnostic payload replaces freeform text gate checks.
+  reason: Freeform text scanning is semantic rather than canonical status consumption.
+
+leaf_qt/real_engine_benchmark_master_gate.py:25 [PAYLOAD_LITERAL_INTENTIONAL_HOLD]
+  snippet: "PASS",
+  recommendation: Preserve until payload schema migration.
+  reason: Standalone literals likely belong to evidence or report payload construction.
+
+leaf_qt/real_engine_benchmark_master_gate.py:39 [PAYLOAD_LITERAL_INTENTIONAL_HOLD]
+  snippet: "FAIL",
+  recommendation: Preserve until payload schema migration.
+  reason: Standalone literals likely belong to evidence or report payload construction.
+
+leaf_qt/real_engine_benchmark_master_gate.py:48 [PAYLOAD_LITERAL_INTENTIONAL_HOLD]
+  snippet: "WARN",
+  recommendation: Preserve until payload schema migration.
+  reason: Standalone literals likely belong to evidence or report payload construction.
+
+leaf_qt/regen_axial_geometry_master_gate.py:137 [STATUS_PRODUCER_INTENTIONAL_HOLD]
+  snippet: return "FAIL"
+  recommendation: Preserve as legacy-compatible status producer.
+  reason: Return literal produces compatibility status output rather than consuming it.
+
+leaf_qt/regen_axial_geometry_master_gate.py:146 [STATUS_PRODUCER_INTENTIONAL_HOLD]
+  snippet: return "PASS"
+  recommendation: Preserve as legacy-compatible status producer.
+  reason: Return literal produces compatibility status output rather than consuming it.
+
+leaf_qt/regen_axial_geometry_master_gate.py:148 [STATUS_PRODUCER_INTENTIONAL_HOLD]
+  snippet: return "FAIL"
+  recommendation: Preserve as legacy-compatible status producer.
+  reason: Return literal produces compatibility status output rather than consuming it.
+
+leaf_qt/regen_axial_geometry_master_gate.py:158 [PAYLOAD_LITERAL_INTENTIONAL_HOLD]
+  snippet: "FAIL",
+  recommendation: Preserve until payload schema migration.
+  reason: Standalone literals likely belong to evidence or report payload construction.
+
+leaf_qt/regen_axial_geometry_master_gate.py:237 [PAYLOAD_LITERAL_INTENTIONAL_HOLD]
+  snippet: "FAIL",
+  recommendation: Preserve until payload schema migration.
+  reason: Standalone literals likely belong to evidence or report payload construction.
+
+leaf_qt/regen_candidate_acceptance_master_gate.py:141 [STATUS_PRODUCER_INTENTIONAL_HOLD]
+  snippet: return "FAIL"
+  recommendation: Preserve as legacy-compatible status producer.
+  reason: Return literal produces compatibility status output rather than consuming it.
+
+leaf_qt/regen_candidate_acceptance_master_gate.py:150 [STATUS_PRODUCER_INTENTIONAL_HOLD]
+  snippet: return "PASS"
+  recommendation: Preserve as legacy-compatible status producer.
+  reason: Return literal produces compatibility status output rather than consuming it.
+
+leaf_qt/regen_candidate_acceptance_master_gate.py:152 [STATUS_PRODUCER_INTENTIONAL_HOLD]
+  snippet: return "FAIL"
+  recommendation: Preserve as legacy-compatible status producer.
+  reason: Return literal produces compatibility status output rather than consuming it.
+
+leaf_qt/regen_candidate_acceptance_master_gate.py:162 [PAYLOAD_LITERAL_INTENTIONAL_HOLD]
+  snippet: "FAIL",
+  recommendation: Preserve until payload schema migration.
+  reason: Standalone literals likely belong to evidence or report payload construction.
+
+leaf_qt/regen_candidate_acceptance_master_gate.py:257 [PAYLOAD_LITERAL_INTENTIONAL_HOLD]
+  snippet: "FAIL",
+  recommendation: Preserve until payload schema migration.
+  reason: Standalone literals likely belong to evidence or report payload construction.
+
+leaf_qt/regen_candidate_acceptance_master_gate.py:334 [PAYLOAD_LITERAL_INTENTIONAL_HOLD]
+  snippet: "FAIL",
+  recommendation: Preserve until payload schema migration.
+  reason: Standalone literals likely belong to evidence or report payload construction.
+
+leaf_qt/regen_candidate_mutation_master_gate.py:391 [STATUS_PRODUCER_INTENTIONAL_HOLD]
+  snippet: return "FAIL"
+  recommendation: Preserve as legacy-compatible status producer.
+  reason: Return literal produces compatibility status output rather than consuming it.
+
+leaf_qt/regen_candidate_mutation_master_gate.py:400 [STATUS_PRODUCER_INTENTIONAL_HOLD]
+  snippet: return "PASS"
+  recommendation: Preserve as legacy-compatible status producer.
+  reason: Return literal produces compatibility status output rather than consuming it.
+
+leaf_qt/regen_candidate_mutation_master_gate.py:402 [STATUS_PRODUCER_INTENTIONAL_HOLD]
+  snippet: return "FAIL"
+  recommendation: Preserve as legacy-compatible status producer.
+  reason: Return literal produces compatibility status output rather than consuming it.
+
+leaf_qt/regen_candidate_mutation_master_gate.py:412 [PAYLOAD_LITERAL_INTENTIONAL_HOLD]
+  snippet: "FAIL",
+  recommendation: Preserve until payload schema migration.
+  reason: Standalone literals likely belong to evidence or report payload construction.
+
+leaf_qt/regen_candidate_mutation_master_gate.py:491 [PAYLOAD_LITERAL_INTENTIONAL_HOLD]
+  snippet: "FAIL",
+  recommendation: Preserve until payload schema migration.
+  reason: Standalone literals likely belong to evidence or report payload construction.
+
+leaf_qt/regen_candidate_mutation_master_gate.py:605 [PAYLOAD_LITERAL_INTENTIONAL_HOLD]
+  snippet: "FAIL",
+  recommendation: Preserve until payload schema migration.
+  reason: Standalone literals likely belong to evidence or report payload construction.
+
+leaf_qt/regen_candidate_ranking_master_gate.py:49 [STATUS_PRODUCER_INTENTIONAL_HOLD]
+  snippet: return "FAIL"
+  recommendation: Preserve as legacy-compatible status producer.
+  reason: Return literal produces compatibility status output rather than consuming it.
+
+leaf_qt/regen_candidate_ranking_master_gate.py:58 [STATUS_PRODUCER_INTENTIONAL_HOLD]
+  snippet: return "PASS"
+  recommendation: Preserve as legacy-compatible status producer.
+  reason: Return literal produces compatibility status output rather than consuming it.
+
+leaf_qt/regen_candidate_ranking_master_gate.py:60 [STATUS_PRODUCER_INTENTIONAL_HOLD]
+  snippet: return "FAIL"
+  recommendation: Preserve as legacy-compatible status producer.
+  reason: Return literal produces compatibility status output rather than consuming it.
+
+leaf_qt/regen_candidate_ranking_master_gate.py:75 [PAYLOAD_LITERAL_INTENTIONAL_HOLD]
+  snippet: "FAIL",
+  recommendation: Preserve until payload schema migration.
+  reason: Standalone literals likely belong to evidence or report payload construction.
+
+leaf_qt/regen_candidate_ranking_master_gate.py:106 [PAYLOAD_LITERAL_INTENTIONAL_HOLD]
+  snippet: "FAIL",
+  recommendation: Preserve until payload schema migration.
+  reason: Standalone literals likely belong to evidence or report payload construction.
+
+leaf_qt/regen_candidate_ranking_master_gate.py:129 [PAYLOAD_LITERAL_INTENTIONAL_HOLD]
+  snippet: "FAIL",
+  recommendation: Preserve until payload schema migration.
+  reason: Standalone literals likely belong to evidence or report payload construction.
+
+leaf_qt/regen_candidate_ranking_master_gate.py:139 [PAYLOAD_LITERAL_INTENTIONAL_HOLD]
+  snippet: "FAIL",
+  recommendation: Preserve until payload schema migration.
+  reason: Standalone literals likely belong to evidence or report payload construction.
+
+leaf_qt/regen_candidate_ranking_master_gate.py:168 [PAYLOAD_LITERAL_INTENTIONAL_HOLD]
+  snippet: "FAIL",
+  recommendation: Preserve until payload schema migration.
+  reason: Standalone literals likely belong to evidence or report payload construction.
+
+leaf_qt/regen_candidate_ranking_master_gate.py:178 [PAYLOAD_LITERAL_INTENTIONAL_HOLD]
+  snippet: "FAIL",
+  recommendation: Preserve until payload schema migration.
+  reason: Standalone literals likely belong to evidence or report payload construction.
+
+leaf_qt/regen_evolution_loop_master_gate.py:389 [STATUS_PRODUCER_INTENTIONAL_HOLD]
+  snippet: return "FAIL"
+  recommendation: Preserve as legacy-compatible status producer.
+  reason: Return literal produces compatibility status output rather than consuming it.
+
+leaf_qt/regen_evolution_loop_master_gate.py:398 [STATUS_PRODUCER_INTENTIONAL_HOLD]
+  snippet: return "PASS"
+  recommendation: Preserve as legacy-compatible status producer.
+  reason: Return literal produces compatibility status output rather than consuming it.
+
+leaf_qt/regen_evolution_loop_master_gate.py:400 [STATUS_PRODUCER_INTENTIONAL_HOLD]
+  snippet: return "FAIL"
+  recommendation: Preserve as legacy-compatible status producer.
+  reason: Return literal produces compatibility status output rather than consuming it.
+
+leaf_qt/regen_evolution_loop_master_gate.py:410 [PAYLOAD_LITERAL_INTENTIONAL_HOLD]
+  snippet: "FAIL",
+  recommendation: Preserve until payload schema migration.
+  reason: Standalone literals likely belong to evidence or report payload construction.
+
+leaf_qt/regen_evolution_loop_master_gate.py:489 [PAYLOAD_LITERAL_INTENTIONAL_HOLD]
+  snippet: "FAIL",
+  recommendation: Preserve until payload schema migration.
+  reason: Standalone literals likely belong to evidence or report payload construction.
+
+leaf_qt/regen_optimisation_master_gate.py:275 [STATUS_PRODUCER_INTENTIONAL_HOLD]
+  snippet: return "FAIL"
+  recommendation: Preserve as legacy-compatible status producer.
+  reason: Return literal produces compatibility status output rather than consuming it.
+
+leaf_qt/regen_optimisation_master_gate.py:284 [STATUS_PRODUCER_INTENTIONAL_HOLD]
+  snippet: return "PASS"
+  recommendation: Preserve as legacy-compatible status producer.
+  reason: Return literal produces compatibility status output rather than consuming it.
+
+leaf_qt/regen_optimisation_master_gate.py:286 [STATUS_PRODUCER_INTENTIONAL_HOLD]
+  snippet: return "FAIL"
+  recommendation: Preserve as legacy-compatible status producer.
+  reason: Return literal produces compatibility status output rather than consuming it.
+
+leaf_qt/regen_optimisation_master_gate.py:296 [PAYLOAD_LITERAL_INTENTIONAL_HOLD]
+  snippet: "FAIL",
+  recommendation: Preserve until payload schema migration.
+  reason: Standalone literals likely belong to evidence or report payload construction.
+
+leaf_qt/regen_optimisation_master_gate.py:375 [PAYLOAD_LITERAL_INTENTIONAL_HOLD]
+  snippet: "FAIL",
+  recommendation: Preserve until payload schema migration.
+  reason: Standalone literals likely belong to evidence or report payload construction.
+
+leaf_qt/regen_optimisation_master_gate.py:521 [PAYLOAD_LITERAL_INTENTIONAL_HOLD]
+  snippet: "FAIL",
+  recommendation: Preserve until payload schema migration.
+  reason: Standalone literals likely belong to evidence or report payload construction.
+
+leaf_qt/regen_scalability_master_gate.py:219 [STATUS_PRODUCER_INTENTIONAL_HOLD]
+  snippet: return "FAIL"
+  recommendation: Preserve as legacy-compatible status producer.
+  reason: Return literal produces compatibility status output rather than consuming it.
+
+leaf_qt/regen_scalability_master_gate.py:225 [STATUS_PRODUCER_INTENTIONAL_HOLD]
+  snippet: return "PASS"
+  recommendation: Preserve as legacy-compatible status producer.
+  reason: Return literal produces compatibility status output rather than consuming it.
+
+leaf_qt/regen_scalability_master_gate.py:226 [STATUS_PRODUCER_INTENTIONAL_HOLD]
+  snippet: return "FAIL"
+  recommendation: Preserve as legacy-compatible status producer.
+  reason: Return literal produces compatibility status output rather than consuming it.
+
+leaf_qt/regen_scalability_master_gate.py:236 [PAYLOAD_LITERAL_INTENTIONAL_HOLD]
+  snippet: "FAIL",
+  recommendation: Preserve until payload schema migration.
+  reason: Standalone literals likely belong to evidence or report payload construction.
+
+leaf_qt/regen_scalability_master_gate.py:311 [PAYLOAD_LITERAL_INTENTIONAL_HOLD]
+  snippet: "FAIL",
+  recommendation: Preserve until payload schema migration.
+  reason: Standalone literals likely belong to evidence or report payload construction.
+
+leaf_qt/regen_variable_geometry_master_gate.py:150 [STATUS_PRODUCER_INTENTIONAL_HOLD]
+  snippet: return "FAIL"
+  recommendation: Preserve as legacy-compatible status producer.
+  reason: Return literal produces compatibility status output rather than consuming it.
+
+leaf_qt/regen_variable_geometry_master_gate.py:159 [STATUS_PRODUCER_INTENTIONAL_HOLD]
+  snippet: return "PASS"
+  recommendation: Preserve as legacy-compatible status producer.
+  reason: Return literal produces compatibility status output rather than consuming it.
+
+leaf_qt/regen_variable_geometry_master_gate.py:161 [STATUS_PRODUCER_INTENTIONAL_HOLD]
+  snippet: return "FAIL"
+  recommendation: Preserve as legacy-compatible status producer.
+  reason: Return literal produces compatibility status output rather than consuming it.
+
+leaf_qt/regen_variable_geometry_master_gate.py:171 [PAYLOAD_LITERAL_INTENTIONAL_HOLD]
+  snippet: "FAIL",
+  recommendation: Preserve until payload schema migration.
+  reason: Standalone literals likely belong to evidence or report payload construction.
+
+leaf_qt/regen_variable_geometry_master_gate.py:250 [PAYLOAD_LITERAL_INTENTIONAL_HOLD]
+  snippet: "FAIL",
+  recommendation: Preserve until payload schema migration.
+  reason: Standalone literals likely belong to evidence or report payload construction.
+
+COMPILE RESULTS
+---------------
+leaf_qt/real_engine_benchmark_master_gate.py: PASS 
+leaf_qt/regen_axial_geometry_master_gate.py: PASS 
+leaf_qt/regen_candidate_acceptance_master_gate.py: PASS 
+leaf_qt/regen_candidate_mutation_master_gate.py: PASS 
+leaf_qt/regen_candidate_population_master_gate.py: PASS 
+leaf_qt/regen_candidate_ranking_master_gate.py: PASS 
+leaf_qt/regen_evolution_loop_master_gate.py: PASS 
+leaf_qt/regen_geometry_master_gate.py: PASS 
+leaf_qt/regen_optimisation_master_gate.py: PASS 
+leaf_qt/regen_scalability_master_gate.py: PASS 
+leaf_qt/regen_variable_geometry_master_gate.py: PASS 
+
+COMPLETION NOTICE
+-----------------
+PHASE 16U.23 COMPLETE.
+
+NEXT PHASE
+----------
+PHASE 16U.24 — WAVE C MASTER GATE STATUS MIGRATION CLOSURE GATE

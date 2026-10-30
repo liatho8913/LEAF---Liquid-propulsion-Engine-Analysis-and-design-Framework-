@@ -1,0 +1,29 @@
+LEAF PHASE 16U.129
+REGEN GEOMETRY CONSTRAINT OWNER CLOSURE GATE
+============================================
+
+STATUS: PASS_PHASE_16U129_REGEN_GEOMETRY_CONSTRAINT_OWNER_CLOSURE_GATE
+Target: leaf_qt/regen_geometry_constraint_owner.py
+
+ROADMAP
+-------
+Locked baseline: 68
+Closed before this target: 14
+Remaining before this target: 54
+Expected after next audit: closed=15, remaining=53
+
+CLOSURE CHECKS
+--------------
+Phase 16U.127 patch rerun
+Phase 16U.128 regression rerun
+target compile
+LegacyCompatibilityProducer
+status_severity
+shared marker helper usage
+legacy inline PASS/WARN/FAIL logic removed
+patch JSON completion flag
+regression JSON completion flag
+locked baseline present
+
+FAILURES
+--------

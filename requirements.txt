@@ -1,0 +1,22 @@
+# LEAF v0.5.0-dev — Demonstrator Runtime Dependencies
+#
+# Validated environment:
+#   CPython 3.12.13
+#   macOS 15.6 arm64
+#
+# RocketCEA native runtime note:
+#   The accepted macOS demonstrator's compiled RocketCEA extension
+#   links to Homebrew GCC's libgfortran.5.dylib.
+#   Native installation guidance belongs in the release documentation.
+#
+# Direct LEAF runtime dependencies only.
+# Development/test/documentation extras are intentionally excluded.
+
+PySide6==6.11.1
+numpy==2.4.6
+scipy==1.17.1
+matplotlib==3.10.9
+rocketcea==1.2.3
+keyring==25.7.0
+pyobjc-framework-Cocoa==12.2.2; sys_platform == "darwin"
+cryptography==49.0.0

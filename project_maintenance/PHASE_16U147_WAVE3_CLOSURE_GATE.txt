@@ -1,0 +1,25 @@
+LEAF PHASE 16U.147
+WAVE 3 CLOSURE GATE
+====================
+
+STATUS: PASS_PHASE_16U147_WAVE3_CLOSURE_GATE
+
+Files closed: 11
+Files failed: 0
+
+CLOSED FILES
+------------
+- regen_candidate_mutation_completion_audit.py
+- regen_candidate_mutation_input_audit.py
+- regen_candidate_mutation_master_gate.py
+- regen_candidate_population_completion_audit.py
+- regen_candidate_population_master_gate.py
+- regen_candidate_ranking_completion_audit.py
+- regen_candidate_ranking_input_audit.py
+- regen_candidate_ranking_master_gate.py
+- regen_evolution_loop_completion_audit.py
+- regen_evolution_loop_input_audit.py
+- regen_evolution_loop_master_gate.py
+
+FAILURES
+--------

@@ -1,0 +1,38 @@
+LEAF PHASE 16U.88
+REGEN GEOMETRY REPORT OWNER PRESENTATION LAYER CLOSURE GATE
+============================================================================
+
+STATUS: PASS_PHASE_16U88_REGEN_GEOMETRY_REPORT_OWNER_PRESENTATION_LAYER_CLOSURE_GATE
+Generated: 2026-06-28T19:50:25
+
+FEATURE
+-------
+Closure gate for the regen geometry report owner presentation-layer migration.
+
+TARGET CLOSED
+-------------
+leaf_qt/regen_geometry_report_owner.py
+
+CHECKS
+------
+production_target_exists: PASS — leaf_qt/regen_geometry_report_owner.py
+phase_16u86_patch_script_exists: PASS — project_maintenance/regen_geometry_report_owner_presentation_layer_patch_phase_16u86.py
+phase_16u87_regression_script_exists: PASS — project_maintenance/regen_geometry_report_owner_presentation_layer_regression_phase_16u87.py
+phase_16u86_patch_rerun_passed: PASS — returncode=0
+phase_16u87_regression_rerun_passed: PASS — returncode=0
+phase_16u86_completion_flag_true: PASS — PASS_PHASE_16U86_REGEN_GEOMETRY_REPORT_OWNER_PRESENTATION_LAYER_PATCH
+phase_16u87_completion_flag_true: PASS — PASS_PHASE_16U87_REGEN_GEOMETRY_REPORT_OWNER_PRESENTATION_LAYER_REGRESSION
+production_target_contains_shared_status_layer: PASS — shared status presentation helper present
+production_target_has_no_legacy_status_patterns_after_helper: PASS — legacy literals allowed only inside helper fallback
+
+CLOSURE DECISION
+----------------
+The regen geometry report owner presentation-layer migration is CLOSED.
+
+COMPLETION NOTICE
+-----------------
+PHASE 16U.88 COMPLETE.
+
+NEXT FEATURE
+------------
+PHASE 16U.89 — UPDATED GLOBAL REMAINING-CANDIDATE AUDIT

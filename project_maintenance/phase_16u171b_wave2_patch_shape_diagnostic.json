@@ -1,0 +1,651 @@
+{
+  "phase": "16U.171B",
+  "diagnostic_count": 71,
+  "shape_counts": {
+    "COMPARE_SHAPE_NOT_YET_SUPPORTED": 71
+  },
+  "diagnostics": [
+    {
+      "path": "leaf_qt/engine_solver.py",
+      "line_number": 5323,
+      "patchability": "SAFE_EQUALITY_LITERAL_CANDIDATE",
+      "shape": "COMPARE_SHAPE_NOT_YET_SUPPORTED",
+      "statement_start_line": 5323,
+      "statement_end_line": 5323,
+      "statement": "    elif status == \"FAIL_BUT_IMPROVED\":"
+    },
+    {
+      "path": "leaf_qt/engine_solver.py",
+      "line_number": 5323,
+      "patchability": "SAFE_EQUALITY_LITERAL_CANDIDATE",
+      "shape": "COMPARE_SHAPE_NOT_YET_SUPPORTED",
+      "statement_start_line": 5323,
+      "statement_end_line": 5323,
+      "statement": "    elif status == \"FAIL_BUT_IMPROVED\":"
+    },
+    {
+      "path": "leaf_qt/engine_solver.py",
+      "line_number": 7746,
+      "patchability": "SAFE_EQUALITY_LITERAL_CANDIDATE",
+      "shape": "COMPARE_SHAPE_NOT_YET_SUPPORTED",
+      "statement_start_line": 7746,
+      "statement_end_line": 7746,
+      "statement": "        if results.get(\"explicit_coating_liner_status\") == \"FAIL_THERMAL_STRESS\":"
+    },
+    {
+      "path": "leaf_qt/engine_solver.py",
+      "line_number": 7746,
+      "patchability": "SAFE_EQUALITY_LITERAL_CANDIDATE",
+      "shape": "COMPARE_SHAPE_NOT_YET_SUPPORTED",
+      "statement_start_line": 7746,
+      "statement_end_line": 7746,
+      "statement": "        if results.get(\"explicit_coating_liner_status\") == \"FAIL_THERMAL_STRESS\":"
+    },
+    {
+      "path": "leaf_qt/engine_solver.py",
+      "line_number": 7767,
+      "patchability": "SAFE_EQUALITY_LITERAL_CANDIDATE",
+      "shape": "COMPARE_SHAPE_NOT_YET_SUPPORTED",
+      "statement_start_line": 7767,
+      "statement_end_line": 7767,
+      "statement": "        if results.get(\"explicit_coating_liner_status\") == \"FAIL_THERMAL_STRESS\":"
+    },
+    {
+      "path": "leaf_qt/engine_solver.py",
+      "line_number": 7767,
+      "patchability": "SAFE_EQUALITY_LITERAL_CANDIDATE",
+      "shape": "COMPARE_SHAPE_NOT_YET_SUPPORTED",
+      "statement_start_line": 7767,
+      "statement_end_line": 7767,
+      "statement": "        if results.get(\"explicit_coating_liner_status\") == \"FAIL_THERMAL_STRESS\":"
+    },
+    {
+      "path": "leaf_qt/regen_convergence_master_gate.py",
+      "line_number": 44,
+      "patchability": "SAFE_EQUALITY_LITERAL_CANDIDATE",
+      "shape": "COMPARE_SHAPE_NOT_YET_SUPPORTED",
+      "statement_start_line": 44,
+      "statement_end_line": 44,
+      "statement": "    if status == \"PASS_REGEN_CONVERGENCE_MASTER_GATE_CONVERGED\":"
+    },
+    {
+      "path": "leaf_qt/regen_convergence_master_gate.py",
+      "line_number": 44,
+      "patchability": "SAFE_EQUALITY_LITERAL_CANDIDATE",
+      "shape": "COMPARE_SHAPE_NOT_YET_SUPPORTED",
+      "statement_start_line": 44,
+      "statement_end_line": 44,
+      "statement": "    if status == \"PASS_REGEN_CONVERGENCE_MASTER_GATE_CONVERGED\":"
+    },
+    {
+      "path": "leaf_qt/regen_convergence_master_gate.py",
+      "line_number": 54,
+      "patchability": "SAFE_EQUALITY_LITERAL_CANDIDATE",
+      "shape": "COMPARE_SHAPE_NOT_YET_SUPPORTED",
+      "statement_start_line": 54,
+      "statement_end_line": 54,
+      "statement": "    elif status == \"WARN_REGEN_CONVERGENCE_MASTER_GATE_RUNNING\":"
+    },
+    {
+      "path": "leaf_qt/regen_convergence_master_gate.py",
+      "line_number": 54,
+      "patchability": "SAFE_EQUALITY_LITERAL_CANDIDATE",
+      "shape": "COMPARE_SHAPE_NOT_YET_SUPPORTED",
+      "statement_start_line": 54,
+      "statement_end_line": 54,
+      "statement": "    elif status == \"WARN_REGEN_CONVERGENCE_MASTER_GATE_RUNNING\":"
+    },
+    {
+      "path": "leaf_qt/regen_convergence_master_gate.py",
+      "line_number": 66,
+      "patchability": "SAFE_EQUALITY_LITERAL_CANDIDATE",
+      "shape": "COMPARE_SHAPE_NOT_YET_SUPPORTED",
+      "statement_start_line": 66,
+      "statement_end_line": 66,
+      "statement": "    elif status == \"WARN_REGEN_CONVERGENCE_MASTER_GATE_MAX_GENERATIONS\":"
+    },
+    {
+      "path": "leaf_qt/regen_convergence_master_gate.py",
+      "line_number": 66,
+      "patchability": "SAFE_EQUALITY_LITERAL_CANDIDATE",
+      "shape": "COMPARE_SHAPE_NOT_YET_SUPPORTED",
+      "statement_start_line": 66,
+      "statement_end_line": 66,
+      "statement": "    elif status == \"WARN_REGEN_CONVERGENCE_MASTER_GATE_MAX_GENERATIONS\":"
+    },
+    {
+      "path": "leaf_qt/regen_optimisation_controller_master_gate.py",
+      "line_number": 44,
+      "patchability": "SAFE_EQUALITY_LITERAL_CANDIDATE",
+      "shape": "COMPARE_SHAPE_NOT_YET_SUPPORTED",
+      "statement_start_line": 44,
+      "statement_end_line": 44,
+      "statement": "    if status == \"PASS_REGEN_OPTIMISATION_MASTER_GATE_CONVERGED\":"
+    },
+    {
+      "path": "leaf_qt/regen_optimisation_controller_master_gate.py",
+      "line_number": 44,
+      "patchability": "SAFE_EQUALITY_LITERAL_CANDIDATE",
+      "shape": "COMPARE_SHAPE_NOT_YET_SUPPORTED",
+      "statement_start_line": 44,
+      "statement_end_line": 44,
+      "statement": "    if status == \"PASS_REGEN_OPTIMISATION_MASTER_GATE_CONVERGED\":"
+    },
+    {
+      "path": "leaf_qt/regen_optimisation_controller_master_gate.py",
+      "line_number": 54,
+      "patchability": "SAFE_EQUALITY_LITERAL_CANDIDATE",
+      "shape": "COMPARE_SHAPE_NOT_YET_SUPPORTED",
+      "statement_start_line": 54,
+      "statement_end_line": 54,
+      "statement": "    elif status == \"WARN_REGEN_OPTIMISATION_MASTER_GATE_NEXT_GENERATION_READY\":"
+    },
+    {
+      "path": "leaf_qt/regen_optimisation_controller_master_gate.py",
+      "line_number": 54,
+      "patchability": "SAFE_EQUALITY_LITERAL_CANDIDATE",
+      "shape": "COMPARE_SHAPE_NOT_YET_SUPPORTED",
+      "statement_start_line": 54,
+      "statement_end_line": 54,
+      "statement": "    elif status == \"WARN_REGEN_OPTIMISATION_MASTER_GATE_NEXT_GENERATION_READY\":"
+    },
+    {
+      "path": "leaf_qt/regen_optimisation_controller_master_gate.py",
+      "line_number": 66,
+      "patchability": "SAFE_EQUALITY_LITERAL_CANDIDATE",
+      "shape": "COMPARE_SHAPE_NOT_YET_SUPPORTED",
+      "statement_start_line": 66,
+      "statement_end_line": 66,
+      "statement": "    elif status == \"WARN_REGEN_OPTIMISATION_MASTER_GATE_WAITING\":"
+    },
+    {
+      "path": "leaf_qt/regen_optimisation_controller_master_gate.py",
+      "line_number": 66,
+      "patchability": "SAFE_EQUALITY_LITERAL_CANDIDATE",
+      "shape": "COMPARE_SHAPE_NOT_YET_SUPPORTED",
+      "statement_start_line": 66,
+      "statement_end_line": 66,
+      "statement": "    elif status == \"WARN_REGEN_OPTIMISATION_MASTER_GATE_WAITING\":"
+    },
+    {
+      "path": "leaf_qt/regen_viewer_gui_runtime_acceptance_gate_phase_16q28.py",
+      "line_number": 81,
+      "patchability": "SAFE_INEQUALITY_LITERAL_CANDIDATE",
+      "shape": "COMPARE_SHAPE_NOT_YET_SUPPORTED",
+      "statement_start_line": 81,
+      "statement_end_line": 81,
+      "statement": "    if results.get(\"phase_16q24_real_button_toggle_status\") != \"PASS_REGEN_VIEWER_REAL_BUTTON_TOGGLE_OWNER_PHASE_16Q24\":"
+    },
+    {
+      "path": "leaf_qt/regen_viewer_gui_runtime_acceptance_gate_phase_16q28.py",
+      "line_number": 81,
+      "patchability": "SAFE_INEQUALITY_LITERAL_CANDIDATE",
+      "shape": "COMPARE_SHAPE_NOT_YET_SUPPORTED",
+      "statement_start_line": 81,
+      "statement_end_line": 81,
+      "statement": "    if results.get(\"phase_16q24_real_button_toggle_status\") != \"PASS_REGEN_VIEWER_REAL_BUTTON_TOGGLE_OWNER_PHASE_16Q24\":"
+    },
+    {
+      "path": "leaf_qt/regen_viewer_gui_runtime_acceptance_gate_phase_16q28.py",
+      "line_number": 84,
+      "patchability": "SAFE_INEQUALITY_LITERAL_CANDIDATE",
+      "shape": "COMPARE_SHAPE_NOT_YET_SUPPORTED",
+      "statement_start_line": 84,
+      "statement_end_line": 84,
+      "statement": "    if results.get(\"phase_16q27_toggle_ux_status\") != \"PASS_REGEN_VIEWER_TOGGLE_UX_CLEANUP_PHASE_16Q27\":"
+    },
+    {
+      "path": "leaf_qt/regen_viewer_gui_runtime_acceptance_gate_phase_16q28.py",
+      "line_number": 84,
+      "patchability": "SAFE_INEQUALITY_LITERAL_CANDIDATE",
+      "shape": "COMPARE_SHAPE_NOT_YET_SUPPORTED",
+      "statement_start_line": 84,
+      "statement_end_line": 84,
+      "statement": "    if results.get(\"phase_16q27_toggle_ux_status\") != \"PASS_REGEN_VIEWER_TOGGLE_UX_CLEANUP_PHASE_16Q27\":"
+    },
+    {
+      "path": "leaf_qt/foundation_verification_harness.py",
+      "line_number": 123,
+      "patchability": "SAFE_EQUALITY_LITERAL_CANDIDATE",
+      "shape": "COMPARE_SHAPE_NOT_YET_SUPPORTED",
+      "statement_start_line": 123,
+      "statement_end_line": 123,
+      "statement": "    if status == \"PASS_FOUNDATION_VERIFICATION\" and failed_count == 0:"
+    },
+    {
+      "path": "leaf_qt/foundation_verification_harness.py",
+      "line_number": 123,
+      "patchability": "SAFE_EQUALITY_LITERAL_CANDIDATE",
+      "shape": "COMPARE_SHAPE_NOT_YET_SUPPORTED",
+      "statement_start_line": 123,
+      "statement_end_line": 123,
+      "statement": "    if status == \"PASS_FOUNDATION_VERIFICATION\" and failed_count == 0:"
+    },
+    {
+      "path": "leaf_qt/regen_candidate_comparison_master_gate.py",
+      "line_number": 17,
+      "patchability": "SAFE_INEQUALITY_LITERAL_CANDIDATE",
+      "shape": "COMPARE_SHAPE_NOT_YET_SUPPORTED",
+      "statement_start_line": 17,
+      "statement_end_line": 17,
+      "statement": "    if results.get(\"regen_candidate_comparison_completion_audit_status\") != \"PASS_REGEN_CANDIDATE_COMPARISON_VIEWER_BACKEND_PHASE_15B\":"
+    },
+    {
+      "path": "leaf_qt/regen_candidate_comparison_master_gate.py",
+      "line_number": 17,
+      "patchability": "SAFE_INEQUALITY_LITERAL_CANDIDATE",
+      "shape": "COMPARE_SHAPE_NOT_YET_SUPPORTED",
+      "statement_start_line": 17,
+      "statement_end_line": 17,
+      "statement": "    if results.get(\"regen_candidate_comparison_completion_audit_status\") != \"PASS_REGEN_CANDIDATE_COMPARISON_VIEWER_BACKEND_PHASE_15B\":"
+    },
+    {
+      "path": "leaf_qt/regen_completion_master_gate.py",
+      "line_number": 17,
+      "patchability": "SAFE_INEQUALITY_LITERAL_CANDIDATE",
+      "shape": "COMPARE_SHAPE_NOT_YET_SUPPORTED",
+      "statement_start_line": 17,
+      "statement_end_line": 17,
+      "statement": "    if results.get(\"regen_completion_gate_completion_audit_status\") != \"PASS_REGEN_COMPLETION_GATE_AUDIT_PHASE_16F\":"
+    },
+    {
+      "path": "leaf_qt/regen_completion_master_gate.py",
+      "line_number": 17,
+      "patchability": "SAFE_INEQUALITY_LITERAL_CANDIDATE",
+      "shape": "COMPARE_SHAPE_NOT_YET_SUPPORTED",
+      "statement_start_line": 17,
+      "statement_end_line": 17,
+      "statement": "    if results.get(\"regen_completion_gate_completion_audit_status\") != \"PASS_REGEN_COMPLETION_GATE_AUDIT_PHASE_16F\":"
+    },
+    {
+      "path": "leaf_qt/regen_evolution_tree_master_gate.py",
+      "line_number": 17,
+      "patchability": "SAFE_INEQUALITY_LITERAL_CANDIDATE",
+      "shape": "COMPARE_SHAPE_NOT_YET_SUPPORTED",
+      "statement_start_line": 17,
+      "statement_end_line": 17,
+      "statement": "    if results.get(\"regen_evolution_tree_completion_audit_status\") != \"PASS_REGEN_EVOLUTION_TREE_BACKEND_PHASE_15C\":"
+    },
+    {
+      "path": "leaf_qt/regen_evolution_tree_master_gate.py",
+      "line_number": 17,
+      "patchability": "SAFE_INEQUALITY_LITERAL_CANDIDATE",
+      "shape": "COMPARE_SHAPE_NOT_YET_SUPPORTED",
+      "statement_start_line": 17,
+      "statement_end_line": 17,
+      "statement": "    if results.get(\"regen_evolution_tree_completion_audit_status\") != \"PASS_REGEN_EVOLUTION_TREE_BACKEND_PHASE_15C\":"
+    },
+    {
+      "path": "leaf_qt/regen_optimisation_narrative_master_gate.py",
+      "line_number": 58,
+      "patchability": "SAFE_EQUALITY_LITERAL_CANDIDATE",
+      "shape": "COMPARE_SHAPE_NOT_YET_SUPPORTED",
+      "statement_start_line": 58,
+      "statement_end_line": 58,
+      "statement": "    if status == \"PASS_REGEN_OPTIMISATION_NARRATIVE_MASTER_GATE\":"
+    },
+    {
+      "path": "leaf_qt/regen_optimisation_narrative_master_gate.py",
+      "line_number": 58,
+      "patchability": "SAFE_EQUALITY_LITERAL_CANDIDATE",
+      "shape": "COMPARE_SHAPE_NOT_YET_SUPPORTED",
+      "statement_start_line": 58,
+      "statement_end_line": 58,
+      "statement": "    if status == \"PASS_REGEN_OPTIMISATION_NARRATIVE_MASTER_GATE\":"
+    },
+    {
+      "path": "leaf_qt/regen_optimisation_viewer_master_gate.py",
+      "line_number": 17,
+      "patchability": "SAFE_INEQUALITY_LITERAL_CANDIDATE",
+      "shape": "COMPARE_SHAPE_NOT_YET_SUPPORTED",
+      "statement_start_line": 17,
+      "statement_end_line": 17,
+      "statement": "    if results.get(\"regen_optimisation_viewer_completion_audit_status\") != \"PASS_REGEN_OPTIMISATION_VIEWER_BACKEND_PHASE_15A\":"
+    },
+    {
+      "path": "leaf_qt/regen_optimisation_viewer_master_gate.py",
+      "line_number": 17,
+      "patchability": "SAFE_INEQUALITY_LITERAL_CANDIDATE",
+      "shape": "COMPARE_SHAPE_NOT_YET_SUPPORTED",
+      "statement_start_line": 17,
+      "statement_end_line": 17,
+      "statement": "    if results.get(\"regen_optimisation_viewer_completion_audit_status\") != \"PASS_REGEN_OPTIMISATION_VIEWER_BACKEND_PHASE_15A\":"
+    },
+    {
+      "path": "leaf_qt/regen_runtime_candidate_evaluation_master_gate.py",
+      "line_number": 17,
+      "patchability": "SAFE_INEQUALITY_LITERAL_CANDIDATE",
+      "shape": "COMPARE_SHAPE_NOT_YET_SUPPORTED",
+      "statement_start_line": 17,
+      "statement_end_line": 17,
+      "statement": "    if results.get(\"regen_runtime_candidate_evaluation_completion_audit_status\") != \"PASS_REGEN_RUNTIME_CANDIDATE_EVALUATION_PHASE_14B\":"
+    },
+    {
+      "path": "leaf_qt/regen_runtime_candidate_evaluation_master_gate.py",
+      "line_number": 17,
+      "patchability": "SAFE_INEQUALITY_LITERAL_CANDIDATE",
+      "shape": "COMPARE_SHAPE_NOT_YET_SUPPORTED",
+      "statement_start_line": 17,
+      "statement_end_line": 17,
+      "statement": "    if results.get(\"regen_runtime_candidate_evaluation_completion_audit_status\") != \"PASS_REGEN_RUNTIME_CANDIDATE_EVALUATION_PHASE_14B\":"
+    },
+    {
+      "path": "leaf_qt/regen_runtime_convergence_master_gate.py",
+      "line_number": 17,
+      "patchability": "SAFE_INEQUALITY_LITERAL_CANDIDATE",
+      "shape": "COMPARE_SHAPE_NOT_YET_SUPPORTED",
+      "statement_start_line": 17,
+      "statement_end_line": 17,
+      "statement": "    if results.get(\"regen_runtime_convergence_completion_audit_status\") != \"PASS_REGEN_RUNTIME_CONVERGENCE_PHASE_14E\":"
+    },
+    {
+      "path": "leaf_qt/regen_runtime_convergence_master_gate.py",
+      "line_number": 17,
+      "patchability": "SAFE_INEQUALITY_LITERAL_CANDIDATE",
+      "shape": "COMPARE_SHAPE_NOT_YET_SUPPORTED",
+      "statement_start_line": 17,
+      "statement_end_line": 17,
+      "statement": "    if results.get(\"regen_runtime_convergence_completion_audit_status\") != \"PASS_REGEN_RUNTIME_CONVERGENCE_PHASE_14E\":"
+    },
+    {
+      "path": "leaf_qt/regen_runtime_evolution_master_gate.py",
+      "line_number": 17,
+      "patchability": "SAFE_INEQUALITY_LITERAL_CANDIDATE",
+      "shape": "COMPARE_SHAPE_NOT_YET_SUPPORTED",
+      "statement_start_line": 17,
+      "statement_end_line": 17,
+      "statement": "    if results.get(\"regen_runtime_evolution_completion_audit_status\") != \"PASS_REGEN_RUNTIME_EVOLUTION_PHASE_14D\":"
+    },
+    {
+      "path": "leaf_qt/regen_runtime_evolution_master_gate.py",
+      "line_number": 17,
+      "patchability": "SAFE_INEQUALITY_LITERAL_CANDIDATE",
+      "shape": "COMPARE_SHAPE_NOT_YET_SUPPORTED",
+      "statement_start_line": 17,
+      "statement_end_line": 17,
+      "statement": "    if results.get(\"regen_runtime_evolution_completion_audit_status\") != \"PASS_REGEN_RUNTIME_EVOLUTION_PHASE_14D\":"
+    },
+    {
+      "path": "leaf_qt/regen_runtime_selection_master_gate.py",
+      "line_number": 17,
+      "patchability": "SAFE_INEQUALITY_LITERAL_CANDIDATE",
+      "shape": "COMPARE_SHAPE_NOT_YET_SUPPORTED",
+      "statement_start_line": 17,
+      "statement_end_line": 17,
+      "statement": "    if results.get(\"regen_runtime_selection_completion_audit_status\") != \"PASS_REGEN_RUNTIME_SELECTION_PHASE_14C\":"
+    },
+    {
+      "path": "leaf_qt/regen_runtime_selection_master_gate.py",
+      "line_number": 17,
+      "patchability": "SAFE_INEQUALITY_LITERAL_CANDIDATE",
+      "shape": "COMPARE_SHAPE_NOT_YET_SUPPORTED",
+      "statement_start_line": 17,
+      "statement_end_line": 17,
+      "statement": "    if results.get(\"regen_runtime_selection_completion_audit_status\") != \"PASS_REGEN_RUNTIME_SELECTION_PHASE_14C\":"
+    },
+    {
+      "path": "leaf_qt/regen_system_signoff_master_gate.py",
+      "line_number": 17,
+      "patchability": "SAFE_INEQUALITY_LITERAL_CANDIDATE",
+      "shape": "COMPARE_SHAPE_NOT_YET_SUPPORTED",
+      "statement_start_line": 17,
+      "statement_end_line": 17,
+      "statement": "    if results.get(\"regen_system_signoff_completion_audit_status\") != \"PASS_REGEN_SYSTEM_SIGNOFF_AUDIT_PHASE_16E\":"
+    },
+    {
+      "path": "leaf_qt/regen_system_signoff_master_gate.py",
+      "line_number": 17,
+      "patchability": "SAFE_INEQUALITY_LITERAL_CANDIDATE",
+      "shape": "COMPARE_SHAPE_NOT_YET_SUPPORTED",
+      "statement_start_line": 17,
+      "statement_end_line": 17,
+      "statement": "    if results.get(\"regen_system_signoff_completion_audit_status\") != \"PASS_REGEN_SYSTEM_SIGNOFF_AUDIT_PHASE_16E\":"
+    },
+    {
+      "path": "leaf_qt/regen_unified_ecosystem_master_gate.py",
+      "line_number": 17,
+      "patchability": "SAFE_INEQUALITY_LITERAL_CANDIDATE",
+      "shape": "COMPARE_SHAPE_NOT_YET_SUPPORTED",
+      "statement_start_line": 17,
+      "statement_end_line": 17,
+      "statement": "    if results.get(\"regen_unified_ecosystem_completion_audit_status\") != \"PASS_REGEN_UNIFIED_ECOSYSTEM_REGISTRY_PHASE_16A\":"
+    },
+    {
+      "path": "leaf_qt/regen_unified_ecosystem_master_gate.py",
+      "line_number": 17,
+      "patchability": "SAFE_INEQUALITY_LITERAL_CANDIDATE",
+      "shape": "COMPARE_SHAPE_NOT_YET_SUPPORTED",
+      "statement_start_line": 17,
+      "statement_end_line": 17,
+      "statement": "    if results.get(\"regen_unified_ecosystem_completion_audit_status\") != \"PASS_REGEN_UNIFIED_ECOSYSTEM_REGISTRY_PHASE_16A\":"
+    },
+    {
+      "path": "leaf_qt/regen_unified_validation_integration_master_gate.py",
+      "line_number": 143,
+      "patchability": "SAFE_INEQUALITY_LITERAL_CANDIDATE",
+      "shape": "COMPARE_SHAPE_NOT_YET_SUPPORTED",
+      "statement_start_line": 143,
+      "statement_end_line": 143,
+      "statement": "    if results.get(\"regen_unified_validation_integration_completion_audit_status\") != \"PASS_REGEN_UNIFIED_VALIDATION_INTEGRATION_PHASE_16D\":"
+    },
+    {
+      "path": "leaf_qt/regen_unified_validation_integration_master_gate.py",
+      "line_number": 143,
+      "patchability": "SAFE_INEQUALITY_LITERAL_CANDIDATE",
+      "shape": "COMPARE_SHAPE_NOT_YET_SUPPORTED",
+      "statement_start_line": 143,
+      "statement_end_line": 143,
+      "statement": "    if results.get(\"regen_unified_validation_integration_completion_audit_status\") != \"PASS_REGEN_UNIFIED_VALIDATION_INTEGRATION_PHASE_16D\":"
+    },
+    {
+      "path": "leaf_qt/regen_unified_viewer_integration_master_gate.py",
+      "line_number": 17,
+      "patchability": "SAFE_INEQUALITY_LITERAL_CANDIDATE",
+      "shape": "COMPARE_SHAPE_NOT_YET_SUPPORTED",
+      "statement_start_line": 17,
+      "statement_end_line": 17,
+      "statement": "    if results.get(\"regen_unified_viewer_integration_completion_audit_status\") != \"PASS_REGEN_UNIFIED_VIEWER_INTEGRATION_PHASE_16B\":"
+    },
+    {
+      "path": "leaf_qt/regen_unified_viewer_integration_master_gate.py",
+      "line_number": 17,
+      "patchability": "SAFE_INEQUALITY_LITERAL_CANDIDATE",
+      "shape": "COMPARE_SHAPE_NOT_YET_SUPPORTED",
+      "statement_start_line": 17,
+      "statement_end_line": 17,
+      "statement": "    if results.get(\"regen_unified_viewer_integration_completion_audit_status\") != \"PASS_REGEN_UNIFIED_VIEWER_INTEGRATION_PHASE_16B\":"
+    },
+    {
+      "path": "leaf_qt/regen_validation_master_gate.py",
+      "line_number": 69,
+      "patchability": "SAFE_EQUALITY_LITERAL_CANDIDATE",
+      "shape": "COMPARE_SHAPE_NOT_YET_SUPPORTED",
+      "statement_start_line": 69,
+      "statement_end_line": 69,
+      "statement": "    if status == \"PASS_REGEN_VALIDATION_MASTER_GATE\":"
+    },
+    {
+      "path": "leaf_qt/regen_validation_master_gate.py",
+      "line_number": 69,
+      "patchability": "SAFE_EQUALITY_LITERAL_CANDIDATE",
+      "shape": "COMPARE_SHAPE_NOT_YET_SUPPORTED",
+      "statement_start_line": 69,
+      "statement_end_line": 69,
+      "statement": "    if status == \"PASS_REGEN_VALIDATION_MASTER_GATE\":"
+    },
+    {
+      "path": "leaf_qt/regen_acceptance_master_gate.py",
+      "line_number": 64,
+      "patchability": "SAFE_EQUALITY_LITERAL_CANDIDATE",
+      "shape": "COMPARE_SHAPE_NOT_YET_SUPPORTED",
+      "statement_start_line": 64,
+      "statement_end_line": 64,
+      "statement": "    if status == PASS_STATUS:"
+    },
+    {
+      "path": "leaf_qt/regen_before_after_solver_comparison_report_owner.py",
+      "line_number": 63,
+      "patchability": "SAFE_EQUALITY_LITERAL_CANDIDATE",
+      "shape": "COMPARE_SHAPE_NOT_YET_SUPPORTED",
+      "statement_start_line": 63,
+      "statement_end_line": 63,
+      "statement": "    if status == PASS_STATUS:"
+    },
+    {
+      "path": "leaf_qt/regen_candidate_acceptance_completion_gate.py",
+      "line_number": 77,
+      "patchability": "SAFE_EQUALITY_LITERAL_CANDIDATE",
+      "shape": "COMPARE_SHAPE_NOT_YET_SUPPORTED",
+      "statement_start_line": 77,
+      "statement_end_line": 77,
+      "statement": "    if status == PASS_STATUS:"
+    },
+    {
+      "path": "leaf_qt/regen_cross_section_viewer_integration.py",
+      "line_number": 71,
+      "patchability": "SAFE_EQUALITY_LITERAL_CANDIDATE",
+      "shape": "COMPARE_SHAPE_NOT_YET_SUPPORTED",
+      "statement_start_line": 71,
+      "statement_end_line": 71,
+      "statement": "    if status == PASS_STATUS:"
+    },
+    {
+      "path": "leaf_qt/regen_engineering_acceptance_report.py",
+      "line_number": 41,
+      "patchability": "SAFE_EQUALITY_LITERAL_CANDIDATE",
+      "shape": "COMPARE_SHAPE_NOT_YET_SUPPORTED",
+      "statement_start_line": 41,
+      "statement_end_line": 41,
+      "statement": "    if status == PASS_STATUS:"
+    },
+    {
+      "path": "leaf_qt/regen_failure_root_cause_system.py",
+      "line_number": 38,
+      "patchability": "SAFE_EQUALITY_LITERAL_CANDIDATE",
+      "shape": "COMPARE_SHAPE_NOT_YET_SUPPORTED",
+      "statement_start_line": 38,
+      "statement_end_line": 38,
+      "statement": "    if status == PASS_STATUS:"
+    },
+    {
+      "path": "leaf_qt/regen_final_completion_audit.py",
+      "line_number": 53,
+      "patchability": "SAFE_EQUALITY_LITERAL_CANDIDATE",
+      "shape": "COMPARE_SHAPE_NOT_YET_SUPPORTED",
+      "statement_start_line": 53,
+      "statement_end_line": 53,
+      "statement": "    if status == PASS_STATUS:"
+    },
+    {
+      "path": "leaf_qt/regen_final_master_gate.py",
+      "line_number": 61,
+      "patchability": "SAFE_EQUALITY_LITERAL_CANDIDATE",
+      "shape": "COMPARE_SHAPE_NOT_YET_SUPPORTED",
+      "statement_start_line": 61,
+      "statement_end_line": 61,
+      "statement": "    if status == PASS_STATUS:"
+    },
+    {
+      "path": "leaf_qt/regen_final_signoff_report.py",
+      "line_number": 52,
+      "patchability": "SAFE_EQUALITY_LITERAL_CANDIDATE",
+      "shape": "COMPARE_SHAPE_NOT_YET_SUPPORTED",
+      "statement_start_line": 52,
+      "statement_end_line": 52,
+      "statement": "    if status == PASS_STATUS:"
+    },
+    {
+      "path": "leaf_qt/regen_final_verification_audit.py",
+      "line_number": 70,
+      "patchability": "SAFE_EQUALITY_LITERAL_CANDIDATE",
+      "shape": "COMPARE_SHAPE_NOT_YET_SUPPORTED",
+      "statement_start_line": 70,
+      "statement_end_line": 70,
+      "statement": "    if status == PASS_STATUS:"
+    },
+    {
+      "path": "leaf_qt/regen_live_geometry_commit_execution.py",
+      "line_number": 90,
+      "patchability": "SAFE_EQUALITY_LITERAL_CANDIDATE",
+      "shape": "COMPARE_SHAPE_NOT_YET_SUPPORTED",
+      "statement_start_line": 90,
+      "statement_end_line": 90,
+      "statement": "    if status == PASS_STATUS:"
+    },
+    {
+      "path": "leaf_qt/regen_optimisation_completion_gate.py",
+      "line_number": 65,
+      "patchability": "SAFE_EQUALITY_LITERAL_CANDIDATE",
+      "shape": "COMPARE_SHAPE_NOT_YET_SUPPORTED",
+      "statement_start_line": 65,
+      "statement_end_line": 65,
+      "statement": "    if status == PASS_STATUS:"
+    },
+    {
+      "path": "leaf_qt/regen_optimisation_proof_system.py",
+      "line_number": 67,
+      "patchability": "SAFE_EQUALITY_LITERAL_CANDIDATE",
+      "shape": "COMPARE_SHAPE_NOT_YET_SUPPORTED",
+      "statement_start_line": 67,
+      "statement_end_line": 67,
+      "statement": "    if status == PASS_STATUS:"
+    },
+    {
+      "path": "leaf_qt/regen_station_viewer_integration.py",
+      "line_number": 64,
+      "patchability": "SAFE_EQUALITY_LITERAL_CANDIDATE",
+      "shape": "COMPARE_SHAPE_NOT_YET_SUPPORTED",
+      "statement_start_line": 64,
+      "statement_end_line": 64,
+      "statement": "    if status == PASS_STATUS:"
+    },
+    {
+      "path": "leaf_qt/regen_viewer_completion_gate.py",
+      "line_number": 70,
+      "patchability": "SAFE_EQUALITY_LITERAL_CANDIDATE",
+      "shape": "COMPARE_SHAPE_NOT_YET_SUPPORTED",
+      "statement_start_line": 70,
+      "statement_end_line": 70,
+      "statement": "    if status == PASS_STATUS:"
+    },
+    {
+      "path": "leaf_qt/regen_viewer_data_adapter.py",
+      "line_number": 54,
+      "patchability": "SAFE_EQUALITY_LITERAL_CANDIDATE",
+      "shape": "COMPARE_SHAPE_NOT_YET_SUPPORTED",
+      "statement_start_line": 54,
+      "statement_end_line": 54,
+      "statement": "    if status == PASS_STATUS:"
+    },
+    {
+      "path": "leaf_qt/regen_viewer_navigation_system.py",
+      "line_number": 76,
+      "patchability": "SAFE_EQUALITY_LITERAL_CANDIDATE",
+      "shape": "COMPARE_SHAPE_NOT_YET_SUPPORTED",
+      "statement_start_line": 76,
+      "statement_end_line": 76,
+      "statement": "    if status == PASS_STATUS:"
+    },
+    {
+      "path": "leaf_qt/regen_viewer_ownership_architecture.py",
+      "line_number": 82,
+      "patchability": "SAFE_EQUALITY_LITERAL_CANDIDATE",
+      "shape": "COMPARE_SHAPE_NOT_YET_SUPPORTED",
+      "statement_start_line": 82,
+      "statement_end_line": 82,
+      "statement": "    if status == PASS_STATUS:"
+    },
+    {
+      "path": "leaf_qt/regen_viewer_report_renderer.py",
+      "line_number": 85,
+      "patchability": "SAFE_EQUALITY_LITERAL_CANDIDATE",
+      "shape": "COMPARE_SHAPE_NOT_YET_SUPPORTED",
+      "statement_start_line": 85,
+      "statement_end_line": 85,
+      "statement": "    if status == PASS_STATUS:"
+    }
+  ],
+  "passed": true,
+  "status": "PASS_PHASE_16U171B_WAVE2_PATCH_SHAPE_DIAGNOSTIC",
+  "next_phase": "16U.171C_STATEMENT_LEVEL_LITERAL_CLEANUP_WAVE2"
+}

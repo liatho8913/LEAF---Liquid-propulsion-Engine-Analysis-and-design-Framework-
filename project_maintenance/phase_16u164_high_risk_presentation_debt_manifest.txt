@@ -1,0 +1,286 @@
+LEAF PHASE 16U.164
+HIGH-RISK PRESENTATION DEBT MANIFEST
+==============================================
+status=PASS_PHASE_16U164_HIGH_RISK_PRESENTATION_DEBT_MANIFEST
+high_risk_file_count=40
+high_risk_finding_count=82
+safe_wave_candidate_count=0
+
+PATCH MODE COUNTS
+-----------------
+MANUAL_ARCHITECTURE_REVIEW=2
+MANUAL_REVIEW_REQUIRED=38
+
+SAFE TRANSACTIONAL WAVE CANDIDATES
+------------------------------------
+No safe transactional candidates identified.
+
+FULL HIGH-RISK MANIFEST
+-----------------------
+
+leaf_qt/engine_solver.py
+  finding_count=14
+  patch_mode=MANUAL_REVIEW_REQUIRED
+  patterns=inline_pass_fail_warn_literal, inline_status_contains_check
+  line 4559 [inline_pass_fail_warn_literal]: if results.get("recommended_geometry_status") in (None, "BLOCKED_NO_RADIUS_DATA", "FAIL_NO_PHYSICAL_FIT"):
+  line 4559 [inline_status_contains_check]: if results.get("recommended_geometry_status") in (None, "BLOCKED_NO_RADIUS_DATA", "FAIL_NO_PHYSICAL_FIT"):
+  line 5323 [inline_pass_fail_warn_literal]: elif status == "FAIL_BUT_IMPROVED":
+
+leaf_qt/regen_convergence_master_gate.py
+  finding_count=6
+  patch_mode=MANUAL_REVIEW_REQUIRED
+  patterns=inline_pass_fail_warn_literal, inline_status_contains_check
+  line 44 [inline_pass_fail_warn_literal]: if status == "PASS_REGEN_CONVERGENCE_MASTER_GATE_CONVERGED":
+  line 44 [inline_status_contains_check]: if status == "PASS_REGEN_CONVERGENCE_MASTER_GATE_CONVERGED":
+  line 54 [inline_pass_fail_warn_literal]: elif status == "WARN_REGEN_CONVERGENCE_MASTER_GATE_RUNNING":
+
+leaf_qt/regen_optimisation_controller_master_gate.py
+  finding_count=6
+  patch_mode=MANUAL_REVIEW_REQUIRED
+  patterns=inline_pass_fail_warn_literal, inline_status_contains_check
+  line 44 [inline_pass_fail_warn_literal]: if status == "PASS_REGEN_OPTIMISATION_MASTER_GATE_CONVERGED":
+  line 44 [inline_status_contains_check]: if status == "PASS_REGEN_OPTIMISATION_MASTER_GATE_CONVERGED":
+  line 54 [inline_pass_fail_warn_literal]: elif status == "WARN_REGEN_OPTIMISATION_MASTER_GATE_NEXT_GENERATION_READY":
+
+leaf_qt/regen_viewer_gui_runtime_acceptance_gate_phase_16q28.py
+  finding_count=4
+  patch_mode=MANUAL_REVIEW_REQUIRED
+  patterns=inline_pass_fail_warn_literal, inline_status_contains_check
+  line 81 [inline_pass_fail_warn_literal]: if results.get("phase_16q24_real_button_toggle_status") != "PASS_REGEN_VIEWER_REAL_BUTTON_TOGGLE_OWNER_PHASE_16Q24":
+  line 81 [inline_status_contains_check]: if results.get("phase_16q24_real_button_toggle_status") != "PASS_REGEN_VIEWER_REAL_BUTTON_TOGGLE_OWNER_PHASE_16Q24":
+  line 84 [inline_pass_fail_warn_literal]: if results.get("phase_16q27_toggle_ux_status") != "PASS_REGEN_VIEWER_TOGGLE_UX_CLEANUP_PHASE_16Q27":
+
+leaf_qt/design_history_narrative_builder.py
+  finding_count=2
+  patch_mode=MANUAL_ARCHITECTURE_REVIEW
+  patterns=inline_status_contains_check
+  line 332 [inline_status_contains_check]: return text in self.PASS_WORDS or status_severity(text) == "PASS"
+  line 336 [inline_status_contains_check]: return text in self.FAIL_WORDS or status_severity(text) == "FAIL"
+
+leaf_qt/foundation_verification_harness.py
+  finding_count=2
+  patch_mode=MANUAL_REVIEW_REQUIRED
+  patterns=inline_pass_fail_warn_literal, inline_status_contains_check
+  line 123 [inline_pass_fail_warn_literal]: if status == "PASS_FOUNDATION_VERIFICATION" and failed_count == 0:
+  line 123 [inline_status_contains_check]: if status == "PASS_FOUNDATION_VERIFICATION" and failed_count == 0:
+
+leaf_qt/regen_candidate_comparison_master_gate.py
+  finding_count=2
+  patch_mode=MANUAL_REVIEW_REQUIRED
+  patterns=inline_pass_fail_warn_literal, inline_status_contains_check
+  line 17 [inline_pass_fail_warn_literal]: if results.get("regen_candidate_comparison_completion_audit_status") != "PASS_REGEN_CANDIDATE_COMPARISON_VIEWER_BACKEND_PHASE_15B":
+  line 17 [inline_status_contains_check]: if results.get("regen_candidate_comparison_completion_audit_status") != "PASS_REGEN_CANDIDATE_COMPARISON_VIEWER_BACKEND_PHASE_15B":
+
+leaf_qt/regen_completion_master_gate.py
+  finding_count=2
+  patch_mode=MANUAL_REVIEW_REQUIRED
+  patterns=inline_pass_fail_warn_literal, inline_status_contains_check
+  line 17 [inline_pass_fail_warn_literal]: if results.get("regen_completion_gate_completion_audit_status") != "PASS_REGEN_COMPLETION_GATE_AUDIT_PHASE_16F":
+  line 17 [inline_status_contains_check]: if results.get("regen_completion_gate_completion_audit_status") != "PASS_REGEN_COMPLETION_GATE_AUDIT_PHASE_16F":
+
+leaf_qt/regen_evolution_tree_master_gate.py
+  finding_count=2
+  patch_mode=MANUAL_REVIEW_REQUIRED
+  patterns=inline_pass_fail_warn_literal, inline_status_contains_check
+  line 17 [inline_pass_fail_warn_literal]: if results.get("regen_evolution_tree_completion_audit_status") != "PASS_REGEN_EVOLUTION_TREE_BACKEND_PHASE_15C":
+  line 17 [inline_status_contains_check]: if results.get("regen_evolution_tree_completion_audit_status") != "PASS_REGEN_EVOLUTION_TREE_BACKEND_PHASE_15C":
+
+leaf_qt/regen_optimisation_narrative_master_gate.py
+  finding_count=2
+  patch_mode=MANUAL_REVIEW_REQUIRED
+  patterns=inline_pass_fail_warn_literal, inline_status_contains_check
+  line 58 [inline_pass_fail_warn_literal]: if status == "PASS_REGEN_OPTIMISATION_NARRATIVE_MASTER_GATE":
+  line 58 [inline_status_contains_check]: if status == "PASS_REGEN_OPTIMISATION_NARRATIVE_MASTER_GATE":
+
+leaf_qt/regen_optimisation_viewer_master_gate.py
+  finding_count=2
+  patch_mode=MANUAL_REVIEW_REQUIRED
+  patterns=inline_pass_fail_warn_literal, inline_status_contains_check
+  line 17 [inline_pass_fail_warn_literal]: if results.get("regen_optimisation_viewer_completion_audit_status") != "PASS_REGEN_OPTIMISATION_VIEWER_BACKEND_PHASE_15A":
+  line 17 [inline_status_contains_check]: if results.get("regen_optimisation_viewer_completion_audit_status") != "PASS_REGEN_OPTIMISATION_VIEWER_BACKEND_PHASE_15A":
+
+leaf_qt/regen_runtime_candidate_evaluation_master_gate.py
+  finding_count=2
+  patch_mode=MANUAL_REVIEW_REQUIRED
+  patterns=inline_pass_fail_warn_literal, inline_status_contains_check
+  line 17 [inline_pass_fail_warn_literal]: if results.get("regen_runtime_candidate_evaluation_completion_audit_status") != "PASS_REGEN_RUNTIME_CANDIDATE_EVALUATION_PHASE_14B":
+  line 17 [inline_status_contains_check]: if results.get("regen_runtime_candidate_evaluation_completion_audit_status") != "PASS_REGEN_RUNTIME_CANDIDATE_EVALUATION_PHASE_14B":
+
+leaf_qt/regen_runtime_convergence_master_gate.py
+  finding_count=2
+  patch_mode=MANUAL_REVIEW_REQUIRED
+  patterns=inline_pass_fail_warn_literal, inline_status_contains_check
+  line 17 [inline_pass_fail_warn_literal]: if results.get("regen_runtime_convergence_completion_audit_status") != "PASS_REGEN_RUNTIME_CONVERGENCE_PHASE_14E":
+  line 17 [inline_status_contains_check]: if results.get("regen_runtime_convergence_completion_audit_status") != "PASS_REGEN_RUNTIME_CONVERGENCE_PHASE_14E":
+
+leaf_qt/regen_runtime_evolution_master_gate.py
+  finding_count=2
+  patch_mode=MANUAL_REVIEW_REQUIRED
+  patterns=inline_pass_fail_warn_literal, inline_status_contains_check
+  line 17 [inline_pass_fail_warn_literal]: if results.get("regen_runtime_evolution_completion_audit_status") != "PASS_REGEN_RUNTIME_EVOLUTION_PHASE_14D":
+  line 17 [inline_status_contains_check]: if results.get("regen_runtime_evolution_completion_audit_status") != "PASS_REGEN_RUNTIME_EVOLUTION_PHASE_14D":
+
+leaf_qt/regen_runtime_selection_master_gate.py
+  finding_count=2
+  patch_mode=MANUAL_REVIEW_REQUIRED
+  patterns=inline_pass_fail_warn_literal, inline_status_contains_check
+  line 17 [inline_pass_fail_warn_literal]: if results.get("regen_runtime_selection_completion_audit_status") != "PASS_REGEN_RUNTIME_SELECTION_PHASE_14C":
+  line 17 [inline_status_contains_check]: if results.get("regen_runtime_selection_completion_audit_status") != "PASS_REGEN_RUNTIME_SELECTION_PHASE_14C":
+
+leaf_qt/regen_system_signoff_master_gate.py
+  finding_count=2
+  patch_mode=MANUAL_REVIEW_REQUIRED
+  patterns=inline_pass_fail_warn_literal, inline_status_contains_check
+  line 17 [inline_pass_fail_warn_literal]: if results.get("regen_system_signoff_completion_audit_status") != "PASS_REGEN_SYSTEM_SIGNOFF_AUDIT_PHASE_16E":
+  line 17 [inline_status_contains_check]: if results.get("regen_system_signoff_completion_audit_status") != "PASS_REGEN_SYSTEM_SIGNOFF_AUDIT_PHASE_16E":
+
+leaf_qt/regen_unified_ecosystem_master_gate.py
+  finding_count=2
+  patch_mode=MANUAL_REVIEW_REQUIRED
+  patterns=inline_pass_fail_warn_literal, inline_status_contains_check
+  line 17 [inline_pass_fail_warn_literal]: if results.get("regen_unified_ecosystem_completion_audit_status") != "PASS_REGEN_UNIFIED_ECOSYSTEM_REGISTRY_PHASE_16A":
+  line 17 [inline_status_contains_check]: if results.get("regen_unified_ecosystem_completion_audit_status") != "PASS_REGEN_UNIFIED_ECOSYSTEM_REGISTRY_PHASE_16A":
+
+leaf_qt/regen_unified_validation_integration_master_gate.py
+  finding_count=2
+  patch_mode=MANUAL_REVIEW_REQUIRED
+  patterns=inline_pass_fail_warn_literal, inline_status_contains_check
+  line 143 [inline_pass_fail_warn_literal]: if results.get("regen_unified_validation_integration_completion_audit_status") != "PASS_REGEN_UNIFIED_VALIDATION_INTEGRATION_PHASE_16D":
+  line 143 [inline_status_contains_check]: if results.get("regen_unified_validation_integration_completion_audit_status") != "PASS_REGEN_UNIFIED_VALIDATION_INTEGRATION_PHASE_16D":
+
+leaf_qt/regen_unified_viewer_integration_master_gate.py
+  finding_count=2
+  patch_mode=MANUAL_REVIEW_REQUIRED
+  patterns=inline_pass_fail_warn_literal, inline_status_contains_check
+  line 17 [inline_pass_fail_warn_literal]: if results.get("regen_unified_viewer_integration_completion_audit_status") != "PASS_REGEN_UNIFIED_VIEWER_INTEGRATION_PHASE_16B":
+  line 17 [inline_status_contains_check]: if results.get("regen_unified_viewer_integration_completion_audit_status") != "PASS_REGEN_UNIFIED_VIEWER_INTEGRATION_PHASE_16B":
+
+leaf_qt/regen_validation_master_gate.py
+  finding_count=2
+  patch_mode=MANUAL_REVIEW_REQUIRED
+  patterns=inline_pass_fail_warn_literal, inline_status_contains_check
+  line 69 [inline_pass_fail_warn_literal]: if status == "PASS_REGEN_VALIDATION_MASTER_GATE":
+  line 69 [inline_status_contains_check]: if status == "PASS_REGEN_VALIDATION_MASTER_GATE":
+
+leaf_qt/regen_acceptance_master_gate.py
+  finding_count=1
+  patch_mode=MANUAL_REVIEW_REQUIRED
+  patterns=inline_status_contains_check
+  line 64 [inline_status_contains_check]: if status == PASS_STATUS:
+
+leaf_qt/regen_before_after_solver_comparison_report_owner.py
+  finding_count=1
+  patch_mode=MANUAL_REVIEW_REQUIRED
+  patterns=inline_status_contains_check
+  line 63 [inline_status_contains_check]: if status == PASS_STATUS:
+
+leaf_qt/regen_candidate_acceptance_completion_gate.py
+  finding_count=1
+  patch_mode=MANUAL_REVIEW_REQUIRED
+  patterns=inline_status_contains_check
+  line 77 [inline_status_contains_check]: if status == PASS_STATUS:
+
+leaf_qt/regen_cross_section_viewer_integration.py
+  finding_count=1
+  patch_mode=MANUAL_REVIEW_REQUIRED
+  patterns=inline_status_contains_check
+  line 71 [inline_status_contains_check]: if status == PASS_STATUS:
+
+leaf_qt/regen_engineering_acceptance_report.py
+  finding_count=1
+  patch_mode=MANUAL_REVIEW_REQUIRED
+  patterns=inline_status_contains_check
+  line 41 [inline_status_contains_check]: if status == PASS_STATUS:
+
+leaf_qt/regen_failure_root_cause_system.py
+  finding_count=1
+  patch_mode=MANUAL_REVIEW_REQUIRED
+  patterns=inline_status_contains_check
+  line 38 [inline_status_contains_check]: if status == PASS_STATUS:
+
+leaf_qt/regen_final_completion_audit.py
+  finding_count=1
+  patch_mode=MANUAL_REVIEW_REQUIRED
+  patterns=inline_status_contains_check
+  line 53 [inline_status_contains_check]: if status == PASS_STATUS:
+
+leaf_qt/regen_final_master_gate.py
+  finding_count=1
+  patch_mode=MANUAL_REVIEW_REQUIRED
+  patterns=inline_status_contains_check
+  line 61 [inline_status_contains_check]: if status == PASS_STATUS:
+
+leaf_qt/regen_final_signoff_report.py
+  finding_count=1
+  patch_mode=MANUAL_REVIEW_REQUIRED
+  patterns=inline_status_contains_check
+  line 52 [inline_status_contains_check]: if status == PASS_STATUS:
+
+leaf_qt/regen_final_verification_audit.py
+  finding_count=1
+  patch_mode=MANUAL_REVIEW_REQUIRED
+  patterns=inline_status_contains_check
+  line 70 [inline_status_contains_check]: if status == PASS_STATUS:
+
+leaf_qt/regen_live_geometry_commit_execution.py
+  finding_count=1
+  patch_mode=MANUAL_REVIEW_REQUIRED
+  patterns=inline_status_contains_check
+  line 90 [inline_status_contains_check]: if status == PASS_STATUS:
+
+leaf_qt/regen_optimisation_completion_gate.py
+  finding_count=1
+  patch_mode=MANUAL_REVIEW_REQUIRED
+  patterns=inline_status_contains_check
+  line 65 [inline_status_contains_check]: if status == PASS_STATUS:
+
+leaf_qt/regen_optimisation_proof_system.py
+  finding_count=1
+  patch_mode=MANUAL_REVIEW_REQUIRED
+  patterns=inline_status_contains_check
+  line 67 [inline_status_contains_check]: if status == PASS_STATUS:
+
+leaf_qt/regen_station_viewer_integration.py
+  finding_count=1
+  patch_mode=MANUAL_REVIEW_REQUIRED
+  patterns=inline_status_contains_check
+  line 64 [inline_status_contains_check]: if status == PASS_STATUS:
+
+leaf_qt/regen_viewer_completion_gate.py
+  finding_count=1
+  patch_mode=MANUAL_REVIEW_REQUIRED
+  patterns=inline_status_contains_check
+  line 70 [inline_status_contains_check]: if status == PASS_STATUS:
+
+leaf_qt/regen_viewer_data_adapter.py
+  finding_count=1
+  patch_mode=MANUAL_REVIEW_REQUIRED
+  patterns=inline_status_contains_check
+  line 54 [inline_status_contains_check]: if status == PASS_STATUS:
+
+leaf_qt/regen_viewer_navigation_system.py
+  finding_count=1
+  patch_mode=MANUAL_REVIEW_REQUIRED
+  patterns=inline_status_contains_check
+  line 76 [inline_status_contains_check]: if status == PASS_STATUS:
+
+leaf_qt/regen_viewer_ownership_architecture.py
+  finding_count=1
+  patch_mode=MANUAL_REVIEW_REQUIRED
+  patterns=inline_status_contains_check
+  line 82 [inline_status_contains_check]: if status == PASS_STATUS:
+
+leaf_qt/regen_viewer_report_renderer.py
+  finding_count=1
+  patch_mode=MANUAL_REVIEW_REQUIRED
+  patterns=inline_status_contains_check
+  line 85 [inline_status_contains_check]: if status == PASS_STATUS:
+
+leaf_qt/structured_status_access.py
+  finding_count=1
+  patch_mode=MANUAL_ARCHITECTURE_REVIEW
+  patterns=inline_status_contains_check
+  line 45 [inline_status_contains_check]: if text in {"INFO", "PASS"} or text in PASS_LIKE or status_severity(text) == "PASS":
+
+json=/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u164_high_risk_presentation_debt_manifest.json
+text=/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u164_high_risk_presentation_debt_manifest.txt

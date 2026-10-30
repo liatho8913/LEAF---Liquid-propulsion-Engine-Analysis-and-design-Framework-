@@ -1,0 +1,49 @@
+{
+  "phase": "16U.12",
+  "status": "PASS_PHASE_16U12_ENGINE_SOLVER_MEDIUM_RISK_STATUS_WRAPPER_REGRESSION",
+  "generated": "2026-06-27T17:43:30",
+  "missing_required_count": 0,
+  "forbidden_present_count": 0,
+  "manual_review_missing_count": 0,
+  "missing_required": [],
+  "forbidden_present": [],
+  "manual_review_missing": [],
+  "compile_result": {
+    "file": "leaf_qt/engine_solver.py",
+    "passed": true,
+    "error": ""
+  },
+  "checks": [
+    {
+      "name": "phase_16u10_audit_passed",
+      "passed": true,
+      "detail": "PASS_PHASE_16U10_ENGINE_SOLVER_MEDIUM_RISK_STATUS_CONSUMER_AUDIT"
+    },
+    {
+      "name": "phase_16u11_patch_passed",
+      "passed": true,
+      "detail": "PASS_PHASE_16U11_ENGINE_SOLVER_MEDIUM_RISK_STATUS_WRAPPER_PATCH"
+    },
+    {
+      "name": "required_medium_risk_wrapper_tokens_present",
+      "passed": true,
+      "detail": "0 missing"
+    },
+    {
+      "name": "legacy_patched_tokens_absent",
+      "passed": true,
+      "detail": "0 present"
+    },
+    {
+      "name": "manual_review_tokens_preserved",
+      "passed": true,
+      "detail": "0 missing"
+    },
+    {
+      "name": "engine_solver_compiles",
+      "passed": true,
+      "detail": ""
+    }
+  ],
+  "phase_16u12_engine_solver_medium_risk_status_wrapper_regression_complete": true
+}

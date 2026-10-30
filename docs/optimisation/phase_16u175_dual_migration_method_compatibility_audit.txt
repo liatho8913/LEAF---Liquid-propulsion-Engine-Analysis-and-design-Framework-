@@ -1,0 +1,171 @@
+LEAF PHASE 16U.175
+DUAL MIGRATION METHOD COMPATIBILITY AUDIT
+==================================================
+status=FAIL_PHASE_16U175_DUAL_MIGRATION_METHOD_COMPATIBILITY_AUDIT
+scanned_files=2517
+compile_failure_count=0
+future_order_issue_count=46
+status_import_issue_count=89
+exact_code_guardrail_issue_count=0
+missing_evidence_count=0
+
+INTERPRETATION
+--------------
+This audit verifies that the single-file locked-baseline migration method and the transactional wave method coexist safely.
+It blocks closeout if import order, status severity usage, exact-code ownership, evidence chain, or compile health has been damaged.
+
+COMPILE FAILURES
+----------------
+None.
+
+FUTURE IMPORT ORDER ISSUES
+--------------------------
+LEAF_UPLOAD/leaf_qt/foundation_dynamic_registry_seed_phase_16o2.py:11: from __future__ import appears after runtime/import code
+LEAF_UPLOAD/leaf_qt/regen_accept_recommendation_owner_phase_16n6.py:14: from __future__ import appears after runtime/import code
+LEAF_UPLOAD/leaf_qt/regen_apply_geometry_owner_phase_16n7.py:13: from __future__ import appears after runtime/import code
+LEAF_UPLOAD/leaf_qt/regen_automatic_geometry_button_binder_phase_16n2.py:10: from __future__ import appears after runtime/import code
+LEAF_UPLOAD/leaf_qt/regen_automatic_geometry_button_owner_phase_16n2.py:16: from __future__ import appears after runtime/import code
+LEAF_UPLOAD/leaf_qt/regen_automatic_geometry_candidate_builder_phase_16p2.py:11: from __future__ import appears after runtime/import code
+LEAF_UPLOAD/leaf_qt/regen_before_after_comparison_owner_phase_16n9.py:9: from __future__ import appears after runtime/import code
+LEAF_UPLOAD/leaf_qt/regen_cross_section_live_feed_validator_phase_16n4.py:9: from __future__ import appears after runtime/import code
+LEAF_UPLOAD/leaf_qt/regen_recommendation_payload_ui_owner_phase_16n3.py:9: from __future__ import appears after runtime/import code
+LEAF_UPLOAD/leaf_qt/regen_solver_regeneration_request_owner_phase_16n8.py:11: from __future__ import appears after runtime/import code
+LEAF_UPLOAD/leaf_qt/regen_station_live_feed_validator_phase_16n5.py:8: from __future__ import appears after runtime/import code
+LEAF_UPLOAD/leaf_qt/regen_viewer_integration_audit.py:11: from __future__ import appears after runtime/import code
+LEAF_UPLOAD/leaf_qt/regen_viewer_integration_completion_gate_phase_16n1.py:6: from __future__ import appears after runtime/import code
+LEAF_UPLOAD/leaf_qt/regen_viewer_integration_report_owner.py:17: from __future__ import appears after runtime/import code
+LEAF_UPLOAD/leaf_qt/regen_viewer_payload_trace.py:11: from __future__ import appears after runtime/import code
+leaf_qt/coating_validation_owner.py:20: from __future__ import appears after runtime/import code
+leaf_qt/foundation_dynamic_registry_seed_phase_16o2.py:11: from __future__ import appears after runtime/import code
+leaf_qt/material_validation_owner.py:13: from __future__ import appears after runtime/import code
+leaf_qt/regen_accept_recommendation_owner_phase_16n6.py:14: from __future__ import appears after runtime/import code
+leaf_qt/regen_apply_geometry_owner_phase_16n7.py:13: from __future__ import appears after runtime/import code
+leaf_qt/regen_automatic_geometry_button_binder_phase_16n2.py:10: from __future__ import appears after runtime/import code
+leaf_qt/regen_automatic_geometry_button_owner_phase_16n2.py:16: from __future__ import appears after runtime/import code
+leaf_qt/regen_automatic_geometry_candidate_builder_phase_16p2.py:11: from __future__ import appears after runtime/import code
+leaf_qt/regen_automatic_geometry_runtime_proof_banner_phase_16p19.py:6: from __future__ import appears after runtime/import code
+leaf_qt/regen_automatic_geometry_runtime_reentry_owner_phase_16p16.py:11: from __future__ import appears after runtime/import code
+leaf_qt/regen_before_after_comparison_owner_phase_16n9.py:9: from __future__ import appears after runtime/import code
+leaf_qt/regen_candidate_post_resolve_validation_owner.py:11: from __future__ import appears after runtime/import code
+leaf_qt/regen_convergence_master_gate.py:11: from __future__ import appears after runtime/import code
+leaf_qt/regen_cross_section_live_feed_validator_phase_16n4.py:9: from __future__ import appears after runtime/import code
+leaf_qt/regen_geometry_constraint_validation_owner.py:11: from __future__ import appears after runtime/import code
+leaf_qt/regen_optimisation_controller_master_gate.py:12: from __future__ import appears after runtime/import code
+leaf_qt/regen_optimisation_narrative_master_gate.py:13: from __future__ import appears after runtime/import code
+leaf_qt/regen_recommendation_payload_ui_owner_phase_16n3.py:9: from __future__ import appears after runtime/import code
+leaf_qt/regen_solver_regeneration_request_owner_phase_16n8.py:11: from __future__ import appears after runtime/import code
+leaf_qt/regen_station_live_feed_validator_phase_16n5.py:8: from __future__ import appears after runtime/import code
+leaf_qt/regen_validation_master_gate.py:12: from __future__ import appears after runtime/import code
+leaf_qt/regen_viewer_final_runtime_signoff_gate_phase_16p20.py:6: from __future__ import appears after runtime/import code
+leaf_qt/regen_viewer_geometry_debug_export_phase_16p18.py:6: from __future__ import appears after runtime/import code
+leaf_qt/regen_viewer_gui_runtime_audit_phase_16q1.py:10: from __future__ import appears after runtime/import code
+leaf_qt/regen_viewer_gui_runtime_checklist_phase_16p22.py:6: from __future__ import appears after runtime/import code
+leaf_qt/regen_viewer_integration_audit.py:11: from __future__ import appears after runtime/import code
+leaf_qt/regen_viewer_integration_completion_gate_phase_16n1.py:6: from __future__ import appears after runtime/import code
+leaf_qt/regen_viewer_payload_trace.py:11: from __future__ import appears after runtime/import code
+leaf_qt/regen_viewer_physical_geometry_validation_owner_phase_16p15.py:12: from __future__ import appears after runtime/import code
+leaf_qt/regen_viewer_runtime_signoff_report_export_phase_16p21.py:9: from __future__ import appears after runtime/import code
+leaf_qt/regen_viewer_station_geometry_dump_phase_16p17.py:18: from __future__ import appears after runtime/import code
+
+STATUS IMPORT ISSUES
+--------------------
+leaf_qt/bond_coat_integration_owner.py: status_severity used without shared import
+leaf_qt/coating_property_consumption_audit_owner.py: status_severity used without shared import
+leaf_qt/coating_temperature_limit_integration_owner.py: status_severity used without shared import
+leaf_qt/coating_thermal_conductivity_integration_owner.py: status_severity used without shared import
+leaf_qt/coating_thermal_resistance_integration_owner.py: status_severity used without shared import
+leaf_qt/coating_thickness_integration_owner.py: status_severity used without shared import
+leaf_qt/material_density_integration_owner.py: status_severity used without shared import
+leaf_qt/material_property_consumption_audit_owner.py: status_severity used without shared import
+leaf_qt/material_specific_heat_integration_owner.py: status_severity used without shared import
+leaf_qt/material_strength_limit_integration_owner.py: status_severity used without shared import
+leaf_qt/material_temperature_limit_integration_owner.py: status_severity used without shared import
+leaf_qt/material_thermal_conductivity_integration_owner.py: status_severity used without shared import
+leaf_qt/real_engine_benchmark_completion_audit.py: status_severity used without shared import
+leaf_qt/real_engine_benchmark_failure_owner.py: status_severity used without shared import
+leaf_qt/regen_acceptance_audit.py: status_severity used without shared import
+leaf_qt/regen_acceptance_criteria_owner.py: status_severity used without shared import
+leaf_qt/regen_autonomous_optimisation_input_audit.py: status_severity used without shared import
+leaf_qt/regen_candidate_blueprint_completion_audit.py: status_severity used without shared import
+leaf_qt/regen_candidate_blueprint_generation_input_gate.py: status_severity used without shared import
+leaf_qt/regen_candidate_blueprint_mutation_validation.py: status_severity used without shared import
+leaf_qt/regen_candidate_blueprint_optimisation_completion_audit.py: status_severity used without shared import
+leaf_qt/regen_candidate_blueprint_population_completion_audit.py: status_severity used without shared import
+leaf_qt/regen_candidate_blueprint_population_validation_owner.py: status_severity used without shared import
+leaf_qt/regen_candidate_creation_completion_audit.py: status_severity used without shared import
+leaf_qt/regen_candidate_creation_input_audit.py: status_severity used without shared import
+leaf_qt/regen_candidate_creation_registration_owner.py: status_severity used without shared import
+leaf_qt/regen_candidate_creation_report_owner.py: status_severity used without shared import
+leaf_qt/regen_candidate_creation_session_owner.py: status_severity used without shared import
+leaf_qt/regen_candidate_generation_completion_audit.py: status_severity used without shared import
+leaf_qt/regen_candidate_generation_input_gate.py: status_severity used without shared import
+leaf_qt/regen_candidate_generation_registration_owner.py: status_severity used without shared import
+leaf_qt/regen_candidate_generation_report_owner.py: status_severity used without shared import
+leaf_qt/regen_candidate_generation_session_owner.py: status_severity used without shared import
+leaf_qt/regen_candidate_mutation_completion_audit.py: status_severity used without shared import
+leaf_qt/regen_candidate_mutation_input_audit.py: status_severity used without shared import
+leaf_qt/regen_candidate_mutation_master_gate.py: status_severity used without shared import
+leaf_qt/regen_candidate_mutation_report_owner.py: status_severity used without shared import
+leaf_qt/regen_candidate_population_completion_audit.py: status_severity used without shared import
+leaf_qt/regen_candidate_population_master_gate.py: status_severity used without shared import
+leaf_qt/regen_candidate_ranking_completion_audit.py: status_severity used without shared import
+leaf_qt/regen_candidate_ranking_input_audit.py: status_severity used without shared import
+leaf_qt/regen_candidate_ranking_master_gate.py: status_severity used without shared import
+leaf_qt/regen_completion_gate_validation_owner.py: status_severity used without shared import
+leaf_qt/regen_cross_section_viewer.py: status_severity used without shared import
+leaf_qt/regen_evolution_loop_completion_audit.py: status_severity used without shared import
+leaf_qt/regen_evolution_loop_input_audit.py: status_severity used without shared import
+leaf_qt/regen_evolution_loop_master_gate.py: status_severity used without shared import
+leaf_qt/regen_geometry_constraint_owner.py: status_severity used without shared import
+leaf_qt/regen_geometry_report_owner.py: status_severity used without shared import
+leaf_qt/regen_optimisation_completion_audit.py: status_severity used without shared import
+leaf_qt/regen_optimisation_registration_owner.py: status_severity used without shared import
+leaf_qt/regen_optimisation_report_owner.py: status_severity used without shared import
+leaf_qt/regen_optimisation_scoring_owner.py: status_severity used without shared import
+leaf_qt/regen_optimisation_session_owner.py: status_severity used without shared import
+leaf_qt/regen_runtime_execution_completion_audit.py: status_severity used without shared import
+leaf_qt/regen_runtime_execution_input_gate.py: status_severity used without shared import
+leaf_qt/regen_runtime_execution_registration_owner.py: status_severity used without shared import
+leaf_qt/regen_runtime_execution_report_owner.py: status_severity used without shared import
+leaf_qt/regen_runtime_execution_session_owner.py: status_severity used without shared import
+leaf_qt/regen_runtime_optimisation_input_gate.py: status_severity used without shared import
+leaf_qt/regen_runtime_optimisation_registration_owner.py: status_severity used without shared import
+leaf_qt/regen_runtime_optimisation_report_owner.py: status_severity used without shared import
+leaf_qt/regen_runtime_optimisation_session_owner.py: status_severity used without shared import
+leaf_qt/regen_scalability_failure_owner.py: status_severity used without shared import
+leaf_qt/regen_system_signoff_validation_owner.py: status_severity used without shared import
+leaf_qt/regen_viewer_final_runtime_consistency_gate_phase_16q20.py: status_severity used without shared import
+leaf_qt/regen_viewer_gui_runtime_acceptance_gate_phase_16q28.py: status_severity used without shared import
+leaf_qt/regen_viewer_report_renderer.py: status_severity used without shared import
+leaf_qt/status_presentation.py: status_severity used without shared import
+project_maintenance/phase_16u157b_final_wave_future_import_repair.py: status_severity used without shared import
+project_maintenance/phase_16u165c_failed_file_diagnostic.py: status_severity used without shared import
+project_maintenance/phase_16u168_presentation_debt_context_extractor.py: status_severity used without shared import
+project_maintenance/phase_16u169_active_control_flow_presentation_debt_manifest.py: status_severity used without shared import
+project_maintenance/phase_16u170_structural_predicate_patchability_audit.py: status_severity used without shared import
+project_maintenance/phase_16u171c_comparison_operand_diagnostic.py: status_severity used without shared import
+project_maintenance/phase_16u173_unquoted_status_token_resolver.py: status_severity used without shared import
+project_maintenance/regen_acceptance_audit_phase_16u116_backup.py: status_severity used without shared import
+project_maintenance/regen_acceptance_criteria_owner_phase_16u121_backup.py: status_severity used without shared import
+project_maintenance/regen_candidate_blueprint_population_validation_owner_presentation_layer_regression_phase_16u92.py: status_severity used without shared import
+project_maintenance/regen_candidate_creation_report_owner_presentation_layer_regression_phase_16u97.py: status_severity used without shared import
+project_maintenance/regen_candidate_generation_report_owner_presentation_layer_regression_phase_16u102.py: status_severity used without shared import
+project_maintenance/regen_candidate_mutation_report_owner_presentation_layer_regression_phase_16u107.py: status_severity used without shared import
+project_maintenance/regen_cross_section_viewer_presentation_layer_patch_phase_16u38.py: status_severity used without shared import
+project_maintenance/regen_cross_section_viewer_presentation_layer_regression_phase_16u39.py: status_severity used without shared import
+project_maintenance/regen_geometry_constraint_owner_phase_16u127_backup.py: status_severity used without shared import
+project_maintenance/regen_geometry_report_owner_presentation_layer_regression_phase_16u87.py: status_severity used without shared import
+project_maintenance/regen_optimisation_report_owner_presentation_layer_regression_phase_16u77.py: status_severity used without shared import
+project_maintenance/regen_runtime_optimisation_report_owner_presentation_layer_regression_phase_16u82.py: status_severity used without shared import
+project_maintenance/test_status_presentation_phase_16u32.py: status_severity used without shared import
+
+EXACT CODE GUARDRAIL ISSUES
+---------------------------
+None.
+
+MISSING EVIDENCE
+----------------
+None.
+
+json=/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u175_dual_migration_method_compatibility_audit.json
+text=/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u175_dual_migration_method_compatibility_audit.txt

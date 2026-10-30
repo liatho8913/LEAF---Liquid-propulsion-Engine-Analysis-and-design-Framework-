@@ -1,0 +1,60 @@
+{
+  "phase": "16U.40",
+  "status": "PASS_PHASE_16U40_REGEN_CROSS_SECTION_VIEWER_PRESENTATION_LAYER_CLOSURE_GATE",
+  "generated": "2026-06-28T02:28:45",
+  "target": "leaf_qt/regen_cross_section_viewer.py",
+  "checks": [
+    {
+      "name": "production_target_exists",
+      "passed": true,
+      "detail": "leaf_qt/regen_cross_section_viewer.py"
+    },
+    {
+      "name": "upload_duplicate_exists",
+      "passed": true,
+      "detail": "LEAF_UPLOAD/leaf_qt/regen_cross_section_viewer.py"
+    },
+    {
+      "name": "phase_16u38_patch_script_exists",
+      "passed": true,
+      "detail": "project_maintenance/regen_cross_section_viewer_presentation_layer_patch_phase_16u38.py"
+    },
+    {
+      "name": "phase_16u39_regression_script_exists",
+      "passed": true,
+      "detail": "project_maintenance/regen_cross_section_viewer_presentation_layer_regression_phase_16u39.py"
+    },
+    {
+      "name": "phase_16u38_patch_rerun_passed",
+      "passed": true,
+      "detail": "returncode=0"
+    },
+    {
+      "name": "phase_16u39_regression_rerun_passed",
+      "passed": true,
+      "detail": "returncode=0"
+    },
+    {
+      "name": "phase_16u38_completion_flag_true",
+      "passed": true,
+      "detail": "PASS_PHASE_16U38_REGEN_CROSS_SECTION_VIEWER_PRESENTATION_LAYER_PATCH"
+    },
+    {
+      "name": "phase_16u39_completion_flag_true",
+      "passed": true,
+      "detail": "PASS_PHASE_16U39_REGEN_CROSS_SECTION_VIEWER_PRESENTATION_LAYER_REGRESSION"
+    },
+    {
+      "name": "production_target_contains_shared_status_layer",
+      "passed": true,
+      "detail": "shared presentation helpers present"
+    },
+    {
+      "name": "leaf_upload_duplicate_still_unpatched",
+      "passed": true,
+      "detail": "duplicate remains untouched"
+    }
+  ],
+  "phase_16u40_regen_cross_section_viewer_presentation_layer_closure_gate_complete": true,
+  "next_phase": "16U.41 \u2014 Next Report Owner Rollout Candidate Audit"
+}

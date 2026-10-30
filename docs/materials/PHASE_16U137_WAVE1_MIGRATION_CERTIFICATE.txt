@@ -1,0 +1,45 @@
+LEAF PHASE 16U.137
+WAVE 1 MIGRATION CERTIFICATE
+================================
+
+STATUS: PASS_PHASE_16U137_WAVE1_MIGRATION_CERTIFICATE
+
+CERTIFICATE SUMMARY
+-------------------
+Wave ID: 16U-WAVE1
+Locked baseline: 68
+Closed before wave: 15
+Remaining before wave: 53
+Closed after wave: 27
+Remaining after wave: 41
+Net files closed: 12
+
+SECURITY STATEMENT
+------------------
+Wave 1 batched implementation only. Verification remained per-file and transactional.
+
+CERTIFIED FILES
+---------------
+- bond_coat_integration_owner.py
+- coating_property_consumption_audit_owner.py
+- coating_temperature_limit_integration_owner.py
+- coating_thermal_conductivity_integration_owner.py
+- coating_thermal_resistance_integration_owner.py
+- coating_thickness_integration_owner.py
+- material_density_integration_owner.py
+- material_property_consumption_audit_owner.py
+- material_specific_heat_integration_owner.py
+- material_strength_limit_integration_owner.py
+- material_temperature_limit_integration_owner.py
+- material_thermal_conductivity_integration_owner.py
+
+EVIDENCE FILES
+--------------
+- project_maintenance/phase_16u132_wave1_manifest_selection.json: ef7d8b9cd9ac4f1e7ea0d151caf8671ca8188866c220653b9150a9fb48473dfc
+- project_maintenance/phase_16u133_wave1_transactional_patch.json: 514281bb3a47a16e2a193e0cae0e1517229b42158b8587430b683db974aa6fd4
+- project_maintenance/phase_16u134_wave1_regression.json: 3f46142ecf474acdd05e59148c02ce80ed731215f3ae89e758ef36d46361c313
+- project_maintenance/phase_16u135_wave1_closure_gate.json: 0e46cbeaa9f200fcff873ebcee2c5916b5fb7eb2c779f38ba48befd225e9d1c5
+- project_maintenance/phase_16u136_wave1_locked_audit.json: 456a2f88ea8357cff30b7d1127472d7d34e8aaa0f69bd51f69115db903329820
+
+FAILURES
+--------

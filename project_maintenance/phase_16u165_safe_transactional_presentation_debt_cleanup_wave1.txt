@@ -1,0 +1,32 @@
+LEAF PHASE 16U.165
+SAFE TRANSACTIONAL PRESENTATION DEBT CLEANUP WAVE 1
+==============================================================
+status=FAIL_PHASE_16U165_SAFE_TRANSACTIONAL_PRESENTATION_DEBT_CLEANUP_WAVE1
+candidate_count=9
+touched_count=8
+skipped_count=0
+compile_failure_count=1
+patch_failure_count=0
+backup_dir=/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u165_backups
+
+TOUCHED FILES
+-------------
+   6  leaf_qt/regen_multi_objective_scoring_controller.py
+   2  leaf_qt/design_history_narrative_builder.py
+   3  leaf_qt/regen_failure_root_cause_system.py
+   2  leaf_qt/regen_optimisation_candidate_generator.py
+   1  leaf_qt/structured_status_access.py
+   2  leaf_qt/failure_root_cause_owner.py
+   2  leaf_qt/foundation_ui_launch_verification.py
+   1  leaf_qt/regen_architecture_visibility_audit.py
+
+SKIPPED FILES
+-------------
+No files skipped.
+
+COMPILE FAILURES
+----------------
+leaf_qt/regen_viewer_integration_report_owner.py :: PyCompileError('  File "/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/regen_viewer_integration_report_owner.py", line 18\n    from __future__ import annotations\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nSyntaxError: from __future__ imports must occur at the beginning of the file\n', 'SyntaxError', SyntaxError('from __future__ imports must occur at the beginning of the file', ('/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/regen_viewer_integration_report_owner.py', 18, 1, 'from __future__ import annotations\n', 18, 35)), '/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/regen_viewer_integration_report_owner.py')
+
+json=/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u165_safe_transactional_presentation_debt_cleanup_wave1.json
+text=/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u165_safe_transactional_presentation_debt_cleanup_wave1.txt

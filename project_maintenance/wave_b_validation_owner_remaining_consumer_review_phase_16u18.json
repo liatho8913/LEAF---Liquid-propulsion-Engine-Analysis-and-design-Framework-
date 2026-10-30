@@ -1,0 +1,333 @@
+{
+  "phase": "16U.18",
+  "status": "PASS_PHASE_16U18_WAVE_B_VALIDATION_OWNER_REMAINING_CONSUMER_REVIEW",
+  "generated": "2026-06-28T01:03:33",
+  "audit_status": "PASS_PHASE_16U15_WAVE_B_VALIDATION_OWNER_STATUS_CONSUMER_AUDIT",
+  "regression_status": "PASS_PHASE_16U17_WAVE_B_VALIDATION_OWNER_LOW_RISK_STATUS_WRAPPER_REGRESSION",
+  "remaining_candidate_count": 27,
+  "closure_blocker_count": 0,
+  "by_category": {
+    "GUI_VALIDATION_BRIDGE_INTENTIONAL_HOLD": 1,
+    "PAYLOAD_LITERAL_INTENTIONAL_HOLD": 10,
+    "PRESENTATION_MARKER_INTENTIONAL_HOLD": 2,
+    "REASSIGN_TO_WAVE_C_MASTER_GATE": 4,
+    "STATUS_PRODUCER_INTENTIONAL_HOLD": 6,
+    "TEXT_SEMANTIC_INTENTIONAL_HOLD": 4
+  },
+  "remaining_consumers": [
+    {
+      "file": "leaf_qt/regen_candidate_blueprint_mutation_validation.py",
+      "line": 243,
+      "original_group": "PRESENTATION_MARKER",
+      "remaining_category": "PRESENTATION_MARKER_INTENTIONAL_HOLD",
+      "closure_blocker": false,
+      "recommendation": "Preserve as report/evidence rendering.",
+      "reason": "Boolean-to-text PASS/FAIL markers are presentation evidence, not status consumers.",
+      "snippet": "marker = \"PASS\" if check[\"passed\"] else \"FAIL\""
+    },
+    {
+      "file": "leaf_qt/regen_candidate_blueprint_population_validation_owner.py",
+      "line": 231,
+      "original_group": "PRESENTATION_MARKER",
+      "remaining_category": "PRESENTATION_MARKER_INTENTIONAL_HOLD",
+      "closure_blocker": false,
+      "recommendation": "Preserve as report/evidence rendering.",
+      "reason": "Boolean-to-text PASS/FAIL markers are presentation evidence, not status consumers.",
+      "snippet": "marker = \"PASS\" if check[\"passed\"] else \"FAIL\""
+    },
+    {
+      "file": "leaf_qt/regen_candidate_post_resolve_validation_owner.py",
+      "line": 199,
+      "original_group": "TEXT_SEMANTIC_VALIDATION",
+      "remaining_category": "TEXT_SEMANTIC_INTENTIONAL_HOLD",
+      "closure_blocker": false,
+      "recommendation": "Preserve until structured diagnostic payload replaces freeform text checks.",
+      "reason": "Text scanning is semantic and should not be automatically wrapped.",
+      "snippet": "(\"FAIL\" not in text and \"INVALID\" not in text),"
+    },
+    {
+      "file": "leaf_qt/regen_candidate_post_resolve_validation_owner.py",
+      "line": 207,
+      "original_group": "TEXT_SEMANTIC_VALIDATION",
+      "remaining_category": "TEXT_SEMANTIC_INTENTIONAL_HOLD",
+      "closure_blocker": false,
+      "recommendation": "Preserve until structured diagnostic payload replaces freeform text checks.",
+      "reason": "Text scanning is semantic and should not be automatically wrapped.",
+      "snippet": "(\"WARN\" not in text and \"REVIEW\" not in text and \"PLACEHOLDER\" not in text),"
+    },
+    {
+      "file": "leaf_qt/regen_geometry_constraint_validation_owner.py",
+      "line": 266,
+      "original_group": "TEXT_SEMANTIC_VALIDATION",
+      "remaining_category": "TEXT_SEMANTIC_INTENTIONAL_HOLD",
+      "closure_blocker": false,
+      "recommendation": "Preserve until structured diagnostic payload replaces freeform text checks.",
+      "reason": "Text scanning is semantic and should not be automatically wrapped.",
+      "snippet": "passed=(\"FAIL\" not in text and \"INVALID\" not in text),"
+    },
+    {
+      "file": "leaf_qt/regen_geometry_constraint_validation_owner.py",
+      "line": 274,
+      "original_group": "TEXT_SEMANTIC_VALIDATION",
+      "remaining_category": "TEXT_SEMANTIC_INTENTIONAL_HOLD",
+      "closure_blocker": false,
+      "recommendation": "Preserve until structured diagnostic payload replaces freeform text checks.",
+      "reason": "Text scanning is semantic and should not be automatically wrapped.",
+      "snippet": "passed=(\"WARN\" not in text and \"REVIEW\" not in text and \"PLACEHOLDER\" not in text),"
+    },
+    {
+      "file": "leaf_qt/regen_validation_master_gate.py",
+      "line": 77,
+      "original_group": "MANUAL_REVIEW_REQUIRED",
+      "remaining_category": "REASSIGN_TO_WAVE_C_MASTER_GATE",
+      "closure_blocker": false,
+      "recommendation": "Reassign to Wave C master-gate migration.",
+      "reason": "This file is classified as a master gate by architecture and should not block Wave B closure.",
+      "snippet": "elif \"FAIL\" in status:"
+    },
+    {
+      "file": "leaf_qt/regen_validation_master_gate.py",
+      "line": 77,
+      "original_group": "MANUAL_REVIEW_REQUIRED",
+      "remaining_category": "REASSIGN_TO_WAVE_C_MASTER_GATE",
+      "closure_blocker": false,
+      "recommendation": "Reassign to Wave C master-gate migration.",
+      "reason": "This file is classified as a master gate by architecture and should not block Wave B closure.",
+      "snippet": "elif \"FAIL\" in status:"
+    },
+    {
+      "file": "leaf_qt/regen_validation_master_gate.py",
+      "line": 194,
+      "original_group": "MANUAL_REVIEW_REQUIRED",
+      "remaining_category": "REASSIGN_TO_WAVE_C_MASTER_GATE",
+      "closure_blocker": false,
+      "recommendation": "Reassign to Wave C master-gate migration.",
+      "reason": "This file is classified as a master gate by architecture and should not block Wave B closure.",
+      "snippet": "elif \"FAIL\" in validation_status_text or \"INVALID\" in validation_status_text:"
+    },
+    {
+      "file": "leaf_qt/regen_validation_master_gate.py",
+      "line": 194,
+      "original_group": "MANUAL_REVIEW_REQUIRED",
+      "remaining_category": "REASSIGN_TO_WAVE_C_MASTER_GATE",
+      "closure_blocker": false,
+      "recommendation": "Reassign to Wave C master-gate migration.",
+      "reason": "This file is classified as a master gate by architecture and should not block Wave B closure.",
+      "snippet": "elif \"FAIL\" in validation_status_text or \"INVALID\" in validation_status_text:"
+    },
+    {
+      "file": "leaf_qt/regen_candidate_post_resolve_validation_owner.py",
+      "line": 161,
+      "original_group": "LITERAL_CONTEXT_REVIEW",
+      "remaining_category": "PAYLOAD_LITERAL_INTENTIONAL_HOLD",
+      "closure_blocker": false,
+      "recommendation": "Preserve until payload schema is migrated.",
+      "reason": "Standalone literals likely belong to payload/evidence construction.",
+      "snippet": "\"FAIL\","
+    },
+    {
+      "file": "leaf_qt/regen_candidate_post_resolve_validation_owner.py",
+      "line": 177,
+      "original_group": "LITERAL_CONTEXT_REVIEW",
+      "remaining_category": "PAYLOAD_LITERAL_INTENTIONAL_HOLD",
+      "closure_blocker": false,
+      "recommendation": "Preserve until payload schema is migrated.",
+      "reason": "Standalone literals likely belong to payload/evidence construction.",
+      "snippet": "\"FAIL\","
+    },
+    {
+      "file": "leaf_qt/regen_candidate_post_resolve_validation_owner.py",
+      "line": 185,
+      "original_group": "LITERAL_CONTEXT_REVIEW",
+      "remaining_category": "PAYLOAD_LITERAL_INTENTIONAL_HOLD",
+      "closure_blocker": false,
+      "recommendation": "Preserve until payload schema is migrated.",
+      "reason": "Standalone literals likely belong to payload/evidence construction.",
+      "snippet": "\"FAIL\","
+    },
+    {
+      "file": "leaf_qt/regen_candidate_post_resolve_validation_owner.py",
+      "line": 200,
+      "original_group": "LITERAL_CONTEXT_REVIEW",
+      "remaining_category": "PAYLOAD_LITERAL_INTENTIONAL_HOLD",
+      "closure_blocker": false,
+      "recommendation": "Preserve until payload schema is migrated.",
+      "reason": "Standalone literals likely belong to payload/evidence construction.",
+      "snippet": "\"FAIL\","
+    },
+    {
+      "file": "leaf_qt/regen_candidate_post_resolve_validation_owner.py",
+      "line": 217,
+      "original_group": "LITERAL_CONTEXT_REVIEW",
+      "remaining_category": "PAYLOAD_LITERAL_INTENTIONAL_HOLD",
+      "closure_blocker": false,
+      "recommendation": "Preserve until payload schema is migrated.",
+      "reason": "Standalone literals likely belong to payload/evidence construction.",
+      "snippet": "\"FAIL\","
+    },
+    {
+      "file": "leaf_qt/regen_candidate_post_resolve_validation_owner.py",
+      "line": 230,
+      "original_group": "LITERAL_CONTEXT_REVIEW",
+      "remaining_category": "PAYLOAD_LITERAL_INTENTIONAL_HOLD",
+      "closure_blocker": false,
+      "recommendation": "Preserve until payload schema is migrated.",
+      "reason": "Standalone literals likely belong to payload/evidence construction.",
+      "snippet": "\"FAIL\","
+    },
+    {
+      "file": "leaf_qt/regen_candidate_validator.py",
+      "line": 360,
+      "original_group": "STATUS_PRODUCER_RETURN",
+      "remaining_category": "STATUS_PRODUCER_INTENTIONAL_HOLD",
+      "closure_blocker": false,
+      "recommendation": "Preserve as legacy-compatible status producer.",
+      "reason": "Return literals produce compatibility status output rather than consume it.",
+      "snippet": "return \"FAIL\""
+    },
+    {
+      "file": "leaf_qt/regen_candidate_validator.py",
+      "line": 369,
+      "original_group": "STATUS_PRODUCER_RETURN",
+      "remaining_category": "STATUS_PRODUCER_INTENTIONAL_HOLD",
+      "closure_blocker": false,
+      "recommendation": "Preserve as legacy-compatible status producer.",
+      "reason": "Return literals produce compatibility status output rather than consume it.",
+      "snippet": "return \"PASS\""
+    },
+    {
+      "file": "leaf_qt/regen_candidate_validator.py",
+      "line": 371,
+      "original_group": "STATUS_PRODUCER_RETURN",
+      "remaining_category": "STATUS_PRODUCER_INTENTIONAL_HOLD",
+      "closure_blocker": false,
+      "recommendation": "Preserve as legacy-compatible status producer.",
+      "reason": "Return literals produce compatibility status output rather than consume it.",
+      "snippet": "return \"FAIL\""
+    },
+    {
+      "file": "leaf_qt/regen_candidate_validator.py",
+      "line": 381,
+      "original_group": "LITERAL_CONTEXT_REVIEW",
+      "remaining_category": "PAYLOAD_LITERAL_INTENTIONAL_HOLD",
+      "closure_blocker": false,
+      "recommendation": "Preserve until payload schema is migrated.",
+      "reason": "Standalone literals likely belong to payload/evidence construction.",
+      "snippet": "\"FAIL\","
+    },
+    {
+      "file": "leaf_qt/regen_candidate_validator.py",
+      "line": 495,
+      "original_group": "LITERAL_CONTEXT_REVIEW",
+      "remaining_category": "PAYLOAD_LITERAL_INTENTIONAL_HOLD",
+      "closure_blocker": false,
+      "recommendation": "Preserve until payload schema is migrated.",
+      "reason": "Standalone literals likely belong to payload/evidence construction.",
+      "snippet": "\"FAIL\","
+    },
+    {
+      "file": "leaf_qt/regen_candidate_validator.py",
+      "line": 548,
+      "original_group": "LITERAL_CONTEXT_REVIEW",
+      "remaining_category": "PAYLOAD_LITERAL_INTENTIONAL_HOLD",
+      "closure_blocker": false,
+      "recommendation": "Preserve until payload schema is migrated.",
+      "reason": "Standalone literals likely belong to payload/evidence construction.",
+      "snippet": "\"FAIL\","
+    },
+    {
+      "file": "leaf_qt/regen_source_validation_gate.py",
+      "line": 361,
+      "original_group": "STATUS_PRODUCER_RETURN",
+      "remaining_category": "STATUS_PRODUCER_INTENTIONAL_HOLD",
+      "closure_blocker": false,
+      "recommendation": "Preserve as legacy-compatible status producer.",
+      "reason": "Return literals produce compatibility status output rather than consume it.",
+      "snippet": "return \"FAIL\""
+    },
+    {
+      "file": "leaf_qt/regen_source_validation_gate.py",
+      "line": 367,
+      "original_group": "STATUS_PRODUCER_RETURN",
+      "remaining_category": "STATUS_PRODUCER_INTENTIONAL_HOLD",
+      "closure_blocker": false,
+      "recommendation": "Preserve as legacy-compatible status producer.",
+      "reason": "Return literals produce compatibility status output rather than consume it.",
+      "snippet": "return \"PASS\""
+    },
+    {
+      "file": "leaf_qt/regen_source_validation_gate.py",
+      "line": 368,
+      "original_group": "STATUS_PRODUCER_RETURN",
+      "remaining_category": "STATUS_PRODUCER_INTENTIONAL_HOLD",
+      "closure_blocker": false,
+      "recommendation": "Preserve as legacy-compatible status producer.",
+      "reason": "Return literals produce compatibility status output rather than consume it.",
+      "snippet": "return \"FAIL\""
+    },
+    {
+      "file": "leaf_qt/regen_source_validation_gate.py",
+      "line": 378,
+      "original_group": "LITERAL_CONTEXT_REVIEW",
+      "remaining_category": "PAYLOAD_LITERAL_INTENTIONAL_HOLD",
+      "closure_blocker": false,
+      "recommendation": "Preserve until payload schema is migrated.",
+      "reason": "Standalone literals likely belong to payload/evidence construction.",
+      "snippet": "\"FAIL\","
+    },
+    {
+      "file": "leaf_qt/regen_viewer_physical_geometry_validation_owner_phase_16p15.py",
+      "line": 116,
+      "original_group": "MANUAL_REVIEW_REQUIRED",
+      "remaining_category": "GUI_VALIDATION_BRIDGE_INTENTIONAL_HOLD",
+      "closure_blocker": false,
+      "recommendation": "Preserve until GUI/validation bridge migration.",
+      "reason": "Viewer-phase validation bridge mixes GUI runtime status with validation status.",
+      "snippet": "if str(results.get(\"regen_geometry_status\", \"\")).upper() not in (\"FAIL\", \"ERROR\"):"
+    }
+  ],
+  "closure_blockers": [],
+  "compile_results": [
+    {
+      "file": "leaf_qt/regen_candidate_blueprint_mutation_validation.py",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "leaf_qt/regen_candidate_blueprint_population_validation_owner.py",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "leaf_qt/regen_candidate_post_resolve_validation_owner.py",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "leaf_qt/regen_candidate_validator.py",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "leaf_qt/regen_geometry_constraint_validation_owner.py",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "leaf_qt/regen_source_validation_gate.py",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "leaf_qt/regen_validation_master_gate.py",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "leaf_qt/regen_viewer_physical_geometry_validation_owner_phase_16p15.py",
+      "passed": true,
+      "error": ""
+    }
+  ],
+  "phase_16u18_wave_b_validation_owner_remaining_consumer_review_complete": true
+}

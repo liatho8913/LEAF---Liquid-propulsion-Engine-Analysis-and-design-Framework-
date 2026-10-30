@@ -1,0 +1,31 @@
+LEAF PHASE 16U.71
+APPROVED MIGRATION WAVE PATCH
+=========================================
+
+STATUS: PASS_PHASE_16U71_GROUPED_LOW_RISK_OWNER_BATCH_PATCH
+Generated: 2026-06-28T18:16:36
+
+FEATURE
+-------
+Patch approved migration wave targets onto the shared status presentation layer.
+
+SUMMARY
+-------
+Target count: 4
+Passed count: 4
+Failed count: 0
+
+PER-FILE RESULTS
+----------------
+leaf_qt/failure_root_cause_owner.py: PASS | changed=False | before=0 | after=0 | compiled=True
+leaf_qt/regen_completion_gate_validation_owner.py: PASS | changed=False | before=0 | after=0 | compiled=True
+leaf_qt/regen_system_signoff_validation_owner.py: PASS | changed=False | before=0 | after=0 | compiled=True
+leaf_qt/regen_optimisation_scoring_owner.py: PASS | changed=False | before=0 | after=0 | compiled=True
+
+COMPLETION NOTICE
+-----------------
+PHASE 16U.71 COMPLETE.
+
+NEXT FEATURE
+------------
+PHASE 16U.72 — APPROVED MIGRATION WAVE REGRESSION

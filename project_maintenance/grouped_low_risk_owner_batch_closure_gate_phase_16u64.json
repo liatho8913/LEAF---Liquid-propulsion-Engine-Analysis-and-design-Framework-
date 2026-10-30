@@ -1,0 +1,297 @@
+{
+  "phase": "16U.64",
+  "status": "PASS_PHASE_16U64_GROUPED_LOW_RISK_OWNER_BATCH_CLOSURE_GATE",
+  "generated": "2026-06-28T12:12:30",
+  "target_count": 8,
+  "closed_count": 8,
+  "failed_count": 0,
+  "checks": [
+    {
+      "name": "phase_16u62_patch_script_exists",
+      "passed": true,
+      "detail": "project_maintenance/grouped_low_risk_owner_batch_patch_phase_16u62.py"
+    },
+    {
+      "name": "phase_16u63_regression_script_exists",
+      "passed": true,
+      "detail": "project_maintenance/grouped_low_risk_owner_batch_regression_phase_16u63.py"
+    },
+    {
+      "name": "phase_16u62_patch_rerun_passed",
+      "passed": true,
+      "detail": "returncode=0"
+    },
+    {
+      "name": "phase_16u63_regression_rerun_passed",
+      "passed": true,
+      "detail": "returncode=0"
+    },
+    {
+      "name": "phase_16u62_completion_flag_true",
+      "passed": true,
+      "detail": "PASS_PHASE_16U62_GROUPED_LOW_RISK_OWNER_BATCH_PATCH"
+    },
+    {
+      "name": "phase_16u63_completion_flag_true",
+      "passed": true,
+      "detail": "PASS_PHASE_16U63_GROUPED_LOW_RISK_OWNER_BATCH_REGRESSION"
+    },
+    {
+      "name": "all_batch_files_closed",
+      "passed": true,
+      "detail": "8/8 closed"
+    }
+  ],
+  "per_file": [
+    {
+      "file": "leaf_qt/coating_property_consumption_audit_owner.py",
+      "passed": true,
+      "checks": [
+        {
+          "name": "target_exists",
+          "passed": true,
+          "detail": "leaf_qt/coating_property_consumption_audit_owner.py"
+        },
+        {
+          "name": "patch_payload_passed",
+          "passed": true,
+          "detail": "True"
+        },
+        {
+          "name": "regression_payload_passed",
+          "passed": true,
+          "detail": "True"
+        },
+        {
+          "name": "contains_shared_status_layer",
+          "passed": true,
+          "detail": "shared helper present"
+        },
+        {
+          "name": "no_legacy_status_patterns_after_helper",
+          "passed": true,
+          "detail": "legacy literals allowed only inside helper fallback"
+        }
+      ]
+    },
+    {
+      "file": "leaf_qt/coating_thermal_conductivity_integration_owner.py",
+      "passed": true,
+      "checks": [
+        {
+          "name": "target_exists",
+          "passed": true,
+          "detail": "leaf_qt/coating_thermal_conductivity_integration_owner.py"
+        },
+        {
+          "name": "patch_payload_passed",
+          "passed": true,
+          "detail": "True"
+        },
+        {
+          "name": "regression_payload_passed",
+          "passed": true,
+          "detail": "True"
+        },
+        {
+          "name": "contains_shared_status_layer",
+          "passed": true,
+          "detail": "shared helper present"
+        },
+        {
+          "name": "no_legacy_status_patterns_after_helper",
+          "passed": true,
+          "detail": "legacy literals allowed only inside helper fallback"
+        }
+      ]
+    },
+    {
+      "file": "leaf_qt/coating_thermal_resistance_integration_owner.py",
+      "passed": true,
+      "checks": [
+        {
+          "name": "target_exists",
+          "passed": true,
+          "detail": "leaf_qt/coating_thermal_resistance_integration_owner.py"
+        },
+        {
+          "name": "patch_payload_passed",
+          "passed": true,
+          "detail": "True"
+        },
+        {
+          "name": "regression_payload_passed",
+          "passed": true,
+          "detail": "True"
+        },
+        {
+          "name": "contains_shared_status_layer",
+          "passed": true,
+          "detail": "shared helper present"
+        },
+        {
+          "name": "no_legacy_status_patterns_after_helper",
+          "passed": true,
+          "detail": "legacy literals allowed only inside helper fallback"
+        }
+      ]
+    },
+    {
+      "file": "leaf_qt/coating_thickness_integration_owner.py",
+      "passed": true,
+      "checks": [
+        {
+          "name": "target_exists",
+          "passed": true,
+          "detail": "leaf_qt/coating_thickness_integration_owner.py"
+        },
+        {
+          "name": "patch_payload_passed",
+          "passed": true,
+          "detail": "True"
+        },
+        {
+          "name": "regression_payload_passed",
+          "passed": true,
+          "detail": "True"
+        },
+        {
+          "name": "contains_shared_status_layer",
+          "passed": true,
+          "detail": "shared helper present"
+        },
+        {
+          "name": "no_legacy_status_patterns_after_helper",
+          "passed": true,
+          "detail": "legacy literals allowed only inside helper fallback"
+        }
+      ]
+    },
+    {
+      "file": "leaf_qt/material_density_integration_owner.py",
+      "passed": true,
+      "checks": [
+        {
+          "name": "target_exists",
+          "passed": true,
+          "detail": "leaf_qt/material_density_integration_owner.py"
+        },
+        {
+          "name": "patch_payload_passed",
+          "passed": true,
+          "detail": "True"
+        },
+        {
+          "name": "regression_payload_passed",
+          "passed": true,
+          "detail": "True"
+        },
+        {
+          "name": "contains_shared_status_layer",
+          "passed": true,
+          "detail": "shared helper present"
+        },
+        {
+          "name": "no_legacy_status_patterns_after_helper",
+          "passed": true,
+          "detail": "legacy literals allowed only inside helper fallback"
+        }
+      ]
+    },
+    {
+      "file": "leaf_qt/material_property_consumption_audit_owner.py",
+      "passed": true,
+      "checks": [
+        {
+          "name": "target_exists",
+          "passed": true,
+          "detail": "leaf_qt/material_property_consumption_audit_owner.py"
+        },
+        {
+          "name": "patch_payload_passed",
+          "passed": true,
+          "detail": "True"
+        },
+        {
+          "name": "regression_payload_passed",
+          "passed": true,
+          "detail": "True"
+        },
+        {
+          "name": "contains_shared_status_layer",
+          "passed": true,
+          "detail": "shared helper present"
+        },
+        {
+          "name": "no_legacy_status_patterns_after_helper",
+          "passed": true,
+          "detail": "legacy literals allowed only inside helper fallback"
+        }
+      ]
+    },
+    {
+      "file": "leaf_qt/material_specific_heat_integration_owner.py",
+      "passed": true,
+      "checks": [
+        {
+          "name": "target_exists",
+          "passed": true,
+          "detail": "leaf_qt/material_specific_heat_integration_owner.py"
+        },
+        {
+          "name": "patch_payload_passed",
+          "passed": true,
+          "detail": "True"
+        },
+        {
+          "name": "regression_payload_passed",
+          "passed": true,
+          "detail": "True"
+        },
+        {
+          "name": "contains_shared_status_layer",
+          "passed": true,
+          "detail": "shared helper present"
+        },
+        {
+          "name": "no_legacy_status_patterns_after_helper",
+          "passed": true,
+          "detail": "legacy literals allowed only inside helper fallback"
+        }
+      ]
+    },
+    {
+      "file": "leaf_qt/material_thermal_conductivity_integration_owner.py",
+      "passed": true,
+      "checks": [
+        {
+          "name": "target_exists",
+          "passed": true,
+          "detail": "leaf_qt/material_thermal_conductivity_integration_owner.py"
+        },
+        {
+          "name": "patch_payload_passed",
+          "passed": true,
+          "detail": "True"
+        },
+        {
+          "name": "regression_payload_passed",
+          "passed": true,
+          "detail": "True"
+        },
+        {
+          "name": "contains_shared_status_layer",
+          "passed": true,
+          "detail": "shared helper present"
+        },
+        {
+          "name": "no_legacy_status_patterns_after_helper",
+          "passed": true,
+          "detail": "legacy literals allowed only inside helper fallback"
+        }
+      ]
+    }
+  ],
+  "phase_16u64_grouped_low_risk_owner_batch_closure_gate_complete": true,
+  "next_phase": "16U.65 \u2014 Next Grouped Low-Risk Owner Batch Audit"
+}

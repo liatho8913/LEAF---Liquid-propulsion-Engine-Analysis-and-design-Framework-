@@ -1,0 +1,59 @@
+LEAF PHASE 16U.69
+GLOBAL REMAINING-CANDIDATE AUDIT
+================================
+
+STATUS: PASS_PHASE_16U69_GLOBAL_REMAINING_CANDIDATE_AUDIT
+Generated: 2026-06-28T12:24:23
+
+SUMMARY
+-------
+Closed target count: 16
+Scanned leaf_qt Python files: 971
+Files with findings: 88
+Remaining production candidates: 24
+Grouped-safe count: 4
+Complex deferred count: 10
+Test/maintenance finding count: 1
+
+COUNTDOWN
+---------
+Estimated remaining phase range after 16U.69: 12–78
+Likely 16U final range: 16U.100–16U.120
+
+NEXT BATCH
+----------
+1. leaf_qt/failure_root_cause_owner.py | findings=1
+2. leaf_qt/regen_completion_gate_validation_owner.py | findings=1
+3. leaf_qt/regen_system_signoff_validation_owner.py | findings=1
+4. leaf_qt/regen_optimisation_scoring_owner.py | findings=2
+
+TOP PRODUCTION CANDIDATES
+-------------------------
+1. leaf_qt/failure_root_cause_owner.py | findings=1 | grouped_safe=True
+2. leaf_qt/regen_acceptance_criteria_owner.py | findings=1 | grouped_safe=False
+3. leaf_qt/regen_candidate_blueprint_population_validation_owner.py | findings=1 | grouped_safe=False
+4. leaf_qt/regen_candidate_creation_registration_owner.py | findings=1 | grouped_safe=False
+5. leaf_qt/regen_candidate_creation_report_owner.py | findings=1 | grouped_safe=False
+6. leaf_qt/regen_candidate_creation_session_owner.py | findings=1 | grouped_safe=False
+7. leaf_qt/regen_candidate_generation_registration_owner.py | findings=1 | grouped_safe=False
+8. leaf_qt/regen_candidate_generation_report_owner.py | findings=1 | grouped_safe=False
+9. leaf_qt/regen_candidate_generation_session_owner.py | findings=1 | grouped_safe=False
+10. leaf_qt/regen_candidate_mutation_report_owner.py | findings=1 | grouped_safe=False
+11. leaf_qt/regen_completion_gate_validation_owner.py | findings=1 | grouped_safe=True
+12. leaf_qt/regen_geometry_constraint_owner.py | findings=1 | grouped_safe=False
+13. leaf_qt/regen_optimisation_registration_owner.py | findings=1 | grouped_safe=False
+14. leaf_qt/regen_optimisation_report_owner.py | findings=1 | grouped_safe=False
+15. leaf_qt/regen_optimisation_session_owner.py | findings=1 | grouped_safe=False
+16. leaf_qt/regen_runtime_execution_registration_owner.py | findings=1 | grouped_safe=False
+17. leaf_qt/regen_runtime_execution_report_owner.py | findings=1 | grouped_safe=False
+18. leaf_qt/regen_runtime_execution_session_owner.py | findings=1 | grouped_safe=False
+19. leaf_qt/regen_runtime_optimisation_registration_owner.py | findings=1 | grouped_safe=False
+20. leaf_qt/regen_runtime_optimisation_report_owner.py | findings=1 | grouped_safe=False
+
+COMPLETION NOTICE
+-----------------
+PHASE 16U.69 COMPLETE.
+
+NEXT FEATURE
+------------
+PHASE 16U.70 — NEXT MIGRATION WAVE DECISION

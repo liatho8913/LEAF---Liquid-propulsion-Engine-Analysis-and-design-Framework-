@@ -1,0 +1,27 @@
+LEAF PHASE 16U.134
+WAVE 1 REGRESSION
+==================
+
+STATUS: PASS_PHASE_16U134_WAVE1_REGRESSION
+
+Files checked: 12
+Files passed: 12
+Files failed: 0
+
+FILES
+-----
+- bond_coat_integration_owner.py :: PASS
+- coating_property_consumption_audit_owner.py :: PASS
+- coating_temperature_limit_integration_owner.py :: PASS
+- coating_thermal_conductivity_integration_owner.py :: PASS
+- coating_thermal_resistance_integration_owner.py :: PASS
+- coating_thickness_integration_owner.py :: PASS
+- material_density_integration_owner.py :: PASS
+- material_property_consumption_audit_owner.py :: PASS
+- material_specific_heat_integration_owner.py :: PASS
+- material_strength_limit_integration_owner.py :: PASS
+- material_temperature_limit_integration_owner.py :: PASS
+- material_thermal_conductivity_integration_owner.py :: PASS
+
+FAILURES
+--------

@@ -1,0 +1,4281 @@
+{
+  "phase": "16U.168",
+  "manual_review_file_count": 40,
+  "sample_context_count": 76,
+  "context_classification_counts": {
+    "ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED": 76
+  },
+  "context_manifest": [
+    {
+      "path": "leaf_qt/engine_solver.py",
+      "finding_count": 14,
+      "contexts": [
+        {
+          "line_number": 4559,
+          "pattern": "inline_pass_fail_warn_literal",
+          "line": "if results.get(\"recommended_geometry_status\") in (None, \"BLOCKED_NO_RADIUS_DATA\", \"FAIL_NO_PHYSICAL_FIT\"):",
+          "context_classification": "ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED",
+          "context": [
+            {
+              "line_number": 4555,
+              "is_target": false,
+              "line": "    if coolant_mdot is None or coolant_mdot <= 0:"
+            },
+            {
+              "line_number": 4556,
+              "is_target": false,
+              "line": "        results[\"variable_channel_geometry_status\"] = \"NO_COOLANT_MASS_FLOW\""
+            },
+            {
+              "line_number": 4557,
+              "is_target": false,
+              "line": "        return results"
+            },
+            {
+              "line_number": 4558,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 4559,
+              "is_target": true,
+              "line": "    if results.get(\"recommended_geometry_status\") in (None, \"BLOCKED_NO_RADIUS_DATA\", \"FAIL_NO_PHYSICAL_FIT\"):"
+            },
+            {
+              "line_number": 4560,
+              "is_target": false,
+              "line": "        results = build_geometry_aware_recommended_regen_design(results)"
+            },
+            {
+              "line_number": 4561,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 4562,
+              "is_target": false,
+              "line": "    base_channel_count = int(results.get(\"recommended_channel_count\") or min_channel_count)"
+            },
+            {
+              "line_number": 4563,
+              "is_target": false,
+              "line": "    base_channel_width = results.get(\"recommended_channel_width\") or min_channel_width"
+            }
+          ]
+        },
+        {
+          "line_number": 4559,
+          "pattern": "inline_status_contains_check",
+          "line": "if results.get(\"recommended_geometry_status\") in (None, \"BLOCKED_NO_RADIUS_DATA\", \"FAIL_NO_PHYSICAL_FIT\"):",
+          "context_classification": "ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED",
+          "context": [
+            {
+              "line_number": 4555,
+              "is_target": false,
+              "line": "    if coolant_mdot is None or coolant_mdot <= 0:"
+            },
+            {
+              "line_number": 4556,
+              "is_target": false,
+              "line": "        results[\"variable_channel_geometry_status\"] = \"NO_COOLANT_MASS_FLOW\""
+            },
+            {
+              "line_number": 4557,
+              "is_target": false,
+              "line": "        return results"
+            },
+            {
+              "line_number": 4558,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 4559,
+              "is_target": true,
+              "line": "    if results.get(\"recommended_geometry_status\") in (None, \"BLOCKED_NO_RADIUS_DATA\", \"FAIL_NO_PHYSICAL_FIT\"):"
+            },
+            {
+              "line_number": 4560,
+              "is_target": false,
+              "line": "        results = build_geometry_aware_recommended_regen_design(results)"
+            },
+            {
+              "line_number": 4561,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 4562,
+              "is_target": false,
+              "line": "    base_channel_count = int(results.get(\"recommended_channel_count\") or min_channel_count)"
+            },
+            {
+              "line_number": 4563,
+              "is_target": false,
+              "line": "    base_channel_width = results.get(\"recommended_channel_width\") or min_channel_width"
+            }
+          ]
+        },
+        {
+          "line_number": 5323,
+          "pattern": "inline_pass_fail_warn_literal",
+          "line": "elif status == \"FAIL_BUT_IMPROVED\":",
+          "context_classification": "ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED",
+          "context": [
+            {
+              "line_number": 5319,
+              "is_target": false,
+              "line": "    if invalid_station_count > 0:"
+            },
+            {
+              "line_number": 5320,
+              "is_target": false,
+              "line": "        recommendation = ("
+            },
+            {
+              "line_number": 5321,
+              "is_target": false,
+              "line": "            \"Variable geometry contains invalid stations. Thermal preview uses recommended-geometry fallback at invalid stations.\""
+            },
+            {
+              "line_number": 5322,
+              "is_target": false,
+              "line": "        )"
+            },
+            {
+              "line_number": 5323,
+              "is_target": true,
+              "line": "    elif status == \"FAIL_BUT_IMPROVED\":"
+            },
+            {
+              "line_number": 5324,
+              "is_target": false,
+              "line": "        recommendation = ("
+            },
+            {
+              "line_number": 5325,
+              "is_target": false,
+              "line": "            \"Variable geometry improves valid stations but still fails material limits.\""
+            },
+            {
+              "line_number": 5326,
+              "is_target": false,
+              "line": "        )"
+            },
+            {
+              "line_number": 5327,
+              "is_target": false,
+              "line": "    elif status == \"PASS\":"
+            }
+          ]
+        },
+        {
+          "line_number": 5323,
+          "pattern": "inline_status_contains_check",
+          "line": "elif status == \"FAIL_BUT_IMPROVED\":",
+          "context_classification": "ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED",
+          "context": [
+            {
+              "line_number": 5319,
+              "is_target": false,
+              "line": "    if invalid_station_count > 0:"
+            },
+            {
+              "line_number": 5320,
+              "is_target": false,
+              "line": "        recommendation = ("
+            },
+            {
+              "line_number": 5321,
+              "is_target": false,
+              "line": "            \"Variable geometry contains invalid stations. Thermal preview uses recommended-geometry fallback at invalid stations.\""
+            },
+            {
+              "line_number": 5322,
+              "is_target": false,
+              "line": "        )"
+            },
+            {
+              "line_number": 5323,
+              "is_target": true,
+              "line": "    elif status == \"FAIL_BUT_IMPROVED\":"
+            },
+            {
+              "line_number": 5324,
+              "is_target": false,
+              "line": "        recommendation = ("
+            },
+            {
+              "line_number": 5325,
+              "is_target": false,
+              "line": "            \"Variable geometry improves valid stations but still fails material limits.\""
+            },
+            {
+              "line_number": 5326,
+              "is_target": false,
+              "line": "        )"
+            },
+            {
+              "line_number": 5327,
+              "is_target": false,
+              "line": "    elif status == \"PASS\":"
+            }
+          ]
+        },
+        {
+          "line_number": 7746,
+          "pattern": "inline_pass_fail_warn_literal",
+          "line": "if results.get(\"explicit_coating_liner_status\") == \"FAIL_THERMAL_STRESS\":",
+          "context_classification": "ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED",
+          "context": [
+            {
+              "line_number": 7742,
+              "is_target": false,
+              "line": "        if adhesion_risk_status == \"REQUIRES_MODEL\":"
+            },
+            {
+              "line_number": 7743,
+              "is_target": false,
+              "line": "            coating_stack_validation_readiness_score -= 20"
+            },
+            {
+              "line_number": 7744,
+              "is_target": false,
+              "line": "        if spallation_fatigue_status == \"REQUIRES_MODEL\":"
+            },
+            {
+              "line_number": 7745,
+              "is_target": false,
+              "line": "            coating_stack_validation_readiness_score -= 20"
+            },
+            {
+              "line_number": 7746,
+              "is_target": true,
+              "line": "        if results.get(\"explicit_coating_liner_status\") == \"FAIL_THERMAL_STRESS\":"
+            },
+            {
+              "line_number": 7747,
+              "is_target": false,
+              "line": "            coating_stack_validation_readiness_score -= 10"
+            },
+            {
+              "line_number": 7748,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 7749,
+              "is_target": false,
+              "line": "        coating_stack_validation_readiness_score = max(0, min(100, coating_stack_validation_readiness_score))"
+            },
+            {
+              "line_number": 7750,
+              "is_target": false,
+              "line": ""
+            }
+          ]
+        },
+        {
+          "line_number": 7746,
+          "pattern": "inline_status_contains_check",
+          "line": "if results.get(\"explicit_coating_liner_status\") == \"FAIL_THERMAL_STRESS\":",
+          "context_classification": "ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED",
+          "context": [
+            {
+              "line_number": 7742,
+              "is_target": false,
+              "line": "        if adhesion_risk_status == \"REQUIRES_MODEL\":"
+            },
+            {
+              "line_number": 7743,
+              "is_target": false,
+              "line": "            coating_stack_validation_readiness_score -= 20"
+            },
+            {
+              "line_number": 7744,
+              "is_target": false,
+              "line": "        if spallation_fatigue_status == \"REQUIRES_MODEL\":"
+            },
+            {
+              "line_number": 7745,
+              "is_target": false,
+              "line": "            coating_stack_validation_readiness_score -= 20"
+            },
+            {
+              "line_number": 7746,
+              "is_target": true,
+              "line": "        if results.get(\"explicit_coating_liner_status\") == \"FAIL_THERMAL_STRESS\":"
+            },
+            {
+              "line_number": 7747,
+              "is_target": false,
+              "line": "            coating_stack_validation_readiness_score -= 10"
+            },
+            {
+              "line_number": 7748,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 7749,
+              "is_target": false,
+              "line": "        coating_stack_validation_readiness_score = max(0, min(100, coating_stack_validation_readiness_score))"
+            },
+            {
+              "line_number": 7750,
+              "is_target": false,
+              "line": ""
+            }
+          ]
+        },
+        {
+          "line_number": 7767,
+          "pattern": "inline_pass_fail_warn_literal",
+          "line": "if results.get(\"explicit_coating_liner_status\") == \"FAIL_THERMAL_STRESS\":",
+          "context_classification": "ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED",
+          "context": [
+            {
+              "line_number": 7763,
+              "is_target": false,
+              "line": "        critical_blockers = 0"
+            },
+            {
+              "line_number": 7764,
+              "is_target": false,
+              "line": "        major_blockers = 0"
+            },
+            {
+              "line_number": 7765,
+              "is_target": false,
+              "line": "        minor_blockers = 0"
+            },
+            {
+              "line_number": 7766,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 7767,
+              "is_target": true,
+              "line": "        if results.get(\"explicit_coating_liner_status\") == \"FAIL_THERMAL_STRESS\":"
+            },
+            {
+              "line_number": 7768,
+              "is_target": false,
+              "line": "            critical_blockers += 1"
+            },
+            {
+              "line_number": 7769,
+              "is_target": false,
+              "line": "        if uses_placeholder_data:"
+            },
+            {
+              "line_number": 7770,
+              "is_target": false,
+              "line": "            major_blockers += 1"
+            },
+            {
+              "line_number": 7771,
+              "is_target": false,
+              "line": "        if bond_coat_uses_placeholder_data:"
+            }
+          ]
+        },
+        {
+          "line_number": 7767,
+          "pattern": "inline_status_contains_check",
+          "line": "if results.get(\"explicit_coating_liner_status\") == \"FAIL_THERMAL_STRESS\":",
+          "context_classification": "ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED",
+          "context": [
+            {
+              "line_number": 7763,
+              "is_target": false,
+              "line": "        critical_blockers = 0"
+            },
+            {
+              "line_number": 7764,
+              "is_target": false,
+              "line": "        major_blockers = 0"
+            },
+            {
+              "line_number": 7765,
+              "is_target": false,
+              "line": "        minor_blockers = 0"
+            },
+            {
+              "line_number": 7766,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 7767,
+              "is_target": true,
+              "line": "        if results.get(\"explicit_coating_liner_status\") == \"FAIL_THERMAL_STRESS\":"
+            },
+            {
+              "line_number": 7768,
+              "is_target": false,
+              "line": "            critical_blockers += 1"
+            },
+            {
+              "line_number": 7769,
+              "is_target": false,
+              "line": "        if uses_placeholder_data:"
+            },
+            {
+              "line_number": 7770,
+              "is_target": false,
+              "line": "            major_blockers += 1"
+            },
+            {
+              "line_number": 7771,
+              "is_target": false,
+              "line": "        if bond_coat_uses_placeholder_data:"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_convergence_master_gate.py",
+      "finding_count": 6,
+      "contexts": [
+        {
+          "line_number": 44,
+          "pattern": "inline_pass_fail_warn_literal",
+          "line": "if status == \"PASS_REGEN_CONVERGENCE_MASTER_GATE_CONVERGED\":",
+          "context_classification": "ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED",
+          "context": [
+            {
+              "line_number": 40,
+              "is_target": false,
+              "line": ") -> tuple[list[dict[str, Any]], str | None]:"
+            },
+            {
+              "line_number": 41,
+              "is_target": false,
+              "line": "    findings: list[dict[str, Any]] = []"
+            },
+            {
+              "line_number": 42,
+              "is_target": false,
+              "line": "    lifecycle: str | None = None"
+            },
+            {
+              "line_number": 43,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 44,
+              "is_target": true,
+              "line": "    if status == \"PASS_REGEN_CONVERGENCE_MASTER_GATE_CONVERGED\":"
+            },
+            {
+              "line_number": 45,
+              "is_target": false,
+              "line": "        findings.append("
+            },
+            {
+              "line_number": 46,
+              "is_target": false,
+              "line": "            make_finding("
+            },
+            {
+              "line_number": 47,
+              "is_target": false,
+              "line": "                message=reason,"
+            },
+            {
+              "line_number": 48,
+              "is_target": false,
+              "line": "                category=\"COMPLETE\","
+            }
+          ]
+        },
+        {
+          "line_number": 44,
+          "pattern": "inline_status_contains_check",
+          "line": "if status == \"PASS_REGEN_CONVERGENCE_MASTER_GATE_CONVERGED\":",
+          "context_classification": "ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED",
+          "context": [
+            {
+              "line_number": 40,
+              "is_target": false,
+              "line": ") -> tuple[list[dict[str, Any]], str | None]:"
+            },
+            {
+              "line_number": 41,
+              "is_target": false,
+              "line": "    findings: list[dict[str, Any]] = []"
+            },
+            {
+              "line_number": 42,
+              "is_target": false,
+              "line": "    lifecycle: str | None = None"
+            },
+            {
+              "line_number": 43,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 44,
+              "is_target": true,
+              "line": "    if status == \"PASS_REGEN_CONVERGENCE_MASTER_GATE_CONVERGED\":"
+            },
+            {
+              "line_number": 45,
+              "is_target": false,
+              "line": "        findings.append("
+            },
+            {
+              "line_number": 46,
+              "is_target": false,
+              "line": "            make_finding("
+            },
+            {
+              "line_number": 47,
+              "is_target": false,
+              "line": "                message=reason,"
+            },
+            {
+              "line_number": 48,
+              "is_target": false,
+              "line": "                category=\"COMPLETE\","
+            }
+          ]
+        },
+        {
+          "line_number": 54,
+          "pattern": "inline_pass_fail_warn_literal",
+          "line": "elif status == \"WARN_REGEN_CONVERGENCE_MASTER_GATE_RUNNING\":",
+          "context_classification": "ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED",
+          "context": [
+            {
+              "line_number": 50,
+              "is_target": false,
+              "line": "                evidence=evidence,"
+            },
+            {
+              "line_number": 51,
+              "is_target": false,
+              "line": "            )"
+            },
+            {
+              "line_number": 52,
+              "is_target": false,
+              "line": "        )"
+            },
+            {
+              "line_number": 53,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 54,
+              "is_target": true,
+              "line": "    elif status == \"WARN_REGEN_CONVERGENCE_MASTER_GATE_RUNNING\":"
+            },
+            {
+              "line_number": 55,
+              "is_target": false,
+              "line": "        lifecycle = STATUS_RUNNING"
+            },
+            {
+              "line_number": 56,
+              "is_target": false,
+              "line": "        findings.append("
+            },
+            {
+              "line_number": 57,
+              "is_target": false,
+              "line": "            make_finding("
+            },
+            {
+              "line_number": 58,
+              "is_target": false,
+              "line": "                message=reason,"
+            }
+          ]
+        },
+        {
+          "line_number": 54,
+          "pattern": "inline_status_contains_check",
+          "line": "elif status == \"WARN_REGEN_CONVERGENCE_MASTER_GATE_RUNNING\":",
+          "context_classification": "ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED",
+          "context": [
+            {
+              "line_number": 50,
+              "is_target": false,
+              "line": "                evidence=evidence,"
+            },
+            {
+              "line_number": 51,
+              "is_target": false,
+              "line": "            )"
+            },
+            {
+              "line_number": 52,
+              "is_target": false,
+              "line": "        )"
+            },
+            {
+              "line_number": 53,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 54,
+              "is_target": true,
+              "line": "    elif status == \"WARN_REGEN_CONVERGENCE_MASTER_GATE_RUNNING\":"
+            },
+            {
+              "line_number": 55,
+              "is_target": false,
+              "line": "        lifecycle = STATUS_RUNNING"
+            },
+            {
+              "line_number": 56,
+              "is_target": false,
+              "line": "        findings.append("
+            },
+            {
+              "line_number": 57,
+              "is_target": false,
+              "line": "            make_finding("
+            },
+            {
+              "line_number": 58,
+              "is_target": false,
+              "line": "                message=reason,"
+            }
+          ]
+        },
+        {
+          "line_number": 66,
+          "pattern": "inline_pass_fail_warn_literal",
+          "line": "elif status == \"WARN_REGEN_CONVERGENCE_MASTER_GATE_MAX_GENERATIONS\":",
+          "context_classification": "ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED",
+          "context": [
+            {
+              "line_number": 62,
+              "is_target": false,
+              "line": "                allowlisted=True,"
+            },
+            {
+              "line_number": 63,
+              "is_target": false,
+              "line": "            )"
+            },
+            {
+              "line_number": 64,
+              "is_target": false,
+              "line": "        )"
+            },
+            {
+              "line_number": 65,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 66,
+              "is_target": true,
+              "line": "    elif status == \"WARN_REGEN_CONVERGENCE_MASTER_GATE_MAX_GENERATIONS\":"
+            },
+            {
+              "line_number": 67,
+              "is_target": false,
+              "line": "        findings.append("
+            },
+            {
+              "line_number": 68,
+              "is_target": false,
+              "line": "            make_finding("
+            },
+            {
+              "line_number": 69,
+              "is_target": false,
+              "line": "                message=reason,"
+            },
+            {
+              "line_number": 70,
+              "is_target": false,
+              "line": "                category=\"MAX_GENERATIONS_REACHED\","
+            }
+          ]
+        },
+        {
+          "line_number": 66,
+          "pattern": "inline_status_contains_check",
+          "line": "elif status == \"WARN_REGEN_CONVERGENCE_MASTER_GATE_MAX_GENERATIONS\":",
+          "context_classification": "ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED",
+          "context": [
+            {
+              "line_number": 62,
+              "is_target": false,
+              "line": "                allowlisted=True,"
+            },
+            {
+              "line_number": 63,
+              "is_target": false,
+              "line": "            )"
+            },
+            {
+              "line_number": 64,
+              "is_target": false,
+              "line": "        )"
+            },
+            {
+              "line_number": 65,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 66,
+              "is_target": true,
+              "line": "    elif status == \"WARN_REGEN_CONVERGENCE_MASTER_GATE_MAX_GENERATIONS\":"
+            },
+            {
+              "line_number": 67,
+              "is_target": false,
+              "line": "        findings.append("
+            },
+            {
+              "line_number": 68,
+              "is_target": false,
+              "line": "            make_finding("
+            },
+            {
+              "line_number": 69,
+              "is_target": false,
+              "line": "                message=reason,"
+            },
+            {
+              "line_number": 70,
+              "is_target": false,
+              "line": "                category=\"MAX_GENERATIONS_REACHED\","
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_optimisation_controller_master_gate.py",
+      "finding_count": 6,
+      "contexts": [
+        {
+          "line_number": 44,
+          "pattern": "inline_pass_fail_warn_literal",
+          "line": "if status == \"PASS_REGEN_OPTIMISATION_MASTER_GATE_CONVERGED\":",
+          "context_classification": "ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED",
+          "context": [
+            {
+              "line_number": 40,
+              "is_target": false,
+              "line": ") -> tuple[list[dict[str, Any]], str | None]:"
+            },
+            {
+              "line_number": 41,
+              "is_target": false,
+              "line": "    findings: list[dict[str, Any]] = []"
+            },
+            {
+              "line_number": 42,
+              "is_target": false,
+              "line": "    lifecycle: str | None = None"
+            },
+            {
+              "line_number": 43,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 44,
+              "is_target": true,
+              "line": "    if status == \"PASS_REGEN_OPTIMISATION_MASTER_GATE_CONVERGED\":"
+            },
+            {
+              "line_number": 45,
+              "is_target": false,
+              "line": "        findings.append("
+            },
+            {
+              "line_number": 46,
+              "is_target": false,
+              "line": "            make_finding("
+            },
+            {
+              "line_number": 47,
+              "is_target": false,
+              "line": "                message=reason,"
+            },
+            {
+              "line_number": 48,
+              "is_target": false,
+              "line": "                category=\"COMPLETE\","
+            }
+          ]
+        },
+        {
+          "line_number": 44,
+          "pattern": "inline_status_contains_check",
+          "line": "if status == \"PASS_REGEN_OPTIMISATION_MASTER_GATE_CONVERGED\":",
+          "context_classification": "ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED",
+          "context": [
+            {
+              "line_number": 40,
+              "is_target": false,
+              "line": ") -> tuple[list[dict[str, Any]], str | None]:"
+            },
+            {
+              "line_number": 41,
+              "is_target": false,
+              "line": "    findings: list[dict[str, Any]] = []"
+            },
+            {
+              "line_number": 42,
+              "is_target": false,
+              "line": "    lifecycle: str | None = None"
+            },
+            {
+              "line_number": 43,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 44,
+              "is_target": true,
+              "line": "    if status == \"PASS_REGEN_OPTIMISATION_MASTER_GATE_CONVERGED\":"
+            },
+            {
+              "line_number": 45,
+              "is_target": false,
+              "line": "        findings.append("
+            },
+            {
+              "line_number": 46,
+              "is_target": false,
+              "line": "            make_finding("
+            },
+            {
+              "line_number": 47,
+              "is_target": false,
+              "line": "                message=reason,"
+            },
+            {
+              "line_number": 48,
+              "is_target": false,
+              "line": "                category=\"COMPLETE\","
+            }
+          ]
+        },
+        {
+          "line_number": 54,
+          "pattern": "inline_pass_fail_warn_literal",
+          "line": "elif status == \"WARN_REGEN_OPTIMISATION_MASTER_GATE_NEXT_GENERATION_READY\":",
+          "context_classification": "ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED",
+          "context": [
+            {
+              "line_number": 50,
+              "is_target": false,
+              "line": "                evidence=evidence,"
+            },
+            {
+              "line_number": 51,
+              "is_target": false,
+              "line": "            )"
+            },
+            {
+              "line_number": 52,
+              "is_target": false,
+              "line": "        )"
+            },
+            {
+              "line_number": 53,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 54,
+              "is_target": true,
+              "line": "    elif status == \"WARN_REGEN_OPTIMISATION_MASTER_GATE_NEXT_GENERATION_READY\":"
+            },
+            {
+              "line_number": 55,
+              "is_target": false,
+              "line": "        lifecycle = STATUS_RUNNING"
+            },
+            {
+              "line_number": 56,
+              "is_target": false,
+              "line": "        findings.append("
+            },
+            {
+              "line_number": 57,
+              "is_target": false,
+              "line": "            make_finding("
+            },
+            {
+              "line_number": 58,
+              "is_target": false,
+              "line": "                message=reason,"
+            }
+          ]
+        },
+        {
+          "line_number": 54,
+          "pattern": "inline_status_contains_check",
+          "line": "elif status == \"WARN_REGEN_OPTIMISATION_MASTER_GATE_NEXT_GENERATION_READY\":",
+          "context_classification": "ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED",
+          "context": [
+            {
+              "line_number": 50,
+              "is_target": false,
+              "line": "                evidence=evidence,"
+            },
+            {
+              "line_number": 51,
+              "is_target": false,
+              "line": "            )"
+            },
+            {
+              "line_number": 52,
+              "is_target": false,
+              "line": "        )"
+            },
+            {
+              "line_number": 53,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 54,
+              "is_target": true,
+              "line": "    elif status == \"WARN_REGEN_OPTIMISATION_MASTER_GATE_NEXT_GENERATION_READY\":"
+            },
+            {
+              "line_number": 55,
+              "is_target": false,
+              "line": "        lifecycle = STATUS_RUNNING"
+            },
+            {
+              "line_number": 56,
+              "is_target": false,
+              "line": "        findings.append("
+            },
+            {
+              "line_number": 57,
+              "is_target": false,
+              "line": "            make_finding("
+            },
+            {
+              "line_number": 58,
+              "is_target": false,
+              "line": "                message=reason,"
+            }
+          ]
+        },
+        {
+          "line_number": 66,
+          "pattern": "inline_pass_fail_warn_literal",
+          "line": "elif status == \"WARN_REGEN_OPTIMISATION_MASTER_GATE_WAITING\":",
+          "context_classification": "ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED",
+          "context": [
+            {
+              "line_number": 62,
+              "is_target": false,
+              "line": "                allowlisted=True,"
+            },
+            {
+              "line_number": 63,
+              "is_target": false,
+              "line": "            )"
+            },
+            {
+              "line_number": 64,
+              "is_target": false,
+              "line": "        )"
+            },
+            {
+              "line_number": 65,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 66,
+              "is_target": true,
+              "line": "    elif status == \"WARN_REGEN_OPTIMISATION_MASTER_GATE_WAITING\":"
+            },
+            {
+              "line_number": 67,
+              "is_target": false,
+              "line": "        findings.append("
+            },
+            {
+              "line_number": 68,
+              "is_target": false,
+              "line": "            make_finding("
+            },
+            {
+              "line_number": 69,
+              "is_target": false,
+              "line": "                message=reason,"
+            },
+            {
+              "line_number": 70,
+              "is_target": false,
+              "line": "                category=\"MANUAL_REVIEW_REQUIRED\","
+            }
+          ]
+        },
+        {
+          "line_number": 66,
+          "pattern": "inline_status_contains_check",
+          "line": "elif status == \"WARN_REGEN_OPTIMISATION_MASTER_GATE_WAITING\":",
+          "context_classification": "ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED",
+          "context": [
+            {
+              "line_number": 62,
+              "is_target": false,
+              "line": "                allowlisted=True,"
+            },
+            {
+              "line_number": 63,
+              "is_target": false,
+              "line": "            )"
+            },
+            {
+              "line_number": 64,
+              "is_target": false,
+              "line": "        )"
+            },
+            {
+              "line_number": 65,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 66,
+              "is_target": true,
+              "line": "    elif status == \"WARN_REGEN_OPTIMISATION_MASTER_GATE_WAITING\":"
+            },
+            {
+              "line_number": 67,
+              "is_target": false,
+              "line": "        findings.append("
+            },
+            {
+              "line_number": 68,
+              "is_target": false,
+              "line": "            make_finding("
+            },
+            {
+              "line_number": 69,
+              "is_target": false,
+              "line": "                message=reason,"
+            },
+            {
+              "line_number": 70,
+              "is_target": false,
+              "line": "                category=\"MANUAL_REVIEW_REQUIRED\","
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_viewer_gui_runtime_acceptance_gate_phase_16q28.py",
+      "finding_count": 4,
+      "contexts": [
+        {
+          "line_number": 81,
+          "pattern": "inline_pass_fail_warn_literal",
+          "line": "if results.get(\"phase_16q24_real_button_toggle_status\") != \"PASS_REGEN_VIEWER_REAL_BUTTON_TOGGLE_OWNER_PHASE_16Q24\":",
+          "context_classification": "ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED",
+          "context": [
+            {
+              "line_number": 77,
+              "is_target": false,
+              "line": "        warnings.append(\"Automatic geometry button was not discovered by text scanner.\")"
+            },
+            {
+              "line_number": 78,
+              "is_target": false,
+              "line": "    if not found_rec:"
+            },
+            {
+              "line_number": 79,
+              "is_target": false,
+              "line": "        warnings.append(\"Recommended/manual geometry button was not discovered by text scanner.\")"
+            },
+            {
+              "line_number": 80,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 81,
+              "is_target": true,
+              "line": "    if results.get(\"phase_16q24_real_button_toggle_status\") != \"PASS_REGEN_VIEWER_REAL_BUTTON_TOGGLE_OWNER_PHASE_16Q24\":"
+            },
+            {
+              "line_number": 82,
+              "is_target": false,
+              "line": "        blockers.append(\"Real button toggle owner status is not PASS.\")"
+            },
+            {
+              "line_number": 83,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 84,
+              "is_target": false,
+              "line": "    if results.get(\"phase_16q27_toggle_ux_status\") != \"PASS_REGEN_VIEWER_TOGGLE_UX_CLEANUP_PHASE_16Q27\":"
+            },
+            {
+              "line_number": 85,
+              "is_target": false,
+              "line": "        blockers.append(\"Toggle UX cleanup status is not PASS.\")"
+            }
+          ]
+        },
+        {
+          "line_number": 81,
+          "pattern": "inline_status_contains_check",
+          "line": "if results.get(\"phase_16q24_real_button_toggle_status\") != \"PASS_REGEN_VIEWER_REAL_BUTTON_TOGGLE_OWNER_PHASE_16Q24\":",
+          "context_classification": "ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED",
+          "context": [
+            {
+              "line_number": 77,
+              "is_target": false,
+              "line": "        warnings.append(\"Automatic geometry button was not discovered by text scanner.\")"
+            },
+            {
+              "line_number": 78,
+              "is_target": false,
+              "line": "    if not found_rec:"
+            },
+            {
+              "line_number": 79,
+              "is_target": false,
+              "line": "        warnings.append(\"Recommended/manual geometry button was not discovered by text scanner.\")"
+            },
+            {
+              "line_number": 80,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 81,
+              "is_target": true,
+              "line": "    if results.get(\"phase_16q24_real_button_toggle_status\") != \"PASS_REGEN_VIEWER_REAL_BUTTON_TOGGLE_OWNER_PHASE_16Q24\":"
+            },
+            {
+              "line_number": 82,
+              "is_target": false,
+              "line": "        blockers.append(\"Real button toggle owner status is not PASS.\")"
+            },
+            {
+              "line_number": 83,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 84,
+              "is_target": false,
+              "line": "    if results.get(\"phase_16q27_toggle_ux_status\") != \"PASS_REGEN_VIEWER_TOGGLE_UX_CLEANUP_PHASE_16Q27\":"
+            },
+            {
+              "line_number": 85,
+              "is_target": false,
+              "line": "        blockers.append(\"Toggle UX cleanup status is not PASS.\")"
+            }
+          ]
+        },
+        {
+          "line_number": 84,
+          "pattern": "inline_pass_fail_warn_literal",
+          "line": "if results.get(\"phase_16q27_toggle_ux_status\") != \"PASS_REGEN_VIEWER_TOGGLE_UX_CLEANUP_PHASE_16Q27\":",
+          "context_classification": "ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED",
+          "context": [
+            {
+              "line_number": 80,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 81,
+              "is_target": false,
+              "line": "    if results.get(\"phase_16q24_real_button_toggle_status\") != \"PASS_REGEN_VIEWER_REAL_BUTTON_TOGGLE_OWNER_PHASE_16Q24\":"
+            },
+            {
+              "line_number": 82,
+              "is_target": false,
+              "line": "        blockers.append(\"Real button toggle owner status is not PASS.\")"
+            },
+            {
+              "line_number": 83,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 84,
+              "is_target": true,
+              "line": "    if results.get(\"phase_16q27_toggle_ux_status\") != \"PASS_REGEN_VIEWER_TOGGLE_UX_CLEANUP_PHASE_16Q27\":"
+            },
+            {
+              "line_number": 85,
+              "is_target": false,
+              "line": "        blockers.append(\"Toggle UX cleanup status is not PASS.\")"
+            },
+            {
+              "line_number": 86,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 87,
+              "is_target": false,
+              "line": "    if results.get(\"phase_16q25_auto_geometry_cache_available\") is True:"
+            },
+            {
+              "line_number": 88,
+              "is_target": false,
+              "line": "        if \"cached\" not in str(results.get(\"phase_16q27_toggle_ux_hint\", \"\")).lower():"
+            }
+          ]
+        },
+        {
+          "line_number": 84,
+          "pattern": "inline_status_contains_check",
+          "line": "if results.get(\"phase_16q27_toggle_ux_status\") != \"PASS_REGEN_VIEWER_TOGGLE_UX_CLEANUP_PHASE_16Q27\":",
+          "context_classification": "ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED",
+          "context": [
+            {
+              "line_number": 80,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 81,
+              "is_target": false,
+              "line": "    if results.get(\"phase_16q24_real_button_toggle_status\") != \"PASS_REGEN_VIEWER_REAL_BUTTON_TOGGLE_OWNER_PHASE_16Q24\":"
+            },
+            {
+              "line_number": 82,
+              "is_target": false,
+              "line": "        blockers.append(\"Real button toggle owner status is not PASS.\")"
+            },
+            {
+              "line_number": 83,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 84,
+              "is_target": true,
+              "line": "    if results.get(\"phase_16q27_toggle_ux_status\") != \"PASS_REGEN_VIEWER_TOGGLE_UX_CLEANUP_PHASE_16Q27\":"
+            },
+            {
+              "line_number": 85,
+              "is_target": false,
+              "line": "        blockers.append(\"Toggle UX cleanup status is not PASS.\")"
+            },
+            {
+              "line_number": 86,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 87,
+              "is_target": false,
+              "line": "    if results.get(\"phase_16q25_auto_geometry_cache_available\") is True:"
+            },
+            {
+              "line_number": 88,
+              "is_target": false,
+              "line": "        if \"cached\" not in str(results.get(\"phase_16q27_toggle_ux_hint\", \"\")).lower():"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "leaf_qt/foundation_verification_harness.py",
+      "finding_count": 2,
+      "contexts": [
+        {
+          "line_number": 123,
+          "pattern": "inline_pass_fail_warn_literal",
+          "line": "if status == \"PASS_FOUNDATION_VERIFICATION\" and failed_count == 0:",
+          "context_classification": "ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED",
+          "context": [
+            {
+              "line_number": 119,
+              "is_target": false,
+              "line": "    status = result.get(\"foundation_verification_status\")"
+            },
+            {
+              "line_number": 120,
+              "is_target": false,
+              "line": "    failed_count = int(result.get(\"foundation_verification_failed_count\", 0) or 0)"
+            },
+            {
+              "line_number": 121,
+              "is_target": false,
+              "line": "    passed_count = int(result.get(\"foundation_verification_passed_count\", 0) or 0)"
+            },
+            {
+              "line_number": 122,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 123,
+              "is_target": true,
+              "line": "    if status == \"PASS_FOUNDATION_VERIFICATION\" and failed_count == 0:"
+            },
+            {
+              "line_number": 124,
+              "is_target": false,
+              "line": "        findings.append("
+            },
+            {
+              "line_number": 125,
+              "is_target": false,
+              "line": "            _leaf_16t3w1_make_finding("
+            },
+            {
+              "line_number": 126,
+              "is_target": false,
+              "line": "                message=\"Foundation verification harness passed with legacy output preserved.\","
+            },
+            {
+              "line_number": 127,
+              "is_target": false,
+              "line": "                category=\"COMPLETE\","
+            }
+          ]
+        },
+        {
+          "line_number": 123,
+          "pattern": "inline_status_contains_check",
+          "line": "if status == \"PASS_FOUNDATION_VERIFICATION\" and failed_count == 0:",
+          "context_classification": "ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED",
+          "context": [
+            {
+              "line_number": 119,
+              "is_target": false,
+              "line": "    status = result.get(\"foundation_verification_status\")"
+            },
+            {
+              "line_number": 120,
+              "is_target": false,
+              "line": "    failed_count = int(result.get(\"foundation_verification_failed_count\", 0) or 0)"
+            },
+            {
+              "line_number": 121,
+              "is_target": false,
+              "line": "    passed_count = int(result.get(\"foundation_verification_passed_count\", 0) or 0)"
+            },
+            {
+              "line_number": 122,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 123,
+              "is_target": true,
+              "line": "    if status == \"PASS_FOUNDATION_VERIFICATION\" and failed_count == 0:"
+            },
+            {
+              "line_number": 124,
+              "is_target": false,
+              "line": "        findings.append("
+            },
+            {
+              "line_number": 125,
+              "is_target": false,
+              "line": "            _leaf_16t3w1_make_finding("
+            },
+            {
+              "line_number": 126,
+              "is_target": false,
+              "line": "                message=\"Foundation verification harness passed with legacy output preserved.\","
+            },
+            {
+              "line_number": 127,
+              "is_target": false,
+              "line": "                category=\"COMPLETE\","
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_candidate_comparison_master_gate.py",
+      "finding_count": 2,
+      "contexts": [
+        {
+          "line_number": 17,
+          "pattern": "inline_pass_fail_warn_literal",
+          "line": "if results.get(\"regen_candidate_comparison_completion_audit_status\") != \"PASS_REGEN_CANDIDATE_COMPARISON_VIEWER_BACKEND_PHASE_15B\":",
+          "context_classification": "ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED",
+          "context": [
+            {
+              "line_number": 13,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 14,
+              "is_target": false,
+              "line": "    if results.get(\"regen_candidate_comparison_completion_audit_ready\") is not True:"
+            },
+            {
+              "line_number": 15,
+              "is_target": false,
+              "line": "        blockers.append(\"15B candidate comparison completion audit is not ready.\")"
+            },
+            {
+              "line_number": 16,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 17,
+              "is_target": true,
+              "line": "    if results.get(\"regen_candidate_comparison_completion_audit_status\") != \"PASS_REGEN_CANDIDATE_COMPARISON_VIEWER_BACKEND_PHASE_15B\":"
+            },
+            {
+              "line_number": 18,
+              "is_target": false,
+              "line": "        blockers.append(\"15B candidate comparison completion audit has not passed.\")"
+            },
+            {
+              "line_number": 19,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 20,
+              "is_target": false,
+              "line": "    if results.get(\"phase_15c_evolution_tree_backend_allowed\") is not True:"
+            },
+            {
+              "line_number": 21,
+              "is_target": false,
+              "line": "        blockers.append(\"Phase 15C evolution tree backend was not unlocked.\")"
+            }
+          ]
+        },
+        {
+          "line_number": 17,
+          "pattern": "inline_status_contains_check",
+          "line": "if results.get(\"regen_candidate_comparison_completion_audit_status\") != \"PASS_REGEN_CANDIDATE_COMPARISON_VIEWER_BACKEND_PHASE_15B\":",
+          "context_classification": "ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED",
+          "context": [
+            {
+              "line_number": 13,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 14,
+              "is_target": false,
+              "line": "    if results.get(\"regen_candidate_comparison_completion_audit_ready\") is not True:"
+            },
+            {
+              "line_number": 15,
+              "is_target": false,
+              "line": "        blockers.append(\"15B candidate comparison completion audit is not ready.\")"
+            },
+            {
+              "line_number": 16,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 17,
+              "is_target": true,
+              "line": "    if results.get(\"regen_candidate_comparison_completion_audit_status\") != \"PASS_REGEN_CANDIDATE_COMPARISON_VIEWER_BACKEND_PHASE_15B\":"
+            },
+            {
+              "line_number": 18,
+              "is_target": false,
+              "line": "        blockers.append(\"15B candidate comparison completion audit has not passed.\")"
+            },
+            {
+              "line_number": 19,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 20,
+              "is_target": false,
+              "line": "    if results.get(\"phase_15c_evolution_tree_backend_allowed\") is not True:"
+            },
+            {
+              "line_number": 21,
+              "is_target": false,
+              "line": "        blockers.append(\"Phase 15C evolution tree backend was not unlocked.\")"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_completion_master_gate.py",
+      "finding_count": 2,
+      "contexts": [
+        {
+          "line_number": 17,
+          "pattern": "inline_pass_fail_warn_literal",
+          "line": "if results.get(\"regen_completion_gate_completion_audit_status\") != \"PASS_REGEN_COMPLETION_GATE_AUDIT_PHASE_16F\":",
+          "context_classification": "ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED",
+          "context": [
+            {
+              "line_number": 13,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 14,
+              "is_target": false,
+              "line": "    if results.get(\"regen_completion_gate_completion_audit_ready\") is not True:"
+            },
+            {
+              "line_number": 15,
+              "is_target": false,
+              "line": "        blockers.append(\"16F regen completion gate audit is not ready.\")"
+            },
+            {
+              "line_number": 16,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 17,
+              "is_target": true,
+              "line": "    if results.get(\"regen_completion_gate_completion_audit_status\") != \"PASS_REGEN_COMPLETION_GATE_AUDIT_PHASE_16F\":"
+            },
+            {
+              "line_number": 18,
+              "is_target": false,
+              "line": "        blockers.append(\"16F regen completion gate audit has not passed.\")"
+            },
+            {
+              "line_number": 19,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 20,
+              "is_target": false,
+              "line": "    if results.get(\"regen_system_completion_gate_ready\") is not True:"
+            },
+            {
+              "line_number": 21,
+              "is_target": false,
+              "line": "        blockers.append(\"Regen system completion gate is not ready.\")"
+            }
+          ]
+        },
+        {
+          "line_number": 17,
+          "pattern": "inline_status_contains_check",
+          "line": "if results.get(\"regen_completion_gate_completion_audit_status\") != \"PASS_REGEN_COMPLETION_GATE_AUDIT_PHASE_16F\":",
+          "context_classification": "ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED",
+          "context": [
+            {
+              "line_number": 13,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 14,
+              "is_target": false,
+              "line": "    if results.get(\"regen_completion_gate_completion_audit_ready\") is not True:"
+            },
+            {
+              "line_number": 15,
+              "is_target": false,
+              "line": "        blockers.append(\"16F regen completion gate audit is not ready.\")"
+            },
+            {
+              "line_number": 16,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 17,
+              "is_target": true,
+              "line": "    if results.get(\"regen_completion_gate_completion_audit_status\") != \"PASS_REGEN_COMPLETION_GATE_AUDIT_PHASE_16F\":"
+            },
+            {
+              "line_number": 18,
+              "is_target": false,
+              "line": "        blockers.append(\"16F regen completion gate audit has not passed.\")"
+            },
+            {
+              "line_number": 19,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 20,
+              "is_target": false,
+              "line": "    if results.get(\"regen_system_completion_gate_ready\") is not True:"
+            },
+            {
+              "line_number": 21,
+              "is_target": false,
+              "line": "        blockers.append(\"Regen system completion gate is not ready.\")"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_evolution_tree_master_gate.py",
+      "finding_count": 2,
+      "contexts": [
+        {
+          "line_number": 17,
+          "pattern": "inline_pass_fail_warn_literal",
+          "line": "if results.get(\"regen_evolution_tree_completion_audit_status\") != \"PASS_REGEN_EVOLUTION_TREE_BACKEND_PHASE_15C\":",
+          "context_classification": "ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED",
+          "context": [
+            {
+              "line_number": 13,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 14,
+              "is_target": false,
+              "line": "    if results.get(\"regen_evolution_tree_completion_audit_ready\") is not True:"
+            },
+            {
+              "line_number": 15,
+              "is_target": false,
+              "line": "        blockers.append(\"15C evolution tree completion audit is not ready.\")"
+            },
+            {
+              "line_number": 16,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 17,
+              "is_target": true,
+              "line": "    if results.get(\"regen_evolution_tree_completion_audit_status\") != \"PASS_REGEN_EVOLUTION_TREE_BACKEND_PHASE_15C\":"
+            },
+            {
+              "line_number": 18,
+              "is_target": false,
+              "line": "        blockers.append(\"15C evolution tree completion audit has not passed.\")"
+            },
+            {
+              "line_number": 19,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 20,
+              "is_target": false,
+              "line": "    if results.get(\"phase_15d_optimisation_report_backend_allowed\") is not True:"
+            },
+            {
+              "line_number": 21,
+              "is_target": false,
+              "line": "        blockers.append(\"Phase 15D optimisation report backend was not unlocked.\")"
+            }
+          ]
+        },
+        {
+          "line_number": 17,
+          "pattern": "inline_status_contains_check",
+          "line": "if results.get(\"regen_evolution_tree_completion_audit_status\") != \"PASS_REGEN_EVOLUTION_TREE_BACKEND_PHASE_15C\":",
+          "context_classification": "ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED",
+          "context": [
+            {
+              "line_number": 13,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 14,
+              "is_target": false,
+              "line": "    if results.get(\"regen_evolution_tree_completion_audit_ready\") is not True:"
+            },
+            {
+              "line_number": 15,
+              "is_target": false,
+              "line": "        blockers.append(\"15C evolution tree completion audit is not ready.\")"
+            },
+            {
+              "line_number": 16,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 17,
+              "is_target": true,
+              "line": "    if results.get(\"regen_evolution_tree_completion_audit_status\") != \"PASS_REGEN_EVOLUTION_TREE_BACKEND_PHASE_15C\":"
+            },
+            {
+              "line_number": 18,
+              "is_target": false,
+              "line": "        blockers.append(\"15C evolution tree completion audit has not passed.\")"
+            },
+            {
+              "line_number": 19,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 20,
+              "is_target": false,
+              "line": "    if results.get(\"phase_15d_optimisation_report_backend_allowed\") is not True:"
+            },
+            {
+              "line_number": 21,
+              "is_target": false,
+              "line": "        blockers.append(\"Phase 15D optimisation report backend was not unlocked.\")"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_optimisation_narrative_master_gate.py",
+      "finding_count": 2,
+      "contexts": [
+        {
+          "line_number": 58,
+          "pattern": "inline_pass_fail_warn_literal",
+          "line": "if status == \"PASS_REGEN_OPTIMISATION_NARRATIVE_MASTER_GATE\":",
+          "context_classification": "ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED",
+          "context": [
+            {
+              "line_number": 54,
+              "is_target": false,
+              "line": "    status: str,"
+            },
+            {
+              "line_number": 55,
+              "is_target": false,
+              "line": "    reason: str,"
+            },
+            {
+              "line_number": 56,
+              "is_target": false,
+              "line": "    evidence: dict[str, Any],"
+            },
+            {
+              "line_number": 57,
+              "is_target": false,
+              "line": ") -> list[dict[str, Any]]:"
+            },
+            {
+              "line_number": 58,
+              "is_target": true,
+              "line": "    if status == \"PASS_REGEN_OPTIMISATION_NARRATIVE_MASTER_GATE\":"
+            },
+            {
+              "line_number": 59,
+              "is_target": false,
+              "line": "        return ["
+            },
+            {
+              "line_number": 60,
+              "is_target": false,
+              "line": "            make_finding("
+            },
+            {
+              "line_number": 61,
+              "is_target": false,
+              "line": "                message=reason,"
+            },
+            {
+              "line_number": 62,
+              "is_target": false,
+              "line": "                category=\"COMPLETE\","
+            }
+          ]
+        },
+        {
+          "line_number": 58,
+          "pattern": "inline_status_contains_check",
+          "line": "if status == \"PASS_REGEN_OPTIMISATION_NARRATIVE_MASTER_GATE\":",
+          "context_classification": "ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED",
+          "context": [
+            {
+              "line_number": 54,
+              "is_target": false,
+              "line": "    status: str,"
+            },
+            {
+              "line_number": 55,
+              "is_target": false,
+              "line": "    reason: str,"
+            },
+            {
+              "line_number": 56,
+              "is_target": false,
+              "line": "    evidence: dict[str, Any],"
+            },
+            {
+              "line_number": 57,
+              "is_target": false,
+              "line": ") -> list[dict[str, Any]]:"
+            },
+            {
+              "line_number": 58,
+              "is_target": true,
+              "line": "    if status == \"PASS_REGEN_OPTIMISATION_NARRATIVE_MASTER_GATE\":"
+            },
+            {
+              "line_number": 59,
+              "is_target": false,
+              "line": "        return ["
+            },
+            {
+              "line_number": 60,
+              "is_target": false,
+              "line": "            make_finding("
+            },
+            {
+              "line_number": 61,
+              "is_target": false,
+              "line": "                message=reason,"
+            },
+            {
+              "line_number": 62,
+              "is_target": false,
+              "line": "                category=\"COMPLETE\","
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_optimisation_viewer_master_gate.py",
+      "finding_count": 2,
+      "contexts": [
+        {
+          "line_number": 17,
+          "pattern": "inline_pass_fail_warn_literal",
+          "line": "if results.get(\"regen_optimisation_viewer_completion_audit_status\") != \"PASS_REGEN_OPTIMISATION_VIEWER_BACKEND_PHASE_15A\":",
+          "context_classification": "ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED",
+          "context": [
+            {
+              "line_number": 13,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 14,
+              "is_target": false,
+              "line": "    if results.get(\"regen_optimisation_viewer_completion_audit_ready\") is not True:"
+            },
+            {
+              "line_number": 15,
+              "is_target": false,
+              "line": "        blockers.append(\"15A optimisation viewer completion audit is not ready.\")"
+            },
+            {
+              "line_number": 16,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 17,
+              "is_target": true,
+              "line": "    if results.get(\"regen_optimisation_viewer_completion_audit_status\") != \"PASS_REGEN_OPTIMISATION_VIEWER_BACKEND_PHASE_15A\":"
+            },
+            {
+              "line_number": 18,
+              "is_target": false,
+              "line": "        blockers.append(\"15A optimisation viewer completion audit has not passed.\")"
+            },
+            {
+              "line_number": 19,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 20,
+              "is_target": false,
+              "line": "    if results.get(\"phase_15b_candidate_comparison_viewer_backend_allowed\") is not True:"
+            },
+            {
+              "line_number": 21,
+              "is_target": false,
+              "line": "        blockers.append(\"Phase 15B candidate comparison backend was not unlocked.\")"
+            }
+          ]
+        },
+        {
+          "line_number": 17,
+          "pattern": "inline_status_contains_check",
+          "line": "if results.get(\"regen_optimisation_viewer_completion_audit_status\") != \"PASS_REGEN_OPTIMISATION_VIEWER_BACKEND_PHASE_15A\":",
+          "context_classification": "ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED",
+          "context": [
+            {
+              "line_number": 13,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 14,
+              "is_target": false,
+              "line": "    if results.get(\"regen_optimisation_viewer_completion_audit_ready\") is not True:"
+            },
+            {
+              "line_number": 15,
+              "is_target": false,
+              "line": "        blockers.append(\"15A optimisation viewer completion audit is not ready.\")"
+            },
+            {
+              "line_number": 16,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 17,
+              "is_target": true,
+              "line": "    if results.get(\"regen_optimisation_viewer_completion_audit_status\") != \"PASS_REGEN_OPTIMISATION_VIEWER_BACKEND_PHASE_15A\":"
+            },
+            {
+              "line_number": 18,
+              "is_target": false,
+              "line": "        blockers.append(\"15A optimisation viewer completion audit has not passed.\")"
+            },
+            {
+              "line_number": 19,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 20,
+              "is_target": false,
+              "line": "    if results.get(\"phase_15b_candidate_comparison_viewer_backend_allowed\") is not True:"
+            },
+            {
+              "line_number": 21,
+              "is_target": false,
+              "line": "        blockers.append(\"Phase 15B candidate comparison backend was not unlocked.\")"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_runtime_candidate_evaluation_master_gate.py",
+      "finding_count": 2,
+      "contexts": [
+        {
+          "line_number": 17,
+          "pattern": "inline_pass_fail_warn_literal",
+          "line": "if results.get(\"regen_runtime_candidate_evaluation_completion_audit_status\") != \"PASS_REGEN_RUNTIME_CANDIDATE_EVALUATION_PHASE_14B\":",
+          "context_classification": "ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED",
+          "context": [
+            {
+              "line_number": 13,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 14,
+              "is_target": false,
+              "line": "    if results.get(\"regen_runtime_candidate_evaluation_completion_audit_ready\") is not True:"
+            },
+            {
+              "line_number": 15,
+              "is_target": false,
+              "line": "        blockers.append(\"14B runtime candidate evaluation completion audit is not ready.\")"
+            },
+            {
+              "line_number": 16,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 17,
+              "is_target": true,
+              "line": "    if results.get(\"regen_runtime_candidate_evaluation_completion_audit_status\") != \"PASS_REGEN_RUNTIME_CANDIDATE_EVALUATION_PHASE_14B\":"
+            },
+            {
+              "line_number": 18,
+              "is_target": false,
+              "line": "        blockers.append(\"14B runtime candidate evaluation completion audit has not passed.\")"
+            },
+            {
+              "line_number": 19,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 20,
+              "is_target": false,
+              "line": "    if results.get(\"phase_14c_runtime_selection_allowed\") is not True:"
+            },
+            {
+              "line_number": 21,
+              "is_target": false,
+              "line": "        blockers.append(\"Phase 14C runtime selection has not been unlocked.\")"
+            }
+          ]
+        },
+        {
+          "line_number": 17,
+          "pattern": "inline_status_contains_check",
+          "line": "if results.get(\"regen_runtime_candidate_evaluation_completion_audit_status\") != \"PASS_REGEN_RUNTIME_CANDIDATE_EVALUATION_PHASE_14B\":",
+          "context_classification": "ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED",
+          "context": [
+            {
+              "line_number": 13,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 14,
+              "is_target": false,
+              "line": "    if results.get(\"regen_runtime_candidate_evaluation_completion_audit_ready\") is not True:"
+            },
+            {
+              "line_number": 15,
+              "is_target": false,
+              "line": "        blockers.append(\"14B runtime candidate evaluation completion audit is not ready.\")"
+            },
+            {
+              "line_number": 16,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 17,
+              "is_target": true,
+              "line": "    if results.get(\"regen_runtime_candidate_evaluation_completion_audit_status\") != \"PASS_REGEN_RUNTIME_CANDIDATE_EVALUATION_PHASE_14B\":"
+            },
+            {
+              "line_number": 18,
+              "is_target": false,
+              "line": "        blockers.append(\"14B runtime candidate evaluation completion audit has not passed.\")"
+            },
+            {
+              "line_number": 19,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 20,
+              "is_target": false,
+              "line": "    if results.get(\"phase_14c_runtime_selection_allowed\") is not True:"
+            },
+            {
+              "line_number": 21,
+              "is_target": false,
+              "line": "        blockers.append(\"Phase 14C runtime selection has not been unlocked.\")"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_runtime_convergence_master_gate.py",
+      "finding_count": 2,
+      "contexts": [
+        {
+          "line_number": 17,
+          "pattern": "inline_pass_fail_warn_literal",
+          "line": "if results.get(\"regen_runtime_convergence_completion_audit_status\") != \"PASS_REGEN_RUNTIME_CONVERGENCE_PHASE_14E\":",
+          "context_classification": "ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED",
+          "context": [
+            {
+              "line_number": 13,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 14,
+              "is_target": false,
+              "line": "    if results.get(\"regen_runtime_convergence_completion_audit_ready\") is not True:"
+            },
+            {
+              "line_number": 15,
+              "is_target": false,
+              "line": "        blockers.append(\"14E runtime convergence completion audit is not ready.\")"
+            },
+            {
+              "line_number": 16,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 17,
+              "is_target": true,
+              "line": "    if results.get(\"regen_runtime_convergence_completion_audit_status\") != \"PASS_REGEN_RUNTIME_CONVERGENCE_PHASE_14E\":"
+            },
+            {
+              "line_number": 18,
+              "is_target": false,
+              "line": "        blockers.append(\"14E runtime convergence completion audit has not passed.\")"
+            },
+            {
+              "line_number": 19,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 20,
+              "is_target": false,
+              "line": "    if results.get(\"phase_14f_runtime_optimisation_audit_allowed\") is not True:"
+            },
+            {
+              "line_number": 21,
+              "is_target": false,
+              "line": "        blockers.append(\"Phase 14F runtime optimisation audit has not been unlocked.\")"
+            }
+          ]
+        },
+        {
+          "line_number": 17,
+          "pattern": "inline_status_contains_check",
+          "line": "if results.get(\"regen_runtime_convergence_completion_audit_status\") != \"PASS_REGEN_RUNTIME_CONVERGENCE_PHASE_14E\":",
+          "context_classification": "ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED",
+          "context": [
+            {
+              "line_number": 13,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 14,
+              "is_target": false,
+              "line": "    if results.get(\"regen_runtime_convergence_completion_audit_ready\") is not True:"
+            },
+            {
+              "line_number": 15,
+              "is_target": false,
+              "line": "        blockers.append(\"14E runtime convergence completion audit is not ready.\")"
+            },
+            {
+              "line_number": 16,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 17,
+              "is_target": true,
+              "line": "    if results.get(\"regen_runtime_convergence_completion_audit_status\") != \"PASS_REGEN_RUNTIME_CONVERGENCE_PHASE_14E\":"
+            },
+            {
+              "line_number": 18,
+              "is_target": false,
+              "line": "        blockers.append(\"14E runtime convergence completion audit has not passed.\")"
+            },
+            {
+              "line_number": 19,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 20,
+              "is_target": false,
+              "line": "    if results.get(\"phase_14f_runtime_optimisation_audit_allowed\") is not True:"
+            },
+            {
+              "line_number": 21,
+              "is_target": false,
+              "line": "        blockers.append(\"Phase 14F runtime optimisation audit has not been unlocked.\")"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_runtime_evolution_master_gate.py",
+      "finding_count": 2,
+      "contexts": [
+        {
+          "line_number": 17,
+          "pattern": "inline_pass_fail_warn_literal",
+          "line": "if results.get(\"regen_runtime_evolution_completion_audit_status\") != \"PASS_REGEN_RUNTIME_EVOLUTION_PHASE_14D\":",
+          "context_classification": "ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED",
+          "context": [
+            {
+              "line_number": 13,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 14,
+              "is_target": false,
+              "line": "    if results.get(\"regen_runtime_evolution_completion_audit_ready\") is not True:"
+            },
+            {
+              "line_number": 15,
+              "is_target": false,
+              "line": "        blockers.append(\"14D runtime evolution completion audit is not ready.\")"
+            },
+            {
+              "line_number": 16,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 17,
+              "is_target": true,
+              "line": "    if results.get(\"regen_runtime_evolution_completion_audit_status\") != \"PASS_REGEN_RUNTIME_EVOLUTION_PHASE_14D\":"
+            },
+            {
+              "line_number": 18,
+              "is_target": false,
+              "line": "        blockers.append(\"14D runtime evolution completion audit has not passed.\")"
+            },
+            {
+              "line_number": 19,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 20,
+              "is_target": false,
+              "line": "    if results.get(\"phase_14e_runtime_convergence_allowed\") is not True:"
+            },
+            {
+              "line_number": 21,
+              "is_target": false,
+              "line": "        blockers.append(\"Phase 14E runtime convergence has not been unlocked.\")"
+            }
+          ]
+        },
+        {
+          "line_number": 17,
+          "pattern": "inline_status_contains_check",
+          "line": "if results.get(\"regen_runtime_evolution_completion_audit_status\") != \"PASS_REGEN_RUNTIME_EVOLUTION_PHASE_14D\":",
+          "context_classification": "ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED",
+          "context": [
+            {
+              "line_number": 13,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 14,
+              "is_target": false,
+              "line": "    if results.get(\"regen_runtime_evolution_completion_audit_ready\") is not True:"
+            },
+            {
+              "line_number": 15,
+              "is_target": false,
+              "line": "        blockers.append(\"14D runtime evolution completion audit is not ready.\")"
+            },
+            {
+              "line_number": 16,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 17,
+              "is_target": true,
+              "line": "    if results.get(\"regen_runtime_evolution_completion_audit_status\") != \"PASS_REGEN_RUNTIME_EVOLUTION_PHASE_14D\":"
+            },
+            {
+              "line_number": 18,
+              "is_target": false,
+              "line": "        blockers.append(\"14D runtime evolution completion audit has not passed.\")"
+            },
+            {
+              "line_number": 19,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 20,
+              "is_target": false,
+              "line": "    if results.get(\"phase_14e_runtime_convergence_allowed\") is not True:"
+            },
+            {
+              "line_number": 21,
+              "is_target": false,
+              "line": "        blockers.append(\"Phase 14E runtime convergence has not been unlocked.\")"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_runtime_selection_master_gate.py",
+      "finding_count": 2,
+      "contexts": [
+        {
+          "line_number": 17,
+          "pattern": "inline_pass_fail_warn_literal",
+          "line": "if results.get(\"regen_runtime_selection_completion_audit_status\") != \"PASS_REGEN_RUNTIME_SELECTION_PHASE_14C\":",
+          "context_classification": "ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED",
+          "context": [
+            {
+              "line_number": 13,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 14,
+              "is_target": false,
+              "line": "    if results.get(\"regen_runtime_selection_completion_audit_ready\") is not True:"
+            },
+            {
+              "line_number": 15,
+              "is_target": false,
+              "line": "        blockers.append(\"14C runtime selection completion audit is not ready.\")"
+            },
+            {
+              "line_number": 16,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 17,
+              "is_target": true,
+              "line": "    if results.get(\"regen_runtime_selection_completion_audit_status\") != \"PASS_REGEN_RUNTIME_SELECTION_PHASE_14C\":"
+            },
+            {
+              "line_number": 18,
+              "is_target": false,
+              "line": "        blockers.append(\"14C runtime selection completion audit has not passed.\")"
+            },
+            {
+              "line_number": 19,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 20,
+              "is_target": false,
+              "line": "    if results.get(\"phase_14d_runtime_evolution_allowed\") is not True:"
+            },
+            {
+              "line_number": 21,
+              "is_target": false,
+              "line": "        blockers.append(\"Phase 14D runtime evolution has not been unlocked.\")"
+            }
+          ]
+        },
+        {
+          "line_number": 17,
+          "pattern": "inline_status_contains_check",
+          "line": "if results.get(\"regen_runtime_selection_completion_audit_status\") != \"PASS_REGEN_RUNTIME_SELECTION_PHASE_14C\":",
+          "context_classification": "ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED",
+          "context": [
+            {
+              "line_number": 13,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 14,
+              "is_target": false,
+              "line": "    if results.get(\"regen_runtime_selection_completion_audit_ready\") is not True:"
+            },
+            {
+              "line_number": 15,
+              "is_target": false,
+              "line": "        blockers.append(\"14C runtime selection completion audit is not ready.\")"
+            },
+            {
+              "line_number": 16,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 17,
+              "is_target": true,
+              "line": "    if results.get(\"regen_runtime_selection_completion_audit_status\") != \"PASS_REGEN_RUNTIME_SELECTION_PHASE_14C\":"
+            },
+            {
+              "line_number": 18,
+              "is_target": false,
+              "line": "        blockers.append(\"14C runtime selection completion audit has not passed.\")"
+            },
+            {
+              "line_number": 19,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 20,
+              "is_target": false,
+              "line": "    if results.get(\"phase_14d_runtime_evolution_allowed\") is not True:"
+            },
+            {
+              "line_number": 21,
+              "is_target": false,
+              "line": "        blockers.append(\"Phase 14D runtime evolution has not been unlocked.\")"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_system_signoff_master_gate.py",
+      "finding_count": 2,
+      "contexts": [
+        {
+          "line_number": 17,
+          "pattern": "inline_pass_fail_warn_literal",
+          "line": "if results.get(\"regen_system_signoff_completion_audit_status\") != \"PASS_REGEN_SYSTEM_SIGNOFF_AUDIT_PHASE_16E\":",
+          "context_classification": "ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED",
+          "context": [
+            {
+              "line_number": 13,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 14,
+              "is_target": false,
+              "line": "    if results.get(\"regen_system_signoff_completion_audit_ready\") is not True:"
+            },
+            {
+              "line_number": 15,
+              "is_target": false,
+              "line": "        blockers.append(\"16E regen system signoff completion audit is not ready.\")"
+            },
+            {
+              "line_number": 16,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 17,
+              "is_target": true,
+              "line": "    if results.get(\"regen_system_signoff_completion_audit_status\") != \"PASS_REGEN_SYSTEM_SIGNOFF_AUDIT_PHASE_16E\":"
+            },
+            {
+              "line_number": 18,
+              "is_target": false,
+              "line": "        blockers.append(\"16E regen system signoff completion audit has not passed.\")"
+            },
+            {
+              "line_number": 19,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 20,
+              "is_target": false,
+              "line": "    if results.get(\"phase_16f_regen_completion_gate_allowed\") is not True:"
+            },
+            {
+              "line_number": 21,
+              "is_target": false,
+              "line": "        blockers.append(\"Phase 16F regen completion gate was not unlocked.\")"
+            }
+          ]
+        },
+        {
+          "line_number": 17,
+          "pattern": "inline_status_contains_check",
+          "line": "if results.get(\"regen_system_signoff_completion_audit_status\") != \"PASS_REGEN_SYSTEM_SIGNOFF_AUDIT_PHASE_16E\":",
+          "context_classification": "ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED",
+          "context": [
+            {
+              "line_number": 13,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 14,
+              "is_target": false,
+              "line": "    if results.get(\"regen_system_signoff_completion_audit_ready\") is not True:"
+            },
+            {
+              "line_number": 15,
+              "is_target": false,
+              "line": "        blockers.append(\"16E regen system signoff completion audit is not ready.\")"
+            },
+            {
+              "line_number": 16,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 17,
+              "is_target": true,
+              "line": "    if results.get(\"regen_system_signoff_completion_audit_status\") != \"PASS_REGEN_SYSTEM_SIGNOFF_AUDIT_PHASE_16E\":"
+            },
+            {
+              "line_number": 18,
+              "is_target": false,
+              "line": "        blockers.append(\"16E regen system signoff completion audit has not passed.\")"
+            },
+            {
+              "line_number": 19,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 20,
+              "is_target": false,
+              "line": "    if results.get(\"phase_16f_regen_completion_gate_allowed\") is not True:"
+            },
+            {
+              "line_number": 21,
+              "is_target": false,
+              "line": "        blockers.append(\"Phase 16F regen completion gate was not unlocked.\")"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_unified_ecosystem_master_gate.py",
+      "finding_count": 2,
+      "contexts": [
+        {
+          "line_number": 17,
+          "pattern": "inline_pass_fail_warn_literal",
+          "line": "if results.get(\"regen_unified_ecosystem_completion_audit_status\") != \"PASS_REGEN_UNIFIED_ECOSYSTEM_REGISTRY_PHASE_16A\":",
+          "context_classification": "ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED",
+          "context": [
+            {
+              "line_number": 13,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 14,
+              "is_target": false,
+              "line": "    if results.get(\"regen_unified_ecosystem_completion_audit_ready\") is not True:"
+            },
+            {
+              "line_number": 15,
+              "is_target": false,
+              "line": "        blockers.append(\"16A unified ecosystem completion audit is not ready.\")"
+            },
+            {
+              "line_number": 16,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 17,
+              "is_target": true,
+              "line": "    if results.get(\"regen_unified_ecosystem_completion_audit_status\") != \"PASS_REGEN_UNIFIED_ECOSYSTEM_REGISTRY_PHASE_16A\":"
+            },
+            {
+              "line_number": 18,
+              "is_target": false,
+              "line": "        blockers.append(\"16A unified ecosystem completion audit has not passed.\")"
+            },
+            {
+              "line_number": 19,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 20,
+              "is_target": false,
+              "line": "    if results.get(\"phase_16b_viewer_integration_allowed\") is not True:"
+            },
+            {
+              "line_number": 21,
+              "is_target": false,
+              "line": "        blockers.append(\"Phase 16B viewer integration was not unlocked.\")"
+            }
+          ]
+        },
+        {
+          "line_number": 17,
+          "pattern": "inline_status_contains_check",
+          "line": "if results.get(\"regen_unified_ecosystem_completion_audit_status\") != \"PASS_REGEN_UNIFIED_ECOSYSTEM_REGISTRY_PHASE_16A\":",
+          "context_classification": "ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED",
+          "context": [
+            {
+              "line_number": 13,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 14,
+              "is_target": false,
+              "line": "    if results.get(\"regen_unified_ecosystem_completion_audit_ready\") is not True:"
+            },
+            {
+              "line_number": 15,
+              "is_target": false,
+              "line": "        blockers.append(\"16A unified ecosystem completion audit is not ready.\")"
+            },
+            {
+              "line_number": 16,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 17,
+              "is_target": true,
+              "line": "    if results.get(\"regen_unified_ecosystem_completion_audit_status\") != \"PASS_REGEN_UNIFIED_ECOSYSTEM_REGISTRY_PHASE_16A\":"
+            },
+            {
+              "line_number": 18,
+              "is_target": false,
+              "line": "        blockers.append(\"16A unified ecosystem completion audit has not passed.\")"
+            },
+            {
+              "line_number": 19,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 20,
+              "is_target": false,
+              "line": "    if results.get(\"phase_16b_viewer_integration_allowed\") is not True:"
+            },
+            {
+              "line_number": 21,
+              "is_target": false,
+              "line": "        blockers.append(\"Phase 16B viewer integration was not unlocked.\")"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_unified_validation_integration_master_gate.py",
+      "finding_count": 2,
+      "contexts": [
+        {
+          "line_number": 143,
+          "pattern": "inline_pass_fail_warn_literal",
+          "line": "if results.get(\"regen_unified_validation_integration_completion_audit_status\") != \"PASS_REGEN_UNIFIED_VALIDATION_INTEGRATION_PHASE_16D\":",
+          "context_classification": "ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED",
+          "context": [
+            {
+              "line_number": 139,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 140,
+              "is_target": false,
+              "line": "    if results.get(\"regen_unified_validation_integration_completion_audit_ready\") is not True:"
+            },
+            {
+              "line_number": 141,
+              "is_target": false,
+              "line": "        blockers.append(\"16D unified validation integration completion audit is not ready.\")"
+            },
+            {
+              "line_number": 142,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 143,
+              "is_target": true,
+              "line": "    if results.get(\"regen_unified_validation_integration_completion_audit_status\") != \"PASS_REGEN_UNIFIED_VALIDATION_INTEGRATION_PHASE_16D\":"
+            },
+            {
+              "line_number": 144,
+              "is_target": false,
+              "line": "        blockers.append(\"16D unified validation integration completion audit has not passed.\")"
+            },
+            {
+              "line_number": 145,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 146,
+              "is_target": false,
+              "line": "    if results.get(\"phase_16e_regen_signoff_allowed\") is not True:"
+            },
+            {
+              "line_number": 147,
+              "is_target": false,
+              "line": "        blockers.append(\"Phase 16E regen signoff was not unlocked.\")"
+            }
+          ]
+        },
+        {
+          "line_number": 143,
+          "pattern": "inline_status_contains_check",
+          "line": "if results.get(\"regen_unified_validation_integration_completion_audit_status\") != \"PASS_REGEN_UNIFIED_VALIDATION_INTEGRATION_PHASE_16D\":",
+          "context_classification": "ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED",
+          "context": [
+            {
+              "line_number": 139,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 140,
+              "is_target": false,
+              "line": "    if results.get(\"regen_unified_validation_integration_completion_audit_ready\") is not True:"
+            },
+            {
+              "line_number": 141,
+              "is_target": false,
+              "line": "        blockers.append(\"16D unified validation integration completion audit is not ready.\")"
+            },
+            {
+              "line_number": 142,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 143,
+              "is_target": true,
+              "line": "    if results.get(\"regen_unified_validation_integration_completion_audit_status\") != \"PASS_REGEN_UNIFIED_VALIDATION_INTEGRATION_PHASE_16D\":"
+            },
+            {
+              "line_number": 144,
+              "is_target": false,
+              "line": "        blockers.append(\"16D unified validation integration completion audit has not passed.\")"
+            },
+            {
+              "line_number": 145,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 146,
+              "is_target": false,
+              "line": "    if results.get(\"phase_16e_regen_signoff_allowed\") is not True:"
+            },
+            {
+              "line_number": 147,
+              "is_target": false,
+              "line": "        blockers.append(\"Phase 16E regen signoff was not unlocked.\")"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_unified_viewer_integration_master_gate.py",
+      "finding_count": 2,
+      "contexts": [
+        {
+          "line_number": 17,
+          "pattern": "inline_pass_fail_warn_literal",
+          "line": "if results.get(\"regen_unified_viewer_integration_completion_audit_status\") != \"PASS_REGEN_UNIFIED_VIEWER_INTEGRATION_PHASE_16B\":",
+          "context_classification": "ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED",
+          "context": [
+            {
+              "line_number": 13,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 14,
+              "is_target": false,
+              "line": "    if results.get(\"regen_unified_viewer_integration_completion_audit_ready\") is not True:"
+            },
+            {
+              "line_number": 15,
+              "is_target": false,
+              "line": "        blockers.append(\"16B unified viewer integration completion audit is not ready.\")"
+            },
+            {
+              "line_number": 16,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 17,
+              "is_target": true,
+              "line": "    if results.get(\"regen_unified_viewer_integration_completion_audit_status\") != \"PASS_REGEN_UNIFIED_VIEWER_INTEGRATION_PHASE_16B\":"
+            },
+            {
+              "line_number": 18,
+              "is_target": false,
+              "line": "        blockers.append(\"16B unified viewer integration completion audit has not passed.\")"
+            },
+            {
+              "line_number": 19,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 20,
+              "is_target": false,
+              "line": "    if results.get(\"phase_16c_report_integration_allowed\") is not True:"
+            },
+            {
+              "line_number": 21,
+              "is_target": false,
+              "line": "        blockers.append(\"Phase 16C report integration was not unlocked.\")"
+            }
+          ]
+        },
+        {
+          "line_number": 17,
+          "pattern": "inline_status_contains_check",
+          "line": "if results.get(\"regen_unified_viewer_integration_completion_audit_status\") != \"PASS_REGEN_UNIFIED_VIEWER_INTEGRATION_PHASE_16B\":",
+          "context_classification": "ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED",
+          "context": [
+            {
+              "line_number": 13,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 14,
+              "is_target": false,
+              "line": "    if results.get(\"regen_unified_viewer_integration_completion_audit_ready\") is not True:"
+            },
+            {
+              "line_number": 15,
+              "is_target": false,
+              "line": "        blockers.append(\"16B unified viewer integration completion audit is not ready.\")"
+            },
+            {
+              "line_number": 16,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 17,
+              "is_target": true,
+              "line": "    if results.get(\"regen_unified_viewer_integration_completion_audit_status\") != \"PASS_REGEN_UNIFIED_VIEWER_INTEGRATION_PHASE_16B\":"
+            },
+            {
+              "line_number": 18,
+              "is_target": false,
+              "line": "        blockers.append(\"16B unified viewer integration completion audit has not passed.\")"
+            },
+            {
+              "line_number": 19,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 20,
+              "is_target": false,
+              "line": "    if results.get(\"phase_16c_report_integration_allowed\") is not True:"
+            },
+            {
+              "line_number": 21,
+              "is_target": false,
+              "line": "        blockers.append(\"Phase 16C report integration was not unlocked.\")"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_validation_master_gate.py",
+      "finding_count": 2,
+      "contexts": [
+        {
+          "line_number": 69,
+          "pattern": "inline_pass_fail_warn_literal",
+          "line": "if status == \"PASS_REGEN_VALIDATION_MASTER_GATE\":",
+          "context_classification": "ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED",
+          "context": [
+            {
+              "line_number": 65,
+              "is_target": false,
+              "line": "    status: str,"
+            },
+            {
+              "line_number": 66,
+              "is_target": false,
+              "line": "    reason: str,"
+            },
+            {
+              "line_number": 67,
+              "is_target": false,
+              "line": "    evidence: dict[str, Any],"
+            },
+            {
+              "line_number": 68,
+              "is_target": false,
+              "line": ") -> list[dict[str, Any]]:"
+            },
+            {
+              "line_number": 69,
+              "is_target": true,
+              "line": "    if status == \"PASS_REGEN_VALIDATION_MASTER_GATE\":"
+            },
+            {
+              "line_number": 70,
+              "is_target": false,
+              "line": "        category = \"COMPLETE\""
+            },
+            {
+              "line_number": 71,
+              "is_target": false,
+              "line": "    elif \"PLACEHOLDER\" in status:"
+            },
+            {
+              "line_number": 72,
+              "is_target": false,
+              "line": "        category = \"PLACEHOLDER_DATA\""
+            },
+            {
+              "line_number": 73,
+              "is_target": false,
+              "line": "    elif \"PARTIAL\" in status:"
+            }
+          ]
+        },
+        {
+          "line_number": 69,
+          "pattern": "inline_status_contains_check",
+          "line": "if status == \"PASS_REGEN_VALIDATION_MASTER_GATE\":",
+          "context_classification": "ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED",
+          "context": [
+            {
+              "line_number": 65,
+              "is_target": false,
+              "line": "    status: str,"
+            },
+            {
+              "line_number": 66,
+              "is_target": false,
+              "line": "    reason: str,"
+            },
+            {
+              "line_number": 67,
+              "is_target": false,
+              "line": "    evidence: dict[str, Any],"
+            },
+            {
+              "line_number": 68,
+              "is_target": false,
+              "line": ") -> list[dict[str, Any]]:"
+            },
+            {
+              "line_number": 69,
+              "is_target": true,
+              "line": "    if status == \"PASS_REGEN_VALIDATION_MASTER_GATE\":"
+            },
+            {
+              "line_number": 70,
+              "is_target": false,
+              "line": "        category = \"COMPLETE\""
+            },
+            {
+              "line_number": 71,
+              "is_target": false,
+              "line": "    elif \"PLACEHOLDER\" in status:"
+            },
+            {
+              "line_number": 72,
+              "is_target": false,
+              "line": "        category = \"PLACEHOLDER_DATA\""
+            },
+            {
+              "line_number": 73,
+              "is_target": false,
+              "line": "    elif \"PARTIAL\" in status:"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_acceptance_master_gate.py",
+      "finding_count": 1,
+      "contexts": [
+        {
+          "line_number": 64,
+          "pattern": "inline_status_contains_check",
+          "line": "if status == PASS_STATUS:",
+          "context_classification": "ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED",
+          "context": [
+            {
+              "line_number": 60,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 61,
+              "is_target": false,
+              "line": "    status = PASS_STATUS if not blockers else FAIL_STATUS"
+            },
+            {
+              "line_number": 62,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 63,
+              "is_target": false,
+              "line": "    payload = None"
+            },
+            {
+              "line_number": 64,
+              "is_target": true,
+              "line": "    if status == PASS_STATUS:"
+            },
+            {
+              "line_number": 65,
+              "is_target": false,
+              "line": "        payload = {"
+            },
+            {
+              "line_number": 66,
+              "is_target": false,
+              "line": "            \"status\": status,"
+            },
+            {
+              "line_number": 67,
+              "is_target": false,
+              "line": "            \"completion_state\": \"REGEN_ACCEPTANCE_FRAMEWORK_COMPLETE\","
+            },
+            {
+              "line_number": 68,
+              "is_target": false,
+              "line": "            \"candidate_id\": candidate_ids[0] if candidate_ids else report_payload.get(\"candidate_id\"),"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_before_after_solver_comparison_report_owner.py",
+      "finding_count": 1,
+      "contexts": [
+        {
+          "line_number": 63,
+          "pattern": "inline_status_contains_check",
+          "line": "if status == PASS_STATUS:",
+          "context_classification": "ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED",
+          "context": [
+            {
+              "line_number": 59,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 60,
+              "is_target": false,
+              "line": "    status = PASS_STATUS if not blockers else FAIL_STATUS"
+            },
+            {
+              "line_number": 61,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 62,
+              "is_target": false,
+              "line": "    report_payload = None"
+            },
+            {
+              "line_number": 63,
+              "is_target": true,
+              "line": "    if status == PASS_STATUS:"
+            },
+            {
+              "line_number": 64,
+              "is_target": false,
+              "line": "        report_payload = {"
+            },
+            {
+              "line_number": 65,
+              "is_target": false,
+              "line": "            \"status\": status,"
+            },
+            {
+              "line_number": 66,
+              "is_target": false,
+              "line": "            \"candidate_id\": _candidate_id_from_results(results, audit),"
+            },
+            {
+              "line_number": 67,
+              "is_target": false,
+              "line": "            \"source_phase\": \"16J.4E\","
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_candidate_acceptance_completion_gate.py",
+      "finding_count": 1,
+      "contexts": [
+        {
+          "line_number": 77,
+          "pattern": "inline_status_contains_check",
+          "line": "if status == PASS_STATUS:",
+          "context_classification": "ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED",
+          "context": [
+            {
+              "line_number": 73,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 74,
+              "is_target": false,
+              "line": "    status = PASS_STATUS if not blockers else FAIL_STATUS"
+            },
+            {
+              "line_number": 75,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 76,
+              "is_target": false,
+              "line": "    gate_payload = None"
+            },
+            {
+              "line_number": 77,
+              "is_target": true,
+              "line": "    if status == PASS_STATUS:"
+            },
+            {
+              "line_number": 78,
+              "is_target": false,
+              "line": "        gate_payload = {"
+            },
+            {
+              "line_number": 79,
+              "is_target": false,
+              "line": "            \"status\": status,"
+            },
+            {
+              "line_number": 80,
+              "is_target": false,
+              "line": "            \"candidate_id\": resolved_candidate_id,"
+            },
+            {
+              "line_number": 81,
+              "is_target": false,
+              "line": "            \"completion_state\": \"CANDIDATE_ACCEPTANCE_PIPELINE_COMPLETE\","
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_cross_section_viewer_integration.py",
+      "finding_count": 1,
+      "contexts": [
+        {
+          "line_number": 71,
+          "pattern": "inline_status_contains_check",
+          "line": "if status == PASS_STATUS:",
+          "context_classification": "ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED",
+          "context": [
+            {
+              "line_number": 67,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 68,
+              "is_target": false,
+              "line": "    status = PASS_STATUS if not blockers else FAIL_STATUS"
+            },
+            {
+              "line_number": 69,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 70,
+              "is_target": false,
+              "line": "    payload = None"
+            },
+            {
+              "line_number": 71,
+              "is_target": true,
+              "line": "    if status == PASS_STATUS:"
+            },
+            {
+              "line_number": 72,
+              "is_target": false,
+              "line": "        payload = {"
+            },
+            {
+              "line_number": 73,
+              "is_target": false,
+              "line": "            \"status\": status,"
+            },
+            {
+              "line_number": 74,
+              "is_target": false,
+              "line": "            \"source_phase\": \"16K.5\","
+            },
+            {
+              "line_number": 75,
+              "is_target": false,
+              "line": "            \"visibility\": \"UI_REPORT_VIEW\","
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_engineering_acceptance_report.py",
+      "finding_count": 1,
+      "contexts": [
+        {
+          "line_number": 41,
+          "pattern": "inline_status_contains_check",
+          "line": "if status == PASS_STATUS:",
+          "context_classification": "ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED",
+          "context": [
+            {
+              "line_number": 37,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 38,
+              "is_target": false,
+              "line": "    status = PASS_STATUS if not blockers else FAIL_STATUS"
+            },
+            {
+              "line_number": 39,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 40,
+              "is_target": false,
+              "line": "    report_payload = None"
+            },
+            {
+              "line_number": 41,
+              "is_target": true,
+              "line": "    if status == PASS_STATUS:"
+            },
+            {
+              "line_number": 42,
+              "is_target": false,
+              "line": "        report_payload = {"
+            },
+            {
+              "line_number": 43,
+              "is_target": false,
+              "line": "            \"status\": status,"
+            },
+            {
+              "line_number": 44,
+              "is_target": false,
+              "line": "            \"source_phase\": \"16L.2\","
+            },
+            {
+              "line_number": 45,
+              "is_target": false,
+              "line": "            \"visibility\": \"REPORT_ONLY\","
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_failure_root_cause_system.py",
+      "finding_count": 1,
+      "contexts": [
+        {
+          "line_number": 38,
+          "pattern": "inline_status_contains_check",
+          "line": "if status == PASS_STATUS:",
+          "context_classification": "ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED",
+          "context": [
+            {
+              "line_number": 34,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 35,
+              "is_target": false,
+              "line": "    status = PASS_STATUS if not blockers else FAIL_STATUS"
+            },
+            {
+              "line_number": 36,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 37,
+              "is_target": false,
+              "line": "    payload = None"
+            },
+            {
+              "line_number": 38,
+              "is_target": true,
+              "line": "    if status == PASS_STATUS:"
+            },
+            {
+              "line_number": 39,
+              "is_target": false,
+              "line": "        payload = {"
+            },
+            {
+              "line_number": 40,
+              "is_target": false,
+              "line": "            \"status\": status,"
+            },
+            {
+              "line_number": 41,
+              "is_target": false,
+              "line": "            \"visibility\": \"REPORT_ONLY\","
+            },
+            {
+              "line_number": 42,
+              "is_target": false,
+              "line": "            \"source_phase\": \"16J.6\","
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_final_completion_audit.py",
+      "finding_count": 1,
+      "contexts": [
+        {
+          "line_number": 53,
+          "pattern": "inline_status_contains_check",
+          "line": "if status == PASS_STATUS:",
+          "context_classification": "ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED",
+          "context": [
+            {
+              "line_number": 49,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 50,
+              "is_target": false,
+              "line": "    status = PASS_STATUS if not blockers else FAIL_STATUS"
+            },
+            {
+              "line_number": 51,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 52,
+              "is_target": false,
+              "line": "    payload = None"
+            },
+            {
+              "line_number": 53,
+              "is_target": true,
+              "line": "    if status == PASS_STATUS:"
+            },
+            {
+              "line_number": 54,
+              "is_target": false,
+              "line": "        payload = {"
+            },
+            {
+              "line_number": 55,
+              "is_target": false,
+              "line": "            \"status\": status,"
+            },
+            {
+              "line_number": 56,
+              "is_target": false,
+              "line": "            \"source_phase\": \"16M.1\","
+            },
+            {
+              "line_number": 57,
+              "is_target": false,
+              "line": "            \"visibility\": \"REPORT_ONLY\","
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_final_master_gate.py",
+      "finding_count": 1,
+      "contexts": [
+        {
+          "line_number": 61,
+          "pattern": "inline_status_contains_check",
+          "line": "if status == PASS_STATUS:",
+          "context_classification": "ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED",
+          "context": [
+            {
+              "line_number": 57,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 58,
+              "is_target": false,
+              "line": "    status = PASS_STATUS if not blockers else FAIL_STATUS"
+            },
+            {
+              "line_number": 59,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 60,
+              "is_target": false,
+              "line": "    payload = None"
+            },
+            {
+              "line_number": 61,
+              "is_target": true,
+              "line": "    if status == PASS_STATUS:"
+            },
+            {
+              "line_number": 62,
+              "is_target": false,
+              "line": "        payload = {"
+            },
+            {
+              "line_number": 63,
+              "is_target": false,
+              "line": "            \"status\": status,"
+            },
+            {
+              "line_number": 64,
+              "is_target": false,
+              "line": "            \"completion_state\": \"REGEN_SOFTWARE_SYSTEM_SIGNED_OFF\","
+            },
+            {
+              "line_number": 65,
+              "is_target": false,
+              "line": "            \"candidate_id\": candidate_ids[0] if candidate_ids else None,"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_final_signoff_report.py",
+      "finding_count": 1,
+      "contexts": [
+        {
+          "line_number": 52,
+          "pattern": "inline_status_contains_check",
+          "line": "if status == PASS_STATUS:",
+          "context_classification": "ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED",
+          "context": [
+            {
+              "line_number": 48,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 49,
+              "is_target": false,
+              "line": "    status = PASS_STATUS if not blockers else FAIL_STATUS"
+            },
+            {
+              "line_number": 50,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 51,
+              "is_target": false,
+              "line": "    payload = None"
+            },
+            {
+              "line_number": 52,
+              "is_target": true,
+              "line": "    if status == PASS_STATUS:"
+            },
+            {
+              "line_number": 53,
+              "is_target": false,
+              "line": "        payload = {"
+            },
+            {
+              "line_number": 54,
+              "is_target": false,
+              "line": "            \"status\": status,"
+            },
+            {
+              "line_number": 55,
+              "is_target": false,
+              "line": "            \"source_phase\": \"16M.3\","
+            },
+            {
+              "line_number": 56,
+              "is_target": false,
+              "line": "            \"visibility\": \"REPORT_ONLY\","
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_final_verification_audit.py",
+      "finding_count": 1,
+      "contexts": [
+        {
+          "line_number": 70,
+          "pattern": "inline_status_contains_check",
+          "line": "if status == PASS_STATUS:",
+          "context_classification": "ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED",
+          "context": [
+            {
+              "line_number": 66,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 67,
+              "is_target": false,
+              "line": "    status = PASS_STATUS if not blockers else FAIL_STATUS"
+            },
+            {
+              "line_number": 68,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 69,
+              "is_target": false,
+              "line": "    payload = None"
+            },
+            {
+              "line_number": 70,
+              "is_target": true,
+              "line": "    if status == PASS_STATUS:"
+            },
+            {
+              "line_number": 71,
+              "is_target": false,
+              "line": "        payload = {"
+            },
+            {
+              "line_number": 72,
+              "is_target": false,
+              "line": "            \"status\": status,"
+            },
+            {
+              "line_number": 73,
+              "is_target": false,
+              "line": "            \"source_phase\": \"16M.2\","
+            },
+            {
+              "line_number": 74,
+              "is_target": false,
+              "line": "            \"visibility\": \"REPORT_ONLY\","
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_live_geometry_commit_execution.py",
+      "finding_count": 1,
+      "contexts": [
+        {
+          "line_number": 90,
+          "pattern": "inline_status_contains_check",
+          "line": "if status == PASS_STATUS:",
+          "context_classification": "ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED",
+          "context": [
+            {
+              "line_number": 86,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 87,
+              "is_target": false,
+              "line": "    status = PASS_STATUS if not blockers else FAIL_STATUS"
+            },
+            {
+              "line_number": 88,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 89,
+              "is_target": false,
+              "line": "    audit_record = None"
+            },
+            {
+              "line_number": 90,
+              "is_target": true,
+              "line": "    if status == PASS_STATUS:"
+            },
+            {
+              "line_number": 91,
+              "is_target": false,
+              "line": "        audit_record = {"
+            },
+            {
+              "line_number": 92,
+              "is_target": false,
+              "line": "            \"event_type\": \"REGEN_LIVE_GEOMETRY_COMMIT_EXECUTED\","
+            },
+            {
+              "line_number": 93,
+              "is_target": false,
+              "line": "            \"phase\": \"16J.4C\","
+            },
+            {
+              "line_number": 94,
+              "is_target": false,
+              "line": "            \"timestamp_utc\": datetime.now(timezone.utc).isoformat(),"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_optimisation_completion_gate.py",
+      "finding_count": 1,
+      "contexts": [
+        {
+          "line_number": 65,
+          "pattern": "inline_status_contains_check",
+          "line": "if status == PASS_STATUS:",
+          "context_classification": "ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED",
+          "context": [
+            {
+              "line_number": 61,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 62,
+              "is_target": false,
+              "line": "    status = PASS_STATUS if not blockers else FAIL_STATUS"
+            },
+            {
+              "line_number": 63,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 64,
+              "is_target": false,
+              "line": "    payload = None"
+            },
+            {
+              "line_number": 65,
+              "is_target": true,
+              "line": "    if status == PASS_STATUS:"
+            },
+            {
+              "line_number": 66,
+              "is_target": false,
+              "line": "        payload = {"
+            },
+            {
+              "line_number": 67,
+              "is_target": false,
+              "line": "            \"status\": status,"
+            },
+            {
+              "line_number": 68,
+              "is_target": false,
+              "line": "            \"completion_state\": \"REGEN_OPTIMISATION_PIPELINE_COMPLETE\","
+            },
+            {
+              "line_number": 69,
+              "is_target": false,
+              "line": "            \"visibility\": \"REPORT_ONLY\","
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_optimisation_proof_system.py",
+      "finding_count": 1,
+      "contexts": [
+        {
+          "line_number": 67,
+          "pattern": "inline_status_contains_check",
+          "line": "if status == PASS_STATUS:",
+          "context_classification": "ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED",
+          "context": [
+            {
+              "line_number": 63,
+              "is_target": false,
+              "line": "    trust_score = _trust_score(proof_ledger)"
+            },
+            {
+              "line_number": 64,
+              "is_target": false,
+              "line": "    status = PASS_STATUS if not blockers else FAIL_STATUS"
+            },
+            {
+              "line_number": 65,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 66,
+              "is_target": false,
+              "line": "    payload = None"
+            },
+            {
+              "line_number": 67,
+              "is_target": true,
+              "line": "    if status == PASS_STATUS:"
+            },
+            {
+              "line_number": 68,
+              "is_target": false,
+              "line": "        payload = {"
+            },
+            {
+              "line_number": 69,
+              "is_target": false,
+              "line": "            \"status\": status,"
+            },
+            {
+              "line_number": 70,
+              "is_target": false,
+              "line": "            \"visibility\": \"REPORT_ONLY\","
+            },
+            {
+              "line_number": 71,
+              "is_target": false,
+              "line": "            \"source_phase\": \"16J.7\","
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_station_viewer_integration.py",
+      "finding_count": 1,
+      "contexts": [
+        {
+          "line_number": 64,
+          "pattern": "inline_status_contains_check",
+          "line": "if status == PASS_STATUS:",
+          "context_classification": "ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED",
+          "context": [
+            {
+              "line_number": 60,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 61,
+              "is_target": false,
+              "line": "    status = PASS_STATUS if not blockers else FAIL_STATUS"
+            },
+            {
+              "line_number": 62,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 63,
+              "is_target": false,
+              "line": "    payload = None"
+            },
+            {
+              "line_number": 64,
+              "is_target": true,
+              "line": "    if status == PASS_STATUS:"
+            },
+            {
+              "line_number": 65,
+              "is_target": false,
+              "line": "        payload = {"
+            },
+            {
+              "line_number": 66,
+              "is_target": false,
+              "line": "            \"status\": status,"
+            },
+            {
+              "line_number": 67,
+              "is_target": false,
+              "line": "            \"source_phase\": \"16K.6\","
+            },
+            {
+              "line_number": 68,
+              "is_target": false,
+              "line": "            \"visibility\": \"UI_REPORT_VIEW\","
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_viewer_completion_gate.py",
+      "finding_count": 1,
+      "contexts": [
+        {
+          "line_number": 70,
+          "pattern": "inline_status_contains_check",
+          "line": "if status == PASS_STATUS:",
+          "context_classification": "ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED",
+          "context": [
+            {
+              "line_number": 66,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 67,
+              "is_target": false,
+              "line": "    status = PASS_STATUS if not blockers else FAIL_STATUS"
+            },
+            {
+              "line_number": 68,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 69,
+              "is_target": false,
+              "line": "    completion_payload = None"
+            },
+            {
+              "line_number": 70,
+              "is_target": true,
+              "line": "    if status == PASS_STATUS:"
+            },
+            {
+              "line_number": 71,
+              "is_target": false,
+              "line": "        completion_payload = {"
+            },
+            {
+              "line_number": 72,
+              "is_target": false,
+              "line": "            \"status\": status,"
+            },
+            {
+              "line_number": 73,
+              "is_target": false,
+              "line": "            \"completion_state\": \"REGEN_VIEWER_COMPLETE\","
+            },
+            {
+              "line_number": 74,
+              "is_target": false,
+              "line": "            \"candidate_id\": candidate_ids[0],"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_viewer_data_adapter.py",
+      "finding_count": 1,
+      "contexts": [
+        {
+          "line_number": 54,
+          "pattern": "inline_status_contains_check",
+          "line": "if status == PASS_STATUS:",
+          "context_classification": "ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED",
+          "context": [
+            {
+              "line_number": 50,
+              "is_target": false,
+              "line": "    status = PASS_STATUS if not blockers else FAIL_STATUS"
+            },
+            {
+              "line_number": 51,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 52,
+              "is_target": false,
+              "line": "    viewer_payload = None"
+            },
+            {
+              "line_number": 53,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 54,
+              "is_target": true,
+              "line": "    if status == PASS_STATUS:"
+            },
+            {
+              "line_number": 55,
+              "is_target": false,
+              "line": "        viewer_payload = {"
+            },
+            {
+              "line_number": 56,
+              "is_target": false,
+              "line": "            \"status\": status,"
+            },
+            {
+              "line_number": 57,
+              "is_target": false,
+              "line": "            \"source_phase\": \"16K.1\","
+            },
+            {
+              "line_number": 58,
+              "is_target": false,
+              "line": "            \"visibility\": \"UI_REPORT_VIEW\","
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_viewer_navigation_system.py",
+      "finding_count": 1,
+      "contexts": [
+        {
+          "line_number": 76,
+          "pattern": "inline_status_contains_check",
+          "line": "if status == PASS_STATUS:",
+          "context_classification": "ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED",
+          "context": [
+            {
+              "line_number": 72,
+              "is_target": false,
+              "line": "    status = PASS_STATUS if not blockers else FAIL_STATUS"
+            },
+            {
+              "line_number": 73,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 74,
+              "is_target": false,
+              "line": "    navigation_payload = None"
+            },
+            {
+              "line_number": 75,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 76,
+              "is_target": true,
+              "line": "    if status == PASS_STATUS:"
+            },
+            {
+              "line_number": 77,
+              "is_target": false,
+              "line": "        default_key = \"summary\""
+            },
+            {
+              "line_number": 78,
+              "is_target": false,
+              "line": "        selected_section = {"
+            },
+            {
+              "line_number": 79,
+              "is_target": false,
+              "line": "            \"key\": default_key,"
+            },
+            {
+              "line_number": 80,
+              "is_target": false,
+              "line": "            \"label\": SECTION_LABELS[default_key],"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_viewer_ownership_architecture.py",
+      "finding_count": 1,
+      "contexts": [
+        {
+          "line_number": 82,
+          "pattern": "inline_status_contains_check",
+          "line": "if status == PASS_STATUS:",
+          "context_classification": "ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED",
+          "context": [
+            {
+              "line_number": 78,
+              "is_target": false,
+              "line": "    validation_payload = None"
+            },
+            {
+              "line_number": 79,
+              "is_target": false,
+              "line": "    audit_payload = None"
+            },
+            {
+              "line_number": 80,
+              "is_target": false,
+              "line": "    gate_payload = None"
+            },
+            {
+              "line_number": 81,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 82,
+              "is_target": true,
+              "line": "    if status == PASS_STATUS:"
+            },
+            {
+              "line_number": 83,
+              "is_target": false,
+              "line": "        candidate_id = viewer_payload.get(\"candidate_id\")"
+            },
+            {
+              "line_number": 84,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 85,
+              "is_target": false,
+              "line": "        owner_payload = {"
+            },
+            {
+              "line_number": 86,
+              "is_target": false,
+              "line": "            \"owner\": \"regen_viewer_owner\","
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "leaf_qt/regen_viewer_report_renderer.py",
+      "finding_count": 1,
+      "contexts": [
+        {
+          "line_number": 85,
+          "pattern": "inline_status_contains_check",
+          "line": "if status == PASS_STATUS:",
+          "context_classification": "ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED",
+          "context": [
+            {
+              "line_number": 81,
+              "is_target": false,
+              "line": "                rendered_sections[section_name] = _render_section(section_name, section)"
+            },
+            {
+              "line_number": 82,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 83,
+              "is_target": false,
+              "line": "    status = PASS_STATUS if not blockers else FAIL_STATUS"
+            },
+            {
+              "line_number": 84,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 85,
+              "is_target": true,
+              "line": "    if status == PASS_STATUS:"
+            },
+            {
+              "line_number": 86,
+              "is_target": false,
+              "line": "        full_report = _build_full_report(payload, rendered_sections)"
+            },
+            {
+              "line_number": 87,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 88,
+              "is_target": false,
+              "line": "    results[\"regen_viewer_report_renderer_complete\"] = True"
+            },
+            {
+              "line_number": 89,
+              "is_target": false,
+              "line": "    results[\"phase_16k2_complete\"] = status == PASS_STATUS"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "leaf_qt/design_history_narrative_builder.py",
+      "finding_count": 2,
+      "contexts": [
+        {
+          "line_number": 332,
+          "pattern": "inline_status_contains_check",
+          "line": "return text in self.PASS_WORDS or status_severity(text) == \"PASS\"",
+          "context_classification": "ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED",
+          "context": [
+            {
+              "line_number": 328,
+              "is_target": false,
+              "line": "        return f\"{label}: {old} -> {new}\""
+            },
+            {
+              "line_number": 329,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 330,
+              "is_target": false,
+              "line": "    def _is_pass(self, value):"
+            },
+            {
+              "line_number": 331,
+              "is_target": false,
+              "line": "        text = str(value or \"\").strip().upper()"
+            },
+            {
+              "line_number": 332,
+              "is_target": true,
+              "line": "        return text in self.PASS_WORDS or status_severity(text) == \"PASS\""
+            },
+            {
+              "line_number": 333,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 334,
+              "is_target": false,
+              "line": "    def _is_fail(self, value):"
+            },
+            {
+              "line_number": 335,
+              "is_target": false,
+              "line": "        text = str(value or \"\").strip().upper()"
+            },
+            {
+              "line_number": 336,
+              "is_target": false,
+              "line": "        return text in self.FAIL_WORDS or status_severity(text) == \"FAIL\""
+            }
+          ]
+        },
+        {
+          "line_number": 336,
+          "pattern": "inline_status_contains_check",
+          "line": "return text in self.FAIL_WORDS or status_severity(text) == \"FAIL\"",
+          "context_classification": "ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED",
+          "context": [
+            {
+              "line_number": 332,
+              "is_target": false,
+              "line": "        return text in self.PASS_WORDS or status_severity(text) == \"PASS\""
+            },
+            {
+              "line_number": 333,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 334,
+              "is_target": false,
+              "line": "    def _is_fail(self, value):"
+            },
+            {
+              "line_number": 335,
+              "is_target": false,
+              "line": "        text = str(value or \"\").strip().upper()"
+            },
+            {
+              "line_number": 336,
+              "is_target": true,
+              "line": "        return text in self.FAIL_WORDS or status_severity(text) == \"FAIL\""
+            },
+            {
+              "line_number": 337,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 338,
+              "is_target": false,
+              "line": "    def _safe_dict(self, value):"
+            },
+            {
+              "line_number": 339,
+              "is_target": false,
+              "line": "        return value if isinstance(value, dict) else {}"
+            },
+            {
+              "line_number": 340,
+              "is_target": false,
+              "line": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "leaf_qt/structured_status_access.py",
+      "finding_count": 1,
+      "contexts": [
+        {
+          "line_number": 45,
+          "pattern": "inline_status_contains_check",
+          "line": "if text in {\"INFO\", \"PASS\"} or text in PASS_LIKE or status_severity(text) == \"PASS\":",
+          "context_classification": "ACTIVE_CONTROL_FLOW_REVIEW_REQUIRED",
+          "context": [
+            {
+              "line_number": 41,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 42,
+              "is_target": false,
+              "line": "def canonical_status(value: Any) -> str:"
+            },
+            {
+              "line_number": 43,
+              "is_target": false,
+              "line": "    text = _normalise(value)"
+            },
+            {
+              "line_number": 44,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 45,
+              "is_target": true,
+              "line": "    if text in {\"INFO\", \"PASS\"} or text in PASS_LIKE or status_severity(text) == \"PASS\":"
+            },
+            {
+              "line_number": 46,
+              "is_target": false,
+              "line": "        return \"PASS\""
+            },
+            {
+              "line_number": 47,
+              "is_target": false,
+              "line": ""
+            },
+            {
+              "line_number": 48,
+              "is_target": false,
+              "line": "    if text in {\"FAIL\", \"BLOCKED\"} or text in FAIL_LIKE or any("
+            },
+            {
+              "line_number": 49,
+              "is_target": false,
+              "line": "        token in text for token in (\"FAIL\", \"ERROR\", \"INVALID\", \"BLOCKED\")"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "passed": true,
+  "status": "PASS_PHASE_16U168_PRESENTATION_DEBT_CONTEXT_EXTRACTOR",
+  "next_phase": "16U.169_ACTIVE_CONTROL_FLOW_PRESENTATION_DEBT_MANIFEST"
+}

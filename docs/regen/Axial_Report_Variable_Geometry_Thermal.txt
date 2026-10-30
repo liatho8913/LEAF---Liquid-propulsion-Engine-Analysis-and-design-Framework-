@@ -1,0 +1,441 @@
+LEAF AXIAL REGENERATIVE COOLING PROFILE REPORT
+==============================================
+
+Generated: 2026-06-08 11:39:55
+
+ENGINE SUMMARY
+--------------
+Fuel: RP-1 / Kerosene
+Oxidizer: O2
+Coolant: RP-1 / Kerosene
+Mass Flow Rate: 1.15 kg/s
+Mixture Ratio: 1.875
+Chamber Pressure: 6.895000e+06 Pa
+Chamber Temperature: 3282.08 K
+Nozzle Length: 0.0769704 m
+Throat Radius: 0.00979184 m
+Exit Radius: 0.0295753 m
+
+MATERIAL DATABASE
+-----------------
+Material Database Status: PASS
+Selected Material: GRCop-42
+Material Family: NASA copper-chromium-niobium liner alloy
+Material Density: 8890 kg/m³
+Material Thermal Conductivity: 344 W/m·K
+Material Specific Heat: 385 J/kg·K
+Material Max Wall Temperature: 900 K
+Material Melting Point: 1356 K
+Material Yield Strength: 2.300000e+08 Pa
+Material Ultimate Tensile Strength: 4.000000e+08 Pa
+Material Elastic Modulus: 1.200000e+11 Pa
+Material Poisson Ratio: 0.34
+Material Source Quality: NASA reference / approximate room-temperature default
+Material Notes: Higher-conductivity GRCop variant with slightly reduced strength compared with GRCop-84.
+
+REGEN STATUS
+------------
+Result Confidence: DIAGNOSTIC_ONLY
+Consistency Issues: ['Cooling channel geometry is invalid. Thermal results are diagnostic only until channel pitch/rib width physically fit.', 'Coolant flow is laminar. Regen cooling should normally use turbulent coolant flow.']
+Consistency Warnings: ['Coolant-side heat transfer is the dominant thermal bottleneck.']
+Energy Balance Expected ΔT: 6.52183 K
+Energy Balance Error: -0.0103485 K
+Energy Balance Error Percent: 0.158675 %
+Overall Status: FAIL
+Geometry Status: FAIL
+Thermal Status: FAIL
+Coolant Status: FAIL
+Material Status: FAIL
+
+FINAL REGEN DESIGN VERDICT
+--------------------------
+Final Verdict: SCREENING_PASS_COMBINED_COOLING
+Verdict Reasons: ['Combined cooling axial preview passes all stations, but this is a first-pass screening result.']
+Verdict Recommendations: ['Do not treat this as a final validated regen design.', 'Implement axial film-cooling model, material database, and variable-channel optimiser.', 'Use this only as evidence that a combined cooling path may be possible.']
+Combined Cooling Confidence: VERY_LOW
+Combined Cooling Confidence Score: 0
+Combined Cooling Confidence Reasons: ['Cooling only passes after applying combined first-pass assumptions.', 'Axial film + material preview does not pass.', 'Film cooling requirement is severe and needs a dedicated model.', 'No single cooling method is sufficient; combined strategy is required.', 'Film effectiveness target is high.', 'Required heat-load reduction is significant.', 'Material capability target is significantly above the current material.', 'Further regen/channel improvement is required beyond current recommended geometry.']
+Required Next Steps: ['Improve axial film-cooling effectiveness model.', 'Implement material database with selectable high-temperature alloys.', 'Implement variable channel geometry optimisation.']
+
+AXIAL EXTREMA
+-------------
+Station Count: 100
+Max Hot Wall Temperature: 3057.73 K
+Max Hot Wall Temperature Location: 0 m
+Max Coolant Wall Temperature: 3055.09 K
+Max Heat Flux: 7.633349e+05 W/m²
+Min Reynolds Number: 1785.71
+Target Reynolds Number: 5000
+Derived Target Reynolds Number: 5000
+Required Velocity For Target Reynolds: 5.75655 m/s
+Required Total Flow Area: 8.578885e-05 m²
+Coolant Outlet Temperature: 299.511 K
+Coolant Total Temperature Rise: 6.51148 K
+Total Heat Absorbed: 5217.57 W
+Primary Thermal Bottleneck: coolant_side
+Thermal Bottleneck Counts: {'gas_side': 0, 'wall_conduction': 0, 'coolant_side': 100}
+Coolant Flow Direction: exit_to_throat
+Total Coolant Pressure Drop: 2605.68 Pa
+Worst Material Margin: -2157.73 K
+Worst Material Margin Location: 0 m
+
+COOLING GEOMETRY
+----------------
+Channel Count: 80
+Channel Width: 0.0015 m
+Channel Height: 0.002 m
+Requested Rib Width: 0.001 m
+Effective Rib Width: 2.732607e-04 m
+Requested Channel Pitch: 0.0025 m
+Available Circumferential Pitch: 0.00177326 m
+Channel Fit Ratio: 0.709304
+Channel Geometry Valid: 0
+
+RECOMMENDED COOLING GEOMETRY
+----------------------------
+DERIVED DESIGN CONSTRAINTS
+--------------------------
+Design Aggressiveness: balanced
+Derived Target Reynolds Number: 5000
+Derived Pressure Drop Limit: 6.895000e+05 Pa
+Derived Max Coolant Velocity: 12.3786 m/s
+Derived Min Hydraulic Diameter: 2.447960e-04 m
+Derived Min Channel Width: 2.937552e-04 m
+Derived Min Rib Width: 3.427144e-04 m
+Derived Max Channel Height: 0.00440633 m
+Derived Min Channel Count: 27
+Derived Max Channel Count: 222
+Derived Maximum Channel Pitch: 0.00538551 m
+Derived Minimum Cooling Coverage: 0.4
+
+Recommended Geometry Status: PASS
+Target Reynolds Number: 5000
+Recommended Channel Count: 27
+Recommended Channel Width: 0.00223018 m
+Recommended Channel Height: 0.00118779 m
+Recommended Rib Width: 0.00302392 m
+Recommended Channel Pitch: 0.00525411 m
+Recommended Effective Rib Width: 0.00302392 m
+Recommended Channel Fit Ratio: 1
+Recommended Geometry Valid: 1
+Recommended Hydraulic Diameter: 0.00155004 m
+Recommended Coolant Velocity: 6.90475 m/s
+Recommended Circumferential Cooling Coverage: 0.424465
+Recommended Total Cooling Wetted Perimeter: 0.184571 m
+Recommended Estimated Pressure Drop: 35350.6 Pa
+Recommended Geometry Score: 9.85618
+Recommended Reynolds Number: 5422.69
+Recommended Reynolds Improvement Factor: 3.03671
+Recommended Geometry Note: Recommended geometry physically fits, while current manual geometry does not.
+Recommended Total Coolant Flow Area: 7.152287e-05 m²
+Candidates Checked: 318
+Valid Fit Candidates: 3
+Rejected Velocity Candidates: 178
+Rejected Hydraulic Diameter Candidates: 0
+Rejected Pressure Drop Candidates: 0
+Rejected Cooling Coverage Candidates: 137
+
+VARIABLE CHANNEL GEOMETRY OPTIMISER
+-----------------------------------
+Variable Geometry Status: FAIL_REYNOLDS
+Variable Geometry Station Count: 100
+Variable Geometry Failed Station Count: 0
+Variable Geometry Min Reynolds: 2258.13
+Variable Geometry Max Reynolds: 5538.27
+Variable Geometry Target Reynolds: 5000
+Variable Geometry Reynolds Target Ratio: 0.451625
+Variable Geometry Reasons: ['Minimum variable-channel Reynolds number is below target: 2.26e+03 vs 5e+03.']
+Variable Geometry Recommendations: ['Increase local coolant velocity, reduce hydraulic diameter, increase channel count near low-Re stations, or allow a higher pressure-drop budget.', 'Variable geometry is hitting the maximum coolant velocity constraint; pressure-drop and pump limits should be reviewed.']
+Variable Geometry Max Velocity: 25 m/s
+Variable Geometry Min Hydraulic Diameter: 3.709109e-04 m
+Variable Geometry Max Hydraulic Diameter: 0.00188206 m
+
+VARIABLE GEOMETRY THERMAL PREVIEW
+---------------------------------
+Variable Thermal Status: FAIL
+Variable Thermal Station Count: 100
+Variable Thermal Max Hot Wall Temperature: 4733.86 K
+Variable Thermal Max Hot Wall Temperature Location: 0 m
+Variable Thermal Worst Material Margin: -3833.86 K
+Variable Thermal Worst Material Margin Location: 0 m
+Variable Thermal Failed Station Count: 100
+Variable Thermal Min Reynolds: 2258.13
+Variable Thermal Max Reynolds: 5538.27
+
+RECOMMENDED GEOMETRY THERMAL PREVIEW
+------------------------------------
+Preview Status: PASS
+Preview Station Count: 100
+Preview Max Hot Wall Temperature: 2412.65 K
+Preview Max Hot Wall Temperature Location: 0 m
+Preview Max Coolant Wall Temperature: 2312.11 K
+Preview Max Heat Flux: 2.905989e+07 W/m²
+Preview Min Reynolds Number: 5417.98
+Preview Total Pressure Drop: 30379.8 Pa
+Preview Coolant Outlet Temperature: 395.739 K
+Preview Coolant Total Temperature Rise: 102.739 K
+Preview Total Heat Absorbed: 84279.2 W
+Preview Primary Thermal Bottleneck: coolant_side
+Preview Thermal Bottleneck Counts: {'gas_side': 18, 'wall_conduction': 0, 'coolant_side': 82}
+Preview Worst Material Margin: -1512.65 K
+Preview Worst Material Margin Location: 0 m
+
+RECOMMENDED REGEN VIABILITY
+---------------------------
+Viability Status: FAIL
+Viability Score: 50
+Viability Reasons: ['Recommended hot-gas wall temperature exceeds material limit by 1.51e+03 K.']
+Viability Warnings: ['Recommended design is still coolant-side heat-transfer limited.']
+Viability Recommendations: ['Increase coolant-side heat transfer or choose a higher-temperature material.', 'Consider increasing coolant mass flow, channel coverage, or adding film cooling.', 'Increase coolant-side heat-transfer coefficient using higher velocity, smaller hydraulic diameter, or better coolant.']
+Reynolds Target Ratio: 1.0836
+Pressure Drop Limit Ratio: 0.0440606
+
+REGEN COOLING FEASIBILITY
+-------------------------
+Feasibility Status: REGEN_ONLY_NOT_FEASIBLE
+Wall Over-Temperature: 1512.65 K
+Reference Recovery Temperature: 3075.14 K
+Required Cooling Improvement Factor: 3.2833
+Current Coolant Mass Flow Fraction: 0.347826
+Fuel Mass Flow Rate: 0.4 kg/s
+Oxidizer Mass Flow Rate: 0.75 kg/s
+Available Coolant Basis: fuel
+Available Coolant Mass Flow Rate: 0.4 kg/s
+Current Coolant / Available Coolant Fraction: 1
+Required Coolant Mass Flow Rate: 1.31332 kg/s
+Required Coolant Mass Flow Increase: 0.913321 kg/s
+Required Coolant Mass Flow Factor: 3.2833
+Required Coolant Mass Flow Fraction: 1.14202
+Required Coolant / Available Coolant Fraction: 3.2833
+Pressure Drop Ratio: 0.0440606
+Estimated Film Cooling Fraction: 0.5
+Required Material Temperature Limit: 2412.65 K
+Feasibility Reasons: ['Recommended hot wall temperature exceeds material limit by 1.51e+03 K.', 'Cooling effectiveness must increase by approximately 3.28x.', 'Required coolant mass flow exceeds available fuel flow.']
+Feasibility Recommendations: ['Regen-only cooling cannot be achieved using the current propellant flow split.', 'Evaluate film cooling, lower chamber heat load, higher-temperature material, or a redesigned mixture ratio/engine scale.', 'Consider adding film cooling. First-pass estimated film fraction: 0.5.', 'Material system would need to tolerate at least 2.41e+03 K at the hot wall, before safety margin.', 'Do not accept this engine as regen-cooled yet.', 'Run a material-aware optimiser before proceeding to final engine design.', 'Evaluate higher coolant mass flow, variable channels, film cooling, or reduced chamber thermal load.']
+
+REGEN COOLING STRATEGY
+----------------------
+Selected Strategy: REGEN_PLUS_FILM_OR_REDUCED_HEAT_LOAD_REQUIRED
+Strategy Reasons: ['Required coolant mass flow exceeds available propellant coolant flow.']
+Strategy Next Actions: ['Evaluate regen plus film cooling because regen-only cannot supply enough coolant.', 'Evaluate reduced chamber pressure, reduced chamber temperature, or lower heat-flux design.']
+
+FILM COOLING REQUIREMENT
+------------------------
+Film Cooling Status: FILM_COOLING_SEVERE
+Required Wall Temperature Drop: 1512.65 K
+Required Film Effectiveness: 0.695429
+Estimated Film Fraction Of Available Fuel: 0.5
+Estimated Film Mass Flow Rate: 0.2 kg/s
+Estimated Film Fraction Of Fuel Flow: 0.5
+Film Cooling Recommendations: ['Required film cooling effectiveness is severe; film cooling alone may not be sufficient.', 'Combine film cooling with reduced chamber heat load, material upgrade, or variable channel geometry.']
+
+AXIAL FILM COOLING PREVIEW
+--------------------------
+Film Axial Preview Status: FAIL
+Film Axial Station Count: 100
+Film Initial Effectiveness: 0.35
+Film Decay Length: 0.0346367 m
+Film Axial Max Hot Wall Temperature: 1670.77 K
+Film Axial Max Hot Wall Temperature Location: 0 m
+Film Axial Worst Material Margin: -230.774 K
+Film Axial Worst Material Margin Location: 0 m
+Film Axial Failed Station Count: 21
+
+FILM + MATERIAL AXIAL PREVIEW
+-----------------------------
+Film + Material Status: FAIL
+Film + Material Station Count: 100
+Film + Material Limit: 1440 K
+Film + Material Max Hot Wall Temperature: 1670.77 K
+Film + Material Max Hot Wall Temperature Location: 0 m
+Film + Material Worst Margin: -230.774 K
+Film + Material Worst Margin Location: 0 m
+Film + Material Failed Station Count: 21
+
+FULL COMBINED COMPONENT AXIAL PREVIEW
+-------------------------------------
+Full Combined Status: PASS
+Full Combined Station Count: 100
+Full Combined Material Limit: 1440 K
+Full Combined Film Target: 0.35
+Full Combined Heat-Load Reduction Target: 0.25
+Full Combined Regen Improvement Target: 1.4
+Full Combined Max Hot Wall Temperature: 1031.09 K
+Full Combined Max Hot Wall Temperature Location: 0 m
+Full Combined Worst Material Margin: 408.907 K
+Full Combined Worst Material Margin Location: 0 m
+Full Combined Failed Station Count: 0
+
+MATERIAL CANDIDATE SCREENING
+----------------------------
+Material Candidate Status: COMPLETE
+Target Temperature: 1031.09 K
+Candidate Count: 14
+Passing Count: 2
+Best Candidate: {'name': 'Haynes 230', 'family': 'Nickel superalloy', 'max_wall_temperature': 1200.0, 'thermal_conductivity': 8.9, 'margin': 168.90684610539597, 'status': 'PASS_WITH_MARGIN', 'score': 169.79684610539596, 'notes': 'Good high-temperature oxidation resistance.'}
+Passing Candidates: [{'name': 'Haynes 230', 'family': 'Nickel superalloy', 'max_wall_temperature': 1200.0, 'thermal_conductivity': 8.9, 'margin': 168.90684610539597, 'status': 'PASS_WITH_MARGIN', 'score': 169.79684610539596, 'notes': 'Good high-temperature oxidation resistance.'}, {'name': 'Hastelloy X', 'family': 'Nickel superalloy', 'max_wall_temperature': 1170.0, 'thermal_conductivity': 9.1, 'margin': 138.90684610539597, 'status': 'PASS_WITH_MARGIN', 'score': 139.81684610539597, 'notes': 'High-temperature nickel alloy often used in hot structures.'}]
+Material Recommendation: At least one real database material passes the current film/material screening temperature.
+
+COOLING STRATEGY TRADE STUDY
+----------------------------
+Trade Study Status: COMPLETE
+Selected Option: Combined cooling strategy
+Selected Status: REQUIRED
+Selected Reason: No single simple change appears sufficient; combine material upgrade, film cooling, variable channels, or reduced chamber heat load.
+Required Material Factor: 2.68072
+Required Heat Load Fraction: 0.304571
+Required Heat Load Reduction Fraction: 0.695429
+Trade Options: [{'name': 'Regen only', 'status': 'FAIL', 'score': 0, 'reason': 'Recommended regen wall temperature exceeds material limit.'}, {'name': 'Material upgrade', 'status': 'FAIL', 'score': 20, 'reason': 'Required material capability is far above the selected material limit.'}, {'name': 'Film cooling', 'status': 'FAIL', 'score': 15, 'reason': 'Film cooling requirement is extremely severe. Estimated film flow consumes a large fraction of fuel flow.'}, {'name': 'Reduced chamber heat load', 'status': 'FAIL', 'score': 20, 'reason': 'Required chamber heat-load reduction is very large.'}, {'name': 'Combined cooling strategy', 'status': 'REQUIRED', 'score': 50, 'reason': 'No single simple change appears sufficient; combine material upgrade, film cooling, variable channels, or reduced chamber heat load.'}]
+Trade Recommendations: ['Pressure-drop budget has margin; more aggressive channel optimisation may be possible.', 'Film cooling demand is high enough that injector and performance penalties must be modelled.', 'Regen-only cooling is rejected because required coolant flow exceeds available propellant coolant flow.', 'Next development should add material-aware and film-aware optimisation rather than further geometry-only optimisation.']
+
+COMBINED COOLING TARGET ALLOCATION
+----------------------------------
+Allocation Status: PLAUSIBLE
+Allocation Summary: A combined cooling strategy may plausibly close the thermal gap within the selected first-pass design caps.
+Material Factor Target: 1.6
+Film Effectiveness Target: 0.35
+Heat Load Reduction Target: 0.25
+Regen Improvement Factor Target: 1.4
+Combined Total Cooling Factor: 4.59487
+Remaining Cooling Factor: 0.714558
+Combined Prediction Status: PASS_WITH_MARGIN
+Prediction Coolant Reference Temperature: 293 K
+Predicted Hot Wall Temperature: 754.308 K
+Predicted Material Limit: 1440 K
+Predicted Material Margin: 685.692 K
+Combined Axial Preview Status: PASS
+Combined Axial Station Count: 100
+Combined Axial Max Hot Wall Temperature: 754.308 K
+Combined Axial Max Hot Wall Temperature Location: 0 m
+Combined Axial Worst Material Margin: 685.692 K
+Combined Axial Worst Material Margin Location: 0 m
+Combined Axial Failed Station Count: 0
+Prediction Recommendations: ['Combined cooling allocation gives positive material margin in first-pass screening.', 'Next step should convert this estimate into an axial combined-cooling preview.']
+Allocation Recommendations: ['Target material capability factor: 1.6x current material limit.', 'Target film effectiveness: 0.35.', 'Target chamber/nozzle heat-load reduction: 0.25.', 'Target further regen/channel improvement: 1.4x.']
+
+MANUAL VS RECOMMENDED CHANGE
+----------------------------
+Hot Wall Temperature Change: -645.083 K
+Minimum Reynolds Change: 3632.26
+Minimum Reynolds Factor: 3.03407
+Pressure Drop Change: 27774.1 Pa
+
+COOLANT FLOW NOTE
+-----------------
+LEAF axial coordinate x=0 starts at the throat and increases toward the nozzle exit. The coolant marcher now supports real-engine-style reverse coolant flow: nozzle exit -> throat/chamber side. Station x-order remains throat -> exit for graph compatibility, while coolant_path_index shows the actual coolant marching order.
+
+SELECTED LENGTH STATION
+-----------------------
+Selected Length: 0.04 m
+Nearest Station: Station 051
+x: 0.0396514 m
+Mach: 2.62395
+Twg: 2269.67 K
+Twc: 2267.8 K
+Tcoolant: 296.71 K
+q'': 5.464870e+05 W/m²
+Re: 1920.69
+
+FULL AXIAL PROFILE
+------------------
+Station	x (m)	Coolant Path	r (m)	A (m²)	Mach	Twg (K)	Twc (K)	Tc in (K)	Tc out (K)	ΔTc (K)	q'' (W/m²)	Q station (W)	Q cumulative (W)	Re	ΔP total (Pa)
+Station 000	0	99	0.00979184	3.012162e-04	1	3057.73	3055.09	299.466	299.511	0.0454942	7.633349e+05	36.513	5217.57	2032.24	2605.68
+Station 001	7.774787e-04	98	0.00987353	3.062633e-04	1.13882	3002.63	3000.05	299.421	299.466	0.0449597	7.481082e+05	36.0832	5181.06	2030.41	2581.04
+Station 002	0.00155496	97	0.0100711	3.186403e-04	1.26161	2950.15	2947.62	299.376	299.421	0.0449713	7.336074e+05	36.0917	5144.98	2028.59	2556.38
+Station 003	0.00233244	96	0.0102721	3.314911e-04	1.34689	2911.98	2909.48	299.331	299.376	0.0452111	7.230659e+05	36.2833	5108.89	2026.75	2531.69
+Station 004	0.00310991	95	0.0104732	3.445958e-04	1.41633	2880.01	2877.54	299.285	299.331	0.0455343	7.142383e+05	36.5419	5072.6	2024.91	2506.99
+Station 005	0.00388739	94	0.0106743	3.579546e-04	1.47652	2851.72	2849.28	299.239	299.285	0.0459023	7.064312e+05	36.8364	5036.06	2023.05	2482.26
+Station 006	0.00466487	93	0.0108754	3.715674e-04	1.53042	2825.99	2823.57	299.193	299.239	0.0462982	6.993333e+05	37.1532	4999.22	2021.18	2457.51
+Station 007	0.00544235	92	0.0110764	3.854343e-04	1.57964	2802.2	2799.8	299.146	299.193	0.0467128	6.927714e+05	37.4851	4962.07	2019.29	2432.74
+Station 008	0.00621983	91	0.0112775	3.995552e-04	1.62521	2779.95	2777.58	299.099	299.146	0.0471408	6.866369e+05	37.8276	4924.59	2017.39	2407.95
+Station 009	0.00699731	90	0.0114786	4.139301e-04	1.6678	2758.98	2756.63	299.052	299.099	0.0475784	6.808560e+05	38.1779	4886.76	2015.47	2383.14
+Station 010	0.00777479	89	0.0116797	4.285591e-04	1.70792	2739.1	2736.76	299.004	299.052	0.0480233	6.753751e+05	38.534	4848.58	2013.53	2358.3
+Station 011	0.00855227	88	0.0118807	4.434421e-04	1.74591	2720.15	2717.84	298.955	299.004	0.0484736	6.701542e+05	38.8944	4810.05	2011.58	2333.44
+Station 012	0.00932974	87	0.0120818	4.585792e-04	1.78207	2702.03	2699.73	298.906	298.955	0.048928	6.651620e+05	39.258	4771.15	2009.62	2308.56
+Station 013	0.0101072	86	0.0122829	4.739702e-04	1.81661	2684.64	2682.37	298.857	298.906	0.0493854	6.603736e+05	39.624	4731.89	2007.63	2283.65
+Station 014	0.0108847	85	0.012484	4.896153e-04	1.84972	2667.92	2665.66	298.807	298.857	0.0498451	6.557685e+05	39.9919	4692.27	2005.63	2258.72
+Station 015	0.0116622	84	0.012685	5.055145e-04	1.88154	2651.8	2649.55	298.757	298.807	0.0503064	6.513297e+05	40.3609	4652.28	2003.61	2233.77
+Station 016	0.0124397	83	0.0128861	5.216677e-04	1.91219	2636.23	2634	298.706	298.757	0.0507687	6.470430e+05	40.7309	4611.92	2001.58	2208.79
+Station 017	0.0132171	82	0.0130872	5.380749e-04	1.94179	2621.16	2618.94	298.655	298.706	0.0512318	6.428959e+05	41.1013	4571.19	1999.53	2183.79
+Station 018	0.0139946	81	0.0132883	5.547362e-04	1.97041	2606.56	2604.35	298.603	298.655	0.0516951	6.388778e+05	41.472	4530.08	1997.46	2158.77
+Station 019	0.0147721	80	0.0134893	5.716515e-04	1.99813	2592.38	2590.2	298.551	298.603	0.0521585	6.349796e+05	41.8426	4488.61	1995.38	2133.72
+Station 020	0.0155496	79	0.0136904	5.888208e-04	2.02503	2578.62	2576.44	298.498	298.551	0.0526217	6.311929e+05	42.2131	4446.77	1993.28	2108.64
+Station 021	0.0163271	78	0.0138915	6.062442e-04	2.05116	2565.22	2563.06	298.445	298.498	0.0530845	6.275104e+05	42.5832	4404.56	1991.17	2083.54
+Station 022	0.0171045	77	0.0140926	6.239216e-04	2.07657	2552.19	2550.04	298.392	298.445	0.0535466	6.239258e+05	42.9528	4361.97	1989.04	2058.42
+Station 023	0.017882	76	0.0142936	6.418530e-04	2.10131	2539.48	2537.34	298.338	298.392	0.0540081	6.204331e+05	43.3218	4319.02	1986.89	2033.27
+Station 024	0.0186595	75	0.0144947	6.600385e-04	2.12542	2527.09	2524.96	298.283	298.338	0.0544687	6.170271e+05	43.69	4275.7	1984.73	2008.09
+Station 025	0.019437	74	0.0146958	6.784780e-04	2.14894	2514.99	2512.87	298.228	298.283	0.0549283	6.137030e+05	44.0575	4232.01	1982.55	1982.89
+Station 026	0.0202144	73	0.0148969	6.971716e-04	2.17191	2503.17	2501.07	298.173	298.228	0.0553868	6.104562e+05	44.424	4187.95	1980.35	1957.66
+Station 027	0.0209919	72	0.0150979	7.161192e-04	2.19434	2491.61	2489.52	298.117	298.173	0.0558441	6.072830e+05	44.7896	4143.53	1978.14	1932.4
+Station 028	0.0217694	71	0.015299	7.353208e-04	2.21628	2480.31	2478.23	298.061	298.117	0.0563003	6.041795e+05	45.1542	4098.74	1975.92	1907.12
+Station 029	0.0225469	70	0.0155001	7.547765e-04	2.23775	2469.25	2467.18	298.004	298.061	0.0567551	6.011424e+05	45.5177	4053.58	1973.67	1881.81
+Station 030	0.0233244	69	0.0157012	7.744862e-04	2.25876	2458.41	2456.35	297.947	298.004	0.0572086	5.981686e+05	45.88	4008.07	1971.42	1856.47
+Station 031	0.0241018	68	0.0159022	7.944499e-04	2.27935	2447.79	2445.74	297.889	297.947	0.0576606	5.952550e+05	46.2413	3962.19	1969.14	1831.1
+Station 032	0.0248793	67	0.0161033	8.146677e-04	2.29953	2437.38	2435.34	297.831	297.889	0.0581113	5.923991e+05	46.6013	3915.94	1966.86	1805.71
+Station 033	0.0256568	66	0.0163044	8.351395e-04	2.31932	2427.17	2425.14	297.772	297.831	0.0585604	5.895982e+05	46.9601	3869.34	1964.56	1780.29
+Station 034	0.0264343	65	0.0165055	8.558653e-04	2.33874	2417.15	2415.13	297.713	297.772	0.059008	5.868501e+05	47.3177	3822.38	1962.24	1754.84
+Station 035	0.0272118	64	0.0167065	8.768452e-04	2.3578	2407.31	2405.3	297.654	297.713	0.0594541	5.841525e+05	47.674	3775.07	1959.91	1729.36
+Station 036	0.0279892	63	0.0169076	8.980791e-04	2.37652	2397.64	2395.65	297.594	297.654	0.0598986	5.815033e+05	48.0289	3727.39	1957.56	1703.86
+Station 037	0.0287667	62	0.0171087	9.195671e-04	2.39491	2388.15	2386.16	297.534	297.594	0.0603415	5.789007e+05	48.3826	3679.36	1955.2	1678.32
+Station 038	0.0295442	61	0.0173098	9.413091e-04	2.41299	2378.81	2376.83	297.473	297.534	0.0607827	5.763427e+05	48.7349	3630.98	1952.82	1652.76
+Station 039	0.0303217	60	0.0175108	9.633051e-04	2.43076	2369.63	2367.66	297.412	297.473	0.0612224	5.738277e+05	49.0859	3582.25	1950.43	1627.16
+Station 040	0.0310991	59	0.0177119	9.855552e-04	2.44824	2360.6	2358.63	297.35	297.412	0.0616603	5.713541e+05	49.4355	3533.16	1948.03	1601.54
+Station 041	0.0318766	58	0.017913	0.00100806	2.46544	2351.71	2349.75	297.288	297.35	0.0620966	5.689203e+05	49.7838	3483.72	1945.61	1575.88
+Station 042	0.0326541	57	0.0181141	0.00103082	2.48237	2342.96	2341.01	297.225	297.288	0.0625312	5.665248e+05	50.1306	3433.94	1943.18	1550.2
+Station 043	0.0334316	56	0.0183151	0.00105383	2.49904	2334.34	2332.4	297.162	297.225	0.0629641	5.641664e+05	50.4761	3383.81	1940.73	1524.48
+Station 044	0.0342091	55	0.0185162	0.0010771	2.51545	2325.85	2323.92	297.099	297.162	0.0633953	5.618436e+05	50.8202	3333.33	1938.28	1498.73
+Station 045	0.0349865	54	0.0187173	0.00110062	2.53162	2317.48	2315.56	297.035	297.099	0.0638247	5.595553e+05	51.1628	3282.51	1935.8	1472.95
+Station 046	0.035764	53	0.0189184	0.00112439	2.54756	2309.24	2307.33	296.971	297.035	0.0642525	5.573002e+05	51.504	3231.35	1933.32	1447.15
+Station 047	0.0365415	52	0.0191194	0.00114842	2.56327	2301.11	2299.2	296.906	296.971	0.0646785	5.550773e+05	51.8438	3179.85	1930.82	1421.3
+Station 048	0.037319	51	0.0193205	0.0011727	2.57875	2293.09	2291.19	296.841	296.906	0.0651027	5.528856e+05	52.1822	3128	1928.31	1395.43
+Station 049	0.0380965	50	0.0195216	0.00119724	2.59402	2285.18	2283.29	296.776	296.841	0.0655252	5.507239e+05	52.5191	3075.82	1925.78	1369.53
+Station 050	0.0388739	49	0.0197227	0.00122203	2.60909	2277.38	2275.49	296.71	296.776	0.065946	5.485913e+05	52.8546	3023.3	1923.24	1343.59
+Station 051	0.0396514	48	0.0199237	0.00124707	2.62395	2269.67	2267.8	296.643	296.71	0.0663649	5.464870e+05	53.1887	2970.45	1920.69	1317.62
+Station 052	0.0404289	47	0.0201248	0.00127237	2.63862	2262.07	2260.2	296.577	296.643	0.0667822	5.444099e+05	53.5213	2917.26	1918.13	1291.62
+Station 053	0.0412064	46	0.0203259	0.00129792	2.6531	2254.56	2252.7	296.509	296.577	0.0671976	5.423594e+05	53.8524	2863.74	1915.55	1265.58
+Station 054	0.0419839	45	0.020527	0.00132373	2.66739	2247.14	2245.29	296.442	296.509	0.0676113	5.403345e+05	54.1821	2809.88	1912.96	1239.51
+Station 055	0.0427613	44	0.020728	0.00134979	2.68151	2239.81	2237.97	296.374	296.442	0.0680232	5.383345e+05	54.5103	2755.7	1910.36	1213.41
+Station 056	0.0435388	43	0.0209291	0.00137611	2.69545	2232.57	2230.73	296.305	296.374	0.0684333	5.363587e+05	54.8371	2701.19	1907.75	1187.27
+Station 057	0.0443163	42	0.0211302	0.00140267	2.70922	2225.41	2223.58	296.236	296.305	0.0688416	5.344064e+05	55.1624	2646.35	1905.12	1161.1
+Station 058	0.0450938	41	0.0213313	0.0014295	2.72282	2218.34	2216.52	296.167	296.236	0.0692482	5.324768e+05	55.4863	2591.19	1902.49	1134.9
+Station 059	0.0458712	40	0.0215323	0.00145657	2.73626	2211.34	2209.53	296.098	296.167	0.069653	5.305694e+05	55.8087	2535.71	1899.84	1108.66
+Station 060	0.0466487	39	0.0217334	0.0014839	2.74955	2204.43	2202.62	296.027	296.098	0.070056	5.286835e+05	56.1296	2479.9	1897.18	1082.39
+Station 061	0.0474262	38	0.0219345	0.00151149	2.76269	2197.58	2195.78	295.957	296.027	0.0704572	5.268185e+05	56.4491	2423.77	1894.51	1056.08
+Station 062	0.0482037	37	0.0221356	0.00153933	2.77567	2190.81	2189.02	295.886	295.957	0.0708566	5.249738e+05	56.7671	2367.32	1891.82	1029.73
+Station 063	0.0489812	36	0.0223366	0.00156742	2.78852	2184.11	2182.33	295.815	295.886	0.0712542	5.231489e+05	57.0836	2310.55	1889.13	1003.35
+Station 064	0.0497586	35	0.0225377	0.00159577	2.80122	2177.48	2175.7	295.743	295.815	0.0716501	5.213432e+05	57.3987	2253.47	1886.43	976.935
+Station 065	0.0505361	34	0.0227388	0.00162437	2.81378	2170.92	2169.15	295.671	295.743	0.0720442	5.195563e+05	57.7123	2196.07	1883.71	950.483
+Station 066	0.0513136	33	0.0229399	0.00165322	2.8262	2164.43	2162.66	295.599	295.671	0.0724364	5.177876e+05	58.0244	2138.36	1880.98	923.994
+Station 067	0.0520911	32	0.0231409	0.00168233	2.8385	2157.99	2156.23	295.526	295.599	0.0728269	5.160367e+05	58.3351	2080.33	1878.24	897.469
+Station 068	0.0528686	31	0.023342	0.0017117	2.85066	2151.62	2149.86	295.453	295.526	0.0732156	5.143031e+05	58.6443	2022	1875.5	870.907
+Station 069	0.053646	30	0.0235431	0.00174131	2.8627	2145.31	2143.56	295.379	295.453	0.0736025	5.125863e+05	58.952	1963.35	1872.74	844.308
+Station 070	0.0544235	29	0.0237442	0.00177118	2.87462	2139.06	2137.31	295.305	295.379	0.0739876	5.108859e+05	59.2583	1904.4	1869.97	817.672
+Station 071	0.055201	28	0.0239452	0.00180131	2.88642	2132.87	2131.13	295.231	295.305	0.0743709	5.092016e+05	59.5631	1845.14	1867.19	790.998
+Station 072	0.0559785	27	0.0241463	0.00183169	2.8981	2126.73	2124.99	295.156	295.231	0.0747525	5.075329e+05	59.8664	1785.58	1864.4	764.286
+Station 073	0.0567559	26	0.0243474	0.00186232	2.90966	2120.64	2118.92	295.081	295.156	0.0751322	5.058794e+05	60.1683	1725.71	1861.6	737.537
+Station 074	0.0575334	25	0.0245485	0.00189321	2.92111	2114.61	2112.89	295.005	295.081	0.0755102	5.042408e+05	60.4687	1665.54	1858.79	710.749
+Station 075	0.0583109	24	0.0247495	0.00192435	2.93245	2108.64	2106.92	294.929	295.005	0.0758864	5.026168e+05	60.7677	1605.08	1855.97	683.922
+Station 076	0.0590884	23	0.0249506	0.00195575	2.94369	2102.71	2101	294.853	294.929	0.0762607	5.010068e+05	61.0651	1544.31	1853.14	657.057
+Station 077	0.0598659	22	0.0251517	0.0019874	2.95481	2096.83	2095.13	294.777	294.853	0.0766334	4.994107e+05	61.3611	1483.24	1850.3	630.152
+Station 078	0.0606433	21	0.0253528	0.0020193	2.96584	2091	2089.31	294.7	294.777	0.0770042	4.978281e+05	61.6557	1421.88	1847.46	603.208
+Station 079	0.0614208	20	0.0255538	0.00205146	2.97676	2085.22	2083.53	294.622	294.7	0.0773732	4.962587e+05	61.9488	1360.23	1844.6	576.225
+Station 080	0.0621983	19	0.0257549	0.00208387	2.98758	2079.49	2077.8	294.544	294.622	0.0777405	4.947022e+05	62.2404	1298.28	1841.74	549.202
+Station 081	0.0629758	18	0.025956	0.00211653	2.99831	2073.8	2072.11	294.466	294.544	0.0781059	4.931582e+05	62.5306	1236.04	1838.86	522.139
+Station 082	0.0637533	17	0.0261571	0.00214945	3.00894	2068.15	2066.47	294.388	294.466	0.0784696	4.916266e+05	62.8193	1173.51	1835.98	495.035
+Station 083	0.0645307	16	0.0263581	0.00218263	3.01947	2062.55	2060.88	294.309	294.388	0.0788315	4.901070e+05	63.1065	1110.69	1833.08	467.891
+Station 084	0.0653082	15	0.0265592	0.00221605	3.02992	2056.98	2055.32	294.23	294.309	0.0791916	4.885992e+05	63.3923	1047.58	1830.18	440.707
+Station 085	0.0660857	14	0.0267603	0.00224974	3.04027	2051.46	2049.81	294.15	294.23	0.07955	4.871029e+05	63.6766	984.189	1827.27	413.481
+Station 086	0.0668632	13	0.0269614	0.00228367	3.05054	2045.99	2044.33	294.07	294.15	0.0799066	4.856178e+05	63.9595	920.512	1824.36	386.214
+Station 087	0.0676407	12	0.0271624	0.00231786	3.06072	2040.55	2038.9	293.99	294.07	0.0802614	4.841437e+05	64.2409	856.553	1821.43	358.905
+Station 088	0.0684181	11	0.0273635	0.00235231	3.07081	2035.14	2033.5	293.91	293.99	0.0806144	4.826805e+05	64.5208	792.312	1818.5	331.555
+Station 089	0.0691956	10	0.0275646	0.002387	3.08082	2029.78	2028.14	293.829	293.91	0.0809656	4.812277e+05	64.7993	727.791	1815.55	304.162
+Station 090	0.0699731	9	0.0277657	0.00242195	3.09074	2024.45	2022.82	293.747	293.829	0.0813151	4.797853e+05	65.0764	662.992	1812.6	276.727
+Station 091	0.0707506	8	0.0279667	0.00245716	3.10059	2019.16	2017.53	293.666	293.747	0.0816628	4.783530e+05	65.352	597.915	1809.64	249.25
+Station 092	0.071528	7	0.0281678	0.00249262	3.11036	2013.91	2012.28	293.584	293.666	0.0820087	4.769306e+05	65.6261	532.563	1806.68	221.73
+Station 093	0.0723055	6	0.0283689	0.00252833	3.12005	2008.69	2007.07	293.501	293.584	0.0823529	4.755179e+05	65.8988	466.937	1803.71	194.167
+Station 094	0.073083	5	0.02857	0.0025643	3.12966	2003.5	2001.89	293.419	293.501	0.0826953	4.741148e+05	66.1701	401.038	1800.73	166.561
+Station 095	0.0738605	4	0.028771	0.00260052	3.13919	1998.35	1996.74	293.336	293.419	0.0830359	4.727209e+05	66.4399	334.868	1797.74	138.911
+Station 096	0.074638	3	0.0289721	0.002637	3.14866	1993.23	1991.62	293.252	293.336	0.0833748	4.713361e+05	66.7082	268.429	1794.74	111.217
+Station 097	0.0754154	2	0.0291732	0.00267373	3.15804	1988.14	1986.54	293.168	293.252	0.0837118	4.699603e+05	66.9751	201.72	1791.74	83.4796
+Station 098	0.0761929	1	0.0293743	0.00271072	3.16736	1983.08	1981.49	293.084	293.168	0.0840472	4.685933e+05	67.2406	134.745	1788.73	55.6977
+Station 099	0.0769704	0	0.0295753	0.00274795	3.17661	1978.06	1976.47	293	293.084	0.0843807	4.672348e+05	67.5046	67.5046	1785.71	27.8712

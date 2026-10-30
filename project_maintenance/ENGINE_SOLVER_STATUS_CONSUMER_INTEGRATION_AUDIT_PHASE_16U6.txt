@@ -1,0 +1,168 @@
+LEAF PHASE 16U.6
+ENGINE SOLVER STATUS CONSUMER INTEGRATION AUDIT
+================================================
+
+STATUS: PASS_PHASE_16U6_ENGINE_SOLVER_STATUS_CONSUMER_INTEGRATION_AUDIT
+Generated: 2026-09-25T00:11:05
+
+SCOPE
+-----
+This phase audits Wave A solver status consumers.
+No engineering logic is modified.
+No solver equations are modified.
+No production consumers are patched in this phase.
+
+SUMMARY
+-------
+Solver candidates: 62
+Low risk: 39
+Medium risk: 17
+High risk: 6
+
+GROUP BREAKDOWN
+---------------
+FAIL_COLLECTION_OR_TEXT_CONTAINS: 4
+FAIL_EQUALITY_CHECK: 3
+FAIL_NEGATION_CHECK: 4
+MANUAL_REVIEW: 6
+MEMBERSHIP_STATUS_CHECK: 3
+PASS_EQUALITY_CHECK: 5
+PASS_NEGATION_CHECK: 27
+PREFIX_SUFFIX_STATUS_CHECK: 6
+WARN_COLLECTION_OR_TEXT_CONTAINS: 4
+
+RISK BREAKDOWN
+--------------
+HIGH: 6
+LOW: 39
+MEDIUM: 17
+
+LOW-RISK FIRST PATCH TARGETS
+----------------------------
+leaf_qt/engine_solver.py:6101 [PASS_NEGATION_CHECK/raw_status_literal] if results.get("coupled_split_auto_tuned_status") != "PASS":
+  wrapper: not solver_pass(value)
+  reason: Direct non-PASS decision can be wrapped without changing numerical calculations.
+leaf_qt/engine_solver.py:6253 [FAIL_NEGATION_CHECK/raw_status_literal] passing = [item for item in screened if item["status"] != "FAIL"]
+  wrapper: not solver_fail(value)
+  reason: Direct non-FAIL decision can be wrapped by solver_fail.
+leaf_qt/engine_solver.py:6543 [FAIL_NEGATION_CHECK/ast_status_compare] if status != "FAIL":
+  wrapper: not solver_fail(value)
+  reason: Direct non-FAIL decision can be wrapped by solver_fail.
+leaf_qt/engine_solver.py:6543 [FAIL_NEGATION_CHECK/direct_status_inequality] if status != "FAIL":
+  wrapper: not solver_fail(value)
+  reason: Direct non-FAIL decision can be wrapped by solver_fail.
+leaf_qt/engine_solver.py:6543 [FAIL_NEGATION_CHECK/raw_status_literal] if status != "FAIL":
+  wrapper: not solver_fail(value)
+  reason: Direct non-FAIL decision can be wrapped by solver_fail.
+leaf_qt/engine_solver.py:7192 [PASS_EQUALITY_CHECK/raw_status_literal] if item.get("status") == "PASS"
+  wrapper: solver_pass(value)
+  reason: Direct PASS equality can be wrapped by solver_pass.
+leaf_qt/engine_solver.py:7418 [PASS_NEGATION_CHECK/raw_status_literal] if thermal_stress_failed_count > 0 and results.get("bond_coat_validation_status") != "PASS":
+  wrapper: not solver_pass(value)
+  reason: Direct non-PASS decision can be wrapped without changing numerical calculations.
+leaf_qt/engine_solver.py:8028 [PASS_NEGATION_CHECK/raw_status_literal] if source_data_gate != "PASS":
+  wrapper: not solver_pass(value)
+  reason: Direct non-PASS decision can be wrapped without changing numerical calculations.
+leaf_qt/engine_solver.py:8033 [PASS_NEGATION_CHECK/raw_status_literal] if weighted_gate != "PASS":
+  wrapper: not solver_pass(value)
+  reason: Direct non-PASS decision can be wrapped without changing numerical calculations.
+leaf_qt/engine_solver.py:9061 [FAIL_EQUALITY_CHECK/raw_status_literal] if results.get("explicit_coating_thermal_stress_status") == "FAIL":
+  wrapper: solver_fail(value)
+  reason: Direct FAIL equality can be wrapped by solver_fail.
+leaf_qt/engine_solver.py:9072 [PASS_NEGATION_CHECK/raw_status_literal] if results.get("coating_stack_adhesion_risk_status") != "PASS":
+  wrapper: not solver_pass(value)
+  reason: Direct non-PASS decision can be wrapped without changing numerical calculations.
+leaf_qt/engine_solver.py:9083 [PASS_NEGATION_CHECK/raw_status_literal] if results.get("coating_stack_spallation_fatigue_status") != "PASS":
+  wrapper: not solver_pass(value)
+  reason: Direct non-PASS decision can be wrapped without changing numerical calculations.
+leaf_qt/engine_solver.py:9094 [PASS_NEGATION_CHECK/raw_status_literal] if results.get("coating_stack_source_data_gate") != "PASS":
+  wrapper: not solver_pass(value)
+  reason: Direct non-PASS decision can be wrapped without changing numerical calculations.
+leaf_qt/engine_solver.py:9436 [PASS_NEGATION_CHECK/raw_status_literal] if data_mode != "SOURCED_VALIDATION_MODE" or source_gate != "PASS":
+  wrapper: not solver_pass(value)
+  reason: Direct non-PASS decision can be wrapped without changing numerical calculations.
+leaf_qt/engine_solver.py:9447 [PASS_NEGATION_CHECK/ast_status_compare] if bond_status != "PASS":
+  wrapper: not solver_pass(value)
+  reason: Direct non-PASS decision can be wrapped without changing numerical calculations.
+leaf_qt/engine_solver.py:9447 [PASS_NEGATION_CHECK/direct_status_inequality] if bond_status != "PASS":
+  wrapper: not solver_pass(value)
+  reason: Direct non-PASS decision can be wrapped without changing numerical calculations.
+leaf_qt/engine_solver.py:9447 [PASS_NEGATION_CHECK/raw_status_literal] if bond_status != "PASS":
+  wrapper: not solver_pass(value)
+  reason: Direct non-PASS decision can be wrapped without changing numerical calculations.
+leaf_qt/engine_solver.py:9458 [PASS_NEGATION_CHECK/ast_status_compare] if thermal_stress_status != "PASS":
+  wrapper: not solver_pass(value)
+  reason: Direct non-PASS decision can be wrapped without changing numerical calculations.
+leaf_qt/engine_solver.py:9458 [PASS_NEGATION_CHECK/direct_status_inequality] if thermal_stress_status != "PASS":
+  wrapper: not solver_pass(value)
+  reason: Direct non-PASS decision can be wrapped without changing numerical calculations.
+leaf_qt/engine_solver.py:9458 [PASS_NEGATION_CHECK/raw_status_literal] if thermal_stress_status != "PASS":
+  wrapper: not solver_pass(value)
+  reason: Direct non-PASS decision can be wrapped without changing numerical calculations.
+leaf_qt/engine_solver.py:9469 [PASS_NEGATION_CHECK/ast_status_compare] if adhesion_status != "PASS":
+  wrapper: not solver_pass(value)
+  reason: Direct non-PASS decision can be wrapped without changing numerical calculations.
+leaf_qt/engine_solver.py:9469 [PASS_NEGATION_CHECK/direct_status_inequality] if adhesion_status != "PASS":
+  wrapper: not solver_pass(value)
+  reason: Direct non-PASS decision can be wrapped without changing numerical calculations.
+leaf_qt/engine_solver.py:9469 [PASS_NEGATION_CHECK/raw_status_literal] if adhesion_status != "PASS":
+  wrapper: not solver_pass(value)
+  reason: Direct non-PASS decision can be wrapped without changing numerical calculations.
+leaf_qt/engine_solver.py:9480 [PASS_NEGATION_CHECK/ast_status_compare] if fatigue_status != "PASS":
+  wrapper: not solver_pass(value)
+  reason: Direct non-PASS decision can be wrapped without changing numerical calculations.
+leaf_qt/engine_solver.py:9480 [PASS_NEGATION_CHECK/direct_status_inequality] if fatigue_status != "PASS":
+  wrapper: not solver_pass(value)
+  reason: Direct non-PASS decision can be wrapped without changing numerical calculations.
+leaf_qt/engine_solver.py:9480 [PASS_NEGATION_CHECK/raw_status_literal] if fatigue_status != "PASS":
+  wrapper: not solver_pass(value)
+  reason: Direct non-PASS decision can be wrapped without changing numerical calculations.
+leaf_qt/engine_solver.py:10593 [PASS_NEGATION_CHECK/raw_status_literal] if source_gate != "PASS" and final_acceptance == "VALIDATION_SUPPORT_ALLOWED":
+  wrapper: not solver_pass(value)
+  reason: Direct non-PASS decision can be wrapped without changing numerical calculations.
+leaf_qt/engine_solver.py:11970 [PASS_NEGATION_CHECK/ast_status_compare] if preview_status != "PASS":
+  wrapper: not solver_pass(value)
+  reason: Direct non-PASS decision can be wrapped without changing numerical calculations.
+leaf_qt/engine_solver.py:11970 [PASS_NEGATION_CHECK/direct_status_inequality] if preview_status != "PASS":
+  wrapper: not solver_pass(value)
+  reason: Direct non-PASS decision can be wrapped without changing numerical calculations.
+leaf_qt/engine_solver.py:11970 [PASS_NEGATION_CHECK/raw_status_literal] if preview_status != "PASS":
+  wrapper: not solver_pass(value)
+  reason: Direct non-PASS decision can be wrapped without changing numerical calculations.
+leaf_qt/engine_solver.py:12469 [PASS_EQUALITY_CHECK/raw_status_literal] if feasibility == "REGEN_ONLY_FEASIBLE" and viability == "PASS":
+  wrapper: solver_pass(value)
+  reason: Direct PASS equality can be wrapped by solver_pass.
+leaf_qt/engine_solver.py:15212 [PASS_EQUALITY_CHECK/raw_status_literal] if results.get("coupled_split_auto_tuned_status") == "PASS":
+  wrapper: solver_pass(value)
+  reason: Direct PASS equality can be wrapped by solver_pass.
+leaf_qt/engine_solver.py:15472 [PASS_NEGATION_CHECK/ast_status_compare] if combined_status != "PASS":
+  wrapper: not solver_pass(value)
+  reason: Direct non-PASS decision can be wrapped without changing numerical calculations.
+leaf_qt/engine_solver.py:15472 [PASS_NEGATION_CHECK/direct_status_inequality] if combined_status != "PASS":
+  wrapper: not solver_pass(value)
+  reason: Direct non-PASS decision can be wrapped without changing numerical calculations.
+leaf_qt/engine_solver.py:15472 [PASS_NEGATION_CHECK/raw_status_literal] if combined_status != "PASS":
+  wrapper: not solver_pass(value)
+  reason: Direct non-PASS decision can be wrapped without changing numerical calculations.
+leaf_qt/engine_solver.py:15476 [FAIL_EQUALITY_CHECK/raw_status_literal] if results.get("velocity_limited_combined_preview_status") == "FAIL":
+  wrapper: solver_fail(value)
+  reason: Direct FAIL equality can be wrapped by solver_fail.
+leaf_qt/engine_solver.py:15523 [FAIL_EQUALITY_CHECK/raw_status_literal] if results.get("coupled_split_strategy_status") == "FAIL":
+  wrapper: solver_fail(value)
+  reason: Direct FAIL equality can be wrapped by solver_fail.
+leaf_qt/engine_solver.py:15529 [PASS_EQUALITY_CHECK/raw_status_literal] if results.get("vl_split_strategy_status") == "PASS":
+  wrapper: solver_pass(value)
+  reason: Direct PASS equality can be wrapped by solver_pass.
+leaf_qt/regen_geometry_solver.py:98 [PASS_EQUALITY_CHECK/raw_status_literal] solver_pass = candidate_report.get("status") == "PASS" and best_candidate is not None
+  wrapper: solver_pass(value)
+  reason: Direct PASS equality can be wrapped by solver_pass.
+
+NEXT PHASE
+----------
+PHASE 16U.7 — ENGINE SOLVER LOW-RISK STATUS WRAPPER PATCH
+
+COMPLETION NOTICE
+-----------------
+PHASE 16U.6 COMPLETE.
+Solver-side status consumer integration targets have been audited.
+The project may now patch only the low-risk equality/inequality group.

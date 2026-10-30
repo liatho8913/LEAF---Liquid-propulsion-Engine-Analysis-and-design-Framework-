@@ -1,0 +1,139 @@
+FULL PHASE 16U LIVE AUDIT
+=========================
+
+SOURCE OF TRUTH
+---------------
+This audit uses the locked Phase 16U baseline, not a moving dynamic scope.
+
+Locked baseline: 68
+Closed targets: 15
+Remaining candidates: 53
+Progress: 15/68
+
+COMPILE FAILURES
+----------------
+None
+
+CLOSED FILES
+------------
+- failure_root_cause_owner.py
+- regen_acceptance_audit.py
+- regen_acceptance_criteria_owner.py
+- regen_candidate_blueprint_population_validation_owner.py
+- regen_candidate_creation_report_owner.py
+- regen_candidate_generation_report_owner.py
+- regen_candidate_mutation_report_owner.py
+- regen_completion_gate_validation_owner.py
+- regen_geometry_constraint_owner.py
+- regen_geometry_report_owner.py
+- regen_optimisation_report_owner.py
+- regen_optimisation_scoring_owner.py
+- regen_runtime_execution_report_owner.py
+- regen_runtime_optimisation_report_owner.py
+- regen_system_signoff_validation_owner.py
+
+REMAINING FILES
+---------------
+- bond_coat_integration_owner.py [missing_LegacyCompatibilityProducer]
+- coating_property_consumption_audit_owner.py [missing_LegacyCompatibilityProducer]
+- coating_temperature_limit_integration_owner.py [missing_LegacyCompatibilityProducer]
+- coating_thermal_conductivity_integration_owner.py [missing_LegacyCompatibilityProducer]
+- coating_thermal_resistance_integration_owner.py [missing_LegacyCompatibilityProducer]
+- coating_thickness_integration_owner.py [missing_LegacyCompatibilityProducer]
+- material_density_integration_owner.py [missing_LegacyCompatibilityProducer]
+- material_property_consumption_audit_owner.py [missing_LegacyCompatibilityProducer]
+- material_specific_heat_integration_owner.py [missing_LegacyCompatibilityProducer]
+- material_strength_limit_integration_owner.py [missing_LegacyCompatibilityProducer]
+- material_temperature_limit_integration_owner.py [missing_LegacyCompatibilityProducer]
+- material_thermal_conductivity_integration_owner.py [missing_LegacyCompatibilityProducer]
+- real_engine_benchmark_completion_audit.py [missing_LegacyCompatibilityProducer, missing_status_severity, legacy_hits=3]
+    line 277: marker = "PASS" if check["passed"] else "FAIL"
+    line 308: if status.startswith("PASS"):
+    line 323: if status.startswith("PASS"):
+- real_engine_benchmark_failure_owner.py [missing_LegacyCompatibilityProducer]
+- regen_autonomous_optimisation_input_audit.py [missing_LegacyCompatibilityProducer, missing_status_severity, legacy_hits=1]
+    line 159: marker = "PASS" if check["passed"] else "FAIL"
+- regen_candidate_blueprint_completion_audit.py [missing_LegacyCompatibilityProducer, missing_status_severity, legacy_hits=1]
+    line 179: marker = "PASS" if check["passed"] else "FAIL"
+- regen_candidate_blueprint_generation_input_gate.py [missing_LegacyCompatibilityProducer, missing_status_severity, legacy_hits=1]
+    line 225: marker = "PASS" if check["passed"] else "FAIL"
+- regen_candidate_blueprint_mutation_validation.py [missing_LegacyCompatibilityProducer, missing_status_severity, legacy_hits=1]
+    line 243: marker = "PASS" if check["passed"] else "FAIL"
+- regen_candidate_blueprint_optimisation_completion_audit.py [missing_LegacyCompatibilityProducer, missing_status_severity, legacy_hits=1]
+    line 215: marker = "PASS" if check["passed"] else "FAIL"
+- regen_candidate_blueprint_population_completion_audit.py [missing_LegacyCompatibilityProducer, missing_status_severity, legacy_hits=1]
+    line 238: marker = "PASS" if check["passed"] else "FAIL"
+- regen_candidate_creation_completion_audit.py [missing_LegacyCompatibilityProducer, missing_status_severity, legacy_hits=1]
+    line 201: marker = "PASS" if check["passed"] else "FAIL"
+- regen_candidate_creation_input_audit.py [missing_LegacyCompatibilityProducer, missing_status_severity, legacy_hits=1]
+    line 213: marker = "PASS" if check["passed"] else "FAIL"
+- regen_candidate_creation_registration_owner.py [missing_LegacyCompatibilityProducer, missing_status_severity, legacy_hits=1]
+    line 185: marker = "PASS" if check["passed"] else "FAIL"
+- regen_candidate_creation_session_owner.py [missing_LegacyCompatibilityProducer, missing_status_severity, legacy_hits=1]
+    line 209: marker = "PASS" if check["passed"] else "FAIL"
+- regen_candidate_generation_completion_audit.py [missing_LegacyCompatibilityProducer, missing_status_severity, legacy_hits=1]
+    line 192: marker = "PASS" if check["passed"] else "FAIL"
+- regen_candidate_generation_input_gate.py [missing_LegacyCompatibilityProducer, missing_status_severity, legacy_hits=1]
+    line 168: marker = "PASS" if check["passed"] else "FAIL"
+- regen_candidate_generation_registration_owner.py [missing_LegacyCompatibilityProducer, missing_status_severity, legacy_hits=1]
+    line 178: marker = "PASS" if check["passed"] else "FAIL"
+- regen_candidate_generation_session_owner.py [missing_LegacyCompatibilityProducer, missing_status_severity, legacy_hits=1]
+    line 197: marker = "PASS" if check["passed"] else "FAIL"
+- regen_candidate_mutation_completion_audit.py [missing_LegacyCompatibilityProducer, missing_status_severity, legacy_hits=1]
+    line 336: label = "PASS" if check["passed"] else "FAIL"
+- regen_candidate_mutation_input_audit.py [missing_LegacyCompatibilityProducer, missing_status_severity, legacy_hits=1]
+    line 428: label = "PASS" if check["passed"] else "FAIL"
+- regen_candidate_mutation_master_gate.py [missing_LegacyCompatibilityProducer, missing_status_severity, legacy_hits=1]
+    line 331: label = "PASS" if check["passed"] else "FAIL"
+- regen_candidate_population_completion_audit.py [missing_LegacyCompatibilityProducer, missing_status_severity, legacy_hits=1]
+    line 505: label = "PASS" if check["passed"] else "FAIL"
+- regen_candidate_population_master_gate.py [missing_LegacyCompatibilityProducer, missing_status_severity, legacy_hits=1]
+    line 300: label = "PASS" if check["passed"] else "FAIL"
+- regen_candidate_ranking_completion_audit.py [missing_LegacyCompatibilityProducer, missing_status_severity, legacy_hits=1]
+    line 337: label = "PASS" if check["passed"] else "FAIL"
+- regen_candidate_ranking_input_audit.py [missing_LegacyCompatibilityProducer, missing_status_severity, legacy_hits=1]
+    line 407: label = "PASS" if check["passed"] else "FAIL"
+- regen_candidate_ranking_master_gate.py [missing_LegacyCompatibilityProducer, missing_status_severity, legacy_hits=1]
+    line 604: label = "PASS" if check["passed"] else "FAIL"
+- regen_evolution_loop_completion_audit.py [missing_LegacyCompatibilityProducer, missing_status_severity, legacy_hits=1]
+    line 332: label = "PASS" if check["passed"] else "FAIL"
+- regen_evolution_loop_input_audit.py [missing_LegacyCompatibilityProducer, missing_status_severity, legacy_hits=1]
+    line 374: label = "PASS" if check["passed"] else "FAIL"
+- regen_evolution_loop_master_gate.py [missing_LegacyCompatibilityProducer, missing_status_severity, legacy_hits=1]
+    line 328: label = "PASS" if check["passed"] else "FAIL"
+- regen_optimisation_completion_audit.py [missing_LegacyCompatibilityProducer, missing_status_severity, legacy_hits=1]
+    line 151: marker = "PASS" if check["passed"] else "FAIL"
+- regen_optimisation_registration_owner.py [missing_LegacyCompatibilityProducer, missing_status_severity, legacy_hits=1]
+    line 194: marker = "PASS" if check["passed"] else "FAIL"
+- regen_optimisation_session_owner.py [missing_LegacyCompatibilityProducer, missing_status_severity, legacy_hits=1]
+    line 165: marker = "PASS" if check["passed"] else "FAIL"
+- regen_runtime_execution_completion_audit.py [missing_LegacyCompatibilityProducer, missing_status_severity, legacy_hits=1]
+    line 191: marker = "PASS" if check["passed"] else "FAIL"
+- regen_runtime_execution_input_gate.py [missing_LegacyCompatibilityProducer, missing_status_severity, legacy_hits=1]
+    line 175: marker = "PASS" if check["passed"] else "FAIL"
+- regen_runtime_execution_registration_owner.py [missing_LegacyCompatibilityProducer, missing_status_severity, legacy_hits=1]
+    line 226: marker = "PASS" if check["passed"] else "FAIL"
+- regen_runtime_execution_session_owner.py [missing_LegacyCompatibilityProducer, missing_status_severity, legacy_hits=1]
+    line 193: marker = "PASS" if check["passed"] else "FAIL"
+- regen_runtime_optimisation_input_gate.py [missing_LegacyCompatibilityProducer, missing_status_severity, legacy_hits=1]
+    line 158: marker = "PASS" if check["passed"] else "FAIL"
+- regen_runtime_optimisation_registration_owner.py [missing_LegacyCompatibilityProducer, missing_status_severity, legacy_hits=1]
+    line 223: marker = "PASS" if check["passed"] else "FAIL"
+- regen_runtime_optimisation_session_owner.py [missing_LegacyCompatibilityProducer, missing_status_severity, legacy_hits=1]
+    line 175: marker = "PASS" if check["passed"] else "FAIL"
+- regen_scalability_failure_owner.py [missing_LegacyCompatibilityProducer]
+- regen_viewer_final_runtime_consistency_gate_phase_16q20.py [missing_LegacyCompatibilityProducer, missing_status_severity, legacy_hits=1]
+    line 125: state = "PASS" if item["passed"] else "FAIL"
+- regen_viewer_gui_runtime_acceptance_gate_phase_16q28.py [missing_LegacyCompatibilityProducer, missing_status_severity, legacy_hits=1]
+    line 93: state = "PASS" if item["passed"] else "FAIL"
+- regen_viewer_report_renderer.py [missing_LegacyCompatibilityProducer, missing_status_severity, legacy_hits=1]
+    line 179: f"{'PASS' if item.get('passed') else 'FAIL'}"
+
+PHASE EVIDENCE COUNT
+--------------------
+130
+
+OUTPUT FILES
+------------
+project_maintenance/FULL_PHASE_16U_LIVE_AUDIT.txt
+project_maintenance/FULL_PHASE_16U_LIVE_AUDIT.json

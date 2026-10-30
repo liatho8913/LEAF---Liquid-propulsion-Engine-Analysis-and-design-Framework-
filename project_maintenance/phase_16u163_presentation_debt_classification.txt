@@ -1,0 +1,101 @@
+LEAF PHASE 16U.163
+PRESENTATION DEBT CLASSIFICATION
+==========================================
+status=PASS_PHASE_16U163_PRESENTATION_DEBT_CLASSIFICATION
+total_findings=15512
+high_risk_file_count=40
+high_risk_finding_count=82
+
+CATEGORY COUNTS
+---------------
+HIGH_RISK_PRODUCTION_PRESENTATION_LOGIC=82
+LOW_RISK_CERTIFICATE_OR_REPORT_LITERAL=734
+LOW_RISK_MAINTENANCE_OR_TEST_EVIDENCE=7172
+MEDIUM_RISK_PRODUCTION_LITERAL=3512
+MEDIUM_RISK_UNCLASSIFIED_REPOSITORY_LITERAL=4012
+
+PATTERN COUNTS
+--------------
+inline_pass_fail_warn_literal=6828
+inline_status_contains_check=8639
+inline_status_prefix_check=42
+legacy_status_suffix_check=3
+
+TOP FILES BY FINDING COUNT
+---------------------------
+  212  LEAF_UPLOAD/leaf_qt/engine_solver.py
+  212  leaf_qt/engine_solver.py
+  144  leaf_qt/foundation_verification_harness.py
+  140  LEAF_UPLOAD/leaf_qt/foundation_verification_harness.py
+   66  leaf_qt/regen_cross_section_viewer.py
+   50  LEAF_UPLOAD/leaf_qt/test_regen_system_signoff_audit_phase_16e.py
+   50  leaf_qt/test_regen_system_signoff_audit_phase_16e.py
+   49  LEAF_UPLOAD/leaf_qt/regen_cross_section_viewer.py
+   42  LEAF_UPLOAD/leaf_qt/test_regen_completion_master_gate_phase_16f.py
+   42  leaf_qt/test_regen_completion_master_gate_phase_16f.py
+   38  leaf_qt/regen_system_signoff_validation_owner.py
+   37  LEAF_UPLOAD/leaf_qt/regen_system_signoff_validation_owner.py
+   34  leaf_qt/regen_validation_master_gate.py
+   32  project_maintenance/test_regen_convergence_master_gate_status_adapter_phase_16t3k3.py
+   32  project_maintenance/wave1_status_adapter_completion_audit_phase_16t3l.py
+   30  LEAF_UPLOAD/leaf_qt/test_temperature_dependent_solver_completion_audit_owner.py
+   30  leaf_qt/regen_completion_gate_validation_owner.py
+   30  leaf_qt/test_temperature_dependent_solver_completion_audit_owner.py
+   29  LEAF_UPLOAD/leaf_qt/regen_completion_gate_validation_owner.py
+   26  LEAF_UPLOAD/leaf_qt/test_regen_runtime_convergence_phase_14e.py
+   26  leaf_qt/regen_candidate_acceptance_master_gate.py
+   26  leaf_qt/regen_convergence_master_gate.py
+   26  leaf_qt/regen_optimisation_narrative_master_gate.py
+   26  leaf_qt/test_regen_runtime_convergence_phase_14e.py
+   25  leaf_qt/regen_geometry_master_gate.py
+   24  LEAF_UPLOAD/leaf_qt/regen_candidate_acceptance_master_gate.py
+   24  LEAF_UPLOAD/leaf_qt/test_real_engine_benchmark_completion_audit.py
+   24  LEAF_UPLOAD/leaf_qt/test_regen_candidate_comparison_viewer_backend_phase_15b.py
+   24  LEAF_UPLOAD/leaf_qt/test_regen_evolution_tree_backend_phase_15c.py
+   24  LEAF_UPLOAD/leaf_qt/test_regen_optimisation_viewer_backend_phase_15a.py
+
+HIGH RISK PRODUCTION FILES
+---------------------------
+    2  leaf_qt/design_history_narrative_builder.py
+   14  leaf_qt/engine_solver.py
+    2  leaf_qt/foundation_verification_harness.py
+    1  leaf_qt/regen_acceptance_master_gate.py
+    1  leaf_qt/regen_before_after_solver_comparison_report_owner.py
+    1  leaf_qt/regen_candidate_acceptance_completion_gate.py
+    2  leaf_qt/regen_candidate_comparison_master_gate.py
+    2  leaf_qt/regen_completion_master_gate.py
+    6  leaf_qt/regen_convergence_master_gate.py
+    1  leaf_qt/regen_cross_section_viewer_integration.py
+    1  leaf_qt/regen_engineering_acceptance_report.py
+    2  leaf_qt/regen_evolution_tree_master_gate.py
+    1  leaf_qt/regen_failure_root_cause_system.py
+    1  leaf_qt/regen_final_completion_audit.py
+    1  leaf_qt/regen_final_master_gate.py
+    1  leaf_qt/regen_final_signoff_report.py
+    1  leaf_qt/regen_final_verification_audit.py
+    1  leaf_qt/regen_live_geometry_commit_execution.py
+    1  leaf_qt/regen_optimisation_completion_gate.py
+    6  leaf_qt/regen_optimisation_controller_master_gate.py
+    2  leaf_qt/regen_optimisation_narrative_master_gate.py
+    1  leaf_qt/regen_optimisation_proof_system.py
+    2  leaf_qt/regen_optimisation_viewer_master_gate.py
+    2  leaf_qt/regen_runtime_candidate_evaluation_master_gate.py
+    2  leaf_qt/regen_runtime_convergence_master_gate.py
+    2  leaf_qt/regen_runtime_evolution_master_gate.py
+    2  leaf_qt/regen_runtime_selection_master_gate.py
+    1  leaf_qt/regen_station_viewer_integration.py
+    2  leaf_qt/regen_system_signoff_master_gate.py
+    2  leaf_qt/regen_unified_ecosystem_master_gate.py
+    2  leaf_qt/regen_unified_validation_integration_master_gate.py
+    2  leaf_qt/regen_unified_viewer_integration_master_gate.py
+    2  leaf_qt/regen_validation_master_gate.py
+    1  leaf_qt/regen_viewer_completion_gate.py
+    1  leaf_qt/regen_viewer_data_adapter.py
+    4  leaf_qt/regen_viewer_gui_runtime_acceptance_gate_phase_16q28.py
+    1  leaf_qt/regen_viewer_navigation_system.py
+    1  leaf_qt/regen_viewer_ownership_architecture.py
+    1  leaf_qt/regen_viewer_report_renderer.py
+    1  leaf_qt/structured_status_access.py
+
+json=/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u163_presentation_debt_classification.json
+text=/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u163_presentation_debt_classification.txt

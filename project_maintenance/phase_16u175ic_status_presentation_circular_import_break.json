@@ -1,0 +1,12 @@
+{
+  "phase": "16U.175I-C",
+  "target": "leaf_qt/structured_status_access.py",
+  "changed": true,
+  "compile_error": null,
+  "import_error": null,
+  "self_test_failures": [],
+  "rolled_back": false,
+  "passed": true,
+  "status": "PASS_PHASE_16U175IC_STATUS_PRESENTATION_CIRCULAR_IMPORT_BREAK",
+  "next_phase": "16U.175I_DEDUPLICATION_REGRESSION_AND_COMPATIBILITY_AUDIT"
+}

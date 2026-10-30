@@ -1,0 +1,39 @@
+LEAF PHASE 16U.40
+REGEN CROSS SECTION VIEWER PRESENTATION LAYER CLOSURE GATE
+==========================================================
+
+STATUS: PASS_PHASE_16U40_REGEN_CROSS_SECTION_VIEWER_PRESENTATION_LAYER_CLOSURE_GATE
+Generated: 2026-06-28T02:28:45
+
+FEATURE
+-------
+Closure gate for the first wider report-owner/UI presentation-layer rollout.
+
+TARGET CLOSED
+-------------
+leaf_qt/regen_cross_section_viewer.py
+
+CHECKS
+------
+production_target_exists: PASS — leaf_qt/regen_cross_section_viewer.py
+upload_duplicate_exists: PASS — LEAF_UPLOAD/leaf_qt/regen_cross_section_viewer.py
+phase_16u38_patch_script_exists: PASS — project_maintenance/regen_cross_section_viewer_presentation_layer_patch_phase_16u38.py
+phase_16u39_regression_script_exists: PASS — project_maintenance/regen_cross_section_viewer_presentation_layer_regression_phase_16u39.py
+phase_16u38_patch_rerun_passed: PASS — returncode=0
+phase_16u39_regression_rerun_passed: PASS — returncode=0
+phase_16u38_completion_flag_true: PASS — PASS_PHASE_16U38_REGEN_CROSS_SECTION_VIEWER_PRESENTATION_LAYER_PATCH
+phase_16u39_completion_flag_true: PASS — PASS_PHASE_16U39_REGEN_CROSS_SECTION_VIEWER_PRESENTATION_LAYER_REGRESSION
+production_target_contains_shared_status_layer: PASS — shared presentation helpers present
+leaf_upload_duplicate_still_unpatched: PASS — duplicate remains untouched
+
+CLOSURE DECISION
+----------------
+The regen cross-section viewer presentation-layer rollout is CLOSED.
+
+COMPLETION NOTICE
+-----------------
+PHASE 16U.40 COMPLETE.
+
+NEXT FEATURE
+------------
+PHASE 16U.41 — NEXT REPORT OWNER ROLLOUT CANDIDATE AUDIT

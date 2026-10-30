@@ -1,0 +1,115 @@
+{
+  "phase": "16U.14",
+  "status": "PASS_PHASE_16U14_WAVE_A_ENGINE_SOLVER_STATUS_MIGRATION_CLOSURE_GATE",
+  "generated": "2026-06-28T00:52:26",
+  "missing_files": [],
+  "missing_json": [],
+  "phase_status_checks": [
+    {
+      "phase": "16U.8",
+      "expected": "PASS_PHASE_16U8_ENGINE_SOLVER_LOW_RISK_STATUS_WRAPPER_PATCH",
+      "actual": "PASS_PHASE_16U8_ENGINE_SOLVER_LOW_RISK_STATUS_WRAPPER_PATCH",
+      "passed": true
+    },
+    {
+      "phase": "16U.9",
+      "expected": "PASS_PHASE_16U9_ENGINE_SOLVER_LOW_RISK_STATUS_WRAPPER_REGRESSION",
+      "actual": "PASS_PHASE_16U9_ENGINE_SOLVER_LOW_RISK_STATUS_WRAPPER_REGRESSION",
+      "passed": true
+    },
+    {
+      "phase": "16U.10",
+      "expected": "PASS_PHASE_16U10_ENGINE_SOLVER_MEDIUM_RISK_STATUS_CONSUMER_AUDIT",
+      "actual": "PASS_PHASE_16U10_ENGINE_SOLVER_MEDIUM_RISK_STATUS_CONSUMER_AUDIT",
+      "passed": true
+    },
+    {
+      "phase": "16U.11",
+      "expected": "PASS_PHASE_16U11_ENGINE_SOLVER_MEDIUM_RISK_STATUS_WRAPPER_PATCH",
+      "actual": "PASS_PHASE_16U11_ENGINE_SOLVER_MEDIUM_RISK_STATUS_WRAPPER_PATCH",
+      "passed": true
+    },
+    {
+      "phase": "16U.12",
+      "expected": "PASS_PHASE_16U12_ENGINE_SOLVER_MEDIUM_RISK_STATUS_WRAPPER_REGRESSION",
+      "actual": "PASS_PHASE_16U12_ENGINE_SOLVER_MEDIUM_RISK_STATUS_WRAPPER_REGRESSION",
+      "passed": true
+    },
+    {
+      "phase": "16U.13",
+      "expected": "PASS_PHASE_16U13_ENGINE_SOLVER_REMAINING_STATUS_CONSUMER_REVIEW",
+      "actual": "PASS_PHASE_16U13_ENGINE_SOLVER_REMAINING_STATUS_CONSUMER_REVIEW",
+      "passed": true
+    }
+  ],
+  "missing_required_tokens": [],
+  "forbidden_tokens_present": [],
+  "remaining_candidate_count": 18,
+  "wave_closure_blocker_count": 0,
+  "compile_results": [
+    {
+      "file": "leaf_qt/engine_solver.py",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "leaf_qt/regen_geometry_solver.py",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "leaf_qt/solver_status_access.py",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "leaf_qt/structured_status_access.py",
+      "passed": true,
+      "error": ""
+    }
+  ],
+  "checks": [
+    {
+      "name": "required_source_files_present",
+      "passed": true,
+      "detail": "0 missing"
+    },
+    {
+      "name": "required_phase_json_present",
+      "passed": true,
+      "detail": "0 missing"
+    },
+    {
+      "name": "all_required_phase_statuses_passed",
+      "passed": true,
+      "detail": "6/6 passed"
+    },
+    {
+      "name": "required_wrapper_tokens_present",
+      "passed": true,
+      "detail": "0 missing"
+    },
+    {
+      "name": "patched_legacy_tokens_absent",
+      "passed": true,
+      "detail": "0 present"
+    },
+    {
+      "name": "remaining_consumers_recorded",
+      "passed": true,
+      "detail": "18"
+    },
+    {
+      "name": "wave_closure_blockers_absent",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "all_closure_files_compile",
+      "passed": true,
+      "detail": "4/4 compiled"
+    }
+  ],
+  "wave_a_engine_solver_status_migration_closed": true,
+  "phase_16u14_wave_a_engine_solver_status_migration_closure_gate_complete": true
+}

@@ -1,0 +1,17 @@
+{
+  "phase": "16U.165B",
+  "source_cleanup": "/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u165_safe_transactional_presentation_debt_cleanup_wave1.json",
+  "failed_subset_count": 1,
+  "repaired_count": 0,
+  "unrepaired_count": 1,
+  "repaired": [],
+  "unrepaired": [
+    {
+      "path": "leaf_qt/regen_viewer_integration_report_owner.py",
+      "reason": "no_ast_safe_replacement_found"
+    }
+  ],
+  "passed": false,
+  "status": "FAIL_PHASE_16U165B_FAILED_SUBSET_REPAIR",
+  "next_phase": "16U.166_SAFE_WAVE_REGRESSION_AND_RECLASSIFICATION"
+}

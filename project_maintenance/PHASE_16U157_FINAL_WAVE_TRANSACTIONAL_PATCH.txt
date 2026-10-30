@@ -1,0 +1,39 @@
+LEAF PHASE 16U.157
+FINAL WAVE TRANSACTIONAL PATCH
+================================
+
+STATUS: FAIL_PHASE_16U157_FINAL_WAVE_TRANSACTIONAL_PATCH
+
+Files attempted: 8
+Files passed: 6
+Files failed: 2
+
+FILES
+-----
+- real_engine_benchmark_completion_audit.py :: PASS :: inserted_status_presentation_import_fallback, legacy_replacement:"PASS"\s+if\s+([^,\n]+?)\s+else\s+"FAIL":1, status_prefix_suffix_replacement:([A-Za-z_][A-Za-z0-9_]*)\.startswith\(\s*["\']PASS["\']\s*\):2
+- real_engine_benchmark_failure_owner.py :: PASS :: extended_existing_status_presentation_import
+- regen_autonomous_optimisation_input_audit.py :: PASS :: inserted_status_presentation_import_fallback, legacy_replacement:"PASS"\s+if\s+([^,\n]+?)\s+else\s+"FAIL":1
+- regen_candidate_generation_session_owner.py :: PASS :: inserted_status_presentation_import_fallback, legacy_replacement:"PASS"\s+if\s+([^,\n]+?)\s+else\s+"FAIL":1
+- regen_scalability_failure_owner.py :: PASS :: extended_existing_status_presentation_import
+- regen_viewer_final_runtime_consistency_gate_phase_16q20.py :: FAIL :: inserted_status_presentation_import_fallback, legacy_replacement:"PASS"\s+if\s+([^,\n]+?)\s+else\s+"FAIL":1
+- regen_viewer_gui_runtime_acceptance_gate_phase_16q28.py :: FAIL :: inserted_status_presentation_import_fallback, legacy_replacement:"PASS"\s+if\s+([^,\n]+?)\s+else\s+"FAIL":1
+- regen_viewer_report_renderer.py :: PASS :: inserted_status_presentation_import_fallback, legacy_replacement:'PASS'\s+if\s+([^,\n]+?)\s+else\s+'FAIL':1
+
+FAILURES
+--------
+- regen_viewer_final_runtime_consistency_gate_phase_16q20.py: post_compile_failed:   File "/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/regen_viewer_final_runtime_consistency_gate_phase_16q20.py", line 30
+    from __future__ import annotations
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: from __future__ imports must occur at the beginning of the file
+
+- regen_viewer_final_runtime_consistency_gate_phase_16q20.py: LegacyCompatibilityProducer missing after patch
+- regen_viewer_final_runtime_consistency_gate_phase_16q20.py: status_severity missing after patch
+- regen_viewer_final_runtime_consistency_gate_phase_16q20.py: file unchanged after patch
+- regen_viewer_gui_runtime_acceptance_gate_phase_16q28.py: post_compile_failed:   File "/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/regen_viewer_gui_runtime_acceptance_gate_phase_16q28.py", line 30
+    from __future__ import annotations
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: from __future__ imports must occur at the beginning of the file
+
+- regen_viewer_gui_runtime_acceptance_gate_phase_16q28.py: LegacyCompatibilityProducer missing after patch
+- regen_viewer_gui_runtime_acceptance_gate_phase_16q28.py: status_severity missing after patch
+- regen_viewer_gui_runtime_acceptance_gate_phase_16q28.py: file unchanged after patch

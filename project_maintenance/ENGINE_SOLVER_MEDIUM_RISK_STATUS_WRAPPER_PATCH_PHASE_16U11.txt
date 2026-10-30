@@ -1,0 +1,45 @@
+LEAF PHASE 16U.11
+ENGINE SOLVER MEDIUM-RISK STATUS WRAPPER PATCH
+================================================
+
+STATUS: PASS_PHASE_16U11_ENGINE_SOLVER_MEDIUM_RISK_STATUS_WRAPPER_PATCH
+Generated: 2026-06-27T17:42:29
+
+SCOPE
+-----
+This phase patches only safe medium-risk Wave A solver status consumers.
+Manual-review medium-risk items are intentionally preserved.
+No solver equations are changed.
+No numerical calculations are changed.
+
+FILES MODIFIED
+--------------
+leaf_qt/engine_solver.py
+
+SUMMARY
+-------
+Import changed: True
+Applied: 3
+Already applied: 0
+Missing: 0
+Compile: PASS 
+Manual-review items preserved: True
+
+PATCHES
+-------
+OLD: if status not in ("REQUIRED", "PASS"):
+NEW: if status != "REQUIRED" and not solver_pass(status):
+
+OLD: if "FAIL" in statuses:
+NEW: if solver_highest_severity(statuses) == "FAIL":
+
+OLD: elif "WARN" in statuses:
+NEW: elif solver_highest_severity(statuses) == "WARN":
+
+COMPLETION NOTICE
+-----------------
+PHASE 16U.11 COMPLETE.
+
+NEXT PHASE
+----------
+PHASE 16U.12 — ENGINE SOLVER MEDIUM-RISK STATUS WRAPPER REGRESSION

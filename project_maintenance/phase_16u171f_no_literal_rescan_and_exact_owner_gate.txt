@@ -1,0 +1,75 @@
+LEAF PHASE 16U.171F
+NO-LITERAL RESCAN AND EXACT OWNER GATE
+==============================================
+status=PASS_PHASE_16U171F_NO_LITERAL_RESCAN_AND_EXACT_OWNER_GATE
+exact_owned_count=52
+unresolved_count=19
+
+COUNTS
+------
+LOCAL_STATUS_STATE_MACHINE_OWNER_REQUIRED=20
+RESULTS_PAYLOAD_EXACT_STATUS_OWNER_REQUIRED=32
+UNQUOTED_STATUS_TOKEN_REVIEW_REQUIRED=19
+
+UNRESOLVED ENTRIES
+------------------
+
+leaf_qt/regen_acceptance_master_gate.py:64 [UNQUOTED_STATUS_TOKEN_REVIEW_REQUIRED]
+statement=if status == PASS_STATUS:
+
+leaf_qt/regen_before_after_solver_comparison_report_owner.py:63 [UNQUOTED_STATUS_TOKEN_REVIEW_REQUIRED]
+statement=if status == PASS_STATUS:
+
+leaf_qt/regen_candidate_acceptance_completion_gate.py:77 [UNQUOTED_STATUS_TOKEN_REVIEW_REQUIRED]
+statement=if status == PASS_STATUS:
+
+leaf_qt/regen_cross_section_viewer_integration.py:71 [UNQUOTED_STATUS_TOKEN_REVIEW_REQUIRED]
+statement=if status == PASS_STATUS:
+
+leaf_qt/regen_engineering_acceptance_report.py:41 [UNQUOTED_STATUS_TOKEN_REVIEW_REQUIRED]
+statement=if status == PASS_STATUS:
+
+leaf_qt/regen_failure_root_cause_system.py:38 [UNQUOTED_STATUS_TOKEN_REVIEW_REQUIRED]
+statement=if status == PASS_STATUS:
+
+leaf_qt/regen_final_completion_audit.py:53 [UNQUOTED_STATUS_TOKEN_REVIEW_REQUIRED]
+statement=if status == PASS_STATUS:
+
+leaf_qt/regen_final_master_gate.py:61 [UNQUOTED_STATUS_TOKEN_REVIEW_REQUIRED]
+statement=if status == PASS_STATUS:
+
+leaf_qt/regen_final_signoff_report.py:52 [UNQUOTED_STATUS_TOKEN_REVIEW_REQUIRED]
+statement=if status == PASS_STATUS:
+
+leaf_qt/regen_final_verification_audit.py:70 [UNQUOTED_STATUS_TOKEN_REVIEW_REQUIRED]
+statement=if status == PASS_STATUS:
+
+leaf_qt/regen_live_geometry_commit_execution.py:90 [UNQUOTED_STATUS_TOKEN_REVIEW_REQUIRED]
+statement=if status == PASS_STATUS:
+
+leaf_qt/regen_optimisation_completion_gate.py:65 [UNQUOTED_STATUS_TOKEN_REVIEW_REQUIRED]
+statement=if status == PASS_STATUS:
+
+leaf_qt/regen_optimisation_proof_system.py:67 [UNQUOTED_STATUS_TOKEN_REVIEW_REQUIRED]
+statement=if status == PASS_STATUS:
+
+leaf_qt/regen_station_viewer_integration.py:64 [UNQUOTED_STATUS_TOKEN_REVIEW_REQUIRED]
+statement=if status == PASS_STATUS:
+
+leaf_qt/regen_viewer_completion_gate.py:70 [UNQUOTED_STATUS_TOKEN_REVIEW_REQUIRED]
+statement=if status == PASS_STATUS:
+
+leaf_qt/regen_viewer_data_adapter.py:54 [UNQUOTED_STATUS_TOKEN_REVIEW_REQUIRED]
+statement=if status == PASS_STATUS:
+
+leaf_qt/regen_viewer_navigation_system.py:76 [UNQUOTED_STATUS_TOKEN_REVIEW_REQUIRED]
+statement=if status == PASS_STATUS:
+
+leaf_qt/regen_viewer_ownership_architecture.py:82 [UNQUOTED_STATUS_TOKEN_REVIEW_REQUIRED]
+statement=if status == PASS_STATUS:
+
+leaf_qt/regen_viewer_report_renderer.py:85 [UNQUOTED_STATUS_TOKEN_REVIEW_REQUIRED]
+statement=if status == PASS_STATUS:
+
+json=/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u171f_no_literal_rescan_and_exact_owner_gate.json
+text=/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u171f_no_literal_rescan_and_exact_owner_gate.txt

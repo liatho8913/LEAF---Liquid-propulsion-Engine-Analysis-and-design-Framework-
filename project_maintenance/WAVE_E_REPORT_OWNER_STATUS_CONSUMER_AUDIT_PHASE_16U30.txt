@@ -1,0 +1,290 @@
+LEAF PHASE 16U.30
+WAVE E REPORT OWNER STATUS CONSUMER AUDIT
+==========================================
+
+STATUS: PASS_PHASE_16U30_WAVE_E_REPORT_OWNER_STATUS_CONSUMER_AUDIT
+Generated: 2026-06-28T01:52:55
+
+SCOPE
+-----
+This phase audits Wave E report-owner status consumers.
+No production files are modified.
+No report policy is modified.
+
+SUMMARY
+-------
+Report-owner candidates: 54
+Patchable next phase: 0
+Hold/manual-review: 54
+
+GROUP BREAKDOWN
+---------------
+MANUAL_REVIEW_REQUIRED: 40
+STATUS_PASS_PREFIX_CHECK: 6
+TEXT_OR_COMPOUND_STATUS_SEMANTIC_CHECK: 8
+
+RISK BREAKDOWN
+--------------
+MEDIUM: 54
+
+FILES
+-----
+integrate_phase_16k2_regen_viewer_report_renderer.py: 1
+leaf_qt/foundation_test_runner_window.py: 1
+leaf_qt/regen_cross_section_viewer.py: 31
+leaf_qt/regen_geometry_output_window.py: 2
+leaf_qt/regen_viewer_auto_geometry_handover_lock_phase_16q10.py: 1
+leaf_qt/regen_viewer_final_closure_handover_phase_16q30.py: 1
+leaf_qt/regen_viewer_final_completion_declaration_phase_16q7.py: 2
+leaf_qt/regen_viewer_final_completion_lock_phase_16p23.py: 4
+leaf_qt/regen_viewer_final_runtime_consistency_gate_phase_16q20.py: 1
+leaf_qt/regen_viewer_gui_runtime_acceptance_gate_phase_16q28.py: 3
+leaf_qt/regen_viewer_gui_runtime_checklist_phase_16p22.py: 2
+leaf_qt/regen_viewer_integration_report_owner.py: 3
+leaf_qt/regen_viewer_report_renderer.py: 1
+leaf_qt/regen_viewer_station_geometry_dump_phase_16p17.py: 1
+
+PATCHABLE NEXT PHASE
+--------------------
+HELD / MANUAL REVIEW
+--------------------
+integrate_phase_16k2_regen_viewer_report_renderer.py:184 [MANUAL_REVIEW_REQUIRED]
+  current: f"{'PASS' if item.get('passed') else 'FAIL'}"
+  reason: No safe automated report-owner migration rule matched.
+
+leaf_qt/foundation_test_runner_window.py:100 [MANUAL_REVIEW_REQUIRED]
+  current: status_text = "PASS" if passed else "FAIL"
+  reason: No safe automated report-owner migration rule matched.
+
+leaf_qt/regen_cross_section_viewer.py:514 [MANUAL_REVIEW_REQUIRED]
+  current: if status in ("1", "TRUE", "PASS", "VALID"):
+  reason: No safe automated report-owner migration rule matched.
+
+leaf_qt/regen_cross_section_viewer.py:517 [MANUAL_REVIEW_REQUIRED]
+  current: if "PASS" in status and "FAIL" not in status:
+  reason: No safe automated report-owner migration rule matched.
+
+leaf_qt/regen_cross_section_viewer.py:517 [MANUAL_REVIEW_REQUIRED]
+  current: if "PASS" in status and "FAIL" not in status:
+  reason: No safe automated report-owner migration rule matched.
+
+leaf_qt/regen_cross_section_viewer.py:520 [TEXT_OR_COMPOUND_STATUS_SEMANTIC_CHECK]
+  current: if "WARN" in status or "MARGINAL" in status or "PARTIAL" in status or "PLAUSIBLE" in status:
+  reason: Report text or compound-status scanning is semantic and should not be blindly wrapped.
+
+leaf_qt/regen_cross_section_viewer.py:520 [TEXT_OR_COMPOUND_STATUS_SEMANTIC_CHECK]
+  current: if "WARN" in status or "MARGINAL" in status or "PARTIAL" in status or "PLAUSIBLE" in status:
+  reason: Report text or compound-status scanning is semantic and should not be blindly wrapped.
+
+leaf_qt/regen_cross_section_viewer.py:523 [TEXT_OR_COMPOUND_STATUS_SEMANTIC_CHECK]
+  current: if "FAIL" in status or "INVALID" in status or "BLOCKED" in status:
+  reason: Report text or compound-status scanning is semantic and should not be blindly wrapped.
+
+leaf_qt/regen_cross_section_viewer.py:523 [TEXT_OR_COMPOUND_STATUS_SEMANTIC_CHECK]
+  current: if "FAIL" in status or "INVALID" in status or "BLOCKED" in status:
+  reason: Report text or compound-status scanning is semantic and should not be blindly wrapped.
+
+leaf_qt/regen_cross_section_viewer.py:1892 [MANUAL_REVIEW_REQUIRED]
+  current: "PASS" in scalability_status
+  reason: No safe automated report-owner migration rule matched.
+
+leaf_qt/regen_cross_section_viewer.py:1892 [MANUAL_REVIEW_REQUIRED]
+  current: "PASS" in scalability_status
+  reason: No safe automated report-owner migration rule matched.
+
+leaf_qt/regen_cross_section_viewer.py:2010 [MANUAL_REVIEW_REQUIRED]
+  current: elif "INVALID" in upper or "FAIL" in upper:
+  reason: No safe automated report-owner migration rule matched.
+
+leaf_qt/regen_cross_section_viewer.py:2010 [MANUAL_REVIEW_REQUIRED]
+  current: elif "INVALID" in upper or "FAIL" in upper:
+  reason: No safe automated report-owner migration rule matched.
+
+leaf_qt/regen_cross_section_viewer.py:9795 [TEXT_OR_COMPOUND_STATUS_SEMANTIC_CHECK]
+  current: if "FAIL" in status or "FAIL" in geometry or "FAIL" in thermal or "FAIL" in coolant:
+  reason: Report text or compound-status scanning is semantic and should not be blindly wrapped.
+
+leaf_qt/regen_cross_section_viewer.py:9795 [TEXT_OR_COMPOUND_STATUS_SEMANTIC_CHECK]
+  current: if "FAIL" in status or "FAIL" in geometry or "FAIL" in thermal or "FAIL" in coolant:
+  reason: Report text or compound-status scanning is semantic and should not be blindly wrapped.
+
+leaf_qt/regen_cross_section_viewer.py:9809 [MANUAL_REVIEW_REQUIRED]
+  current: elif "PASS" in status:
+  reason: No safe automated report-owner migration rule matched.
+
+leaf_qt/regen_cross_section_viewer.py:9809 [MANUAL_REVIEW_REQUIRED]
+  current: elif "PASS" in status:
+  reason: No safe automated report-owner migration rule matched.
+
+leaf_qt/regen_cross_section_viewer.py:9902 [MANUAL_REVIEW_REQUIRED]
+  current: if status.startswith("BLOCKED") or status.startswith("FAIL"):
+  reason: No safe automated report-owner migration rule matched.
+
+leaf_qt/regen_cross_section_viewer.py:9902 [MANUAL_REVIEW_REQUIRED]
+  current: if status.startswith("BLOCKED") or status.startswith("FAIL"):
+  reason: No safe automated report-owner migration rule matched.
+
+leaf_qt/regen_cross_section_viewer.py:9902 [MANUAL_REVIEW_REQUIRED]
+  current: if status.startswith("BLOCKED") or status.startswith("FAIL"):
+  reason: No safe automated report-owner migration rule matched.
+
+leaf_qt/regen_cross_section_viewer.py:10104 [TEXT_OR_COMPOUND_STATUS_SEMANTIC_CHECK]
+  current: blocked = any("FAIL" in status or "BLOCKED" in status for status in blocked_statuses if status)
+  reason: Report text or compound-status scanning is semantic and should not be blindly wrapped.
+
+leaf_qt/regen_cross_section_viewer.py:10104 [TEXT_OR_COMPOUND_STATUS_SEMANTIC_CHECK]
+  current: blocked = any("FAIL" in status or "BLOCKED" in status for status in blocked_statuses if status)
+  reason: Report text or compound-status scanning is semantic and should not be blindly wrapped.
+
+leaf_qt/regen_cross_section_viewer.py:10213 [MANUAL_REVIEW_REQUIRED]
+  current: and not recommended_status.upper().startswith(("BLOCKED", "FAIL"))
+  reason: No safe automated report-owner migration rule matched.
+
+leaf_qt/regen_cross_section_viewer.py:10227 [MANUAL_REVIEW_REQUIRED]
+  current: and not best_status.upper().startswith(("FAIL", "BLOCKED"))
+  reason: No safe automated report-owner migration rule matched.
+
+leaf_qt/regen_cross_section_viewer.py:10266 [MANUAL_REVIEW_REQUIRED]
+  current: elif regen_status.upper() in ("FAIL", "NOT_RUN", "NONE"):
+  reason: No safe automated report-owner migration rule matched.
+
+leaf_qt/regen_cross_section_viewer.py:10909 [STATUS_PASS_PREFIX_CHECK]
+  current: if str(status).startswith("PASS"):
+  reason: Prefix PASS may intentionally accept compound report statuses; review before migration.
+
+leaf_qt/regen_cross_section_viewer.py:10909 [STATUS_PASS_PREFIX_CHECK]
+  current: if str(status).startswith("PASS"):
+  reason: Prefix PASS may intentionally accept compound report statuses; review before migration.
+
+leaf_qt/regen_cross_section_viewer.py:10909 [STATUS_PASS_PREFIX_CHECK]
+  current: if str(status).startswith("PASS"):
+  reason: Prefix PASS may intentionally accept compound report statuses; review before migration.
+
+leaf_qt/regen_cross_section_viewer.py:11143 [MANUAL_REVIEW_REQUIRED]
+  current: if self.results.get("regen_overall_status") == "FAIL":
+  reason: No safe automated report-owner migration rule matched.
+
+leaf_qt/regen_cross_section_viewer.py:12626 [MANUAL_REVIEW_REQUIRED]
+  current: if "FAIL" in str(value).upper() or "BLOCKED" in str(value).upper()
+  reason: No safe automated report-owner migration rule matched.
+
+leaf_qt/regen_cross_section_viewer.py:12626 [MANUAL_REVIEW_REQUIRED]
+  current: if "FAIL" in str(value).upper() or "BLOCKED" in str(value).upper()
+  reason: No safe automated report-owner migration rule matched.
+
+leaf_qt/regen_cross_section_viewer.py:12632 [MANUAL_REVIEW_REQUIRED]
+  current: if "WARN" in str(value).upper()
+  reason: No safe automated report-owner migration rule matched.
+
+leaf_qt/regen_cross_section_viewer.py:12632 [MANUAL_REVIEW_REQUIRED]
+  current: if "WARN" in str(value).upper()
+  reason: No safe automated report-owner migration rule matched.
+
+leaf_qt/regen_geometry_output_window.py:253 [MANUAL_REVIEW_REQUIRED]
+  current: for state in ("FAIL", "WARN", "PASS", "NOT_AVAILABLE"):
+  reason: No safe automated report-owner migration rule matched.
+
+leaf_qt/regen_geometry_output_window.py:340 [MANUAL_REVIEW_REQUIRED]
+  current: for state in ("FAIL", "WARN"):
+  reason: No safe automated report-owner migration rule matched.
+
+leaf_qt/regen_viewer_auto_geometry_handover_lock_phase_16q10.py:99 [MANUAL_REVIEW_REQUIRED]
+  current: state = "PASS" if item["passed"] else "FAIL"
+  reason: No safe automated report-owner migration rule matched.
+
+leaf_qt/regen_viewer_final_closure_handover_phase_16q30.py:100 [MANUAL_REVIEW_REQUIRED]
+  current: state = "PASS" if item["passed"] else "FAIL"
+  reason: No safe automated report-owner migration rule matched.
+
+leaf_qt/regen_viewer_final_completion_declaration_phase_16q7.py:35 [MANUAL_REVIEW_REQUIRED]
+  current: if results.get("regen_viewer_completion_lock") != "PASS":
+  reason: No safe automated report-owner migration rule matched.
+
+leaf_qt/regen_viewer_final_completion_declaration_phase_16q7.py:112 [MANUAL_REVIEW_REQUIRED]
+  current: state = "PASS" if item["passed"] else "FAIL"
+  reason: No safe automated report-owner migration rule matched.
+
+leaf_qt/regen_viewer_final_completion_lock_phase_16p23.py:34 [MANUAL_REVIEW_REQUIRED]
+  current: if results.get("regen_viewer_runtime_signoff") != "PASS":
+  reason: No safe automated report-owner migration rule matched.
+
+leaf_qt/regen_viewer_final_completion_lock_phase_16p23.py:98 [MANUAL_REVIEW_REQUIRED]
+  current: state = "PASS" if item["passed"] else "FAIL"
+  reason: No safe automated report-owner migration rule matched.
+
+leaf_qt/regen_viewer_final_completion_lock_phase_16p23.py:138 [MANUAL_REVIEW_REQUIRED]
+  current: results["regen_viewer_completion_lock"] = "PASS"
+  reason: No safe automated report-owner migration rule matched.
+
+leaf_qt/regen_viewer_final_completion_lock_phase_16p23.py:141 [MANUAL_REVIEW_REQUIRED]
+  current: results["regen_viewer_completion_lock"] = "FAIL"
+  reason: No safe automated report-owner migration rule matched.
+
+leaf_qt/regen_viewer_final_runtime_consistency_gate_phase_16q20.py:125 [MANUAL_REVIEW_REQUIRED]
+  current: state = "PASS" if item["passed"] else "FAIL"
+  reason: No safe automated report-owner migration rule matched.
+
+leaf_qt/regen_viewer_gui_runtime_acceptance_gate_phase_16q28.py:93 [MANUAL_REVIEW_REQUIRED]
+  current: state = "PASS" if item["passed"] else "FAIL"
+  reason: No safe automated report-owner migration rule matched.
+
+leaf_qt/regen_viewer_gui_runtime_acceptance_gate_phase_16q28.py:146 [MANUAL_REVIEW_REQUIRED]
+  current: results["regen_viewer_gui_runtime_acceptance"] = "PASS"
+  reason: No safe automated report-owner migration rule matched.
+
+leaf_qt/regen_viewer_gui_runtime_acceptance_gate_phase_16q28.py:149 [MANUAL_REVIEW_REQUIRED]
+  current: results["regen_viewer_gui_runtime_acceptance"] = "FAIL"
+  reason: No safe automated report-owner migration rule matched.
+
+leaf_qt/regen_viewer_gui_runtime_checklist_phase_16p22.py:38 [MANUAL_REVIEW_REQUIRED]
+  current: runtime_signoff_pass = results.get("regen_viewer_runtime_signoff") == "PASS"
+  reason: No safe automated report-owner migration rule matched.
+
+leaf_qt/regen_viewer_gui_runtime_checklist_phase_16p22.py:89 [MANUAL_REVIEW_REQUIRED]
+  current: state = "PASS" if item["present"] else "FAIL"
+  reason: No safe automated report-owner migration rule matched.
+
+leaf_qt/regen_viewer_integration_report_owner.py:89 [STATUS_PASS_PREFIX_CHECK]
+  current: if not check.status.startswith("PASS")
+  reason: Prefix PASS may intentionally accept compound report statuses; review before migration.
+
+leaf_qt/regen_viewer_integration_report_owner.py:89 [STATUS_PASS_PREFIX_CHECK]
+  current: if not check.status.startswith("PASS")
+  reason: Prefix PASS may intentionally accept compound report statuses; review before migration.
+
+leaf_qt/regen_viewer_integration_report_owner.py:89 [STATUS_PASS_PREFIX_CHECK]
+  current: if not check.status.startswith("PASS")
+  reason: Prefix PASS may intentionally accept compound report statuses; review before migration.
+
+leaf_qt/regen_viewer_report_renderer.py:179 [MANUAL_REVIEW_REQUIRED]
+  current: f"{'PASS' if item.get('passed') else 'FAIL'}"
+  reason: No safe automated report-owner migration rule matched.
+
+leaf_qt/regen_viewer_station_geometry_dump_phase_16p17.py:150 [MANUAL_REVIEW_REQUIRED]
+  current: overall = "PASS" if fail_count == 0 else "FAIL"
+  reason: No safe automated report-owner migration rule matched.
+
+COMPILE RESULTS
+---------------
+integrate_phase_16k2_regen_viewer_report_renderer.py: PASS 
+leaf_qt/foundation_test_runner_window.py: PASS 
+leaf_qt/regen_cross_section_viewer.py: PASS 
+leaf_qt/regen_geometry_output_window.py: PASS 
+leaf_qt/regen_viewer_auto_geometry_handover_lock_phase_16q10.py: PASS 
+leaf_qt/regen_viewer_final_closure_handover_phase_16q30.py: PASS 
+leaf_qt/regen_viewer_final_completion_declaration_phase_16q7.py: PASS 
+leaf_qt/regen_viewer_final_completion_lock_phase_16p23.py: PASS 
+leaf_qt/regen_viewer_final_runtime_consistency_gate_phase_16q20.py: PASS 
+leaf_qt/regen_viewer_gui_runtime_acceptance_gate_phase_16q28.py: PASS 
+leaf_qt/regen_viewer_gui_runtime_checklist_phase_16p22.py: PASS 
+leaf_qt/regen_viewer_integration_report_owner.py: PASS 
+leaf_qt/regen_viewer_report_renderer.py: PASS 
+leaf_qt/regen_viewer_station_geometry_dump_phase_16p17.py: PASS 
+
+COMPLETION NOTICE
+-----------------
+PHASE 16U.30 COMPLETE.
+
+NEXT PHASE
+----------
+PHASE 16U.31 — WAVE E REPORT OWNER LOW-RISK STATUS WRAPPER PATCH

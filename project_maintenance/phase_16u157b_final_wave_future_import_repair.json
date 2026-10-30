@@ -1,0 +1,36 @@
+{
+  "phase": "16U.157B",
+  "wave_id": "16U-FINAL-WAVE",
+  "passed": true,
+  "files_repaired": 2,
+  "files_failed": 0,
+  "results": [
+    {
+      "file": "regen_viewer_final_runtime_consistency_gate_phase_16q20.py",
+      "passed": true,
+      "backup": "project_maintenance/phase_16u157b_final_wave_repair_backups/regen_viewer_final_runtime_consistency_gate_phase_16q20.py",
+      "sha256_before": "2d697512eb5606e05ed2042d20c38ecab06308ba723e7981069c492dc4b673cd",
+      "sha256_after": "c431fbf4f8788b8585bd6438c3684fca9f487f1a659f9cf7325ae752b75a1874",
+      "applied": [
+        "inserted_fallback_after_future_imports",
+        "replacement:\"PASS\"\\s+if\\s+([^,\\n]+?)\\s+else\\s+\"FAIL\":1"
+      ],
+      "failures": []
+    },
+    {
+      "file": "regen_viewer_gui_runtime_acceptance_gate_phase_16q28.py",
+      "passed": true,
+      "backup": "project_maintenance/phase_16u157b_final_wave_repair_backups/regen_viewer_gui_runtime_acceptance_gate_phase_16q28.py",
+      "sha256_before": "3021a90480d96eed56bd95e9337e4b81051d21e10f1225b81db8bd5a40bed3c1",
+      "sha256_after": "d238f902d03d417ac0050ac9824fdbf0f7314d588fc40b39a69be50fa2bb1ae8",
+      "applied": [
+        "inserted_fallback_after_future_imports",
+        "replacement:\"PASS\"\\s+if\\s+([^,\\n]+?)\\s+else\\s+\"FAIL\":1"
+      ],
+      "failures": []
+    }
+  ],
+  "failures": [],
+  "phase_16u157b_final_wave_future_import_repair_complete": true,
+  "next_phase": "16U.158 \u2014 Final Wave Regression"
+}

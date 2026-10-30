@@ -1,0 +1,26 @@
+LEAF PHASE 16U.145
+WAVE 3 TRANSACTIONAL PATCH
+==========================
+
+STATUS: PASS_PHASE_16U145_WAVE3_TRANSACTIONAL_PATCH
+
+Files attempted: 11
+Files passed: 11
+Files failed: 0
+
+FILES
+-----
+- regen_candidate_mutation_completion_audit.py :: PASS :: inserted_status_presentation_import_fallback, legacy_replacement:"PASS"\s+if\s+([^,\n]+?)\s+else\s+"FAIL":1
+- regen_candidate_mutation_input_audit.py :: PASS :: inserted_status_presentation_import_fallback, legacy_replacement:"PASS"\s+if\s+([^,\n]+?)\s+else\s+"FAIL":1
+- regen_candidate_mutation_master_gate.py :: PASS :: inserted_status_presentation_import_fallback, legacy_replacement:"PASS"\s+if\s+([^,\n]+?)\s+else\s+"FAIL":1
+- regen_candidate_population_completion_audit.py :: PASS :: inserted_status_presentation_import_fallback, legacy_replacement:"PASS"\s+if\s+([^,\n]+?)\s+else\s+"FAIL":1
+- regen_candidate_population_master_gate.py :: PASS :: inserted_status_presentation_import_fallback, legacy_replacement:"PASS"\s+if\s+([^,\n]+?)\s+else\s+"FAIL":1
+- regen_candidate_ranking_completion_audit.py :: PASS :: inserted_status_presentation_import_fallback, legacy_replacement:"PASS"\s+if\s+([^,\n]+?)\s+else\s+"FAIL":1
+- regen_candidate_ranking_input_audit.py :: PASS :: inserted_status_presentation_import_fallback, legacy_replacement:"PASS"\s+if\s+([^,\n]+?)\s+else\s+"FAIL":1
+- regen_candidate_ranking_master_gate.py :: PASS :: inserted_status_presentation_import_fallback, legacy_replacement:"PASS"\s+if\s+([^,\n]+?)\s+else\s+"FAIL":1
+- regen_evolution_loop_completion_audit.py :: PASS :: inserted_status_presentation_import_fallback, legacy_replacement:"PASS"\s+if\s+([^,\n]+?)\s+else\s+"FAIL":1
+- regen_evolution_loop_input_audit.py :: PASS :: inserted_status_presentation_import_fallback, legacy_replacement:"PASS"\s+if\s+([^,\n]+?)\s+else\s+"FAIL":1
+- regen_evolution_loop_master_gate.py :: PASS :: inserted_status_presentation_import_fallback, legacy_replacement:"PASS"\s+if\s+([^,\n]+?)\s+else\s+"FAIL":1
+
+FAILURES
+--------

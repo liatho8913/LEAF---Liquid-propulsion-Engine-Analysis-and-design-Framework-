@@ -1,0 +1,55 @@
+{
+  "phase": "16U.93",
+  "status": "PASS_PHASE_16U93_REGEN_CANDIDATE_BLUEPRINT_POPULATION_VALIDATION_OWNER_PRESENTATION_LAYER_CLOSURE_GATE",
+  "generated": "2026-06-28T20:06:35",
+  "target": "leaf_qt/regen_candidate_blueprint_population_validation_owner.py",
+  "checks": [
+    {
+      "name": "production_target_exists",
+      "passed": true,
+      "detail": "leaf_qt/regen_candidate_blueprint_population_validation_owner.py"
+    },
+    {
+      "name": "phase_16u91_patch_script_exists",
+      "passed": true,
+      "detail": "project_maintenance/regen_candidate_blueprint_population_validation_owner_presentation_layer_patch_phase_16u91.py"
+    },
+    {
+      "name": "phase_16u92_regression_script_exists",
+      "passed": true,
+      "detail": "project_maintenance/regen_candidate_blueprint_population_validation_owner_presentation_layer_regression_phase_16u92.py"
+    },
+    {
+      "name": "phase_16u91_patch_rerun_passed",
+      "passed": true,
+      "detail": "returncode=0"
+    },
+    {
+      "name": "phase_16u92_regression_rerun_passed",
+      "passed": true,
+      "detail": "returncode=0"
+    },
+    {
+      "name": "phase_16u91_completion_flag_true",
+      "passed": true,
+      "detail": "PASS_PHASE_16U91_REGEN_CANDIDATE_BLUEPRINT_POPULATION_VALIDATION_OWNER_PRESENTATION_LAYER_PATCH"
+    },
+    {
+      "name": "phase_16u92_completion_flag_true",
+      "passed": true,
+      "detail": "PASS_PHASE_16U92_REGEN_CANDIDATE_BLUEPRINT_POPULATION_VALIDATION_OWNER_PRESENTATION_LAYER_REGRESSION"
+    },
+    {
+      "name": "production_target_contains_shared_status_layer",
+      "passed": true,
+      "detail": "shared status presentation helper present"
+    },
+    {
+      "name": "production_target_has_no_legacy_status_patterns_after_helper",
+      "passed": true,
+      "detail": "legacy literals allowed only inside helper fallback"
+    }
+  ],
+  "phase_16u93_regen_candidate_blueprint_population_validation_owner_presentation_layer_closure_gate_complete": true,
+  "next_phase": "16U.94 \u2014 Updated Global Remaining-Candidate Audit"
+}

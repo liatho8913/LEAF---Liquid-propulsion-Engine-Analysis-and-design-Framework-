@@ -1,0 +1,12 @@
+{
+  "phase": "16U.126",
+  "passed": true,
+  "selected_file": "leaf_qt/regen_geometry_constraint_owner.py",
+  "closed_target_count": 14,
+  "remaining_candidate_count_before_selection": 54,
+  "total_measured_scope": 68,
+  "selection_reason": "Conservative lowest-risk structural candidate selected from corrected Phase 16U.125B ledger.",
+  "phase_16u126_single_file_decision_complete": true,
+  "next_phase": "16U.127 \u2014 Presentation Layer Patch",
+  "failures": []
+}

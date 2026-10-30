@@ -1,0 +1,133 @@
+LEAF PHASE 16U.21
+WAVE C MASTER GATE LOW-RISK STATUS WRAPPER PATCH
+==================================================
+
+STATUS: PASS_PHASE_16U21_WAVE_C_MASTER_GATE_LOW_RISK_STATUS_WRAPPER_PATCH
+Generated: 2026-06-28T01:18:25
+
+SCOPE
+-----
+This phase patches only deduplicated low-risk Wave C master-gate consumers.
+Held/manual-review master-gate items are intentionally preserved.
+No solver equations are changed.
+No master-gate pass/fail policy is changed.
+
+SUMMARY
+-------
+Audit patchable rows: 28
+Deduplicated patch items: 14
+Applied: 0
+Already applied: 13
+Missing: 1
+Effective missing: 0
+Stale Wave2 duplicate only: True
+
+PATCH RESULTS
+-------------
+leaf_qt/real_engine_benchmark_master_gate.py
+  import_added: False
+  applied: 0
+  already_applied: 1
+  missing: 0
+  ALREADY: if is_pass(status):
+
+leaf_qt/regen_axial_geometry_master_gate.py
+  import_added: False
+  applied: 0
+  already_applied: 1
+  missing: 0
+  ALREADY: if gate_highest_severity(severities) == "FAIL":
+
+leaf_qt/regen_candidate_acceptance_master_gate.py
+  import_added: False
+  applied: 0
+  already_applied: 1
+  missing: 0
+  ALREADY: if gate_highest_severity(severities) == "FAIL":
+
+leaf_qt/regen_candidate_mutation_master_gate.py
+  import_added: False
+  applied: 0
+  already_applied: 1
+  missing: 0
+  ALREADY: if gate_highest_severity(severities) == "FAIL":
+
+leaf_qt/regen_candidate_population_master_gate.py
+  import_added: False
+  applied: 0
+  already_applied: 1
+  missing: 0
+  ALREADY: if is_pass(canonical):
+
+leaf_qt/regen_candidate_ranking_master_gate.py
+  import_added: False
+  applied: 0
+  already_applied: 2
+  missing: 0
+  ALREADY: if gate_highest_severity(severities) == "FAIL":
+  ALREADY: if ready is True and findings_highest_severity(findings) == "INFO":
+
+leaf_qt/regen_evolution_loop_master_gate.py
+  import_added: False
+  applied: 0
+  already_applied: 1
+  missing: 0
+  ALREADY: if gate_highest_severity(severities) == "FAIL":
+
+leaf_qt/regen_geometry_master_gate.py
+  import_added: False
+  applied: 0
+  already_applied: 1
+  missing: 0
+  ALREADY: if is_pass(canonical):
+
+leaf_qt/regen_optimisation_master_gate.py
+  import_added: False
+  applied: 0
+  already_applied: 1
+  missing: 0
+  ALREADY: if gate_highest_severity(severities) == "FAIL":
+
+leaf_qt/regen_scalability_master_gate.py
+  import_added: False
+  applied: 0
+  already_applied: 1
+  missing: 0
+  ALREADY: if gate_highest_severity(severities) == "FAIL":
+
+leaf_qt/regen_variable_geometry_master_gate.py
+  import_added: False
+  applied: 0
+  already_applied: 1
+  missing: 0
+  ALREADY: if gate_highest_severity(severities) == "FAIL":
+
+project_maintenance/wave2_status_adapter_master_gate_phase_16t3s.py
+  import_added: False
+  applied: 0
+  already_applied: 1
+  missing: 1
+  ALREADY: if gate_highest_severity(severities) == "FAIL":
+
+COMPILE RESULTS
+---------------
+leaf_qt/real_engine_benchmark_master_gate.py: PASS 
+leaf_qt/regen_axial_geometry_master_gate.py: PASS 
+leaf_qt/regen_candidate_acceptance_master_gate.py: PASS 
+leaf_qt/regen_candidate_mutation_master_gate.py: PASS 
+leaf_qt/regen_candidate_population_master_gate.py: PASS 
+leaf_qt/regen_candidate_ranking_master_gate.py: PASS 
+leaf_qt/regen_evolution_loop_master_gate.py: PASS 
+leaf_qt/regen_geometry_master_gate.py: PASS 
+leaf_qt/regen_optimisation_master_gate.py: PASS 
+leaf_qt/regen_scalability_master_gate.py: PASS 
+leaf_qt/regen_variable_geometry_master_gate.py: PASS 
+project_maintenance/wave2_status_adapter_master_gate_phase_16t3s.py: PASS 
+
+COMPLETION NOTICE
+-----------------
+PHASE 16U.21 COMPLETE.
+
+NEXT PHASE
+----------
+PHASE 16U.22 — WAVE C MASTER GATE LOW-RISK STATUS WRAPPER REGRESSION

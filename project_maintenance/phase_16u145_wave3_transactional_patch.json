@@ -1,0 +1,178 @@
+{
+  "phase": "16U.145",
+  "wave_id": "16U-WAVE3",
+  "passed": true,
+  "files_attempted": 11,
+  "files_passed": 11,
+  "files_failed": 0,
+  "results": [
+    {
+      "file": "regen_candidate_mutation_completion_audit.py",
+      "path": "leaf_qt/regen_candidate_mutation_completion_audit.py",
+      "backup": "project_maintenance/phase_16u145_wave3_backups/regen_candidate_mutation_completion_audit.py",
+      "applied": [
+        "inserted_status_presentation_import_fallback",
+        "legacy_replacement:\"PASS\"\\s+if\\s+([^,\\n]+?)\\s+else\\s+\"FAIL\":1"
+      ],
+      "failures": [],
+      "sha256_before": "187c1ef5929b434e06084ec646b5534ebaa7e19917042cb7b05cb42beda36624",
+      "backup_created": true,
+      "compile_before": true,
+      "compile_after": true,
+      "sha256_after": "a114c07c2a82bd70d4c7baec7dec18f4aa954c00e80ac434336abafd6a22fb9a"
+    },
+    {
+      "file": "regen_candidate_mutation_input_audit.py",
+      "path": "leaf_qt/regen_candidate_mutation_input_audit.py",
+      "backup": "project_maintenance/phase_16u145_wave3_backups/regen_candidate_mutation_input_audit.py",
+      "applied": [
+        "inserted_status_presentation_import_fallback",
+        "legacy_replacement:\"PASS\"\\s+if\\s+([^,\\n]+?)\\s+else\\s+\"FAIL\":1"
+      ],
+      "failures": [],
+      "sha256_before": "2ac5c0ea31a0a17dc2d8b496b285114fba4a9962c55ae0edf5ed3ee710741d53",
+      "backup_created": true,
+      "compile_before": true,
+      "compile_after": true,
+      "sha256_after": "e05e8b05bf98564b4f62019e787fb2e10497f745fe90821c8c863c19de1e4f0c"
+    },
+    {
+      "file": "regen_candidate_mutation_master_gate.py",
+      "path": "leaf_qt/regen_candidate_mutation_master_gate.py",
+      "backup": "project_maintenance/phase_16u145_wave3_backups/regen_candidate_mutation_master_gate.py",
+      "applied": [
+        "inserted_status_presentation_import_fallback",
+        "legacy_replacement:\"PASS\"\\s+if\\s+([^,\\n]+?)\\s+else\\s+\"FAIL\":1"
+      ],
+      "failures": [],
+      "sha256_before": "b0d15c444413a9f1685a8f14b23a167aa5f9192ff252abfb814056eb247de0f1",
+      "backup_created": true,
+      "compile_before": true,
+      "compile_after": true,
+      "sha256_after": "3177f74b8b744b59e76d59940c2ec71f6cbfe2bcacd31b4da5dcfc9a9b3fb1c6"
+    },
+    {
+      "file": "regen_candidate_population_completion_audit.py",
+      "path": "leaf_qt/regen_candidate_population_completion_audit.py",
+      "backup": "project_maintenance/phase_16u145_wave3_backups/regen_candidate_population_completion_audit.py",
+      "applied": [
+        "inserted_status_presentation_import_fallback",
+        "legacy_replacement:\"PASS\"\\s+if\\s+([^,\\n]+?)\\s+else\\s+\"FAIL\":1"
+      ],
+      "failures": [],
+      "sha256_before": "138d673ad18d2f6331f0089c3eeac94fab90d7791cefebce6324dcf0c9ad1eec",
+      "backup_created": true,
+      "compile_before": true,
+      "compile_after": true,
+      "sha256_after": "4264554d1b2726597598a968c7af9feabfd1177854f780965c4d9f15bbe063cc"
+    },
+    {
+      "file": "regen_candidate_population_master_gate.py",
+      "path": "leaf_qt/regen_candidate_population_master_gate.py",
+      "backup": "project_maintenance/phase_16u145_wave3_backups/regen_candidate_population_master_gate.py",
+      "applied": [
+        "inserted_status_presentation_import_fallback",
+        "legacy_replacement:\"PASS\"\\s+if\\s+([^,\\n]+?)\\s+else\\s+\"FAIL\":1"
+      ],
+      "failures": [],
+      "sha256_before": "854a875975a72dbb3ed8616d012fd5644de87e6ed030d9dc6db942fc5fbbd1e2",
+      "backup_created": true,
+      "compile_before": true,
+      "compile_after": true,
+      "sha256_after": "32f7aaaa8c39e5e0969285dc4d89660279a94ffdaf58796835a36de48e93d584"
+    },
+    {
+      "file": "regen_candidate_ranking_completion_audit.py",
+      "path": "leaf_qt/regen_candidate_ranking_completion_audit.py",
+      "backup": "project_maintenance/phase_16u145_wave3_backups/regen_candidate_ranking_completion_audit.py",
+      "applied": [
+        "inserted_status_presentation_import_fallback",
+        "legacy_replacement:\"PASS\"\\s+if\\s+([^,\\n]+?)\\s+else\\s+\"FAIL\":1"
+      ],
+      "failures": [],
+      "sha256_before": "1aa4ce5ef48e8686bb06d16fb1b0753ad93c442dd1e2de4799868c94bd95464f",
+      "backup_created": true,
+      "compile_before": true,
+      "compile_after": true,
+      "sha256_after": "8a70ce34586be43864789da7064ab277e0a7998f8ad5281b4bba3cc074b801d6"
+    },
+    {
+      "file": "regen_candidate_ranking_input_audit.py",
+      "path": "leaf_qt/regen_candidate_ranking_input_audit.py",
+      "backup": "project_maintenance/phase_16u145_wave3_backups/regen_candidate_ranking_input_audit.py",
+      "applied": [
+        "inserted_status_presentation_import_fallback",
+        "legacy_replacement:\"PASS\"\\s+if\\s+([^,\\n]+?)\\s+else\\s+\"FAIL\":1"
+      ],
+      "failures": [],
+      "sha256_before": "807da05c1aeba4553b0da04286931b59b41fa03ec3414e4af37ee02b4e73b63c",
+      "backup_created": true,
+      "compile_before": true,
+      "compile_after": true,
+      "sha256_after": "aaa36d605bbd21dfab316d97df8ddc9f4eeae8b55996023dff2365953ec77d98"
+    },
+    {
+      "file": "regen_candidate_ranking_master_gate.py",
+      "path": "leaf_qt/regen_candidate_ranking_master_gate.py",
+      "backup": "project_maintenance/phase_16u145_wave3_backups/regen_candidate_ranking_master_gate.py",
+      "applied": [
+        "inserted_status_presentation_import_fallback",
+        "legacy_replacement:\"PASS\"\\s+if\\s+([^,\\n]+?)\\s+else\\s+\"FAIL\":1"
+      ],
+      "failures": [],
+      "sha256_before": "b7edeec094ac420faf8720c2f51aedddfe19747ae49c6dbe40d459cced6e7231",
+      "backup_created": true,
+      "compile_before": true,
+      "compile_after": true,
+      "sha256_after": "7b9e7b40064c0ee39e45b88accd12a0551762d9fc234bf8e5fa6d5283f9a9f29"
+    },
+    {
+      "file": "regen_evolution_loop_completion_audit.py",
+      "path": "leaf_qt/regen_evolution_loop_completion_audit.py",
+      "backup": "project_maintenance/phase_16u145_wave3_backups/regen_evolution_loop_completion_audit.py",
+      "applied": [
+        "inserted_status_presentation_import_fallback",
+        "legacy_replacement:\"PASS\"\\s+if\\s+([^,\\n]+?)\\s+else\\s+\"FAIL\":1"
+      ],
+      "failures": [],
+      "sha256_before": "82a61e7c099fb9f2f2c5808e2d3c447ecdc9a9cb7b1a87d1e7a62b29f4896ac6",
+      "backup_created": true,
+      "compile_before": true,
+      "compile_after": true,
+      "sha256_after": "27936fe49e5e4af3b4d02e37b7f4ff5933951e11ca5d0f59fb2106e40e355dd9"
+    },
+    {
+      "file": "regen_evolution_loop_input_audit.py",
+      "path": "leaf_qt/regen_evolution_loop_input_audit.py",
+      "backup": "project_maintenance/phase_16u145_wave3_backups/regen_evolution_loop_input_audit.py",
+      "applied": [
+        "inserted_status_presentation_import_fallback",
+        "legacy_replacement:\"PASS\"\\s+if\\s+([^,\\n]+?)\\s+else\\s+\"FAIL\":1"
+      ],
+      "failures": [],
+      "sha256_before": "9767d5b3fabcb092b0740c6251b566cd842aadd7a3aaaadf5167a97b72e887fa",
+      "backup_created": true,
+      "compile_before": true,
+      "compile_after": true,
+      "sha256_after": "b64792c0fee8b7174d50d0999111263c646a97e65a50d2c1a2ff55f490989d11"
+    },
+    {
+      "file": "regen_evolution_loop_master_gate.py",
+      "path": "leaf_qt/regen_evolution_loop_master_gate.py",
+      "backup": "project_maintenance/phase_16u145_wave3_backups/regen_evolution_loop_master_gate.py",
+      "applied": [
+        "inserted_status_presentation_import_fallback",
+        "legacy_replacement:\"PASS\"\\s+if\\s+([^,\\n]+?)\\s+else\\s+\"FAIL\":1"
+      ],
+      "failures": [],
+      "sha256_before": "485af0f52785a6126e491924b10305c8c199539679ed1a4889d4cb178cf7ddbf",
+      "backup_created": true,
+      "compile_before": true,
+      "compile_after": true,
+      "sha256_after": "2a9bcf9bf81bb3036358906fd04129be9aaaf6d69380c2b8dbe327e851011454"
+    }
+  ],
+  "wave_failures": [],
+  "phase_16u145_wave3_transactional_patch_complete": true,
+  "next_phase": "16U.146 \u2014 Wave 3 Regression"
+}

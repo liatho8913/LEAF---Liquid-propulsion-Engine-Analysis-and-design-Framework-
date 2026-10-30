@@ -1,0 +1,55 @@
+{
+  "phase": "16U.56",
+  "status": "PASS_PHASE_16U56_COATING_TEMPERATURE_LIMIT_INTEGRATION_OWNER_PRESENTATION_LAYER_CLOSURE_GATE",
+  "generated": "2026-06-28T02:57:55",
+  "target": "leaf_qt/coating_temperature_limit_integration_owner.py",
+  "checks": [
+    {
+      "name": "production_target_exists",
+      "passed": true,
+      "detail": "leaf_qt/coating_temperature_limit_integration_owner.py"
+    },
+    {
+      "name": "phase_16u54_patch_script_exists",
+      "passed": true,
+      "detail": "project_maintenance/coating_temperature_limit_integration_owner_presentation_layer_patch_phase_16u54.py"
+    },
+    {
+      "name": "phase_16u55_regression_script_exists",
+      "passed": true,
+      "detail": "project_maintenance/coating_temperature_limit_integration_owner_presentation_layer_regression_phase_16u55.py"
+    },
+    {
+      "name": "phase_16u54_patch_rerun_passed",
+      "passed": true,
+      "detail": "returncode=0"
+    },
+    {
+      "name": "phase_16u55_regression_rerun_passed",
+      "passed": true,
+      "detail": "returncode=0"
+    },
+    {
+      "name": "phase_16u54_completion_flag_true",
+      "passed": true,
+      "detail": "PASS_PHASE_16U54_COATING_TEMPERATURE_LIMIT_INTEGRATION_OWNER_PRESENTATION_LAYER_PATCH"
+    },
+    {
+      "name": "phase_16u55_completion_flag_true",
+      "passed": true,
+      "detail": "PASS_PHASE_16U55_COATING_TEMPERATURE_LIMIT_INTEGRATION_OWNER_PRESENTATION_LAYER_REGRESSION"
+    },
+    {
+      "name": "production_target_contains_shared_status_layer",
+      "passed": true,
+      "detail": "shared status presentation helper present"
+    },
+    {
+      "name": "production_target_has_no_legacy_status_patterns_after_helper",
+      "passed": true,
+      "detail": "legacy literals allowed only inside helper fallback"
+    }
+  ],
+  "phase_16u56_coating_temperature_limit_integration_owner_presentation_layer_closure_gate_complete": true,
+  "next_phase": "16U.57 \u2014 Next Report Owner Rollout Candidate Audit"
+}

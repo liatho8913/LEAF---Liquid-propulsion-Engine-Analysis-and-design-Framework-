@@ -1,0 +1,13 @@
+{
+  "phase": "16U.165D",
+  "target": "leaf_qt/regen_viewer_integration_report_owner.py",
+  "backup": "/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u165d_backups/20260629_003711__regen_viewer_integration_report_owner.py.bak",
+  "replacement_applied": false,
+  "old": "if not check.status.startswith(\"PASS\")",
+  "new": "if status_severity(check.status) != \"PASS\"",
+  "compile_error": "PyCompileError('  File \"/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/regen_viewer_integration_report_owner.py\", line 18\\n    from __future__ import annotations\\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\nSyntaxError: from __future__ imports must occur at the beginning of the file\\n', 'SyntaxError', SyntaxError('from __future__ imports must occur at the beginning of the file', ('/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/regen_viewer_integration_report_owner.py', 18, 1, 'from __future__ import annotations\\n', 18, 35)), '/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/regen_viewer_integration_report_owner.py')",
+  "rolled_back": true,
+  "passed": false,
+  "status": "FAIL_PHASE_16U165D_SURGICAL_FAILED_FILE_REPAIR",
+  "next_phase": "16U.166_SAFE_WAVE_REGRESSION_AND_RECLASSIFICATION"
+}

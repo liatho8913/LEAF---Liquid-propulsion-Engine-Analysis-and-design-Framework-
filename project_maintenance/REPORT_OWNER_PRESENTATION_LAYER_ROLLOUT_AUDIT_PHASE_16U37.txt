@@ -1,0 +1,155 @@
+LEAF PHASE 16U.37
+REPORT OWNER PRESENTATION LAYER ROLLOUT AUDIT
+==============================================
+
+STATUS: PASS_PHASE_16U37_REPORT_OWNER_PRESENTATION_LAYER_ROLLOUT_AUDIT
+Generated: 2026-06-28T02:22:14
+
+FEATURE
+-------
+Audit remaining report-owner/UI consumers for legacy inline status presentation logic.
+
+SUMMARY
+-------
+Python files scanned: 2289
+Files with legacy status findings: 374
+Report/UI rollout candidates: 142
+
+NEXT PATCH CANDIDATE
+--------------------
+File: LEAF_UPLOAD/leaf_qt/regen_cross_section_viewer.py
+Classification: probable_report_or_ui_consumer
+Finding count: 41
+Risk score: 95
+Suggested action: CANDIDATE_FOR_PHASE_16U38_PATCH
+
+TOP ROLLOUT CANDIDATES
+----------------------
+1. LEAF_UPLOAD/leaf_qt/regen_cross_section_viewer.py | findings=41 | risk=95 | action=CANDIDATE_FOR_PHASE_16U38_PATCH
+   - line 1522 [inline_pass_fail_ternary]: "PASS" if g.get("channel_geometry_valid") == 1.0 else "FAIL"
+   - line 514 [inline_warn_fail_pass]: "PASS"
+   - line 517 [inline_warn_fail_pass]: "PASS"
+   - line 517 [inline_warn_fail_pass]: "FAIL"
+   - line 520 [inline_warn_fail_pass]: "WARN"
+2. leaf_qt/regen_cross_section_viewer.py | findings=55 | risk=95 | action=CANDIDATE_FOR_PHASE_16U38_PATCH
+   - line 1522 [inline_pass_fail_ternary]: "PASS" if g.get("channel_geometry_valid") == 1.0 else "FAIL"
+   - line 514 [inline_warn_fail_pass]: "PASS"
+   - line 517 [inline_warn_fail_pass]: "PASS"
+   - line 517 [inline_warn_fail_pass]: "FAIL"
+   - line 520 [inline_warn_fail_pass]: "WARN"
+3. LEAF_UPLOAD/leaf_qt/failure_root_cause_owner.py | findings=18 | risk=94 | action=CANDIDATE_FOR_PHASE_16U38_PATCH
+   - line 160 [inline_warn_fail_pass]: "WARNING"
+   - line 184 [inline_warn_fail_pass]: "FAIL"
+   - line 184 [inline_warn_fail_pass]: "WARNING"
+   - line 190 [inline_warn_fail_pass]: "FAIL"
+   - line 190 [inline_warn_fail_pass]: "WARNING"
+4. leaf_qt/failure_root_cause_owner.py | findings=18 | risk=94 | action=CANDIDATE_FOR_PHASE_16U38_PATCH
+   - line 160 [inline_warn_fail_pass]: "WARNING"
+   - line 184 [inline_warn_fail_pass]: "FAIL"
+   - line 184 [inline_warn_fail_pass]: "WARNING"
+   - line 190 [inline_warn_fail_pass]: "FAIL"
+   - line 190 [inline_warn_fail_pass]: "WARNING"
+5. leaf_qt/regen_geometry_constraint_validation_owner.py | findings=17 | risk=91 | action=CANDIDATE_FOR_PHASE_16U38_PATCH
+   - line 100 [inline_warn_fail_pass]: "WARNING"
+   - line 166 [inline_warn_fail_pass]: "FAIL"
+   - line 175 [inline_warn_fail_pass]: "FAIL"
+   - line 185 [inline_warn_fail_pass]: "FAIL"
+   - line 194 [inline_warn_fail_pass]: "FAIL"
+6. leaf_qt/regen_candidate_post_resolve_validation_owner.py | findings=14 | risk=82 | action=CANDIDATE_FOR_PHASE_16U38_PATCH
+   - line 108 [inline_warn_fail_pass]: "WARNING"
+   - line 161 [inline_warn_fail_pass]: "FAIL"
+   - line 169 [inline_warn_fail_pass]: "WARNING"
+   - line 177 [inline_warn_fail_pass]: "FAIL"
+   - line 185 [inline_warn_fail_pass]: "FAIL"
+7. LEAF_UPLOAD/leaf_qt/material_validation_owner.py | findings=12 | risk=76 | action=CANDIDATE_FOR_PHASE_16U38_PATCH
+   - line 129 [inline_warn_fail_pass]: "WARNING"
+   - line 199 [inline_warn_fail_pass]: "FAIL"
+   - line 207 [inline_warn_fail_pass]: "FAIL"
+   - line 215 [inline_warn_fail_pass]: "FAIL"
+   - line 223 [inline_warn_fail_pass]: "FAIL"
+8. LEAF_UPLOAD/leaf_qt/recommendation_explanation_owner.py | findings=11 | risk=73 | action=CANDIDATE_FOR_PHASE_16U38_PATCH
+   - line 37 [inline_warn_fail_pass]: "FAIL"
+   - line 39 [inline_warn_fail_pass]: "WARNING"
+   - line 145 [inline_warn_fail_pass]: "WARNING"
+   - line 282 [inline_warn_fail_pass]: "FAIL"
+   - line 305 [inline_warn_fail_pass]: "WARNING"
+9. LEAF_UPLOAD/leaf_qt/regen_geometry_constraint_validation_owner.py | findings=11 | risk=73 | action=CANDIDATE_FOR_PHASE_16U38_PATCH
+   - line 50 [inline_warn_fail_pass]: "PASS"
+   - line 51 [inline_warn_fail_pass]: "FAIL"
+   - line 52 [inline_warn_fail_pass]: "WARN"
+   - line 122 [inline_warn_fail_pass]: "WARN"
+   - line 125 [inline_warn_fail_pass]: "WARNING"
+10. leaf_qt/coating_validation_owner.py | findings=11 | risk=73 | action=CANDIDATE_FOR_PHASE_16U38_PATCH
+   - line 117 [inline_warn_fail_pass]: "WARNING"
+   - line 264 [inline_warn_fail_pass]: "WARNING"
+   - line 286 [inline_warn_fail_pass]: "FAIL"
+   - line 304 [inline_warn_fail_pass]: "FAIL"
+   - line 315 [inline_warn_fail_pass]: "FAIL"
+11. leaf_qt/material_validation_owner.py | findings=11 | risk=73 | action=CANDIDATE_FOR_PHASE_16U38_PATCH
+   - line 118 [inline_warn_fail_pass]: "WARNING"
+   - line 261 [inline_warn_fail_pass]: "WARNING"
+   - line 282 [inline_warn_fail_pass]: "FAIL"
+   - line 290 [inline_warn_fail_pass]: "FAIL"
+   - line 301 [inline_warn_fail_pass]: "FAIL"
+12. leaf_qt/recommendation_explanation_owner.py | findings=11 | risk=73 | action=CANDIDATE_FOR_PHASE_16U38_PATCH
+   - line 37 [inline_warn_fail_pass]: "FAIL"
+   - line 39 [inline_warn_fail_pass]: "WARNING"
+   - line 145 [inline_warn_fail_pass]: "WARNING"
+   - line 282 [inline_warn_fail_pass]: "FAIL"
+   - line 305 [inline_warn_fail_pass]: "WARNING"
+13. LEAF_UPLOAD/leaf_qt/coating_validation_owner.py | findings=10 | risk=70 | action=CANDIDATE_FOR_PHASE_16U38_PATCH
+   - line 102 [inline_warn_fail_pass]: "WARNING"
+   - line 167 [inline_warn_fail_pass]: "FAIL"
+   - line 185 [inline_warn_fail_pass]: "FAIL"
+   - line 196 [inline_warn_fail_pass]: "FAIL"
+   - line 204 [inline_warn_fail_pass]: "FAIL"
+14. leaf_qt/regen_viewer_physical_geometry_validation_owner_phase_16p15.py | findings=7 | risk=61 | action=CANDIDATE_FOR_PHASE_16U38_PATCH
+   - line 110 [inline_warn_fail_pass]: "FAIL"
+   - line 111 [inline_warn_fail_pass]: "FAIL"
+   - line 112 [inline_warn_fail_pass]: "FAIL"
+   - line 113 [inline_warn_fail_pass]: "FAIL"
+   - line 116 [inline_warn_fail_pass]: "FAIL"
+15. LEAF_UPLOAD/leaf_qt/audit_panel.py | findings=6 | risk=58 | action=CANDIDATE_FOR_PHASE_16U38_PATCH
+   - line 48 [inline_warn_fail_pass]: "PASS"
+   - line 49 [inline_warn_fail_pass]: "PASS"
+   - line 50 [inline_warn_fail_pass]: "WARNING"
+   - line 51 [inline_warn_fail_pass]: "WARNING"
+   - line 52 [inline_warn_fail_pass]: "FAIL"
+16. LEAF_UPLOAD/leaf_qt/regen_geometry_output_architecture_owner.py | findings=6 | risk=58 | action=CANDIDATE_FOR_PHASE_16U38_PATCH
+   - line 104 [inline_warn_fail_pass]: "PASS"
+   - line 105 [inline_warn_fail_pass]: "WARN"
+   - line 106 [inline_warn_fail_pass]: "FAIL"
+   - line 120 [inline_warn_fail_pass]: "PASS"
+   - line 121 [inline_warn_fail_pass]: "WARN"
+17. LEAF_UPLOAD/leaf_qt/regen_geometry_report_owner.py | findings=6 | risk=58 | action=CANDIDATE_FOR_PHASE_16U38_PATCH
+   - line 5 [inline_pass_fail_ternary]: "PASS" if value else "FAIL"
+   - line 39 [inline_pass_fail_ternary]: 'PASS' if solver_pass else 'FAIL'
+   - line 5 [inline_warn_fail_pass]: "PASS"
+   - line 5 [inline_warn_fail_pass]: "FAIL"
+   - line 39 [inline_warn_fail_pass]: 'PASS'
+18. LEAF_UPLOAD/leaf_qt/regen_scalability_failure_owner.py | findings=6 | risk=58 | action=CANDIDATE_FOR_PHASE_16U38_PATCH
+   - line 184 [inline_warn_fail_pass]: "FAIL"
+   - line 187 [inline_warn_fail_pass]: "WARN"
+   - line 190 [inline_warn_fail_pass]: "FAIL"
+   - line 184 [fail_in_text]: "FAIL" in 
+   - line 190 [fail_in_text]: "FAIL" in 
+19. LEAF_UPLOAD/leaf_qt/test_regen_geometry_constraint_validation_owner.py | findings=6 | risk=58 | action=CANDIDATE_FOR_PHASE_16U38_PATCH
+   - line 46 [inline_warn_fail_pass]: "PASS"
+   - line 47 [inline_warn_fail_pass]: "WARN"
+   - line 48 [inline_warn_fail_pass]: "FAIL"
+   - line 48 [fail_in_text]: "FAIL" in 
+   - line 47 [warn_in_text]: "WARN" in 
+20. leaf_qt/audit_panel.py | findings=6 | risk=58 | action=CANDIDATE_FOR_PHASE_16U38_PATCH
+   - line 48 [inline_warn_fail_pass]: "PASS"
+   - line 49 [inline_warn_fail_pass]: "PASS"
+   - line 50 [inline_warn_fail_pass]: "WARNING"
+   - line 51 [inline_warn_fail_pass]: "WARNING"
+   - line 52 [inline_warn_fail_pass]: "FAIL"
+
+COMPLETION NOTICE
+-----------------
+PHASE 16U.37 COMPLETE.
+
+NEXT FEATURE
+------------
+PHASE 16U.38 — FIRST REPORT OWNER PRESENTATION LAYER ROLLOUT PATCH

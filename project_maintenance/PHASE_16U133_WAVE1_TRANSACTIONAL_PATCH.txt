@@ -1,0 +1,27 @@
+LEAF PHASE 16U.133
+WAVE 1 TRANSACTIONAL PATCH
+==========================
+
+STATUS: PASS_PHASE_16U133_WAVE1_TRANSACTIONAL_PATCH
+
+Files attempted: 12
+Files passed: 12
+Files failed: 0
+
+FILES
+-----
+- bond_coat_integration_owner.py :: PASS :: extended_existing_status_presentation_import
+- coating_property_consumption_audit_owner.py :: PASS :: extended_existing_status_presentation_import
+- coating_temperature_limit_integration_owner.py :: PASS :: extended_existing_status_presentation_import
+- coating_thermal_conductivity_integration_owner.py :: PASS :: extended_existing_status_presentation_import
+- coating_thermal_resistance_integration_owner.py :: PASS :: extended_existing_status_presentation_import
+- coating_thickness_integration_owner.py :: PASS :: extended_existing_status_presentation_import
+- material_density_integration_owner.py :: PASS :: extended_existing_status_presentation_import
+- material_property_consumption_audit_owner.py :: PASS :: extended_existing_status_presentation_import
+- material_specific_heat_integration_owner.py :: PASS :: extended_existing_status_presentation_import
+- material_strength_limit_integration_owner.py :: PASS :: extended_existing_status_presentation_import
+- material_temperature_limit_integration_owner.py :: PASS :: extended_existing_status_presentation_import
+- material_thermal_conductivity_integration_owner.py :: PASS :: extended_existing_status_presentation_import
+
+FAILURES
+--------

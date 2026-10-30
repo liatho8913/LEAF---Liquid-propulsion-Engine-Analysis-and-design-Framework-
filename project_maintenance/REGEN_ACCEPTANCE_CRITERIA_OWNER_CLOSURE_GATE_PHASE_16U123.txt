@@ -1,0 +1,20 @@
+LEAF PHASE 16U.123
+REGEN ACCEPTANCE CRITERIA OWNER CLOSURE GATE
+=============================================
+
+STATUS: PASS_PHASE_16U123_REGEN_ACCEPTANCE_CRITERIA_OWNER_CLOSURE_GATE
+Target: leaf_qt/regen_acceptance_criteria_owner.py
+
+WHOLE FEATURE ROADMAP
+---------------------
+Closed before this closure: 13
+Closing now: regen_acceptance_criteria_owner.py
+Remaining before closure: 55
+Expected remaining after next audit: 54
+
+NEXT
+----
+16U.124 — Updated Global Remaining Candidate Audit
+
+FAILURES
+--------

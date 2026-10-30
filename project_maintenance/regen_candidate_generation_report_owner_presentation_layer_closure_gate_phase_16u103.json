@@ -1,0 +1,55 @@
+{
+  "phase": "16U.103",
+  "status": "PASS_PHASE_16U103_REGEN_CANDIDATE_GENERATION_REPORT_OWNER_PRESENTATION_LAYER_CLOSURE_GATE",
+  "generated": "2026-06-28T21:02:02",
+  "target": "leaf_qt/regen_candidate_generation_report_owner.py",
+  "checks": [
+    {
+      "name": "production_target_exists",
+      "passed": true,
+      "detail": "leaf_qt/regen_candidate_generation_report_owner.py"
+    },
+    {
+      "name": "phase_16u101_patch_script_exists",
+      "passed": true,
+      "detail": "project_maintenance/regen_candidate_generation_report_owner_presentation_layer_patch_phase_16u101.py"
+    },
+    {
+      "name": "phase_16u102_regression_script_exists",
+      "passed": true,
+      "detail": "project_maintenance/regen_candidate_generation_report_owner_presentation_layer_regression_phase_16u102.py"
+    },
+    {
+      "name": "phase_16u101_patch_rerun_passed",
+      "passed": true,
+      "detail": "returncode=0"
+    },
+    {
+      "name": "phase_16u102_regression_rerun_passed",
+      "passed": true,
+      "detail": "returncode=0"
+    },
+    {
+      "name": "phase_16u101_completion_flag_true",
+      "passed": true,
+      "detail": "PASS_PHASE_16U101_REGEN_CANDIDATE_GENERATION_REPORT_OWNER_PRESENTATION_LAYER_PATCH"
+    },
+    {
+      "name": "phase_16u102_completion_flag_true",
+      "passed": true,
+      "detail": "PASS_PHASE_16U102_REGEN_CANDIDATE_GENERATION_REPORT_OWNER_PRESENTATION_LAYER_REGRESSION"
+    },
+    {
+      "name": "production_target_contains_shared_status_layer",
+      "passed": true,
+      "detail": "shared status presentation helper present"
+    },
+    {
+      "name": "production_target_has_no_legacy_status_patterns_after_helper",
+      "passed": true,
+      "detail": "legacy literals allowed only inside helper fallback"
+    }
+  ],
+  "phase_16u103_regen_candidate_generation_report_owner_presentation_layer_closure_gate_complete": true,
+  "next_phase": "16U.104 \u2014 Updated Global Remaining-Candidate Audit"
+}

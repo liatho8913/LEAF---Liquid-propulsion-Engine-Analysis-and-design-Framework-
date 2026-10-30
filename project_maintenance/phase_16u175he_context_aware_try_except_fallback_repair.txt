@@ -1,0 +1,44 @@
+LEAF PHASE 16U.175H-E
+CONTEXT-AWARE TRY/EXCEPT FALLBACK REPAIR
+====================================================
+status=PASS_PHASE_16U175HE_CONTEXT_AWARE_TRY_EXCEPT_FALLBACK_REPAIR
+input_failed_subset_count=22
+repaired_count=22
+skipped_count=0
+compile_failure_count=0
+
+REPAIRED FILES
+--------------
+leaf_qt/bond_coat_integration_owner.py
+leaf_qt/coating_property_consumption_audit_owner.py
+leaf_qt/coating_temperature_limit_integration_owner.py
+leaf_qt/coating_thermal_conductivity_integration_owner.py
+leaf_qt/coating_thermal_resistance_integration_owner.py
+leaf_qt/coating_thickness_integration_owner.py
+leaf_qt/material_density_integration_owner.py
+leaf_qt/material_property_consumption_audit_owner.py
+leaf_qt/material_specific_heat_integration_owner.py
+leaf_qt/material_strength_limit_integration_owner.py
+leaf_qt/material_temperature_limit_integration_owner.py
+leaf_qt/material_thermal_conductivity_integration_owner.py
+leaf_qt/real_engine_benchmark_failure_owner.py
+leaf_qt/regen_candidate_blueprint_population_validation_owner.py
+leaf_qt/regen_candidate_creation_report_owner.py
+leaf_qt/regen_candidate_generation_report_owner.py
+leaf_qt/regen_candidate_mutation_report_owner.py
+leaf_qt/regen_geometry_report_owner.py
+leaf_qt/regen_optimisation_report_owner.py
+leaf_qt/regen_runtime_execution_report_owner.py
+leaf_qt/regen_runtime_optimisation_report_owner.py
+leaf_qt/regen_scalability_failure_owner.py
+
+SKIPPED FILES
+-------------
+None.
+
+COMPILE FAILURES
+----------------
+None.
+
+json=/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u175he_context_aware_try_except_fallback_repair.json
+text=/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u175he_context_aware_try_except_fallback_repair.txt

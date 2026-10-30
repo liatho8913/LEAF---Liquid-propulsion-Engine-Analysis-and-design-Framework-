@@ -1,0 +1,29 @@
+LEAF PHASE 16U.165C
+FAILED FILE DIAGNOSTIC EXTRACTION
+==========================================
+
+16U.165 COMPILE FAILURES
+---------------------------
+path=leaf_qt/regen_viewer_integration_report_owner.py
+error=PyCompileError('  File "/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/regen_viewer_integration_report_owner.py", line 18\n    from __future__ import annotations\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nSyntaxError: from __future__ imports must occur at the beginning of the file\n', 'SyntaxError', SyntaxError('from __future__ imports must occur at the beginning of the file', ('/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/regen_viewer_integration_report_owner.py', 18, 1, 'from __future__ import annotations\n', 18, 35)), '/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/regen_viewer_integration_report_owner.py')
+rolled_back=True
+
+MATCHING LINES
+--------------
+
+--- context around line 89 ---
+      86: 
+      87:         failures = [
+      88:             check for check in self.checks
+>>    89:             if not check.status.startswith("PASS")
+      90:         ]
+      91: 
+      92:         if failures:
+
+
+16U.165B UNREPAIRED
+----------------------
+{
+  "path": "leaf_qt/regen_viewer_integration_report_owner.py",
+  "reason": "no_ast_safe_replacement_found"
+}

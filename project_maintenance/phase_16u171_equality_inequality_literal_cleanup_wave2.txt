@@ -1,0 +1,60 @@
+LEAF PHASE 16U.171
+EQUALITY / INEQUALITY LITERAL CLEANUP WAVE 2
+======================================================
+status=FAIL_PHASE_16U171_EQUALITY_INEQUALITY_LITERAL_CLEANUP_WAVE2
+candidate_file_count=38
+candidate_predicate_count=71
+touched_count=0
+skipped_count=38
+compile_failure_count=0
+
+TOUCHED FILES
+-------------
+
+SKIPPED FILES
+-------------
+leaf_qt/engine_solver.py :: no_line_level_replacements
+leaf_qt/foundation_verification_harness.py :: no_line_level_replacements
+leaf_qt/regen_acceptance_master_gate.py :: no_line_level_replacements
+leaf_qt/regen_before_after_solver_comparison_report_owner.py :: no_line_level_replacements
+leaf_qt/regen_candidate_acceptance_completion_gate.py :: no_line_level_replacements
+leaf_qt/regen_candidate_comparison_master_gate.py :: no_line_level_replacements
+leaf_qt/regen_completion_master_gate.py :: no_line_level_replacements
+leaf_qt/regen_convergence_master_gate.py :: no_line_level_replacements
+leaf_qt/regen_cross_section_viewer_integration.py :: no_line_level_replacements
+leaf_qt/regen_engineering_acceptance_report.py :: no_line_level_replacements
+leaf_qt/regen_evolution_tree_master_gate.py :: no_line_level_replacements
+leaf_qt/regen_failure_root_cause_system.py :: no_line_level_replacements
+leaf_qt/regen_final_completion_audit.py :: no_line_level_replacements
+leaf_qt/regen_final_master_gate.py :: no_line_level_replacements
+leaf_qt/regen_final_signoff_report.py :: no_line_level_replacements
+leaf_qt/regen_final_verification_audit.py :: no_line_level_replacements
+leaf_qt/regen_live_geometry_commit_execution.py :: no_line_level_replacements
+leaf_qt/regen_optimisation_completion_gate.py :: no_line_level_replacements
+leaf_qt/regen_optimisation_controller_master_gate.py :: no_line_level_replacements
+leaf_qt/regen_optimisation_narrative_master_gate.py :: no_line_level_replacements
+leaf_qt/regen_optimisation_proof_system.py :: no_line_level_replacements
+leaf_qt/regen_optimisation_viewer_master_gate.py :: no_line_level_replacements
+leaf_qt/regen_runtime_candidate_evaluation_master_gate.py :: no_line_level_replacements
+leaf_qt/regen_runtime_convergence_master_gate.py :: no_line_level_replacements
+leaf_qt/regen_runtime_evolution_master_gate.py :: no_line_level_replacements
+leaf_qt/regen_runtime_selection_master_gate.py :: no_line_level_replacements
+leaf_qt/regen_station_viewer_integration.py :: no_line_level_replacements
+leaf_qt/regen_system_signoff_master_gate.py :: no_line_level_replacements
+leaf_qt/regen_unified_ecosystem_master_gate.py :: no_line_level_replacements
+leaf_qt/regen_unified_validation_integration_master_gate.py :: no_line_level_replacements
+leaf_qt/regen_unified_viewer_integration_master_gate.py :: no_line_level_replacements
+leaf_qt/regen_validation_master_gate.py :: no_line_level_replacements
+leaf_qt/regen_viewer_completion_gate.py :: no_line_level_replacements
+leaf_qt/regen_viewer_data_adapter.py :: no_line_level_replacements
+leaf_qt/regen_viewer_gui_runtime_acceptance_gate_phase_16q28.py :: no_line_level_replacements
+leaf_qt/regen_viewer_navigation_system.py :: no_line_level_replacements
+leaf_qt/regen_viewer_ownership_architecture.py :: no_line_level_replacements
+leaf_qt/regen_viewer_report_renderer.py :: no_line_level_replacements
+
+COMPILE FAILURES
+----------------
+No compile failures.
+
+json=/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u171_equality_inequality_literal_cleanup_wave2.json
+text=/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u171_equality_inequality_literal_cleanup_wave2.txt

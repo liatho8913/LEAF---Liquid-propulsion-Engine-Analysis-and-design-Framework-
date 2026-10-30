@@ -1,0 +1,52 @@
+{
+  "module_id": "nozzle",
+  "name": "Nozzle",
+  "domain": "engineering.nozzle",
+  "version": "1.0.0",
+  "description": "Declared LEAF engineering module for existing nozzle capability. This definition represents conical nozzle, Rao bell nozzle, area-Mach solving, expansion ratio handling, nozzle geometry generation, flow station generation, geometry validation, reporting, plotting, and export capability through the Modular Engine without creating bespoke infrastructure.",
+  "engineering_owner": "engineering_modules.nozzle",
+  "entrypoint": "",
+  "contracts": {
+    "interface": "leaf_qt.module_engine",
+    "solver": "existing_nozzle_engineering",
+    "validation": "leaf_qt.validation",
+    "workflow": "leaf_qt.workflow",
+    "runtime": "leaf_qt.runtime",
+    "storage": "leaf_qt.storage",
+    "reports": "leaf_qt.reports",
+    "notifications": "leaf_qt.notifications"
+  },
+  "dependencies": [
+    "runtime",
+    "validation",
+    "reports",
+    "workflow",
+    "storage",
+    "notifications",
+    "module_engine"
+  ],
+  "outputs": [
+    "nozzle_geometry",
+    "area_mach_solution",
+    "expansion_ratio",
+    "flow_stations",
+    "geometry_validation",
+    "nozzle_report",
+    "nozzle_plot",
+    "nozzle_export"
+  ],
+  "tags": [
+    "nozzle",
+    "conical",
+    "rao_bell",
+    "area_mach",
+    "geometry",
+    "flowfield",
+    "migration_only",
+    "thin_adapter_required",
+    "behaviour_preservation_required"
+  ],
+  "enabled": true,
+  "requires_modules": [],
+  "runtime_binding": "stage_gated"
+}

@@ -1,0 +1,13 @@
+LEAF PHASE 16U.175I-C
+STATUS PRESENTATION CIRCULAR IMPORT BREAK
+=================================================
+status=PASS_PHASE_16U175IC_STATUS_PRESENTATION_CIRCULAR_IMPORT_BREAK
+target=leaf_qt/structured_status_access.py
+changed=True
+compile_error=None
+import_error=None
+self_test_failures=[]
+rolled_back=False
+backup=/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u175ic_backups/20260629_010238__structured_status_access.py.bak
+json=/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u175ic_status_presentation_circular_import_break.json
+text=/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u175ic_status_presentation_circular_import_break.txt

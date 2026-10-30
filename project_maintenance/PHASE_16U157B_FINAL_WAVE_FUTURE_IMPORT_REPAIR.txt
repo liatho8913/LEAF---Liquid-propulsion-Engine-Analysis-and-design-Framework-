@@ -1,0 +1,16 @@
+LEAF PHASE 16U.157B
+FINAL WAVE FUTURE IMPORT REPAIR
+================================
+
+STATUS: PASS_PHASE_16U157B_FINAL_WAVE_FUTURE_IMPORT_REPAIR
+
+Files repaired: 2
+Files failed: 0
+
+FILES
+-----
+- regen_viewer_final_runtime_consistency_gate_phase_16q20.py :: PASS :: inserted_fallback_after_future_imports, replacement:"PASS"\s+if\s+([^,\n]+?)\s+else\s+"FAIL":1
+- regen_viewer_gui_runtime_acceptance_gate_phase_16q28.py :: PASS :: inserted_fallback_after_future_imports, replacement:"PASS"\s+if\s+([^,\n]+?)\s+else\s+"FAIL":1
+
+FAILURES
+--------

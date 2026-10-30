@@ -1,0 +1,41 @@
+LEAF PHASE 16U.35
+REPORT OWNER PRESENTATION LAYER PILOT REGRESSION
+=================================================
+
+STATUS: PASS_PHASE_16U35_REPORT_OWNER_PRESENTATION_LAYER_PILOT_REGRESSION
+Generated: 2026-06-28T02:20:56
+
+FEATURE
+-------
+Regression verification for the first production report-owner presentation-layer pilot.
+
+FILES VERIFIED
+--------------
+leaf_qt/status_presentation.py
+leaf_qt/foundation_test_runner_window.py
+
+CHECKS
+------
+status_presentation_file_exists: PASS — leaf_qt/status_presentation.py
+pilot_window_file_exists: PASS — leaf_qt/foundation_test_runner_window.py
+compile_passed: PASS — 3/3 compiled
+required_status_api_present: PASS — all required API present
+legacy_compatibility_marker_behaviour: PASS — True->PASS, False->FAIL
+pilot_uses_shared_presentation_layer: PASS — pilot tokens present
+legacy_inline_marker_removed_from_pilot: PASS — 0 forbidden pattern(s) present
+status_presentation_unit_tests: PASS — returncode=0
+presentation_semantics_regression: PASS — 0 semantic regression(s)
+
+COMPILE RESULTS
+---------------
+leaf_qt/status_presentation.py: PASS 
+leaf_qt/foundation_test_runner_window.py: PASS 
+project_maintenance/test_status_presentation_phase_16u32.py: PASS 
+
+COMPLETION NOTICE
+-----------------
+PHASE 16U.35 COMPLETE.
+
+NEXT PHASE
+----------
+PHASE 16U.36 — REPORT OWNER PRESENTATION LAYER PILOT CLOSURE GATE

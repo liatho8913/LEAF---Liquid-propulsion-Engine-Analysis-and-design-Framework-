@@ -1,0 +1,16 @@
+LEAF PHASE 16U.115
+SINGLE FILE DECISION
+====================
+
+STATUS: PASS_PHASE_16U115_SINGLE_FILE_DECISION
+
+Remaining candidates: 56
+Selected file: leaf_qt/regen_acceptance_audit.py
+
+DECISION
+--------
+Proceed to Phase 16U.116 presentation-layer patch for the selected single file.
+
+SELECTION REASON
+----------------
+Conservative lowest-risk structural candidate selected from Phase 16U.114 remaining candidates.

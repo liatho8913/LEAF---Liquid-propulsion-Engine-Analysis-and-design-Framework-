@@ -1,0 +1,55 @@
+{
+  "phase": "16U.83",
+  "status": "PASS_PHASE_16U83_REGEN_RUNTIME_OPTIMISATION_REPORT_OWNER_PRESENTATION_LAYER_CLOSURE_GATE",
+  "generated": "2026-06-28T19:23:32",
+  "target": "leaf_qt/regen_runtime_optimisation_report_owner.py",
+  "checks": [
+    {
+      "name": "production_target_exists",
+      "passed": true,
+      "detail": "leaf_qt/regen_runtime_optimisation_report_owner.py"
+    },
+    {
+      "name": "phase_16u81_patch_script_exists",
+      "passed": true,
+      "detail": "project_maintenance/regen_runtime_optimisation_report_owner_presentation_layer_patch_phase_16u81.py"
+    },
+    {
+      "name": "phase_16u82_regression_script_exists",
+      "passed": true,
+      "detail": "project_maintenance/regen_runtime_optimisation_report_owner_presentation_layer_regression_phase_16u82.py"
+    },
+    {
+      "name": "phase_16u81_patch_rerun_passed",
+      "passed": true,
+      "detail": "returncode=0"
+    },
+    {
+      "name": "phase_16u82_regression_rerun_passed",
+      "passed": true,
+      "detail": "returncode=0"
+    },
+    {
+      "name": "phase_16u81_completion_flag_true",
+      "passed": true,
+      "detail": "PASS_PHASE_16U81_REGEN_RUNTIME_OPTIMISATION_REPORT_OWNER_PRESENTATION_LAYER_PATCH"
+    },
+    {
+      "name": "phase_16u82_completion_flag_true",
+      "passed": true,
+      "detail": "PASS_PHASE_16U82_REGEN_RUNTIME_OPTIMISATION_REPORT_OWNER_PRESENTATION_LAYER_REGRESSION"
+    },
+    {
+      "name": "production_target_contains_shared_status_layer",
+      "passed": true,
+      "detail": "shared status presentation helper present"
+    },
+    {
+      "name": "production_target_has_no_legacy_status_patterns_after_helper",
+      "passed": true,
+      "detail": "legacy literals allowed only inside helper fallback"
+    }
+  ],
+  "phase_16u83_regen_runtime_optimisation_report_owner_presentation_layer_closure_gate_complete": true,
+  "next_phase": "16U.84 \u2014 Updated Global Remaining-Candidate Audit"
+}

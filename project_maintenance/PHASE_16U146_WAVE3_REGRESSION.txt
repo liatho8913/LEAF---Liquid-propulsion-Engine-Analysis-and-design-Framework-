@@ -1,0 +1,26 @@
+LEAF PHASE 16U.146
+WAVE 3 REGRESSION
+==================
+
+STATUS: PASS_PHASE_16U146_WAVE3_REGRESSION
+
+Files checked: 11
+Files passed: 11
+Files failed: 0
+
+FILES
+-----
+- regen_candidate_mutation_completion_audit.py :: PASS
+- regen_candidate_mutation_input_audit.py :: PASS
+- regen_candidate_mutation_master_gate.py :: PASS
+- regen_candidate_population_completion_audit.py :: PASS
+- regen_candidate_population_master_gate.py :: PASS
+- regen_candidate_ranking_completion_audit.py :: PASS
+- regen_candidate_ranking_input_audit.py :: PASS
+- regen_candidate_ranking_master_gate.py :: PASS
+- regen_evolution_loop_completion_audit.py :: PASS
+- regen_evolution_loop_input_audit.py :: PASS
+- regen_evolution_loop_master_gate.py :: PASS
+
+FAILURES
+--------

@@ -1,0 +1,50 @@
+LEAF PHASE 16U.105
+SINGLE-FILE MIGRATION DECISION
+==============================
+
+STATUS: PASS_PHASE_16U105_SINGLE_FILE_MIGRATION_DECISION
+Generated: 2026-06-28T21:07:12
+
+FEATURE
+-------
+Select the next highest-priority single-file-required production candidate.
+
+SUMMARY
+-------
+Previous audit: project_maintenance/updated_global_remaining_candidate_audit_phase_16u104.json
+Source candidate count: 14
+Rescanned count: 14
+Selectable count: 14
+
+SELECTED TARGET
+---------------
+File: leaf_qt/regen_candidate_mutation_report_owner.py
+Finding count: 1
+Risk score: 40
+Imports status presentation: False
+  - line 305 [inline_pass_fail_ternary]: "PASS" if check.get("passed") else "FAIL"
+
+TOP SELECTABLE
+--------------
+1. leaf_qt/regen_candidate_mutation_report_owner.py | findings=1 | risk=40
+2. leaf_qt/regen_runtime_execution_report_owner.py | findings=1 | risk=40
+3. leaf_qt/regen_optimisation_registration_owner.py | findings=1 | risk=35
+4. leaf_qt/regen_optimisation_session_owner.py | findings=1 | risk=35
+5. leaf_qt/regen_runtime_optimisation_registration_owner.py | findings=1 | risk=35
+6. leaf_qt/regen_runtime_optimisation_session_owner.py | findings=1 | risk=35
+7. leaf_qt/regen_acceptance_criteria_owner.py | findings=1 | risk=20
+8. leaf_qt/regen_candidate_creation_registration_owner.py | findings=1 | risk=20
+9. leaf_qt/regen_candidate_creation_session_owner.py | findings=1 | risk=20
+10. leaf_qt/regen_candidate_generation_registration_owner.py | findings=1 | risk=20
+11. leaf_qt/regen_candidate_generation_session_owner.py | findings=1 | risk=20
+12. leaf_qt/regen_geometry_constraint_owner.py | findings=1 | risk=20
+13. leaf_qt/regen_runtime_execution_registration_owner.py | findings=1 | risk=20
+14. leaf_qt/regen_runtime_execution_session_owner.py | findings=1 | risk=20
+
+COMPLETION NOTICE
+-----------------
+PHASE 16U.105 COMPLETE.
+
+NEXT FEATURE
+------------
+PHASE 16U.106 — SELECTED SINGLE-FILE PRESENTATION LAYER PATCH

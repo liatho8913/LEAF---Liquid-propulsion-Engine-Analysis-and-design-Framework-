@@ -1,0 +1,11 @@
+LEAF PHASE 16U.165D
+SURGICAL FAILED-FILE REPAIR
+==================================
+status=FAIL_PHASE_16U165D_SURGICAL_FAILED_FILE_REPAIR
+target=leaf_qt/regen_viewer_integration_report_owner.py
+replacement_applied=False
+rolled_back=True
+compile_error=PyCompileError('  File "/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/regen_viewer_integration_report_owner.py", line 18\n    from __future__ import annotations\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nSyntaxError: from __future__ imports must occur at the beginning of the file\n', 'SyntaxError', SyntaxError('from __future__ imports must occur at the beginning of the file', ('/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/regen_viewer_integration_report_owner.py', 18, 1, 'from __future__ import annotations\n', 18, 35)), '/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/regen_viewer_integration_report_owner.py')
+backup=/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u165d_backups/20260629_003711__regen_viewer_integration_report_owner.py.bak
+json=/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u165d_surgical_failed_file_repair.json
+text=/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u165d_surgical_failed_file_repair.txt

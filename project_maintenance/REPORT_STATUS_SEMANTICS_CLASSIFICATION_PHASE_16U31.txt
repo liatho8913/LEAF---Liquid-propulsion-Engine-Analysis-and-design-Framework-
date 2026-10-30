@@ -1,0 +1,393 @@
+LEAF PHASE 16U.31
+REPORT STATUS SEMANTICS CLASSIFICATION
+======================================
+
+STATUS: PASS_PHASE_16U31_REPORT_STATUS_SEMANTICS_CLASSIFICATION
+Generated: 2026-06-28T01:55:35
+
+SCOPE
+-----
+This phase classifies Wave E report-owner status semantics.
+No production files are modified.
+No report behaviour is modified.
+
+SUMMARY
+-------
+Source candidates: 54
+Classified: 54
+Closure blockers: 0
+
+SEMANTIC CLASS BREAKDOWN
+------------------------
+COMPOUND_STATUS_PRESENTATION: 23
+DISPLAY_FILTER_ENUMERATION: 2
+LEGACY_STATUS_PRODUCER: 4
+MANUAL_REPORT_SEMANTICS_REVIEW: 11
+REPORT_TEXT_RENDERING: 10
+UI_SEVERITY_VISUAL_DECISION: 4
+
+MIGRATION ACTION BREAKDOWN
+--------------------------
+MIGRATE_LATER_TO_RENDERER: 23
+MIGRATE_LATER_TO_STYLE_HELPER: 4
+PRESERVE_NOW: 27
+
+FUTURE OWNER BREAKDOWN
+----------------------
+LegacyCompatibilityProducer: 4
+ManualReviewLedger: 11
+ReportFilterModel: 2
+ReportStatusPresenter: 10
+StatusVisualStyle: 4
+StructuredStatusRenderer: 23
+
+CLASSIFIED ITEMS
+----------------
+integrate_phase_16k2_regen_viewer_report_renderer.py:184 [REPORT_TEXT_RENDERING]
+  action: PRESERVE_NOW
+  future_owner: ReportStatusPresenter
+  snippet: f"{'PASS' if item.get('passed') else 'FAIL'}"
+  reason: This produces visible report text, not engineering status logic.
+
+leaf_qt/foundation_test_runner_window.py:100 [REPORT_TEXT_RENDERING]
+  action: PRESERVE_NOW
+  future_owner: ReportStatusPresenter
+  snippet: status_text = "PASS" if passed else "FAIL"
+  reason: This produces visible report text, not engineering status logic.
+
+leaf_qt/regen_cross_section_viewer.py:514 [MANUAL_REPORT_SEMANTICS_REVIEW]
+  action: PRESERVE_NOW
+  future_owner: ManualReviewLedger
+  snippet: if status in ("1", "TRUE", "PASS", "VALID"):
+  reason: No safe renderer migration can be inferred automatically.
+
+leaf_qt/regen_cross_section_viewer.py:517 [COMPOUND_STATUS_PRESENTATION]
+  action: MIGRATE_LATER_TO_RENDERER
+  future_owner: StructuredStatusRenderer
+  snippet: if "PASS" in status and "FAIL" not in status:
+  reason: This interprets compound/report status text for display and needs renderer ownership.
+
+leaf_qt/regen_cross_section_viewer.py:517 [COMPOUND_STATUS_PRESENTATION]
+  action: MIGRATE_LATER_TO_RENDERER
+  future_owner: StructuredStatusRenderer
+  snippet: if "PASS" in status and "FAIL" not in status:
+  reason: This interprets compound/report status text for display and needs renderer ownership.
+
+leaf_qt/regen_cross_section_viewer.py:520 [COMPOUND_STATUS_PRESENTATION]
+  action: MIGRATE_LATER_TO_RENDERER
+  future_owner: StructuredStatusRenderer
+  snippet: if "WARN" in status or "MARGINAL" in status or "PARTIAL" in status or "PLAUSIBLE" in status:
+  reason: This interprets compound/report status text for display and needs renderer ownership.
+
+leaf_qt/regen_cross_section_viewer.py:520 [COMPOUND_STATUS_PRESENTATION]
+  action: MIGRATE_LATER_TO_RENDERER
+  future_owner: StructuredStatusRenderer
+  snippet: if "WARN" in status or "MARGINAL" in status or "PARTIAL" in status or "PLAUSIBLE" in status:
+  reason: This interprets compound/report status text for display and needs renderer ownership.
+
+leaf_qt/regen_cross_section_viewer.py:523 [COMPOUND_STATUS_PRESENTATION]
+  action: MIGRATE_LATER_TO_RENDERER
+  future_owner: StructuredStatusRenderer
+  snippet: if "FAIL" in status or "INVALID" in status or "BLOCKED" in status:
+  reason: This interprets compound/report status text for display and needs renderer ownership.
+
+leaf_qt/regen_cross_section_viewer.py:523 [COMPOUND_STATUS_PRESENTATION]
+  action: MIGRATE_LATER_TO_RENDERER
+  future_owner: StructuredStatusRenderer
+  snippet: if "FAIL" in status or "INVALID" in status or "BLOCKED" in status:
+  reason: This interprets compound/report status text for display and needs renderer ownership.
+
+leaf_qt/regen_cross_section_viewer.py:1892 [MANUAL_REPORT_SEMANTICS_REVIEW]
+  action: PRESERVE_NOW
+  future_owner: ManualReviewLedger
+  snippet: "PASS" in scalability_status
+  reason: No safe renderer migration can be inferred automatically.
+
+leaf_qt/regen_cross_section_viewer.py:1892 [MANUAL_REPORT_SEMANTICS_REVIEW]
+  action: PRESERVE_NOW
+  future_owner: ManualReviewLedger
+  snippet: "PASS" in scalability_status
+  reason: No safe renderer migration can be inferred automatically.
+
+leaf_qt/regen_cross_section_viewer.py:2010 [UI_SEVERITY_VISUAL_DECISION]
+  action: MIGRATE_LATER_TO_STYLE_HELPER
+  future_owner: StatusVisualStyle
+  snippet: elif "INVALID" in upper or "FAIL" in upper:
+  reason: This likely controls colour/icon/severity presentation rather than engineering pass/fail.
+
+leaf_qt/regen_cross_section_viewer.py:2010 [UI_SEVERITY_VISUAL_DECISION]
+  action: MIGRATE_LATER_TO_STYLE_HELPER
+  future_owner: StatusVisualStyle
+  snippet: elif "INVALID" in upper or "FAIL" in upper:
+  reason: This likely controls colour/icon/severity presentation rather than engineering pass/fail.
+
+leaf_qt/regen_cross_section_viewer.py:9795 [COMPOUND_STATUS_PRESENTATION]
+  action: MIGRATE_LATER_TO_RENDERER
+  future_owner: StructuredStatusRenderer
+  snippet: if "FAIL" in status or "FAIL" in geometry or "FAIL" in thermal or "FAIL" in coolant:
+  reason: This interprets compound/report status text for display and needs renderer ownership.
+
+leaf_qt/regen_cross_section_viewer.py:9795 [COMPOUND_STATUS_PRESENTATION]
+  action: MIGRATE_LATER_TO_RENDERER
+  future_owner: StructuredStatusRenderer
+  snippet: if "FAIL" in status or "FAIL" in geometry or "FAIL" in thermal or "FAIL" in coolant:
+  reason: This interprets compound/report status text for display and needs renderer ownership.
+
+leaf_qt/regen_cross_section_viewer.py:9809 [COMPOUND_STATUS_PRESENTATION]
+  action: MIGRATE_LATER_TO_RENDERER
+  future_owner: StructuredStatusRenderer
+  snippet: elif "PASS" in status:
+  reason: This interprets compound/report status text for display and needs renderer ownership.
+
+leaf_qt/regen_cross_section_viewer.py:9809 [COMPOUND_STATUS_PRESENTATION]
+  action: MIGRATE_LATER_TO_RENDERER
+  future_owner: StructuredStatusRenderer
+  snippet: elif "PASS" in status:
+  reason: This interprets compound/report status text for display and needs renderer ownership.
+
+leaf_qt/regen_cross_section_viewer.py:9902 [COMPOUND_STATUS_PRESENTATION]
+  action: MIGRATE_LATER_TO_RENDERER
+  future_owner: StructuredStatusRenderer
+  snippet: if status.startswith("BLOCKED") or status.startswith("FAIL"):
+  reason: This interprets compound/report status text for display and needs renderer ownership.
+
+leaf_qt/regen_cross_section_viewer.py:9902 [COMPOUND_STATUS_PRESENTATION]
+  action: MIGRATE_LATER_TO_RENDERER
+  future_owner: StructuredStatusRenderer
+  snippet: if status.startswith("BLOCKED") or status.startswith("FAIL"):
+  reason: This interprets compound/report status text for display and needs renderer ownership.
+
+leaf_qt/regen_cross_section_viewer.py:9902 [COMPOUND_STATUS_PRESENTATION]
+  action: MIGRATE_LATER_TO_RENDERER
+  future_owner: StructuredStatusRenderer
+  snippet: if status.startswith("BLOCKED") or status.startswith("FAIL"):
+  reason: This interprets compound/report status text for display and needs renderer ownership.
+
+leaf_qt/regen_cross_section_viewer.py:10104 [COMPOUND_STATUS_PRESENTATION]
+  action: MIGRATE_LATER_TO_RENDERER
+  future_owner: StructuredStatusRenderer
+  snippet: blocked = any("FAIL" in status or "BLOCKED" in status for status in blocked_statuses if status)
+  reason: This interprets compound/report status text for display and needs renderer ownership.
+
+leaf_qt/regen_cross_section_viewer.py:10104 [COMPOUND_STATUS_PRESENTATION]
+  action: MIGRATE_LATER_TO_RENDERER
+  future_owner: StructuredStatusRenderer
+  snippet: blocked = any("FAIL" in status or "BLOCKED" in status for status in blocked_statuses if status)
+  reason: This interprets compound/report status text for display and needs renderer ownership.
+
+leaf_qt/regen_cross_section_viewer.py:10213 [COMPOUND_STATUS_PRESENTATION]
+  action: MIGRATE_LATER_TO_RENDERER
+  future_owner: StructuredStatusRenderer
+  snippet: and not recommended_status.upper().startswith(("BLOCKED", "FAIL"))
+  reason: This interprets compound/report status text for display and needs renderer ownership.
+
+leaf_qt/regen_cross_section_viewer.py:10227 [COMPOUND_STATUS_PRESENTATION]
+  action: MIGRATE_LATER_TO_RENDERER
+  future_owner: StructuredStatusRenderer
+  snippet: and not best_status.upper().startswith(("FAIL", "BLOCKED"))
+  reason: This interprets compound/report status text for display and needs renderer ownership.
+
+leaf_qt/regen_cross_section_viewer.py:10266 [MANUAL_REPORT_SEMANTICS_REVIEW]
+  action: PRESERVE_NOW
+  future_owner: ManualReviewLedger
+  snippet: elif regen_status.upper() in ("FAIL", "NOT_RUN", "NONE"):
+  reason: No safe renderer migration can be inferred automatically.
+
+leaf_qt/regen_cross_section_viewer.py:10909 [COMPOUND_STATUS_PRESENTATION]
+  action: MIGRATE_LATER_TO_RENDERER
+  future_owner: StructuredStatusRenderer
+  snippet: if str(status).startswith("PASS"):
+  reason: This interprets compound/report status text for display and needs renderer ownership.
+
+leaf_qt/regen_cross_section_viewer.py:10909 [COMPOUND_STATUS_PRESENTATION]
+  action: MIGRATE_LATER_TO_RENDERER
+  future_owner: StructuredStatusRenderer
+  snippet: if str(status).startswith("PASS"):
+  reason: This interprets compound/report status text for display and needs renderer ownership.
+
+leaf_qt/regen_cross_section_viewer.py:10909 [COMPOUND_STATUS_PRESENTATION]
+  action: MIGRATE_LATER_TO_RENDERER
+  future_owner: StructuredStatusRenderer
+  snippet: if str(status).startswith("PASS"):
+  reason: This interprets compound/report status text for display and needs renderer ownership.
+
+leaf_qt/regen_cross_section_viewer.py:11143 [MANUAL_REPORT_SEMANTICS_REVIEW]
+  action: PRESERVE_NOW
+  future_owner: ManualReviewLedger
+  snippet: if self.results.get("regen_overall_status") == "FAIL":
+  reason: No safe renderer migration can be inferred automatically.
+
+leaf_qt/regen_cross_section_viewer.py:12626 [UI_SEVERITY_VISUAL_DECISION]
+  action: MIGRATE_LATER_TO_STYLE_HELPER
+  future_owner: StatusVisualStyle
+  snippet: if "FAIL" in str(value).upper() or "BLOCKED" in str(value).upper()
+  reason: This likely controls colour/icon/severity presentation rather than engineering pass/fail.
+
+leaf_qt/regen_cross_section_viewer.py:12626 [UI_SEVERITY_VISUAL_DECISION]
+  action: MIGRATE_LATER_TO_STYLE_HELPER
+  future_owner: StatusVisualStyle
+  snippet: if "FAIL" in str(value).upper() or "BLOCKED" in str(value).upper()
+  reason: This likely controls colour/icon/severity presentation rather than engineering pass/fail.
+
+leaf_qt/regen_cross_section_viewer.py:12632 [MANUAL_REPORT_SEMANTICS_REVIEW]
+  action: PRESERVE_NOW
+  future_owner: ManualReviewLedger
+  snippet: if "WARN" in str(value).upper()
+  reason: No safe renderer migration can be inferred automatically.
+
+leaf_qt/regen_cross_section_viewer.py:12632 [MANUAL_REPORT_SEMANTICS_REVIEW]
+  action: PRESERVE_NOW
+  future_owner: ManualReviewLedger
+  snippet: if "WARN" in str(value).upper()
+  reason: No safe renderer migration can be inferred automatically.
+
+leaf_qt/regen_geometry_output_window.py:253 [DISPLAY_FILTER_ENUMERATION]
+  action: PRESERVE_NOW
+  future_owner: ReportFilterModel
+  snippet: for state in ("FAIL", "WARN", "PASS", "NOT_AVAILABLE"):
+  reason: This enumerates display states rather than consuming status.
+
+leaf_qt/regen_geometry_output_window.py:340 [DISPLAY_FILTER_ENUMERATION]
+  action: PRESERVE_NOW
+  future_owner: ReportFilterModel
+  snippet: for state in ("FAIL", "WARN"):
+  reason: This enumerates display states rather than consuming status.
+
+leaf_qt/regen_viewer_auto_geometry_handover_lock_phase_16q10.py:99 [REPORT_TEXT_RENDERING]
+  action: PRESERVE_NOW
+  future_owner: ReportStatusPresenter
+  snippet: state = "PASS" if item["passed"] else "FAIL"
+  reason: This produces visible report text, not engineering status logic.
+
+leaf_qt/regen_viewer_final_closure_handover_phase_16q30.py:100 [REPORT_TEXT_RENDERING]
+  action: PRESERVE_NOW
+  future_owner: ReportStatusPresenter
+  snippet: state = "PASS" if item["passed"] else "FAIL"
+  reason: This produces visible report text, not engineering status logic.
+
+leaf_qt/regen_viewer_final_completion_declaration_phase_16q7.py:35 [MANUAL_REPORT_SEMANTICS_REVIEW]
+  action: PRESERVE_NOW
+  future_owner: ManualReviewLedger
+  snippet: if results.get("regen_viewer_completion_lock") != "PASS":
+  reason: No safe renderer migration can be inferred automatically.
+
+leaf_qt/regen_viewer_final_completion_declaration_phase_16q7.py:112 [REPORT_TEXT_RENDERING]
+  action: PRESERVE_NOW
+  future_owner: ReportStatusPresenter
+  snippet: state = "PASS" if item["passed"] else "FAIL"
+  reason: This produces visible report text, not engineering status logic.
+
+leaf_qt/regen_viewer_final_completion_lock_phase_16p23.py:34 [MANUAL_REPORT_SEMANTICS_REVIEW]
+  action: PRESERVE_NOW
+  future_owner: ManualReviewLedger
+  snippet: if results.get("regen_viewer_runtime_signoff") != "PASS":
+  reason: No safe renderer migration can be inferred automatically.
+
+leaf_qt/regen_viewer_final_completion_lock_phase_16p23.py:98 [REPORT_TEXT_RENDERING]
+  action: PRESERVE_NOW
+  future_owner: ReportStatusPresenter
+  snippet: state = "PASS" if item["passed"] else "FAIL"
+  reason: This produces visible report text, not engineering status logic.
+
+leaf_qt/regen_viewer_final_completion_lock_phase_16p23.py:138 [LEGACY_STATUS_PRODUCER]
+  action: PRESERVE_NOW
+  future_owner: LegacyCompatibilityProducer
+  snippet: results["regen_viewer_completion_lock"] = "PASS"
+  reason: This writes compatibility status output and should not be consumed as a report decision.
+
+leaf_qt/regen_viewer_final_completion_lock_phase_16p23.py:141 [LEGACY_STATUS_PRODUCER]
+  action: PRESERVE_NOW
+  future_owner: LegacyCompatibilityProducer
+  snippet: results["regen_viewer_completion_lock"] = "FAIL"
+  reason: This writes compatibility status output and should not be consumed as a report decision.
+
+leaf_qt/regen_viewer_final_runtime_consistency_gate_phase_16q20.py:125 [REPORT_TEXT_RENDERING]
+  action: PRESERVE_NOW
+  future_owner: ReportStatusPresenter
+  snippet: state = "PASS" if item["passed"] else "FAIL"
+  reason: This produces visible report text, not engineering status logic.
+
+leaf_qt/regen_viewer_gui_runtime_acceptance_gate_phase_16q28.py:93 [REPORT_TEXT_RENDERING]
+  action: PRESERVE_NOW
+  future_owner: ReportStatusPresenter
+  snippet: state = "PASS" if item["passed"] else "FAIL"
+  reason: This produces visible report text, not engineering status logic.
+
+leaf_qt/regen_viewer_gui_runtime_acceptance_gate_phase_16q28.py:146 [LEGACY_STATUS_PRODUCER]
+  action: PRESERVE_NOW
+  future_owner: LegacyCompatibilityProducer
+  snippet: results["regen_viewer_gui_runtime_acceptance"] = "PASS"
+  reason: This writes compatibility status output and should not be consumed as a report decision.
+
+leaf_qt/regen_viewer_gui_runtime_acceptance_gate_phase_16q28.py:149 [LEGACY_STATUS_PRODUCER]
+  action: PRESERVE_NOW
+  future_owner: LegacyCompatibilityProducer
+  snippet: results["regen_viewer_gui_runtime_acceptance"] = "FAIL"
+  reason: This writes compatibility status output and should not be consumed as a report decision.
+
+leaf_qt/regen_viewer_gui_runtime_checklist_phase_16p22.py:38 [MANUAL_REPORT_SEMANTICS_REVIEW]
+  action: PRESERVE_NOW
+  future_owner: ManualReviewLedger
+  snippet: runtime_signoff_pass = results.get("regen_viewer_runtime_signoff") == "PASS"
+  reason: No safe renderer migration can be inferred automatically.
+
+leaf_qt/regen_viewer_gui_runtime_checklist_phase_16p22.py:89 [REPORT_TEXT_RENDERING]
+  action: PRESERVE_NOW
+  future_owner: ReportStatusPresenter
+  snippet: state = "PASS" if item["present"] else "FAIL"
+  reason: This produces visible report text, not engineering status logic.
+
+leaf_qt/regen_viewer_integration_report_owner.py:89 [COMPOUND_STATUS_PRESENTATION]
+  action: MIGRATE_LATER_TO_RENDERER
+  future_owner: StructuredStatusRenderer
+  snippet: if not check.status.startswith("PASS")
+  reason: This interprets compound/report status text for display and needs renderer ownership.
+
+leaf_qt/regen_viewer_integration_report_owner.py:89 [COMPOUND_STATUS_PRESENTATION]
+  action: MIGRATE_LATER_TO_RENDERER
+  future_owner: StructuredStatusRenderer
+  snippet: if not check.status.startswith("PASS")
+  reason: This interprets compound/report status text for display and needs renderer ownership.
+
+leaf_qt/regen_viewer_integration_report_owner.py:89 [COMPOUND_STATUS_PRESENTATION]
+  action: MIGRATE_LATER_TO_RENDERER
+  future_owner: StructuredStatusRenderer
+  snippet: if not check.status.startswith("PASS")
+  reason: This interprets compound/report status text for display and needs renderer ownership.
+
+leaf_qt/regen_viewer_report_renderer.py:179 [REPORT_TEXT_RENDERING]
+  action: PRESERVE_NOW
+  future_owner: ReportStatusPresenter
+  snippet: f"{'PASS' if item.get('passed') else 'FAIL'}"
+  reason: This produces visible report text, not engineering status logic.
+
+leaf_qt/regen_viewer_station_geometry_dump_phase_16p17.py:150 [MANUAL_REPORT_SEMANTICS_REVIEW]
+  action: PRESERVE_NOW
+  future_owner: ManualReviewLedger
+  snippet: overall = "PASS" if fail_count == 0 else "FAIL"
+  reason: No safe renderer migration can be inferred automatically.
+
+COMPILE RESULTS
+---------------
+integrate_phase_16k2_regen_viewer_report_renderer.py: PASS 
+leaf_qt/foundation_test_runner_window.py: PASS 
+leaf_qt/regen_cross_section_viewer.py: PASS 
+leaf_qt/regen_geometry_output_window.py: PASS 
+leaf_qt/regen_viewer_auto_geometry_handover_lock_phase_16q10.py: PASS 
+leaf_qt/regen_viewer_final_closure_handover_phase_16q30.py: PASS 
+leaf_qt/regen_viewer_final_completion_declaration_phase_16q7.py: PASS 
+leaf_qt/regen_viewer_final_completion_lock_phase_16p23.py: PASS 
+leaf_qt/regen_viewer_final_runtime_consistency_gate_phase_16q20.py: PASS 
+leaf_qt/regen_viewer_gui_runtime_acceptance_gate_phase_16q28.py: PASS 
+leaf_qt/regen_viewer_gui_runtime_checklist_phase_16p22.py: PASS 
+leaf_qt/regen_viewer_integration_report_owner.py: PASS 
+leaf_qt/regen_viewer_report_renderer.py: PASS 
+leaf_qt/regen_viewer_station_geometry_dump_phase_16p17.py: PASS 
+
+COMPLETION NOTICE
+-----------------
+PHASE 16U.31 COMPLETE.
+
+NEXT PHASE
+----------
+PHASE 16U.32 — SHARED STATUS PRESENTATION LAYER

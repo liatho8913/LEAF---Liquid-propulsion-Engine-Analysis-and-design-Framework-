@@ -1,0 +1,11 @@
+problem rocket equilibrium
+  p,bar=68.95
+  o/f=3.5
+  sup,ae/at=9.1059
+
+reactants
+  fuel=CH4  t,k=111.000
+  oxid=O2(L) t,k=90.000
+
+output transport short
+end

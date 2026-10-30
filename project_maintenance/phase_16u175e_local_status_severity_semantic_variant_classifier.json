@@ -1,0 +1,625 @@
+{
+  "phase": "16U.175E",
+  "variant_count": 68,
+  "variant_counts": {
+    "EXTENDED_SEVERITY_VARIANT": 67,
+    "NO_LOCAL_DEFINITION_SOURCE": 1
+  },
+  "entries": [
+    {
+      "path": "leaf_qt/bond_coat_integration_owner.py",
+      "equivalence": "DIFFERS_FROM_SHARED_OWNER",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "local_start_line": 5,
+      "local_end_line": 13,
+      "returns": [],
+      "local_source_preview": "    def status_severity(value):\n        text = str(value or \"\").upper()\n        if _leaf_16u50_is_fail_like(text) or _leaf_16u50_is_fail_like(text) or \"INVALID\" in text or \"ERROR\" in text or \"MISSING\" in text:\n            return \"FAIL\"\n        if _leaf_16u50_is_warn_like(text) or \"PARTIAL\" in text or \"MARGINAL\" in text:\n            return \"WARN\"\n        if _leaf_16u50_is_pass_like(text) or \"VALID\" in text or \"COMPLETE\" in text:\n            return \"PASS\"\n        return \"UNKNOWN\""
+    },
+    {
+      "path": "leaf_qt/coating_property_consumption_audit_owner.py",
+      "equivalence": "DIFFERS_FROM_SHARED_OWNER",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "local_start_line": 5,
+      "local_end_line": 13,
+      "returns": [],
+      "local_source_preview": "    def status_severity(value):\n        text = str(value or \"\").upper()\n        if _leaf_16u62_is_fail_like(text) or _leaf_16u62_is_fail_like(text) or \"INVALID\" in text or \"ERROR\" in text or \"MISSING\" in text:\n            return \"FAIL\"\n        if _leaf_16u62_is_warn_like(text) or \"PARTIAL\" in text or \"MARGINAL\" in text:\n            return \"WARN\"\n        if _leaf_16u62_is_pass_like(text) or \"VALID\" in text or \"COMPLETE\" in text:\n            return \"PASS\"\n        return \"UNKNOWN\""
+    },
+    {
+      "path": "leaf_qt/coating_temperature_limit_integration_owner.py",
+      "equivalence": "DIFFERS_FROM_SHARED_OWNER",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "local_start_line": 5,
+      "local_end_line": 13,
+      "returns": [],
+      "local_source_preview": "    def status_severity(value):\n        text = str(value or \"\").upper()\n        if _leaf_16u54_is_fail_like(text) or _leaf_16u54_is_fail_like(text) or \"INVALID\" in text or \"ERROR\" in text or \"MISSING\" in text:\n            return \"FAIL\"\n        if _leaf_16u54_is_warn_like(text) or \"PARTIAL\" in text or \"MARGINAL\" in text:\n            return \"WARN\"\n        if _leaf_16u54_is_pass_like(text) or \"VALID\" in text or \"COMPLETE\" in text:\n            return \"PASS\"\n        return \"UNKNOWN\""
+    },
+    {
+      "path": "leaf_qt/coating_thermal_conductivity_integration_owner.py",
+      "equivalence": "DIFFERS_FROM_SHARED_OWNER",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "local_start_line": 5,
+      "local_end_line": 13,
+      "returns": [],
+      "local_source_preview": "    def status_severity(value):\n        text = str(value or \"\").upper()\n        if _leaf_16u62_is_fail_like(text) or _leaf_16u62_is_fail_like(text) or \"INVALID\" in text or \"ERROR\" in text or \"MISSING\" in text:\n            return \"FAIL\"\n        if _leaf_16u62_is_warn_like(text) or \"PARTIAL\" in text or \"MARGINAL\" in text:\n            return \"WARN\"\n        if _leaf_16u62_is_pass_like(text) or \"VALID\" in text or \"COMPLETE\" in text:\n            return \"PASS\"\n        return \"UNKNOWN\""
+    },
+    {
+      "path": "leaf_qt/coating_thermal_resistance_integration_owner.py",
+      "equivalence": "DIFFERS_FROM_SHARED_OWNER",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "local_start_line": 5,
+      "local_end_line": 13,
+      "returns": [],
+      "local_source_preview": "    def status_severity(value):\n        text = str(value or \"\").upper()\n        if _leaf_16u62_is_fail_like(text) or _leaf_16u62_is_fail_like(text) or \"INVALID\" in text or \"ERROR\" in text or \"MISSING\" in text:\n            return \"FAIL\"\n        if _leaf_16u62_is_warn_like(text) or \"PARTIAL\" in text or \"MARGINAL\" in text:\n            return \"WARN\"\n        if _leaf_16u62_is_pass_like(text) or \"VALID\" in text or \"COMPLETE\" in text:\n            return \"PASS\"\n        return \"UNKNOWN\""
+    },
+    {
+      "path": "leaf_qt/coating_thickness_integration_owner.py",
+      "equivalence": "DIFFERS_FROM_SHARED_OWNER",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "local_start_line": 5,
+      "local_end_line": 13,
+      "returns": [],
+      "local_source_preview": "    def status_severity(value):\n        text = str(value or \"\").upper()\n        if _leaf_16u62_is_fail_like(text) or _leaf_16u62_is_fail_like(text) or \"INVALID\" in text or \"ERROR\" in text or \"MISSING\" in text:\n            return \"FAIL\"\n        if _leaf_16u62_is_warn_like(text) or \"PARTIAL\" in text or \"MARGINAL\" in text:\n            return \"WARN\"\n        if _leaf_16u62_is_pass_like(text) or \"VALID\" in text or \"COMPLETE\" in text:\n            return \"PASS\"\n        return \"UNKNOWN\""
+    },
+    {
+      "path": "leaf_qt/material_density_integration_owner.py",
+      "equivalence": "DIFFERS_FROM_SHARED_OWNER",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "local_start_line": 5,
+      "local_end_line": 13,
+      "returns": [],
+      "local_source_preview": "    def status_severity(value):\n        text = str(value or \"\").upper()\n        if _leaf_16u62_is_fail_like(text) or _leaf_16u62_is_fail_like(text) or \"INVALID\" in text or \"ERROR\" in text or \"MISSING\" in text:\n            return \"FAIL\"\n        if _leaf_16u62_is_warn_like(text) or \"PARTIAL\" in text or \"MARGINAL\" in text:\n            return \"WARN\"\n        if _leaf_16u62_is_pass_like(text) or \"VALID\" in text or \"COMPLETE\" in text:\n            return \"PASS\"\n        return \"UNKNOWN\""
+    },
+    {
+      "path": "leaf_qt/material_property_consumption_audit_owner.py",
+      "equivalence": "DIFFERS_FROM_SHARED_OWNER",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "local_start_line": 5,
+      "local_end_line": 13,
+      "returns": [],
+      "local_source_preview": "    def status_severity(value):\n        text = str(value or \"\").upper()\n        if _leaf_16u62_is_fail_like(text) or _leaf_16u62_is_fail_like(text) or \"INVALID\" in text or \"ERROR\" in text or \"MISSING\" in text:\n            return \"FAIL\"\n        if _leaf_16u62_is_warn_like(text) or \"PARTIAL\" in text or \"MARGINAL\" in text:\n            return \"WARN\"\n        if _leaf_16u62_is_pass_like(text) or \"VALID\" in text or \"COMPLETE\" in text:\n            return \"PASS\"\n        return \"UNKNOWN\""
+    },
+    {
+      "path": "leaf_qt/material_specific_heat_integration_owner.py",
+      "equivalence": "DIFFERS_FROM_SHARED_OWNER",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "local_start_line": 5,
+      "local_end_line": 13,
+      "returns": [],
+      "local_source_preview": "    def status_severity(value):\n        text = str(value or \"\").upper()\n        if _leaf_16u62_is_fail_like(text) or _leaf_16u62_is_fail_like(text) or \"INVALID\" in text or \"ERROR\" in text or \"MISSING\" in text:\n            return \"FAIL\"\n        if _leaf_16u62_is_warn_like(text) or \"PARTIAL\" in text or \"MARGINAL\" in text:\n            return \"WARN\"\n        if _leaf_16u62_is_pass_like(text) or \"VALID\" in text or \"COMPLETE\" in text:\n            return \"PASS\"\n        return \"UNKNOWN\""
+    },
+    {
+      "path": "leaf_qt/material_strength_limit_integration_owner.py",
+      "equivalence": "DIFFERS_FROM_SHARED_OWNER",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "local_start_line": 5,
+      "local_end_line": 13,
+      "returns": [],
+      "local_source_preview": "    def status_severity(value):\n        text = str(value or \"\").upper()\n        if _leaf_16u58_is_fail_like(text) or _leaf_16u58_is_fail_like(text) or \"INVALID\" in text or \"ERROR\" in text or \"MISSING\" in text:\n            return \"FAIL\"\n        if _leaf_16u58_is_warn_like(text) or \"PARTIAL\" in text or \"MARGINAL\" in text:\n            return \"WARN\"\n        if _leaf_16u58_is_pass_like(text) or \"VALID\" in text or \"COMPLETE\" in text:\n            return \"PASS\"\n        return \"UNKNOWN\""
+    },
+    {
+      "path": "leaf_qt/material_temperature_limit_integration_owner.py",
+      "equivalence": "DIFFERS_FROM_SHARED_OWNER",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "local_start_line": 5,
+      "local_end_line": 13,
+      "returns": [],
+      "local_source_preview": "    def status_severity(value):\n        text = str(value or \"\").upper()\n        if _leaf_16u66_is_fail_like(text) or _leaf_16u66_is_fail_like(text) or \"INVALID\" in text or \"ERROR\" in text or \"MISSING\" in text:\n            return \"FAIL\"\n        if _leaf_16u66_is_warn_like(text) or \"PARTIAL\" in text or \"MARGINAL\" in text:\n            return \"WARN\"\n        if _leaf_16u66_is_pass_like(text) or \"VALID\" in text or \"COMPLETE\" in text:\n            return \"PASS\"\n        return \"UNKNOWN\""
+    },
+    {
+      "path": "leaf_qt/material_thermal_conductivity_integration_owner.py",
+      "equivalence": "DIFFERS_FROM_SHARED_OWNER",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "local_start_line": 5,
+      "local_end_line": 13,
+      "returns": [],
+      "local_source_preview": "    def status_severity(value):\n        text = str(value or \"\").upper()\n        if _leaf_16u62_is_fail_like(text) or _leaf_16u62_is_fail_like(text) or \"INVALID\" in text or \"ERROR\" in text or \"MISSING\" in text:\n            return \"FAIL\"\n        if _leaf_16u62_is_warn_like(text) or \"PARTIAL\" in text or \"MARGINAL\" in text:\n            return \"WARN\"\n        if _leaf_16u62_is_pass_like(text) or \"VALID\" in text or \"COMPLETE\" in text:\n            return \"PASS\"\n        return \"UNKNOWN\""
+    },
+    {
+      "path": "leaf_qt/real_engine_benchmark_completion_audit.py",
+      "equivalence": "DIFFERS_FROM_SHARED_OWNER",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "local_start_line": 28,
+      "local_end_line": 36,
+      "returns": [],
+      "local_source_preview": "    def status_severity(value):\n        text = str(value or \"\").upper()\n        if \"FAIL\" in text or \"BLOCKED\" in text or \"ERROR\" in text:\n            return \"FAIL\"\n        if \"WARN\" in text or \"PARTIAL\" in text or \"DEGRADED\" in text:\n            return \"WARN\"\n        if \"PASS\" in text or \"OK\" in text or \"COMPLETE\" in text:\n            return \"PASS\"\n        return \"UNKNOWN\""
+    },
+    {
+      "path": "leaf_qt/real_engine_benchmark_failure_owner.py",
+      "equivalence": "DIFFERS_FROM_SHARED_OWNER",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "local_start_line": 5,
+      "local_end_line": 13,
+      "returns": [],
+      "local_source_preview": "    def status_severity(value):\n        text = str(value or \"\").upper()\n        if _leaf_16u46_is_fail_like(text) or _leaf_16u46_is_fail_like(text) or \"INVALID\" in text or \"ERROR\" in text or \"MISSING\" in text:\n            return \"FAIL\"\n        if _leaf_16u46_is_warn_like(text) or \"PARTIAL\" in text or \"MARGINAL\" in text:\n            return \"WARN\"\n        if _leaf_16u46_is_pass_like(text) or \"VALID\" in text or \"COMPLETE\" in text:\n            return \"PASS\"\n        return \"UNKNOWN\""
+    },
+    {
+      "path": "leaf_qt/regen_acceptance_audit.py",
+      "equivalence": "LOCAL_DEFINITION_NOT_FOUND",
+      "variant": "NO_LOCAL_DEFINITION_SOURCE",
+      "local_start_line": null,
+      "local_end_line": null,
+      "returns": [],
+      "local_source_preview": null
+    },
+    {
+      "path": "leaf_qt/regen_acceptance_criteria_owner.py",
+      "equivalence": "DIFFERS_FROM_SHARED_OWNER",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "local_start_line": 14,
+      "local_end_line": 22,
+      "returns": [],
+      "local_source_preview": "    def status_severity(value):\n        text = str(value or \"\").upper()\n        if \"FAIL\" in text or \"BLOCKED\" in text or \"ERROR\" in text:\n            return \"FAIL\"\n        if \"WARN\" in text or \"PARTIAL\" in text or \"DEGRADED\" in text:\n            return \"WARN\"\n        if \"PASS\" in text or \"OK\" in text or \"COMPLETE\" in text:\n            return \"PASS\"\n        return \"UNKNOWN\""
+    },
+    {
+      "path": "leaf_qt/regen_autonomous_optimisation_input_audit.py",
+      "equivalence": "DIFFERS_FROM_SHARED_OWNER",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "local_start_line": 12,
+      "local_end_line": 20,
+      "returns": [],
+      "local_source_preview": "    def status_severity(value):\n        text = str(value or \"\").upper()\n        if \"FAIL\" in text or \"BLOCKED\" in text or \"ERROR\" in text:\n            return \"FAIL\"\n        if \"WARN\" in text or \"PARTIAL\" in text or \"DEGRADED\" in text:\n            return \"WARN\"\n        if \"PASS\" in text or \"OK\" in text or \"COMPLETE\" in text:\n            return \"PASS\"\n        return \"UNKNOWN\""
+    },
+    {
+      "path": "leaf_qt/regen_candidate_blueprint_completion_audit.py",
+      "equivalence": "DIFFERS_FROM_SHARED_OWNER",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "local_start_line": 23,
+      "local_end_line": 31,
+      "returns": [],
+      "local_source_preview": "    def status_severity(value):\n        text = str(value or \"\").upper()\n        if \"FAIL\" in text or \"BLOCKED\" in text or \"ERROR\" in text:\n            return \"FAIL\"\n        if \"WARN\" in text or \"PARTIAL\" in text or \"DEGRADED\" in text:\n            return \"WARN\"\n        if \"PASS\" in text or \"OK\" in text or \"COMPLETE\" in text:\n            return \"PASS\"\n        return \"UNKNOWN\""
+    },
+    {
+      "path": "leaf_qt/regen_candidate_blueprint_generation_input_gate.py",
+      "equivalence": "DIFFERS_FROM_SHARED_OWNER",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "local_start_line": 9,
+      "local_end_line": 17,
+      "returns": [],
+      "local_source_preview": "    def status_severity(value):\n        text = str(value or \"\").upper()\n        if \"FAIL\" in text or \"BLOCKED\" in text or \"ERROR\" in text:\n            return \"FAIL\"\n        if \"WARN\" in text or \"PARTIAL\" in text or \"DEGRADED\" in text:\n            return \"WARN\"\n        if \"PASS\" in text or \"OK\" in text or \"COMPLETE\" in text:\n            return \"PASS\"\n        return \"UNKNOWN\""
+    },
+    {
+      "path": "leaf_qt/regen_candidate_blueprint_mutation_validation.py",
+      "equivalence": "DIFFERS_FROM_SHARED_OWNER",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "local_start_line": 19,
+      "local_end_line": 27,
+      "returns": [],
+      "local_source_preview": "    def status_severity(value):\n        text = str(value or \"\").upper()\n        if \"FAIL\" in text or \"BLOCKED\" in text or \"ERROR\" in text:\n            return \"FAIL\"\n        if \"WARN\" in text or \"PARTIAL\" in text or \"DEGRADED\" in text:\n            return \"WARN\"\n        if \"PASS\" in text or \"OK\" in text or \"COMPLETE\" in text:\n            return \"PASS\"\n        return \"UNKNOWN\""
+    },
+    {
+      "path": "leaf_qt/regen_candidate_blueprint_optimisation_completion_audit.py",
+      "equivalence": "DIFFERS_FROM_SHARED_OWNER",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "local_start_line": 9,
+      "local_end_line": 17,
+      "returns": [],
+      "local_source_preview": "    def status_severity(value):\n        text = str(value or \"\").upper()\n        if \"FAIL\" in text or \"BLOCKED\" in text or \"ERROR\" in text:\n            return \"FAIL\"\n        if \"WARN\" in text or \"PARTIAL\" in text or \"DEGRADED\" in text:\n            return \"WARN\"\n        if \"PASS\" in text or \"OK\" in text or \"COMPLETE\" in text:\n            return \"PASS\"\n        return \"UNKNOWN\""
+    },
+    {
+      "path": "leaf_qt/regen_candidate_blueprint_population_completion_audit.py",
+      "equivalence": "DIFFERS_FROM_SHARED_OWNER",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "local_start_line": 19,
+      "local_end_line": 27,
+      "returns": [],
+      "local_source_preview": "    def status_severity(value):\n        text = str(value or \"\").upper()\n        if \"FAIL\" in text or \"BLOCKED\" in text or \"ERROR\" in text:\n            return \"FAIL\"\n        if \"WARN\" in text or \"PARTIAL\" in text or \"DEGRADED\" in text:\n            return \"WARN\"\n        if \"PASS\" in text or \"OK\" in text or \"COMPLETE\" in text:\n            return \"PASS\"\n        return \"UNKNOWN\""
+    },
+    {
+      "path": "leaf_qt/regen_candidate_blueprint_population_validation_owner.py",
+      "equivalence": "DIFFERS_FROM_SHARED_OWNER",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "local_start_line": 5,
+      "local_end_line": 13,
+      "returns": [],
+      "local_source_preview": "    def status_severity(value):\n        text = str(value or \"\").upper()\n        if _leaf_16u91_is_fail_like(text) or _leaf_16u91_is_fail_like(text) or \"INVALID\" in text or \"ERROR\" in text or \"MISSING\" in text:\n            return \"FAIL\"\n        if _leaf_16u91_is_warn_like(text) or \"PARTIAL\" in text or \"MARGINAL\" in text:\n            return \"WARN\"\n        if _leaf_16u91_is_pass_like(text) or \"VALID\" in text or \"COMPLETE\" in text:\n            return \"PASS\"\n        return \"UNKNOWN\""
+    },
+    {
+      "path": "leaf_qt/regen_candidate_creation_completion_audit.py",
+      "equivalence": "DIFFERS_FROM_SHARED_OWNER",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "local_start_line": 21,
+      "local_end_line": 29,
+      "returns": [],
+      "local_source_preview": "    def status_severity(value):\n        text = str(value or \"\").upper()\n        if \"FAIL\" in text or \"BLOCKED\" in text or \"ERROR\" in text:\n            return \"FAIL\"\n        if \"WARN\" in text or \"PARTIAL\" in text or \"DEGRADED\" in text:\n            return \"WARN\"\n        if \"PASS\" in text or \"OK\" in text or \"COMPLETE\" in text:\n            return \"PASS\"\n        return \"UNKNOWN\""
+    },
+    {
+      "path": "leaf_qt/regen_candidate_creation_input_audit.py",
+      "equivalence": "DIFFERS_FROM_SHARED_OWNER",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "local_start_line": 20,
+      "local_end_line": 28,
+      "returns": [],
+      "local_source_preview": "    def status_severity(value):\n        text = str(value or \"\").upper()\n        if \"FAIL\" in text or \"BLOCKED\" in text or \"ERROR\" in text:\n            return \"FAIL\"\n        if \"WARN\" in text or \"PARTIAL\" in text or \"DEGRADED\" in text:\n            return \"WARN\"\n        if \"PASS\" in text or \"OK\" in text or \"COMPLETE\" in text:\n            return \"PASS\"\n        return \"UNKNOWN\""
+    },
+    {
+      "path": "leaf_qt/regen_candidate_creation_registration_owner.py",
+      "equivalence": "DIFFERS_FROM_SHARED_OWNER",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "local_start_line": 20,
+      "local_end_line": 28,
+      "returns": [],
+      "local_source_preview": "    def status_severity(value):\n        text = str(value or \"\").upper()\n        if \"FAIL\" in text or \"BLOCKED\" in text or \"ERROR\" in text:\n            return \"FAIL\"\n        if \"WARN\" in text or \"PARTIAL\" in text or \"DEGRADED\" in text:\n            return \"WARN\"\n        if \"PASS\" in text or \"OK\" in text or \"COMPLETE\" in text:\n            return \"PASS\"\n        return \"UNKNOWN\""
+    },
+    {
+      "path": "leaf_qt/regen_candidate_creation_report_owner.py",
+      "equivalence": "DIFFERS_FROM_SHARED_OWNER",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "local_start_line": 5,
+      "local_end_line": 13,
+      "returns": [],
+      "local_source_preview": "    def status_severity(value):\n        text = str(value or \"\").upper()\n        if _leaf_16u96_is_fail_like(text) or _leaf_16u96_is_fail_like(text) or \"INVALID\" in text or \"ERROR\" in text or \"MISSING\" in text:\n            return \"FAIL\"\n        if _leaf_16u96_is_warn_like(text) or \"PARTIAL\" in text or \"MARGINAL\" in text:\n            return \"WARN\"\n        if _leaf_16u96_is_pass_like(text) or \"VALID\" in text or \"COMPLETE\" in text:\n            return \"PASS\"\n        return \"UNKNOWN\""
+    },
+    {
+      "path": "leaf_qt/regen_candidate_creation_session_owner.py",
+      "equivalence": "DIFFERS_FROM_SHARED_OWNER",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "local_start_line": 20,
+      "local_end_line": 28,
+      "returns": [],
+      "local_source_preview": "    def status_severity(value):\n        text = str(value or \"\").upper()\n        if \"FAIL\" in text or \"BLOCKED\" in text or \"ERROR\" in text:\n            return \"FAIL\"\n        if \"WARN\" in text or \"PARTIAL\" in text or \"DEGRADED\" in text:\n            return \"WARN\"\n        if \"PASS\" in text or \"OK\" in text or \"COMPLETE\" in text:\n            return \"PASS\"\n        return \"UNKNOWN\""
+    },
+    {
+      "path": "leaf_qt/regen_candidate_generation_completion_audit.py",
+      "equivalence": "DIFFERS_FROM_SHARED_OWNER",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "local_start_line": 20,
+      "local_end_line": 28,
+      "returns": [],
+      "local_source_preview": "    def status_severity(value):\n        text = str(value or \"\").upper()\n        if \"FAIL\" in text or \"BLOCKED\" in text or \"ERROR\" in text:\n            return \"FAIL\"\n        if \"WARN\" in text or \"PARTIAL\" in text or \"DEGRADED\" in text:\n            return \"WARN\"\n        if \"PASS\" in text or \"OK\" in text or \"COMPLETE\" in text:\n            return \"PASS\"\n        return \"UNKNOWN\""
+    },
+    {
+      "path": "leaf_qt/regen_candidate_generation_input_gate.py",
+      "equivalence": "DIFFERS_FROM_SHARED_OWNER",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "local_start_line": 19,
+      "local_end_line": 27,
+      "returns": [],
+      "local_source_preview": "    def status_severity(value):\n        text = str(value or \"\").upper()\n        if \"FAIL\" in text or \"BLOCKED\" in text or \"ERROR\" in text:\n            return \"FAIL\"\n        if \"WARN\" in text or \"PARTIAL\" in text or \"DEGRADED\" in text:\n            return \"WARN\"\n        if \"PASS\" in text or \"OK\" in text or \"COMPLETE\" in text:\n            return \"PASS\"\n        return \"UNKNOWN\""
+    },
+    {
+      "path": "leaf_qt/regen_candidate_generation_registration_owner.py",
+      "equivalence": "DIFFERS_FROM_SHARED_OWNER",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "local_start_line": 20,
+      "local_end_line": 28,
+      "returns": [],
+      "local_source_preview": "    def status_severity(value):\n        text = str(value or \"\").upper()\n        if \"FAIL\" in text or \"BLOCKED\" in text or \"ERROR\" in text:\n            return \"FAIL\"\n        if \"WARN\" in text or \"PARTIAL\" in text or \"DEGRADED\" in text:\n            return \"WARN\"\n        if \"PASS\" in text or \"OK\" in text or \"COMPLETE\" in text:\n            return \"PASS\"\n        return \"UNKNOWN\""
+    },
+    {
+      "path": "leaf_qt/regen_candidate_generation_report_owner.py",
+      "equivalence": "DIFFERS_FROM_SHARED_OWNER",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "local_start_line": 5,
+      "local_end_line": 13,
+      "returns": [],
+      "local_source_preview": "    def status_severity(value):\n        text = str(value or \"\").upper()\n        if _leaf_16u101_is_fail_like(text) or _leaf_16u101_is_fail_like(text) or \"INVALID\" in text or \"ERROR\" in text or \"MISSING\" in text:\n            return \"FAIL\"\n        if _leaf_16u101_is_warn_like(text) or \"PARTIAL\" in text or \"MARGINAL\" in text:\n            return \"WARN\"\n        if _leaf_16u101_is_pass_like(text) or \"VALID\" in text or \"COMPLETE\" in text:\n            return \"PASS\"\n        return \"UNKNOWN\""
+    },
+    {
+      "path": "leaf_qt/regen_candidate_generation_session_owner.py",
+      "equivalence": "DIFFERS_FROM_SHARED_OWNER",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "local_start_line": 20,
+      "local_end_line": 28,
+      "returns": [],
+      "local_source_preview": "    def status_severity(value):\n        text = str(value or \"\").upper()\n        if \"FAIL\" in text or \"BLOCKED\" in text or \"ERROR\" in text:\n            return \"FAIL\"\n        if \"WARN\" in text or \"PARTIAL\" in text or \"DEGRADED\" in text:\n            return \"WARN\"\n        if \"PASS\" in text or \"OK\" in text or \"COMPLETE\" in text:\n            return \"PASS\"\n        return \"UNKNOWN\""
+    },
+    {
+      "path": "leaf_qt/regen_candidate_mutation_completion_audit.py",
+      "equivalence": "DIFFERS_FROM_SHARED_OWNER",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "local_start_line": 9,
+      "local_end_line": 17,
+      "returns": [],
+      "local_source_preview": "    def status_severity(value):\n        text = str(value or \"\").upper()\n        if \"FAIL\" in text or \"BLOCKED\" in text or \"ERROR\" in text:\n            return \"FAIL\"\n        if \"WARN\" in text or \"PARTIAL\" in text or \"DEGRADED\" in text:\n            return \"WARN\"\n        if \"PASS\" in text or \"OK\" in text or \"COMPLETE\" in text:\n            return \"PASS\"\n        return \"UNKNOWN\""
+    },
+    {
+      "path": "leaf_qt/regen_candidate_mutation_input_audit.py",
+      "equivalence": "DIFFERS_FROM_SHARED_OWNER",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "local_start_line": 21,
+      "local_end_line": 29,
+      "returns": [],
+      "local_source_preview": "    def status_severity(value):\n        text = str(value or \"\").upper()\n        if \"FAIL\" in text or \"BLOCKED\" in text or \"ERROR\" in text:\n            return \"FAIL\"\n        if \"WARN\" in text or \"PARTIAL\" in text or \"DEGRADED\" in text:\n            return \"WARN\"\n        if \"PASS\" in text or \"OK\" in text or \"COMPLETE\" in text:\n            return \"PASS\"\n        return \"UNKNOWN\""
+    },
+    {
+      "path": "leaf_qt/regen_candidate_mutation_master_gate.py",
+      "equivalence": "DIFFERS_FROM_SHARED_OWNER",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "local_start_line": 4,
+      "local_end_line": 12,
+      "returns": [],
+      "local_source_preview": "    def status_severity(value):\n        text = str(value or \"\").upper()\n        if \"FAIL\" in text or \"BLOCKED\" in text or \"ERROR\" in text:\n            return \"FAIL\"\n        if \"WARN\" in text or \"PARTIAL\" in text or \"DEGRADED\" in text:\n            return \"WARN\"\n        if \"PASS\" in text or \"OK\" in text or \"COMPLETE\" in text:\n            return \"PASS\"\n        return \"UNKNOWN\""
+    },
+    {
+      "path": "leaf_qt/regen_candidate_mutation_report_owner.py",
+      "equivalence": "DIFFERS_FROM_SHARED_OWNER",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "local_start_line": 5,
+      "local_end_line": 13,
+      "returns": [],
+      "local_source_preview": "    def status_severity(value):\n        text = str(value or \"\").upper()\n        if _leaf_16u106_is_fail_like(text) or _leaf_16u106_is_fail_like(text) or \"INVALID\" in text or \"ERROR\" in text or \"MISSING\" in text:\n            return \"FAIL\"\n        if _leaf_16u106_is_warn_like(text) or \"PARTIAL\" in text or \"MARGINAL\" in text:\n            return \"WARN\"\n        if _leaf_16u106_is_pass_like(text) or \"VALID\" in text or \"COMPLETE\" in text:\n            return \"PASS\"\n        return \"UNKNOWN\""
+    },
+    {
+      "path": "leaf_qt/regen_candidate_population_completion_audit.py",
+      "equivalence": "DIFFERS_FROM_SHARED_OWNER",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "local_start_line": 21,
+      "local_end_line": 29,
+      "returns": [],
+      "local_source_preview": "    def status_severity(value):\n        text = str(value or \"\").upper()\n        if \"FAIL\" in text or \"BLOCKED\" in text or \"ERROR\" in text:\n            return \"FAIL\"\n        if \"WARN\" in text or \"PARTIAL\" in text or \"DEGRADED\" in text:\n            return \"WARN\"\n        if \"PASS\" in text or \"OK\" in text or \"COMPLETE\" in text:\n            return \"PASS\"\n        return \"UNKNOWN\""
+    },
+    {
+      "path": "leaf_qt/regen_candidate_population_master_gate.py",
+      "equivalence": "DIFFERS_FROM_SHARED_OWNER",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "local_start_line": 4,
+      "local_end_line": 12,
+      "returns": [],
+      "local_source_preview": "    def status_severity(value):\n        text = str(value or \"\").upper()\n        if \"FAIL\" in text or \"BLOCKED\" in text or \"ERROR\" in text:\n            return \"FAIL\"\n        if \"WARN\" in text or \"PARTIAL\" in text or \"DEGRADED\" in text:\n            return \"WARN\"\n        if \"PASS\" in text or \"OK\" in text or \"COMPLETE\" in text:\n            return \"PASS\"\n        return \"UNKNOWN\""
+    },
+    {
+      "path": "leaf_qt/regen_candidate_ranking_completion_audit.py",
+      "equivalence": "DIFFERS_FROM_SHARED_OWNER",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "local_start_line": 19,
+      "local_end_line": 27,
+      "returns": [],
+      "local_source_preview": "    def status_severity(value):\n        text = str(value or \"\").upper()\n        if \"FAIL\" in text or \"BLOCKED\" in text or \"ERROR\" in text:\n            return \"FAIL\"\n        if \"WARN\" in text or \"PARTIAL\" in text or \"DEGRADED\" in text:\n            return \"WARN\"\n        if \"PASS\" in text or \"OK\" in text or \"COMPLETE\" in text:\n            return \"PASS\"\n        return \"UNKNOWN\""
+    },
+    {
+      "path": "leaf_qt/regen_candidate_ranking_input_audit.py",
+      "equivalence": "DIFFERS_FROM_SHARED_OWNER",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "local_start_line": 22,
+      "local_end_line": 30,
+      "returns": [],
+      "local_source_preview": "    def status_severity(value):\n        text = str(value or \"\").upper()\n        if \"FAIL\" in text or \"BLOCKED\" in text or \"ERROR\" in text:\n            return \"FAIL\"\n        if \"WARN\" in text or \"PARTIAL\" in text or \"DEGRADED\" in text:\n            return \"WARN\"\n        if \"PASS\" in text or \"OK\" in text or \"COMPLETE\" in text:\n            return \"PASS\"\n        return \"UNKNOWN\""
+    },
+    {
+      "path": "leaf_qt/regen_candidate_ranking_master_gate.py",
+      "equivalence": "DIFFERS_FROM_SHARED_OWNER",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "local_start_line": 4,
+      "local_end_line": 12,
+      "returns": [],
+      "local_source_preview": "    def status_severity(value):\n        text = str(value or \"\").upper()\n        if \"FAIL\" in text or \"BLOCKED\" in text or \"ERROR\" in text:\n            return \"FAIL\"\n        if \"WARN\" in text or \"PARTIAL\" in text or \"DEGRADED\" in text:\n            return \"WARN\"\n        if \"PASS\" in text or \"OK\" in text or \"COMPLETE\" in text:\n            return \"PASS\"\n        return \"UNKNOWN\""
+    },
+    {
+      "path": "leaf_qt/regen_completion_gate_validation_owner.py",
+      "equivalence": "DIFFERS_FROM_SHARED_OWNER",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "local_start_line": 35,
+      "local_end_line": 43,
+      "returns": [],
+      "local_source_preview": "    def status_severity(value):\n        text = str(value or \"\").upper()\n        if _leaf_16u71_is_fail_like(text) or _leaf_16u71_is_fail_like(text) or \"INVALID\" in text or \"ERROR\" in text or \"MISSING\" in text:\n            return \"FAIL\"\n        if _leaf_16u71_is_warn_like(text) or \"PARTIAL\" in text or \"MARGINAL\" in text:\n            return \"WARN\"\n        if _leaf_16u71_is_pass_like(text) or \"VALID\" in text or \"COMPLETE\" in text:\n            return \"PASS\"\n        return \"UNKNOWN\""
+    },
+    {
+      "path": "leaf_qt/regen_cross_section_viewer.py",
+      "equivalence": "DIFFERS_FROM_SHARED_OWNER",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "local_start_line": 46,
+      "local_end_line": 54,
+      "returns": [],
+      "local_source_preview": "    def status_severity(value):\n        text = str(value or \"\").upper()\n        if \"FAIL\" in text or \"BLOCKED\" in text or \"INVALID\" in text or \"ERROR\" in text:\n            return \"FAIL\"\n        if \"WARN\" in text or \"MARGINAL\" in text or \"PARTIAL\" in text or \"MISSING\" in text:\n            return \"WARN\"\n        if \"PASS\" in text or \"VALID\" in text or \"COMPLETE\" in text:\n            return \"PASS\"\n        return \"UNKNOWN\""
+    },
+    {
+      "path": "leaf_qt/regen_evolution_loop_completion_audit.py",
+      "equivalence": "DIFFERS_FROM_SHARED_OWNER",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "local_start_line": 9,
+      "local_end_line": 17,
+      "returns": [],
+      "local_source_preview": "    def status_severity(value):\n        text = str(value or \"\").upper()\n        if \"FAIL\" in text or \"BLOCKED\" in text or \"ERROR\" in text:\n            return \"FAIL\"\n        if \"WARN\" in text or \"PARTIAL\" in text or \"DEGRADED\" in text:\n            return \"WARN\"\n        if \"PASS\" in text or \"OK\" in text or \"COMPLETE\" in text:\n            return \"PASS\"\n        return \"UNKNOWN\""
+    },
+    {
+      "path": "leaf_qt/regen_evolution_loop_input_audit.py",
+      "equivalence": "DIFFERS_FROM_SHARED_OWNER",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "local_start_line": 22,
+      "local_end_line": 30,
+      "returns": [],
+      "local_source_preview": "    def status_severity(value):\n        text = str(value or \"\").upper()\n        if \"FAIL\" in text or \"BLOCKED\" in text or \"ERROR\" in text:\n            return \"FAIL\"\n        if \"WARN\" in text or \"PARTIAL\" in text or \"DEGRADED\" in text:\n            return \"WARN\"\n        if \"PASS\" in text or \"OK\" in text or \"COMPLETE\" in text:\n            return \"PASS\"\n        return \"UNKNOWN\""
+    },
+    {
+      "path": "leaf_qt/regen_evolution_loop_master_gate.py",
+      "equivalence": "DIFFERS_FROM_SHARED_OWNER",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "local_start_line": 4,
+      "local_end_line": 12,
+      "returns": [],
+      "local_source_preview": "    def status_severity(value):\n        text = str(value or \"\").upper()\n        if \"FAIL\" in text or \"BLOCKED\" in text or \"ERROR\" in text:\n            return \"FAIL\"\n        if \"WARN\" in text or \"PARTIAL\" in text or \"DEGRADED\" in text:\n            return \"WARN\"\n        if \"PASS\" in text or \"OK\" in text or \"COMPLETE\" in text:\n            return \"PASS\"\n        return \"UNKNOWN\""
+    },
+    {
+      "path": "leaf_qt/regen_geometry_constraint_owner.py",
+      "equivalence": "DIFFERS_FROM_SHARED_OWNER",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "local_start_line": 4,
+      "local_end_line": 12,
+      "returns": [],
+      "local_source_preview": "    def status_severity(value):\n        text = str(value or \"\").upper()\n        if \"FAIL\" in text or \"BLOCKED\" in text or \"ERROR\" in text:\n            return \"FAIL\"\n        if \"WARN\" in text or \"PARTIAL\" in text or \"DEGRADED\" in text:\n            return \"WARN\"\n        if \"PASS\" in text or \"OK\" in text or \"COMPLETE\" in text:\n            return \"PASS\"\n        return \"UNKNOWN\""
+    },
+    {
+      "path": "leaf_qt/regen_geometry_report_owner.py",
+      "equivalence": "DIFFERS_FROM_SHARED_OWNER",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "local_start_line": 5,
+      "local_end_line": 13,
+      "returns": [],
+      "local_source_preview": "    def status_severity(value):\n        text = str(value or \"\").upper()\n        if _leaf_16u86_is_fail_like(text) or _leaf_16u86_is_fail_like(text) or \"INVALID\" in text or \"ERROR\" in text or \"MISSING\" in text:\n            return \"FAIL\"\n        if _leaf_16u86_is_warn_like(text) or \"PARTIAL\" in text or \"MARGINAL\" in text:\n            return \"WARN\"\n        if _leaf_16u86_is_pass_like(text) or \"VALID\" in text or \"COMPLETE\" in text:\n            return \"PASS\"\n        return \"UNKNOWN\""
+    },
+    {
+      "path": "leaf_qt/regen_optimisation_completion_audit.py",
+      "equivalence": "DIFFERS_FROM_SHARED_OWNER",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "local_start_line": 19,
+      "local_end_line": 27,
+      "returns": [],
+      "local_source_preview": "    def status_severity(value):\n        text = str(value or \"\").upper()\n        if \"FAIL\" in text or \"BLOCKED\" in text or \"ERROR\" in text:\n            return \"FAIL\"\n        if \"WARN\" in text or \"PARTIAL\" in text or \"DEGRADED\" in text:\n            return \"WARN\"\n        if \"PASS\" in text or \"OK\" in text or \"COMPLETE\" in text:\n            return \"PASS\"\n        return \"UNKNOWN\""
+    },
+    {
+      "path": "leaf_qt/regen_optimisation_registration_owner.py",
+      "equivalence": "DIFFERS_FROM_SHARED_OWNER",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "local_start_line": 19,
+      "local_end_line": 27,
+      "returns": [],
+      "local_source_preview": "    def status_severity(value):\n        text = str(value or \"\").upper()\n        if \"FAIL\" in text or \"BLOCKED\" in text or \"ERROR\" in text:\n            return \"FAIL\"\n        if \"WARN\" in text or \"PARTIAL\" in text or \"DEGRADED\" in text:\n            return \"WARN\"\n        if \"PASS\" in text or \"OK\" in text or \"COMPLETE\" in text:\n            return \"PASS\"\n        return \"UNKNOWN\""
+    },
+    {
+      "path": "leaf_qt/regen_optimisation_report_owner.py",
+      "equivalence": "DIFFERS_FROM_SHARED_OWNER",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "local_start_line": 5,
+      "local_end_line": 13,
+      "returns": [],
+      "local_source_preview": "    def status_severity(value):\n        text = str(value or \"\").upper()\n        if _leaf_16u76_is_fail_like(text) or _leaf_16u76_is_fail_like(text) or \"INVALID\" in text or \"ERROR\" in text or \"MISSING\" in text:\n            return \"FAIL\"\n        if _leaf_16u76_is_warn_like(text) or \"PARTIAL\" in text or \"MARGINAL\" in text:\n            return \"WARN\"\n        if _leaf_16u76_is_pass_like(text) or \"VALID\" in text or \"COMPLETE\" in text:\n            return \"PASS\"\n        return \"UNKNOWN\""
+    },
+    {
+      "path": "leaf_qt/regen_optimisation_scoring_owner.py",
+      "equivalence": "DIFFERS_FROM_SHARED_OWNER",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "local_start_line": 35,
+      "local_end_line": 43,
+      "returns": [],
+      "local_source_preview": "    def status_severity(value):\n        text = str(value or \"\").upper()\n        if _leaf_16u71_is_fail_like(text) or _leaf_16u71_is_fail_like(text) or \"INVALID\" in text or \"ERROR\" in text or \"MISSING\" in text:\n            return \"FAIL\"\n        if _leaf_16u71_is_warn_like(text) or \"PARTIAL\" in text or \"MARGINAL\" in text:\n            return \"WARN\"\n        if _leaf_16u71_is_pass_like(text) or \"VALID\" in text or \"COMPLETE\" in text:\n            return \"PASS\"\n        return \"UNKNOWN\""
+    },
+    {
+      "path": "leaf_qt/regen_optimisation_session_owner.py",
+      "equivalence": "DIFFERS_FROM_SHARED_OWNER",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "local_start_line": 19,
+      "local_end_line": 27,
+      "returns": [],
+      "local_source_preview": "    def status_severity(value):\n        text = str(value or \"\").upper()\n        if \"FAIL\" in text or \"BLOCKED\" in text or \"ERROR\" in text:\n            return \"FAIL\"\n        if \"WARN\" in text or \"PARTIAL\" in text or \"DEGRADED\" in text:\n            return \"WARN\"\n        if \"PASS\" in text or \"OK\" in text or \"COMPLETE\" in text:\n            return \"PASS\"\n        return \"UNKNOWN\""
+    },
+    {
+      "path": "leaf_qt/regen_runtime_execution_completion_audit.py",
+      "equivalence": "DIFFERS_FROM_SHARED_OWNER",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "local_start_line": 20,
+      "local_end_line": 28,
+      "returns": [],
+      "local_source_preview": "    def status_severity(value):\n        text = str(value or \"\").upper()\n        if \"FAIL\" in text or \"BLOCKED\" in text or \"ERROR\" in text:\n            return \"FAIL\"\n        if \"WARN\" in text or \"PARTIAL\" in text or \"DEGRADED\" in text:\n            return \"WARN\"\n        if \"PASS\" in text or \"OK\" in text or \"COMPLETE\" in text:\n            return \"PASS\"\n        return \"UNKNOWN\""
+    },
+    {
+      "path": "leaf_qt/regen_runtime_execution_input_gate.py",
+      "equivalence": "DIFFERS_FROM_SHARED_OWNER",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "local_start_line": 20,
+      "local_end_line": 28,
+      "returns": [],
+      "local_source_preview": "    def status_severity(value):\n        text = str(value or \"\").upper()\n        if \"FAIL\" in text or \"BLOCKED\" in text or \"ERROR\" in text:\n            return \"FAIL\"\n        if \"WARN\" in text or \"PARTIAL\" in text or \"DEGRADED\" in text:\n            return \"WARN\"\n        if \"PASS\" in text or \"OK\" in text or \"COMPLETE\" in text:\n            return \"PASS\"\n        return \"UNKNOWN\""
+    },
+    {
+      "path": "leaf_qt/regen_runtime_execution_registration_owner.py",
+      "equivalence": "DIFFERS_FROM_SHARED_OWNER",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "local_start_line": 20,
+      "local_end_line": 28,
+      "returns": [],
+      "local_source_preview": "    def status_severity(value):\n        text = str(value or \"\").upper()\n        if \"FAIL\" in text or \"BLOCKED\" in text or \"ERROR\" in text:\n            return \"FAIL\"\n        if \"WARN\" in text or \"PARTIAL\" in text or \"DEGRADED\" in text:\n            return \"WARN\"\n        if \"PASS\" in text or \"OK\" in text or \"COMPLETE\" in text:\n            return \"PASS\"\n        return \"UNKNOWN\""
+    },
+    {
+      "path": "leaf_qt/regen_runtime_execution_report_owner.py",
+      "equivalence": "DIFFERS_FROM_SHARED_OWNER",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "local_start_line": 5,
+      "local_end_line": 13,
+      "returns": [],
+      "local_source_preview": "    def status_severity(value):\n        text = str(value or \"\").upper()\n        if _leaf_16u111_is_fail_like(text) or _leaf_16u111_is_fail_like(text) or \"INVALID\" in text or \"ERROR\" in text or \"MISSING\" in text:\n            return \"FAIL\"\n        if _leaf_16u111_is_warn_like(text) or \"PARTIAL\" in text or \"MARGINAL\" in text:\n            return \"WARN\"\n        if _leaf_16u111_is_pass_like(text) or \"VALID\" in text or \"COMPLETE\" in text:\n            return \"PASS\"\n        return \"UNKNOWN\""
+    },
+    {
+      "path": "leaf_qt/regen_runtime_execution_session_owner.py",
+      "equivalence": "DIFFERS_FROM_SHARED_OWNER",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "local_start_line": 19,
+      "local_end_line": 27,
+      "returns": [],
+      "local_source_preview": "    def status_severity(value):\n        text = str(value or \"\").upper()\n        if \"FAIL\" in text or \"BLOCKED\" in text or \"ERROR\" in text:\n            return \"FAIL\"\n        if \"WARN\" in text or \"PARTIAL\" in text or \"DEGRADED\" in text:\n            return \"WARN\"\n        if \"PASS\" in text or \"OK\" in text or \"COMPLETE\" in text:\n            return \"PASS\"\n        return \"UNKNOWN\""
+    },
+    {
+      "path": "leaf_qt/regen_runtime_optimisation_input_gate.py",
+      "equivalence": "DIFFERS_FROM_SHARED_OWNER",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "local_start_line": 19,
+      "local_end_line": 27,
+      "returns": [],
+      "local_source_preview": "    def status_severity(value):\n        text = str(value or \"\").upper()\n        if \"FAIL\" in text or \"BLOCKED\" in text or \"ERROR\" in text:\n            return \"FAIL\"\n        if \"WARN\" in text or \"PARTIAL\" in text or \"DEGRADED\" in text:\n            return \"WARN\"\n        if \"PASS\" in text or \"OK\" in text or \"COMPLETE\" in text:\n            return \"PASS\"\n        return \"UNKNOWN\""
+    },
+    {
+      "path": "leaf_qt/regen_runtime_optimisation_registration_owner.py",
+      "equivalence": "DIFFERS_FROM_SHARED_OWNER",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "local_start_line": 19,
+      "local_end_line": 27,
+      "returns": [],
+      "local_source_preview": "    def status_severity(value):\n        text = str(value or \"\").upper()\n        if \"FAIL\" in text or \"BLOCKED\" in text or \"ERROR\" in text:\n            return \"FAIL\"\n        if \"WARN\" in text or \"PARTIAL\" in text or \"DEGRADED\" in text:\n            return \"WARN\"\n        if \"PASS\" in text or \"OK\" in text or \"COMPLETE\" in text:\n            return \"PASS\"\n        return \"UNKNOWN\""
+    },
+    {
+      "path": "leaf_qt/regen_runtime_optimisation_report_owner.py",
+      "equivalence": "DIFFERS_FROM_SHARED_OWNER",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "local_start_line": 5,
+      "local_end_line": 13,
+      "returns": [],
+      "local_source_preview": "    def status_severity(value):\n        text = str(value or \"\").upper()\n        if _leaf_16u81_is_fail_like(text) or _leaf_16u81_is_fail_like(text) or \"INVALID\" in text or \"ERROR\" in text or \"MISSING\" in text:\n            return \"FAIL\"\n        if _leaf_16u81_is_warn_like(text) or \"PARTIAL\" in text or \"MARGINAL\" in text:\n            return \"WARN\"\n        if _leaf_16u81_is_pass_like(text) or \"VALID\" in text or \"COMPLETE\" in text:\n            return \"PASS\"\n        return \"UNKNOWN\""
+    },
+    {
+      "path": "leaf_qt/regen_runtime_optimisation_session_owner.py",
+      "equivalence": "DIFFERS_FROM_SHARED_OWNER",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "local_start_line": 19,
+      "local_end_line": 27,
+      "returns": [],
+      "local_source_preview": "    def status_severity(value):\n        text = str(value or \"\").upper()\n        if \"FAIL\" in text or \"BLOCKED\" in text or \"ERROR\" in text:\n            return \"FAIL\"\n        if \"WARN\" in text or \"PARTIAL\" in text or \"DEGRADED\" in text:\n            return \"WARN\"\n        if \"PASS\" in text or \"OK\" in text or \"COMPLETE\" in text:\n            return \"PASS\"\n        return \"UNKNOWN\""
+    },
+    {
+      "path": "leaf_qt/regen_scalability_failure_owner.py",
+      "equivalence": "DIFFERS_FROM_SHARED_OWNER",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "local_start_line": 5,
+      "local_end_line": 13,
+      "returns": [],
+      "local_source_preview": "    def status_severity(value):\n        text = str(value or \"\").upper()\n        if _leaf_16u42_is_fail_like(text) or _leaf_16u42_is_fail_like(text) or \"INVALID\" in text or \"ERROR\" in text or \"MISSING\" in text:\n            return \"FAIL\"\n        if _leaf_16u42_is_warn_like(text) or \"PARTIAL\" in text or \"MARGINAL\" in text:\n            return \"WARN\"\n        if _leaf_16u42_is_pass_like(text) or \"VALID\" in text or \"COMPLETE\" in text:\n            return \"PASS\"\n        return \"UNKNOWN\""
+    },
+    {
+      "path": "leaf_qt/regen_system_signoff_validation_owner.py",
+      "equivalence": "DIFFERS_FROM_SHARED_OWNER",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "local_start_line": 35,
+      "local_end_line": 43,
+      "returns": [],
+      "local_source_preview": "    def status_severity(value):\n        text = str(value or \"\").upper()\n        if _leaf_16u71_is_fail_like(text) or _leaf_16u71_is_fail_like(text) or \"INVALID\" in text or \"ERROR\" in text or \"MISSING\" in text:\n            return \"FAIL\"\n        if _leaf_16u71_is_warn_like(text) or \"PARTIAL\" in text or \"MARGINAL\" in text:\n            return \"WARN\"\n        if _leaf_16u71_is_pass_like(text) or \"VALID\" in text or \"COMPLETE\" in text:\n            return \"PASS\"\n        return \"UNKNOWN\""
+    },
+    {
+      "path": "leaf_qt/regen_viewer_final_runtime_consistency_gate_phase_16q20.py",
+      "equivalence": "DIFFERS_FROM_SHARED_OWNER",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "local_start_line": 6,
+      "local_end_line": 14,
+      "returns": [],
+      "local_source_preview": "    def status_severity(value):\n        text = str(value or \"\").upper()\n        if \"FAIL\" in text or \"BLOCKED\" in text or \"ERROR\" in text:\n            return \"FAIL\"\n        if \"WARN\" in text or \"PARTIAL\" in text or \"DEGRADED\" in text:\n            return \"WARN\"\n        if \"PASS\" in text or \"OK\" in text or \"COMPLETE\" in text:\n            return \"PASS\"\n        return \"UNKNOWN\""
+    },
+    {
+      "path": "leaf_qt/regen_viewer_gui_runtime_acceptance_gate_phase_16q28.py",
+      "equivalence": "DIFFERS_FROM_SHARED_OWNER",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "local_start_line": 6,
+      "local_end_line": 14,
+      "returns": [],
+      "local_source_preview": "    def status_severity(value):\n        text = str(value or \"\").upper()\n        if \"FAIL\" in text or \"BLOCKED\" in text or \"ERROR\" in text:\n            return \"FAIL\"\n        if \"WARN\" in text or \"PARTIAL\" in text or \"DEGRADED\" in text:\n            return \"WARN\"\n        if \"PASS\" in text or \"OK\" in text or \"COMPLETE\" in text:\n            return \"PASS\"\n        return \"UNKNOWN\""
+    },
+    {
+      "path": "leaf_qt/regen_viewer_report_renderer.py",
+      "equivalence": "DIFFERS_FROM_SHARED_OWNER",
+      "variant": "EXTENDED_SEVERITY_VARIANT",
+      "local_start_line": 16,
+      "local_end_line": 24,
+      "returns": [],
+      "local_source_preview": "    def status_severity(value):\n        text = str(value or \"\").upper()\n        if \"FAIL\" in text or \"BLOCKED\" in text or \"ERROR\" in text:\n            return \"FAIL\"\n        if \"WARN\" in text or \"PARTIAL\" in text or \"DEGRADED\" in text:\n            return \"WARN\"\n        if \"PASS\" in text or \"OK\" in text or \"COMPLETE\" in text:\n            return \"PASS\"\n        return \"UNKNOWN\""
+    }
+  ],
+  "passed": true,
+  "status": "PASS_PHASE_16U175E_LOCAL_STATUS_SEVERITY_SEMANTIC_VARIANT_CLASSIFIER",
+  "next_phase": "16U.175F_LOCAL_STATUS_SEVERITY_DEDUPLICATION_MANIFEST"
+}

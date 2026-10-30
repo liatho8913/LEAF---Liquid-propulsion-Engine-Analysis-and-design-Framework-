@@ -1,0 +1,89 @@
+LEAF PHASE 16U.64
+FIRST GROUPED LOW-RISK OWNER BATCH CLOSURE GATE
+================================================
+
+STATUS: PASS_PHASE_16U64_GROUPED_LOW_RISK_OWNER_BATCH_CLOSURE_GATE
+Generated: 2026-06-28T12:12:30
+
+FEATURE
+-------
+Closure gate for the first grouped low-risk owner migration batch.
+
+SUMMARY
+-------
+Target count: 8
+Closed count: 8
+Failed count: 0
+
+GATE CHECKS
+-----------
+phase_16u62_patch_script_exists: PASS — project_maintenance/grouped_low_risk_owner_batch_patch_phase_16u62.py
+phase_16u63_regression_script_exists: PASS — project_maintenance/grouped_low_risk_owner_batch_regression_phase_16u63.py
+phase_16u62_patch_rerun_passed: PASS — returncode=0
+phase_16u63_regression_rerun_passed: PASS — returncode=0
+phase_16u62_completion_flag_true: PASS — PASS_PHASE_16U62_GROUPED_LOW_RISK_OWNER_BATCH_PATCH
+phase_16u63_completion_flag_true: PASS — PASS_PHASE_16U63_GROUPED_LOW_RISK_OWNER_BATCH_REGRESSION
+all_batch_files_closed: PASS — 8/8 closed
+
+PER-FILE CLOSURE
+----------------
+leaf_qt/coating_property_consumption_audit_owner.py: PASS
+  target_exists: PASS — leaf_qt/coating_property_consumption_audit_owner.py
+  patch_payload_passed: PASS — True
+  regression_payload_passed: PASS — True
+  contains_shared_status_layer: PASS — shared helper present
+  no_legacy_status_patterns_after_helper: PASS — legacy literals allowed only inside helper fallback
+leaf_qt/coating_thermal_conductivity_integration_owner.py: PASS
+  target_exists: PASS — leaf_qt/coating_thermal_conductivity_integration_owner.py
+  patch_payload_passed: PASS — True
+  regression_payload_passed: PASS — True
+  contains_shared_status_layer: PASS — shared helper present
+  no_legacy_status_patterns_after_helper: PASS — legacy literals allowed only inside helper fallback
+leaf_qt/coating_thermal_resistance_integration_owner.py: PASS
+  target_exists: PASS — leaf_qt/coating_thermal_resistance_integration_owner.py
+  patch_payload_passed: PASS — True
+  regression_payload_passed: PASS — True
+  contains_shared_status_layer: PASS — shared helper present
+  no_legacy_status_patterns_after_helper: PASS — legacy literals allowed only inside helper fallback
+leaf_qt/coating_thickness_integration_owner.py: PASS
+  target_exists: PASS — leaf_qt/coating_thickness_integration_owner.py
+  patch_payload_passed: PASS — True
+  regression_payload_passed: PASS — True
+  contains_shared_status_layer: PASS — shared helper present
+  no_legacy_status_patterns_after_helper: PASS — legacy literals allowed only inside helper fallback
+leaf_qt/material_density_integration_owner.py: PASS
+  target_exists: PASS — leaf_qt/material_density_integration_owner.py
+  patch_payload_passed: PASS — True
+  regression_payload_passed: PASS — True
+  contains_shared_status_layer: PASS — shared helper present
+  no_legacy_status_patterns_after_helper: PASS — legacy literals allowed only inside helper fallback
+leaf_qt/material_property_consumption_audit_owner.py: PASS
+  target_exists: PASS — leaf_qt/material_property_consumption_audit_owner.py
+  patch_payload_passed: PASS — True
+  regression_payload_passed: PASS — True
+  contains_shared_status_layer: PASS — shared helper present
+  no_legacy_status_patterns_after_helper: PASS — legacy literals allowed only inside helper fallback
+leaf_qt/material_specific_heat_integration_owner.py: PASS
+  target_exists: PASS — leaf_qt/material_specific_heat_integration_owner.py
+  patch_payload_passed: PASS — True
+  regression_payload_passed: PASS — True
+  contains_shared_status_layer: PASS — shared helper present
+  no_legacy_status_patterns_after_helper: PASS — legacy literals allowed only inside helper fallback
+leaf_qt/material_thermal_conductivity_integration_owner.py: PASS
+  target_exists: PASS — leaf_qt/material_thermal_conductivity_integration_owner.py
+  patch_payload_passed: PASS — True
+  regression_payload_passed: PASS — True
+  contains_shared_status_layer: PASS — shared helper present
+  no_legacy_status_patterns_after_helper: PASS — legacy literals allowed only inside helper fallback
+
+CLOSURE DECISION
+----------------
+The first grouped low-risk owner migration batch is CLOSED.
+
+COMPLETION NOTICE
+-----------------
+PHASE 16U.64 COMPLETE.
+
+NEXT FEATURE
+------------
+PHASE 16U.65 — NEXT GROUPED LOW-RISK OWNER BATCH AUDIT

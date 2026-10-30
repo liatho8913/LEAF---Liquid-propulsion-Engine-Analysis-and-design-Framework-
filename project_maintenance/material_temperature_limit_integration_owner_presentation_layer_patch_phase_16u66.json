@@ -1,0 +1,18 @@
+{
+  "phase": "16U.66",
+  "status": "PASS_PHASE_16U66_MATERIAL_TEMPERATURE_LIMIT_INTEGRATION_OWNER_PRESENTATION_LAYER_PATCH",
+  "generated": "2026-06-28T12:21:40",
+  "target": "leaf_qt/material_temperature_limit_integration_owner.py",
+  "backup": "leaf_qt/material_temperature_limit_integration_owner.py.phase_16u66_backup",
+  "helper_inserted": false,
+  "applied": [],
+  "before_forbidden_count": 0,
+  "after_forbidden_count": 0,
+  "ignored_helper_fallback_findings": 0,
+  "remaining_findings": [],
+  "compiled": true,
+  "compile_error": "",
+  "missing_tokens": [],
+  "phase_16u66_material_temperature_limit_integration_owner_presentation_layer_patch_complete": true,
+  "next_phase": "16U.67 \u2014 Material Temperature Limit Integration Owner Presentation Layer Regression"
+}

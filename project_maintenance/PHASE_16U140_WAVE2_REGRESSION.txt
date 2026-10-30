@@ -1,0 +1,27 @@
+LEAF PHASE 16U.140
+WAVE 2 REGRESSION
+==================
+
+STATUS: PASS_PHASE_16U140_WAVE2_REGRESSION
+
+Files checked: 12
+Files passed: 12
+Files failed: 0
+
+FILES
+-----
+- regen_candidate_blueprint_completion_audit.py :: PASS
+- regen_candidate_blueprint_generation_input_gate.py :: PASS
+- regen_candidate_blueprint_mutation_validation.py :: PASS
+- regen_candidate_blueprint_optimisation_completion_audit.py :: PASS
+- regen_candidate_blueprint_population_completion_audit.py :: PASS
+- regen_candidate_creation_completion_audit.py :: PASS
+- regen_candidate_creation_input_audit.py :: PASS
+- regen_candidate_creation_registration_owner.py :: PASS
+- regen_candidate_creation_session_owner.py :: PASS
+- regen_candidate_generation_completion_audit.py :: PASS
+- regen_candidate_generation_input_gate.py :: PASS
+- regen_candidate_generation_registration_owner.py :: PASS
+
+FAILURES
+--------

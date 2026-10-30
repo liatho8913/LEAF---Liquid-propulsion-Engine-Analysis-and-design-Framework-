@@ -1,0 +1,100 @@
+{
+  "phase": "16U.70",
+  "status": "PASS_PHASE_16U70_NEXT_MIGRATION_WAVE_DECISION",
+  "generated": "2026-06-28T17:31:41",
+  "target_count": 4,
+  "approved_count": 4,
+  "deferred_count": 0,
+  "approved_targets": [
+    "leaf_qt/failure_root_cause_owner.py",
+    "leaf_qt/regen_completion_gate_validation_owner.py",
+    "leaf_qt/regen_system_signoff_validation_owner.py",
+    "leaf_qt/regen_optimisation_scoring_owner.py"
+  ],
+  "deferred_targets": [],
+  "per_file": [
+    {
+      "file": "leaf_qt/failure_root_cause_owner.py",
+      "exists": true,
+      "parses": true,
+      "parse_error": "",
+      "finding_count": 1,
+      "findings": [
+        {
+          "pattern": "fail_in_status_text",
+          "line": 269,
+          "snippet": "\"FAIL\" in "
+        }
+      ],
+      "simple_only": true,
+      "imports_shared_status_presentation": false,
+      "approved_for_wave_patch": true,
+      "decision": "APPROVE_FOR_16U71_BATCH_PATCH",
+      "reason": "simple owner-style status presentation findings only"
+    },
+    {
+      "file": "leaf_qt/regen_completion_gate_validation_owner.py",
+      "exists": true,
+      "parses": true,
+      "parse_error": "",
+      "finding_count": 1,
+      "findings": [
+        {
+          "pattern": "blocked_in_status_text",
+          "line": 30,
+          "snippet": "\"BLOCKED\" in "
+        }
+      ],
+      "simple_only": true,
+      "imports_shared_status_presentation": false,
+      "approved_for_wave_patch": true,
+      "decision": "APPROVE_FOR_16U71_BATCH_PATCH",
+      "reason": "simple owner-style status presentation findings only"
+    },
+    {
+      "file": "leaf_qt/regen_system_signoff_validation_owner.py",
+      "exists": true,
+      "parses": true,
+      "parse_error": "",
+      "finding_count": 1,
+      "findings": [
+        {
+          "pattern": "blocked_in_status_text",
+          "line": 30,
+          "snippet": "\"BLOCKED\" in "
+        }
+      ],
+      "simple_only": true,
+      "imports_shared_status_presentation": false,
+      "approved_for_wave_patch": true,
+      "decision": "APPROVE_FOR_16U71_BATCH_PATCH",
+      "reason": "simple owner-style status presentation findings only"
+    },
+    {
+      "file": "leaf_qt/regen_optimisation_scoring_owner.py",
+      "exists": true,
+      "parses": true,
+      "parse_error": "",
+      "finding_count": 2,
+      "findings": [
+        {
+          "pattern": "status_startswith",
+          "line": 96,
+          "snippet": ".startswith(\"PASS"
+        },
+        {
+          "pattern": "status_startswith",
+          "line": 108,
+          "snippet": ".startswith(\"PASS"
+        }
+      ],
+      "simple_only": true,
+      "imports_shared_status_presentation": false,
+      "approved_for_wave_patch": true,
+      "decision": "APPROVE_FOR_16U71_BATCH_PATCH",
+      "reason": "simple owner-style status presentation findings only"
+    }
+  ],
+  "phase_16u70_next_migration_wave_decision_complete": true,
+  "next_phase": "16U.71 \u2014 Approved Migration Wave Patch"
+}

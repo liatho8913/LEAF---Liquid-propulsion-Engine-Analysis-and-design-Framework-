@@ -1,0 +1,76 @@
+{
+  "phase": "16U.17",
+  "status": "PASS_PHASE_16U17_WAVE_B_VALIDATION_OWNER_LOW_RISK_STATUS_WRAPPER_REGRESSION",
+  "generated": "2026-06-28T01:01:27",
+  "missing_required_count": 0,
+  "forbidden_present_count": 0,
+  "held_missing_count": 0,
+  "missing_required": [],
+  "forbidden_present": [],
+  "held_missing": [],
+  "compile_results": [
+    {
+      "file": "leaf_qt/regen_candidate_validator.py",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "leaf_qt/regen_source_validation_gate.py",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "leaf_qt/regen_candidate_blueprint_mutation_validation.py",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "leaf_qt/regen_candidate_blueprint_population_validation_owner.py",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "leaf_qt/regen_candidate_post_resolve_validation_owner.py",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "leaf_qt/regen_geometry_constraint_validation_owner.py",
+      "passed": true,
+      "error": ""
+    }
+  ],
+  "checks": [
+    {
+      "name": "phase_16u15_audit_passed",
+      "passed": true,
+      "detail": "PASS_PHASE_16U15_WAVE_B_VALIDATION_OWNER_STATUS_CONSUMER_AUDIT"
+    },
+    {
+      "name": "phase_16u16_patch_passed",
+      "passed": true,
+      "detail": "PASS_PHASE_16U16_WAVE_B_VALIDATION_OWNER_LOW_RISK_STATUS_WRAPPER_PATCH"
+    },
+    {
+      "name": "required_wrapper_tokens_present",
+      "passed": true,
+      "detail": "0 missing"
+    },
+    {
+      "name": "patched_legacy_tokens_absent",
+      "passed": true,
+      "detail": "0 present"
+    },
+    {
+      "name": "held_manual_review_tokens_preserved",
+      "passed": true,
+      "detail": "0 missing"
+    },
+    {
+      "name": "all_validation_files_compile",
+      "passed": true,
+      "detail": "6/6 compiled"
+    }
+  ],
+  "phase_16u17_wave_b_validation_owner_low_risk_status_wrapper_regression_complete": true
+}

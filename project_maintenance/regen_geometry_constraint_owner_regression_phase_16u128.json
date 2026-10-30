@@ -1,0 +1,13 @@
+{
+  "phase": "16U.128",
+  "target": "leaf_qt/regen_geometry_constraint_owner.py",
+  "passed": true,
+  "function_count": 2,
+  "owner_like_functions": [
+    "evaluate_regen_geometry_constraints",
+    "flatten_constraint_result"
+  ],
+  "phase_16u128_regen_geometry_constraint_owner_regression_complete": true,
+  "failures": [],
+  "next_phase": "16U.129 \u2014 Closure Gate"
+}

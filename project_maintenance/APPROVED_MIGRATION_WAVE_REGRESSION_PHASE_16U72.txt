@@ -1,0 +1,67 @@
+LEAF PHASE 16U.72
+APPROVED MIGRATION WAVE REGRESSION
+==================================
+
+STATUS: PASS_PHASE_16U72_APPROVED_MIGRATION_WAVE_REGRESSION
+Generated: 2026-06-28T18:16:36
+
+FEATURE
+-------
+Regression verification for the Phase 16U.71 approved migration wave patch.
+
+COUNTDOWN
+---------
+Current completed before this phase: 16U.71
+Estimated remaining after this phase if PASS: ~9–75 phases
+Likely final range: 16U.100–16U.120
+
+SUMMARY
+-------
+Patch JSON exists: True
+Phase 16U.71 patch complete: True
+Target count: 4
+Passed count: 4
+Failed count: 0
+
+PER-FILE RESULTS
+----------------
+leaf_qt/failure_root_cause_owner.py: PASS
+  exists: PASS — leaf_qt/failure_root_cause_owner.py
+  compiles: PASS — compile pass
+  shared_tokens_present: PASS — all tokens present
+  legacy_patterns_removed: PASS — 0 production pattern(s); ignored 0 helper fallback literal(s)
+  phase_16u71_file_patch_completed: PASS — patch payload pass
+  module_imports: PASS — module import pass
+  helper_status_semantics: PASS — severity_failures=[]
+leaf_qt/regen_completion_gate_validation_owner.py: PASS
+  exists: PASS — leaf_qt/regen_completion_gate_validation_owner.py
+  compiles: PASS — compile pass
+  shared_tokens_present: PASS — all tokens present
+  legacy_patterns_removed: PASS — 0 production pattern(s); ignored 0 helper fallback literal(s)
+  phase_16u71_file_patch_completed: PASS — patch payload pass
+  module_imports: PASS — module import pass
+  helper_status_semantics: PASS — severity_failures=[]
+leaf_qt/regen_system_signoff_validation_owner.py: PASS
+  exists: PASS — leaf_qt/regen_system_signoff_validation_owner.py
+  compiles: PASS — compile pass
+  shared_tokens_present: PASS — all tokens present
+  legacy_patterns_removed: PASS — 0 production pattern(s); ignored 0 helper fallback literal(s)
+  phase_16u71_file_patch_completed: PASS — patch payload pass
+  module_imports: PASS — module import pass
+  helper_status_semantics: PASS — severity_failures=[]
+leaf_qt/regen_optimisation_scoring_owner.py: PASS
+  exists: PASS — leaf_qt/regen_optimisation_scoring_owner.py
+  compiles: PASS — compile pass
+  shared_tokens_present: PASS — all tokens present
+  legacy_patterns_removed: PASS — 0 production pattern(s); ignored 0 helper fallback literal(s)
+  phase_16u71_file_patch_completed: PASS — patch payload pass
+  module_imports: PASS — module import pass
+  helper_status_semantics: PASS — severity_failures=[]
+
+COMPLETION NOTICE
+-----------------
+PHASE 16U.72 COMPLETE.
+
+NEXT FEATURE
+------------
+PHASE 16U.73 — APPROVED MIGRATION WAVE CLOSURE GATE

@@ -1,0 +1,36 @@
+LEAF PHASE 16U.39
+REGEN CROSS SECTION VIEWER PRESENTATION LAYER REGRESSION
+========================================================
+
+STATUS: PASS_PHASE_16U39_REGEN_CROSS_SECTION_VIEWER_PRESENTATION_LAYER_REGRESSION
+Generated: 2026-06-28T02:28:45
+
+FEATURE
+-------
+Regression verification for the first wider report-owner/UI presentation-layer rollout patch.
+
+TARGET
+------
+leaf_qt/regen_cross_section_viewer.py
+
+CHECKS
+------
+production_target_exists: PASS — leaf_qt/regen_cross_section_viewer.py
+upload_duplicate_exists_but_not_targeted: PASS — LEAF_UPLOAD/leaf_qt/regen_cross_section_viewer.py
+phase_16u38_patch_json_exists: PASS — project_maintenance/regen_cross_section_viewer_presentation_layer_patch_phase_16u38.json
+production_target_compiles: PASS — compile pass
+shared_presentation_tokens_present: PASS — all tokens present
+legacy_patterns_not_reintroduced: PASS — 0 forbidden pattern(s)
+phase_16u38_patch_completed: PASS — PASS_PHASE_16U38_REGEN_CROSS_SECTION_VIEWER_PRESENTATION_LAYER_PATCH
+shared_status_compatibility_api_behaves: PASS — True->PASS, False->FAIL
+production_viewer_imports: PASS — module import pass
+viewer_helper_behaviour_regression: PASS — severity_failures=[]; marker_pass=True
+leaf_upload_duplicate_not_patched: PASS — duplicate untouched
+
+COMPLETION NOTICE
+-----------------
+PHASE 16U.39 COMPLETE.
+
+NEXT FEATURE
+------------
+PHASE 16U.40 — FIRST REPORT OWNER PRESENTATION LAYER ROLLOUT CLOSURE GATE

@@ -1,0 +1,134 @@
+{
+  "phase": "16U.135",
+  "wave_id": "16U-WAVE1",
+  "passed": true,
+  "files_closed": 12,
+  "files_failed": 0,
+  "closed_files": [
+    "bond_coat_integration_owner.py",
+    "coating_property_consumption_audit_owner.py",
+    "coating_temperature_limit_integration_owner.py",
+    "coating_thermal_conductivity_integration_owner.py",
+    "coating_thermal_resistance_integration_owner.py",
+    "coating_thickness_integration_owner.py",
+    "material_density_integration_owner.py",
+    "material_property_consumption_audit_owner.py",
+    "material_specific_heat_integration_owner.py",
+    "material_strength_limit_integration_owner.py",
+    "material_temperature_limit_integration_owner.py",
+    "material_thermal_conductivity_integration_owner.py"
+  ],
+  "closure_results": [
+    {
+      "file": "bond_coat_integration_owner.py",
+      "passed": true,
+      "backup": "project_maintenance/phase_16u133_wave1_backups/bond_coat_integration_owner.py",
+      "sha256_before": "c19cbe8074bee55bbfd48698a81cc488ccd21461c7360b242f34c02b085bdb25",
+      "sha256_after": "cd9b081a68b83f72e09b36820b721843e85c0877dc16d6e64de5d3f9cd20aa43",
+      "sha256_current": "cd9b081a68b83f72e09b36820b721843e85c0877dc16d6e64de5d3f9cd20aa43",
+      "failures": []
+    },
+    {
+      "file": "coating_property_consumption_audit_owner.py",
+      "passed": true,
+      "backup": "project_maintenance/phase_16u133_wave1_backups/coating_property_consumption_audit_owner.py",
+      "sha256_before": "2e83336dc49ab3de2d673235d63f7ed18f8f57269872f41a90d9f71107c33f2a",
+      "sha256_after": "443bf2df5493faa6fe1c8bc72b0f93a5d72f87753d3a49a2c1b7403f63f570de",
+      "sha256_current": "443bf2df5493faa6fe1c8bc72b0f93a5d72f87753d3a49a2c1b7403f63f570de",
+      "failures": []
+    },
+    {
+      "file": "coating_temperature_limit_integration_owner.py",
+      "passed": true,
+      "backup": "project_maintenance/phase_16u133_wave1_backups/coating_temperature_limit_integration_owner.py",
+      "sha256_before": "52ec49ffdcd3d9746bf1317853a856f9722ebecd59c87add83537ce513d283bc",
+      "sha256_after": "2d81d467617ace76eb19c782ce27f06c79cbd75910886aa943c4940b865aefed",
+      "sha256_current": "2d81d467617ace76eb19c782ce27f06c79cbd75910886aa943c4940b865aefed",
+      "failures": []
+    },
+    {
+      "file": "coating_thermal_conductivity_integration_owner.py",
+      "passed": true,
+      "backup": "project_maintenance/phase_16u133_wave1_backups/coating_thermal_conductivity_integration_owner.py",
+      "sha256_before": "2f4b8c0b70b0d65c4c0a7ee3cb9fdae0dbbd1016299374bbdf0b4d8d20e93586",
+      "sha256_after": "c69342e57ac09f26afaf16086c19107f0a7a344f53a18b82543499b1ef8ae0fe",
+      "sha256_current": "c69342e57ac09f26afaf16086c19107f0a7a344f53a18b82543499b1ef8ae0fe",
+      "failures": []
+    },
+    {
+      "file": "coating_thermal_resistance_integration_owner.py",
+      "passed": true,
+      "backup": "project_maintenance/phase_16u133_wave1_backups/coating_thermal_resistance_integration_owner.py",
+      "sha256_before": "add85339e69119d787a430b512efd3c2c2389190a0f88db754be7a4e3cf1083c",
+      "sha256_after": "f7cea6682820d225a87e382b9412d9f00d3b2bc44e0d15a1900a7235cc51ed90",
+      "sha256_current": "f7cea6682820d225a87e382b9412d9f00d3b2bc44e0d15a1900a7235cc51ed90",
+      "failures": []
+    },
+    {
+      "file": "coating_thickness_integration_owner.py",
+      "passed": true,
+      "backup": "project_maintenance/phase_16u133_wave1_backups/coating_thickness_integration_owner.py",
+      "sha256_before": "e29364fce1afe8cd86fe921e6d64949b3efb067838d4a8fd88fb57553605fbd6",
+      "sha256_after": "7248d8c5618ef260b7d90a001ed4ee08d21593fc755453b0676dff5c223adcf4",
+      "sha256_current": "7248d8c5618ef260b7d90a001ed4ee08d21593fc755453b0676dff5c223adcf4",
+      "failures": []
+    },
+    {
+      "file": "material_density_integration_owner.py",
+      "passed": true,
+      "backup": "project_maintenance/phase_16u133_wave1_backups/material_density_integration_owner.py",
+      "sha256_before": "c84bc2bc9cfff9165c57997a76c7fccc2dd009297932de8981953ca6044f74cc",
+      "sha256_after": "5c098ac16bdfded7bd57d7642095cd9d85708f5dca9de768bf535ec89fa8ab6b",
+      "sha256_current": "5c098ac16bdfded7bd57d7642095cd9d85708f5dca9de768bf535ec89fa8ab6b",
+      "failures": []
+    },
+    {
+      "file": "material_property_consumption_audit_owner.py",
+      "passed": true,
+      "backup": "project_maintenance/phase_16u133_wave1_backups/material_property_consumption_audit_owner.py",
+      "sha256_before": "b949f929d13c6c1c858b1a9fe9b7a582f0087c3899b5e353c57356eeb4af3dc4",
+      "sha256_after": "8871764841340a647e97a8ad2aa4a06cc9f77282d2225c92271677efd269db33",
+      "sha256_current": "8871764841340a647e97a8ad2aa4a06cc9f77282d2225c92271677efd269db33",
+      "failures": []
+    },
+    {
+      "file": "material_specific_heat_integration_owner.py",
+      "passed": true,
+      "backup": "project_maintenance/phase_16u133_wave1_backups/material_specific_heat_integration_owner.py",
+      "sha256_before": "9e3eed26bf4dd930345fc270ca6257d5450bef36f8d1d6ae062fcd1df5edd173",
+      "sha256_after": "1d9165577ead372b800b953fa958e7cbd9897a87bdd5d4947084c381830e4f59",
+      "sha256_current": "1d9165577ead372b800b953fa958e7cbd9897a87bdd5d4947084c381830e4f59",
+      "failures": []
+    },
+    {
+      "file": "material_strength_limit_integration_owner.py",
+      "passed": true,
+      "backup": "project_maintenance/phase_16u133_wave1_backups/material_strength_limit_integration_owner.py",
+      "sha256_before": "d7226e1b23ebe051e4b2c4e15c366e42edb357c9d69fed102e9e6e6afd841370",
+      "sha256_after": "2c34c3c899c56c44c65b5cac2444aa62292390415ae37f45043e7a24d58e4ca7",
+      "sha256_current": "2c34c3c899c56c44c65b5cac2444aa62292390415ae37f45043e7a24d58e4ca7",
+      "failures": []
+    },
+    {
+      "file": "material_temperature_limit_integration_owner.py",
+      "passed": true,
+      "backup": "project_maintenance/phase_16u133_wave1_backups/material_temperature_limit_integration_owner.py",
+      "sha256_before": "a94913f7deb67ba92b66260d598cb113bf5d3918f5a8b55afb16887e7357c9ed",
+      "sha256_after": "9085721651b5a9ee07f840dc34a18ce663ff6958e597824077a2c6f6d8693b12",
+      "sha256_current": "9085721651b5a9ee07f840dc34a18ce663ff6958e597824077a2c6f6d8693b12",
+      "failures": []
+    },
+    {
+      "file": "material_thermal_conductivity_integration_owner.py",
+      "passed": true,
+      "backup": "project_maintenance/phase_16u133_wave1_backups/material_thermal_conductivity_integration_owner.py",
+      "sha256_before": "0479667fcbe7e5be70d98c0065a8adfe5dfae070269848ef976d7c0a39f9fda1",
+      "sha256_after": "9d0f904173ca2dac616697f95c4271a96fdacc8f8c28173bce949827e39fa4be",
+      "sha256_current": "9d0f904173ca2dac616697f95c4271a96fdacc8f8c28173bce949827e39fa4be",
+      "failures": []
+    }
+  ],
+  "failures": [],
+  "phase_16u135_wave1_closure_gate_complete": true,
+  "next_phase": "16U.136 \u2014 Wave 1 Locked Audit"
+}

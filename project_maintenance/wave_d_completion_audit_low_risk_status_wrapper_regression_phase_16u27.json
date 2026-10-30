@@ -1,0 +1,56 @@
+{
+  "phase": "16U.27",
+  "status": "PASS_PHASE_16U27_WAVE_D_COMPLETION_AUDIT_LOW_RISK_STATUS_WRAPPER_REGRESSION",
+  "generated": "2026-06-28T01:38:59",
+  "missing_required_count": 0,
+  "forbidden_present_count": 0,
+  "held_missing_count": 0,
+  "missing_required": [],
+  "forbidden_present": [],
+  "held_missing": [],
+  "compile_results": [
+    {
+      "file": "leaf_qt/regen_geometry_completion_audit.py",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "leaf_qt/structured_status_access.py",
+      "passed": true,
+      "error": ""
+    }
+  ],
+  "checks": [
+    {
+      "name": "phase_16u25_audit_passed",
+      "passed": true,
+      "detail": "PASS_PHASE_16U25_WAVE_D_COMPLETION_AUDIT_STATUS_CONSUMER_AUDIT"
+    },
+    {
+      "name": "phase_16u26_patch_passed",
+      "passed": true,
+      "detail": "PASS_PHASE_16U26_WAVE_D_COMPLETION_AUDIT_LOW_RISK_STATUS_WRAPPER_PATCH"
+    },
+    {
+      "name": "required_wrapper_tokens_present",
+      "passed": true,
+      "detail": "0 missing"
+    },
+    {
+      "name": "legacy_direct_pass_check_absent",
+      "passed": true,
+      "detail": "0 present"
+    },
+    {
+      "name": "held_audit_patterns_preserved",
+      "passed": true,
+      "detail": "0 missing"
+    },
+    {
+      "name": "target_and_access_layer_compile",
+      "passed": true,
+      "detail": "2/2 compiled"
+    }
+  ],
+  "phase_16u27_wave_d_completion_audit_low_risk_status_wrapper_regression_complete": true
+}

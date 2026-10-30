@@ -1,0 +1,35 @@
+LEAF PHASE 16U.66
+MATERIAL TEMPERATURE LIMIT INTEGRATION OWNER PRESENTATION LAYER PATCH
+====================================================================
+
+STATUS: PASS_PHASE_16U66_MATERIAL_TEMPERATURE_LIMIT_INTEGRATION_OWNER_PRESENTATION_LAYER_PATCH
+Generated: 2026-06-28T12:21:40
+
+FEATURE
+-------
+Patch the material temperature limit integration owner onto the shared status presentation layer.
+
+TARGET
+------
+leaf_qt/material_temperature_limit_integration_owner.py
+
+PATCH ACCOUNTING
+----------------
+Helper inserted: False
+Applied migrations: 0
+Before forbidden production count: 0
+After forbidden production count: 0
+Ignored helper fallback literals: 0
+Compiled: True
+Compile error: 
+
+APPLIED
+-------
+
+COMPLETION NOTICE
+-----------------
+PHASE 16U.66 COMPLETE.
+
+NEXT FEATURE
+------------
+PHASE 16U.67 — MATERIAL TEMPERATURE LIMIT INTEGRATION OWNER PRESENTATION LAYER REGRESSION

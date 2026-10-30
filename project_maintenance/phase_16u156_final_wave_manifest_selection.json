@@ -1,0 +1,255 @@
+{
+  "phase": "16U.156",
+  "passed": true,
+  "wave_id": "16U-FINAL-WAVE",
+  "wave_name": "Final remaining presentation migration wave",
+  "selected_count": 8,
+  "selected_files": [
+    "real_engine_benchmark_completion_audit.py",
+    "real_engine_benchmark_failure_owner.py",
+    "regen_autonomous_optimisation_input_audit.py",
+    "regen_candidate_generation_session_owner.py",
+    "regen_scalability_failure_owner.py",
+    "regen_viewer_final_runtime_consistency_gate_phase_16q20.py",
+    "regen_viewer_gui_runtime_acceptance_gate_phase_16q28.py",
+    "regen_viewer_report_renderer.py"
+  ],
+  "locked_baseline": 68,
+  "closed_targets_before_wave": 60,
+  "remaining_candidates_before_wave": 8,
+  "expected_closed_after_wave_audit": 68,
+  "expected_remaining_after_wave_audit": 0,
+  "acceptance_contract": {
+    "backup_required_for_each_file": true,
+    "pre_hash_required_for_each_file": true,
+    "post_hash_required_for_each_file": true,
+    "compile_required_for_each_file": true,
+    "shared_layer_required_for_each_file": true,
+    "legacy_inline_status_logic_removed_for_each_file": true,
+    "legacy_prefix_suffix_status_checks_removed_or_shared_for_each_file": true,
+    "rollback_available_for_each_file": true,
+    "wave_rejected_if_any_file_fails": true,
+    "locked_baseline_audit_required_after_wave": true,
+    "migration_certificate_required": true,
+    "final_global_signoff_required": true
+  },
+  "manifest": [
+    {
+      "file": "real_engine_benchmark_completion_audit.py",
+      "path": "leaf_qt/real_engine_benchmark_completion_audit.py",
+      "exists": true,
+      "sha256_before": "63190ce60a561f1e590255a0dd8a3a502e3610eb6c5c38de7045c51f999d04d9",
+      "compile_before": true,
+      "compile_error": null,
+      "has_LegacyCompatibilityProducer": false,
+      "has_status_severity": false,
+      "legacy_hit_count": 3,
+      "legacy_hits": [
+        {
+          "line": 277,
+          "pattern": "\"PASS\"\\s+if\\s+.+?\\s+else\\s+\"FAIL\"",
+          "content": "marker = \"PASS\" if check[\"passed\"] else \"FAIL\""
+        },
+        {
+          "line": 308,
+          "pattern": "\\.startswith\\(\\s*[\"\\'](?:PASS|FAIL|WARN|BLOCKED)",
+          "content": "if status.startswith(\"PASS\"):"
+        },
+        {
+          "line": 323,
+          "pattern": "\\.startswith\\(\\s*[\"\\'](?:PASS|FAIL|WARN|BLOCKED)",
+          "content": "if status.startswith(\"PASS\"):"
+        }
+      ],
+      "wave": "16U-FINAL-WAVE",
+      "reason": "final remaining locked-baseline presentation migration target",
+      "expected_edits": [
+        "ensure LegacyCompatibilityProducer import/fallback",
+        "ensure status_severity availability",
+        "replace inline PASS/WARN/FAIL marker/label ternaries and startswith/endswith status checks where applicable",
+        "no solver behaviour changes",
+        "no public API changes"
+      ]
+    },
+    {
+      "file": "real_engine_benchmark_failure_owner.py",
+      "path": "leaf_qt/real_engine_benchmark_failure_owner.py",
+      "exists": true,
+      "sha256_before": "d0a686632e2fed86977fcdb2e271dc6061d09237f810e49489d7c1b6dbb1cbe5",
+      "compile_before": true,
+      "compile_error": null,
+      "has_LegacyCompatibilityProducer": false,
+      "has_status_severity": true,
+      "legacy_hit_count": 0,
+      "legacy_hits": [],
+      "wave": "16U-FINAL-WAVE",
+      "reason": "final remaining locked-baseline presentation migration target",
+      "expected_edits": [
+        "ensure LegacyCompatibilityProducer import/fallback",
+        "ensure status_severity availability",
+        "replace inline PASS/WARN/FAIL marker/label ternaries and startswith/endswith status checks where applicable",
+        "no solver behaviour changes",
+        "no public API changes"
+      ]
+    },
+    {
+      "file": "regen_autonomous_optimisation_input_audit.py",
+      "path": "leaf_qt/regen_autonomous_optimisation_input_audit.py",
+      "exists": true,
+      "sha256_before": "7bca90cb192514297ac6363153d123617bded0e5404b664b3c0cc5e7536adf00",
+      "compile_before": true,
+      "compile_error": null,
+      "has_LegacyCompatibilityProducer": false,
+      "has_status_severity": false,
+      "legacy_hit_count": 1,
+      "legacy_hits": [
+        {
+          "line": 159,
+          "pattern": "\"PASS\"\\s+if\\s+.+?\\s+else\\s+\"FAIL\"",
+          "content": "marker = \"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ],
+      "wave": "16U-FINAL-WAVE",
+      "reason": "final remaining locked-baseline presentation migration target",
+      "expected_edits": [
+        "ensure LegacyCompatibilityProducer import/fallback",
+        "ensure status_severity availability",
+        "replace inline PASS/WARN/FAIL marker/label ternaries and startswith/endswith status checks where applicable",
+        "no solver behaviour changes",
+        "no public API changes"
+      ]
+    },
+    {
+      "file": "regen_candidate_generation_session_owner.py",
+      "path": "leaf_qt/regen_candidate_generation_session_owner.py",
+      "exists": true,
+      "sha256_before": "1fac448fbb0ea211cf74813e44178f7c4d2a0bc3ff430bd01af6621d6a973600",
+      "compile_before": true,
+      "compile_error": null,
+      "has_LegacyCompatibilityProducer": false,
+      "has_status_severity": false,
+      "legacy_hit_count": 1,
+      "legacy_hits": [
+        {
+          "line": 197,
+          "pattern": "\"PASS\"\\s+if\\s+.+?\\s+else\\s+\"FAIL\"",
+          "content": "marker = \"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ],
+      "wave": "16U-FINAL-WAVE",
+      "reason": "final remaining locked-baseline presentation migration target",
+      "expected_edits": [
+        "ensure LegacyCompatibilityProducer import/fallback",
+        "ensure status_severity availability",
+        "replace inline PASS/WARN/FAIL marker/label ternaries and startswith/endswith status checks where applicable",
+        "no solver behaviour changes",
+        "no public API changes"
+      ]
+    },
+    {
+      "file": "regen_scalability_failure_owner.py",
+      "path": "leaf_qt/regen_scalability_failure_owner.py",
+      "exists": true,
+      "sha256_before": "ae67b41c9a1bdf97d33c8e9de2bcc8b64e6045aa58d0d5ee7af4b4063e101515",
+      "compile_before": true,
+      "compile_error": null,
+      "has_LegacyCompatibilityProducer": false,
+      "has_status_severity": true,
+      "legacy_hit_count": 0,
+      "legacy_hits": [],
+      "wave": "16U-FINAL-WAVE",
+      "reason": "final remaining locked-baseline presentation migration target",
+      "expected_edits": [
+        "ensure LegacyCompatibilityProducer import/fallback",
+        "ensure status_severity availability",
+        "replace inline PASS/WARN/FAIL marker/label ternaries and startswith/endswith status checks where applicable",
+        "no solver behaviour changes",
+        "no public API changes"
+      ]
+    },
+    {
+      "file": "regen_viewer_final_runtime_consistency_gate_phase_16q20.py",
+      "path": "leaf_qt/regen_viewer_final_runtime_consistency_gate_phase_16q20.py",
+      "exists": true,
+      "sha256_before": "2d697512eb5606e05ed2042d20c38ecab06308ba723e7981069c492dc4b673cd",
+      "compile_before": true,
+      "compile_error": null,
+      "has_LegacyCompatibilityProducer": false,
+      "has_status_severity": false,
+      "legacy_hit_count": 1,
+      "legacy_hits": [
+        {
+          "line": 125,
+          "pattern": "\"PASS\"\\s+if\\s+.+?\\s+else\\s+\"FAIL\"",
+          "content": "state = \"PASS\" if item[\"passed\"] else \"FAIL\""
+        }
+      ],
+      "wave": "16U-FINAL-WAVE",
+      "reason": "final remaining locked-baseline presentation migration target",
+      "expected_edits": [
+        "ensure LegacyCompatibilityProducer import/fallback",
+        "ensure status_severity availability",
+        "replace inline PASS/WARN/FAIL marker/label ternaries and startswith/endswith status checks where applicable",
+        "no solver behaviour changes",
+        "no public API changes"
+      ]
+    },
+    {
+      "file": "regen_viewer_gui_runtime_acceptance_gate_phase_16q28.py",
+      "path": "leaf_qt/regen_viewer_gui_runtime_acceptance_gate_phase_16q28.py",
+      "exists": true,
+      "sha256_before": "3021a90480d96eed56bd95e9337e4b81051d21e10f1225b81db8bd5a40bed3c1",
+      "compile_before": true,
+      "compile_error": null,
+      "has_LegacyCompatibilityProducer": false,
+      "has_status_severity": false,
+      "legacy_hit_count": 1,
+      "legacy_hits": [
+        {
+          "line": 93,
+          "pattern": "\"PASS\"\\s+if\\s+.+?\\s+else\\s+\"FAIL\"",
+          "content": "state = \"PASS\" if item[\"passed\"] else \"FAIL\""
+        }
+      ],
+      "wave": "16U-FINAL-WAVE",
+      "reason": "final remaining locked-baseline presentation migration target",
+      "expected_edits": [
+        "ensure LegacyCompatibilityProducer import/fallback",
+        "ensure status_severity availability",
+        "replace inline PASS/WARN/FAIL marker/label ternaries and startswith/endswith status checks where applicable",
+        "no solver behaviour changes",
+        "no public API changes"
+      ]
+    },
+    {
+      "file": "regen_viewer_report_renderer.py",
+      "path": "leaf_qt/regen_viewer_report_renderer.py",
+      "exists": true,
+      "sha256_before": "e4cfd73ed29216e1c90c18d97ee32426ad2895e9f4b13f49059bc1cc8d9e1ef1",
+      "compile_before": true,
+      "compile_error": null,
+      "has_LegacyCompatibilityProducer": false,
+      "has_status_severity": false,
+      "legacy_hit_count": 1,
+      "legacy_hits": [
+        {
+          "line": 179,
+          "pattern": "'PASS'\\s+if\\s+.+?\\s+else\\s+'FAIL'",
+          "content": "f\"{'PASS' if item.get('passed') else 'FAIL'}\""
+        }
+      ],
+      "wave": "16U-FINAL-WAVE",
+      "reason": "final remaining locked-baseline presentation migration target",
+      "expected_edits": [
+        "ensure LegacyCompatibilityProducer import/fallback",
+        "ensure status_severity availability",
+        "replace inline PASS/WARN/FAIL marker/label ternaries and startswith/endswith status checks where applicable",
+        "no solver behaviour changes",
+        "no public API changes"
+      ]
+    }
+  ],
+  "phase_16u156_final_wave_manifest_selection_complete": true,
+  "next_phase": "16U.157 \u2014 Final Wave Transactional Patch",
+  "failures": []
+}

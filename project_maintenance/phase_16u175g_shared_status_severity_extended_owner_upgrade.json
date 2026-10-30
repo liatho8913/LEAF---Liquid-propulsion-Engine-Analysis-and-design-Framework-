@@ -1,0 +1,12 @@
+{
+  "phase": "16U.175G",
+  "target": "leaf_qt/status_presentation.py",
+  "backup": "/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u175g_backups/20260629_005418__status_presentation.py.bak",
+  "function_replaced_or_added": true,
+  "compile_error": null,
+  "self_test_failures": [],
+  "rolled_back": false,
+  "passed": true,
+  "status": "PASS_PHASE_16U175G_SHARED_STATUS_SEVERITY_EXTENDED_OWNER_UPGRADE",
+  "next_phase": "16U.175H_LOCAL_STATUS_SEVERITY_DEDUPLICATION_WAVE"
+}

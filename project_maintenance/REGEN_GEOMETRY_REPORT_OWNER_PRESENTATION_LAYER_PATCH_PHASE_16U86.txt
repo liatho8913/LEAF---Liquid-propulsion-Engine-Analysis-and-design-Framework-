@@ -1,0 +1,35 @@
+LEAF PHASE 16U.86
+REGEN GEOMETRY REPORT OWNER PRESENTATION LAYER PATCH
+====================================================================
+
+STATUS: PASS_PHASE_16U86_REGEN_GEOMETRY_REPORT_OWNER_PRESENTATION_LAYER_PATCH
+Generated: 2026-06-28T19:50:25
+
+FEATURE
+-------
+Patch the regen geometry report owner onto the shared status presentation layer.
+
+TARGET
+------
+leaf_qt/regen_geometry_report_owner.py
+
+PATCH ACCOUNTING
+----------------
+Helper inserted: False
+Applied migrations: 0
+Before forbidden production count: 0
+After forbidden production count: 0
+Ignored helper fallback literals: 0
+Compiled: True
+Compile error: 
+
+APPLIED
+-------
+
+COMPLETION NOTICE
+-----------------
+PHASE 16U.86 COMPLETE.
+
+NEXT FEATURE
+------------
+PHASE 16U.87 — REGEN GEOMETRY REPORT OWNER PRESENTATION LAYER REGRESSION

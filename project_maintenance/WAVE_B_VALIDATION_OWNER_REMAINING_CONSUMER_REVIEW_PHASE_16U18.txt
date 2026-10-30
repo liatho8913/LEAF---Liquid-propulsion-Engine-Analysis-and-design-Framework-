@@ -1,0 +1,182 @@
+LEAF PHASE 16U.18
+WAVE B VALIDATION OWNER REMAINING CONSUMER REVIEW
+===================================================
+
+STATUS: PASS_PHASE_16U18_WAVE_B_VALIDATION_OWNER_REMAINING_CONSUMER_REVIEW
+Generated: 2026-06-28T01:03:33
+
+SCOPE
+-----
+This phase reviews remaining Wave B validation-owner status consumers.
+No production files are modified.
+No validation equations are modified.
+
+SUMMARY
+-------
+Remaining validation consumers: 27
+Closure blockers: 0
+
+CATEGORY BREAKDOWN
+------------------
+GUI_VALIDATION_BRIDGE_INTENTIONAL_HOLD: 1
+PAYLOAD_LITERAL_INTENTIONAL_HOLD: 10
+PRESENTATION_MARKER_INTENTIONAL_HOLD: 2
+REASSIGN_TO_WAVE_C_MASTER_GATE: 4
+STATUS_PRODUCER_INTENTIONAL_HOLD: 6
+TEXT_SEMANTIC_INTENTIONAL_HOLD: 4
+
+REMAINING CONSUMERS
+-------------------
+leaf_qt/regen_candidate_blueprint_mutation_validation.py:243 [PRESENTATION_MARKER_INTENTIONAL_HOLD]
+  snippet: marker = "PASS" if check["passed"] else "FAIL"
+  recommendation: Preserve as report/evidence rendering.
+  reason: Boolean-to-text PASS/FAIL markers are presentation evidence, not status consumers.
+
+leaf_qt/regen_candidate_blueprint_population_validation_owner.py:231 [PRESENTATION_MARKER_INTENTIONAL_HOLD]
+  snippet: marker = "PASS" if check["passed"] else "FAIL"
+  recommendation: Preserve as report/evidence rendering.
+  reason: Boolean-to-text PASS/FAIL markers are presentation evidence, not status consumers.
+
+leaf_qt/regen_candidate_post_resolve_validation_owner.py:199 [TEXT_SEMANTIC_INTENTIONAL_HOLD]
+  snippet: ("FAIL" not in text and "INVALID" not in text),
+  recommendation: Preserve until structured diagnostic payload replaces freeform text checks.
+  reason: Text scanning is semantic and should not be automatically wrapped.
+
+leaf_qt/regen_candidate_post_resolve_validation_owner.py:207 [TEXT_SEMANTIC_INTENTIONAL_HOLD]
+  snippet: ("WARN" not in text and "REVIEW" not in text and "PLACEHOLDER" not in text),
+  recommendation: Preserve until structured diagnostic payload replaces freeform text checks.
+  reason: Text scanning is semantic and should not be automatically wrapped.
+
+leaf_qt/regen_geometry_constraint_validation_owner.py:266 [TEXT_SEMANTIC_INTENTIONAL_HOLD]
+  snippet: passed=("FAIL" not in text and "INVALID" not in text),
+  recommendation: Preserve until structured diagnostic payload replaces freeform text checks.
+  reason: Text scanning is semantic and should not be automatically wrapped.
+
+leaf_qt/regen_geometry_constraint_validation_owner.py:274 [TEXT_SEMANTIC_INTENTIONAL_HOLD]
+  snippet: passed=("WARN" not in text and "REVIEW" not in text and "PLACEHOLDER" not in text),
+  recommendation: Preserve until structured diagnostic payload replaces freeform text checks.
+  reason: Text scanning is semantic and should not be automatically wrapped.
+
+leaf_qt/regen_validation_master_gate.py:77 [REASSIGN_TO_WAVE_C_MASTER_GATE]
+  snippet: elif "FAIL" in status:
+  recommendation: Reassign to Wave C master-gate migration.
+  reason: This file is classified as a master gate by architecture and should not block Wave B closure.
+
+leaf_qt/regen_validation_master_gate.py:77 [REASSIGN_TO_WAVE_C_MASTER_GATE]
+  snippet: elif "FAIL" in status:
+  recommendation: Reassign to Wave C master-gate migration.
+  reason: This file is classified as a master gate by architecture and should not block Wave B closure.
+
+leaf_qt/regen_validation_master_gate.py:194 [REASSIGN_TO_WAVE_C_MASTER_GATE]
+  snippet: elif "FAIL" in validation_status_text or "INVALID" in validation_status_text:
+  recommendation: Reassign to Wave C master-gate migration.
+  reason: This file is classified as a master gate by architecture and should not block Wave B closure.
+
+leaf_qt/regen_validation_master_gate.py:194 [REASSIGN_TO_WAVE_C_MASTER_GATE]
+  snippet: elif "FAIL" in validation_status_text or "INVALID" in validation_status_text:
+  recommendation: Reassign to Wave C master-gate migration.
+  reason: This file is classified as a master gate by architecture and should not block Wave B closure.
+
+leaf_qt/regen_candidate_post_resolve_validation_owner.py:161 [PAYLOAD_LITERAL_INTENTIONAL_HOLD]
+  snippet: "FAIL",
+  recommendation: Preserve until payload schema is migrated.
+  reason: Standalone literals likely belong to payload/evidence construction.
+
+leaf_qt/regen_candidate_post_resolve_validation_owner.py:177 [PAYLOAD_LITERAL_INTENTIONAL_HOLD]
+  snippet: "FAIL",
+  recommendation: Preserve until payload schema is migrated.
+  reason: Standalone literals likely belong to payload/evidence construction.
+
+leaf_qt/regen_candidate_post_resolve_validation_owner.py:185 [PAYLOAD_LITERAL_INTENTIONAL_HOLD]
+  snippet: "FAIL",
+  recommendation: Preserve until payload schema is migrated.
+  reason: Standalone literals likely belong to payload/evidence construction.
+
+leaf_qt/regen_candidate_post_resolve_validation_owner.py:200 [PAYLOAD_LITERAL_INTENTIONAL_HOLD]
+  snippet: "FAIL",
+  recommendation: Preserve until payload schema is migrated.
+  reason: Standalone literals likely belong to payload/evidence construction.
+
+leaf_qt/regen_candidate_post_resolve_validation_owner.py:217 [PAYLOAD_LITERAL_INTENTIONAL_HOLD]
+  snippet: "FAIL",
+  recommendation: Preserve until payload schema is migrated.
+  reason: Standalone literals likely belong to payload/evidence construction.
+
+leaf_qt/regen_candidate_post_resolve_validation_owner.py:230 [PAYLOAD_LITERAL_INTENTIONAL_HOLD]
+  snippet: "FAIL",
+  recommendation: Preserve until payload schema is migrated.
+  reason: Standalone literals likely belong to payload/evidence construction.
+
+leaf_qt/regen_candidate_validator.py:360 [STATUS_PRODUCER_INTENTIONAL_HOLD]
+  snippet: return "FAIL"
+  recommendation: Preserve as legacy-compatible status producer.
+  reason: Return literals produce compatibility status output rather than consume it.
+
+leaf_qt/regen_candidate_validator.py:369 [STATUS_PRODUCER_INTENTIONAL_HOLD]
+  snippet: return "PASS"
+  recommendation: Preserve as legacy-compatible status producer.
+  reason: Return literals produce compatibility status output rather than consume it.
+
+leaf_qt/regen_candidate_validator.py:371 [STATUS_PRODUCER_INTENTIONAL_HOLD]
+  snippet: return "FAIL"
+  recommendation: Preserve as legacy-compatible status producer.
+  reason: Return literals produce compatibility status output rather than consume it.
+
+leaf_qt/regen_candidate_validator.py:381 [PAYLOAD_LITERAL_INTENTIONAL_HOLD]
+  snippet: "FAIL",
+  recommendation: Preserve until payload schema is migrated.
+  reason: Standalone literals likely belong to payload/evidence construction.
+
+leaf_qt/regen_candidate_validator.py:495 [PAYLOAD_LITERAL_INTENTIONAL_HOLD]
+  snippet: "FAIL",
+  recommendation: Preserve until payload schema is migrated.
+  reason: Standalone literals likely belong to payload/evidence construction.
+
+leaf_qt/regen_candidate_validator.py:548 [PAYLOAD_LITERAL_INTENTIONAL_HOLD]
+  snippet: "FAIL",
+  recommendation: Preserve until payload schema is migrated.
+  reason: Standalone literals likely belong to payload/evidence construction.
+
+leaf_qt/regen_source_validation_gate.py:361 [STATUS_PRODUCER_INTENTIONAL_HOLD]
+  snippet: return "FAIL"
+  recommendation: Preserve as legacy-compatible status producer.
+  reason: Return literals produce compatibility status output rather than consume it.
+
+leaf_qt/regen_source_validation_gate.py:367 [STATUS_PRODUCER_INTENTIONAL_HOLD]
+  snippet: return "PASS"
+  recommendation: Preserve as legacy-compatible status producer.
+  reason: Return literals produce compatibility status output rather than consume it.
+
+leaf_qt/regen_source_validation_gate.py:368 [STATUS_PRODUCER_INTENTIONAL_HOLD]
+  snippet: return "FAIL"
+  recommendation: Preserve as legacy-compatible status producer.
+  reason: Return literals produce compatibility status output rather than consume it.
+
+leaf_qt/regen_source_validation_gate.py:378 [PAYLOAD_LITERAL_INTENTIONAL_HOLD]
+  snippet: "FAIL",
+  recommendation: Preserve until payload schema is migrated.
+  reason: Standalone literals likely belong to payload/evidence construction.
+
+leaf_qt/regen_viewer_physical_geometry_validation_owner_phase_16p15.py:116 [GUI_VALIDATION_BRIDGE_INTENTIONAL_HOLD]
+  snippet: if str(results.get("regen_geometry_status", "")).upper() not in ("FAIL", "ERROR"):
+  recommendation: Preserve until GUI/validation bridge migration.
+  reason: Viewer-phase validation bridge mixes GUI runtime status with validation status.
+
+COMPILE RESULTS
+---------------
+leaf_qt/regen_candidate_blueprint_mutation_validation.py: PASS 
+leaf_qt/regen_candidate_blueprint_population_validation_owner.py: PASS 
+leaf_qt/regen_candidate_post_resolve_validation_owner.py: PASS 
+leaf_qt/regen_candidate_validator.py: PASS 
+leaf_qt/regen_geometry_constraint_validation_owner.py: PASS 
+leaf_qt/regen_source_validation_gate.py: PASS 
+leaf_qt/regen_validation_master_gate.py: PASS 
+leaf_qt/regen_viewer_physical_geometry_validation_owner_phase_16p15.py: PASS 
+
+COMPLETION NOTICE
+-----------------
+PHASE 16U.18 COMPLETE.
+
+NEXT PHASE
+----------
+PHASE 16U.19 — WAVE B VALIDATION OWNER STATUS MIGRATION CLOSURE GATE

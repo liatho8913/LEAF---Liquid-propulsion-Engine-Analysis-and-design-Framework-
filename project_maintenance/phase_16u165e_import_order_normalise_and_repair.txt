@@ -1,0 +1,12 @@
+LEAF PHASE 16U.165E
+IMPORT ORDER NORMALISATION + SURGICAL STATUS REPAIR
+==========================================================
+status=PASS_PHASE_16U165E_IMPORT_ORDER_NORMALISE_AND_REPAIR
+target=leaf_qt/regen_viewer_integration_report_owner.py
+replacement_count=1
+import_order_normalised=True
+rolled_back=False
+compile_error=None
+backup=/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u165e_backups/20260629_003741__regen_viewer_integration_report_owner.py.bak
+json=/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u165e_import_order_normalise_and_repair.json
+text=/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u165e_import_order_normalise_and_repair.txt

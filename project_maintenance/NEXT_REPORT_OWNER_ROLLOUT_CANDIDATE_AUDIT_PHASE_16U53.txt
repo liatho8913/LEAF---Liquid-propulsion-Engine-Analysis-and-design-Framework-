@@ -1,0 +1,88 @@
+LEAF PHASE 16U.53
+NEXT REPORT OWNER ROLLOUT CANDIDATE AUDIT
+==========================================
+
+STATUS: PASS_PHASE_16U53_NEXT_REPORT_OWNER_ROLLOUT_CANDIDATE_AUDIT
+Generated: 2026-06-28T02:52:11
+
+FEATURE
+-------
+Audit remaining production report-owner/UI files after closing bond coat integration owner.
+
+CLOSED TARGETS EXCLUDED
+-----------------------
+leaf_qt/bond_coat_integration_owner.py
+leaf_qt/foundation_test_runner_window.py
+leaf_qt/real_engine_benchmark_failure_owner.py
+leaf_qt/regen_cross_section_viewer.py
+leaf_qt/regen_scalability_failure_owner.py
+
+SUMMARY
+-------
+Python files scanned: 1310
+Files with findings: 156
+Candidate count: 45
+
+NEXT CANDIDATE
+--------------
+File: leaf_qt/coating_temperature_limit_integration_owner.py
+Classification: probable_report_or_ui_consumer
+Finding count: 2
+Risk score: 56
+Suggested action: CANDIDATE_FOR_PHASE_16U54_PATCH
+
+TOP CANDIDATES
+--------------
+1. leaf_qt/coating_temperature_limit_integration_owner.py | findings=2 | risk=56
+   - line 82 [status_startswith]: .startswith("BLOCKED
+   - line 97 [status_startswith]: .startswith("BLOCKED
+2. leaf_qt/material_strength_limit_integration_owner.py | findings=2 | risk=56
+   - line 87 [status_startswith]: .startswith("BLOCKED
+   - line 103 [status_startswith]: .startswith("BLOCKED
+3. leaf_qt/material_temperature_limit_integration_owner.py | findings=2 | risk=56
+   - line 77 [status_startswith]: .startswith("BLOCKED
+   - line 91 [status_startswith]: .startswith("BLOCKED
+4. leaf_qt/regen_geometry_report_owner.py | findings=2 | risk=56
+   - line 5 [inline_pass_fail_ternary]: "PASS" if value else "FAIL"
+   - line 39 [inline_pass_fail_ternary]: 'PASS' if solver_pass else 'FAIL'
+5. leaf_qt/regen_optimisation_scoring_owner.py | findings=2 | risk=56
+   - line 96 [status_startswith]: .startswith("PASS
+   - line 108 [status_startswith]: .startswith("PASS
+6. leaf_qt/coating_property_consumption_audit_owner.py | findings=1 | risk=53
+   - line 101 [status_startswith]: .startswith("BLOCKED
+7. leaf_qt/coating_thermal_conductivity_integration_owner.py | findings=1 | risk=53
+   - line 78 [status_startswith]: .startswith("BLOCKED
+8. leaf_qt/coating_thermal_resistance_integration_owner.py | findings=1 | risk=53
+   - line 84 [status_startswith]: .startswith("BLOCKED
+9. leaf_qt/coating_thickness_integration_owner.py | findings=1 | risk=53
+   - line 75 [status_startswith]: .startswith("BLOCKED
+10. leaf_qt/failure_root_cause_owner.py | findings=1 | risk=53
+   - line 269 [fail_in_status_text]: "FAIL" in 
+11. leaf_qt/material_density_integration_owner.py | findings=1 | risk=53
+   - line 83 [status_startswith]: .startswith("BLOCKED
+12. leaf_qt/material_property_consumption_audit_owner.py | findings=1 | risk=53
+   - line 96 [status_startswith]: .startswith("BLOCKED
+13. leaf_qt/material_specific_heat_integration_owner.py | findings=1 | risk=53
+   - line 81 [status_startswith]: .startswith("BLOCKED
+14. leaf_qt/material_thermal_conductivity_integration_owner.py | findings=1 | risk=53
+   - line 85 [status_startswith]: .startswith("BLOCKED
+15. leaf_qt/regen_acceptance_criteria_owner.py | findings=1 | risk=53
+   - line 173 [inline_pass_fail_ternary]: 'PASS' if item.get('passed') else 'FAIL'
+16. leaf_qt/regen_candidate_blueprint_population_validation_owner.py | findings=1 | risk=53
+   - line 231 [inline_pass_fail_ternary]: "PASS" if check["passed"] else "FAIL"
+17. leaf_qt/regen_candidate_creation_registration_owner.py | findings=1 | risk=53
+   - line 185 [inline_pass_fail_ternary]: "PASS" if check["passed"] else "FAIL"
+18. leaf_qt/regen_candidate_creation_report_owner.py | findings=1 | risk=53
+   - line 229 [inline_pass_fail_ternary]: "PASS" if check["passed"] else "FAIL"
+19. leaf_qt/regen_candidate_creation_session_owner.py | findings=1 | risk=53
+   - line 209 [inline_pass_fail_ternary]: "PASS" if check["passed"] else "FAIL"
+20. leaf_qt/regen_candidate_generation_registration_owner.py | findings=1 | risk=53
+   - line 178 [inline_pass_fail_ternary]: "PASS" if check["passed"] else "FAIL"
+
+COMPLETION NOTICE
+-----------------
+PHASE 16U.53 COMPLETE.
+
+NEXT FEATURE
+------------
+PHASE 16U.54 — NEXT REPORT OWNER PRESENTATION LAYER PATCH

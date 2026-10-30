@@ -1,0 +1,49 @@
+LEAF PHASE 16U.144
+WAVE 3 MANIFEST SELECTION
+=========================
+
+STATUS: PASS_PHASE_16U144_WAVE3_MANIFEST_SELECTION
+
+WAVE
+----
+16U-WAVE3 — Candidate mutation, population, ranking, and evolution presentation migration
+
+ROADMAP STATE
+-------------
+Locked baseline: 68
+Closed before wave: 39
+Remaining before wave: 29
+Expected closed after wave audit: 50
+Expected remaining after wave audit: 18
+
+Selected files: 11
+
+SELECTED FILES
+--------------
+- regen_candidate_mutation_completion_audit.py legacy_hits=1
+- regen_candidate_mutation_input_audit.py legacy_hits=1
+- regen_candidate_mutation_master_gate.py legacy_hits=1
+- regen_candidate_population_completion_audit.py legacy_hits=1
+- regen_candidate_population_master_gate.py legacy_hits=1
+- regen_candidate_ranking_completion_audit.py legacy_hits=1
+- regen_candidate_ranking_input_audit.py legacy_hits=1
+- regen_candidate_ranking_master_gate.py legacy_hits=1
+- regen_evolution_loop_completion_audit.py legacy_hits=1
+- regen_evolution_loop_input_audit.py legacy_hits=1
+- regen_evolution_loop_master_gate.py legacy_hits=1
+
+ACCEPTANCE CONTRACT
+-------------------
+✓ backup per file
+✓ pre-hash per file
+✓ post-hash per file
+✓ compile per file
+✓ shared presentation layer per file
+✓ no legacy inline status logic per file
+✓ rollback per file
+✓ reject whole wave if any file fails
+✓ locked-baseline audit after wave
+✓ migration certificate required
+
+FAILURES
+--------

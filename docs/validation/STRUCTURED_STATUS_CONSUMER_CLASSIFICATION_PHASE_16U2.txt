@@ -1,0 +1,204 @@
+LEAF PHASE 16U.2
+STRUCTURED STATUS CONSUMER CLASSIFICATION
+===========================================
+
+STATUS: PASS_PHASE_16U2_STRUCTURED_STATUS_CONSUMER_CLASSIFICATION
+Generated: 2026-06-27T01:57:56
+
+SCOPE
+-----
+This phase classifies Phase 16U.1 discovery findings.
+No engineering logic is modified.
+No solver logic is modified.
+No GUI behaviour is modified.
+
+SUMMARY
+-------
+Source findings: 3178
+Classified findings: 3178
+Migration required: 426
+High-priority migrations: 158
+Medium-priority migrations: 160
+Low-priority migrations: 108
+
+CLASSIFICATION BREAKDOWN
+------------------------
+DEVELOPER_REPORT_PRESENTATION: 9
+LEGACY_COMPATIBILITY: 11
+PASS_BANNER_OR_COMPLETION_EVIDENCE: 1050
+PRESENTATION_ONLY: 15
+STATUS_CONSUMER_REQUIRES_REVIEW: 325
+STATUS_PRODUCER: 305
+TEST_ASSERTION_OR_REGRESSION_EVIDENCE: 1362
+UNCLASSIFIED_REVIEW_REQUIRED: 101
+
+PRIORITY BREAKDOWN
+------------------
+HIGH: 158
+LOW: 143
+MEDIUM: 160
+NONE: 2717
+
+HIGH-PRIORITY MIGRATION TARGETS
+-------------------------------
+integrate_phase_16l3_acceptance_audit.py:159 [COMPLETION_AUDIT/raw_status_literal] f"- {item.get('name')}: {'PASS' if item.get('passed') else 'FAIL'}"
+leaf_qt/calculation_audit.py:205 [COMPLETION_AUDIT/raw_status_literal] elif str(value).upper() == "PASS":
+leaf_qt/engine_solver.py:4054 [SOLVER_CONSUMER/raw_status_literal] "diagnostic_note": "PASS" if not failure_reasons else "CHECK",
+leaf_qt/engine_solver.py:5517 [SOLVER_CONSUMER/raw_status_literal] if status not in ("REQUIRED", "PASS"):
+leaf_qt/engine_solver.py:5959 [SOLVER_CONSUMER/raw_status_literal] "PASS" if max_twg <= material_limit else "REQUIRED"
+leaf_qt/engine_solver.py:6101 [SOLVER_CONSUMER/raw_status_literal] if results.get("coupled_split_auto_tuned_status") != "PASS":
+leaf_qt/engine_solver.py:6253 [SOLVER_CONSUMER/raw_status_literal] passing = [item for item in screened if item["status"] != "FAIL"]
+leaf_qt/engine_solver.py:6543 [SOLVER_CONSUMER/ast_status_compare] if status != "FAIL":
+leaf_qt/engine_solver.py:6543 [SOLVER_CONSUMER/direct_status_inequality] if status != "FAIL":
+leaf_qt/engine_solver.py:6543 [SOLVER_CONSUMER/raw_status_literal] if status != "FAIL":
+leaf_qt/engine_solver.py:7192 [SOLVER_CONSUMER/raw_status_literal] if item.get("status") == "PASS"
+leaf_qt/engine_solver.py:7418 [SOLVER_CONSUMER/raw_status_literal] if thermal_stress_failed_count > 0 and results.get("bond_coat_validation_status") != "PASS":
+leaf_qt/engine_solver.py:7675 [SOLVER_CONSUMER/raw_status_literal] elif source_data_weighted_gate in ("PARTIAL", "FAIL"):
+leaf_qt/engine_solver.py:8028 [SOLVER_CONSUMER/raw_status_literal] if source_data_gate != "PASS":
+leaf_qt/engine_solver.py:8033 [SOLVER_CONSUMER/raw_status_literal] if weighted_gate != "PASS":
+leaf_qt/engine_solver.py:8456 [SOLVER_CONSUMER/raw_status_literal] if item["status"] in ("MISSING", "PLACEHOLDER", "FAIL")
+leaf_qt/engine_solver.py:9061 [SOLVER_CONSUMER/raw_status_literal] if results.get("explicit_coating_thermal_stress_status") == "FAIL":
+leaf_qt/engine_solver.py:9072 [SOLVER_CONSUMER/raw_status_literal] if results.get("coating_stack_adhesion_risk_status") != "PASS":
+leaf_qt/engine_solver.py:9083 [SOLVER_CONSUMER/raw_status_literal] if results.get("coating_stack_spallation_fatigue_status") != "PASS":
+leaf_qt/engine_solver.py:9094 [SOLVER_CONSUMER/raw_status_literal] if results.get("coating_stack_source_data_gate") != "PASS":
+leaf_qt/engine_solver.py:9436 [SOLVER_CONSUMER/raw_status_literal] if data_mode != "SOURCED_VALIDATION_MODE" or source_gate != "PASS":
+leaf_qt/engine_solver.py:9447 [SOLVER_CONSUMER/ast_status_compare] if bond_status != "PASS":
+leaf_qt/engine_solver.py:9447 [SOLVER_CONSUMER/direct_status_inequality] if bond_status != "PASS":
+leaf_qt/engine_solver.py:9447 [SOLVER_CONSUMER/raw_status_literal] if bond_status != "PASS":
+leaf_qt/engine_solver.py:9458 [SOLVER_CONSUMER/ast_status_compare] if thermal_stress_status != "PASS":
+leaf_qt/engine_solver.py:9458 [SOLVER_CONSUMER/direct_status_inequality] if thermal_stress_status != "PASS":
+leaf_qt/engine_solver.py:9458 [SOLVER_CONSUMER/raw_status_literal] if thermal_stress_status != "PASS":
+leaf_qt/engine_solver.py:9469 [SOLVER_CONSUMER/ast_status_compare] if adhesion_status != "PASS":
+leaf_qt/engine_solver.py:9469 [SOLVER_CONSUMER/direct_status_inequality] if adhesion_status != "PASS":
+leaf_qt/engine_solver.py:9469 [SOLVER_CONSUMER/raw_status_literal] if adhesion_status != "PASS":
+leaf_qt/engine_solver.py:9480 [SOLVER_CONSUMER/ast_status_compare] if fatigue_status != "PASS":
+leaf_qt/engine_solver.py:9480 [SOLVER_CONSUMER/direct_status_inequality] if fatigue_status != "PASS":
+leaf_qt/engine_solver.py:9480 [SOLVER_CONSUMER/raw_status_literal] if fatigue_status != "PASS":
+leaf_qt/engine_solver.py:10593 [SOLVER_CONSUMER/raw_status_literal] if source_gate != "PASS" and final_acceptance == "VALIDATION_SUPPORT_ALLOWED":
+leaf_qt/engine_solver.py:11970 [SOLVER_CONSUMER/ast_status_compare] if preview_status != "PASS":
+leaf_qt/engine_solver.py:11970 [SOLVER_CONSUMER/direct_status_inequality] if preview_status != "PASS":
+leaf_qt/engine_solver.py:11970 [SOLVER_CONSUMER/raw_status_literal] if preview_status != "PASS":
+leaf_qt/engine_solver.py:12469 [SOLVER_CONSUMER/raw_status_literal] if feasibility == "REGEN_ONLY_FEASIBLE" and viability == "PASS":
+leaf_qt/engine_solver.py:14139 [SOLVER_CONSUMER/ast_endswith_status] if "PLACEHOLDER" in source_status and verdict.endswith("PASS"):
+leaf_qt/engine_solver.py:14139 [SOLVER_CONSUMER/raw_status_literal] if "PLACEHOLDER" in source_status and verdict.endswith("PASS"):
+leaf_qt/engine_solver.py:14143 [SOLVER_CONSUMER/ast_endswith_status] if ledger_status not in ("LEDGER_COMPLETE", "NO_FILLED_VALUES") and verdict.endswith("PASS"):
+leaf_qt/engine_solver.py:14143 [SOLVER_CONSUMER/raw_status_literal] if ledger_status not in ("LEDGER_COMPLETE", "NO_FILLED_VALUES") and verdict.endswith("PASS"):
+leaf_qt/engine_solver.py:14149 [SOLVER_CONSUMER/ast_endswith_status] if quality_band in ("PLACEHOLDER", "LOW_CONFIDENCE_PUBLIC") and verdict.endswith("PASS"):
+leaf_qt/engine_solver.py:14149 [SOLVER_CONSUMER/raw_status_literal] if quality_band in ("PLACEHOLDER", "LOW_CONFIDENCE_PUBLIC") and verdict.endswith("PASS"):
+leaf_qt/engine_solver.py:15212 [SOLVER_CONSUMER/raw_status_literal] if results.get("coupled_split_auto_tuned_status") == "PASS":
+leaf_qt/engine_solver.py:15472 [SOLVER_CONSUMER/ast_status_compare] if combined_status != "PASS":
+leaf_qt/engine_solver.py:15472 [SOLVER_CONSUMER/direct_status_inequality] if combined_status != "PASS":
+leaf_qt/engine_solver.py:15472 [SOLVER_CONSUMER/raw_status_literal] if combined_status != "PASS":
+leaf_qt/engine_solver.py:15476 [SOLVER_CONSUMER/raw_status_literal] if results.get("velocity_limited_combined_preview_status") == "FAIL":
+leaf_qt/engine_solver.py:15523 [SOLVER_CONSUMER/raw_status_literal] if results.get("coupled_split_strategy_status") == "FAIL":
+leaf_qt/engine_solver.py:15529 [SOLVER_CONSUMER/raw_status_literal] if results.get("vl_split_strategy_status") == "PASS":
+leaf_qt/engine_solver.py:16280 [SOLVER_CONSUMER/contains_status] if "FAIL" in statuses:
+leaf_qt/engine_solver.py:16280 [SOLVER_CONSUMER/raw_status_literal] if "FAIL" in statuses:
+leaf_qt/engine_solver.py:16282 [SOLVER_CONSUMER/contains_status] elif "WARN" in statuses:
+leaf_qt/engine_solver.py:16282 [SOLVER_CONSUMER/raw_status_literal] elif "WARN" in statuses:
+leaf_qt/engine_solver.py:20628 [SOLVER_CONSUMER/contains_status] if "FAIL" in text or "INVALID" in text:
+leaf_qt/engine_solver.py:20628 [SOLVER_CONSUMER/raw_status_literal] if "FAIL" in text or "INVALID" in text:
+leaf_qt/engine_solver.py:20649 [SOLVER_CONSUMER/contains_status] elif "WARN" in text or "REVIEW" in text:
+leaf_qt/engine_solver.py:20649 [SOLVER_CONSUMER/raw_status_literal] elif "WARN" in text or "REVIEW" in text:
+leaf_qt/material_and_coating_foundation_audit.py:103 [COMPLETION_AUDIT/raw_status_literal] if not str(status).startswith(("PASS", "FAIL")):
+leaf_qt/material_completion_audit.py:93 [COMPLETION_AUDIT/raw_status_literal] if not str(status).startswith(("PASS", "FAIL")):
+leaf_qt/real_engine_benchmark_completion_audit.py:277 [COMPLETION_AUDIT/raw_status_literal] marker = "PASS" if check["passed"] else "FAIL"
+leaf_qt/real_engine_benchmark_completion_audit.py:308 [COMPLETION_AUDIT/ast_startswith_status] if status.startswith("PASS"):
+leaf_qt/real_engine_benchmark_completion_audit.py:308 [COMPLETION_AUDIT/raw_status_literal] if status.startswith("PASS"):
+leaf_qt/real_engine_benchmark_completion_audit.py:308 [COMPLETION_AUDIT/startswith_status] if status.startswith("PASS"):
+leaf_qt/real_engine_benchmark_completion_audit.py:323 [COMPLETION_AUDIT/ast_startswith_status] if status.startswith("PASS"):
+leaf_qt/real_engine_benchmark_completion_audit.py:323 [COMPLETION_AUDIT/raw_status_literal] if status.startswith("PASS"):
+leaf_qt/real_engine_benchmark_completion_audit.py:323 [COMPLETION_AUDIT/startswith_status] if status.startswith("PASS"):
+leaf_qt/real_engine_benchmark_master_gate.py:65 [MASTER_GATE/contains_status] if "FAIL" in reason_text.upper() or "ERROR" in reason_text.upper() or "INVALID" in reason_text.upper():
+leaf_qt/real_engine_benchmark_master_gate.py:65 [MASTER_GATE/raw_status_literal] if "FAIL" in reason_text.upper() or "ERROR" in reason_text.upper() or "INVALID" in reason_text.upper():
+leaf_qt/real_engine_benchmark_master_gate.py:363 [MASTER_GATE/ast_startswith_status] if status.startswith("PASS"):
+leaf_qt/real_engine_benchmark_master_gate.py:363 [MASTER_GATE/raw_status_literal] if status.startswith("PASS"):
+leaf_qt/real_engine_benchmark_master_gate.py:363 [MASTER_GATE/startswith_status] if status.startswith("PASS"):
+leaf_qt/real_engine_benchmark_master_gate.py:372 [MASTER_GATE/ast_startswith_status] if status.startswith("PASS"):
+leaf_qt/real_engine_benchmark_master_gate.py:372 [MASTER_GATE/raw_status_literal] if status.startswith("PASS"):
+leaf_qt/real_engine_benchmark_master_gate.py:372 [MASTER_GATE/startswith_status] if status.startswith("PASS"):
+leaf_qt/regen_acceptance_audit.py:154 [COMPLETION_AUDIT/raw_status_literal] f"- {item.get('name')}: {'PASS' if item.get('passed') else 'FAIL'}"
+leaf_qt/regen_architecture_visibility_audit.py:196 [COMPLETION_AUDIT/ast_startswith_status] return value is True or value == 1 or value == "1" or str(value).upper().startswith("PASS")
+leaf_qt/regen_architecture_visibility_audit.py:196 [COMPLETION_AUDIT/raw_status_literal] return value is True or value == 1 or value == "1" or str(value).upper().startswith("PASS")
+leaf_qt/regen_architecture_visibility_audit.py:196 [COMPLETION_AUDIT/startswith_status] return value is True or value == 1 or value == "1" or str(value).upper().startswith("PASS")
+leaf_qt/regen_architecture_visibility_audit.py:226 [COMPLETION_AUDIT/contains_status] "FAIL" in str(value).upper() or "BLOCKED" in str(value).upper()
+leaf_qt/regen_architecture_visibility_audit.py:226 [COMPLETION_AUDIT/raw_status_literal] "FAIL" in str(value).upper() or "BLOCKED" in str(value).upper()
+leaf_qt/regen_autonomous_optimisation_input_audit.py:159 [COMPLETION_AUDIT/raw_status_literal] marker = "PASS" if check["passed"] else "FAIL"
+leaf_qt/regen_axial_geometry_master_gate.py:136 [MASTER_GATE/contains_status] if "FAIL" in severities:
+leaf_qt/regen_axial_geometry_master_gate.py:136 [MASTER_GATE/raw_status_literal] if "FAIL" in severities:
+leaf_qt/regen_candidate_acceptance_master_gate.py:140 [MASTER_GATE/contains_status] if "FAIL" in severities:
+leaf_qt/regen_candidate_acceptance_master_gate.py:140 [MASTER_GATE/raw_status_literal] if "FAIL" in severities:
+leaf_qt/regen_candidate_blueprint_completion_audit.py:179 [COMPLETION_AUDIT/raw_status_literal] marker = "PASS" if check["passed"] else "FAIL"
+leaf_qt/regen_candidate_blueprint_mutation_validation.py:243 [VALIDATION/raw_status_literal] marker = "PASS" if check["passed"] else "FAIL"
+leaf_qt/regen_candidate_blueprint_optimisation_completion_audit.py:215 [COMPLETION_AUDIT/raw_status_literal] marker = "PASS" if check["passed"] else "FAIL"
+leaf_qt/regen_candidate_blueprint_population_completion_audit.py:238 [COMPLETION_AUDIT/raw_status_literal] marker = "PASS" if check["passed"] else "FAIL"
+leaf_qt/regen_candidate_blueprint_population_validation_owner.py:231 [VALIDATION/raw_status_literal] marker = "PASS" if check["passed"] else "FAIL"
+leaf_qt/regen_candidate_creation_completion_audit.py:201 [COMPLETION_AUDIT/raw_status_literal] marker = "PASS" if check["passed"] else "FAIL"
+leaf_qt/regen_candidate_creation_input_audit.py:213 [COMPLETION_AUDIT/raw_status_literal] marker = "PASS" if check["passed"] else "FAIL"
+leaf_qt/regen_candidate_generation_completion_audit.py:192 [COMPLETION_AUDIT/raw_status_literal] marker = "PASS" if check["passed"] else "FAIL"
+leaf_qt/regen_candidate_mutation_completion_audit.py:336 [COMPLETION_AUDIT/raw_status_literal] label = "PASS" if check["passed"] else "FAIL"
+leaf_qt/regen_candidate_mutation_input_audit.py:428 [COMPLETION_AUDIT/raw_status_literal] label = "PASS" if check["passed"] else "FAIL"
+leaf_qt/regen_candidate_mutation_master_gate.py:330 [MASTER_GATE/raw_status_literal] label = "PASS" if check["passed"] else "FAIL"
+leaf_qt/regen_candidate_mutation_master_gate.py:390 [MASTER_GATE/contains_status] if "FAIL" in severities:
+leaf_qt/regen_candidate_mutation_master_gate.py:390 [MASTER_GATE/raw_status_literal] if "FAIL" in severities:
+leaf_qt/regen_candidate_population_completion_audit.py:505 [COMPLETION_AUDIT/raw_status_literal] label = "PASS" if check["passed"] else "FAIL"
+leaf_qt/regen_candidate_population_master_gate.py:299 [MASTER_GATE/raw_status_literal] label = "PASS" if check["passed"] else "FAIL"
+leaf_qt/regen_candidate_population_master_gate.py:405 [MASTER_GATE/contains_status] if "FAIL" in text or "INVALID" in text or "ERROR" in text:
+leaf_qt/regen_candidate_population_master_gate.py:405 [MASTER_GATE/raw_status_literal] if "FAIL" in text or "INVALID" in text or "ERROR" in text:
+leaf_qt/regen_candidate_population_master_gate.py:414 [MASTER_GATE/contains_status] elif "WARN" in text or "REVIEW" in text or "PLACEHOLDER" in text:
+leaf_qt/regen_candidate_population_master_gate.py:414 [MASTER_GATE/raw_status_literal] elif "WARN" in text or "REVIEW" in text or "PLACEHOLDER" in text:
+leaf_qt/regen_candidate_population_master_gate.py:521 [MASTER_GATE/raw_status_literal] if canonical == "PASS":
+leaf_qt/regen_candidate_post_resolve_validation_owner.py:199 [VALIDATION/raw_status_literal] ("FAIL" not in text and "INVALID" not in text),
+leaf_qt/regen_candidate_post_resolve_validation_owner.py:207 [VALIDATION/raw_status_literal] ("WARN" not in text and "REVIEW" not in text and "PLACEHOLDER" not in text),
+leaf_qt/regen_candidate_ranking_completion_audit.py:337 [COMPLETION_AUDIT/raw_status_literal] label = "PASS" if check["passed"] else "FAIL"
+leaf_qt/regen_candidate_ranking_input_audit.py:407 [COMPLETION_AUDIT/raw_status_literal] label = "PASS" if check["passed"] else "FAIL"
+leaf_qt/regen_candidate_ranking_master_gate.py:48 [MASTER_GATE/contains_status] if "FAIL" in severities:
+leaf_qt/regen_candidate_ranking_master_gate.py:48 [MASTER_GATE/raw_status_literal] if "FAIL" in severities:
+leaf_qt/regen_candidate_ranking_master_gate.py:184 [MASTER_GATE/raw_status_literal] if ready is True and not any(f["severity"] in {"FAIL", "BLOCKED", "REVIEW_REQUIRED"} for f in findings):
+leaf_qt/regen_candidate_ranking_master_gate.py:603 [MASTER_GATE/raw_status_literal] label = "PASS" if check["passed"] else "FAIL"
+leaf_qt/regen_candidate_validator.py:359 [VALIDATION/contains_status] if "FAIL" in severities:
+leaf_qt/regen_candidate_validator.py:359 [VALIDATION/raw_status_literal] if "FAIL" in severities:
+leaf_qt/regen_completion_audit.py:90 [COMPLETION_AUDIT/contains_status] "FAIL" in status
+leaf_qt/regen_completion_audit.py:90 [COMPLETION_AUDIT/raw_status_literal] "FAIL" in status
+leaf_qt/regen_evolution_loop_completion_audit.py:332 [COMPLETION_AUDIT/raw_status_literal] label = "PASS" if check["passed"] else "FAIL"
+leaf_qt/regen_evolution_loop_input_audit.py:374 [COMPLETION_AUDIT/raw_status_literal] label = "PASS" if check["passed"] else "FAIL"
+leaf_qt/regen_evolution_loop_master_gate.py:327 [MASTER_GATE/raw_status_literal] label = "PASS" if check["passed"] else "FAIL"
+leaf_qt/regen_evolution_loop_master_gate.py:388 [MASTER_GATE/contains_status] if "FAIL" in severities:
+leaf_qt/regen_evolution_loop_master_gate.py:388 [MASTER_GATE/raw_status_literal] if "FAIL" in severities:
+leaf_qt/regen_geometry_completion_audit.py:103 [COMPLETION_AUDIT/raw_status_literal] if history.get("iteration_history_status") != "PASS":
+leaf_qt/regen_geometry_constraint_validation_owner.py:266 [VALIDATION/raw_status_literal] passed=("FAIL" not in text and "INVALID" not in text),
+leaf_qt/regen_geometry_constraint_validation_owner.py:274 [VALIDATION/raw_status_literal] passed=("WARN" not in text and "REVIEW" not in text and "PLACEHOLDER" not in text),
+leaf_qt/regen_geometry_master_gate.py:56 [MASTER_GATE/raw_status_literal] elif history.get("iteration_history_status") != "PASS":
+leaf_qt/regen_geometry_master_gate.py:250 [MASTER_GATE/contains_status] if "FAIL" in text or "INVALID" in text:
+leaf_qt/regen_geometry_master_gate.py:250 [MASTER_GATE/raw_status_literal] if "FAIL" in text or "INVALID" in text:
+leaf_qt/regen_geometry_master_gate.py:260 [MASTER_GATE/contains_status] elif "WARN" in text or "REVIEW" in text or "PLACEHOLDER" in text:
+leaf_qt/regen_geometry_master_gate.py:260 [MASTER_GATE/raw_status_literal] elif "WARN" in text or "REVIEW" in text or "PLACEHOLDER" in text:
+leaf_qt/regen_geometry_master_gate.py:418 [MASTER_GATE/raw_status_literal] if canonical == "PASS":
+leaf_qt/regen_geometry_solver.py:98 [SOLVER_CONSUMER/raw_status_literal] solver_pass = candidate_report.get("status") == "PASS" and best_candidate is not None
+leaf_qt/regen_optimisation_completion_audit.py:151 [COMPLETION_AUDIT/raw_status_literal] marker = "PASS" if check["passed"] else "FAIL"
+leaf_qt/regen_optimisation_master_gate.py:274 [MASTER_GATE/contains_status] if "FAIL" in severities:
+leaf_qt/regen_optimisation_master_gate.py:274 [MASTER_GATE/raw_status_literal] if "FAIL" in severities:
+leaf_qt/regen_runtime_execution_completion_audit.py:191 [COMPLETION_AUDIT/raw_status_literal] marker = "PASS" if check["passed"] else "FAIL"
+leaf_qt/regen_scalability_master_gate.py:218 [MASTER_GATE/contains_status] if "FAIL" in severities:
+leaf_qt/regen_scalability_master_gate.py:218 [MASTER_GATE/raw_status_literal] if "FAIL" in severities:
+leaf_qt/regen_source_validation_gate.py:243 [VALIDATION/ast_startswith_status] if key in results and str(results.get(key)).upper().startswith("PASS"):
+leaf_qt/regen_source_validation_gate.py:243 [VALIDATION/raw_status_literal] if key in results and str(results.get(key)).upper().startswith("PASS"):
+leaf_qt/regen_source_validation_gate.py:243 [VALIDATION/startswith_status] if key in results and str(results.get(key)).upper().startswith("PASS"):
+leaf_qt/regen_source_validation_gate.py:360 [VALIDATION/contains_status] if "FAIL" in severities:
+leaf_qt/regen_source_validation_gate.py:360 [VALIDATION/raw_status_literal] if "FAIL" in severities:
+leaf_qt/regen_validation_master_gate.py:77 [MASTER_GATE/contains_status] elif "FAIL" in status:
+leaf_qt/regen_validation_master_gate.py:77 [MASTER_GATE/raw_status_literal] elif "FAIL" in status:
+leaf_qt/regen_validation_master_gate.py:194 [MASTER_GATE/contains_status] elif "FAIL" in validation_status_text or "INVALID" in validation_status_text:
+leaf_qt/regen_validation_master_gate.py:194 [MASTER_GATE/raw_status_literal] elif "FAIL" in validation_status_text or "INVALID" in validation_status_text:
+leaf_qt/regen_variable_geometry_master_gate.py:149 [MASTER_GATE/contains_status] if "FAIL" in severities:
+... truncated 8 additional high-priority targets
+
+NEXT PHASE
+----------
+PHASE 16U.3 — STRUCTURED STATUS MIGRATION ROADMAP
+
+COMPLETION NOTICE
+-----------------
+PHASE 16U.2 COMPLETE.
+Status discovery findings have been classified.
+The project may now create a migration roadmap from the true consumer list.

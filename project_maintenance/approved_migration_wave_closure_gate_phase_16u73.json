@@ -1,0 +1,177 @@
+{
+  "phase": "16U.73",
+  "status": "PASS_PHASE_16U73_APPROVED_MIGRATION_WAVE_CLOSURE_GATE",
+  "generated": "2026-06-28T18:16:36",
+  "target_count": 4,
+  "closed_count": 4,
+  "failed_count": 0,
+  "checks": [
+    {
+      "name": "phase_16u71_patch_script_exists",
+      "passed": true,
+      "detail": "project_maintenance/approved_migration_wave_patch_phase_16u71.py"
+    },
+    {
+      "name": "phase_16u72_regression_script_exists",
+      "passed": true,
+      "detail": "project_maintenance/approved_migration_wave_regression_phase_16u72.py"
+    },
+    {
+      "name": "phase_16u71_patch_rerun_passed",
+      "passed": true,
+      "detail": "returncode=0"
+    },
+    {
+      "name": "phase_16u72_regression_rerun_passed",
+      "passed": true,
+      "detail": "returncode=0"
+    },
+    {
+      "name": "phase_16u71_completion_flag_true",
+      "passed": true,
+      "detail": "PASS_PHASE_16U71_GROUPED_LOW_RISK_OWNER_BATCH_PATCH"
+    },
+    {
+      "name": "phase_16u72_completion_flag_true",
+      "passed": true,
+      "detail": "PASS_PHASE_16U72_APPROVED_MIGRATION_WAVE_REGRESSION"
+    },
+    {
+      "name": "all_wave_files_closed",
+      "passed": true,
+      "detail": "4/4 closed"
+    }
+  ],
+  "per_file": [
+    {
+      "file": "leaf_qt/failure_root_cause_owner.py",
+      "passed": true,
+      "checks": [
+        {
+          "name": "target_exists",
+          "passed": true,
+          "detail": "leaf_qt/failure_root_cause_owner.py"
+        },
+        {
+          "name": "patch_payload_passed",
+          "passed": true,
+          "detail": "True"
+        },
+        {
+          "name": "regression_payload_passed",
+          "passed": true,
+          "detail": "True"
+        },
+        {
+          "name": "contains_shared_status_layer",
+          "passed": true,
+          "detail": "shared helper present"
+        },
+        {
+          "name": "no_legacy_status_patterns_after_helper",
+          "passed": true,
+          "detail": "legacy literals allowed only inside helper fallback"
+        }
+      ]
+    },
+    {
+      "file": "leaf_qt/regen_completion_gate_validation_owner.py",
+      "passed": true,
+      "checks": [
+        {
+          "name": "target_exists",
+          "passed": true,
+          "detail": "leaf_qt/regen_completion_gate_validation_owner.py"
+        },
+        {
+          "name": "patch_payload_passed",
+          "passed": true,
+          "detail": "True"
+        },
+        {
+          "name": "regression_payload_passed",
+          "passed": true,
+          "detail": "True"
+        },
+        {
+          "name": "contains_shared_status_layer",
+          "passed": true,
+          "detail": "shared helper present"
+        },
+        {
+          "name": "no_legacy_status_patterns_after_helper",
+          "passed": true,
+          "detail": "legacy literals allowed only inside helper fallback"
+        }
+      ]
+    },
+    {
+      "file": "leaf_qt/regen_system_signoff_validation_owner.py",
+      "passed": true,
+      "checks": [
+        {
+          "name": "target_exists",
+          "passed": true,
+          "detail": "leaf_qt/regen_system_signoff_validation_owner.py"
+        },
+        {
+          "name": "patch_payload_passed",
+          "passed": true,
+          "detail": "True"
+        },
+        {
+          "name": "regression_payload_passed",
+          "passed": true,
+          "detail": "True"
+        },
+        {
+          "name": "contains_shared_status_layer",
+          "passed": true,
+          "detail": "shared helper present"
+        },
+        {
+          "name": "no_legacy_status_patterns_after_helper",
+          "passed": true,
+          "detail": "legacy literals allowed only inside helper fallback"
+        }
+      ]
+    },
+    {
+      "file": "leaf_qt/regen_optimisation_scoring_owner.py",
+      "passed": true,
+      "checks": [
+        {
+          "name": "target_exists",
+          "passed": true,
+          "detail": "leaf_qt/regen_optimisation_scoring_owner.py"
+        },
+        {
+          "name": "patch_payload_passed",
+          "passed": true,
+          "detail": "True"
+        },
+        {
+          "name": "regression_payload_passed",
+          "passed": true,
+          "detail": "True"
+        },
+        {
+          "name": "contains_shared_status_layer",
+          "passed": true,
+          "detail": "shared helper present"
+        },
+        {
+          "name": "no_legacy_status_patterns_after_helper",
+          "passed": true,
+          "detail": "legacy literals allowed only inside helper fallback"
+        }
+      ]
+    }
+  ],
+  "phase_16u73_approved_migration_wave_closure_gate_complete": true,
+  "next_phase": "16U.74 \u2014 Updated Global Remaining-Candidate Audit",
+  "countdown_after_pass": {
+    "estimated_remaining_until_16u_conclusion": "~8\u201374 phases",
+    "likely_final_range": "16U.100\u201316U.120"
+  }
+}

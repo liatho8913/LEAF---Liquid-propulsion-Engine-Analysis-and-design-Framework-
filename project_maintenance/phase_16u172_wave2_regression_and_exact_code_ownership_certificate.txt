@@ -1,0 +1,53 @@
+LEAF PHASE 16U.172
+WAVE 2 REGRESSION AND EXACT-CODE OWNERSHIP CERTIFICATE
+================================================================
+status=PASS_PHASE_16U172_WAVE2_REGRESSION_AND_EXACT_CODE_OWNERSHIP_CERTIFICATE
+compile_failure_count=0
+raw_finding_count=15512
+high_risk_file_count=40
+high_risk_finding_count=82
+exact_owned_count=52
+unresolved_count=19
+
+INTERPRETATION
+--------------
+Wave 2 did not convert exact status-code predicates into severity predicates.
+This is correct: exact codes are active state-machine / payload ownership, not presentation ownership.
+Remaining unresolved findings are unquoted PASS/WARN/FAIL tokens requiring symbolic-token resolution.
+
+SCRIPT RUNS
+-----------
+
+script=project_maintenance/phase_16u162_global_repository_presentation_layer_sanity_audit.py
+returncode=1
+stdout:
+FAIL_PHASE_16U162_GLOBAL_REPOSITORY_PRESENTATION_LAYER_SANITY_AUDIT
+scanned_files=2512
+finding_count=15512
+compile_failure_count=0
+text_report=/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u162_global_repository_presentation_layer_sanity_audit.txt
+json_report=/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u162_global_repository_presentation_layer_sanity_audit.json
+
+script=project_maintenance/phase_16u163_presentation_debt_classifier.py
+returncode=0
+stdout:
+PASS_PHASE_16U163_PRESENTATION_DEBT_CLASSIFICATION
+total_findings=15512
+high_risk_file_count=40
+high_risk_finding_count=82
+text_report=/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u163_presentation_debt_classification.txt
+json_report=/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u163_presentation_debt_classification.json
+
+script=project_maintenance/phase_16u164_high_risk_presentation_debt_manifest.py
+returncode=0
+stdout:
+PASS_PHASE_16U164_HIGH_RISK_PRESENTATION_DEBT_MANIFEST
+high_risk_file_count=40
+high_risk_finding_count=82
+safe_wave_candidate_count=0
+patch_mode_counts={'MANUAL_ARCHITECTURE_REVIEW': 2, 'MANUAL_REVIEW_REQUIRED': 38}
+text_report=/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u164_high_risk_presentation_debt_manifest.txt
+json_report=/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u164_high_risk_presentation_debt_manifest.json
+
+json=/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u172_wave2_regression_and_exact_code_ownership_certificate.json
+text=/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u172_wave2_regression_and_exact_code_ownership_certificate.txt

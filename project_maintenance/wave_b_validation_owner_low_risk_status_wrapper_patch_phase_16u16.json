@@ -1,0 +1,87 @@
+{
+  "phase": "16U.16",
+  "status": "PASS_PHASE_16U16_WAVE_B_VALIDATION_OWNER_LOW_RISK_STATUS_WRAPPER_PATCH",
+  "generated": "2026-06-28T00:58:52",
+  "audit_status": "PASS_PHASE_16U15_WAVE_B_VALIDATION_OWNER_STATUS_CONSUMER_AUDIT",
+  "audit_patchable_next_phase_count": 7,
+  "deduplicated_patch_count": 3,
+  "total_applied_count": 3,
+  "total_already_applied_count": 0,
+  "total_missing_count": 0,
+  "patch_results": [
+    {
+      "file": "leaf_qt/regen_candidate_validator.py",
+      "import_added": true,
+      "applied_count": 1,
+      "already_applied_count": 0,
+      "missing_count": 0,
+      "applied": [
+        {
+          "old": "if \"FAIL\" in severities:",
+          "new": "if solver_highest_severity(severities) == \"FAIL\":"
+        }
+      ],
+      "already_applied": [],
+      "missing": [],
+      "changed": true
+    },
+    {
+      "file": "leaf_qt/regen_source_validation_gate.py",
+      "import_added": true,
+      "applied_count": 2,
+      "already_applied_count": 0,
+      "missing_count": 0,
+      "applied": [
+        {
+          "old": "if key in results and str(results.get(key)).upper().startswith(\"PASS\"):",
+          "new": "if key in results and is_pass(results.get(key)):"
+        },
+        {
+          "old": "if \"FAIL\" in severities:",
+          "new": "if solver_highest_severity(severities) == \"FAIL\":"
+        }
+      ],
+      "already_applied": [],
+      "missing": [],
+      "changed": true
+    }
+  ],
+  "held_tokens_preserved": {
+    "passed": true,
+    "missing": []
+  },
+  "forbidden_tokens_present": [],
+  "compile_results": [
+    {
+      "file": "leaf_qt/regen_candidate_blueprint_mutation_validation.py",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "leaf_qt/regen_candidate_blueprint_population_validation_owner.py",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "leaf_qt/regen_candidate_post_resolve_validation_owner.py",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "leaf_qt/regen_candidate_validator.py",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "leaf_qt/regen_geometry_constraint_validation_owner.py",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "leaf_qt/regen_source_validation_gate.py",
+      "passed": true,
+      "error": ""
+    }
+  ],
+  "phase_16u16_wave_b_validation_owner_low_risk_status_wrapper_patch_complete": true
+}

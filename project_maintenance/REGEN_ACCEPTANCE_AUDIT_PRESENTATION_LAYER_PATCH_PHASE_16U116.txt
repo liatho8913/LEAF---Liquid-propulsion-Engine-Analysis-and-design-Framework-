@@ -1,0 +1,13 @@
+LEAF PHASE 16U.116
+REGEN ACCEPTANCE AUDIT PRESENTATION LAYER PATCH
+================================================
+
+STATUS: PASS_PHASE_16U116_REGEN_ACCEPTANCE_AUDIT_PRESENTATION_LAYER_PATCH
+Target: leaf_qt/regen_acceptance_audit.py
+Backup: project_maintenance/regen_acceptance_audit_phase_16u116_backup.py
+
+APPLIED
+-------
+
+FAILURES
+--------

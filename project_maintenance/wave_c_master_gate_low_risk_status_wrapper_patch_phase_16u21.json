@@ -1,0 +1,293 @@
+{
+  "phase": "16U.21",
+  "status": "PASS_PHASE_16U21_WAVE_C_MASTER_GATE_LOW_RISK_STATUS_WRAPPER_PATCH",
+  "generated": "2026-06-28T01:18:25",
+  "audit_status": "PASS_PHASE_16U20_WAVE_C_MASTER_GATE_STATUS_CONSUMER_AUDIT",
+  "audit_patchable_rows": 28,
+  "deduplicated_patch_count": 14,
+  "total_applied_count": 0,
+  "total_already_applied_count": 13,
+  "total_missing_count": 1,
+  "effective_missing_count": 0,
+  "stale_wave2_duplicate_only": true,
+  "patch_results": [
+    {
+      "file": "leaf_qt/real_engine_benchmark_master_gate.py",
+      "import_added": false,
+      "applied_count": 0,
+      "already_applied_count": 1,
+      "missing_count": 0,
+      "applied": [],
+      "already_applied": [
+        {
+          "old": "if status.startswith(\"PASS\"):",
+          "new": "if is_pass(status):",
+          "group": "STATUS_PREFIX_PASS_CHECK"
+        }
+      ],
+      "missing": [],
+      "changed": false
+    },
+    {
+      "file": "leaf_qt/regen_axial_geometry_master_gate.py",
+      "import_added": false,
+      "applied_count": 0,
+      "already_applied_count": 1,
+      "missing_count": 0,
+      "applied": [],
+      "already_applied": [
+        {
+          "old": "if \"FAIL\" in severities:",
+          "new": "if gate_highest_severity(severities) == \"FAIL\":",
+          "group": "SEVERITY_COLLECTION_FAIL_AGGREGATION"
+        }
+      ],
+      "missing": [],
+      "changed": false
+    },
+    {
+      "file": "leaf_qt/regen_candidate_acceptance_master_gate.py",
+      "import_added": false,
+      "applied_count": 0,
+      "already_applied_count": 1,
+      "missing_count": 0,
+      "applied": [],
+      "already_applied": [
+        {
+          "old": "if \"FAIL\" in severities:",
+          "new": "if gate_highest_severity(severities) == \"FAIL\":",
+          "group": "SEVERITY_COLLECTION_FAIL_AGGREGATION"
+        }
+      ],
+      "missing": [],
+      "changed": false
+    },
+    {
+      "file": "leaf_qt/regen_candidate_mutation_master_gate.py",
+      "import_added": false,
+      "applied_count": 0,
+      "already_applied_count": 1,
+      "missing_count": 0,
+      "applied": [],
+      "already_applied": [
+        {
+          "old": "if \"FAIL\" in severities:",
+          "new": "if gate_highest_severity(severities) == \"FAIL\":",
+          "group": "SEVERITY_COLLECTION_FAIL_AGGREGATION"
+        }
+      ],
+      "missing": [],
+      "changed": false
+    },
+    {
+      "file": "leaf_qt/regen_candidate_population_master_gate.py",
+      "import_added": false,
+      "applied_count": 0,
+      "already_applied_count": 1,
+      "missing_count": 0,
+      "applied": [],
+      "already_applied": [
+        {
+          "old": "if canonical == \"PASS\":",
+          "new": "if is_pass(canonical):",
+          "group": "CANONICAL_PASS_EQUALITY"
+        }
+      ],
+      "missing": [],
+      "changed": false
+    },
+    {
+      "file": "leaf_qt/regen_candidate_ranking_master_gate.py",
+      "import_added": false,
+      "applied_count": 0,
+      "already_applied_count": 2,
+      "missing_count": 0,
+      "applied": [],
+      "already_applied": [
+        {
+          "old": "if \"FAIL\" in severities:",
+          "new": "if gate_highest_severity(severities) == \"FAIL\":",
+          "group": "SEVERITY_COLLECTION_FAIL_AGGREGATION"
+        },
+        {
+          "old": "if ready is True and not any(f[\"severity\"] in {\"FAIL\", \"BLOCKED\", \"REVIEW_REQUIRED\"} for f in findings):",
+          "new": "if ready is True and findings_highest_severity(findings) == \"INFO\":",
+          "group": "STRUCTURED_FINDING_SEVERITY_AGGREGATION"
+        }
+      ],
+      "missing": [],
+      "changed": false
+    },
+    {
+      "file": "leaf_qt/regen_evolution_loop_master_gate.py",
+      "import_added": false,
+      "applied_count": 0,
+      "already_applied_count": 1,
+      "missing_count": 0,
+      "applied": [],
+      "already_applied": [
+        {
+          "old": "if \"FAIL\" in severities:",
+          "new": "if gate_highest_severity(severities) == \"FAIL\":",
+          "group": "SEVERITY_COLLECTION_FAIL_AGGREGATION"
+        }
+      ],
+      "missing": [],
+      "changed": false
+    },
+    {
+      "file": "leaf_qt/regen_geometry_master_gate.py",
+      "import_added": false,
+      "applied_count": 0,
+      "already_applied_count": 1,
+      "missing_count": 0,
+      "applied": [],
+      "already_applied": [
+        {
+          "old": "if canonical == \"PASS\":",
+          "new": "if is_pass(canonical):",
+          "group": "CANONICAL_PASS_EQUALITY"
+        }
+      ],
+      "missing": [],
+      "changed": false
+    },
+    {
+      "file": "leaf_qt/regen_optimisation_master_gate.py",
+      "import_added": false,
+      "applied_count": 0,
+      "already_applied_count": 1,
+      "missing_count": 0,
+      "applied": [],
+      "already_applied": [
+        {
+          "old": "if \"FAIL\" in severities:",
+          "new": "if gate_highest_severity(severities) == \"FAIL\":",
+          "group": "SEVERITY_COLLECTION_FAIL_AGGREGATION"
+        }
+      ],
+      "missing": [],
+      "changed": false
+    },
+    {
+      "file": "leaf_qt/regen_scalability_master_gate.py",
+      "import_added": false,
+      "applied_count": 0,
+      "already_applied_count": 1,
+      "missing_count": 0,
+      "applied": [],
+      "already_applied": [
+        {
+          "old": "if \"FAIL\" in severities:",
+          "new": "if gate_highest_severity(severities) == \"FAIL\":",
+          "group": "SEVERITY_COLLECTION_FAIL_AGGREGATION"
+        }
+      ],
+      "missing": [],
+      "changed": false
+    },
+    {
+      "file": "leaf_qt/regen_variable_geometry_master_gate.py",
+      "import_added": false,
+      "applied_count": 0,
+      "already_applied_count": 1,
+      "missing_count": 0,
+      "applied": [],
+      "already_applied": [
+        {
+          "old": "if \"FAIL\" in severities:",
+          "new": "if gate_highest_severity(severities) == \"FAIL\":",
+          "group": "SEVERITY_COLLECTION_FAIL_AGGREGATION"
+        }
+      ],
+      "missing": [],
+      "changed": false
+    },
+    {
+      "file": "project_maintenance/wave2_status_adapter_master_gate_phase_16t3s.py",
+      "import_added": false,
+      "applied_count": 0,
+      "already_applied_count": 1,
+      "missing_count": 1,
+      "applied": [],
+      "already_applied": [
+        {
+          "old": "if \"FAIL\" in severities:",
+          "new": "if gate_highest_severity(severities) == \"FAIL\":",
+          "group": "SEVERITY_COLLECTION_FAIL_AGGREGATION"
+        }
+      ],
+      "missing": [
+        {
+          "old": "passed = canonical == \"PASS\"",
+          "new": "passed = canonical == \"PASS\"",
+          "reason": "no proposal generated"
+        }
+      ],
+      "changed": false
+    }
+  ],
+  "compile_results": [
+    {
+      "file": "leaf_qt/real_engine_benchmark_master_gate.py",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "leaf_qt/regen_axial_geometry_master_gate.py",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "leaf_qt/regen_candidate_acceptance_master_gate.py",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "leaf_qt/regen_candidate_mutation_master_gate.py",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "leaf_qt/regen_candidate_population_master_gate.py",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "leaf_qt/regen_candidate_ranking_master_gate.py",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "leaf_qt/regen_evolution_loop_master_gate.py",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "leaf_qt/regen_geometry_master_gate.py",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "leaf_qt/regen_optimisation_master_gate.py",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "leaf_qt/regen_scalability_master_gate.py",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "leaf_qt/regen_variable_geometry_master_gate.py",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "project_maintenance/wave2_status_adapter_master_gate_phase_16t3s.py",
+      "passed": true,
+      "error": ""
+    }
+  ],
+  "phase_16u21_wave_c_master_gate_low_risk_status_wrapper_patch_complete": true
+}

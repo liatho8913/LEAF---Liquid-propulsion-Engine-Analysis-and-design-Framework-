@@ -1,0 +1,26 @@
+LEAF PHASE 16U.122
+REGEN ACCEPTANCE CRITERIA OWNER REGRESSION
+===========================================
+
+STATUS: PASS_PHASE_16U122_REGEN_ACCEPTANCE_CRITERIA_OWNER_REGRESSION
+Target: leaf_qt/regen_acceptance_criteria_owner.py
+
+CHECKS
+------
+compile
+AST parse
+LegacyCompatibilityProducer
+status_severity
+shared marker usage
+legacy inline PASS/WARN/FAIL logic removed
+Phase 16U.121 patch JSON
+Phase 16U.121 patch completion flag
+owner-like top-level symbol presence
+
+Top-level function count: 4
+Top-level class count: 0
+Owner-like symbols: ['attach_regen_acceptance_criteria_owner', '_build_criteria', '_build_report']
+
+COMPLETION
+----------
+Phase 16U.122 regression complete.

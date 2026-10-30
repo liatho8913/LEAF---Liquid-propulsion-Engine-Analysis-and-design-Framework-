@@ -1,0 +1,598 @@
+{
+  "phase": "16U.61",
+  "status": "PASS_PHASE_16U61_GROUPED_LOW_RISK_OWNER_MIGRATION_FRAMEWORK",
+  "generated": "2026-06-28T11:45:02",
+  "closed_targets_excluded": [
+    "leaf_qt/bond_coat_integration_owner.py",
+    "leaf_qt/coating_temperature_limit_integration_owner.py",
+    "leaf_qt/foundation_test_runner_window.py",
+    "leaf_qt/material_strength_limit_integration_owner.py",
+    "leaf_qt/real_engine_benchmark_failure_owner.py",
+    "leaf_qt/regen_cross_section_viewer.py",
+    "leaf_qt/regen_scalability_failure_owner.py"
+  ],
+  "scanned_leaf_qt_python_files": 603,
+  "files_with_findings": 96,
+  "batch_safe_count": 9,
+  "first_batch": [
+    {
+      "file": "leaf_qt/coating_property_consumption_audit_owner.py",
+      "finding_count": 1,
+      "findings": [
+        {
+          "pattern": "status_startswith",
+          "line": 101,
+          "snippet": ".startswith(\"BLOCKED"
+        }
+      ],
+      "parses": true,
+      "parse_error": "",
+      "imports_shared_status_presentation": false,
+      "low_risk_name": true,
+      "disallowed_name": false,
+      "simple_patterns_only": true,
+      "batch_safe": true
+    },
+    {
+      "file": "leaf_qt/coating_thermal_conductivity_integration_owner.py",
+      "finding_count": 1,
+      "findings": [
+        {
+          "pattern": "status_startswith",
+          "line": 78,
+          "snippet": ".startswith(\"BLOCKED"
+        }
+      ],
+      "parses": true,
+      "parse_error": "",
+      "imports_shared_status_presentation": false,
+      "low_risk_name": true,
+      "disallowed_name": false,
+      "simple_patterns_only": true,
+      "batch_safe": true
+    },
+    {
+      "file": "leaf_qt/coating_thermal_resistance_integration_owner.py",
+      "finding_count": 1,
+      "findings": [
+        {
+          "pattern": "status_startswith",
+          "line": 84,
+          "snippet": ".startswith(\"BLOCKED"
+        }
+      ],
+      "parses": true,
+      "parse_error": "",
+      "imports_shared_status_presentation": false,
+      "low_risk_name": true,
+      "disallowed_name": false,
+      "simple_patterns_only": true,
+      "batch_safe": true
+    },
+    {
+      "file": "leaf_qt/coating_thickness_integration_owner.py",
+      "finding_count": 1,
+      "findings": [
+        {
+          "pattern": "status_startswith",
+          "line": 75,
+          "snippet": ".startswith(\"BLOCKED"
+        }
+      ],
+      "parses": true,
+      "parse_error": "",
+      "imports_shared_status_presentation": false,
+      "low_risk_name": true,
+      "disallowed_name": false,
+      "simple_patterns_only": true,
+      "batch_safe": true
+    },
+    {
+      "file": "leaf_qt/material_density_integration_owner.py",
+      "finding_count": 1,
+      "findings": [
+        {
+          "pattern": "status_startswith",
+          "line": 83,
+          "snippet": ".startswith(\"BLOCKED"
+        }
+      ],
+      "parses": true,
+      "parse_error": "",
+      "imports_shared_status_presentation": false,
+      "low_risk_name": true,
+      "disallowed_name": false,
+      "simple_patterns_only": true,
+      "batch_safe": true
+    },
+    {
+      "file": "leaf_qt/material_property_consumption_audit_owner.py",
+      "finding_count": 1,
+      "findings": [
+        {
+          "pattern": "status_startswith",
+          "line": 96,
+          "snippet": ".startswith(\"BLOCKED"
+        }
+      ],
+      "parses": true,
+      "parse_error": "",
+      "imports_shared_status_presentation": false,
+      "low_risk_name": true,
+      "disallowed_name": false,
+      "simple_patterns_only": true,
+      "batch_safe": true
+    },
+    {
+      "file": "leaf_qt/material_specific_heat_integration_owner.py",
+      "finding_count": 1,
+      "findings": [
+        {
+          "pattern": "status_startswith",
+          "line": 81,
+          "snippet": ".startswith(\"BLOCKED"
+        }
+      ],
+      "parses": true,
+      "parse_error": "",
+      "imports_shared_status_presentation": false,
+      "low_risk_name": true,
+      "disallowed_name": false,
+      "simple_patterns_only": true,
+      "batch_safe": true
+    },
+    {
+      "file": "leaf_qt/material_thermal_conductivity_integration_owner.py",
+      "finding_count": 1,
+      "findings": [
+        {
+          "pattern": "status_startswith",
+          "line": 85,
+          "snippet": ".startswith(\"BLOCKED"
+        }
+      ],
+      "parses": true,
+      "parse_error": "",
+      "imports_shared_status_presentation": false,
+      "low_risk_name": true,
+      "disallowed_name": false,
+      "simple_patterns_only": true,
+      "batch_safe": true
+    }
+  ],
+  "blocked_or_deferred_count": 87,
+  "blocked_or_deferred_sample": [
+    {
+      "file": "leaf_qt/regen_runtime_optimisation_session_owner.py",
+      "finding_count": 1,
+      "findings": [
+        {
+          "pattern": "inline_pass_fail_ternary",
+          "line": 175,
+          "snippet": "\"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ],
+      "parses": true,
+      "parse_error": "",
+      "imports_shared_status_presentation": false,
+      "low_risk_name": false,
+      "disallowed_name": false,
+      "simple_patterns_only": false,
+      "batch_safe": false
+    },
+    {
+      "file": "leaf_qt/real_engine_benchmark_master_gate.py",
+      "finding_count": 1,
+      "findings": [
+        {
+          "pattern": "fail_in_status_text",
+          "line": 66,
+          "snippet": "\"FAIL\" in "
+        }
+      ],
+      "parses": true,
+      "parse_error": "",
+      "imports_shared_status_presentation": false,
+      "low_risk_name": false,
+      "disallowed_name": false,
+      "simple_patterns_only": true,
+      "batch_safe": false
+    },
+    {
+      "file": "leaf_qt/regen_completion_audit.py",
+      "finding_count": 2,
+      "findings": [
+        {
+          "pattern": "fail_in_status_text",
+          "line": 90,
+          "snippet": "\"FAIL\" in "
+        },
+        {
+          "pattern": "blocked_in_status_text",
+          "line": 91,
+          "snippet": "\"BLOCKED\" in "
+        }
+      ],
+      "parses": true,
+      "parse_error": "",
+      "imports_shared_status_presentation": false,
+      "low_risk_name": false,
+      "disallowed_name": false,
+      "simple_patterns_only": true,
+      "batch_safe": false
+    },
+    {
+      "file": "leaf_qt/regen_candidate_ranking_completion_audit.py",
+      "finding_count": 1,
+      "findings": [
+        {
+          "pattern": "inline_pass_fail_ternary",
+          "line": 337,
+          "snippet": "\"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ],
+      "parses": true,
+      "parse_error": "",
+      "imports_shared_status_presentation": false,
+      "low_risk_name": false,
+      "disallowed_name": false,
+      "simple_patterns_only": false,
+      "batch_safe": false
+    },
+    {
+      "file": "leaf_qt/regen_runtime_execution_report_owner.py",
+      "finding_count": 1,
+      "findings": [
+        {
+          "pattern": "inline_pass_fail_ternary",
+          "line": 227,
+          "snippet": "\"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ],
+      "parses": true,
+      "parse_error": "",
+      "imports_shared_status_presentation": false,
+      "low_risk_name": false,
+      "disallowed_name": false,
+      "simple_patterns_only": false,
+      "batch_safe": false
+    },
+    {
+      "file": "leaf_qt/regen_variable_geometry_master_gate.py",
+      "finding_count": 2,
+      "findings": [
+        {
+          "pattern": "fail_in_status_text",
+          "line": 236,
+          "snippet": "\"FAIL\" in "
+        },
+        {
+          "pattern": "blocked_in_status_text",
+          "line": 153,
+          "snippet": "\"BLOCKED\" in "
+        }
+      ],
+      "parses": true,
+      "parse_error": "",
+      "imports_shared_status_presentation": false,
+      "low_risk_name": false,
+      "disallowed_name": false,
+      "simple_patterns_only": true,
+      "batch_safe": false
+    },
+    {
+      "file": "leaf_qt/foundation_regression_tests.py",
+      "finding_count": 2,
+      "findings": [
+        {
+          "pattern": "inline_pass_fail_ternary",
+          "line": 192,
+          "snippet": "\"PASS\" if failed_count == 0 else \"FAIL\""
+        },
+        {
+          "pattern": "inline_pass_fail_ternary",
+          "line": 219,
+          "snippet": "\"PASS\" if test.get(\"passed\") else \"FAIL\""
+        }
+      ],
+      "parses": true,
+      "parse_error": "",
+      "imports_shared_status_presentation": false,
+      "low_risk_name": false,
+      "disallowed_name": false,
+      "simple_patterns_only": false,
+      "batch_safe": false
+    },
+    {
+      "file": "leaf_qt/regen_viewer_gui_runtime_acceptance_gate_phase_16q28.py",
+      "finding_count": 1,
+      "findings": [
+        {
+          "pattern": "inline_pass_fail_ternary",
+          "line": 93,
+          "snippet": "\"PASS\" if item[\"passed\"] else \"FAIL\""
+        }
+      ],
+      "parses": true,
+      "parse_error": "",
+      "imports_shared_status_presentation": false,
+      "low_risk_name": false,
+      "disallowed_name": false,
+      "simple_patterns_only": false,
+      "batch_safe": false
+    },
+    {
+      "file": "leaf_qt/regen_architecture_visibility_audit.py",
+      "finding_count": 3,
+      "findings": [
+        {
+          "pattern": "fail_in_status_text",
+          "line": 226,
+          "snippet": "\"FAIL\" in "
+        },
+        {
+          "pattern": "blocked_in_status_text",
+          "line": 226,
+          "snippet": "\"BLOCKED\" in "
+        },
+        {
+          "pattern": "status_startswith",
+          "line": 196,
+          "snippet": ".startswith(\"PASS"
+        }
+      ],
+      "parses": true,
+      "parse_error": "",
+      "imports_shared_status_presentation": false,
+      "low_risk_name": false,
+      "disallowed_name": false,
+      "simple_patterns_only": true,
+      "batch_safe": false
+    },
+    {
+      "file": "leaf_qt/regen_scalability_master_gate.py",
+      "finding_count": 2,
+      "findings": [
+        {
+          "pattern": "fail_in_status_text",
+          "line": 297,
+          "snippet": "\"FAIL\" in "
+        },
+        {
+          "pattern": "blocked_in_status_text",
+          "line": 221,
+          "snippet": "\"BLOCKED\" in "
+        }
+      ],
+      "parses": true,
+      "parse_error": "",
+      "imports_shared_status_presentation": false,
+      "low_risk_name": false,
+      "disallowed_name": false,
+      "simple_patterns_only": true,
+      "batch_safe": false
+    },
+    {
+      "file": "leaf_qt/real_engine_benchmark_completion_audit.py",
+      "finding_count": 3,
+      "findings": [
+        {
+          "pattern": "status_startswith",
+          "line": 308,
+          "snippet": ".startswith(\"PASS"
+        },
+        {
+          "pattern": "status_startswith",
+          "line": 323,
+          "snippet": ".startswith(\"PASS"
+        },
+        {
+          "pattern": "inline_pass_fail_ternary",
+          "line": 277,
+          "snippet": "\"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ],
+      "parses": true,
+      "parse_error": "",
+      "imports_shared_status_presentation": false,
+      "low_risk_name": false,
+      "disallowed_name": false,
+      "simple_patterns_only": false,
+      "batch_safe": false
+    },
+    {
+      "file": "leaf_qt/regen_candidate_ranking_master_gate.py",
+      "finding_count": 2,
+      "findings": [
+        {
+          "pattern": "blocked_in_status_text",
+          "line": 52,
+          "snippet": "\"BLOCKED\" in "
+        },
+        {
+          "pattern": "inline_pass_fail_ternary",
+          "line": 604,
+          "snippet": "\"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ],
+      "parses": true,
+      "parse_error": "",
+      "imports_shared_status_presentation": false,
+      "low_risk_name": false,
+      "disallowed_name": false,
+      "simple_patterns_only": false,
+      "batch_safe": false
+    },
+    {
+      "file": "leaf_qt/regen_candidate_mutation_master_gate.py",
+      "finding_count": 3,
+      "findings": [
+        {
+          "pattern": "fail_in_status_text",
+          "line": 477,
+          "snippet": "\"FAIL\" in "
+        },
+        {
+          "pattern": "blocked_in_status_text",
+          "line": 394,
+          "snippet": "\"BLOCKED\" in "
+        },
+        {
+          "pattern": "inline_pass_fail_ternary",
+          "line": 331,
+          "snippet": "\"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ],
+      "parses": true,
+      "parse_error": "",
+      "imports_shared_status_presentation": false,
+      "low_risk_name": false,
+      "disallowed_name": false,
+      "simple_patterns_only": false,
+      "batch_safe": false
+    },
+    {
+      "file": "leaf_qt/regen_viewer_gui_runtime_checklist_phase_16p22.py",
+      "finding_count": 1,
+      "findings": [
+        {
+          "pattern": "inline_pass_fail_ternary",
+          "line": 89,
+          "snippet": "\"PASS\" if item[\"present\"] else \"FAIL\""
+        }
+      ],
+      "parses": true,
+      "parse_error": "",
+      "imports_shared_status_presentation": false,
+      "low_risk_name": false,
+      "disallowed_name": false,
+      "simple_patterns_only": false,
+      "batch_safe": false
+    },
+    {
+      "file": "leaf_qt/foundation_verification_harness.py",
+      "finding_count": 2,
+      "findings": [
+        {
+          "pattern": "blocked_in_status_text",
+          "line": 98,
+          "snippet": "\"BLOCKED\" in "
+        },
+        {
+          "pattern": "inline_pass_fail_ternary",
+          "line": 1795,
+          "snippet": "\"PASS\" if test[\"passed\"] else \"FAIL\""
+        }
+      ],
+      "parses": true,
+      "parse_error": "",
+      "imports_shared_status_presentation": false,
+      "low_risk_name": false,
+      "disallowed_name": false,
+      "simple_patterns_only": false,
+      "batch_safe": false
+    },
+    {
+      "file": "leaf_qt/regen_optimisation_master_gate.py",
+      "finding_count": 2,
+      "findings": [
+        {
+          "pattern": "fail_in_status_text",
+          "line": 361,
+          "snippet": "\"FAIL\" in "
+        },
+        {
+          "pattern": "blocked_in_status_text",
+          "line": 278,
+          "snippet": "\"BLOCKED\" in "
+        }
+      ],
+      "parses": true,
+      "parse_error": "",
+      "imports_shared_status_presentation": false,
+      "low_risk_name": false,
+      "disallowed_name": false,
+      "simple_patterns_only": true,
+      "batch_safe": false
+    },
+    {
+      "file": "leaf_qt/regen_runtime_execution_input_gate.py",
+      "finding_count": 1,
+      "findings": [
+        {
+          "pattern": "inline_pass_fail_ternary",
+          "line": 175,
+          "snippet": "\"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ],
+      "parses": true,
+      "parse_error": "",
+      "imports_shared_status_presentation": false,
+      "low_risk_name": false,
+      "disallowed_name": false,
+      "simple_patterns_only": false,
+      "batch_safe": false
+    },
+    {
+      "file": "leaf_qt/regen_geometry_master_gate.py",
+      "finding_count": 2,
+      "findings": [
+        {
+          "pattern": "fail_in_status_text",
+          "line": 251,
+          "snippet": "\"FAIL\" in "
+        },
+        {
+          "pattern": "warn_in_status_text",
+          "line": 261,
+          "snippet": "\"WARN\" in "
+        }
+      ],
+      "parses": true,
+      "parse_error": "",
+      "imports_shared_status_presentation": false,
+      "low_risk_name": false,
+      "disallowed_name": false,
+      "simple_patterns_only": true,
+      "batch_safe": false
+    },
+    {
+      "file": "leaf_qt/regen_candidate_generation_input_gate.py",
+      "finding_count": 1,
+      "findings": [
+        {
+          "pattern": "inline_pass_fail_ternary",
+          "line": 168,
+          "snippet": "\"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ],
+      "parses": true,
+      "parse_error": "",
+      "imports_shared_status_presentation": false,
+      "low_risk_name": false,
+      "disallowed_name": false,
+      "simple_patterns_only": false,
+      "batch_safe": false
+    },
+    {
+      "file": "leaf_qt/regen_candidate_blueprint_generation_input_gate.py",
+      "finding_count": 1,
+      "findings": [
+        {
+          "pattern": "inline_pass_fail_ternary",
+          "line": 225,
+          "snippet": "\"PASS\" if check[\"passed\"] else \"FAIL\""
+        }
+      ],
+      "parses": true,
+      "parse_error": "",
+      "imports_shared_status_presentation": false,
+      "low_risk_name": false,
+      "disallowed_name": false,
+      "simple_patterns_only": false,
+      "batch_safe": false
+    }
+  ],
+  "phase_16u61_grouped_low_risk_owner_migration_framework_complete": true,
+  "next_phase": "16U.62 \u2014 First Grouped Low-Risk Owner Batch Patch"
+}

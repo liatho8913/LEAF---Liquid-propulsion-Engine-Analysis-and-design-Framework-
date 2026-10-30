@@ -1,0 +1,573 @@
+{
+  "phase": "16U.15",
+  "status": "PASS_PHASE_16U15_WAVE_B_VALIDATION_OWNER_STATUS_CONSUMER_AUDIT",
+  "generated": "2026-06-28T00:53:56",
+  "roadmap_status": "PASS_PHASE_16U3_STRUCTURED_STATUS_MIGRATION_ROADMAP",
+  "wave_a_gate_status": "PASS_PHASE_16U14_WAVE_A_ENGINE_SOLVER_STATUS_MIGRATION_CLOSURE_GATE",
+  "validation_candidate_count": 34,
+  "patchable_next_phase_count": 7,
+  "hold_or_manual_review_count": 27,
+  "by_group": {
+    "LITERAL_CONTEXT_REVIEW": 10,
+    "MANUAL_REVIEW_REQUIRED": 5,
+    "PRESENTATION_MARKER": 2,
+    "RESULT_KEY_PASS_PREFIX_CHECK": 3,
+    "SEVERITY_COLLECTION_FAIL_AGGREGATION": 4,
+    "STATUS_PRODUCER_RETURN": 6,
+    "TEXT_SEMANTIC_VALIDATION": 4
+  },
+  "by_risk": {
+    "HOLD": 18,
+    "LOW": 7,
+    "MEDIUM": 9
+  },
+  "by_file": {
+    "leaf_qt/regen_candidate_blueprint_mutation_validation.py": 1,
+    "leaf_qt/regen_candidate_blueprint_population_validation_owner.py": 1,
+    "leaf_qt/regen_candidate_post_resolve_validation_owner.py": 8,
+    "leaf_qt/regen_candidate_validator.py": 8,
+    "leaf_qt/regen_geometry_constraint_validation_owner.py": 2,
+    "leaf_qt/regen_source_validation_gate.py": 9,
+    "leaf_qt/regen_validation_master_gate.py": 4,
+    "leaf_qt/regen_viewer_physical_geometry_validation_owner_phase_16p15.py": 1
+  },
+  "classified_candidates": [
+    {
+      "file": "leaf_qt/regen_candidate_blueprint_mutation_validation.py",
+      "line": 243,
+      "priority": "HIGH",
+      "pattern": "raw_status_literal",
+      "migration_group": "PRESENTATION_MARKER",
+      "risk": "HOLD",
+      "patchable_next_phase": false,
+      "recommended_wrapper": "none",
+      "reason": "This appears to render a pass/fail marker from boolean check evidence.",
+      "snippet": "marker = \"PASS\" if check[\"passed\"] else \"FAIL\""
+    },
+    {
+      "file": "leaf_qt/regen_candidate_blueprint_population_validation_owner.py",
+      "line": 231,
+      "priority": "HIGH",
+      "pattern": "raw_status_literal",
+      "migration_group": "PRESENTATION_MARKER",
+      "risk": "HOLD",
+      "patchable_next_phase": false,
+      "recommended_wrapper": "none",
+      "reason": "This appears to render a pass/fail marker from boolean check evidence.",
+      "snippet": "marker = \"PASS\" if check[\"passed\"] else \"FAIL\""
+    },
+    {
+      "file": "leaf_qt/regen_candidate_post_resolve_validation_owner.py",
+      "line": 199,
+      "priority": "HIGH",
+      "pattern": "raw_status_literal",
+      "migration_group": "TEXT_SEMANTIC_VALIDATION",
+      "risk": "MEDIUM",
+      "patchable_next_phase": false,
+      "recommended_wrapper": "manual review",
+      "reason": "Text scanning may be semantic/freeform and should not be blindly wrapped.",
+      "snippet": "(\"FAIL\" not in text and \"INVALID\" not in text),"
+    },
+    {
+      "file": "leaf_qt/regen_candidate_post_resolve_validation_owner.py",
+      "line": 207,
+      "priority": "HIGH",
+      "pattern": "raw_status_literal",
+      "migration_group": "TEXT_SEMANTIC_VALIDATION",
+      "risk": "MEDIUM",
+      "patchable_next_phase": false,
+      "recommended_wrapper": "manual review",
+      "reason": "Text scanning may be semantic/freeform and should not be blindly wrapped.",
+      "snippet": "(\"WARN\" not in text and \"REVIEW\" not in text and \"PLACEHOLDER\" not in text),"
+    },
+    {
+      "file": "leaf_qt/regen_candidate_validator.py",
+      "line": 359,
+      "priority": "HIGH",
+      "pattern": "contains_status",
+      "migration_group": "SEVERITY_COLLECTION_FAIL_AGGREGATION",
+      "risk": "LOW",
+      "patchable_next_phase": true,
+      "recommended_wrapper": "highest_severity(severities) == \"FAIL\"",
+      "reason": "Variable name severities indicates structured severity aggregation, not freeform text.",
+      "snippet": "if \"FAIL\" in severities:"
+    },
+    {
+      "file": "leaf_qt/regen_candidate_validator.py",
+      "line": 359,
+      "priority": "HIGH",
+      "pattern": "raw_status_literal",
+      "migration_group": "SEVERITY_COLLECTION_FAIL_AGGREGATION",
+      "risk": "LOW",
+      "patchable_next_phase": true,
+      "recommended_wrapper": "highest_severity(severities) == \"FAIL\"",
+      "reason": "Variable name severities indicates structured severity aggregation, not freeform text.",
+      "snippet": "if \"FAIL\" in severities:"
+    },
+    {
+      "file": "leaf_qt/regen_geometry_constraint_validation_owner.py",
+      "line": 266,
+      "priority": "HIGH",
+      "pattern": "raw_status_literal",
+      "migration_group": "TEXT_SEMANTIC_VALIDATION",
+      "risk": "MEDIUM",
+      "patchable_next_phase": false,
+      "recommended_wrapper": "manual review",
+      "reason": "Text scanning may be semantic/freeform and should not be blindly wrapped.",
+      "snippet": "passed=(\"FAIL\" not in text and \"INVALID\" not in text),"
+    },
+    {
+      "file": "leaf_qt/regen_geometry_constraint_validation_owner.py",
+      "line": 274,
+      "priority": "HIGH",
+      "pattern": "raw_status_literal",
+      "migration_group": "TEXT_SEMANTIC_VALIDATION",
+      "risk": "MEDIUM",
+      "patchable_next_phase": false,
+      "recommended_wrapper": "manual review",
+      "reason": "Text scanning may be semantic/freeform and should not be blindly wrapped.",
+      "snippet": "passed=(\"WARN\" not in text and \"REVIEW\" not in text and \"PLACEHOLDER\" not in text),"
+    },
+    {
+      "file": "leaf_qt/regen_source_validation_gate.py",
+      "line": 243,
+      "priority": "HIGH",
+      "pattern": "ast_startswith_status",
+      "migration_group": "RESULT_KEY_PASS_PREFIX_CHECK",
+      "risk": "LOW",
+      "patchable_next_phase": true,
+      "recommended_wrapper": "is_pass(results.get(key))",
+      "reason": "Result-key status prefix check can be routed through structured_status_access.is_pass.",
+      "snippet": "if key in results and str(results.get(key)).upper().startswith(\"PASS\"):"
+    },
+    {
+      "file": "leaf_qt/regen_source_validation_gate.py",
+      "line": 243,
+      "priority": "HIGH",
+      "pattern": "raw_status_literal",
+      "migration_group": "RESULT_KEY_PASS_PREFIX_CHECK",
+      "risk": "LOW",
+      "patchable_next_phase": true,
+      "recommended_wrapper": "is_pass(results.get(key))",
+      "reason": "Result-key status prefix check can be routed through structured_status_access.is_pass.",
+      "snippet": "if key in results and str(results.get(key)).upper().startswith(\"PASS\"):"
+    },
+    {
+      "file": "leaf_qt/regen_source_validation_gate.py",
+      "line": 243,
+      "priority": "HIGH",
+      "pattern": "startswith_status",
+      "migration_group": "RESULT_KEY_PASS_PREFIX_CHECK",
+      "risk": "LOW",
+      "patchable_next_phase": true,
+      "recommended_wrapper": "is_pass(results.get(key))",
+      "reason": "Result-key status prefix check can be routed through structured_status_access.is_pass.",
+      "snippet": "if key in results and str(results.get(key)).upper().startswith(\"PASS\"):"
+    },
+    {
+      "file": "leaf_qt/regen_source_validation_gate.py",
+      "line": 360,
+      "priority": "HIGH",
+      "pattern": "contains_status",
+      "migration_group": "SEVERITY_COLLECTION_FAIL_AGGREGATION",
+      "risk": "LOW",
+      "patchable_next_phase": true,
+      "recommended_wrapper": "highest_severity(severities) == \"FAIL\"",
+      "reason": "Variable name severities indicates structured severity aggregation, not freeform text.",
+      "snippet": "if \"FAIL\" in severities:"
+    },
+    {
+      "file": "leaf_qt/regen_source_validation_gate.py",
+      "line": 360,
+      "priority": "HIGH",
+      "pattern": "raw_status_literal",
+      "migration_group": "SEVERITY_COLLECTION_FAIL_AGGREGATION",
+      "risk": "LOW",
+      "patchable_next_phase": true,
+      "recommended_wrapper": "highest_severity(severities) == \"FAIL\"",
+      "reason": "Variable name severities indicates structured severity aggregation, not freeform text.",
+      "snippet": "if \"FAIL\" in severities:"
+    },
+    {
+      "file": "leaf_qt/regen_validation_master_gate.py",
+      "line": 77,
+      "priority": "HIGH",
+      "pattern": "contains_status",
+      "migration_group": "MANUAL_REVIEW_REQUIRED",
+      "risk": "MEDIUM",
+      "patchable_next_phase": false,
+      "recommended_wrapper": "manual review",
+      "reason": "No safe automated migration rule matched.",
+      "snippet": "elif \"FAIL\" in status:"
+    },
+    {
+      "file": "leaf_qt/regen_validation_master_gate.py",
+      "line": 77,
+      "priority": "HIGH",
+      "pattern": "raw_status_literal",
+      "migration_group": "MANUAL_REVIEW_REQUIRED",
+      "risk": "MEDIUM",
+      "patchable_next_phase": false,
+      "recommended_wrapper": "manual review",
+      "reason": "No safe automated migration rule matched.",
+      "snippet": "elif \"FAIL\" in status:"
+    },
+    {
+      "file": "leaf_qt/regen_validation_master_gate.py",
+      "line": 194,
+      "priority": "HIGH",
+      "pattern": "contains_status",
+      "migration_group": "MANUAL_REVIEW_REQUIRED",
+      "risk": "MEDIUM",
+      "patchable_next_phase": false,
+      "recommended_wrapper": "manual review",
+      "reason": "No safe automated migration rule matched.",
+      "snippet": "elif \"FAIL\" in validation_status_text or \"INVALID\" in validation_status_text:"
+    },
+    {
+      "file": "leaf_qt/regen_validation_master_gate.py",
+      "line": 194,
+      "priority": "HIGH",
+      "pattern": "raw_status_literal",
+      "migration_group": "MANUAL_REVIEW_REQUIRED",
+      "risk": "MEDIUM",
+      "patchable_next_phase": false,
+      "recommended_wrapper": "manual review",
+      "reason": "No safe automated migration rule matched.",
+      "snippet": "elif \"FAIL\" in validation_status_text or \"INVALID\" in validation_status_text:"
+    },
+    {
+      "file": "leaf_qt/regen_candidate_post_resolve_validation_owner.py",
+      "line": 161,
+      "priority": "MEDIUM",
+      "pattern": "raw_status_literal",
+      "migration_group": "LITERAL_CONTEXT_REVIEW",
+      "risk": "HOLD",
+      "patchable_next_phase": false,
+      "recommended_wrapper": "none",
+      "reason": "Standalone literal likely belongs to payload construction or evidence list.",
+      "snippet": "\"FAIL\","
+    },
+    {
+      "file": "leaf_qt/regen_candidate_post_resolve_validation_owner.py",
+      "line": 177,
+      "priority": "MEDIUM",
+      "pattern": "raw_status_literal",
+      "migration_group": "LITERAL_CONTEXT_REVIEW",
+      "risk": "HOLD",
+      "patchable_next_phase": false,
+      "recommended_wrapper": "none",
+      "reason": "Standalone literal likely belongs to payload construction or evidence list.",
+      "snippet": "\"FAIL\","
+    },
+    {
+      "file": "leaf_qt/regen_candidate_post_resolve_validation_owner.py",
+      "line": 185,
+      "priority": "MEDIUM",
+      "pattern": "raw_status_literal",
+      "migration_group": "LITERAL_CONTEXT_REVIEW",
+      "risk": "HOLD",
+      "patchable_next_phase": false,
+      "recommended_wrapper": "none",
+      "reason": "Standalone literal likely belongs to payload construction or evidence list.",
+      "snippet": "\"FAIL\","
+    },
+    {
+      "file": "leaf_qt/regen_candidate_post_resolve_validation_owner.py",
+      "line": 200,
+      "priority": "MEDIUM",
+      "pattern": "raw_status_literal",
+      "migration_group": "LITERAL_CONTEXT_REVIEW",
+      "risk": "HOLD",
+      "patchable_next_phase": false,
+      "recommended_wrapper": "none",
+      "reason": "Standalone literal likely belongs to payload construction or evidence list.",
+      "snippet": "\"FAIL\","
+    },
+    {
+      "file": "leaf_qt/regen_candidate_post_resolve_validation_owner.py",
+      "line": 217,
+      "priority": "MEDIUM",
+      "pattern": "raw_status_literal",
+      "migration_group": "LITERAL_CONTEXT_REVIEW",
+      "risk": "HOLD",
+      "patchable_next_phase": false,
+      "recommended_wrapper": "none",
+      "reason": "Standalone literal likely belongs to payload construction or evidence list.",
+      "snippet": "\"FAIL\","
+    },
+    {
+      "file": "leaf_qt/regen_candidate_post_resolve_validation_owner.py",
+      "line": 230,
+      "priority": "MEDIUM",
+      "pattern": "raw_status_literal",
+      "migration_group": "LITERAL_CONTEXT_REVIEW",
+      "risk": "HOLD",
+      "patchable_next_phase": false,
+      "recommended_wrapper": "none",
+      "reason": "Standalone literal likely belongs to payload construction or evidence list.",
+      "snippet": "\"FAIL\","
+    },
+    {
+      "file": "leaf_qt/regen_candidate_validator.py",
+      "line": 360,
+      "priority": "MEDIUM",
+      "pattern": "raw_status_literal",
+      "migration_group": "STATUS_PRODUCER_RETURN",
+      "risk": "HOLD",
+      "patchable_next_phase": false,
+      "recommended_wrapper": "none",
+      "reason": "This appears to produce legacy-compatible status output, not consume it.",
+      "snippet": "return \"FAIL\""
+    },
+    {
+      "file": "leaf_qt/regen_candidate_validator.py",
+      "line": 369,
+      "priority": "MEDIUM",
+      "pattern": "raw_status_literal",
+      "migration_group": "STATUS_PRODUCER_RETURN",
+      "risk": "HOLD",
+      "patchable_next_phase": false,
+      "recommended_wrapper": "none",
+      "reason": "This appears to produce legacy-compatible status output, not consume it.",
+      "snippet": "return \"PASS\""
+    },
+    {
+      "file": "leaf_qt/regen_candidate_validator.py",
+      "line": 371,
+      "priority": "MEDIUM",
+      "pattern": "raw_status_literal",
+      "migration_group": "STATUS_PRODUCER_RETURN",
+      "risk": "HOLD",
+      "patchable_next_phase": false,
+      "recommended_wrapper": "none",
+      "reason": "This appears to produce legacy-compatible status output, not consume it.",
+      "snippet": "return \"FAIL\""
+    },
+    {
+      "file": "leaf_qt/regen_candidate_validator.py",
+      "line": 381,
+      "priority": "MEDIUM",
+      "pattern": "raw_status_literal",
+      "migration_group": "LITERAL_CONTEXT_REVIEW",
+      "risk": "HOLD",
+      "patchable_next_phase": false,
+      "recommended_wrapper": "none",
+      "reason": "Standalone literal likely belongs to payload construction or evidence list.",
+      "snippet": "\"FAIL\","
+    },
+    {
+      "file": "leaf_qt/regen_candidate_validator.py",
+      "line": 495,
+      "priority": "MEDIUM",
+      "pattern": "raw_status_literal",
+      "migration_group": "LITERAL_CONTEXT_REVIEW",
+      "risk": "HOLD",
+      "patchable_next_phase": false,
+      "recommended_wrapper": "none",
+      "reason": "Standalone literal likely belongs to payload construction or evidence list.",
+      "snippet": "\"FAIL\","
+    },
+    {
+      "file": "leaf_qt/regen_candidate_validator.py",
+      "line": 548,
+      "priority": "MEDIUM",
+      "pattern": "raw_status_literal",
+      "migration_group": "LITERAL_CONTEXT_REVIEW",
+      "risk": "HOLD",
+      "patchable_next_phase": false,
+      "recommended_wrapper": "none",
+      "reason": "Standalone literal likely belongs to payload construction or evidence list.",
+      "snippet": "\"FAIL\","
+    },
+    {
+      "file": "leaf_qt/regen_source_validation_gate.py",
+      "line": 361,
+      "priority": "MEDIUM",
+      "pattern": "raw_status_literal",
+      "migration_group": "STATUS_PRODUCER_RETURN",
+      "risk": "HOLD",
+      "patchable_next_phase": false,
+      "recommended_wrapper": "none",
+      "reason": "This appears to produce legacy-compatible status output, not consume it.",
+      "snippet": "return \"FAIL\""
+    },
+    {
+      "file": "leaf_qt/regen_source_validation_gate.py",
+      "line": 367,
+      "priority": "MEDIUM",
+      "pattern": "raw_status_literal",
+      "migration_group": "STATUS_PRODUCER_RETURN",
+      "risk": "HOLD",
+      "patchable_next_phase": false,
+      "recommended_wrapper": "none",
+      "reason": "This appears to produce legacy-compatible status output, not consume it.",
+      "snippet": "return \"PASS\""
+    },
+    {
+      "file": "leaf_qt/regen_source_validation_gate.py",
+      "line": 368,
+      "priority": "MEDIUM",
+      "pattern": "raw_status_literal",
+      "migration_group": "STATUS_PRODUCER_RETURN",
+      "risk": "HOLD",
+      "patchable_next_phase": false,
+      "recommended_wrapper": "none",
+      "reason": "This appears to produce legacy-compatible status output, not consume it.",
+      "snippet": "return \"FAIL\""
+    },
+    {
+      "file": "leaf_qt/regen_source_validation_gate.py",
+      "line": 378,
+      "priority": "MEDIUM",
+      "pattern": "raw_status_literal",
+      "migration_group": "LITERAL_CONTEXT_REVIEW",
+      "risk": "HOLD",
+      "patchable_next_phase": false,
+      "recommended_wrapper": "none",
+      "reason": "Standalone literal likely belongs to payload construction or evidence list.",
+      "snippet": "\"FAIL\","
+    },
+    {
+      "file": "leaf_qt/regen_viewer_physical_geometry_validation_owner_phase_16p15.py",
+      "line": 116,
+      "priority": "MEDIUM",
+      "pattern": "raw_status_literal",
+      "migration_group": "MANUAL_REVIEW_REQUIRED",
+      "risk": "MEDIUM",
+      "patchable_next_phase": false,
+      "recommended_wrapper": "manual review",
+      "reason": "No safe automated migration rule matched.",
+      "snippet": "if str(results.get(\"regen_geometry_status\", \"\")).upper() not in (\"FAIL\", \"ERROR\"):"
+    }
+  ],
+  "patchable_candidates": [
+    {
+      "file": "leaf_qt/regen_candidate_validator.py",
+      "line": 359,
+      "priority": "HIGH",
+      "pattern": "contains_status",
+      "migration_group": "SEVERITY_COLLECTION_FAIL_AGGREGATION",
+      "risk": "LOW",
+      "patchable_next_phase": true,
+      "recommended_wrapper": "highest_severity(severities) == \"FAIL\"",
+      "reason": "Variable name severities indicates structured severity aggregation, not freeform text.",
+      "snippet": "if \"FAIL\" in severities:"
+    },
+    {
+      "file": "leaf_qt/regen_candidate_validator.py",
+      "line": 359,
+      "priority": "HIGH",
+      "pattern": "raw_status_literal",
+      "migration_group": "SEVERITY_COLLECTION_FAIL_AGGREGATION",
+      "risk": "LOW",
+      "patchable_next_phase": true,
+      "recommended_wrapper": "highest_severity(severities) == \"FAIL\"",
+      "reason": "Variable name severities indicates structured severity aggregation, not freeform text.",
+      "snippet": "if \"FAIL\" in severities:"
+    },
+    {
+      "file": "leaf_qt/regen_source_validation_gate.py",
+      "line": 243,
+      "priority": "HIGH",
+      "pattern": "ast_startswith_status",
+      "migration_group": "RESULT_KEY_PASS_PREFIX_CHECK",
+      "risk": "LOW",
+      "patchable_next_phase": true,
+      "recommended_wrapper": "is_pass(results.get(key))",
+      "reason": "Result-key status prefix check can be routed through structured_status_access.is_pass.",
+      "snippet": "if key in results and str(results.get(key)).upper().startswith(\"PASS\"):"
+    },
+    {
+      "file": "leaf_qt/regen_source_validation_gate.py",
+      "line": 243,
+      "priority": "HIGH",
+      "pattern": "raw_status_literal",
+      "migration_group": "RESULT_KEY_PASS_PREFIX_CHECK",
+      "risk": "LOW",
+      "patchable_next_phase": true,
+      "recommended_wrapper": "is_pass(results.get(key))",
+      "reason": "Result-key status prefix check can be routed through structured_status_access.is_pass.",
+      "snippet": "if key in results and str(results.get(key)).upper().startswith(\"PASS\"):"
+    },
+    {
+      "file": "leaf_qt/regen_source_validation_gate.py",
+      "line": 243,
+      "priority": "HIGH",
+      "pattern": "startswith_status",
+      "migration_group": "RESULT_KEY_PASS_PREFIX_CHECK",
+      "risk": "LOW",
+      "patchable_next_phase": true,
+      "recommended_wrapper": "is_pass(results.get(key))",
+      "reason": "Result-key status prefix check can be routed through structured_status_access.is_pass.",
+      "snippet": "if key in results and str(results.get(key)).upper().startswith(\"PASS\"):"
+    },
+    {
+      "file": "leaf_qt/regen_source_validation_gate.py",
+      "line": 360,
+      "priority": "HIGH",
+      "pattern": "contains_status",
+      "migration_group": "SEVERITY_COLLECTION_FAIL_AGGREGATION",
+      "risk": "LOW",
+      "patchable_next_phase": true,
+      "recommended_wrapper": "highest_severity(severities) == \"FAIL\"",
+      "reason": "Variable name severities indicates structured severity aggregation, not freeform text.",
+      "snippet": "if \"FAIL\" in severities:"
+    },
+    {
+      "file": "leaf_qt/regen_source_validation_gate.py",
+      "line": 360,
+      "priority": "HIGH",
+      "pattern": "raw_status_literal",
+      "migration_group": "SEVERITY_COLLECTION_FAIL_AGGREGATION",
+      "risk": "LOW",
+      "patchable_next_phase": true,
+      "recommended_wrapper": "highest_severity(severities) == \"FAIL\"",
+      "reason": "Variable name severities indicates structured severity aggregation, not freeform text.",
+      "snippet": "if \"FAIL\" in severities:"
+    }
+  ],
+  "compile_results": [
+    {
+      "file": "leaf_qt/regen_candidate_blueprint_mutation_validation.py",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "leaf_qt/regen_candidate_blueprint_population_validation_owner.py",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "leaf_qt/regen_candidate_post_resolve_validation_owner.py",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "leaf_qt/regen_candidate_validator.py",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "leaf_qt/regen_geometry_constraint_validation_owner.py",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "leaf_qt/regen_source_validation_gate.py",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "leaf_qt/regen_validation_master_gate.py",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "leaf_qt/regen_viewer_physical_geometry_validation_owner_phase_16p15.py",
+      "passed": true,
+      "error": ""
+    }
+  ],
+  "phase_16u15_wave_b_validation_owner_status_consumer_audit_complete": true
+}

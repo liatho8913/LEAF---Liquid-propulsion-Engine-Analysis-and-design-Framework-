@@ -1,0 +1,13 @@
+LEAF PHASE 16U.121
+REGEN ACCEPTANCE CRITERIA OWNER PRESENTATION LAYER PATCH
+=========================================================
+
+STATUS: PASS_PHASE_16U121_REGEN_ACCEPTANCE_CRITERIA_OWNER_PRESENTATION_LAYER_PATCH
+Target: leaf_qt/regen_acceptance_criteria_owner.py
+Backup: project_maintenance/regen_acceptance_criteria_owner_phase_16u121_backup.py
+
+APPLIED
+-------
+
+FAILURES
+--------

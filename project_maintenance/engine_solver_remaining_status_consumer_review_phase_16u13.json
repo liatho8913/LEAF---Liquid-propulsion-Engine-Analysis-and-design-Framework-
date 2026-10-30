@@ -1,0 +1,231 @@
+{
+  "phase": "16U.13",
+  "status": "PASS_PHASE_16U13_ENGINE_SOLVER_REMAINING_STATUS_CONSUMER_REVIEW",
+  "generated": "2026-06-27T17:44:55",
+  "source_audit_status": "PASS_PHASE_16U6_ENGINE_SOLVER_STATUS_CONSUMER_INTEGRATION_AUDIT",
+  "low_risk_regression_status": "PASS_PHASE_16U9_ENGINE_SOLVER_LOW_RISK_STATUS_WRAPPER_REGRESSION",
+  "medium_risk_regression_status": "PASS_PHASE_16U12_ENGINE_SOLVER_MEDIUM_RISK_STATUS_WRAPPER_REGRESSION",
+  "remaining_candidate_count": 18,
+  "wave_closure_blocker_count": 0,
+  "by_category": {
+    "COMPOUND_VERDICT_INTENTIONAL_HOLD": 6,
+    "DOMAIN_STATE_INTENTIONAL_HOLD": 1,
+    "FREEFORM_TEXT_SEMANTIC_INTENTIONAL_HOLD": 4,
+    "HIGH_RISK_MANUAL_REVIEW_REQUIRED": 6,
+    "MIXED_DOMAIN_STATUS_INTENTIONAL_HOLD": 1
+  },
+  "remaining_consumers": [
+    {
+      "file": "leaf_qt/engine_solver.py",
+      "line": 4054,
+      "source_group": "MANUAL_REVIEW",
+      "risk": "HIGH",
+      "remaining_category": "HIGH_RISK_MANUAL_REVIEW_REQUIRED",
+      "recommendation": "Hold for manual review; do not automate in Wave A.",
+      "wave_closure_blocker": false,
+      "snippet": "\"diagnostic_note\": \"PASS\" if not failure_reasons else \"CHECK\",",
+      "reason": "High-risk items require local engineering context and should not block closure if explicitly recorded."
+    },
+    {
+      "file": "leaf_qt/engine_solver.py",
+      "line": 5959,
+      "source_group": "MANUAL_REVIEW",
+      "risk": "HIGH",
+      "remaining_category": "HIGH_RISK_MANUAL_REVIEW_REQUIRED",
+      "recommendation": "Hold for manual review; do not automate in Wave A.",
+      "wave_closure_blocker": false,
+      "snippet": "\"PASS\" if max_twg <= material_limit else \"REQUIRED\"",
+      "reason": "High-risk items require local engineering context and should not block closure if explicitly recorded."
+    },
+    {
+      "file": "leaf_qt/engine_solver.py",
+      "line": 7675,
+      "source_group": "MEMBERSHIP_STATUS_CHECK",
+      "risk": "MEDIUM",
+      "remaining_category": "DOMAIN_STATE_INTENTIONAL_HOLD",
+      "recommendation": "Preserve until source-quality domain-state migration.",
+      "wave_closure_blocker": false,
+      "snippet": "elif source_data_weighted_gate in (\"PARTIAL\", \"FAIL\"):",
+      "reason": "PARTIAL is a source-quality state, not a simple status."
+    },
+    {
+      "file": "leaf_qt/engine_solver.py",
+      "line": 8456,
+      "source_group": "MEMBERSHIP_STATUS_CHECK",
+      "risk": "MEDIUM",
+      "remaining_category": "MIXED_DOMAIN_STATUS_INTENTIONAL_HOLD",
+      "recommendation": "Preserve until coating/material data-quality status migration.",
+      "wave_closure_blocker": false,
+      "snippet": "if item[\"status\"] in (\"MISSING\", \"PLACEHOLDER\", \"FAIL\")",
+      "reason": "MISSING and PLACEHOLDER are data-quality states mixed with FAIL."
+    },
+    {
+      "file": "leaf_qt/engine_solver.py",
+      "line": 14139,
+      "source_group": "PREFIX_SUFFIX_STATUS_CHECK",
+      "risk": "MEDIUM",
+      "remaining_category": "COMPOUND_VERDICT_INTENTIONAL_HOLD",
+      "recommendation": "Preserve until compound verdict compatibility adapter exists.",
+      "wave_closure_blocker": false,
+      "snippet": "if \"PLACEHOLDER\" in source_status and verdict.endswith(\"PASS\"):",
+      "reason": "Suffix PASS handling may intentionally support compound legacy statuses."
+    },
+    {
+      "file": "leaf_qt/engine_solver.py",
+      "line": 14139,
+      "source_group": "PREFIX_SUFFIX_STATUS_CHECK",
+      "risk": "MEDIUM",
+      "remaining_category": "COMPOUND_VERDICT_INTENTIONAL_HOLD",
+      "recommendation": "Preserve until compound verdict compatibility adapter exists.",
+      "wave_closure_blocker": false,
+      "snippet": "if \"PLACEHOLDER\" in source_status and verdict.endswith(\"PASS\"):",
+      "reason": "Suffix PASS handling may intentionally support compound legacy statuses."
+    },
+    {
+      "file": "leaf_qt/engine_solver.py",
+      "line": 14143,
+      "source_group": "PREFIX_SUFFIX_STATUS_CHECK",
+      "risk": "MEDIUM",
+      "remaining_category": "COMPOUND_VERDICT_INTENTIONAL_HOLD",
+      "recommendation": "Preserve until compound verdict compatibility adapter exists.",
+      "wave_closure_blocker": false,
+      "snippet": "if ledger_status not in (\"LEDGER_COMPLETE\", \"NO_FILLED_VALUES\") and verdict.endswith(\"PASS\"):",
+      "reason": "Suffix PASS handling may intentionally support compound legacy statuses."
+    },
+    {
+      "file": "leaf_qt/engine_solver.py",
+      "line": 14143,
+      "source_group": "PREFIX_SUFFIX_STATUS_CHECK",
+      "risk": "MEDIUM",
+      "remaining_category": "COMPOUND_VERDICT_INTENTIONAL_HOLD",
+      "recommendation": "Preserve until compound verdict compatibility adapter exists.",
+      "wave_closure_blocker": false,
+      "snippet": "if ledger_status not in (\"LEDGER_COMPLETE\", \"NO_FILLED_VALUES\") and verdict.endswith(\"PASS\"):",
+      "reason": "Suffix PASS handling may intentionally support compound legacy statuses."
+    },
+    {
+      "file": "leaf_qt/engine_solver.py",
+      "line": 14149,
+      "source_group": "PREFIX_SUFFIX_STATUS_CHECK",
+      "risk": "MEDIUM",
+      "remaining_category": "COMPOUND_VERDICT_INTENTIONAL_HOLD",
+      "recommendation": "Preserve until compound verdict compatibility adapter exists.",
+      "wave_closure_blocker": false,
+      "snippet": "if quality_band in (\"PLACEHOLDER\", \"LOW_CONFIDENCE_PUBLIC\") and verdict.endswith(\"PASS\"):",
+      "reason": "Suffix PASS handling may intentionally support compound legacy statuses."
+    },
+    {
+      "file": "leaf_qt/engine_solver.py",
+      "line": 14149,
+      "source_group": "PREFIX_SUFFIX_STATUS_CHECK",
+      "risk": "MEDIUM",
+      "remaining_category": "COMPOUND_VERDICT_INTENTIONAL_HOLD",
+      "recommendation": "Preserve until compound verdict compatibility adapter exists.",
+      "wave_closure_blocker": false,
+      "snippet": "if quality_band in (\"PLACEHOLDER\", \"LOW_CONFIDENCE_PUBLIC\") and verdict.endswith(\"PASS\"):",
+      "reason": "Suffix PASS handling may intentionally support compound legacy statuses."
+    },
+    {
+      "file": "leaf_qt/engine_solver.py",
+      "line": 20628,
+      "source_group": "FAIL_COLLECTION_OR_TEXT_CONTAINS",
+      "risk": "MEDIUM",
+      "remaining_category": "FREEFORM_TEXT_SEMANTIC_INTENTIONAL_HOLD",
+      "recommendation": "Preserve until text diagnostic parser is replaced with structured diagnostic payload.",
+      "wave_closure_blocker": false,
+      "snippet": "if \"FAIL\" in text or \"INVALID\" in text:",
+      "reason": "Freeform diagnostic text scanning is semantic and should not be wrapped blindly."
+    },
+    {
+      "file": "leaf_qt/engine_solver.py",
+      "line": 20628,
+      "source_group": "FAIL_COLLECTION_OR_TEXT_CONTAINS",
+      "risk": "MEDIUM",
+      "remaining_category": "FREEFORM_TEXT_SEMANTIC_INTENTIONAL_HOLD",
+      "recommendation": "Preserve until text diagnostic parser is replaced with structured diagnostic payload.",
+      "wave_closure_blocker": false,
+      "snippet": "if \"FAIL\" in text or \"INVALID\" in text:",
+      "reason": "Freeform diagnostic text scanning is semantic and should not be wrapped blindly."
+    },
+    {
+      "file": "leaf_qt/engine_solver.py",
+      "line": 20649,
+      "source_group": "WARN_COLLECTION_OR_TEXT_CONTAINS",
+      "risk": "MEDIUM",
+      "remaining_category": "FREEFORM_TEXT_SEMANTIC_INTENTIONAL_HOLD",
+      "recommendation": "Preserve until text diagnostic parser is replaced with structured diagnostic payload.",
+      "wave_closure_blocker": false,
+      "snippet": "elif \"WARN\" in text or \"REVIEW\" in text:",
+      "reason": "Freeform diagnostic text scanning is semantic and should not be wrapped blindly."
+    },
+    {
+      "file": "leaf_qt/engine_solver.py",
+      "line": 20649,
+      "source_group": "WARN_COLLECTION_OR_TEXT_CONTAINS",
+      "risk": "MEDIUM",
+      "remaining_category": "FREEFORM_TEXT_SEMANTIC_INTENTIONAL_HOLD",
+      "recommendation": "Preserve until text diagnostic parser is replaced with structured diagnostic payload.",
+      "wave_closure_blocker": false,
+      "snippet": "elif \"WARN\" in text or \"REVIEW\" in text:",
+      "reason": "Freeform diagnostic text scanning is semantic and should not be wrapped blindly."
+    },
+    {
+      "file": "leaf_qt/engine_solver.py",
+      "line": 8011,
+      "source_group": "MANUAL_REVIEW",
+      "risk": "HIGH",
+      "remaining_category": "HIGH_RISK_MANUAL_REVIEW_REQUIRED",
+      "recommendation": "Hold for manual review; do not automate in Wave A.",
+      "wave_closure_blocker": false,
+      "snippet": "\"PASS\",",
+      "reason": "High-risk items require local engineering context and should not block closure if explicitly recorded."
+    },
+    {
+      "file": "leaf_qt/engine_solver.py",
+      "line": 10607,
+      "source_group": "MANUAL_REVIEW",
+      "risk": "HIGH",
+      "remaining_category": "HIGH_RISK_MANUAL_REVIEW_REQUIRED",
+      "recommendation": "Hold for manual review; do not automate in Wave A.",
+      "wave_closure_blocker": false,
+      "snippet": "\"FAIL\",",
+      "reason": "High-risk items require local engineering context and should not block closure if explicitly recorded."
+    },
+    {
+      "file": "leaf_qt/engine_solver.py",
+      "line": 13684,
+      "source_group": "MANUAL_REVIEW",
+      "risk": "HIGH",
+      "remaining_category": "HIGH_RISK_MANUAL_REVIEW_REQUIRED",
+      "recommendation": "Hold for manual review; do not automate in Wave A.",
+      "wave_closure_blocker": false,
+      "snippet": "\"PASS\",",
+      "reason": "High-risk items require local engineering context and should not block closure if explicitly recorded."
+    },
+    {
+      "file": "leaf_qt/engine_solver.py",
+      "line": 15208,
+      "source_group": "MANUAL_REVIEW",
+      "risk": "HIGH",
+      "remaining_category": "HIGH_RISK_MANUAL_REVIEW_REQUIRED",
+      "recommendation": "Hold for manual review; do not automate in Wave A.",
+      "wave_closure_blocker": false,
+      "snippet": "verdict = \"FAIL\"",
+      "reason": "High-risk items require local engineering context and should not block closure if explicitly recorded."
+    }
+  ],
+  "wave_closure_blockers": [],
+  "compile_results": [
+    {
+      "file": "leaf_qt/engine_solver.py",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "file": "leaf_qt/regen_geometry_solver.py",
+      "passed": true,
+      "error": ""
+    }
+  ],
+  "phase_16u13_engine_solver_remaining_status_consumer_review_complete": true
+}

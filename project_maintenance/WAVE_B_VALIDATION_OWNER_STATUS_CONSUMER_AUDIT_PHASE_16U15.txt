@@ -1,0 +1,211 @@
+LEAF PHASE 16U.15
+WAVE B VALIDATION OWNER STATUS CONSUMER AUDIT
+================================================
+
+STATUS: PASS_PHASE_16U15_WAVE_B_VALIDATION_OWNER_STATUS_CONSUMER_AUDIT
+Generated: 2026-06-28T00:53:56
+
+SCOPE
+-----
+This phase audits Wave B validation-owner status consumers.
+No production files are modified.
+No solver equations are modified.
+
+SUMMARY
+-------
+Validation candidates: 34
+Patchable next phase: 7
+Hold/manual-review: 27
+
+GROUP BREAKDOWN
+---------------
+LITERAL_CONTEXT_REVIEW: 10
+MANUAL_REVIEW_REQUIRED: 5
+PRESENTATION_MARKER: 2
+RESULT_KEY_PASS_PREFIX_CHECK: 3
+SEVERITY_COLLECTION_FAIL_AGGREGATION: 4
+STATUS_PRODUCER_RETURN: 6
+TEXT_SEMANTIC_VALIDATION: 4
+
+RISK BREAKDOWN
+--------------
+HOLD: 18
+LOW: 7
+MEDIUM: 9
+
+FILES
+-----
+leaf_qt/regen_candidate_blueprint_mutation_validation.py: 1
+leaf_qt/regen_candidate_blueprint_population_validation_owner.py: 1
+leaf_qt/regen_candidate_post_resolve_validation_owner.py: 8
+leaf_qt/regen_candidate_validator.py: 8
+leaf_qt/regen_geometry_constraint_validation_owner.py: 2
+leaf_qt/regen_source_validation_gate.py: 9
+leaf_qt/regen_validation_master_gate.py: 4
+leaf_qt/regen_viewer_physical_geometry_validation_owner_phase_16p15.py: 1
+
+PATCHABLE NEXT PHASE
+--------------------
+leaf_qt/regen_candidate_validator.py:359 [SEVERITY_COLLECTION_FAIL_AGGREGATION]
+  current: if "FAIL" in severities:
+  wrapper: highest_severity(severities) == "FAIL"
+  reason: Variable name severities indicates structured severity aggregation, not freeform text.
+
+leaf_qt/regen_candidate_validator.py:359 [SEVERITY_COLLECTION_FAIL_AGGREGATION]
+  current: if "FAIL" in severities:
+  wrapper: highest_severity(severities) == "FAIL"
+  reason: Variable name severities indicates structured severity aggregation, not freeform text.
+
+leaf_qt/regen_source_validation_gate.py:243 [RESULT_KEY_PASS_PREFIX_CHECK]
+  current: if key in results and str(results.get(key)).upper().startswith("PASS"):
+  wrapper: is_pass(results.get(key))
+  reason: Result-key status prefix check can be routed through structured_status_access.is_pass.
+
+leaf_qt/regen_source_validation_gate.py:243 [RESULT_KEY_PASS_PREFIX_CHECK]
+  current: if key in results and str(results.get(key)).upper().startswith("PASS"):
+  wrapper: is_pass(results.get(key))
+  reason: Result-key status prefix check can be routed through structured_status_access.is_pass.
+
+leaf_qt/regen_source_validation_gate.py:243 [RESULT_KEY_PASS_PREFIX_CHECK]
+  current: if key in results and str(results.get(key)).upper().startswith("PASS"):
+  wrapper: is_pass(results.get(key))
+  reason: Result-key status prefix check can be routed through structured_status_access.is_pass.
+
+leaf_qt/regen_source_validation_gate.py:360 [SEVERITY_COLLECTION_FAIL_AGGREGATION]
+  current: if "FAIL" in severities:
+  wrapper: highest_severity(severities) == "FAIL"
+  reason: Variable name severities indicates structured severity aggregation, not freeform text.
+
+leaf_qt/regen_source_validation_gate.py:360 [SEVERITY_COLLECTION_FAIL_AGGREGATION]
+  current: if "FAIL" in severities:
+  wrapper: highest_severity(severities) == "FAIL"
+  reason: Variable name severities indicates structured severity aggregation, not freeform text.
+
+HELD / MANUAL REVIEW
+--------------------
+leaf_qt/regen_candidate_blueprint_mutation_validation.py:243 [PRESENTATION_MARKER]
+  current: marker = "PASS" if check["passed"] else "FAIL"
+  reason: This appears to render a pass/fail marker from boolean check evidence.
+
+leaf_qt/regen_candidate_blueprint_population_validation_owner.py:231 [PRESENTATION_MARKER]
+  current: marker = "PASS" if check["passed"] else "FAIL"
+  reason: This appears to render a pass/fail marker from boolean check evidence.
+
+leaf_qt/regen_candidate_post_resolve_validation_owner.py:199 [TEXT_SEMANTIC_VALIDATION]
+  current: ("FAIL" not in text and "INVALID" not in text),
+  reason: Text scanning may be semantic/freeform and should not be blindly wrapped.
+
+leaf_qt/regen_candidate_post_resolve_validation_owner.py:207 [TEXT_SEMANTIC_VALIDATION]
+  current: ("WARN" not in text and "REVIEW" not in text and "PLACEHOLDER" not in text),
+  reason: Text scanning may be semantic/freeform and should not be blindly wrapped.
+
+leaf_qt/regen_geometry_constraint_validation_owner.py:266 [TEXT_SEMANTIC_VALIDATION]
+  current: passed=("FAIL" not in text and "INVALID" not in text),
+  reason: Text scanning may be semantic/freeform and should not be blindly wrapped.
+
+leaf_qt/regen_geometry_constraint_validation_owner.py:274 [TEXT_SEMANTIC_VALIDATION]
+  current: passed=("WARN" not in text and "REVIEW" not in text and "PLACEHOLDER" not in text),
+  reason: Text scanning may be semantic/freeform and should not be blindly wrapped.
+
+leaf_qt/regen_validation_master_gate.py:77 [MANUAL_REVIEW_REQUIRED]
+  current: elif "FAIL" in status:
+  reason: No safe automated migration rule matched.
+
+leaf_qt/regen_validation_master_gate.py:77 [MANUAL_REVIEW_REQUIRED]
+  current: elif "FAIL" in status:
+  reason: No safe automated migration rule matched.
+
+leaf_qt/regen_validation_master_gate.py:194 [MANUAL_REVIEW_REQUIRED]
+  current: elif "FAIL" in validation_status_text or "INVALID" in validation_status_text:
+  reason: No safe automated migration rule matched.
+
+leaf_qt/regen_validation_master_gate.py:194 [MANUAL_REVIEW_REQUIRED]
+  current: elif "FAIL" in validation_status_text or "INVALID" in validation_status_text:
+  reason: No safe automated migration rule matched.
+
+leaf_qt/regen_candidate_post_resolve_validation_owner.py:161 [LITERAL_CONTEXT_REVIEW]
+  current: "FAIL",
+  reason: Standalone literal likely belongs to payload construction or evidence list.
+
+leaf_qt/regen_candidate_post_resolve_validation_owner.py:177 [LITERAL_CONTEXT_REVIEW]
+  current: "FAIL",
+  reason: Standalone literal likely belongs to payload construction or evidence list.
+
+leaf_qt/regen_candidate_post_resolve_validation_owner.py:185 [LITERAL_CONTEXT_REVIEW]
+  current: "FAIL",
+  reason: Standalone literal likely belongs to payload construction or evidence list.
+
+leaf_qt/regen_candidate_post_resolve_validation_owner.py:200 [LITERAL_CONTEXT_REVIEW]
+  current: "FAIL",
+  reason: Standalone literal likely belongs to payload construction or evidence list.
+
+leaf_qt/regen_candidate_post_resolve_validation_owner.py:217 [LITERAL_CONTEXT_REVIEW]
+  current: "FAIL",
+  reason: Standalone literal likely belongs to payload construction or evidence list.
+
+leaf_qt/regen_candidate_post_resolve_validation_owner.py:230 [LITERAL_CONTEXT_REVIEW]
+  current: "FAIL",
+  reason: Standalone literal likely belongs to payload construction or evidence list.
+
+leaf_qt/regen_candidate_validator.py:360 [STATUS_PRODUCER_RETURN]
+  current: return "FAIL"
+  reason: This appears to produce legacy-compatible status output, not consume it.
+
+leaf_qt/regen_candidate_validator.py:369 [STATUS_PRODUCER_RETURN]
+  current: return "PASS"
+  reason: This appears to produce legacy-compatible status output, not consume it.
+
+leaf_qt/regen_candidate_validator.py:371 [STATUS_PRODUCER_RETURN]
+  current: return "FAIL"
+  reason: This appears to produce legacy-compatible status output, not consume it.
+
+leaf_qt/regen_candidate_validator.py:381 [LITERAL_CONTEXT_REVIEW]
+  current: "FAIL",
+  reason: Standalone literal likely belongs to payload construction or evidence list.
+
+leaf_qt/regen_candidate_validator.py:495 [LITERAL_CONTEXT_REVIEW]
+  current: "FAIL",
+  reason: Standalone literal likely belongs to payload construction or evidence list.
+
+leaf_qt/regen_candidate_validator.py:548 [LITERAL_CONTEXT_REVIEW]
+  current: "FAIL",
+  reason: Standalone literal likely belongs to payload construction or evidence list.
+
+leaf_qt/regen_source_validation_gate.py:361 [STATUS_PRODUCER_RETURN]
+  current: return "FAIL"
+  reason: This appears to produce legacy-compatible status output, not consume it.
+
+leaf_qt/regen_source_validation_gate.py:367 [STATUS_PRODUCER_RETURN]
+  current: return "PASS"
+  reason: This appears to produce legacy-compatible status output, not consume it.
+
+leaf_qt/regen_source_validation_gate.py:368 [STATUS_PRODUCER_RETURN]
+  current: return "FAIL"
+  reason: This appears to produce legacy-compatible status output, not consume it.
+
+leaf_qt/regen_source_validation_gate.py:378 [LITERAL_CONTEXT_REVIEW]
+  current: "FAIL",
+  reason: Standalone literal likely belongs to payload construction or evidence list.
+
+leaf_qt/regen_viewer_physical_geometry_validation_owner_phase_16p15.py:116 [MANUAL_REVIEW_REQUIRED]
+  current: if str(results.get("regen_geometry_status", "")).upper() not in ("FAIL", "ERROR"):
+  reason: No safe automated migration rule matched.
+
+COMPILE RESULTS
+---------------
+leaf_qt/regen_candidate_blueprint_mutation_validation.py: PASS 
+leaf_qt/regen_candidate_blueprint_population_validation_owner.py: PASS 
+leaf_qt/regen_candidate_post_resolve_validation_owner.py: PASS 
+leaf_qt/regen_candidate_validator.py: PASS 
+leaf_qt/regen_geometry_constraint_validation_owner.py: PASS 
+leaf_qt/regen_source_validation_gate.py: PASS 
+leaf_qt/regen_validation_master_gate.py: PASS 
+leaf_qt/regen_viewer_physical_geometry_validation_owner_phase_16p15.py: PASS 
+
+COMPLETION NOTICE
+-----------------
+PHASE 16U.15 COMPLETE.
+
+NEXT PHASE
+----------
+PHASE 16U.16 — WAVE B VALIDATION OWNER LOW-RISK STATUS WRAPPER PATCH

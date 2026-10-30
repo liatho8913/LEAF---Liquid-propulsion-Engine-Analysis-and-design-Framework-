@@ -1,0 +1,88 @@
+LEAF PHASE 16U.175H
+LOCAL STATUS SEVERITY DEDUPLICATION WAVE
+==================================================
+status=FAIL_PHASE_16U175H_LOCAL_STATUS_SEVERITY_DEDUPLICATION_WAVE
+candidate_count=67
+touched_count=45
+skipped_count=0
+compile_failure_count=22
+
+TOUCHED FILES
+-------------
+leaf_qt/real_engine_benchmark_completion_audit.py
+leaf_qt/regen_acceptance_criteria_owner.py
+leaf_qt/regen_autonomous_optimisation_input_audit.py
+leaf_qt/regen_candidate_blueprint_completion_audit.py
+leaf_qt/regen_candidate_blueprint_generation_input_gate.py
+leaf_qt/regen_candidate_blueprint_mutation_validation.py
+leaf_qt/regen_candidate_blueprint_optimisation_completion_audit.py
+leaf_qt/regen_candidate_blueprint_population_completion_audit.py
+leaf_qt/regen_candidate_creation_completion_audit.py
+leaf_qt/regen_candidate_creation_input_audit.py
+leaf_qt/regen_candidate_creation_registration_owner.py
+leaf_qt/regen_candidate_creation_session_owner.py
+leaf_qt/regen_candidate_generation_completion_audit.py
+leaf_qt/regen_candidate_generation_input_gate.py
+leaf_qt/regen_candidate_generation_registration_owner.py
+leaf_qt/regen_candidate_generation_session_owner.py
+leaf_qt/regen_candidate_mutation_completion_audit.py
+leaf_qt/regen_candidate_mutation_input_audit.py
+leaf_qt/regen_candidate_mutation_master_gate.py
+leaf_qt/regen_candidate_population_completion_audit.py
+leaf_qt/regen_candidate_population_master_gate.py
+leaf_qt/regen_candidate_ranking_completion_audit.py
+leaf_qt/regen_candidate_ranking_input_audit.py
+leaf_qt/regen_candidate_ranking_master_gate.py
+leaf_qt/regen_completion_gate_validation_owner.py
+leaf_qt/regen_cross_section_viewer.py
+leaf_qt/regen_evolution_loop_completion_audit.py
+leaf_qt/regen_evolution_loop_input_audit.py
+leaf_qt/regen_evolution_loop_master_gate.py
+leaf_qt/regen_geometry_constraint_owner.py
+leaf_qt/regen_optimisation_completion_audit.py
+leaf_qt/regen_optimisation_registration_owner.py
+leaf_qt/regen_optimisation_scoring_owner.py
+leaf_qt/regen_optimisation_session_owner.py
+leaf_qt/regen_runtime_execution_completion_audit.py
+leaf_qt/regen_runtime_execution_input_gate.py
+leaf_qt/regen_runtime_execution_registration_owner.py
+leaf_qt/regen_runtime_execution_session_owner.py
+leaf_qt/regen_runtime_optimisation_input_gate.py
+leaf_qt/regen_runtime_optimisation_registration_owner.py
+leaf_qt/regen_runtime_optimisation_session_owner.py
+leaf_qt/regen_system_signoff_validation_owner.py
+leaf_qt/regen_viewer_final_runtime_consistency_gate_phase_16q20.py
+leaf_qt/regen_viewer_gui_runtime_acceptance_gate_phase_16q28.py
+leaf_qt/regen_viewer_report_renderer.py
+
+SKIPPED FILES
+-------------
+None.
+
+COMPILE FAILURES
+----------------
+leaf_qt/bond_coat_integration_owner.py :: PyCompileError("Sorry: IndentationError: expected an indented block after 'except' statement on line 5 (bond_coat_integration_owner.py, line 6)", 'IndentationError', IndentationError("expected an indented block after 'except' statement on line 5", ('/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/bond_coat_integration_owner.py', 6, 1, 'def _leaf_16u50_status_severity(value):\n', 6, 4)), '/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/bond_coat_integration_owner.py')
+leaf_qt/coating_property_consumption_audit_owner.py :: PyCompileError("Sorry: IndentationError: expected an indented block after 'except' statement on line 5 (coating_property_consumption_audit_owner.py, line 6)", 'IndentationError', IndentationError("expected an indented block after 'except' statement on line 5", ('/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/coating_property_consumption_audit_owner.py', 6, 1, 'def _leaf_16u62_status_severity(value):\n', 6, 4)), '/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/coating_property_consumption_audit_owner.py')
+leaf_qt/coating_temperature_limit_integration_owner.py :: PyCompileError("Sorry: IndentationError: expected an indented block after 'except' statement on line 5 (coating_temperature_limit_integration_owner.py, line 6)", 'IndentationError', IndentationError("expected an indented block after 'except' statement on line 5", ('/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/coating_temperature_limit_integration_owner.py', 6, 1, 'def _leaf_16u54_status_severity(value):\n', 6, 4)), '/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/coating_temperature_limit_integration_owner.py')
+leaf_qt/coating_thermal_conductivity_integration_owner.py :: PyCompileError("Sorry: IndentationError: expected an indented block after 'except' statement on line 5 (coating_thermal_conductivity_integration_owner.py, line 6)", 'IndentationError', IndentationError("expected an indented block after 'except' statement on line 5", ('/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/coating_thermal_conductivity_integration_owner.py', 6, 1, 'def _leaf_16u62_status_severity(value):\n', 6, 4)), '/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/coating_thermal_conductivity_integration_owner.py')
+leaf_qt/coating_thermal_resistance_integration_owner.py :: PyCompileError("Sorry: IndentationError: expected an indented block after 'except' statement on line 5 (coating_thermal_resistance_integration_owner.py, line 6)", 'IndentationError', IndentationError("expected an indented block after 'except' statement on line 5", ('/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/coating_thermal_resistance_integration_owner.py', 6, 1, 'def _leaf_16u62_status_severity(value):\n', 6, 4)), '/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/coating_thermal_resistance_integration_owner.py')
+leaf_qt/coating_thickness_integration_owner.py :: PyCompileError("Sorry: IndentationError: expected an indented block after 'except' statement on line 5 (coating_thickness_integration_owner.py, line 6)", 'IndentationError', IndentationError("expected an indented block after 'except' statement on line 5", ('/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/coating_thickness_integration_owner.py', 6, 1, 'def _leaf_16u62_status_severity(value):\n', 6, 4)), '/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/coating_thickness_integration_owner.py')
+leaf_qt/material_density_integration_owner.py :: PyCompileError("Sorry: IndentationError: expected an indented block after 'except' statement on line 5 (material_density_integration_owner.py, line 6)", 'IndentationError', IndentationError("expected an indented block after 'except' statement on line 5", ('/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/material_density_integration_owner.py', 6, 1, 'def _leaf_16u62_status_severity(value):\n', 6, 4)), '/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/material_density_integration_owner.py')
+leaf_qt/material_property_consumption_audit_owner.py :: PyCompileError("Sorry: IndentationError: expected an indented block after 'except' statement on line 5 (material_property_consumption_audit_owner.py, line 6)", 'IndentationError', IndentationError("expected an indented block after 'except' statement on line 5", ('/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/material_property_consumption_audit_owner.py', 6, 1, 'def _leaf_16u62_status_severity(value):\n', 6, 4)), '/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/material_property_consumption_audit_owner.py')
+leaf_qt/material_specific_heat_integration_owner.py :: PyCompileError("Sorry: IndentationError: expected an indented block after 'except' statement on line 5 (material_specific_heat_integration_owner.py, line 6)", 'IndentationError', IndentationError("expected an indented block after 'except' statement on line 5", ('/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/material_specific_heat_integration_owner.py', 6, 1, 'def _leaf_16u62_status_severity(value):\n', 6, 4)), '/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/material_specific_heat_integration_owner.py')
+leaf_qt/material_strength_limit_integration_owner.py :: PyCompileError("Sorry: IndentationError: expected an indented block after 'except' statement on line 5 (material_strength_limit_integration_owner.py, line 6)", 'IndentationError', IndentationError("expected an indented block after 'except' statement on line 5", ('/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/material_strength_limit_integration_owner.py', 6, 1, 'def _leaf_16u58_status_severity(value):\n', 6, 4)), '/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/material_strength_limit_integration_owner.py')
+leaf_qt/material_temperature_limit_integration_owner.py :: PyCompileError("Sorry: IndentationError: expected an indented block after 'except' statement on line 5 (material_temperature_limit_integration_owner.py, line 6)", 'IndentationError', IndentationError("expected an indented block after 'except' statement on line 5", ('/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/material_temperature_limit_integration_owner.py', 6, 1, 'def _leaf_16u66_status_severity(value):\n', 6, 4)), '/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/material_temperature_limit_integration_owner.py')
+leaf_qt/material_thermal_conductivity_integration_owner.py :: PyCompileError("Sorry: IndentationError: expected an indented block after 'except' statement on line 5 (material_thermal_conductivity_integration_owner.py, line 6)", 'IndentationError', IndentationError("expected an indented block after 'except' statement on line 5", ('/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/material_thermal_conductivity_integration_owner.py', 6, 1, 'def _leaf_16u62_status_severity(value):\n', 6, 4)), '/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/material_thermal_conductivity_integration_owner.py')
+leaf_qt/real_engine_benchmark_failure_owner.py :: PyCompileError("Sorry: IndentationError: expected an indented block after 'except' statement on line 5 (real_engine_benchmark_failure_owner.py, line 6)", 'IndentationError', IndentationError("expected an indented block after 'except' statement on line 5", ('/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/real_engine_benchmark_failure_owner.py', 6, 1, 'def _leaf_16u46_status_severity(value):\n', 6, 4)), '/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/real_engine_benchmark_failure_owner.py')
+leaf_qt/regen_candidate_blueprint_population_validation_owner.py :: PyCompileError("Sorry: IndentationError: expected an indented block after 'except' statement on line 5 (regen_candidate_blueprint_population_validation_owner.py, line 6)", 'IndentationError', IndentationError("expected an indented block after 'except' statement on line 5", ('/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/regen_candidate_blueprint_population_validation_owner.py', 6, 1, 'def _leaf_16u91_status_severity(value):\n', 6, 4)), '/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/regen_candidate_blueprint_population_validation_owner.py')
+leaf_qt/regen_candidate_creation_report_owner.py :: PyCompileError("Sorry: IndentationError: expected an indented block after 'except' statement on line 5 (regen_candidate_creation_report_owner.py, line 6)", 'IndentationError', IndentationError("expected an indented block after 'except' statement on line 5", ('/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/regen_candidate_creation_report_owner.py', 6, 1, 'def _leaf_16u96_status_severity(value):\n', 6, 4)), '/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/regen_candidate_creation_report_owner.py')
+leaf_qt/regen_candidate_generation_report_owner.py :: PyCompileError("Sorry: IndentationError: expected an indented block after 'except' statement on line 5 (regen_candidate_generation_report_owner.py, line 6)", 'IndentationError', IndentationError("expected an indented block after 'except' statement on line 5", ('/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/regen_candidate_generation_report_owner.py', 6, 1, 'def _leaf_16u101_status_severity(value):\n', 6, 4)), '/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/regen_candidate_generation_report_owner.py')
+leaf_qt/regen_candidate_mutation_report_owner.py :: PyCompileError("Sorry: IndentationError: expected an indented block after 'except' statement on line 5 (regen_candidate_mutation_report_owner.py, line 6)", 'IndentationError', IndentationError("expected an indented block after 'except' statement on line 5", ('/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/regen_candidate_mutation_report_owner.py', 6, 1, 'def _leaf_16u106_status_severity(value):\n', 6, 4)), '/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/regen_candidate_mutation_report_owner.py')
+leaf_qt/regen_geometry_report_owner.py :: PyCompileError("Sorry: IndentationError: expected an indented block after 'except' statement on line 5 (regen_geometry_report_owner.py, line 6)", 'IndentationError', IndentationError("expected an indented block after 'except' statement on line 5", ('/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/regen_geometry_report_owner.py', 6, 1, 'def _leaf_16u86_status_severity(value):\n', 6, 4)), '/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/regen_geometry_report_owner.py')
+leaf_qt/regen_optimisation_report_owner.py :: PyCompileError("Sorry: IndentationError: expected an indented block after 'except' statement on line 5 (regen_optimisation_report_owner.py, line 6)", 'IndentationError', IndentationError("expected an indented block after 'except' statement on line 5", ('/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/regen_optimisation_report_owner.py', 6, 1, 'def _leaf_16u76_status_severity(value):\n', 6, 4)), '/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/regen_optimisation_report_owner.py')
+leaf_qt/regen_runtime_execution_report_owner.py :: PyCompileError("Sorry: IndentationError: expected an indented block after 'except' statement on line 5 (regen_runtime_execution_report_owner.py, line 6)", 'IndentationError', IndentationError("expected an indented block after 'except' statement on line 5", ('/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/regen_runtime_execution_report_owner.py', 6, 1, 'def _leaf_16u111_status_severity(value):\n', 6, 4)), '/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/regen_runtime_execution_report_owner.py')
+leaf_qt/regen_runtime_optimisation_report_owner.py :: PyCompileError("Sorry: IndentationError: expected an indented block after 'except' statement on line 5 (regen_runtime_optimisation_report_owner.py, line 6)", 'IndentationError', IndentationError("expected an indented block after 'except' statement on line 5", ('/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/regen_runtime_optimisation_report_owner.py', 6, 1, 'def _leaf_16u81_status_severity(value):\n', 6, 4)), '/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/regen_runtime_optimisation_report_owner.py')
+leaf_qt/regen_scalability_failure_owner.py :: PyCompileError("Sorry: IndentationError: expected an indented block after 'except' statement on line 5 (regen_scalability_failure_owner.py, line 6)", 'IndentationError', IndentationError("expected an indented block after 'except' statement on line 5", ('/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/regen_scalability_failure_owner.py', 6, 1, 'def _leaf_16u42_status_severity(value):\n', 6, 4)), '/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/leaf_qt/regen_scalability_failure_owner.py')
+
+json=/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u175h_local_status_severity_deduplication_wave.json
+text=/Users/liamthorpe/Documents/Python Projects/LEAF_v0.5.0-dev/project_maintenance/phase_16u175h_local_status_severity_deduplication_wave.txt
